@@ -1,0 +1,241 @@
+% Redefine "eqn" pagestyle
+\makeatletter	   % `@' is now a normal "letter' for LaTeX
+\newcommand{\ps@eqn}{%
+     \renewcommand{\@oddhead}{\hfil Equation Sheet \hfil}
+     \renewcommand{\@evenhead}{\@oddhead}%
+     \renewcommand{\@oddfoot}{\hfil \thepage \hfil}% empty footer
+     \renewcommand{\@evenfoot}{\@oddfoot}}
+\makeatother     % `@' is restored as a "non-letter" character
+
+\newcommand{\circlehere}{\marginpar{\tiny\sloppy\flushright \vspace{.75cm} Circle here to
+have this problem graded}}
+\newcommand{\blank}[1]{\mbox{\underline{\hspace{#1}}}}
+\newcommand{\pick}[3]{\mbox{\underline{\ #1\ $\backslash$\ #2\ $\backslash$\ #3\ }}}
+\newcommand{\tf}[2]{\mbox{\underline{\ #1\ $\backslash$\ #2\ }}}
+
+\newcommand{\setchap}[1]{\setcounter{section}{#1}}
+\newcommand{\problem}[1]{\setcounter{subsection}{#1}
+      \subsection*{Problem \#\thesubsection}}
+\newcommand{\truefalse}[1]{\setcounter{subsection}{#1}
+      \subsection*{True or False \#\thesubsection}}
+\newcommand{\short}[1]{\setcounter{subsection}{#1}
+      \subsection*{Short Answer \#\thesubsection}}
+\newcommand{\probpart}[1]{\noindent\newline{\large\bf \thesection.#1)}\newline}
+\newcommand{\partprob}[2]{\noindent\newline{\large\bf \thesection.#1) #2}\newline}
+\newcommand{\find}[1]{\noindent\newline{\large\bf  #1}\newline}
+
+\newenvironment{statement}{\latex{\tt}}{\newline\latex{\footnoterule}\html{\htmlrule}}
+
+\newenvironment{eqbox}{ \[\displaystyle\begin{array}{l} }{ \end{array}\] }
+\newenvironment{eqs}{ \begin{array}{rcl} }{ \end{array} }
+\newcommand{\boxeq}[3]{\begin{eqbox}\begin{eqs} #1 \end{eqs} \\ #2 \fbox{$#3$} \end{eqbox}}
+\newcommand{\boxreason}[3]{\begin{eqbox}\begin{array}{rcll} #1 \end{array} \\ #2 \fbox{$#3$} \end{eqbox}}
+
+\newcommand{\ask}[1]{Ask yourself {\bf ``#1''}}
+
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\sig}[3]{\underline{#1}{#2}\unit{#3}}
+\newcommand{\sigfrac}[4]{\underline{#1}{#2}\unitfrac{#3}{#4}}
+
+\newcommand{\unit}[1]{\,{\rm #1}}
+\newcommand{\unfrac}[2]{\mbox{$\phantom{1\!}^{\underline{{\rm #1}}}_{{\rm #2}}$}}
+\newcommand{\unitfrac}[2]{\mbox{$\phantom{1\!}^{{\rm #1}\!\!}/_{\!\!{\rm #2}}$}}
+\newcommand{\txtfrac}[2]{\phantom{1\!}^{#1\!\!}/_{\!\!#2}}
+\newcommand{\boxfrac}[2]{\displaystyle \frac{{#1}^{\phantom{1^1\!\!\!}}}{{#2}_{\phantom{1_1\!\!\!}}}}
+\newcommand{\say}[1]{\mbox{\rm\footnotesize\begin{tabular}{c} #1 \end{tabular}}}
+\newcommand{\imply}[1]{\mbox{\rm\footnotesize ``#1''} \Rightarrow}
+\newcommand{\convert}[2]{\times\left(\frac{#1}{#2}\right)}
+\newcommand{\ten}[1]{\times 10^{#1}}
+\newcommand{\func}[2]{#1\!\left(#2\right)}
+\newcommand{\txtfunc}[2]{#1(#2)}
+\newcommand{\KE}{\mbox{KE}}
+\newcommand{\PE}{\mbox{PE}}
+\newcommand{\E}{\mbox{E}}
+
+\newcommand{\battery}[2]{\put(#1){\line(1,0){.5}}\put(#2){\line(1,0){1}}}
+\newcommand{\batterx}[2]{\put(#1){\line(0,1){.5}}\put(#2){\line(0,1){1}}}
+\newcommand{\resistorx}[2]{\multiput(#1)(.2,0){3}{\line(1,-4){.1}}
+                           \multiput(#2)(.2,0){3}{\line(1,4){.1}} }
+\newcommand{\ohm}{\Omega}
+\newcommand{\ohms}{\Omega}
+
+
+\newcommand{\note}[1]{\marginpar{\raggedright\tiny #1}}
+
+
+\newcounter{tot}\setcounter{tot}{0}
+\newcounter{subtot}\setcounter{subtot}{0}
+\newcounter{dave}\setcounter{dave}{0}
+
+\newcommand{\boxpts}[1]{\addtocounter{tot}{#1}\setcounter{subtot}{0}\ttlpnts{#1 of \thetot}}
+\newcommand{\points}[1]{(#1 pts)\addtocounter{tot}{#1}\setcounter{subtot}{0}\ttlpnts{#1 of \thetot}}
+\newcommand{\subpts}[1]{(#1 pts)\addtocounter{subtot}{#1}\ttlpnts{(#1 of \thesubtot)}}
+\newenvironment{question}{\begin{enumerate}\itemsep 1cm \setcounter{enumi}{\thedave}}
+{\end{enumerate}\setcounter{dave}{\theenumi}}%\hfill{\scriptsize\thetot}}
+
+\newcommand{\ihat}{\hat\imath}
+\newcommand{\jhat}{\hat\jmath}
+\newcommand{\khat}{\hat k}
+
+
+\newenvironment{wideanswer}{\\ \hspace*{-2cm}\begin{minipage}{\textwidth}\color{blue}\raggedright}{\color{black}\end{minipage}}
+
+\newcommand{\newpar}{\\[6pt]}
+
+\newlength{\zerovar}
+\newcommand{\zero}[2]{\settowidth{\zerovar}{$#1$}#1\hspace{-\zerovar}{\color{red}\vector(1,1){12}^{#2}}}
+
+\newenvironment{approach}[1]{\rule{1pt}{10pt}\rule[10pt]{100pt}{1pt} \hfill #1 Approach \hfill \rule[10pt]{100pt}{1pt}\rule{1pt}{10pt} \\ }
+                            {\rule{1pt}{10pt}\rule{\textwidth}{1pt}\rule{1pt}{10pt} \\}
+
+\newlength{\twofbd}
+\newlength{\thrfbd}
+\newlength{\foufbd}
+\setlength{\twofbd}{150pt}
+\setlength{\thrfbd}{100pt}
+\setlength{\foufbd}{100pt}
+
+\newcounter{piclen}
+\newcounter{picwid}
+\newcounter{boxlen}
+\newcounter{boxwid}
+\newcounter{FBDlen}
+\newcounter{FBDwid}
+\newcounter{centx}
+\newcounter{centy}
+\newcounter{lblx}
+\newcounter{lbly}
+\newcommand{\drawbox}[4]{% 1=x-location of box, 2=y-location of box, 3=x-size of box, 4=y-size of box
+    \setcounter{boxlen}{#1}\addtocounter{boxlen}{#3}
+    \setcounter{boxwid}{#2}\addtocounter{boxwid}{#4}
+    \put(#1,#2){\line(1,0){#3}}
+    \put(#1,#2){\line(0,1){#4}}
+    \put(\theboxlen,\theboxwid){\line(-1,0){#3}}
+    \put(\theboxlen,\theboxwid){\line(0,-1){#4}} }
+\newenvironment{FBD}[5]% 1=half-x-size-box, 2=half-y-size-box, 3=x-lower-left, 4=y-lower-left; (3,4) also (x,y) space outside box, 5=label
+    {\setcounter{centx}{#3}\addtocounter{centx}{#1}
+    \setcounter{centy}{#4}\addtocounter{centy}{#2}
+    \setcounter{piclen}{\thecentx}\addtocounter{piclen}{\thecentx}
+    \setcounter{picwid}{\thecenty}\addtocounter{picwid}{\thecenty}
+    \setcounter{FBDlen}{#1}\addtocounter{FBDlen}{#1}
+    \setcounter{FBDwid}{#2}\addtocounter{FBDwid}{#2}
+    \setcounter{lbly}{#4}\addtocounter{lbly}{#2}\addtocounter{lbly}{#2}\addtocounter{lbly}{5}
+    \begin{center}\begin{picture}(\thepiclen,\thepicwid)
+    \put(#3,\thelbly){\setvlabel{$\scriptsize #5$}}
+    \drawbox{#3}{#4}{\theFBDlen}{\theFBDwid}}
+    {\end{picture}\end{center}}
+\newcommand{\oneup}[3]{% 1=sizeof-vector, 2=label, 3=color-adjust
+        \addtocounter{centy}{2}
+        \addtocounter{centx}{-#3}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#1}\addtocounter{lbly}{-5}
+        \put(\thecentx,\thecenty){\vector(0,1){#1}}
+        \put(\thelblx,\thelbly){\tiny #2}
+        \addtocounter{centx}{#3}
+        \addtocounter{centy}{-2}}
+\newcommand{\onedo}[3]{% 1=sizeof-vector, 2=label, 3=color-adjust
+        \addtocounter{centy}{-2}
+        \addtocounter{centx}{-#3}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#1}\addtocounter{lbly}{3}
+        \put(\thecentx,\thecenty){\vector(0,-1){#1}}
+        \put(\thelblx,\thelbly){\tiny #2}
+        \addtocounter{centx}{#3}
+        \addtocounter{centy}{2}}
+\newcommand{\oneri}[3]{% 1=sizeof-vector, 2=label, 3=color-adjust
+        \addtocounter{centx}{2}
+        \addtocounter{centx}{-#3}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}\addtocounter{lblx}{-5}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\vector(1,0){#1}}
+        \put(\thelblx,\thelbly){\tiny #2}
+        \addtocounter{centx}{#3}
+        \addtocounter{centx}{-2}}
+\newcommand{\onele}[3]{% 1=sizeof-vector, 2=label, 3=color-adjust
+        \addtocounter{centx}{-2}
+        \addtocounter{centx}{-#3}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\vector(-1,0){#1}}
+        \put(\thelblx,\thelbly){\tiny #2}
+        \addtocounter{centx}{#3}
+        \addtocounter{centx}{2}}
+
+\newcommand{\twoup}[5]{% 1=sizeof-vector, 2=label, 3=sizeof-vector, 4=label, 5=color-adjust
+        \addtocounter{centy}{2}
+        \addtocounter{centx}{-#5}
+        \put(\thecentx,\thecenty){\circle*{1}}
+%
+        \addtocounter{centx}{-5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-10}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#1}\addtocounter{lbly}{-5}
+        \put(\thecentx,\thecenty){\vector(0,1){#1}}
+        \put(\thelblx,\thelbly){\tiny #2}
+        \addtocounter{centx}{5}
+%
+        \addtocounter{centx}{5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#3}\addtocounter{lbly}{-5}
+        \put(\thecentx,\thecenty){\vector(0,1){#3}}
+        \put(\thelblx,\thelbly){\tiny #4}
+        \addtocounter{centx}{-5}
+%
+        \addtocounter{centx}{#5}
+        \addtocounter{centy}{-2}}
+\newcommand{\twodo}[5]{% 1=sizeof-vector, 2=label, 3=sizeof-vector, 4=label, 5=color-adjust
+        \addtocounter{centy}{-2}
+        \addtocounter{centx}{-#5}
+        \put(\thecentx,\thecenty){\circle*{1}}
+%
+        \addtocounter{centx}{-5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-10}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#1}\addtocounter{lbly}{3}
+        \put(\thecentx,\thecenty){\vector(0,-1){#1}}
+        \put(\thelblx,\thelbly){\tiny #2}
+        \addtocounter{centx}{5}
+%
+        \addtocounter{centx}{5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#3}\addtocounter{lbly}{3}
+        \put(\thecentx,\thecenty){\vector(0,-1){#3}}
+        \put(\thelblx,\thelbly){\tiny #4}
+        \addtocounter{centx}{-5}
+%
+        \addtocounter{centx}{#5}
+        \addtocounter{centy}{2}}
+\newcommand{\twori}[5]{% 1=sizeof-vector, 2=label, 3=sizeof-vector, 4=label, 5=color-adjust
+        \addtocounter{centx}{2}
+        \addtocounter{centx}{-#5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}\addtocounter{lblx}{-5}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\vector(1,0){#1}}
+        \put(\thelblx,\thelbly){\tiny #2}
+        \addtocounter{centx}{#5}
+        \addtocounter{centx}{-2}}
+\newcommand{\twole}[5]{% 1=sizeof-vector, 2=label, 3=sizeof-vector, 4=label, 5=color-adjust
+        \addtocounter{centx}{-2}
+        \addtocounter{centx}{-#5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\vector(-1,0){#1}}
+        \put(\thelblx,\thelbly){\tiny #2}
+        \addtocounter{centx}{#5}
+        \addtocounter{centx}{2}}
+
+
+\newenvironment{forcetable}{\begin{center}\begin{tabular}{c||c|c|} force & $x$-comp & $y$-comp \\ \hline\hline}{\end{tabular}\end{center}}
+\newcommand{\force}[3]{$\deq #1$ & $\deq #2$ & $\deq #3$ \\ \hline}
+\newcommand{\magdir}[7]{\[ \begin{array}{lccl}
+% x-comp, y-comp, mag label, mag, angle name, angle
+\mbox{Magnitude:} & \displaystyle #3 = & \displaystyle \sqrt{\left(#1\right)^2+\left(#2\right)^2} & = \displaystyle #4 \\[6pt]
+\mbox{Direction:} & \displaystyle #5 = & \displaystyle \tan^{-1}\left( \frac{#2}{#1} \right) & = \displaystyle #6 \mbox{#7}
+\end{array} \]}
+
+\newcommand{\circAbc}[3]{\answ{}{#1}{#1} - #2 - #3}
+\newcommand{\circaBc}[3]{#1 - \answ{}{#2}{#2} - #3}
+\newcommand{\circabC}[3]{#1 - #2 - \answ{}{#3}{#3}}
+
+
+\newcommand{\deq}{\displaystyle}
+
+\newcommand{\flip}[1]{\frac{1}{#1}}
