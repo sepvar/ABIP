@@ -1,5 +1,7 @@
 # ABIP
 
+These are the files for my algebra-based introductory physics book		
+
 In this directory, I have a file ABIP.tex which is written in LaTeX.  This is the original version of the book.
 There are a lot of latex .sty files included to try some fancy stuff.
 
