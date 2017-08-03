@@ -1,0 +1,2 @@
+# ignore the html as output from XML
+*.html

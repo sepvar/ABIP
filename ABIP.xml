@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mathbook xml:lang="en-US">
+
+    <docinfo>
+        <macros>
+        \newcommand{\JC}[1]{}
+        \newcommand{\unit}[1]{\,{\rm #1}}
+        \newcommand{\unitfrac}[2]{\mbox{$\phantom{1\!}^{{\rm #1}\!\!}/_{\!\!{\rm #2}}$}}
+        \newcommand{\sig}[3]{\underline{#1}{#2}\unit{#3}}
+        \newcommand{\sigfrac}[4]{\underline{#1}{#2}\unitfrac{#3}{#4}}
+        \newcommand{\ten}[1]{\times 10^{#1}}
+        
+\newcommand{\EqStory}[2]{\left[ {\color{rgb:red,1;green,1;blue,4} \begin{minipage}{#1}\raggedright\begin{center} #2 \end{center}\end{minipage}} \right]}
+\newcommand{\EqStoryOver}[3]{\overbrace{\EqStory{#1}{#2}}^{\displaystyle #3}}
+\newcommand{\EqStoryUnder}[3]{\underbrace{\EqStory{#1}{#2}}_{\displaystyle #3}}
+\newcommand{\EqStoryFrac}[5]{\frac{\overbrace{\EqStory{#1}{#2}}^{\displaystyle #3}}
+                                 {\underbrace{\EqStory{#1}{#4}}_{\displaystyle #5}}}
+        \newcommand{\deq}{\displaystyle}
+        
+<!-- ********************************************************************************************** -->
+<!-- %
+% PEOPLE AND PRONOUNS
+%
+% According to https://www.cdc.gov/nchs/fastats/body-measurements.htm
+% Measured average height, weight, and waist circumference for adults ages 20 years and over
+% Men:
+% Height (inches): 69.3                 = 1.760 m
+% Weight (pounds): 195.5                = 88.86 kg
+% Waist circumference (inches): 39.7    = 1.01 m
+% Women:
+% Height (inches): 63.8                 = 1.621 m
+% Weight (pounds): 166.2                = 75.55 kg
+% Waist circumference (inches): 37.5    = 0.9525 m
+% Source: Anthropometric Reference Data for Children and Adults: United States, 2007-2010, tables 4, 6, 10, 12, 19, 20[PDF - 1.7 MB]
+%  https://www.cdc.gov/nchs/data/series/sr_11/sr11_252.pdf
+%
+    -->
+\newcommand{\studentA}{Abdul}       \newcommand{\massA}{\mbox{$85.0\unit{kg}$}}
+\newcommand{\studentB}{Beth}        \newcommand{\massB}{\mbox{$75.0\unit{kg}$}}
+\newcommand{\studentC}{Carl}        \newcommand{\massC}{\mbox{$90.0\unit{kg}$}}
+\newcommand{\studentD}{Diane}       \newcommand{\massD}{\mbox{$80.0\unit{kg}$}}
+\newcommand{\studentE}{Erik}        \newcommand{\massE}{\mbox{$95.0\unit{kg}$}}
+\newcommand{\studentF}{Frances}       \newcommand{\massF}{\mbox{$85.0\unit{kg}$}}
+\newcommand{\studentX}{Xerxes}       \newcommand{\massX}{\mbox{$62.5\unit{kg}$}}
+\newcommand{\studentZ}{Zambert}     \newcommand{\massZ}{\mbox{$95.0\unit{kg}$}}
+<!-- Male -->
+\newcommand{\heA}{he}\newcommand{\himA}{him}\newcommand{\hisA}{his}\newcommand{\himselfA}{himself}
+\newcommand{\HeA}{He}\newcommand{\HimA}{Him}\newcommand{\HisA}{His}
+\newcommand{\heC}{he}\newcommand{\himC}{him}\newcommand{\hisC}{his}\newcommand{\himselfC}{himself}
+\newcommand{\HeC}{He}\newcommand{\HimC}{Him}\newcommand{\HisC}{His}
+\newcommand{\heE}{he}\newcommand{\himE}{him}\newcommand{\hisE}{his}\newcommand{\himselfE}{himself}
+\newcommand{\HeE}{He}\newcommand{\HimE}{Him}\newcommand{\HisE}{His}
+\newcommand{\heZ}{he}\newcommand{\himZ}{him}\newcommand{\hisZ}{his}\newcommand{\himselfZ}{himself}
+\newcommand{\HeZ}{He}\newcommand{\HimZ}{Him}\newcommand{\HisZ}{His}
+<!-- Female -->
+\newcommand{\heB}{she}\newcommand{\himB}{her}\newcommand{\hisB}{her}\newcommand{\himselfB}{herself}
+\newcommand{\HeB}{She}\newcommand{\HimB}{Her}\newcommand{\HisB}{Her}
+\newcommand{\heD}{she}\newcommand{\himD}{her}\newcommand{\hisD}{her}\newcommand{\himselfD}{herself}
+\newcommand{\HeD}{She}\newcommand{\HimD}{Her}\newcommand{\HisD}{Her}
+\newcommand{\heF}{she}\newcommand{\himF}{her}\newcommand{\hisF}{her}\newcommand{\himselfF}{herself}
+\newcommand{\HeF}{She}\newcommand{\HimF}{Her}\newcommand{\HisF}{Her}
+<!--  -->
+\newcommand{\heX}{\studentX}\newcommand{\himX}{\studentX}\newcommand{\hisX}{\studentX's}\newcommand{\himselfX}{the person of \studentX}
+\newcommand{\HeX}{\studentX}\newcommand{\HimX}{\studentX}\newcommand{\HisX}{\studentX's}
+<!-- ********************************************************************************************** -->
+
+        </macros>
+
+        <latex-image-preamble>
+        \usepackage{html,hmwk,color}
+        \usepackage{graphicx}
+        </latex-image-preamble>
+
+    </docinfo>
+
+    <book xml:id="ABIP">  
+        <title>Physics Connected</title>
+        <subtitle>Thomas More College, Algebra-based Introductory Physics</subtitle>
+
+<frontmatter xml:id="index"> <!-- xmlns:xi="http://www.w3.org/2001/XInclude" -->
+
+    <titlepage>
+
+        <author>
+            <personname>Joe Christensen</personname>
+            <email>ChristJ@ThomasMore.edu</email>
+            <department>Department of Physics and Mathematics</department>
+            <institution>Thomas More College</institution>
+        </author>
+
+        <credit>
+            <title>MathBookXML</title>
+            <author>
+                <personname>Robert A. Beezer</personname>
+                <department>Department of Mathematics and Computer Science</department>
+                <institution>University of Puget Sound</institution>
+                <email>beezer@pugetsound.edu</email>
+            </author>
+        </credit>
+
+        <date><today /></date>
+
+    </titlepage>
+
+    <colophon>
+
+        <edition>Annual Edition 2017</edition>
+
+        <website>
+            <name><c>TMC Physics</c></name>
+            <address>http://www.thomasmore.edu/physics/</address>
+        </website>
+
+        <copyright>
+            <year>2017<ndash />2018</year>
+            <holder>J. Christensen</holder>
+            <minilicense>GFDL License</minilicense>
+            <shortlicense>Permission is granted to copy, distribute and/or modify this document under the terms of the 
+            GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; 
+            with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  
+            A copy of the license is included in the appendix entitled <q>GNU Free Documentation License.</q>  
+            All trademarks<trademark /> are the registered<registered /> marks of their respective owners.</shortlicense>
+        </copyright>
+
+    </colophon>
+
+    <!-- A section of its own in HTML, migrates to copyright-page in LaTeX -->
+    <!-- Titles are optional, presumably none for single author,           -->
+    <!-- or for every author, even if we test a mix here                   -->
+    <biography>    
+    <!-- I've done this as a single section, but we can have a <biography> for each person -->
+        <title>About the Authors</title>
+
+        <table>
+            <tabular>
+            <col width="1%" />
+            <col width="90%" />
+                <row><cell colspan="2">Joe Christensen: </cell></row>
+                <row><cell />
+                    <cell><line>B.S. Mathematics and Physics, Bradley University, IL (1990)</line>
+                          <line>Ph.D. Physics, University of Kentucky, KY (1997)</line>
+                          <line>first came to Thomas More College in 2007</line></cell></row>
+            </tabular>
+        </table>
+
+    </biography>
+
+    <preface>
+
+        <p>This text is intended for a one or two-semester undergraduate course in introductory algebra-based physics. </p>
+        
+        <p>The purpose of creating this book is to make better use of the technology that electronic texts allow for without losing the 
+        functionality of a print book.  While this text should be comparable to any other print text, when this is provided in the online 
+        format it will provide links back and forth between early and later topics.  Linking from later material to earlier material will 
+        allow students to refresh their memory of what was previously discussed.  Linking from earlier material to later material will 
+        inspire students to look ahead to how that topic will be used in more interesting scenarios. </p> 
+
+        <p>Having these links will allow for some other interesting features that can be placed in the back of the book and accessed 
+        through links.  Examples of this might be: 
+        <ol> 
+            <li><p> <q>Dig Deeper</q> where some of the more tedious and some of the more interesting aspects can be investigated. For 
+            example in \autoref{c:motion} on the equations of motion, one might see how these equations are direct applications of calculus 
+            for those students who happen to have taken that course (which is common for biology and pre-medical students). </p></li> 
+            
+            <li><p> <q>Every Equation Tells a Story</q> which discusses how the description-in-English and the description-with-math 
+            interrelate to build intuition in both directions. </p></li> 
+            
+            <li><p> <q>Examples</q>, with the difference from a traditional textbook being that students can interact with the example as: 
+            <q>If you have this question, then go here. If you have that question, then go there.</q> </p></li> 
+            
+            <li><p> <q>In the <lsq/>Real World<rsq/></q> where students see how the concept lives in the messy real world and why 
+            physicists simplify or ignore complicating aspects. </p></li> 
+            
+            <li><p> <q>Connections</q>, which might take one of three forms:</p></li>
+            <ol>
+                <li><p> <q>Where have I seen this before?</q> (linking back to earlier material) </p></li> 
+                
+                <li><p> <q>When will I ever use this?</q> (linking ahead to later material) </p></li> 
+                
+                <li><p> <q>Why is this interesting?</q> (linking to popular or complex topics)</p></li> 
+            </ol>
+        </ol> 
+        </p>
+        
+        <p>The goal of the book is to encourage curiosity in the reader. Since there is an expectation that students will explore the 
+        material on their own, advanced topics will explicitly note where the reader can look for supporting material and basic topics will 
+        be motivated with links to more advanced topics.  To help maintain the interest of the reader, recurring characters will be 
+        featured in the examples.  These characters will live a storyline\dothis{storyboard the characters and how they develop}{} and 
+        interact with each other.  It is possible to read the examples as a separate storyline for the N\urgent{Decide how many 
+        characters}{} interacting characters. </p>
+
+        <p>I am choosing the approach described above based on the assumption that students will prefer to develop their knowledge by 
+        building a world-view that connects to their current understanding, their interests, and their world-view. Providing the 
+        cross-referencing links without distracting students with all of the information at once will enable them to explore the 
+        information. Writing the text in a narrative style that helps students see the explanations for the world they live in will 
+        encourage them to explore <q>what happens when I do this</q> in their real life. Fostering this spirit of exploration will enable 
+        the instructors to bring their own active-learning techniques into the classroom. </p>
+
+        <p>This textbook is in several Parts\urgcap{book layout}{Here we should add information about Adventures, Examples, 
+        Equation-Stories, and IRLs.}:  <em>Part I</em> is for the preliminaries, including descriptions of science in general, physics in 
+        particular, and the use of math.  <em>Part II</em> is intended to introduce three fundamental and powerful concepts.  These 
+        concepts are motion, force, and energy.  I have found that if a student can understand these ideas sufficiently well, then they can 
+        quickly pick up any other idea that we introduce, even if the idea seems initially unfamiliar.  <em>Part III</em> develops the 
+        ideas in Part II by introducing momentum, circular motion, rotational motion, torque, and the Newtonian theory of gravitation.  
+        <em>Parts IV</em> and <em>V</em> are oscillations and thermodynamics.  With the traditional organization of the two-semester 
+        introductory physics, these parts can be covered in either order and can be chosen to be put in either semester. <em>Part VI</em> 
+        covers electricity, magnetism, light, and optics.  This is traditionally the meat of the second semester. <em>Part VII</em> 
+        touches on the topics that are usually referred to as <q>modern physics</q>.  The goal with including these chapters is to provide 
+        some inspiration for what some students see as the tedium of the standard material.  These chapters will be linked to throughout 
+        the book as examples of how the traditional material supports the material that may be in the news and is more talked about in 
+        popular science.  The last final part, <em>Part VIII</em>, holds the answers to the interactive examples mentioned above, the bulk 
+        of the adventures the reader can investigate in order to test their understanding of the material, and the story lines of each of 
+        the characters in the text. </p>
+
+        <aside><title>A note about viewing the PDF online:</title> 
+            <p>If you are viewing this as a PDF set to view <q>single page,</q> then the links will take you to the top of the relevant 
+            page, rather than to the specific topic.  If, on the other hand, you are viewing this in <q>continuous view</q> then you should 
+            go directly to the location of interest. If you are viewing this in <q>two-page</q> mode (whether continuous or not), it might 
+            not be immediately obvious to which page (left or right) you have jumped.  Most of the PDF viewers I have encountered allow you 
+            to follow links and to return to your previous location.  On most PCs, the way to return to your previous location is by 
+            holding the <c>[ctrl]</c> key and pressing the <c><m>[\leftarrow]</m></c> button.  There are a few PDF viewers that do not 
+            allow you to <q>go back</q> to the location you linked from.  Whether or not you have that capability, I have placed <q>return 
+            links</q> in the margins so that you can get back to the place from which you linked. </p>
+        </aside> 
+
+
+    </preface>
+
+</frontmatter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Testing Bed</title>
+    <section><title>The Story of</title>
+<p>The story of the equation
+<md>
+    <mrow>
+        \deq \frac{Q}{\Delta t} 
+        &amp; =   
+        &amp; \deq \kappa 
+        &amp; \deq A     
+        &amp; \deq \frac{\Delta T}{\Delta x}  
+    </mrow>
+    <mrow>
+        \EqStoryOver{45pt}{the rate at which energy flows}{}
+        &amp; \EqStoryOver{40pt}{depends on}{}
+        &amp; \EqStoryOver{50pt}{how well air allows energy to flow,}{}
+        &amp; \EqStoryOver{50pt}{the size of the oven,}{}
+        &amp; \EqStoryFrac{75pt}{and the amount the temperature needs to change}{}
+                              {across the height of the oven}{}
+    </mrow>
+</md>
+<table><tabular>
+    <row>
+        <cell><m>\deq \frac{Q}{\Delta t}            </m></cell>
+        <cell><m> =                                 </m></cell>
+        <cell><m> \deq \kappa                       </m></cell>
+        <cell><m> \deq A                            </m></cell>
+        <cell><m> \deq \frac{\Delta T}{\Delta x}    </m></cell>
+    </row>
+    <row>
+        <cell><m> \EqStoryOver{45pt}{the rate at which energy flows}{}</m></cell>
+        <cell><m> \EqStoryOver{40pt}{depends on}{}</m></cell>
+        <cell><m> \EqStoryOver{50pt}{how well air allows energy to flow,}{}</m></cell>
+        <cell><m> \EqStoryOver{50pt}{the size of the oven,}{}</m></cell>
+        <cell><m> \EqStoryFrac{75pt}{and the amount the temperature needs to change}{}
+                                    {across the height of the oven}{}</m></cell>
+    </row>
+</tabular></table>
+</p>
+
+    </section>
+</chapter>
+
+<!--
+\EqStoryOver{45pt}{the rate at which energy flows}{}
+</m></cell><cell><m> \EqStoryOver{40pt}{depends on}{}
+</m></cell><cell><m> \EqStoryOver{50pt}{how well air allows energy to flow,}{}
+</m></cell><cell><m> \EqStoryOver{50pt}{the size of the oven,}{}
+</m></cell><cell><m> \EqStoryFrac{75pt}{and the amount the temperature needs to change}{}
+                    {across the height of the oven}{}
+
+\newcommand{\EqStory}[2]{\left[ {\color{rgb:red,1;green,1;blue,4} \begin{minipage}{#1}\raggedright\begin{center} #2 \end{center}\end{minipage}} \right]}
+\newcommand{\EqStoryOver}[3]{\overbrace{\EqStory{#1}{#2}}^{\displaystyle #3}}
+\newcommand{\EqStoryUnder}[3]{\underbrace{\EqStory{#1}{#2}}_{\displaystyle #3}}
+\newcommand{\EqStoryFrac}[5]{\frac{\overbrace{\EqStory{#1}{#2}}^{\displaystyle #3}}
+                                 {\underbrace{\EqStory{#1}{#4}}_{\displaystyle #5}}}
+    -->
+
+<!-- ********************************************************************************************** -->
+
+<part xml:id="prerequisites"><title>Prerequisites</title>
+
+
+</part>
+
+<!-- ********************************************************************************************** -->
+
+<part xml:id="IntroMFE"><title>Introducing Motion Force and Energy</title>
+
+<chapter xml:id="c-motion"><title>One-Dimensional Motion</title>
+
+</chapter>
+</part>
+
+<!-- ********************************************************************************************** -->
+
+<backmatter>
+    <title>Back Matter</title> <!-- mostly for HTML sectioning -->
+    <appendix>
+        <title>Notation</title>
+
+        <p>The following table defines the notation used in this book. Page numbers or references refer to the first appearance of each symbol.</p>
+
+        <notation-list />
+    </appendix>
+
+    <preface>
+        <title>Contributors to the 1<m>^\mathrm{st}</m> XML-Edition</title>
+
+        <contributors>
+            <contributor xml:id="jchrist">
+                <personname>Joe Christensen</personname>
+                <department>Department of Mathematics and Physics</department>
+                <institution>Thomas More College</institution>
+                <email>ChristJ@ThomasMore.edu</email>
+            </contributor>
+
+        </contributors>
+
+    </preface>
+
+</backmatter>
+</book>
+</mathbook>
+
