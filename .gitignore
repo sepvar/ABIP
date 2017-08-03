@@ -1,2 +1,30 @@
 # ignore the html as output from XML
 *.html
+# ignore the other LaTeX files
+cellpage.*
+colortrouble.*
+# ignore PDF files
+*.pdf
+*.PDF
+# ignore the output files
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.idx
+*.ilg
+*.ind
+*.irl
+*.loa
+*.loe
+*.lof
+*.log
+*.los
+*.lot
+*.out
+*.prj
+*.bak
+*.ps
+*.synctex
+*.tdo
+*.toc
