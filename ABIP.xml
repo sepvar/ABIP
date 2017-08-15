@@ -96,7 +96,7 @@
         -->
 
         <rename element="biographical" lang="en-US">Touchstone</rename>
-        <rename element="heuristic" lang="en-US">Story of</rename>
+        <rename element="heuristic" lang="en-US">Translation</rename>
 
 
     </docinfo>
@@ -1420,8 +1420,8 @@
                         <li><p> There was a force <term>on</term> \studentA\ <term>by</term> \studentB.</p></li>
                 </ul>
                 <notation>
-                <usage>force subscripts</usage>
-                <description>If it is obvious which object feels the force, the the subscript will only indicate <em>which force</em>.
+                <usage>F_\mathrm{on, by, type}</usage>
+                <description>Use of subscripts on force labels: If it is obvious which object feels the force, the the subscript will only indicate <em>which force</em>.
                         If it is not obvious which object feels the force, the the subscript will also indicate which object the force is acted <em>on</em>.
                         Sometimes we need to clarify who exerts the force as well as who feels the force.  In this case, the subscripts indicate who the force is <em>on</em>, who the force is <em>by</em>, and which force we are referring to: <m>F_\mathrm{on, by, type}</m>.
                         </description>
@@ -1471,18 +1471,18 @@
                 <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-Newtonahead">how to describe forces</xref></p></aside>
 
                 <introduction>
-                <assemblage><title>Newton's First Law</title><idx><h>Newton</h><h>First Law</h></idx>
+                <assemblage xml:id="as-NI"><title>Newton's First Law</title><idx><h>Newton</h><h>First Law</h></idx>
                         <p>When viewed from an inertial reference frame, an object with no forces acting on it will maintain its velocity, which may be zero.</p>
                 </assemblage>
                 <aside><title>Touchstone</title><p>You might also recall the discussion in <xref provisional="ss-noninertial" text="type-global" />.</p></aside>
-                <p>Let's take this apart and connect it to your daily experiences.  Looking ahead, we will discuss the surface of the Earth as a <xref provisional="d-noninertial">non-inertial rotating reference frame</xref>; however, the effect is small enough that for most of what we <xref ref="d-casual">casually observe</xref>, we can safely pretend that the Earth is stationary and that we are actually at rest while sitting on the curb watching the world go by.  This is so true that our human brains already interpret everything around us as though it were an inertial reference frame.  This psychological perspective is exactly the feature that both allows us to make fairly reliable predictions about the world around us <em>and</em> causes us to make incorrect judgements when we encounter non-inertial reference frames.  That is to say, as long as we don't measure our world too closely, we are viewing it from an essentially inertial reference frame.  This point is so implicit, that many books do not even include
+                <p>Let's take this apart and connect it to your daily experiences.  Looking ahead, we will discuss the surface of the Earth as a <xref provisional="d-noninertial">non-inertial rotating reference frame</xref>; however, the effect is small enough that for most of what we <xref ref="d-casual" text="title">casually observe</xref>, we can safely pretend that the Earth is stationary and that we are actually at rest while sitting on the curb watching the world go by.  This is so true that our human brains already interpret everything around us as though it were an inertial reference frame.  This psychological perspective is exactly the feature that both allows us to make fairly reliable predictions about the world around us <em>and</em> causes us to make incorrect judgements when we encounter non-inertial reference frames.  That is to say, as long as we don't measure our world too closely, we are viewing it from an essentially inertial reference frame.  This point is so implicit, that many books do not even include
                         <todo>Consider adding comment about Newton not including <q>inertial reference frame</q> to his laws.</todo>
                         <fn xml:id="f-newtoninclude">Newton himself did not include it in his original statement.</fn>
                         <todo>check the implications of this footnote.</todo>
                 the portion of the statement referring to the reference frame.</p>
                 <aside><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></aside>
 
-                <p xml:id="d-atrestinmotion">The rest of this statement is often written a little differently (and less concisely) as <q>an object at rest remains at rest unless acted on by an external force and an object in motion remains in motion unless acted on by an external force.</q>  Since being <xref ref="d-atrest"><q>at rest</q></xref> is a statement about the velocity<m>(\vec v=0)</m> and being <xref ref="d-motion"><q>in motion</q></xref> is also a statement about the velocity, each of these statements can be understood as saying that
+                <p xml:id="d-atrestinmotion">The rest of this statement is often written a little differently (and less concisely) as <q>an object at rest remains at rest unless acted on by an external force and an object in motion remains in motion unless acted on by an external force.</q>  Since being <xref ref="d-atrest" text="title"><q>at rest</q></xref> is a statement about the velocity<m>(\vec v=0)</m> and being <xref ref="d-motion"><q>in motion</q></xref> is also a statement about the velocity, each of these statements can be understood as saying that
                 <assemblage><p>Forces are those things that cause a change in the velocity.</p></assemblage>
                 In other words, Newton's first law says that without a force, the velocity will not change.  In the discussion of <xref provisional="sss-equilibrium" text="title">equilibrium</xref>, we will note that this is often extended to say that without a <xref provisional="sss-netforce" text="title">net force</xref> the velocity will not change, but that is a special case of <xref provisional="ss-NII" text="title">Newton's second law</xref>.</p>
 
@@ -1519,14 +1519,14 @@
                         </aside>
 
                 <introduction>
-                <assemblage><title>Newton's Second Law</title><idx><h>Newton</h><h>Second Law</h></idx> <p>When viewed from an inertial reference frame, the vector-sum of all forces acting on an object will cause that object to accelerate in proportion to its mass: <m>\vec F_\mathrm{net} = m \vec a</m>.</p>
+                <assemblage xml:id="as-NII"><title>Newton's Second Law</title><idx><h>Newton</h><h>Second Law</h></idx> <p>When viewed from an inertial reference frame, the vector-sum of all forces acting on an object will cause that object to accelerate in proportion to its mass: <m>\vec F_\mathrm{net} = m \vec a</m>.</p>
                 </assemblage>
-                <p>Let's take this apart and connect it to your daily experiences.  As with Newton's First Law, the <xref provisional="d-noninertial">non-inertial rotating reference frame</xref> of the surface of the Earth is a small enough effect that, as long as we don't measure our world too closely, we can pretend that we are viewing it essentially from an inertial reference frame.</p>
+                <p>Let's take this apart and connect it to your daily experiences.  As with Newton's First Law, the <xref provisional="d-noninertial" text="title">non-inertial rotating reference frame</xref> of the surface of the Earth is a small enough effect that, as long as we don't measure our world too closely, we can pretend that we are viewing it essentially from an inertial reference frame.</p>
                 <aside><title>Touchstone</title>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</aside>
 
                 <p xml:id="d-fma">For this law, it is often sufficient to write down the equation and know that the words are there for back-up.  While most people have no trouble remembering <m>F=ma</m>, it is important to pay attention to two aspects:
                 </p>
-                <aside><title>Touchstone</title>Recall (1) the generic explanation for <xref ref="sss-vectorequations" text="title">vector equations</xref> and (2) the <xref ref="d-2Dmotion">vector-equations</xref> for two-dimensional motion.</aside>
+                <aside><title>Touchstone</title>Recall (1) the generic explanation for <xref ref="sss-vectorequations" text="title">vector equations</xref> and (2) the <xref ref="d-2Dmotion" text="title">vector-equations</xref> for two-dimensional motion.</aside>
                 <p>
                 <ul>
                         <li><p> This is a vector-equation, which means that
@@ -1537,9 +1537,10 @@
                         <li><p> The force in this equation is the <em>net force</em>, which means that we must consider <em>all</em> forces that are acting on this object and only those forces that are acting on <em>this</em> object.</p></li>
                 </ul>
                 </p>
-                <remark xml:id="st-Fma"><title><m>\vec F_\mathrm{net} =m \vec a</m></title>
-                <statement>
+                <heuristic xml:id="st-Fma"><title>The Story of <m>\vec F_\mathrm{net} =m \vec a</m></title>
+                <statement><todo>Fix <q>Story of [number] [equation]</q>.</todo>
                 <p>This equation is all about what happens to a specific object, <m>m</m>.  If the object, <m>m</m>, is accelerating in a particular direction, <m>\vec a</m>, then it is because the combination of forces, <m>\vec F_\mathrm{net}</m>, do not entirely cancel each other out.  This also can be expressed as: if the combination of forces, <m>\vec F_\mathrm{net}</m>, do not entirely cancel each other out, then our friend <m>m</m> must be accelerating, <m>\vec a</m>, in a particular direction.  Furthermore the resulting direction of the net force determines the direction of the acceleration.  Connecting the English and the math:</p>
+                <sidebyside>
                 <tabular>
                         <col width="20%" />
                         <col width="20%" />
@@ -1558,11 +1559,36 @@
                         <cell><line>to</line><line>change</line><line>its</line><line>velocity</line></cell>
                     </row>
                 </tabular>
+                </sidebyside>
                 <aside><title>Referenced by</title> <p><xref provisional="ex-2Dforce" text="type-global"/></p></aside>
                 </statement>
-                </remark>
+                </heuristic>
 
-</introduction>
+                <p><alert>Looking Back:</alert> You should <xref ref="s-acceleration" text="title">recall</xref>, that the direction of the acceleration does not determine the direction <em>of the motion</em>, but rather determines the direction <em>of the change</em> in motion.  <alert>Looking ahead:</alert> That idea will be important when we discuss how a <xref provisional="s-FT" text="title">tension</xref> acts as a <xref provisional="s-centripetal" text="title">centripetal force</xref>, the relationship between velocity and acceleration in a <xref provisional="s-springs" text="title">spring</xref> that <xref provisional="c-SHMspring" text="title">oscillates</xref>, and objects that are propelled through either a <xref provisional="s-Gfield" text="title">gravitational</xref> or an <xref provisional="ss-Efield" text="title">electrical</xref> field.</p>
+
+                </introduction>
+                <subsubsection xml:id="sss-unit-N"><title>Units of Force</title>
+                <aside><title>Referenced by</title> <p><xref provisional="ss-units" /></p></aside><idx><h>Force</h><h>Units of</h></idx>
+
+                        <p>Recall that the fundamental units of the <xref ref="ss-units" text="title">SI-system</xref> are meters, kilograms, and seconds (MKS)<todo>maybe note the MKS-to-SI transition. maybe leave that in <xref ref="ss-units" text="type-global" />.</todo>.  With our relationship connecting force to mass <m>\unit{(kg)}</m> and acceleration <m>\left(\unitfrac{m}{s^2}\right)</m>, we can see that the units of force are <m>{}\unitfrac{kg \cdot m}{s^2}</m>.  This quantity is so common that we would like to have a shorthand for it.  Furthermore, Sir Isaac Newton did such ground-breaking work on the concept, that it was decided in 1948<fn xml:id="fn-defineN">According to: International Bureau of Weights and Measures (1977), The international system of units (330-331) (3rd ed.), U.S. Dept. of Commerce, National Bureau of Standards,
+                        <url href="https://books.google.com/books?id=YvZNdSdeCnEC&amp;pg=PA17\#v=onepage&amp;q&amp;f=false">p. 17</url>,
+                        <!-- ISBN 0745649742, Found at https://en.wikipedia.org/wiki/Newton_(unit) -->
+                        which refers to
+                        <url href="http://www.bipm.org/jsp/en/ViewCGPMResolution.jsp?CGPM=9&amp;RES=7">the 7th resolution</url> (Mar, 2017) of
+                        <url href="http://www.bipm.org/jsp/en/ListCGPMResolution.jsp?CGPM=9">the 9th CGPM</url> (Mar, 2017).</fn> 
+                        to name the unit the Newton, such that 
+                        <definition>
+                                <statement><p>The unit of Newton is defined to be the amount of force necessary to accelerate one kilogram by 1 meter-per-second-squared:
+                                        <m>1 \unit{N} = 1 \unitfrac{kg \cdot m}{s^2}</m></p>
+                                </statement>
+                                <notation>
+                                        <usage>1 \unit{N} = 1 \unitfrac{kg \cdot m}{s^2}</usage>
+                                        <description>Definition of the unit Newton</description>
+                                </notation>
+                        </definition>
+                        </p>
+                        
+                </subsubsection>
                 </subsection>
 
         </section>
