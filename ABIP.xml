@@ -998,11 +998,14 @@
                                 <answer>
                                         <p>You do not make it to the gas station.</p>
                                 </answer>
-                                <postlude><assemblage>
-                                        <sidebyside><tabular><row><cell halign="right">
-                                                Return to: <xref provisional="ss-acceleration" text="type-global" />
-                                        </cell></row></tabular></sidebyside>
-                                </assemblage></postlude>
+                                <postlude>
+                                        <sidebyside widths="50% 50%" haligns="center right">
+                                                <p></p>
+                                                <tabular halign="right"><row><cell halign="right">
+                                                        Return to: <xref provisional="ss-acceleration" text="type-global" />
+                                                </cell></row></tabular>
+                                        </sidebyside>
+                                </postlude>
                         </exercise>
 
                         <exercise xml:id="ex-coasting">
@@ -1037,7 +1040,14 @@
                                         <p>So, if you start at <m>55.0\unitfrac{mi}{hr} - 27.8\unitfrac{mi}{hr} = \sigfrac{27.1}{6}{mi}{hr}</m>
                                         you should make it exactly.</p>
                                 </answer>
-                                <assemblage><p>Return to: <xref provisional="ss-acceleration" text="type-global" /></p></assemblage>
+                                <postlude>
+                                        <sidebyside widths="50% 50%" haligns="center right">
+                                                <p></p>
+                                                <tabular halign="right"><row><cell halign="right">
+                                                        Return to: <xref provisional="ss-acceleration" text="type-global" />
+                                                </cell></row></tabular>
+                                        </sidebyside>
+                                </postlude>
                         </exercise>
 
                 </subsection>
@@ -1074,10 +1084,11 @@
                                 </prelude>
                                 <introduction>
                                         <p>Because \studentC<idx><h sortby="\studentC">\studentC</h></idx> is a pitcher on the local baseball team, \heC\ decides to drop a ball and watch what happens.  You and \studentD<idx><h sortby="\studentD">\studentD</h></idx> decide to join him.  \studentD\ provides a few other objects that can also be dropped: a tennis ball, a hammer, a small Wonder Woman toy, and a broken cell phone.  Some of these are dropped at the same time.</p>
+                                        
+                                        <p></p>
+                                        <observation><p>\studentD\ notices that it is important to release the objects at exactly the same time.</p></observation>
+                                        <observation><p>\studentC\ notices that it is important to have the bottoms of the objects line up (rather than the tops of the objects) so that if they travel at the same speed, then they hit at the same time.</p></observation>
 
-                                        <assemblage><p>\studentD\ notices that it is important to release the objects at exactly the same time.</p></assemblage>
-
-                                        <assemblage><p>\studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time.</p></assemblage>
                                 </introduction>
                                 <task>
                                         <introduction><p>Drop <em>any</em> two objects at the same time from the same height.</p></introduction>
@@ -1119,7 +1130,12 @@
                                 <conclusion>
                                         <p>You and your friends should get together to see if you can come up with a way to measure the acceleration due to the gravitational force.</p>
 
-                                        <assemblage><p halign="right">Return to: <xref ref="d-accgrav">freefall</xref>, <xref provisional="d-Fgrav">the force of gravity</xref></p></assemblage>
+                                        <sidebyside widths="50% 50%" haligns="center right">
+                                                <p></p>
+                                                <tabular halign="right"><row><cell halign="right">
+                                                        Return to: <xref ref="d-accgrav">freefall</xref>, <xref provisional="d-Fgrav">the force of gravity</xref>
+                                                </cell></row></tabular>
+                                        </sidebyside>
                                 </conclusion>
 
                                 <postlude>
@@ -1157,7 +1173,14 @@
                                         </md>
                                         Notice that these have some variation due to the rounding.  It turns out that the variation in the value of acceleration depends on the composition of the earth in your location as well as your altitude above sea-level.  That will be discussed in detail in <xref provisional="c-gravity" text="type-global" />, for simplicity we will assume that all objects accelerate at the rate of <m>9.81\unitfrac{m}{s^2}</m> when they are solely under the influence of gravity.</p>
                                 </solution>
-                                <assemblage><p>Return to:<xref ref="d-accgrav">freefall</xref>, <xref provisional="d-Fgbal" text="type-global" />.</p></assemblage>
+                                <postlude>
+                                        <sidebyside widths="50% 50%" haligns="center right">
+                                                <p></p>
+                                                <tabular halign="right"><row><cell halign="right">
+                                                        Return to:<xref ref="d-accgrav">freefall</xref>, <xref provisional="d-Fgbal" text="type-global" />.
+                                                </cell></row></tabular>
+                                        </sidebyside>
+                                </postlude>
                         </exercise>
 
                 <p>It also turns out that you can also see this acceleration where you throw an object straight up into the air.</p>
@@ -1271,10 +1294,16 @@
                                                 <m>v_f^2 = v_i^2 + 2 a \, \Delta x</m>
                                         and solve for <m>\Delta x</m>.  However, we only want to consider from the lowest point to the highest point, not all the way back to \studentC's hand.</p>
                                 </solution>
+                                <postlude>
+                                <assemblage><sidebyside><tabular><row><cell>THIS NEEDS TO BE FINISHED</cell></row></tabular></sidebyside></assemblage>
 
-                                <assemblage><p>THIS NEEDS TO BE FINISHED</p></assemblage>
-
-                                <assemblage><p>Return to: <xref provisional="se-ceiling" text="type-global" />, <xref provisional="se-throw-up" text="type-global" /></p> </assemblage>
+                                <sidebyside widths="50% 50%" haligns="center right">
+                                        <p></p>
+                                        <tabular halign="right"><row><cell halign="right">
+                                                Return to: <xref provisional="se-ceiling" text="type-global" />, <xref provisional="se-throw-up" text="type-global" />
+                                        </cell></row></tabular>
+                                </sidebyside>
+                                </postlude>
                         </exercise>
                 <todo>finish <xref ref="ex-ceiling" text="type-global" />.  Maybe make it two examples, instead of one?</todo>
 
@@ -1342,8 +1371,12 @@
                                 <conclusion>
                                         <p>Air resistance has an effect on most objects that move through the air.  The faster an object moves, the bigger the effect.  Spinning objects also feel an effect.  Objects that have a somewhat large cross sectional area and a somewhat small mass are also affected, but this depends on the actual area and the actual mass.</p>
 
-                                        <assemblage><p>Return to: <xref ref="d-physicspatterns">the description of physics</xref>, <xref ref="ss-ballisticairresistance" /></p>
-                                        </assemblage>
+                                        <sidebyside widths="50% 50%" haligns="center right">
+                                                <p></p>
+                                                <tabular halign="right"><row><cell halign="right">
+                                                        Return to: <xref ref="d-physicspatterns">the description of physics</xref>, <xref ref="ss-ballisticairresistance" />
+                                                </cell></row></tabular>
+                                        </sidebyside>
                                 </conclusion>
 
                                 <postlude>
@@ -1464,9 +1497,9 @@
                         </subsubsection>
                         <subsubsection xml:id="sss-NItogether"><title>How the Laws Work Together</title>
 
-                        <p>You should notice that Newton's First Law is about what happens when you are <em>not pushing</em> on the object, which is to say, the tendency of an object to maintain its own motion without a force acting on it; this is the inertia of the object.  On the other hand, Newton's Second Law is about what happens <em>to the object</em> when you <em>do push</em> on an it.  This is what we will consider next.  After that, Newton's third law will describe what happens <em>to the thing pushing</em> rather than just to the thing being pushed.  
+                        <p>You should notice that Newton's First Law is about what happens when you are <em>not pushing</em> on the object, which is to say, the tendency of an object to maintain its own motion without a force acting on it; this is the inertia of the object.  On the other hand, Newton's Second Law is about what happens <em>to the object</em> when you <em>do push</em> on an it.  This is what we will consider next.  After that, Newton's third law will describe what happens <em>to the thing pushing</em> rather than just to the thing being pushed.
 <!-- Redundant -->
-                        <xref provisional="sss-NIItogether" text="title">The section</xref> at the end of <xref provisional="ss-NII" text="type-global" /> will explore these ideas further.  
+                        <xref provisional="sss-NIItogether" text="title">The section</xref> at the end of <xref provisional="ss-NII" text="type-global" /> will explore these ideas further.
                         <todo>Choose between these sentences once they are not provisional.</todo>
                         <xref provisional="sss-NIItogether" text="phrase-global" /> will explore these ideas further.
                         </p>
@@ -1476,11 +1509,11 @@
                 </subsection>
 
                 <subsection xml:id="ss-NII"><title>Translating Newton's Second Law: The Equation Law</title>
-                        <aside><title>Referenced by</title> 
+                        <aside><title>Referenced by</title>
                                 <p>
                                 <xref ref="sss-vectorequations" text="type-global" />,
-                                <xref ref="d-Newtonahead">how to describe forces</xref>, 
-                                <xref ref="d-atrestinmotion">Newton's first law</xref>, 
+                                <xref ref="d-Newtonahead">how to describe forces</xref>,
+                                <xref ref="d-atrestinmotion">Newton's first law</xref>,
                                 <xref provisional="d-Fgball" />
                                 </p>
                         </aside>
@@ -1533,7 +1566,7 @@
                 </subsection>
 
         </section>
-        
+
 
 </chapter>
 <!-- ********************************************************************************************** -->
@@ -1650,7 +1683,12 @@
                                 <conclusion>
                                         <p></p>
 
-                                        <assemblage halign="right"><p>Return to: <xref ref="d-accgrav">freefall</xref>, <xref provisional="d-Fgrav">the force of gravity</xref> </p> </assemblage>
+                                        <sidebyside widths="50% 50%" haligns="center right">
+                                                <p></p>
+                                                <tabular halign="right"><row><cell halign="right">
+                                                        Return to: <xref ref="d-accgrav">freefall</xref>, <xref provisional="d-Fgrav">the force of gravity</xref>
+                                                </cell></row></tabular>
+                                        </sidebyside>
                                 </conclusion>
 
                                 <postlude>
@@ -1666,6 +1704,62 @@
                 <historical xml:id="his-eff"><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></historical>
 
         </introduction>
+        <section><title>Centering Assemblages (Important)</title>
+                                <assemblage><p align="justify">To solve <xref ref="ex-ceiling-Qb" text="global">Question</xref>, we can just consider from after-thrown to before-caught (both given in the question).  During this motion, assuming there is no ceiling, the entire motion is in freefall, so we can use
+                                                <m>v_f^2 = v_i^2 + 2 a \, \Delta x</m>
+                                        and solve for <m>\Delta x</m>.  However, we only want to consider from the lowest point to the highest point, not all the way back to \studentC's hand.</p></assemblage>
+                                <assemblage><p align="center">THIS NEEDS TO BE FINISHED</p></assemblage>
+                                <assemblage><sidebyside><p align="center">THIS NEEDS TO BE FINISHED</p></sidebyside></assemblage>
+                                <assemblage><sidebyside widths="0% 100% 0%" haligns="left center right">
+                                        <p>1</p>
+                                        <p align="center">THIS NEEDS TO BE FINISHED</p>
+                                        <p>2</p>
+                                        </sidebyside></assemblage>
+                                <assemblage><sidebyside widths="1% 98% 1%" haligns="left center right">
+                                        <p>1</p>
+                                        <p align="center">THIS NEEDS TO BE FINISHED</p>
+                                        <p>2</p>
+                                        </sidebyside></assemblage>
+                                <assemblage><sidebyside widths="33% 33% 33%" haligns="left center right">
+                                        <p>1</p>
+                                        <p align="center">THIS NEEDS TO BE FINISHED</p>
+                                        <p>2</p>
+                                        </sidebyside></assemblage>
+                                <assemblage><sidebyside widths="0% 75% 0%" margins="10%" haligns="left center right">
+                                        <p>1</p>
+                                        <p align="center">THIS NEEDS TO BE FINISHED</p>
+                                        <p>2</p>
+                                        </sidebyside></assemblage>
+                                <assemblage><sidebyside widths="100%" margins="40%" haligns="center">
+                                        <p align="center">THIS NEEDS TO BE FINISHED</p>
+                                        </sidebyside></assemblage>
+                                <assemblage><sidebyside widths="100%" margins="30%" haligns="center">
+                                        <p align="center">THIS NEEDS TO BE FINISHED</p>
+                                        </sidebyside></assemblage>
+                                <assemblage><sidebyside widths="100%" margins="20%" haligns="center">
+                                        <p align="center">THIS NEEDS TO BE FINISHED</p>
+                                        </sidebyside></assemblage>
+                                <assemblage><me>\mathrm{THIS NEEDS TO BE FINISHED}</me></assemblage>
+                                <assemblage><sidebyside><tabular><row><cell>THIS NEEDS TO BE FINISHED</cell></row></tabular></sidebyside></assemblage>
+                More attempts
+                                        <assemblage><p>\studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time. (Using <c>p</c> seems to make extra blank space above.)</p></assemblage>
+                                        <assemblage><sidebyside><p>\studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time. (Using <c>sidebyside</c><c>p</c> seems to make <em>even more</em> blank space above.)</p></sidebyside></assemblage>
+                                        <assemblage>\studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time. (Apparently you <em>must</em> have at least a <c>p</c>.)</assemblage>
+                                        <assemblage><sidebyside><tabular><col width="100%" /><row><cell>
+                                                        <p>\studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time. (Using <c>sidebyside</c> <c>tabular</c> <c>col width="100%"</c> forces a smaller <q>tabular-sized</q> font.)</p>
+                                                </cell></row></tabular>
+                                        </sidebyside></assemblage>
+                                        <assemblage><p><tabular><col width="100%" /><row><cell>
+                                                        <p>\studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time. (Using <c>tabular</c> <c>col width="100%"</c> forces a smaller <q>tabular-sized</q> font; apparently we <em>must</em> use either <c>p</c> or <c>sidebyside</c> but both still give the awkward additional space above.)</p>
+                                                </cell></row></tabular></p>
+                                        </assemblage>
+                                        <assemblage><sidebyside><tabular><row><cell>
+                                                        \studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time.  (Using <c>sidebyside</c> <c>tabular</c> without <c>col</c> not only forces a smaller <q>tabular-sized</q> font but also is a single line.)
+                                                </cell></row></tabular>
+                                        </sidebyside></assemblage>
+
+
+        </section>
         <conclusion>
         <p>Check for references to biographical <xref ref="bio-eff" text="type-global" />, historical <xref ref="his-eff" text="type-global" />, todo <xref ref="todo-1" text="type-global" />, and touchstone-aside <xref ref="as-touchstone" text="type-global" /> twice <xref ref="as-touchstone" text="title" />.
         </p>
