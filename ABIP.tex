@@ -7,7 +7,7 @@
 \usepackage{gfsdidot}
 \usepackage[T1]{fontenc}
 \usepackage{booktabs}
-\usepackage{underscore}
+\usepackage{underscore,cancel}
 \usepackage{caption}
 \usepackage[within=chapter,chapterlistsgap=6pt]{newfloat}
 \usepackage{tocloft}
@@ -2367,7 +2367,7 @@ Ropes and chains (and beams) can use tension to support (from above) dangling ob
 
 The strap connects the hook to the purse.  We can consider the interaction between the hook and the strap or between the purse and the strap.  We will consider the latter since we don't know anything about the hook.  Considering the forces on the purse, we know that there is a downwards gravitational force of $\deq F_g = (1.36\unit{kg})(9.81\unitfrac{m}{s^2}) = \sig{13.3}{4}{N}$ and that the net force must zero (because the purse is not accelerating). So, the strap must provide an upwards (tension) force.
 \begin{eqnarray*}
-\vec F_T + \vec F_g & = & m \zero{\vec a}{0} \\
+\vec F_T + \vec F_g & = & m \cancelto{0}{\vec a} \\
 \vec F_T + (-\sig{13.3}{4}{N} \jhat) & = & 0\unit N \\
 \vec F_T & = & +\sig{13.3}{4}{N} \jhat
 \end{eqnarray*}
@@ -2406,7 +2406,7 @@ We can further update this by considering the case where \studentB\ pulls the ro
 \begin{figure}
 \hrule\hrule
 \caption{\label{f:firstFBDangle} An updated version of \protect{\autoref{f:firstFBDupdate}}, people pushing a box.}\index{Free-Body Diagrams!Images}
-Again, we can start by drawing a picture of the situation.  The description is the same as it was for \autoref{f:firstFBDupdate} except that \studentB\ pulls at a slight 
+Again, we can start by drawing a picture of the situation.  The description is the same as it was for \autoref{f:firstFBDupdate} except that \studentB\ pulls at a slight
 
 \noindent
 \begin{minipage}[b]{150pt}
@@ -2509,7 +2509,7 @@ First we will consider three simple cases of redirecting the force.  In each of 
 \begin{sample}
 \item\studentA\index{\studentA} decides to hold a box that weighs $20\unit N$ using a pulley-system.  What is the tension in the rope?
 
-Since the mass is in equilibrium, the net force is zero and the tension must balance the weight.  This tells us that the tension in the rope is $20 \unit N$.  
+Since the mass is in equilibrium, the net force is zero and the tension must balance the weight.  This tells us that the tension in the rope is $20 \unit N$.
 
 If the pulley were difficult to turn (had friction) that stickiness could help support the mass and the tension on \studentA's side might be less than $20\unit N$; but since we assumed the pulley to be frictionless, \studentA\ must provide the full $20\unit N$ of tension to the rope.
 \end{sample}
@@ -2550,7 +2550,7 @@ The interesting aspect is that \studentA\ must pull \textit{down} in order to pr
 
 \subsection{Interesting Complications}
 
-\subsubsection{What is the net force on the rope itself?}  
+\subsubsection{What is the net force on the rope itself?}
 The answer to this depends on how complicated you want the answer to be (recall the discussion about effective theories in \autoref{s:effective2}).  Some reasonable answers are:
 \begin{itemize}
 \item If the rope (and the attachments) are static, then the net force on the rope must be zero even while it maintains the tension.  It is also possible that the rope is accelerating, in which case the net force on the rope while it transfers the forces between the objects at each end is whatever is necessary to produce the acceleration $\vec F_\mathrm{net} = m_\mathrm{rope} \vec a_\mathrm{rope}$.
@@ -2835,7 +2835,7 @@ You can see that the upward applied force $(\sig{4.16}{5}{N})$ has to be large e
 \subsection{Translational Equilibrium}
 
 blah blah blah
-\phantomsection\label{ss:transeq} Translational equilibrium: $F_\mathrm{net} = m \zero{a}{0}$.  blah blah blah
+\phantomsection\label{ss:transeq} Translational equilibrium: $F_\mathrm{net} = m \cancelto{0}{a}$.  blah blah blah
 
 \subsection{Static Equilibrium}
 
@@ -3042,7 +3042,7 @@ See \href{https://www.youtube.com/watch?v=sWDi-Xk3rgw}{youtube video} by \href{h
 \subsection{Rotational Equilibrium}
 
 blah blah blah
-\phantomsection\label{ss:roteq} Rotational equilibrium: $\tau_\mathrm{net} = I \zero{\alpha}{0}$.  blah blah blah
+\phantomsection\label{ss:roteq} Rotational equilibrium: $\tau_\mathrm{net} = I \cancelto{0}{\alpha}$.  blah blah blah
 
 \subsection{Static (Rotational) Equilibrium}
 
@@ -3093,12 +3093,12 @@ Can we easily deduce the magnitude of $F_{Nf}$? \ref{A:ladderNf}.
 
 \textbf{How are these related?}  The forces acting on any body are related by static \hyperref[ss:transeq]{translational equilibrium}
 \begin{eqnarray*}
-x: \hspace{.5cm} 0 & = & \zero{F_{gx}}{0} + \zero{F_{Nfx}}{0} + F_{ffx} + F_{Nwx} + \zero{F_{fwx}}{0} \\
-y: \hspace{.5cm} 0 & = & F_{gy} + F_{Nfy} + \zero{F_{ffy}}{0} + \zero{F_{Nwy}}{0} + F_{fwy}
+x: \hspace{.5cm} 0 & = & \cancelto{0}{F_{gx}} + \cancelto{0}{F_{Nfx}} + F_{ffx} + F_{Nwx} + \cancelto{0}{F_{fwx}} \\
+y: \hspace{.5cm} 0 & = & F_{gy} + F_{Nfy} + \cancelto{0}{F_{ffy}} + \cancelto{0}{F_{Nwy}} + F_{fwy}
 \end{eqnarray*}
 and static \hyperref[ss:roteq]{rotational equilibrium}, assuming the pivot point is at the ground, and using the relationship $F_f=\mu F_N$, we find
 \begin{eqnarray*}
-0 & = & \tau_{g} + \zero{\tau_{Nf}}{0} + \zero{\tau_{ff}}{0} + \tau_{Nw} + \tau_{fw} \\
+0 & = & \tau_{g} + \cancelto{0}{\tau_{Nf}} + \cancelto{0}{\tau_{ff}} + \tau_{Nw} + \tau_{fw} \\
 0 & = & \left[ F_g \frac{l}{2} \sin 14.5^\circ \right] + \left[ - F_{Nw} l \sin(75.5^\circ) \right] + \left[ - F_{fw} l \sin(14.5^\circ) \right] \\
 F_{Nw} & = & \left[ F_g \frac{l}{2} \sin 14.5^\circ \right] / \left[  l \sin(75.5^\circ) + \mu_w l \sin(14.5^\circ) \right]
 \end{eqnarray*}
