@@ -1490,7 +1490,7 @@
 
                 <p xml:id="d-atrestinmotion">The rest of this statement is often written a little differently (and less concisely) as <q>an object at rest remains at rest unless acted on by an external force and an object in motion remains in motion unless acted on by an external force.</q>  Since being <xref ref="d-atrest" text="title"><q>at rest</q></xref> is a statement about the velocity<m>(\vec v=0)</m> and being <xref ref="d-motion"><q>in motion</q></xref> is also a statement about the velocity, each of these statements can be understood as saying that
                 <assemblage><p>Forces are those things that cause a change in the velocity.</p></assemblage>
-                In other words, Newton's first law says that without a force, the velocity will not change.  In the discussion of <xref provisional="sss-equilibrium" text="title">equilibrium</xref>, we will note that this is often extended to say that without a <xref provisional="sss-netforce" text="title">net force</xref> the velocity will not change, but that is a special case of <xref provisional="ss-NII" text="title">Newton's second law</xref>.</p>
+                In other words, Newton's first law says that without a force, the velocity will not change.  In the discussion of <xref ref="sss-equilibrium" text="title">equilibrium</xref>, we will note that this is often extended to say that without a <xref provisional="sss-netforce" text="title">net force</xref> the velocity will not change, but that is a special case of <xref provisional="ss-NII" text="title">Newton's second law</xref>.</p>
 
                 </introduction>
 
@@ -1623,7 +1623,7 @@
                         <aside><title>Referenced by</title>
                                 <p>
                                 <xref provisional="se-netF-a" text="type-global" />,
-                                <xref provisional="sss-equilibrium" text="title">Equilibrium</xref>,
+                                <xref ref="sss-equilibrium" text="title">Equilibrium</xref>,
                                 <xref provisional="se-FBD-AB" text="type-global" />,
                                 <xref provisional="f-firstFBD" text="type-global" />,
                                 <xref provisional="d-FBD-AB" text="title">discussion about \ref*{se-FBD-AB}</xref>
@@ -1654,7 +1654,7 @@
                         <aside><title>Referenced by</title>
                                 <p>
                                 <xref provisional="se-netF-m" text="type-global" />,
-                                <xref provisional="sss-equilibrium" text="title">Equilibrium</xref>
+                                <xref ref="sss-equilibrium" text="title">Equilibrium</xref>
                                 </p>
                         </aside>
 
@@ -1673,7 +1673,7 @@
                                         <caption>FBD</caption>
                                         </figure>
                                         </sidebyside>
-                                        <p>In this case, the object is said to be <q><xref provisional="sss-equilibrium" text="title">in equilibrium</xref>.</q></p>
+                                        <p>In this case, the object is said to be <q><xref ref="sss-equilibrium" text="title">in equilibrium</xref>.</q></p>
                                 </statement>
                                 <solution>
                                         <me> \vec F_\mathrm{net} = \vec F_1 + \vec F_2 = \left( 3.0\unit{N} \ihat\right) + \left(-3.0 \unit{N} \ihat\right) = 0.0\unit{N} \ihat </me>
@@ -1681,7 +1681,7 @@
                         </example>
                         <aside><title>Referenced by</title>
                                 <p>
-                                <xref provisional="sss-equilibrium" text="title">Equilibrium</xref>,
+                                <xref ref="sss-equilibrium" text="title">Equilibrium</xref>,
                                 <xref provisional="d-equi">discussion about \ref*{se-equi}</xref>
                                 </p>
                         </aside>
@@ -1885,6 +1885,19 @@
                         <p xml:id="d-usesofFma"><alert>Looking ahead</alert>: Yet another example of using this equation can be seen in many bathrooms.  The scale that people stand on uses a spring (introduced in <xref provisional="ss-scales" text="type-global" /> and discussed in detail in <xref provisional="s-springs" text="type-global" />) to adjust the force provided until your acceleration is zero (placing you in equilibrium) and then tells you the force it needed to balance your weight.</p>
 
                         <p>It will be easier to visualize these ideas when we introduce the tool of a free-body diagram in <xref provisional="sss-FBD" tesxt="type-global" />.</p>
+
+                </subsubsection>
+                <subsubsection xml:id="sss-equilibrium"><title>Equilibrium</title><idx>Equilibrium</idx>
+                <aside><title>Referenced by</title> 
+                        <p>
+                        <xref ref="se-equi" text="type-global" />, 
+                        <xref ref="d-atrestinmotion" text="type-global" >Newton's first law</xref>, 
+                        <xref provisional="d-Fgball" text="type-global" />
+                        </p>
+                </aside>
+
+                        <p>This word can be traced back to Latin and Old English with the prefix <em>equi-</em> for <em>equal</em> and the root <em>libra</em> referring to a <em>pair of scales, as in a balance</em>, such as those depicted in images of the astronomical constellation Libra.  When the scales are equal, they are in equilibrium.  Since the second law asks us to calculate the sum of the forces acting on an object, one of the primary questions is to determine if those forces balance each other.  In <xref ref="se-netFadd" text="type-global" /> and <xref ref="se-netFsub" text="type-global" />, the forces are not balanced, the object <q>is not in equilibrium</q>, and it will be accelerated in a particular direction.  In the <xref ref="se-equi" text="type-global" />, the forces are balanced, the object <q>is in equilibrium</q>, and it will <em>not change</em> its velocity (in accord with the first law).</p>
+                        <assemblage><p>An object in equilibrium has <m>\vec F_\mathrm{net} = 0\unit N</m> and <m>\vec a =0</m>.</p></assemblage>
 
                 </subsubsection>
                 </subsection>
