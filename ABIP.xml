@@ -1090,7 +1090,7 @@
                                 </prelude>
                                 <introduction>
                                         <p>Because \studentC<idx><h sortby="\studentC">\studentC</h></idx> is a pitcher on the local baseball team, \heC\ decides to drop a ball and watch what happens.  You and \studentD<idx><h sortby="\studentD">\studentD</h></idx> decide to join him.  \studentD\ provides a few other objects that can also be dropped: a tennis ball, a hammer, a small Wonder Woman toy, and a broken cell phone.  Some of these are dropped at the same time.</p>
-                                        
+
                                         <p></p>
                                         <observation><p>\studentD\ notices that it is important to release the objects at exactly the same time.</p></observation>
                                         <observation><p>\studentC\ notices that it is important to have the bottoms of the objects line up (rather than the tops of the objects) so that if they travel at the same speed, then they hit at the same time.</p></observation>
@@ -1544,7 +1544,7 @@
                 </ul>
                 </p>
                 <heuristic xml:id="st-Fma"><title>The Story of <m>\vec F_\mathrm{net} =m \vec a</m></title>
-                <statement><todo>Fix <q>Story of [number] [equation]</q>.</todo>
+                <statement>
                 <p>This equation is all about what happens to a specific object, <m>m</m>.  If the object, <m>m</m>, is accelerating in a particular direction, <m>\vec a</m>, then it is because the combination of forces, <m>\vec F_\mathrm{net}</m>, do not entirely cancel each other out.  This also can be expressed as: if the combination of forces, <m>\vec F_\mathrm{net}</m>, do not entirely cancel each other out, then our friend <m>m</m> must be accelerating, <m>\vec a</m>, in a particular direction.  Furthermore the resulting direction of the net force determines the direction of the acceleration.  Connecting the English and the math:</p>
                 <sidebyside>
                 <tabular>
@@ -1582,8 +1582,8 @@
                         <!-- ISBN 0745649742, Found at https://en.wikipedia.org/wiki/Newton_(unit) -->
                         which refers to
                         <url href="http://www.bipm.org/jsp/en/ViewCGPMResolution.jsp?CGPM=9&amp;RES=7">the 7th resolution</url> (Mar, 2017) of
-                        <url href="http://www.bipm.org/jsp/en/ListCGPMResolution.jsp?CGPM=9">the 9th CGPM</url> (Mar, 2017).</fn> 
-                        to name the unit the Newton, such that 
+                        <url href="http://www.bipm.org/jsp/en/ListCGPMResolution.jsp?CGPM=9">the 9th CGPM</url> (Mar, 2017).</fn>
+                        to name the unit the Newton, such that
                         <definition>
                                 <statement><p>The unit of Newton is defined to be the amount of force necessary to accelerate one kilogram by 1 meter-per-second-squared:
                                         <m>1 \unit{N} = 1 \unitfrac{kg \cdot m}{s^2}</m></p>
@@ -1594,12 +1594,13 @@
                                 </notation>
                         </definition>
                         </p>
-                        
+
                 </subsubsection>
                 <subsubsection xml:id="sss-netforce"><title>Calculating the Net Force</title>
                 <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-atrestinmotion">Newton's first law</xref></p></aside>
 
                         <p>The word <q>net</q> that goes with force is here to indicate the total, which is useful to think of as <q>everything collected with the net.</q><fn xml:id="fn-net">Although according to <url href="http://www.etymonline.com/index.php?term=net&amp;allowed_in_frame=0">etymonline.com</url> (Mar, 2017), it is actually from the Old French <em>net</em> for <q>neat</q> or <q>clean</q>, having the sense of trim and elegant.</fn> The intention here is that wherever there are multiple forces acting on a single object, we must combine them as <xref ref="ss-vectors" text="title">vectors</xref> as follows: </p>
+                        <todo>Maybe these should be sidebyside with the figure above the example?</todo>
                         <example xml:id="se-netFadd"><title>Net Force, Vector-Add Same-Direction</title>
                                 <statement>
                                         <sidebyside widths="75% 25%">
@@ -1619,7 +1620,7 @@
                                         <me> \vec F_\mathrm{net} = \vec F_1 + \vec F_2 = \left( 5.0\unit{N} \ihat\right) + \left( 4.0 \unit{N} \ihat\right) = +9.0\unit{N} \ihat </me>
                                 </solution>
                         </example>
-                        <aside><title>Referenced by</title> 
+                        <aside><title>Referenced by</title>
                                 <p>
                                 <xref provisional="se-netF-a" text="type-global" />,
                                 <xref provisional="sss-equilibrium" text="title">Equilibrium</xref>,
@@ -1687,18 +1688,18 @@
 
                         <p><alert>Looking ahead:</alert> The images included in these examples will eventually be referred to as <q><xref provisional="sss-FBD" text="title">free-body diagrams</xref><idx><h>Free-Body Diagrams</h><h>Images</h></idx>,</q> but for now, you can just consider them images of the forces acting on the bodies.</p>
 
-                        <p xml:id="d-netforce">Next, we should do a couple of examples that show the math for situations with forces in two dimensions.   
+                        <p xml:id="d-netforce">Next, we should do a couple of examples that show the math for situations with forces in two dimensions.
                         The first, <xref ref="ex-2Dforce" text="type-global" />, has one force in the <m>x</m>-direction and another in the <m>y</m>-direction.
                         The second, <xref ref="ex-2Dforce2" text="type-global"/>, has one force in the <m>x</m>-direction and the other in the second quadrant.
                         </p>
 
-                        <exercise xml:id="ex-2Dforce"><title>An object is pushed by perpendicular forces.</title>
+                        <exercise xml:id="ex-2Dforce"><title>An object is pushed by perpendicular forces</title>
                         <statement>
                                 <p>A <m>2.0\unit{kg}</m> mass is being pushed north with <m>5.0\unit{N}</m> and east with <m>4.0 \unit{N}</m>.  What is the net force?</p>
                         </statement>
                         <solution>
                                 <p>Since we have multiple forces acting on a mass to cause an acceleration, it should be clear (recall the <xref ref="st-Fma" text="title">story</xref>) that we need to use Newton's second law and find the net force in order to compute the acceleration.  We will, as usual, start with a free-body diagram (at right).  This example is made easier because the forces happen to be at right angles and so finding their <m>x</m> and <m>y</m> components is not difficult. By adding the <m>x</m>-components and separately adding the <m>y</m>-components, we have found the components of the net force.  From there, we can easily find the magnitude and direction of the net force.
-                                <!-- 
+                                <!--
 \fbox{\begin{minipage}{1.5in}
 \begin{FBD}{10}{15}{15}{40}{object}
 \oneup{50}{<m>5\unit N</m>}{black}
@@ -1717,8 +1718,8 @@
                                         -->
                                 <me> \magdir{+4\unit N}{+5\unit{N}}{F_\mathrm{net}}{\sig{6.4}{0}{N}}{\theta}{\sig{51}{.3}{^\circ}}{N of E} </me>
                                 (The direction can be stated as <m>\theta = 51^\circ \textrm{N of E}</m> or as <m>\phi = 39^\circ\textrm{E of N}</m>.)
-                                <xref provisional="ex-2Dfa" text="type-global" /> will use this calculation to find the acceleration.
-                                </p> 
+                                <xref ref="ex-2Dfa" text="type-global" /> will use this calculation to find the acceleration.
+                                </p>
                         </solution>
                         <postlude>
                                 <sidebyside widths="50% 50%" haligns="center right">
@@ -1730,7 +1731,7 @@
                         </postlude>
                         </exercise>
 
-                        <exercise xml:id="ex-2Dforce2"><title>Three forces act on an object.</title>
+                        <exercise xml:id="ex-2Dforce2"><title>Three forces act on an object</title>
                                 <statement>
                                         <p>A <m>2.0\unit{kg}</m> mass is being pushed northwest with <m>5.0\unit{N}</m> at an angle <m>63.4^\circ\textrm{N of W}</m>, southwest with <m>6.0\unit{N}</m> at an angle of <m>21.8^\circ\textrm{S of W}</m>, and east with <m>4.0 \unit{N}</m>.  What is the net force?</p>
                                 </statement>
@@ -1759,7 +1760,7 @@
                                                 \magdir{-\sig{3.8}{1}{N}}{+\sig{2.2}{4}{N}}{F_\mathrm{net}}{\sig{4.4}{2}{N}}{\theta}{\sig{30}{.5}{^\circ}}{N of W}
                                         </me>
                                         (The direction can be stated as <m>\theta = 31^\circ \textrm{N of W}</m> or as <m>\phi = 60^\circ\textrm{W of N}</m>.)
-                                        <xref provisional="ex-2Dfa2\" text="type-global" /> will use this calculation to find the acceleration.
+                                        <xref ref="ex-2Dfa2" text="type-global" /> will use this calculation to find the acceleration.
                                         </p>
                                 </solution>
                                 <postlude>
@@ -1773,9 +1774,126 @@
                         </exercise>
 
                 </subsubsection>
+                <subsubsection><title>Using the Net Force to Calculate Other Quantities</title>
+
+                        <p>Generally, the point of finding the net force is that it causes an object to change its velocity. Let's also consider a few simple examples of this calculation.</p>
+                        
+                        <example xml:id="se-netF-a"><title>The net force causes acceleration</title>
+                        <aside><title>Referenced by</title> 
+                                <p>
+                                <xref ref="d-mfa">finding <m>m</m> from <m>F=ma</m></xref>,
+                                <xref provisional="se-FBD-AB" text="type-global" />,
+                                <xref provisional="f-firstFBD" text="type-global" />,
+                                <xref provisional="d-FBD-AB" text="title">discussion about \ref*{se-FBD-AB}</xref>,
+                                <xref provisional="se-weightA" text="type-global" />,
+                                <xref provisional="A-netF-a" text="type-global" />,
+                                <xref provisional="f-firstFBDupdate" text="type-global" />
+                                </p>
+                        </aside>
+                        <statement>
+                                <p>If the forces in <xref ref="se-netFadd" text="type-global" /><todo>As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!)</todo> are applied to an object with mass <m>2.0\unit{kg}</m>, then it will accelerate at the rate of
+                                <me> \vec a =\frac{\vec F_\mathrm{net}}{m} = \frac{+(9.0\unit N)\ihat}{2.0 \unit{kg}} = 4.5\unitfrac{N}{kg} \ihat = 4.5\unitfrac{kg \cdot m}{s^2 \cdot kg} \ihat \ = \ 4.5 \unitfrac{m}{s^2} \ihat </me>
+                                which (recall <xref ref="s-EOM" text="type-global" />), after acting for <m>1.6\unit{s}</m> on an object originally at rest, would result in a final speed of
+                                <me> v_f = (0\unitfrac{m}{s}) + (+4.5\unitfrac{m}{s^2})(1.6\unit{s}) = 7.2 \unitfrac{m}{s} </me>
+                                </p>
+                        </statement>
+                        </example>
+                        <p>We can do this same kind of procedure for the case when forces are in two dimensions.<todo>Merge <xref ref="ex-2Dfa" text="type-global" /> and <xref ref="ex-2Dfa2" text="type-global" />.  Also reference the example here.</todo>
+                        </p>
+                        <exercise xml:id="ex-2Dfa"><title>Accelerating a box from <m>\vec F_\mathrm{net}</m></title>
+                        <statement>
+                                <p>A <m>2.0\unit{kg}</m> mass is being pushed north with <m>5.0\unit{N}</m> and east with <m>4.0 \unit{N}</m>.  What is the acceleration?</p>
+                                <!--
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{40}{object}
+\oneup{50}{<m>5\unit N</m>}{lightgray}
+\oneri{40}{<m>4\unit N</m>}{lightgray}
+\oneur{38}{48}{4}{5}{<m>F_\mathrm{net}</m>}{black}
+\end{FBD}
+\end{minipage}}
+                                        -->
+                        </statement>
+                        <solution>
+                                <p><xref ref="ex-2Dforce" text="type-global"/> already found the net force to be
+                                <m> \vec F_\mathrm{net} = 4.0\unit{N} \ihat + 5.0\unit{N} \jhat </m>
+                                which is <m>F_\mathrm{net}=6.4\unit N</m> at <m>51^\circ</m> N of E.
+                                What remains is to find the acceleration.  Since this is a vector, we can either find the components from the components of the net force
+                                <me> 
+                                        \vec a =\frac{\vec F_\mathrm{net}}{m} = \frac{4.0\unit{N} \ihat + 5.0\unit{N} \jhat}{2.0\unit{kg}}  = 2.0\unitfrac{m}{s^2} \ihat + 2.5\unitfrac{m}{s^2} \jhat 
+                                </me>
+                                or we can use the magnitude of the net force to find the magnitude of the acceleration
+                                <m> a = \frac{6.4\unit N}{2.0\unit{kg}} = 3.2 \unitfrac{m}{s^2} </m>
+                                and know that the direction of the acceleration is the same as the acceleration of the net force: <m>51^\circ</m> N of E.
+                                </p>
+                                
+                                <p>You should notice that you can also use the components of the acceleration to find the magnitude and direction of the acceleration.
+                                <me>\magdir{+2.0\unitfrac{m}{s^2}}{+2.5\unitfrac{m}{s^2}}{a}{\sig{3.2}{0}{N}}{\theta}{\sig{51}{}{^\circ}}{N of E}</me>
+                                </p>
+                        </solution>
+                        </exercise>
+
+                        <exercise xml:id="ex-2Dfa2"><title>Accelerating a box pushed by three forces</title>
+                        <statement>
+                                <p>A <m>2.0\unit{kg}</m> mass is being pushed northwest with <m>5.0\unit{N}</m> at an angle <m>63.4^\circ\textrm{N of W}</m>, southwest with <m>6.0\unit{N}</m> at an angle of <m>21.8^\circ\textrm{S of W}</m>, and east with <m>4.0 \unit{N}</m>.  What is the acceleration?</p>
+                                <!--
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{40}{object}
+%\oneup{50}{<m>5\unit N</m>}{black}
+%\put(24,56){\vector(-1,2){22.36}}
+%\put(0,102){\color{black} \tiny <m>5\unit N</m>}
+\oneul{22}{48}{-1}{2}{<m>5 \unit N</m>}{lightgray}
+\onedl{58}{22}{-5}{-2}{<m>6 \unit N</m>}{lightgray}
+\oneri{40}{<m>4\unit N</m>}{lightgray}
+\oneul{53}{22}{-5}{3}{<m>F_\mathrm{net}</m>}{black}
+\end{FBD}
+\end{minipage}}
+                                        -->
+                        </statement>
+                        <solution>
+                                <p><xref ref="ex-2Dforce2" text="type-global" /> already found the net force to be
+                                <m> \vec F_\mathrm{net} = 3.8\unit{N} \ihat + 2.2\unit{N} \jhat </m>
+                                which is <m>F_\mathrm{net}=4.4\unit N</m> at <m>31^\circ</m> N of W.
+                                What remains is to find the acceleration.  Since this is a vector, we can either find the components from the components of the net force
+                                <me>
+                                        \vec a =\frac{\vec F_\mathrm{net}}{m} = \frac{3.8\unit{N} \ihat + 2.2\unit{N} \jhat}{2.0\unit{kg}}  = 1.9\unitfrac{m}{s^2} \ihat + 1.1\unitfrac{m}{s^2} \jhat
+                                </me>
+                                or we can use the magnitude of the net force to find the magnitude of the acceleration
+                                <m> a = \frac{4.4\unit N}{2.0\unit{kg}} = 2.2 \unitfrac{m}{s^2} </m>
+                                and know that the direction of the acceleration is the same as the acceleration of the net force: <m>31^\circ</m> N of W.
+                                </p>
+
+                                <p>You should notice that you can also use the components of the acceleration to find the magnitude and direction of the acceleration.
+                                <me> \magdir{+1.9\unitfrac{m}{s^2}}{+1.1\unitfrac{m}{s^2}}{a}{\sigfrac{2.2}{}{m}{s^2}}{\theta}{\sig{31}{}{^\circ}}{N of W} </me>
+                                </p>
+                        </solution>
+                        </exercise>
+
+                        <p xml:id="d-mfa">In <xref ref="se-netF-a" text="type-global" />, we used the forces to find the acceleration.  It is also possible to use the forces to find the mass of an object, as follows:</p>
+                        <example xml:id="se-netF-m"><title>Finding the mass of a box from its force and acceleration</title>
+                        <statement>
+                                <p>If the forces in <xref ref="se-netFsub" text="type-global" /> are applied to an object with unknown mass and produce an acceleration of <m>3.2\unitfrac{m}{s^2}</m>, then what is the mass of the object?</p>
+                        </statement>
+                        <solution>
+                                <p>Naively, one might consider <m>\deq m = \frac{\vec F_\mathrm{net}}{\vec a}</m>, but it does not make mathematical sense to <xref ref="d-dividevectors">divide vectors</xref>.  In this case, you <em>must</em> consider the magnitudes of force and acceleration, knowing that their directions are the same. (We are <em>not</em> <q>cancelling</q> the directions.)
+                                <me> 
+                                        m =\frac{F_\mathrm{net}}{a} = \frac{9.0\unit N}{3.2 \unitfrac{m}{s^2}} = \sigfrac{2.8}{1}{N \cdot s^2}{m} = 2.8\unitfrac{kg \cdot m \cdot s^2}{s^2 \cdot m} \ = \ 2.8 \unit{kg}
+                                </me>
+                                </p>
+                        </solution>
+                        </example>
+
+                        <p xml:id="d-usesofFma"><alert>Looking ahead</alert>: Yet another example of using this equation can be seen in many bathrooms.  The scale that people stand on uses a spring (introduced in <xref provisional="ss-scales" text="type-global" /> and discussed in detail in <xref provisional="s-springs" text="type-global" />) to adjust the force provided until your acceleration is zero (placing you in equilibrium) and then tells you the force it needed to balance your weight.</p>
+
+                        <p>It will be easier to visualize these ideas when we introduce the tool of a free-body diagram in <xref provisional="sss-FBD" tesxt="type-global" />.</p>
+
+                </subsubsection>
                 </subsection>
 
         </section>
+        <conclusion>
+        <p><date>(Revised August 15, 2017)</date></p>
+        <p><date>(Compiled <today />)</date></p>
+        </conclusion>
 
 
 </chapter>
