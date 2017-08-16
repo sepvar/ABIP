@@ -1900,6 +1900,67 @@
                         <assemblage><p>An object in equilibrium has <m>\vec F_\mathrm{net} = 0\unit N</m> and <m>\vec a =0</m>.</p></assemblage>
 
                 </subsubsection>
+                <subsubsection xml:id="sss-NIItogether"><title>How the Laws Work Together</title>
+                <aside><title>Referenced by</title> <p><xref ref="sss-NItogether" /></p></aside>
+
+                        <p>When forces act on an object, Newton's second law applies, so we usually start with the second law.  If those forces combine to give a net force of zero, such that the object is in equilibrium, then Newton's first law applies.  If we also care about the person or thing pushing, then the third law also applies.</p>
+
+                        <p>To better understand how the first and second laws work together, <xref provisional="irl-NI" text="type-global" /> provides some activities that you can do or consider in order to think about the patterns you can see when you are or aren't pushing on objects.  <xref ref="cyoa-NI" text="type-global" /> will help you think through some of the consequences of the first and second law.  When you are ready to solve some problems, you can jump to <xref provisional="s-NewtonExamples" text="type-global" />, but some of those examples will also reference Newton's third law.</p>
+
+                        <exploration xml:id="cyoa-NI"><title>Out of gas</title>
+                                <statement>
+                                        <p>On a long road trip with your friend \studentB<idx><h sortby="\studentB">\studentB</h></idx>, your car starts to sputter as it runs out of gas shortly before arriving in a new town.  You see a sign for a gas station in the distance and have to decide what to do.  You and \studentB\ can think of three options.
+                                        <ol label="Plan A">
+                                                <li xml:id="c-parkandwalk"><p>Pull over, park the car, walk to the gas station, buy a gas can, fill it up, carry it back to the car, and drive on!   If you follow this plan, then read <xref ref="a-parkandwalk" text="type-local" />.</p></li>
+                                                <li xml:id="c-coastindrive"><p>Leave the car in drive, continue holding the gas-pedal down until there is absolutely no gas, and hope against all hope that you get the car to the gas station so that nobody needs to carry a heavy gas can. If you follow this plan, then read <xref ref="a-coastindrive" text="type-local" />.</p></li>
+                                                <li xml:id="c-coastinneutral"><p>Speed up to just over the speed limit, put the car in neutral, turn on your blinking hazard-lights, coast as far as you can possibly coast, and hope against all hope that you get the car to the gas station so that nobody needs to carry a heavy gas can. If you follow this plan, then read <xref ref="a-coastinneutral" text="type-local" />.</p></li>
+                                        </ol>
+                                        </p>
+                                </statement><todo>I like <q>answer</q> better, but it doesn't fit.  <q>hint</q> fits, but I don't like it.  I can't figure out how to extend that line.  sidebyside hides the answers.</todo>
+                                <answer xml:id="a-parkandwalk">
+                                        <p>Just as planned, you pull over and park the car.  \studentB<idx><h sortby="\studentB">\studentB</h></idx> suggests one of you stays with the car, probably because \heB\ has physics homework to do.  If you decide to separate, read <xref ref="a-nogas" text="type-local" />.  If you decide to journey together, read <xref ref="a-intosunset" text="type-local" />.</p>
+                                </answer>
+                                <answer xml:id="a-coastindrive">
+                                        <p>As soon as you decide to do this, the gas runs out.  Thinking you can make it to the gas station, you take your foot off of the gas pedal.  You slow down fairly quickly and get nervous that you might get rear-ended.  You turn on the hazard-lights.  After about a minute you are travelling <m>30 \unit{mph}</m> and you pass the time by working out <xref ref="ex-slowcar" text="type-local" />.  People are honking at you as they try to pass.  \studentB<idx><h sortby="\studentB">\studentB</h></idx> turns to you and asks you why you are going so slow.  If you start a discussion about Newton's First Law, then go to <xref ref="a-NIdrive" text="type-local" />.  If you get embarrassed and decide to pull over, then read <xref ref="a-parkandwalk2" text="type-local" />.</p>
+                                </answer>
+                                <answer xml:id="a-coastinneutral">
+                                        <p>You speed up to <m>60 \unit{mph}</m> before the gas runs out and then you quickly pop the car into neutral.  You slow down gradually and, in an effort to not get rear-ended, you cleverly turn on the hazard-lights.  After about a minute you are travelling <m>52 \unit{mph}</m> and you pass the time by working out <xref ref="ex-coasting" text="type-global"/>).  After <m>2\unit{min}</m>, you are travelling <m>43 \unit{mph}</m> and people are getting impatient as they try to pass.  After <m>2.79\unit{min}</m>, you triumphantly coast into the gas station at a comfortable speed of <m>36.7\unit{mph}</m>.  \studentB<idx><h sortby="\studentB">\studentB</h></idx> is so happy, \heB\ buys you a full tank of gas and the two of you start a discussion about Newton's First Law while pumping the gas.  Please read <xref ref="a-NIresult" text="type-local" />.</p>
+                                </answer>
+                                <answer xml:id="a-NIdrive">
+                                        <p>After some discussion, you and \studentB<idx><h sortby="\studentB">\studentB</h></idx> realize that when the car is in drive, the transmission (the part of the car that converts how-fast-the-engine-spins to how-fast-the-axel-and-wheels-turn) is connected to the axel, which means that the rolling wheels are trying to turn the engine parts as well as the wheels themselves.  The engine parts have grease and oil, but still take a lot of energy to turn.  This causes friction, which dissipates energy and, more importantly, exerts a backwards force on the spinning wheels.  Your car is not being described by Newton's First Law, which requires there to be no force applied.  Instead your car is being described by Newton's Second Law and the force is changing the velocity to cause you to go slower.  It only takes the car <m>2.2\unit{min}</m> to stop and you still have to walk to the gas station.  \studentB\ laments <q>If only there were a way to reduce the force on the axel<ellipsis /></q> If it occurs to you to speculate about putting the car in neutral when the gas ran out, then imagine reading <xref ref="a-coastinneutral" text="type-local" />.  If you stop talking and walk to the gas station, then read <xref ref="a-intosunset2" text="type-local" />.</p>
+                                </answer>
+                                <answer xml:id="a-nogas">
+                                        <p>You leave \studentB<idx><h sortby="\studentB">\studentB</h></idx> in the car and walk the 45 minutes to the gas station.  You buy a gas can, fill it up, and start to carry it back to the car.  It is very heavy and you notice vultures circling overhead.  You hope you survive this.  It might have been a better idea to bring \studentB\ with you to share the burden.  You stumble once, and then again.  You swear to be more cautious about estimating your gas consumption.  After walking for what seems like hours and stumbling back to the car, you find \studentB\ very excited. \HeB\ declares that \heB\ has invented a time machine so you can go back to the <xref ref="cyoa-NI" text="title">adventure</xref> and start over to learn something about Newton's First Law!</p>
+                                </answer>
+                                <answer xml:id="a-parkandwalk2">
+                                        <p>You pull over and park the car.  \studentB<idx><h sortby="\studentB">\studentB</h></idx> suggests one of you stays with the car, probably because \heB\ has physics homework to do.  If you decide to separate, read <xref ref="a-nogas2" text="type-local" />.  If you decide to journey together, read <xref ref="a-intosunset" text="type-local" />.</p>
+                                </answer>
+                                <answer xml:id="a-intosunset">
+                                        <p>Everything goes as planned.  You drive off into the sunset sadly ignorant of the physics you might have learned. 
+                                        <alert>The end!</alert></p>
+                                </answer>
+                                <answer xml:id="a-NIresult">
+                                        <p>During the discussion, you and \studentB<idx><h sortby="\studentB">\studentB</h></idx> realize that the rolling wheels and the spinning axel are still connected to the not-spinning frame of the car.  While this causes less friction than if the car were in drive, there is still some friction, which dissipates energy and, more importantly, exerts a backwards force on the spinning wheels.  Your car is not being described by Newton's First Law, which requires there to be no force applied.  Instead your car is being described by Newton's Second Law and the force is changing the velocity to cause you to go slower.  You finish getting gas and drive on to many happy adventures. 
+                                        <alert>The end!</alert></p>
+                                </answer>
+                                <answer xml:id="a-nogas2">
+                                        <p>You leave \studentB<idx><h sortby="\studentB">\studentB</h></idx> in the car and walk the 31 minutes to the gas station.  You buy a gas can, fill it up, and start to carry it back to the car.  It is very heavy and you notice vultures circling overhead.  You hope you survive this.  It might have been a better idea to bring \studentB\ with you to share the burden.  You stumble once, and then again.  You swear to be more cautious about estimating your gas consumption.  After walking for what seems like hours and stumbling back to the car, you find \studentB\ very excited. \HeB\ declares that \heB\ has invented a time machine so you can go back to the <xref ref="cyoa-NI" text="title">adventure</xref> and start over to learn something about Newton's First Law!</p>
+                                </answer>
+                                <answer xml:id="a-intosunset2">
+                                        <p>You and \studentB<idx><h sortby="\studentB">\studentB</h></idx> happily walk the 25 minutes to the gas station, discussing and working out physics problems the whole way.  You buy a gas can, fill it up, and share the burden of carrying a heavy gas can.  You return to the car, add gas, and drive on to many happy adventures.  
+                                        <alert>The end!</alert></p>
+                                </answer>
+                                <postlude>
+                                        <sidebyside widths="50% 50%" haligns="center right">
+                                                <p></p>
+                                                <tabular halign="right"><row><cell halign="right">
+                                                        Return to: <xref provisional="sss-NIItogether" text="type-global" />
+                                                </cell></row></tabular>
+                                        </sidebyside>
+                                </postlude>
+                        </exploration>
+
+                </subsubsection>
                 </subsection>
 
         </section>
