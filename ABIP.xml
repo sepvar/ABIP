@@ -76,13 +76,20 @@
 
         </macros>
 
-        <latex-image-preamble>
 <!--
         \usepackage{html,hmwk}
+        \usepackage{tikz}
         -->
+        <latex-image-preamble>
         \usepackage{color}
         \usepackage{graphicx}
         \usepackage{xpicture}
+        \usepackage{pgfplots}               % loads tikz package
+        \usepackage{smartdiagram}           % for a circular diagram
+        \pgfplotsset{axis x line = middle,
+                     axis y line = middle}
+        \usetikzlibrary{backgrounds}
+        \usetikzlibrary{arrows,matrix}
         </latex-image-preamble>
 
         <latex-preamble>
@@ -94,6 +101,7 @@
                 <package>xpicture</package>
         -->
                 <package>xcolor</package>
+                <package>coordsys</package>
         </latex-preamble>
 
         <cross-references text="global" />
@@ -629,12 +637,11 @@
 
                 <p>[Quick review of parameters and variables of <m>y=mx+b</m> and <m>y=ax^2+bx+c</m>.]</p>
 
-                <figure>
+                <figure xml:id="f-parabola" >
                         <caption>A random parabola</caption>
-                        <image xml:id="f-parabola">
+                        <image xml:id="i-parabola" source="images/i-parabola.pdf" width="50%">
                         <description>This is presumably for text readers: This is a place-holder for an image of a parabola, mostly for me to indicate that I can create interesting figures with <latex />.</description>
                         <latex-image-code>
-                                \begin{center}
                                 \setlength{\unitlength}{1cm}
                                 \begin{Picture}(-2.5,-5.5)(3.5,3.5)
                                 \cartesiangrid(-2,-5)(3,3)
@@ -643,7 +650,6 @@
                                 %\qbezier(-1,-10.405)(0.612,15.075)(2.223,-10.405)
                                 \qbezier(-0.5,-3.726)(0.612,8.396)(1.723,-3.726)
                                 \end{Picture}
-                                \end{center}
                         </latex-image-code>
                         </image>
                 </figure>
@@ -667,79 +673,52 @@
                         <introduction>
                         <figure xml:id="f-lines">
                                 <caption><latex /> lines and vectors.  This will be deleted, but is here for reference.</caption>
-                                <image>
+                                <image xml:id="i-lines" source="images/i-lines.pdf" width="75%">
                                 <description>This shows the possible angles <latex /> can draw.</description>
                                 <latex-image-code>
-                                        \begin{picture}(300,500)(0,0)
-                                        \put(0,0){\line(1,0){300}} \put(301,-2){(1,0) $0^\circ$}
-                                        \put(0,0){\line(6,1){300}} \put(301,48){(6,1) $9.46^\circ$}
-                                        \put(0,0){\line(5,1){300}} \put(301,58){(5,1) $11.31^\circ$}
-                                        \put(0,0){\line(4,1){300}} \put(301,73){(4,1) $14.04^\circ$}
-                                        \put(0,0){\line(3,1){300}} \put(301,98){(3,1) $18.43^\circ$}
-                                        \put(0,0){\line(2,1){300}} \put(301,148){(2,1) $26.57^\circ$}
-                                        \put(0,0){\line(1,1){250}} \put(251,248){(1,1) $45^\circ$}
-                                        %\put(0,0){\line(6,2){300}} \put(301,98){(6,2) $18.43^\circ$}
-                                        \put(0,0){\line(5,2){300}} \put(301,118){(5,2) $21.8^\circ$}
-                                        %\put(0,0){\line(4,2){300}} \put(301,148){(4,2) $26.57^\circ$}
-                                        \put(0,0){\line(3,2){300}} \put(301,198){(3,2) $33.69^\circ$}
-                                        %\put(0,0){\line(2,2){250}} \put(251,248){(2,2) $45^\circ$}
-                                        \put(0,0){\line(1,2){171}} \put(172,340){(1,2) $63.43^\circ$}
-                                        %\put(0,0){\line(6,3){300}} \put(301,148){(6,3) $26.57^\circ$}
-                                        \put(0,0){\line(5,3){300}} \put(301,178){(5,3) $30.96^\circ$}
-                                        \put(0,0){\line(4,3){300}} \put(301,223){(4,3) $36.87^\circ$}
-                                        %\put(0,0){\line(3,3){250}} \put(251,248){(3,3) $45^\circ$}
-                                        \put(0,0){\line(2,3){204}} \put(205,304){(2,3) $56.31^\circ$}
-                                        \put(0,0){\line(1,3){128}} \put(129,382){(1,3) $71.57^\circ$}
-                                        %\put(0,0){\line(6,4){300}} \put(301,198){(6,4) $33.69^\circ$}
-                                        \put(0,0){\line(5,4){300}} \put(301,238){(5,4) $38.66^\circ$}
-                                        %\put(0,0){\line(4,4){250}} \put(251,248){(4,4) $45^\circ$}
-                                        \put(0,0){\line(3,4){218}} \put(219,288.666666666667){(3,4) $53.13^\circ$}
-                                        %\put(0,0){\line(2,4){171}} \put(172,340){(2,4) $63.43^\circ$}
-                                        \put(0,0){\line(1,4){101}} \put(102,402){(1,4) $75.96^\circ$}
-                                        \put(0,0){\line(6,5){300}} \put(301,248){(6,5) $39.81^\circ$}
-                                        %\put(0,0){\line(5,5){250}} \put(251,248){(5,5) $45^\circ$}
-                                        \put(0,0){\line(4,5){225}} \put(226,279.25){(4,5) $51.34^\circ$}
-                                        \put(0,0){\line(3,5){192}} \put(193,318){(3,5) $59.04^\circ$}
-                                        \put(0,0){\line(2,5){146}} \put(147,363){(2,5) $68.2^\circ$}
-                                        \put(0,0){\line(1,5){84}} \put(85,418){(1,5) $78.69^\circ$}
-                                        %\put(0,0){\line(6,6){250}} \put(251,248){(6,6) $45^\circ$}
-                                        \put(0,0){\line(5,6){230}} \put(231,264){(5,6) $50.19^\circ$}
-                                        %\put(0,0){\line(4,6){204}} \put(205,304){(4,6) $56.31^\circ$}
-                                        %\put(0,0){\line(3,6){171}} \put(172,340){(3,6) $63.43^\circ$}
-                                        %\put(0,0){\line(2,6){128}} \put(129,382){(2,6) $71.57^\circ$}
-                                        \put(0,0){\line(1,6){71}} \put(72,434){(1,6) $80.54^\circ$}
-                                        %
-                                        \put(0,0){\line(0,1){450}} \put(-5,451){(0,1) $90^\circ$}
-                                        %
-                                        %
-                                        %
-                                        \put(0,0){\vector(1,0){225}}
-                                        \put(0,0){\vector(6,1){221.9}}
-                                        \put(0,0){\vector(5,1){220.6}}
-                                        \put(0,0){\vector(4,1){218.3}}
-                                        \put(0,0){\vector(3,1){213.5}}
-                                        \put(0,0){\vector(5,2){208.9}}
-                                        \put(0,0){\vector(2,1){201.2}}
-                                        \put(0,0){\vector(5,3){192.9}}
-                                        \put(0,0){\vector(3,2){187.2}}
-                                        \put(0,0){\vector(4,3){180}}
-                                        \put(0,0){\vector(5,4){175.7}}
-                                        \put(0,0){\vector(6,5){172.8}}
-                                        \put(0,0){\vector(1,1){159.1}}
-                                        \put(0,0){\vector(5,6){144}}
-                                        \put(0,0){\vector(4,5){140.6}}
-                                        \put(0,0){\vector(3,4){135}}
-                                        \put(0,0){\vector(2,3){124.8}}
-                                        \put(0,0){\vector(3,5){115.8}}
-                                        \put(0,0){\vector(1,2){100.6}}
-                                        \put(0,0){\vector(2,5){83.6}}
-                                        \put(0,0){\vector(1,3){71.2}}
-                                        \put(0,0){\vector(1,4){54.6}}
-                                        \put(0,0){\vector(1,5){44.1}}
-                                        \put(0,0){\vector(1,6){37}}
-                                        \put(0,0){\vector(0,1){225}}
-                                        %
-                                        \end{picture}
+                                        <![CDATA[
+                                        %>
+                                        \begin{tikzpicture}
+                                                \draw [<->, rounded corners, thick, gray] (10,0) -- (0,0) --(0,10);
+                                                \draw [lightgray] (0,6) arc [radius=6, start angle=90, end angle=0];
+                                                \draw [lightgray] (9,1) arc [radius=17, start angle=-10, end angle=52];
+                                                \draw [->] (0,0) -- (5.92,0.99); \draw (0,0) -- (9.08,1.51);  \node [right] at (9.08,1.51) {(6,1) $9.46^\circ$};
+                                                \draw [->] (0,0) -- (5.88,1.18); \draw (0,0) -- (9.12,1.82);  \node [right] at (9.12,1.82) {(5,1) $11.31^\circ$};
+                                                \draw [->] (0,0) -- (5.82,1.46); \draw (0,0) -- (9.18,2.29);  \node [right] at (9.18,2.29) {(4,1) $14.04^\circ$};
+                                                \draw [->] (0,0) -- (5.69,1.9); \draw (0,0) -- (9.24,3.08);  \node [right] at (9.24,3.08) {(3,1) $18.43^\circ$};
+                                                % \draw [->] (0,0) -- (5.69,1.9); \draw (0,0) -- (9.24,3.08);  \node [right] at (9.24,3.08) {(6,2) $18.43^\circ$};
+                                                \draw [->] (0,0) -- (5.57,2.23); \draw (0,0) -- (9.26,3.7);  \node [right] at (9.26,3.7) {(5,2) $21.8^\circ$};
+                                                \draw [->] (0,0) -- (5.37,2.68); \draw (0,0) -- (9.25,4.62);  \node [right] at (9.25,4.62) {(2,1) $26.57^\circ$};
+                                                % \draw [->] (0,0) -- (5.37,2.68); \draw (0,0) -- (9.25,4.62);  \node [right] at (9.25,4.62) {(4,2) $26.57^\circ$};
+                                                % \draw [->] (0,0) -- (5.37,2.68); \draw (0,0) -- (9.25,4.62);  \node [right] at (9.25,4.62) {(6,3) $26.57^\circ$};
+                                                \draw [->] (0,0) -- (5.14,3.09); \draw (0,0) -- (9.19,5.51);  \node [right] at (9.19,5.51) {(5,3) $30.96^\circ$};
+                                                \draw [->] (0,0) -- (4.99,3.33); \draw (0,0) -- (9.12,6.08);  \node [right] at (9.12,6.08) {(3,2) $33.69^\circ$};
+                                                % \draw [->] (0,0) -- (4.99,3.33); \draw (0,0) -- (9.12,6.08);  \node [right] at (9.12,6.08) {(6,4) $33.69^\circ$};
+                                                \draw [->] (0,0) -- (4.8,3.6); \draw (0,0) -- (9.02,6.77);  \node [right] at (9.02,6.77) {(4,3) $36.87^\circ$};
+                                                \draw [->] (0,0) -- (4.69,3.75); \draw (0,0) -- (8.95,7.16);  \node [right] at (8.95,7.16) {(5,4) $38.66^\circ$};
+                                                \draw [->] (0,0) -- (4.61,3.84); \draw (0,0) -- (8.9,7.42);  \node [right] at (8.9,7.42) {(6,5) $39.81^\circ$};
+                                                \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(1,1) $45^\circ$};
+                                                % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(2,2) $45^\circ$};
+                                                % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(3,3) $45^\circ$};
+                                                % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(4,4) $45^\circ$};
+                                                % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(5,5) $45^\circ$};
+                                                % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(6,6) $45^\circ$};
+                                                \draw [->] (0,0) -- (3.84,4.61); \draw (0,0) -- (8.2,9.85);  \node [right] at (8.2,9.85) {(5,6) $50.19^\circ$};
+                                                \draw [->] (0,0) -- (3.75,4.69); \draw (0,0) -- (8.1,10.12);  \node [right] at (8.1,10.12) {(4,5) $51.34^\circ$};
+                                                \draw [->] (0,0) -- (3.6,4.8); \draw (0,0) -- (7.92,10.56);  \node [right] at (7.92,10.56) {(3,4) $53.13^\circ$};
+                                                \draw [->] (0,0) -- (3.33,4.99); \draw (0,0) -- (7.57,11.35);  \node [right] at (7.57,11.35) {(2,3) $56.31^\circ$};
+                                                % \draw [->] (0,0) -- (3.33,4.99); \draw (0,0) -- (7.57,11.35);  \node [right] at (7.57,11.35) {(4,6) $56.31^\circ$};
+                                                \draw [->] (0,0) -- (3.09,5.14); \draw (0,0) -- (7.22,12.03);  \node [right] at (7.22,12.03) {(3,5) $59.04^\circ$};
+                                                \draw [->] (0,0) -- (2.68,5.37); \draw (0,0) -- (6.57,13.13);  \node [right] at (6.57,13.13) {(1,2) $63.43^\circ$};
+                                                % \draw [->] (0,0) -- (2.68,5.37); \draw (0,0) -- (6.57,13.13);  \node [right] at (6.57,13.13) {(2,4) $63.43^\circ$};
+                                                % \draw [->] (0,0) -- (2.68,5.37); \draw (0,0) -- (6.57,13.13);  \node [right] at (6.57,13.13) {(3,6) $63.43^\circ$};
+                                                \draw [->] (0,0) -- (2.23,5.57); \draw (0,0) -- (5.73,14.32);  \node [right] at (5.73,14.32) {(2,5) $68.2^\circ$};
+                                                \draw [->] (0,0) -- (1.9,5.69); \draw (0,0) -- (5.05,15.15);  \node [right] at (5.05,15.15) {(1,3) $71.57^\circ$};
+                                                % \draw [->] (0,0) -- (1.9,5.69); \draw (0,0) -- (5.05,15.15);  \node [right] at (5.05,15.15) {(2,6) $71.57^\circ$};
+                                                \draw [->] (0,0) -- (1.46,5.82); \draw (0,0) -- (4.05,16.2);  \node [right] at (4.05,16.2) {(1,4) $75.96^\circ$};
+                                                \draw [->] (0,0) -- (1.18,5.88); \draw (0,0) -- (3.36,16.82);  \node [right] at (3.36,16.82) {(1,5) $78.69^\circ$};
+                                                \draw [->] (0,0) -- (0.99,5.92); \draw (0,0) -- (2.87,17.23);  \node [right] at (2.87,17.23) {(1,6) $80.54^\circ$};
+                                        \end{tikzpicture}]]>
                                 </latex-image-code>
                                 </image>
                         </figure>
@@ -1777,9 +1756,9 @@
                 <subsubsection><title>Using the Net Force to Calculate Other Quantities</title>
 
                         <p>Generally, the point of finding the net force is that it causes an object to change its velocity. Let's also consider a few simple examples of this calculation.</p>
-                        
+
                         <example xml:id="se-netF-a"><title>The net force causes acceleration</title>
-                        <aside><title>Referenced by</title> 
+                        <aside><title>Referenced by</title>
                                 <p>
                                 <xref ref="d-mfa">finding <m>m</m> from <m>F=ma</m></xref>,
                                 <xref provisional="se-FBD-AB" text="type-global" />,
@@ -1818,14 +1797,14 @@
                                 <m> \vec F_\mathrm{net} = 4.0\unit{N} \ihat + 5.0\unit{N} \jhat </m>
                                 which is <m>F_\mathrm{net}=6.4\unit N</m> at <m>51^\circ</m> N of E.
                                 What remains is to find the acceleration.  Since this is a vector, we can either find the components from the components of the net force
-                                <me> 
-                                        \vec a =\frac{\vec F_\mathrm{net}}{m} = \frac{4.0\unit{N} \ihat + 5.0\unit{N} \jhat}{2.0\unit{kg}}  = 2.0\unitfrac{m}{s^2} \ihat + 2.5\unitfrac{m}{s^2} \jhat 
+                                <me>
+                                        \vec a =\frac{\vec F_\mathrm{net}}{m} = \frac{4.0\unit{N} \ihat + 5.0\unit{N} \jhat}{2.0\unit{kg}}  = 2.0\unitfrac{m}{s^2} \ihat + 2.5\unitfrac{m}{s^2} \jhat
                                 </me>
                                 or we can use the magnitude of the net force to find the magnitude of the acceleration
                                 <m> a = \frac{6.4\unit N}{2.0\unit{kg}} = 3.2 \unitfrac{m}{s^2} </m>
                                 and know that the direction of the acceleration is the same as the acceleration of the net force: <m>51^\circ</m> N of E.
                                 </p>
-                                
+
                                 <p>You should notice that you can also use the components of the acceleration to find the magnitude and direction of the acceleration.
                                 <me>\magdir{+2.0\unitfrac{m}{s^2}}{+2.5\unitfrac{m}{s^2}}{a}{\sig{3.2}{0}{N}}{\theta}{\sig{51}{}{^\circ}}{N of E}</me>
                                 </p>
@@ -1875,7 +1854,7 @@
                         </statement>
                         <solution>
                                 <p>Naively, one might consider <m>\deq m = \frac{\vec F_\mathrm{net}}{\vec a}</m>, but it does not make mathematical sense to <xref ref="d-dividevectors">divide vectors</xref>.  In this case, you <em>must</em> consider the magnitudes of force and acceleration, knowing that their directions are the same. (We are <em>not</em> <q>cancelling</q> the directions.)
-                                <me> 
+                                <me>
                                         m =\frac{F_\mathrm{net}}{a} = \frac{9.0\unit N}{3.2 \unitfrac{m}{s^2}} = \sigfrac{2.8}{1}{N \cdot s^2}{m} = 2.8\unitfrac{kg \cdot m \cdot s^2}{s^2 \cdot m} \ = \ 2.8 \unit{kg}
                                 </me>
                                 </p>
@@ -1888,10 +1867,10 @@
 
                 </subsubsection>
                 <subsubsection xml:id="sss-equilibrium"><title>Equilibrium</title><idx>Equilibrium</idx>
-                <aside><title>Referenced by</title> 
+                <aside><title>Referenced by</title>
                         <p>
-                        <xref ref="se-equi" text="type-global" />, 
-                        <xref ref="d-atrestinmotion" text="type-global" >Newton's first law</xref>, 
+                        <xref ref="se-equi" text="type-global" />,
+                        <xref ref="d-atrestinmotion" text="type-global" >Newton's first law</xref>,
                         <xref provisional="d-Fgball" text="type-global" />
                         </p>
                 </aside>
@@ -1936,18 +1915,18 @@
                                         <p>You pull over and park the car.  \studentB<idx><h sortby="\studentB">\studentB</h></idx> suggests one of you stays with the car, probably because \heB\ has physics homework to do.  If you decide to separate, read <xref ref="a-nogas2" text="type-local" />.  If you decide to journey together, read <xref ref="a-intosunset" text="type-local" />.</p>
                                 </answer>
                                 <answer xml:id="a-intosunset">
-                                        <p>Everything goes as planned.  You drive off into the sunset sadly ignorant of the physics you might have learned. 
+                                        <p>Everything goes as planned.  You drive off into the sunset sadly ignorant of the physics you might have learned.
                                         <alert>The end!</alert></p>
                                 </answer>
                                 <answer xml:id="a-NIresult">
-                                        <p>During the discussion, you and \studentB<idx><h sortby="\studentB">\studentB</h></idx> realize that the rolling wheels and the spinning axel are still connected to the not-spinning frame of the car.  While this causes less friction than if the car were in drive, there is still some friction, which dissipates energy and, more importantly, exerts a backwards force on the spinning wheels.  Your car is not being described by Newton's First Law, which requires there to be no force applied.  Instead your car is being described by Newton's Second Law and the force is changing the velocity to cause you to go slower.  You finish getting gas and drive on to many happy adventures. 
+                                        <p>During the discussion, you and \studentB<idx><h sortby="\studentB">\studentB</h></idx> realize that the rolling wheels and the spinning axel are still connected to the not-spinning frame of the car.  While this causes less friction than if the car were in drive, there is still some friction, which dissipates energy and, more importantly, exerts a backwards force on the spinning wheels.  Your car is not being described by Newton's First Law, which requires there to be no force applied.  Instead your car is being described by Newton's Second Law and the force is changing the velocity to cause you to go slower.  You finish getting gas and drive on to many happy adventures.
                                         <alert>The end!</alert></p>
                                 </answer>
                                 <answer xml:id="a-nogas2">
                                         <p>You leave \studentB<idx><h sortby="\studentB">\studentB</h></idx> in the car and walk the 31 minutes to the gas station.  You buy a gas can, fill it up, and start to carry it back to the car.  It is very heavy and you notice vultures circling overhead.  You hope you survive this.  It might have been a better idea to bring \studentB\ with you to share the burden.  You stumble once, and then again.  You swear to be more cautious about estimating your gas consumption.  After walking for what seems like hours and stumbling back to the car, you find \studentB\ very excited. \HeB\ declares that \heB\ has invented a time machine so you can go back to the <xref ref="cyoa-NI" text="title">adventure</xref> and start over to learn something about Newton's First Law!</p>
                                 </answer>
                                 <answer xml:id="a-intosunset2">
-                                        <p>You and \studentB<idx><h sortby="\studentB">\studentB</h></idx> happily walk the 25 minutes to the gas station, discussing and working out physics problems the whole way.  You buy a gas can, fill it up, and share the burden of carrying a heavy gas can.  You return to the car, add gas, and drive on to many happy adventures.  
+                                        <p>You and \studentB<idx><h sortby="\studentB">\studentB</h></idx> happily walk the 25 minutes to the gas station, discussing and working out physics problems the whole way.  You buy a gas can, fill it up, and share the burden of carrying a heavy gas can.  You return to the car, add gas, and drive on to many happy adventures.
                                         <alert>The end!</alert></p>
                                 </answer>
                                 <postlude>
