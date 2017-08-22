@@ -639,7 +639,7 @@
 
                 <figure xml:id="f-parabola" >
                         <caption>A random parabola</caption>
-                        <image xml:id="i-parabola" source="images/i-parabola.pdf" width="50%">
+                        <image xml:id="i-parabola" source="images/i-parabola.svg" width="50%">
                         <description>This is presumably for text readers: This is a place-holder for an image of a parabola, mostly for me to indicate that I can create interesting figures with <latex />.</description>
                         <latex-image-code>
                                 \setlength{\unitlength}{1cm}
@@ -673,7 +673,7 @@
                         <introduction>
                         <figure xml:id="f-lines">
                                 <caption><latex /> lines and vectors.  This will be deleted, but is here for reference.</caption>
-                                <image xml:id="i-lines" source="images/i-lines.pdf" width="75%">
+                                <image xml:id="i-lines" source="images/i-lines.svg" width="75%">
                                 <description>This shows the possible angles <latex /> can draw.</description>
                                 <latex-image-code>
                                         <![CDATA[
@@ -1582,17 +1582,30 @@
                         <todo>Maybe these should be sidebyside with the figure above the example?</todo>
                         <example xml:id="se-netFadd"><title>Net Force, Vector-Add Same-Direction</title>
                                 <statement>
-                                        <sidebyside widths="75% 25%">
+                                        <sidebyside widths="45% 50%">
                                         <p>If there is a <m>5.0 \unit{N}</m> force to the right and a <m>4.0 \unit{N}</m> force to the right, then the net force is <m>9.0 \unit{N}</m> to the right.</p>
-                                        <figure>
-                                        <!-- \fbox{\begin{minipage}[c]{1.5in}
-                                                \begin{FBD}{10}{15}{15}{10}{object}
-                                                \twori{50}{<m>5\unit N</m>}{black}{40}{<m>4\unit N</m>}{black}
-                                                \end{FBD}
-                                                \end{minipage}}
-                                                -->
-                                        <caption>FBD</caption>
-                                        </figure>
+                                        
+                                                <image xml:id="i-netFadd" source="images/i-netFadd.svg">
+                                                <description>This image shows two forces of different magnitude acting to the right on a body.</description>
+                                                <latex-image-code>
+                                                        <![CDATA[
+                                                        %>
+                                                        \begin{tikzpicture}
+                                                        \draw [rounded corner, thick, darkgray] (-1,-1.5) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5);
+                                                        \draw [->, -latex, black] (0.2,-0.2) -- (4.2,-0.2);  \node [below right] at (4.2,-0.2) {$5\unit N$};
+                                                        \draw [->, -latex, black] (0.2,0.2) -- (3.2,0.2);  \node [above right] at (3.2,0.2) {$4\unit N$};
+                                                        \node [left, white] at (-4.3,0) {.};
+                                                        \node [right, white] at (4.3,0) {.};
+                                                        \end{tikzpicture}]]> 
+                                                                <!-- \fbox{\begin{minipage}[c]{1.5in}
+                                                                        \begin{FBD}{10}{15}{15}{10}{object}
+                                                                        \twori{50}{<m>5\unit N</m>}{black}{40}{<m>4\unit N</m>}{black}
+                                                                        \end{FBD}
+                                                                        \end{minipage}}
+                                                                        -->
+                                                </latex-image-code>
+                                                </image>
+                                                
                                         </sidebyside>
                                 </statement>
                                 <solution>
@@ -1612,9 +1625,21 @@
 
                         <example xml:id="se-netFsub"><title>Net Force, Vector-Add Opposite-Direction</title>
                                 <statement>
-                                        <sidebyside widths="75% 25%">
+                                        <sidebyside widths="45% 50%">
                                         <p>If there is a <m>5.0 \unit{N}</m> force to the left and a <m>4.0 \unit{N}</m> force to the right, then the net force is <m>1.0 \unit{N}</m> to the left.</p>
-                                        <figure>
+                                        
+                                                <image xml:id="i-netFsub" source="images/i-netFsub.svg">
+                                                <description>This image shows two forces of different magnitude acting to the right on a body.</description>
+                                                <latex-image-code>
+                                                        <![CDATA[
+                                                        %>
+                                                        \begin{tikzpicture}
+                                                        \draw [rounded corner, thick, darkgray] (-1,-1.5) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5);
+                                                        \draw [->, -latex, black] (-0.2,0) -- (-4.2,0);  \node [left] at (-4.2,0) {$5\unit N$};
+                                                        \draw [->, -latex, black] (0.2,0) -- (3.2,0);  \node [right] at (3.2,0) {$4\unit N$};
+                                                        \node [left, white] at (-4.3,0) {.};
+                                                        \node [right, white] at (4.3,0) {.};
+                                                        \end{tikzpicture}]]>
                                         <!-- \fbox{\begin{minipage}[c]{1.5in}
                                                 \begin{FBD}{10}{15}{15}{10}{object}
                                                 \onele{50}{<m>5\unit N</m>}{black}
@@ -1622,8 +1647,9 @@
                                                 \end{FBD}
                                                 \end{minipage}}
                                                 -->
-                                        <caption>FBD</caption>
-                                        </figure>
+                                                </latex-image-code>
+                                                </image>
+                                        
                                         </sidebyside>
                                 </statement>
                                 <solution>
@@ -1637,11 +1663,23 @@
                                 </p>
                         </aside>
 
-                        <example xml:id="se-equi"><title>Net Force, Vector-Add Opposite-Direction</title>
+                        <example xml:id="se-equi"><title>Net Force, Vector-Add Equal Magnitude</title>
                                 <statement>
-                                        <sidebyside widths="75% 25%">
+                                        <sidebyside widths="45% 50%">
                                         <p>If there is a <m>3.0 \unit{N}</m> force to the right and a <m>3.0 \unit{N}</m> force to the left, then the net force is <m>0.0 \unit{N}</m>.</p>
-                                        <figure>
+                                        
+                                                <image xml:id="i-equi" source="images/i-equi.svg">
+                                                <description>This image shows two forces of different magnitude acting to the right on a body.</description>
+                                                <latex-image-code>
+                                                        <![CDATA[
+                                                        %>
+                                                        \begin{tikzpicture}
+                                                        \draw [rounded corner, thick, darkgray] (-1,-1.5) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5);
+                                                        \draw [->, -latex, black] (-0.2,0) -- (-2.2,0);  \node [left] at (-2.2,0) {$3\unit N$};
+                                                        \draw [->, -latex, black] (0.2,0) -- (2.2,0);  \node [right] at (2.2,0) {$3\unit N$};
+                                                        \node [left, white] at (-4.3,0) {.};
+                                                        \node [right, white] at (4.3,0) {.};
+                                                        \end{tikzpicture}]]>
                                         <!-- \fbox{\begin{minipage}[b]{1.5in}
                                                 \begin{FBD}{10}{15}{15}{10}{object}
                                                 \onele{30}{<m>3\unit N</m>}{black}
@@ -1649,8 +1687,9 @@
                                                 \end{FBD}
                                                 \end{minipage}}
                                                 -->
-                                        <caption>FBD</caption>
-                                        </figure>
+                                                </latex-image-code>
+                                                </image>
+                                                
                                         </sidebyside>
                                         <p>In this case, the object is said to be <q><xref ref="sss-equilibrium" text="title">in equilibrium</xref>.</q></p>
                                 </statement>
