@@ -1740,7 +1740,7 @@
                                         </sidebyside>
                                 </statement>
                         <solution>
-                                <p>Since we have multiple forces acting on a mass to cause an acceleration, it should be clear (recall the <xref ref="st-Fma" text="title">story</xref>) that we need to use Newton's second law and find the net force in order to compute the acceleration.  We will, as usual, start with a free-body diagram (at right).</p>  
+                                <p>Since we have multiple forces acting on a mass to cause an acceleration, it should be clear (recall the <xref ref="st-Fma" text="title">story</xref>) that we need to use Newton's second law and find the net force in order to compute the acceleration.  We will, as usual, start with a free-body diagram (at right).</p>
                                 <sidebyside valign="bottom" widths="60% 40%">
                                 <p>This example is made easier because the forces happen to be at right angles and so finding their <m>x</m> and <m>y</m> components is not difficult. By adding the <m>x</m>-components and separately adding the <m>y</m>-components, we have found the components of the net force.  </p>
                                 <tabular halign="center">
@@ -1921,21 +1921,28 @@
 \end{minipage}}
                                         -->
                         </statement>
-                        <solution>
+                        <hint>
                                 <p><xref ref="ex-2Dforce" text="type-global"/> already found the net force to be
                                 <m> \vec F_\mathrm{net} = 4.0\unit{N} \ihat + 5.0\unit{N} \jhat </m>
                                 which is <m>F_\mathrm{net}=6.4\unit N</m> at <m>51^\circ</m> N of E.
-                                What remains is to find the acceleration.  Since this is a vector, we can either find the components from the components of the net force
+                                (What remains is to find the acceleration.)</p>
+                        </hint>
+                        <hint>
+                                <p>It is possible to find the (vector) acceleration from the (vector) net force by using <em>either</em> the <m>x</m>- and <m>y</m>-components, <em>or</em> by using the magnitude and direction.</p>
+                        </hint>
+                        <solution><title>components</title>
+                                <p>Given the mass and the components of the net force, we can calculate the acceleration.
                                 <me>
                                         \vec a =\frac{\vec F_\mathrm{net}}{m} = \frac{4.0\unit{N} \ihat + 5.0\unit{N} \jhat}{2.0\unit{kg}}  = 2.0\unitfrac{m}{s^2} \ihat + 2.5\unitfrac{m}{s^2} \jhat
                                 </me>
-                                or we can use the magnitude of the net force to find the magnitude of the acceleration
+                                You can then use the components of the acceleration to find the magnitude and direction of the acceleration.
+                                <me>\magdir{+2.0\unitfrac{m}{s^2}}{+2.5\unitfrac{m}{s^2}}{a}{\sig{3.2}{0}{N}}{\theta}{\sig{51}{}{^\circ}}{N of E}</me>
+                                </p>
+                        </solution>
+                        <solution><title>magnitude and direction</title>
+                                <p>Given the mass and the magnitude and direction of the net force, we can calculate the acceleration.
                                 <m> a = \frac{6.4\unit N}{2.0\unit{kg}} = 3.2 \unitfrac{m}{s^2} </m>
                                 and know that the direction of the acceleration is the same as the acceleration of the net force: <m>51^\circ</m> N of E.
-                                </p>
-
-                                <p>You should notice that you can also use the components of the acceleration to find the magnitude and direction of the acceleration.
-                                <me>\magdir{+2.0\unitfrac{m}{s^2}}{+2.5\unitfrac{m}{s^2}}{a}{\sig{3.2}{0}{N}}{\theta}{\sig{51}{}{^\circ}}{N of E}</me>
                                 </p>
                         </solution>
                         </exercise>
@@ -1957,21 +1964,28 @@
 \end{minipage}}
                                         -->
                         </statement>
-                        <solution>
+                        <hint>
                                 <p><xref ref="ex-2Dforce2" text="type-global" /> already found the net force to be
                                 <m> \vec F_\mathrm{net} = 3.8\unit{N} \ihat + 2.2\unit{N} \jhat </m>
                                 which is <m>F_\mathrm{net}=4.4\unit N</m> at <m>31^\circ</m> N of W.
-                                What remains is to find the acceleration.  Since this is a vector, we can either find the components from the components of the net force
+                                (What remains is to find the acceleration.)</p>
+                        </hint>
+                        <hint>
+                                <p>It is possible to find the (vector) acceleration from the (vector) net force by using <em>either</em> the <m>x</m>- and <m>y</m>-components, <em>or</em> by using the magnitude and direction.</p>
+                        </hint>
+                        <solution>
+                                <p>Given the mass and the components of the net force, we can calculate the acceleration.
                                 <me>
                                         \vec a =\frac{\vec F_\mathrm{net}}{m} = \frac{3.8\unit{N} \ihat + 2.2\unit{N} \jhat}{2.0\unit{kg}}  = 1.9\unitfrac{m}{s^2} \ihat + 1.1\unitfrac{m}{s^2} \jhat
                                 </me>
-                                or we can use the magnitude of the net force to find the magnitude of the acceleration
+                                You can then use the components of the acceleration to find the magnitude and direction of the acceleration.
+                                <me> \magdir{+1.9\unitfrac{m}{s^2}}{+1.1\unitfrac{m}{s^2}}{a}{\sigfrac{2.2}{}{m}{s^2}}{\theta}{\sig{31}{}{^\circ}}{N of W} </me>
+                                </p>
+                        </solution>
+                        <solution>
+                                <p>Given the mass and the magnitude of the net force we can find the magnitude of the acceleration
                                 <m> a = \frac{4.4\unit N}{2.0\unit{kg}} = 2.2 \unitfrac{m}{s^2} </m>
                                 and know that the direction of the acceleration is the same as the acceleration of the net force: <m>31^\circ</m> N of W.
-                                </p>
-
-                                <p>You should notice that you can also use the components of the acceleration to find the magnitude and direction of the acceleration.
-                                <me> \magdir{+1.9\unitfrac{m}{s^2}}{+1.1\unitfrac{m}{s^2}}{a}{\sigfrac{2.2}{}{m}{s^2}}{\theta}{\sig{31}{}{^\circ}}{N of W} </me>
                                 </p>
                         </solution>
                         </exercise>
@@ -2018,13 +2032,15 @@
                         <exploration xml:id="cyoa-NI"><title>Out of gas</title>
                                 <statement>
                                         <p>On a long road trip with your friend \studentB<idx><h sortby="\studentB">\studentB</h></idx>, your car starts to sputter as it runs out of gas shortly before arriving in a new town.  You see a sign for a gas station in the distance and have to decide what to do.  You and \studentB\ can think of three options.
+                                        <todo>I like <q>answer</q> better, but it doesn't fit.  <q>hint</q> fits, but I don't like it.  I can't figure out how to extend that line.  sidebyside hides the answers.</todo>
                                         <ol label="Plan A">
                                                 <li xml:id="c-parkandwalk"><p>Pull over, park the car, walk to the gas station, buy a gas can, fill it up, carry it back to the car, and drive on!   If you follow this plan, then read <xref ref="a-parkandwalk" text="type-local" />.</p></li>
                                                 <li xml:id="c-coastindrive"><p>Leave the car in drive, continue holding the gas-pedal down until there is absolutely no gas, and hope against all hope that you get the car to the gas station so that nobody needs to carry a heavy gas can. If you follow this plan, then read <xref ref="a-coastindrive" text="type-local" />.</p></li>
                                                 <li xml:id="c-coastinneutral"><p>Speed up to just over the speed limit, put the car in neutral, turn on your blinking hazard-lights, coast as far as you can possibly coast, and hope against all hope that you get the car to the gas station so that nobody needs to carry a heavy gas can. If you follow this plan, then read <xref ref="a-coastinneutral" text="type-local" />.</p></li>
                                         </ol>
                                         </p>
-                                </statement><todo>I like <q>answer</q> better, but it doesn't fit.  <q>hint</q> fits, but I don't like it.  I can't figure out how to extend that line.  sidebyside hides the answers.</todo>
+                                </statement>
+                                <tabular>
                                 <answer xml:id="a-parkandwalk">
                                         <p>Just as planned, you pull over and park the car.  \studentB<idx><h sortby="\studentB">\studentB</h></idx> suggests one of you stays with the car, probably because \heB\ has physics homework to do.  If you decide to separate, read <xref ref="a-nogas" text="type-local" />.  If you decide to journey together, read <xref ref="a-intosunset" text="type-local" />.</p>
                                 </answer>
@@ -2058,6 +2074,7 @@
                                         <p>You and \studentB<idx><h sortby="\studentB">\studentB</h></idx> happily walk the 25 minutes to the gas station, discussing and working out physics problems the whole way.  You buy a gas can, fill it up, and share the burden of carrying a heavy gas can.  You return to the car, add gas, and drive on to many happy adventures.
                                         <alert>The end!</alert></p>
                                 </answer>
+                                </tabular>
                                 <postlude>
                                         <sidebyside widths="50% 50%" haligns="center right">
                                                 <p></p>
