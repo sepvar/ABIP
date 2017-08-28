@@ -2130,7 +2130,7 @@
                         <p>To see how this works, the next simple example will build on the previous simple examples to help us consider not only the (2nd law) forces on the object, but also the (3rd law) forces on the people doing the pushing and pulling.
                                 <todo><p>This section, and especially the example needs to be fixed to fit the references and the images in the right place with this format.</p></todo>
                         </p>
-                        
+
                         <example xml:id="se-FBD-AB">
                         <aside><title>Referenced by</title> <p><xref provisional="f-firstFBD" /></p></aside>
                         <p>As you revisit <xref ref="se-netFadd" text="type-global" />,
@@ -2258,7 +2258,7 @@
                                                 <image xml:id="i-firstFBD-FBD1" source="images/i-firstFBD-FBD1.svg">
                                                 <description><p>\studentA</p></description>
                                                 <latex-image-code>
-<!-- \noindent % \textwidth default is 5in for a book 
+<!-- \noindent % \textwidth default is 5in for a book
 \fbox{\begin{minipage}{1.5in}
 \begin{FBD}{10}{25}{15}{10}{\studentA}
 \onele{50}{<m>5\unit N</m>}{black}
@@ -2301,7 +2301,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                                 </image>
                                         </sidebyside>
                                 </figure>
-                                
+
                                 <p>It turns out that this is a little oversimplified.  When we get to <xref provisional="s-Fg" text="type-global" /> and <xref provisional="s-FN" text="type-global" />, we will see that we have to include a downwards force of gravity and an upwards support force.  This will be explained in <xref provisional="f-firstFBDupdate" text="type-global"/>.</p>
                                         <sidebyside widths="50% 50%" haligns="center right">
                                                 <p></p>
@@ -2315,11 +2315,494 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
 
         </section>
 
+
+        <section xml:id="s-NewtonExamples"><title>Examples</title>
+        <aside><title>Referenced by</title> <p><xref provisional="sss-NIItogether" text="type-global"/></p></aside>
+
+        <p>Next, we can consider a simple interactive example that is intended to help you think about how you know a force is acting.</p>
+        <exploration xml:id="IQ-holdbook"><title>Drop a Book</title>
+                <statement>
+                <p>You hold a book a little above your desk.  When you let go, it falls and then hits your desk.
+                <ol>
+                <li><p> While you are holding it, it has no acceleration.  Are there forces acting on it?  
+                        Select one: <q>Yes</q> (<xref ref="A-hbf" text="type-local" />) or <q>No</q> (<xref ref="A-hbnof" text="type-local" />).</p></li>
+                <li><p> While you are holding it, is it in equilibrium?  
+                        Select one: <q>Yes</q> (<xref ref="A-true1" text="type-local" />) or <q>No</q> (<xref ref="A-false1" text="type-local" />).</p></li>
+                <li><p> After you let go and while the book falls, it accelerates downwards.  Are there forces acting on it?  
+                        Select one: <q>Yes</q> (<xref ref="A-falls" text="type-local" />) or <q>No</q> (<xref ref="A-falls" text="type-local" />).</p></li>
+                <li><p> While it is hitting the desk, is it accelerating?  
+                        Select one: <q>Yes</q> (<xref ref="A-hitY" text="type-local" />) or <q>No</q> (<xref ref="A-hitN" text="type-local" />).</p></li>
+                <li><p> After it has landed and is sitting on the desk, is it in equilibrium? 
+                        Select one: <q>Yes</q> (<xref ref="A-landedY" text="type-local" />) or <q>No</q> (<xref ref="A-landedN" text="type-local" />).</p></li>
+                <li><p> After it has landed and is sitting on the desk, how many forces are acting on it? 
+                        Select one: 
+                                <q>Zero</q> (<xref ref="A-zero" text="type-local" />), 
+                                <q>One</q> (<xref ref="A-one" text="type-local" />), or 
+                                <q>Two</q> (<xref ref="A-two" text="type-local" />).</p></li>
+                </ol>
+                </p>
+                </statement>
+                <answer xml:id="A-hbf"><p>There are forces acting on it.  You should be able to tell this because you are exerting one of the forces. While it is true that there are forces on it, it is also true that there is no <em>net force</em>.  If you are exerting an upward force on the book, can you guess (<xref ref="A-gravity" text="type-local" />) what the downward force is?   </p></answer>
+                <answer xml:id="A-hbnof"><p>It is true that while you hold the book, there is no <em>net force</em>, but that does not mean that there is no force acting.  If there were no forces on the book, then your hand would not need to be there.  In fact, if you remove the force your hand provides, then the book falls. This shows that there is an upward force (by your hand on the book) and a downward force (of gravity by the Earth on the book). </p></answer>
+                <answer xml:id="A-true1"><p>It is in equilibrium.  When the acceleration is zero, then the net force must be zero and those properties are what define equilibrium.</p></answer>
+                <answer xml:id="A-false1"><p>The definition of equilibrium is that the forces balance.  The result of this is that the net force must be zero and the acceleration is then zero.  You can tell this is true because the velocity is <em>not changing</em>.  It is not important that the velocity is zero, what is important is that the velocity <em>stays</em> zero.  While you hold it, the book is in equilibrium. </p></answer>
+                <answer xml:id="A-falls"><p>Both <q>Yes</q> and <q>No</q> bring you to this answer.  Yes, there is <em>a force</em> on the book while it falls (the force of gravity), but no, there are not force<alert>s</alert> (plural).  There is only one force.  <q>But, wait!</q> you say, <q>What about the force of air resistance?</q>  Aha!   You are correct; there is a force of air resistance, but in this case, it is negligible and we will not consider it.  Please read <xref ref="ss-airresistance" text="type-global" /> for more information about deciding when to use or ignore this phenomenon.</p></answer>
+                <answer xml:id="A-hitY"><p>The book is accelerating.  The velocity <em>is changing</em> from <q>moving downwards</q> to <q>stopped</q>.  The book is not in equilibrium.</p></answer>
+                <answer xml:id="A-hitN"><p>While it is hitting the desk, the velocity is changing from <q>moving downwards</q> to <q>stopped</q>.  Since the velocity is changing, <em>the book is accelerating</em>.  Since it is accelerating, the book is not in equilibrium.  </p></answer>
+                <answer xml:id="A-landedY"><p>It is in equilibrium.  The book is at rest and <em>continues to be</em> at rest on the desk. There are forces acting, but they cancel each other, resulting in no net force. </p></answer>
+                <answer xml:id="A-landedN"><p>After it has landed, the book stops moving.  Once the book comes to rest on the desk, it <em>continues to stay at rest</em>.  This says that the velocity is not changing, so the book is not accelerating.  That means that the book is in equilibrium. There are forces acting, but they cancel each other, resulting in no net force. </p></answer>
+                <answer xml:id="A-gravity"><p>It is the force of gravity.</p></answer>
+                <answer xml:id="A-zero"><p>Recall the situation when you were holding the book.  Gravity is still pulling the book down and the desk is holding the book up.  There are two forces acting on the book while it is at rest on the desk. </p></answer>
+                <answer xml:id="A-one"><p>If there were only one force on the book, it could not be a balanced force, so the book could not be in equilibrium and the book would be accelerating.  The book is not accelerating, so there are either two forces (<xref ref="A-two" text="type-local" />) or no forces (<xref ref="A-zero" text="type-local" />). </p></answer>
+                <answer xml:id="A-two"><p>There are two forces acting on the book while it is at rest on the desk. Similar to the situation when you were holding the book, gravity is pulling the book down and the desk is holding the book up. </p></answer>
+        </exploration>
+
+        <p xml:id="d-irlNI">Next, we can consider pushing an object across the floor in <xref ref="irl-NI" text="type-global" /> to get a different sense of observations we can make that help us recognize patterns that are due to forces we might not have thought to look for.</p>
+
+        <investigation xml:id="irl-NI"><title>Pushing an Object Across the Floor</title>
+                <task xml:id="A-chair1">
+                        <statement><p>Push a chair across a carpet floor.  Notice that when you stop pushing, it stops moving. Based on this, do you think force causes motion?</p></statement>
+                        <solution><p>If we refer to <q>motion</q> as describing the velocity, then no. Force causes a <em>change in</em> velocity. When you stop pushing, the chair stops because there is a force from the carpet acting to oppose the force you apply while you push the chair.</p></solution>
+                </task>
+                <task xml:id="A-chair2">
+                        <statement><p>Push a chair across a tile floor. Notice that when you stop pushing, it probably<fn>This depends on <em>how fast</em> you were pushing, but it will stop moving pretty quickly after you stop pushing.</fn> stops moving.  Based on this, do you think force causes motion?</p></statement>
+                        <solution><p>This is essentially the same as <xref ref="A-chair1" text="type-local" />, but the carpet exerts more force than the tile.  In either case, force causes a <em>change in</em> velocity. You are trying to speed the chair up and the floor is trying to slow the chair down.  (Both are trying to change the velocity, but cancel to result in a constant velocity.)  When you stop pushing, the chair stops moving because there is a force from the tile acting to oppose the force you apply while you push the chair; when you let go, this force slows the chair until the chair stops and then the force stops acting. (See <xref provisional="s-Ff" text="type-global"/> for more details.)</p></solution>
+                </task>
+                <task>
+                        <introduction><p>Push a chair <em>with wheels</em> across a tile floor, with some strength, then let it go.</p></introduction> 
+                        <task xml:id="A-chair3"> 
+                                <statement><p>What happens when you stop pushing?</p></statement>
+                                <solution><p>For a chair with wheels being pushed across a tile floor, when you stop pushing it probably continues to move across the floor for at least a short distance.</p></solution>
+                        </task>
+                        <task xml:id="A-chair4">
+                                <statement><p>If force causes motion, why does the chair move after you stop touching it?</p></statement>
+                                <solution><p>The chair continues to move for the same reason that the chair without wheels and the chair on carpet <em>all</em> continued to move when you let go.  The reason is that this is <em>how all objects behave; they maintain their velocity when allowed to act without interference.</em> (This is why Newton's first law says what it does.)   Because the chair with wheels has much less friction there is a smaller force trying to interfere with the motion and so it continues to move for a noticeable distance. The other chairs slowed to a stop almost immediately.  The wheel-less chair on tile might have continued for a short distance if it was moving fast enough that it required a long enough time to change its velocity to zero. </p></solution>
+                        </task>
+                </task>
+                <task>
+                        <introduction><p>Push a chair <em>with wheels</em> across a tile floor, change your behavior after you let it go.</p></introduction>
+                        <task xml:id="A-chair5">
+                                <statement><p>Do your actions when you are not touching the chair have <em>any</em> impact on the chair?</p></statement>
+                                <solution><p>No. But if it does not matter what you do after you let go of the chair, then why do coaches (in basketball free-throws, tennis serves and swings, baseball pitches, and all manner of arm and leg propulsion) tell you to pay attention to your <q>follow through</q>? </p>
+                                <p>Select one: <q>They have been fooled; follow-through doesn't matter</q> (<xref ref="A-noFT" text="type-local" />) or <q>they are right; follow-through does matter!</q> (<xref ref="A-FT" text="type-local" />).</p></solution>
+                                <solution xml:id="A-noFT"><p>They haven't been fooled, but follow-through matters in a different way.  What does matter is not literally how you move <em>after</em> the release, but rather how you move <em>before</em> you release the ball. By paying attention to your follow-through, you are also changing the way you move before you release or impact the ball.  You want a smooth flow throughout the motion and a sloppy follow-through often implies a sloppy initiation of the motion. </p></solution>
+                                <solution xml:id="A-FT"><p>What does matter is not literally how you move <em>after</em> the release, but rather how you move <em>before</em> you release the ball. By paying attention to your follow-through, you are also changing the way you move before you release or impact the ball.  You want a smooth flow throughout the motion and a sloppy follow-through often implies a sloppy initiation of the motion. </p></solution>
+                        </task>
+                        <task xml:id="A-chair6">
+                                <statement><p>Is it possible that there is a <q>residual effect</q> that you have on the chair after letting it go?</p></statement>
+                                <solution><p>No.  When you throw a ball very high into the air, you can dance a jig or do any manner of things and it will obviously not affect the ball.  The force you exerted on the chair goes away the instant you stop touching the chair.  It is, however, true that your force gave the chair some velocity (actually <xref provisional="c-momentum" text="title">momentum</xref>) and Newton's first law (inertia) says that the chair would prefer to keep that velocity.  Unfortunately, the friction with the ground slows it down.  The careful way to describe the situation is that your force gave the chair some velocity (actually <xref provisional="c-momentum" text="title">momentum</xref>) and its characteristic inertia made it difficult for the <xref provisional="s-Ff" text="title">frictional force</xref> to slow it down rapidly.</p></solution>
+                        </task>
+                </task>
+                <task xml:id="A-chair7">
+                        <statement><p>Newton's First Law says that if you give the chair a velocity, it should keep that velocity.
+                        Repeat the first three suggestions and correlate the interaction-with-the-ground to the motion-after-you-push-and-release.
+                        Is there a force that the chair feels after you release it?</p></statement>
+                        <solution><p>The force that the chair feels after you release it is <xref provisional="s-Ff" text="title">friction</xref>.  For the carpet, there is a lot of friction and the chair slows down very quickly (essentially instantaneously).  For the wheel-less chair on the tile floor, the chair slows rapidly although it may leave your hand.  The wheels provide the least amount of friction and that chair goes the furthest.  You may note that the friction slowing the chair-with-wheels is primarily between the rolling wheel and its axel (where it connects to the non-rolling chair leg) rather than between the wheel and the floor (although the friction between the wheel and the floor also plays a role).  This is discussed in more detail in <xref provisional="s-Ff" text="type-global"/>.</p></solution>
+                </task>
+                <task xml:id="A-chair8">
+                        <statement><p>Newton's Second Law says that a net force will change the velocity. Push a chair <em>gently</em> across the floor. A constant force (balanced by the force of friction) will move at a constant speed. What if there were no friction?</p></statement>
+                        <solution><p>If there were no friction, then you could start the chair and it would move on its own at a constant speed; you wouldn't need to continue pushing to keep it moving.  On the other hand, if you did continue to push, then the chair would continue to speed up and you would have to run faster and faster to keep up with it. On the other hand, if the chair were not experiencing friction, then you probably wouldn't either and you couldn't get enough traction to keep up with the chair, so it would sail away almost immediately, being then described by Newton's first law!</p></solution>
+                </task>
+                <task xml:id="A-chair9">
+                        <statement><p>Newton's Second Law says that a net force will change the velocity. Push a chair <em>forcefully</em> across the floor. A constant force (stronger than the force of friction) will accelerate the object away from your push. Can you list surfaces that are essentially frictionless?</p></statement>
+                        <hint><p>You should include surfaces that are very easy to push objects across.</p></hint>
+                        <hint><p>Ice is an obvious (?) choice.  You might have experience with the table-top <q>air hockey</q> game.  You can look-up <q>mag-lev trains</q>. </p></hint>
+                        <hint><p>You should also think about how smooth or rough the surfaces you list are.</p></hint>
+                </task>
+                <conclusion>
+                <p>Notice in each case that you are not the only thing interacting with the chair.  The floor is also interacting with the chair.  The floor exerts a <xref provisional="s-Ff" text="title">force of friction</xref> on the chair.  So, when you interpret how your force causes the chair to move, you <em>must</em> also account for the interaction with the floor in your expectations.  We can minimize the effect of friction, by modifying the floor surface.  If you have ever driven on ice and felt out of control, you might have begun to develop your Newtonian intuition.</p>
+
+                <sidebyside widths="50% 50%" haligns="center right">
+                        <p></p>
+                        <tabular halign="right"><row><cell halign="right">
+                                Return to: <xref ref="sss-NIItogether" />, <xref ref="d-irlNI">\autoref*{s-NewtonExamples} reference to \autoref*{irl-NI}</xref>
+                        </cell></row></tabular>
+                </sidebyside>
+                </conclusion>
+                </investigation>
+
+                <p xml:id="d-cyoaNIII">Building on that, it is useful to also consider how human beings behave when they are pushing or getting pushed.  Because people have <em>intention</em> in their actions, we subconsciously balance ourselves and we don't always recognize that we are doing it.  <xref ref="cyoa-NIII" text="type-global" /> provides an interactive storyline that starts to show some of the patterns that can lead to a recognition of how we balance ourselves.</p>
+
+                <exploration xml:id="cyoa-NIII"><title>The Town Bully</title>
+                        <statement>
+                                <p>\studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> is the town bully.  One day, he spies a biology student, \studentC<idx><h sortby="\studentC">\studentC</h></idx>, minding \hisC\ own business studying an interesting ecological phenomenon.  At the same time, you are standing across the street chatting with your friend \studentD<idx><h sortby="\studentD">\studentD</h></idx>, who happens to be taking a psychology class.  \studentD\ has been quite fascinated lately with watching the way others interact and points out the way \studentZ\ is menacingly approaching the unsuspecting \studentC.  You both predict that \studentZ\ is going to push \studentC\ over.  \studentD\ is mesmerized by the psychological effects and you, having just learned about Newton's laws, are excited to see if this action does indeed produce a reaction.
+                                <ol>
+                                <li xml:id="c-one">
+                                        <p>If you watch the way \studentC\ is standing before, during, and after \studentZ\ pushes \himC, then read <xref ref="a-NIIIaction" text="type-local" />.  (See also <xref ref="a-guilty" text="type-local" />.)</p></li>
+                                <li xml:id="c-two">
+                                        <p>If you watch the way \studentZ\ is standing before, during, and after \heZ\ pushes \studentC, then read <xref ref="a-NIIIreaction" text="type-local" />.  (See also <xref ref="a-guilty" text="type-local" />.)</p></li>
+                                <li xml:id="c-three">
+                                        <p>If, on the other hand, you shout a warning to \studentC\ and a criticism to \studentZ, trying to keep the incident from becoming violent, then read <xref ref="a-NIIIconcern" text="type-local" />.</p></li>
+                                </ol>
+                                </p>
+                        </statement>
+                        <answer xml:id="a-NIIIaction">
+                                <p>As \studentC<idx><h sortby="\studentC">\studentC</h></idx> gets pushed, you notice that \heC\ was not aware of the pending doom.  \HeC\ is standing casually with \hisC\ feet set to support his own weight, but not to brace \himC\ against the sideways force.  When \heC\ gets pushed from the side, \hisC\ feet stay in place and \hisC\ torso topples, rotating \himC\ about \hisC\ center of mass as \heC\ falls to the ground.
+                                <aside><title>Foreshadow</title>
+                                        <p>The physics of why an object (or person) rotates when they fall over is discussed with <xref provisional="c-torque" text="title">torque</xref>.</p>
+                                </aside>
+                                \studentD\ points to \hisD\ phone and says, <q>I recorded the whole thing!</q>  If you respond, <q>Awesome! Can I watch the part about how \studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> acts?</q>, please read <xref ref="a-NIIIreaction" text="type-local" />.  If you respond, <q>Awesome! Let's show the psychology and physics faculty our cool video!</q>, please read <xref ref="a-NIIIfaculty" text="type-local" />. If you respond, <q>Yeah, we probably should have intervened before this happened instead of just watching.  Let's go talk to Campus Security.</q>, please read <xref ref="a-NIIIsecurity" text="type-local" />.</p>
+                        </answer>
+                        <answer xml:id="a-NIIIreaction">
+                                <p>As \studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> pushes, you notice that because \heZ\ was being intentional, \heZ\ put one foot behind \himZ\ to brace \hisZ\ body during the push.  \HeZ\ leans into the push and stays standing.  You are intrigued.  If you decide to do a follow-up experiment by pushing \studentD<idx><h sortby="\studentD">\studentD</h></idx> over without bracing yourself, then read <xref ref="a-NIIIexperiment" text="type-local" />.  If you decide to exercise self-restraint, then read <xref ref="a-NIIIrestraint" text="type-local" />.</p>
+                        </answer>
+                        <answer xml:id="a-NIIIconcern">
+                                <p>Being the thoughtful and considerate person you are, you rush over and startle \studentC<idx><h sortby="\studentC">\studentC</h></idx> out of \hisC\ reverie.  \studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> is quite angry and now focuses \hisZ\ attention on you!  \HeZ\ rushes towards you and shoves as hard as he can.  You go <em>flying</em> backwards and land on your tailbone while he just stands there laughing.  \studentC\ and \studentD<idx><h sortby="\studentD">\studentD</h></idx> both rush over to help you while \studentZ\ wanders off.  Surprisingly, \studentC\ has an icepack, which helps.  If you go speak to your faculty members about this, please read <xref ref="a-NIIIfaculty" text="type-local" />. If you decide to talk to Campus Security, please read <xref ref="a-NIIIsecurity" text="type-local" />.</p>
+                        </answer>
+                        <answer xml:id="a-NIIIexperiment">
+                                <p>You turn and push \studentD<idx><h sortby="\studentD">\studentD</h></idx> over.  Like \studentC<idx><h sortby="\studentC">\studentC</h></idx>, \heD\ did not expect it and was not braced, so \heD\ falls over. Similarly, you decided not to brace yourself and in pushing \studentD, you fall over backwards!  \studentD\ did not have to <em>choose</em> to push on you.  The act of you deciding to push \himD\ necessarily and simultaneously produces a force on you, equal in magnitude and opposite in direction.  Unfortunately, \studentD\ doesn't think this was a useful exercise and shouts <q>I have the whole thing on video!</q> and storms off to Campus Security.  You are arrested for assault, miss your physics class for a couple of weeks and ultimately fail all of your classes. I certainly hope this was all happening in your head and not in real life!  You learned something about physics, but at what cost to your humanity?  <alert>The end!</alert></p>
+                        </answer>
+                        <answer xml:id="a-NIIIrestraint">
+                                <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> points to \hisD\ phone and says, <q>I recorded the whole thing!</q>  If you respond, <q>Awesome! Can I watch the part about how \studentC<idx><h sortby="\studentC">\studentC</h></idx> acts?</q>, please read <xref ref="a-NIIIaction" text="type-local" />.  If you respond, <q>Awesome! Let's show the psychology and physics faculty our cool video!</q>, please read <xref ref="a-NIIIfaculty" text="type-global" />. If you respond, <q>Yeah, we probably should have intervened before this happened instead of just watching.  Let's go talk to Campus Security</q>, please read <xref ref="a-NIIIsecurity" text="type-local" />.</p>
+                        </answer>
+                        <answer xml:id="a-NIIIfaculty">
+                                <p>The psychology faculty member speaks to you both about how to be good citizens and about the psychological effects of bullies both on the bully and on the recipient.  If you decide to learn more about this, please read <url href="https://www.psychologytoday.com/basics/bullying">Psychology Today</url>.  The physics faculty member points out that when one person pushes another, the person being pushed does not brace \himselfC, whereas the person doing the pushing does.  Furthermore one might imagine what would happen if you did not brace yourself when you pushed each other, such as in <xref ref="a-NIIIexperiment" text="type-local" />.  You are asked to review both <xref ref="ex-braced" text="type-global" /> and <xref ref="ex-unbraced" text="type-global" /> before the next exam.  On your way out the door, you hear a voice suggest <q><ellipsis /> and you <em>might</em> want to talk to <xref ref="a-NIIIsecurity" text="title">Campus Security</xref> about the incident<ellipsis /></q></p>
+                        </answer>
+                        <answer xml:id="a-NIIIsecurity">
+                                <p>You speak with Campus Security about the incident and \studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> gets taken in for assault.  The Dean thanks you for being brave enough to speak up. <alert>The end!</alert></p>
+                        </answer>
+                        <answer xml:id="a-guilty">
+                                <p>You feel guilty for letting \studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> push \studentC<idx><h sortby="\studentC">\studentC</h></idx> down despite your amazing score on the next physics test.  It wasn't worth it. <alert>The end!</alert></p>
+                        </answer>
+                        <conclusion>
+                                <sidebyside widths="50% 50%" haligns="center right">
+                                        <p></p>
+                                        <tabular halign="right"><row><cell halign="right">
+                                                Return to: <xref ref="d-NIIIbracing" text="title">the discussion of action-reaction forces</xref>,
+                                                        <xref ref="d-cyoaNIII" text="title">\autoref*{s-NewtonExamples} reference to \autoref*{cyoa-NIII}</xref>,
+                                                        <xref ref="ex-braced" text="type-global"/>,
+                                                        <xref ref="ex-unbraced" text="type-global" />
+                                        </cell></row></tabular>
+                                </sidebyside>
+                        </conclusion>
+                </exploration>
+
+                <example xml:id="ex-braced">
+                        <title>\studentZ\ intentionally braces when pushing \studentC</title>
+                        <introduction>
+                                <p>(To better understand <xref ref="ss-NIII" text="title">Newton's third law</xref>, you should compare this example to <xref ref="ex-unbraced" text="type-global" />.) </p>
+                        </introduction>
+                        <statement>
+                                <p>\studentZ<idx><h sortby="\studentZ">\studentZ</h></idx>, the <xref ref="cyoa-NIII" text="title">town bully</xref> (with <m>m_Z=\massZ</m>), decides to vent \hisZ\ frustration on \studentC<idx><h sortby="\studentC">\studentC</h></idx>\ for all the times that \studentC\ makes \studentZ\ look bad in class.  While \studentC\ (<m>m_C=\massC</m>) has \hisC\ back turned, \studentZ\ walks up, leans in, and shoves \studentC\ with a force of <m>\vec F_{C,Z} = 215\unit{N}\ihat</m>.  How does <em>\studentZ</em> accelerate during this exchange?</p>
+                                <image xml:id="i-braced" source="images/i-braced.svg">
+                                <description>This image shows \studentZ\ pushing \studentC in order to see the reaction forces.</description>
+                                <latex-image-code>
+                                        <![CDATA[
+                                        %>
+                                        \begin{picture}(150,90)(-30,-25)
+                                        % Dimensions and offset: (width,height)(x offset,y offset)
+                                        % Insert picture commands (\line,\circle, etc...) here:
+                                        \drawbox{-10}{-20}{120}{20}  % Earth
+                                        \drawbox{25}{1}{20}{50} %\studentZ
+                                        \drawbox{45}{35}{18}{5} %\studentZ's arms
+                                         %\studentZ's legs
+                                            \put(24,19){\line(0,-1){6}}
+                                            \put(24,19){\line(-1,-2){9}}
+                                            \put(15,1){\line(1,0){4}}
+                                            \put(19,1){\line(1,2){6}}
+                                        \drawbox{65}{1}{20}{45} %\studentC
+                                        \put(25,53){\scriptsize \studentZ}
+                                        \put(65,48){\scriptsize \studentC}
+                                        \put(40,-15){\scriptsize Earth}
+                                        \put(-40,24){\begin{minipage}{58pt}
+                                        \color{blue} \scriptsize \studentZ\ braces \himselfZ. \hfill <m>\searrow</m>
+                                        \end{minipage}}
+                                        \end{picture}]]>
+                                </latex-image-code>
+                                </image>
+                        </statement>
+                        <!-- <aside><title>BTW</title> <p>Newton's second law tells us how this affects \studentC. See <xref ref="se-netF-a" text="type-global" /> and homework problem <xref ref="hmwk-pushbrace" text="type-global" />.</p></aside>
+                        -->
+                        <solution>
+                                <p xml:id="ex-braced-know"><alert>What do we know?</alert>
+                                As usual, it is convenient to start with the picture to help decide on the appropriate coordinate system.
+                                <!-- We can also list the information that we know. -->
+                                We know <m>m_Z</m>, which is useful for relating <m>F_{Z,\mathrm{net}}</m> to <m>a_Z</m>.
+                                We know <m>m_C</m>, which is useful for relating <m>F_{C,\mathrm{net}}</m> to <m>a_C</m>.
+                                (This is not asked for, but is asked in homework problem <xref provisional="hmwk-pushbrace" text="type-global" />.)
+                                We know <m>F_{C,Z}</m>, how hard \studentZ\ pushes on \studentC.
+                                We also know that \studentC\ is not bracing \himselfC\ (because \heC\ <q>has \hisC\ back turned</q>) so he only feels one force, and that \studentZ\ is bracing \himselfZ\ (because the problem states that \heZ\ <q>leans in</q>) so he exerts multiple forces.</p>
+
+                                <p xml:id="ex-braced-want"><alert>What do we want to know?</alert>  We want to know about the forces acting on \studentZ, in order to find  <m>F_{Z,\textrm{net}}</m> and therefore <m>a_Z</m>.</p>
+
+                                <p xml:id="ex-braced-infer"><alert>How are what-we-know and what-we-want related?</alert> First, since \studentZ\ exerts a force on \studentC, Newton's third law tells us that \studentZ\ feels a force of <m>F_{Z,C}=-215 \unit{N}\ihat</m>.</p>
+                                <p>Second, because \studentZ\ <em></em>knew} \heZ\ was going to feel this reaction force, \heZ\ compensates by bracing \himselfZ.  This means \heZ\ chooses to exert a force of <m>215\unit{N}</m> on the Earth in the <m>-\ihat</m> direction, probably by putting one leg behind \himselfZ\ and pushing the ground backwards with \hisZ\ foot.  Newton's third law then tells us that \studentZ\ feels a force of <m>F_{Z,C}=+215 \unit{N}\ihat</m> from the ground.</p>
+
+                                <p><alert>Free-Body Diagrams:</alert> We are told of the force on \studentC.  We are told that \studentZ\ braces \himselfZ, which tells us the force on the Earth. Newton's third law then helps us recognize the forces on \studentZ.  (Recall the <xref ref="d-interaction"><q>on-by</q> notation</xref>.)
+                                </p>
+
+                                <sidebyside widths="47% 47%">
+                                        <image xml:id="i-braced-FBD-Z" source="images/i-braced-FBD-Z.svg">
+                                        <description>This image shows \studentZ\ pushing \studentC in order to see the reaction forces.</description>
+                                        <latex-image-code>
+                                                <![CDATA[
+                                                %>
+<!---
+\fbox{\begin{minipage}{2.25in}
+\begin{FBD}{10}{25}{15}{10}{\studentZ}
+\onele{50}{<m>F_{Z,C}=215\unit N</m>}{black}
+\oneri{50}{<m>F_{Z,E}=215\unit N</m>}{blue}
+\end{FBD}
+\vspace{-10pt}
+\raggedright
+\studentZ\ is pushed by \studentC\ to the left.  \studentZ\ is pushed to the right by the Earth.
+\end{minipage}}
+-->
+                                                ]]>
+                                        </latex-image-code>
+                                        </image>
+                                        <image xml:id="i-braced-FBD-C" source="images/i-braced-FBD-C.svg">
+                                        <description>This image shows \studentZ\ pushing \studentC in order to see the reaction forces.</description>
+                                        <latex-image-code>
+                                                <![CDATA[
+                                                %>
+<!--
+\fbox{\begin{minipage}{2.25in}
+\begin{FBD}{10}{23}{15}{10}{\studentC}
+\oneri{50}{<m>F_{C,Z}=215\unit N</m>}{black}
+\end{FBD}
+\vspace{-10pt}
+\raggedright
+\studentC\ feels \studentZ\ push to the right.
+\end{minipage}}
+-->
+                                                ]]>
+                                        </latex-image-code>
+                                        </image>
+                                </sidebyside>
+
+                                <image xml:id="i-braced-FBD-E" source="images/i-braced-FBD-E.svg">
+                                <description>This image shows \studentZ\ pushing \studentC in order to see the reaction forces.</description>
+                                <latex-image-code>
+                                        <![CDATA[
+                                        %>
+<!--
+\fbox{\begin{minipage}{4.75in}
+\begin{FBD}{60}{10}{15}{10}{Earth}
+\onele{50}{<m>F_{E,Z}=215\unit N</m>}{blue}
+\end{FBD}
+\vspace{-10pt}
+\raggedright
+Earth feels a force by \studentZ\ to the left.
+\end{minipage}}
+-->
+                                        ]]>
+                                </latex-image-code>
+                                </image>
+
+                                <p><alert>Concepts to Consider:</alert> Newton's third law guarantees that the action-reaction force pairs, such as <m>F_{Z,C}</m> and <m>F_{C,Z}</m> or <m>F_{Z,E}</m> and <m>F_{E,Z}</m>, are equal and opposite.  There is no such guarantee on <m>F_{Z,C}</m> and <m>F_{Z,E}</m>.  These are equal because \studentZ\ chose to make <m>F_{C,Z}</m> and <m>F_{E,Z}</m> equal.  \HeZ\ pushed on the two others in equal amounts so that the reaction forces that act on \himZ\ will balance for Newton's <em>second</em> law so that \hisZ\ acceleration would be zero.</p>
+
+                                <p>After using Newton's third law to find the forces on \studentZ, we can use Newton's second law to find \hisZ\ acceleration:
+                                <me> a_Z = \frac{F_{Z,\mathrm{net}}}{m_Z} = \frac{\left[ \vec F_{Z,C} + \vec F_{Z,E} \right]}{\massZ} = \frac{\left[ \left( -215\unit N \ihat \right) + \left( +215\unit N \ihat \right) \right]}{\massZ} = 0 \unitfrac{m}{s^2}  </me></p>
+                        </solution>
+                        <conclusion>
+                                <p><alert>Aside:</alert> This example only considers the left-right forces that act in order to make a point about our intuition regarding forces we intend to apply.  Please consider how <xref provisional="f-firstFBDupdate" text="type-global" /> updates <xref ref="f-firstFBD" text="type-global" /> to make yourself aware of the other forces that are acting here, but are being ignored.</p>
+
+                                <sidebyside widths="50% 50%" haligns="center right">
+                                        <p></p>
+                                        <tabular halign="right"><col width="50%" /><row><cell halign="right">
+                                                <p>Return to: <xref provisional="d-NIIIbracing">action-reaction</xref>,
+                                                <xref ref="ex-braced" text="type-global" /></p>
+                                        </cell></row></tabular>
+                                </sidebyside>
+                        </conclusion>
+                </example>
+
+                <example xml:id="ex-unbraced">
+                        <title>\studentD\ does not brace \himselfD\ when pushing \studentC.</title>
+                        <introduction>
+                                <p>(To better understand <xref ref="ss-NIII" text="title">Newton's third law</xref>, you should compare this example to <xref ref="ex-braced" text="type-global" />.) </p>
+                        </introduction>
+                        <statement>
+                                <p>In the lab room one day, while waiting for the instructor, \studentD<idx><h sortby="\studentD">\studentD</h></idx> (who has a mass of <m>m_D=\massD</m>) decides to try a physics experiment to test Newton's third law.  \HeD\ politely asks \hisD\ lab partner, \studentC<idx><h sortby="\studentC">\studentC</h></idx> (<m>m_C=\massC</m>), to turn \hisC\ back while \heD\ squares his feet underneath \himselfD\ and pushes with a force of <m>\vec F_{C,D} = 215\unit{N}\ihat</m>.  Despite the experience of <xref ref="ex-braced" text="type-global" /> (as told in <xref ref="cyoa-NIII" text="type-global"/>), \studentC\ reluctantly agrees.  How does <em>\studentD</em> accelerate during this exchange?</p>
+                                <image xml:id="i-unbraced" source="images/i-unbraced.svg">
+                                <description>This image shows \studentD\ pushing \studentC in order to see the reaction forces.</description>
+                                <latex-image-code>
+                                        <![CDATA[
+                                        %>
+                                        \begin{picture}(150,90)(-30,-25)
+                                        % Dimensions and offset: (width,height)(x offset,y offset)
+                                        % Insert picture commands (\line,\circle, etc...) here:
+                                        \drawbox{-10}{-20}{120}{20}  % Earth
+                                        \drawbox{25}{1}{20}{40} %\studentD
+                                        \drawbox{45}{25}{18}{5} %\studentD's arms
+                                        \drawbox{65}{1}{20}{45} %\studentC
+                                        \put(25,43){\scriptsize \studentD}
+                                        \put(65,48){\scriptsize \studentC}
+                                        \put(40,-15){\scriptsize Earth}
+                                        \put(-40,24){\begin{minipage}{58pt}
+                                        \color{blue} \raggedright \scriptsize \studentD\ does not brace \himselfD. \\\hfill <m>\searrow</m>
+                                        \end{minipage}}
+                                        \end{picture}]]>
+                                </latex-image-code>
+                                </image>
+                        </statement>
+                        <!-- <aside><title>BTW</title> <p>Newton's second law tells us how this affects \studentC. See <xref ref="se-netF-a" text="type-global" /> and homework problem <xref ref="hmwk-pushbrace" text="type-global" />.</p></aside>
+                        -->
+                        <solution>
+                                <p xml:id="ex-unbraced-know"><alert>What do we know?</alert>
+                                As usual, it is convenient to start with the picture to help decide on the appropriate coordinate system.
+                                <!-- We can also list the information that we know. -->
+                                We know <m>m_D</m>, which is useful for relating <m>F_{D,\mathrm{net}}</m> to <m>a_D</m>.
+                                We know <m>m_C</m>, which is useful for relating <m>F_{C,\mathrm{net}}</m> to <m>a_C</m>.
+                                (This is not asked for, but is asked in homework problem <xref provisional="hmwk-pushbrace" text="type-global" />.)
+                                We know <m>F_{C,D}</m>, how hard \studentD\ pushes on \studentC.
+                                We also know that neither person is bracing for the push. So, both \studentC\ and \studentD\ each only feel one force.</p>
+                                
+                                <p xml:id="ex-unbraced-want"><alert>What do we want to know?</alert>  We want to know about the forces acting on \studentD, in order to find  <m>F_{D,\textrm{net}}</m> and therefore <m>a_D</m>.</p>
+                                
+                                <p xml:id="ex-unbraced-infer"><alert>How are <xref ref="ex-unbraced-know" text="title">what-we-know</xref> and <xref ref="ex-unbraced-want" text="title">what-we-want</xref> related?</alert>
+                                First, since \studentD\ exerts a force on \studentC, Newton's third law tells us that \studentD\ feels a force of <m>F_{D,C}=-215 \unit{N}\ihat</m>.</p>
+                                <p>Second, unlike \studentZ\ in <xref ref="ex-braced" text="type-global" />, \studentD\ chooses not to exert a force on the Earth in the <m>-\ihat</m> direction.</p>
+                                
+                                <p><alert>Free-Body Diagrams:</alert> We again draw free-body diagrams:</p>
+
+                                <sidebyside widths="47% 47%">
+                                        <image xml:id="i-unbraced-FBD-Z" source="images/i-unbraced-FBD-Z.svg">
+                                        <description>This image shows \studentZ\ pushing \studentC in order to see the reaction forces.</description>
+                                        <latex-image-code>
+                                                <![CDATA[
+                                                %>
+<!---
+\fbox{\begin{minipage}{2.25in}
+\begin{FBD}{10}{20}{15}{10}{\studentD}
+\onele{50}{<m>F_{D,C}=215\unit N</m>}{black}
+\end{FBD}
+\vspace{-10pt}
+\raggedright
+\studentD\ is pushed by \studentC\ to the left.
+\end{minipage}}
+-->
+                                                ]]>
+                                        </latex-image-code>
+                                        </image>
+                                        <image xml:id="i-unbraced-FBD-C" source="images/i-unbraced-FBD-C.svg">
+                                        <description>This image shows \studentZ\ pushing \studentC in order to see the reaction forces.</description>
+                                        <latex-image-code>
+                                                <![CDATA[
+                                                %>
+<!--
+\fbox{\begin{minipage}{2.25in}
+\begin{FBD}{10}{23}{15}{10}{\studentC}
+\oneri{50}{<m>F_{C,D}=215\unit N</m>}{black}
+\end{FBD}
+\vspace{-10pt}
+\raggedright
+\studentC\ feels \studentD\ push to the right.
+\end{minipage}}
+-->
+                                                ]]>
+                                        </latex-image-code>
+                                        </image>
+                                </sidebyside>
+                                
+                                <p><alert>Concepts to Consider:</alert> Newton's third law guarantees that the action-reaction force pairs, <m>F_{D,C}</m> and <m>F_{C,D}</m>, are equal and opposite.  Because these forces are not on the same person, we cannot add these forces.  Newton's second law will then indicate how each person accelerates.</p>
+                                
+                                <p>After using Newton's third law to find the forces on \studentD, we can use Newton's second law to find \hisD\ acceleration:
+                                <me> a_D = \frac{F_{D,\mathrm{net}}}{m_D} = \frac{\left[ \vec F_{D,C} \right]}{\massD} = \frac{\left[ \left( -215\unit N \ihat \right) \right]}{\massD} = -\sigfrac{2.68}{75}{m}{s^2} \ihat </me></p>
+                        </solution>
+                        <conclusion>
+                                <p><alert>Aside:</alert> This example only considers the left-right forces that act in order to make a point about our intuition regarding forces we intend to apply.  Please consider how <xref provisional="f-firstFBDupdate" text="type-global" /> updates <xref ref="f-firstFBD" text="type-global" /> to make yourself aware of the other forces that are acting here, but are being ignored.</p>
+
+                                <sidebyside widths="50% 50%" haligns="center right">
+                                        <p></p>
+                                        <tabular halign="right"><col width="50%" /><row><cell halign="right">
+                                                <p>Return to: <xref ref="d-NIIIbracing" text="title">the discussion of action-reaction forces</xref>,
+                                                <xref ref="ex-braced" text="type-global" /></p>
+                                        </cell></row></tabular>
+                                </sidebyside>
+                        </conclusion>
+                </example>
+
+        </section>
+
+
+        <section><title>Summary and Homework</title>
+
+                <subsection><title>Summary of Concepts and Equations</title>
+
+                <p>This chapter introduced the way physicists describe forces.  The concept of force encodes how objects interact.
+                After reading this chapter, you should be comfortable responding to the following questions or comments.
+                Unlike the other links in this book, if you follow the links in this summary section, there is no link to return to this page.  (This is on purpose to encourage you to answer these points without following these links.)
+                <ul>
+                <li><p> State Newton's Laws. <xref ref="sum-NewtonsLaws" text="title">(Answer)</xref></p></li>
+                <li><p> How is the unit of Newton related to the fundamental units of the SI system?  <xref ref="sss-unit-N" text="title">(Answer)</xref></p></li>
+                <li><p> How do you know when a system is in equilibrium? <xref ref="sss-equilibrium" text="title">(Answer)</xref></p></li>
+                <li><p> You should know how to draw a free-body diagram.  <xref ref="f-firstFBD" text="title">(Example)</xref></p></li>
+                </ul>
+                </p>
+
+                </subsection>
+
+                <exercises><title>Conceptual Questions</title><todo>Add more conceptual questions</todo>
+
+                        <exercise>
+                                <statement><p>In order to climb a tree, you reach up and grab a branch and pull.  Most people refer to this as <q>pulling yourself up.</q> In terms of Newton's third law, describe what is happening in more technical terms.</p></statement>
+                        </exercise>
+                        <exercise>
+                                <statement><p> Some cars have a <q>cruise-control</q> feature that keeps your speed constant as you drive down the highway.  (a) If you are driving due north with the cruise-control on, are you in equilibrium?  (b) If, instead, you have the cruise-control set while you are following the road around a gradual curve of the road as it follows the shore of a lake, then are you in equilibrium?  (c) In both cases, how can you tell if you are in equilibrium?</p></statement>
+                        </exercise>
+
+                </exercises>
+
+                <exercises><title>Problems</title><todo>Add more variety of problems.</todo>
+
+                        <exercise xml:id="hmwk-pushbrace">
+                                <statement><p>If \studentZ, with <m>m_Z=\massZ</m>, braces \himselfZ\ (so that he does not accelerate) and pushes \studentC\ (<m>m_C=\massC</m>) with a force of <m>\vec F_{C,Z} = 215\unit{N}\ihat</m>, find the following:
+                                <ol>
+                                <li><p> What is the acceleration of \studentC?
+                                        <solution><m>\deq\vec a_C = \frac{215 \unit{N}\ihat}{\massC} = \sigfrac{2.38}{9}{m}{s^2} \ihat</m>.</solution>
+                                        </p></li>
+                                <li><p> What net force does \studentZ\ feel?
+                                        <solution><m>F_{Z,\mathrm{net}}=0\unit N</m>.</solution>
+                                        </p></li>
+                                <li><p> If \studentZ\ braces \himselfZ\ against the Earth, then what must that bracing force be?
+                                        <solution><m>\vec F_{E,Z} = -215\unit{N}\ihat</m>.</solution>
+                                        </p></li>
+                                <li><p> What are the individual forces that \studentZ\ feels?
+                                        <solution><m>F_{Z,C}=-215\unit N \ihat</m> and <m>F_{Z,E}=215\unit N \ihat</m>.</solution>
+                                        </p></li>
+                                <li><p> What is the acceleration of the Earth?
+                                        <solution><m>\deq\vec a_E = \frac{-215 \unit{N}\ihat}{5.97\ten{24}\unit{kg}} = -\sigfrac{3.60}{1\ten{-23}}{m}{s^2} \ihat</m>.</solution>
+                                        </p></li>
+                                <li><p> Which of Newton's laws allows you to answer each of these questions?</p></li>
+                                </ol>
+                                </p></statement>
+                        </exercise>
+                        <exercise>
+                                <statement><p>If you apply a force of <m>4.65\unit N</m> to a mass of <m>2.18\unit{kg}</m>, then how much will it accelerate? </p></statement>
+                        </exercise>
+                        <exercise>
+                                <statement><p> How much force must you apply to cause a mass of <m>80.0\unit{kg}</m> to accelerate at <m>a=0.795\unitfrac{m}{s^2}</m>? </p></statement>
+                        </exercise>
+                        <exercise>
+                                <statement><p> You arrive home to find a box that came in the mail.  You find that you have to exert <m>54.3\unit N</m> to cause it to accelerate <m>a=1.25\unitfrac{m}{s^2}</m>.  (a) What is its mass?  (b) Is that a heavy box or a light box?  (c) Is it likely that this box would fit in a mailbox? </p></statement>
+                        </exercise>
+                        <exercise>
+                                <statement><p> Your <m>2538 \unit{kg}</m> car has run out of gas.  So you ask your friend, \studentB{} who has a mass of <m>\massB</m>, to put it in neutral, sit inside, and steer while you push.  If you apply enough force to cause a net forward force of magnitude <m>37.5\unit N</m>, how much time will it take for the car to move faster than you can walk?  Assume your walking speed is <m>3.0\unitfrac{mi}{hr}</m>.  How far will the car have travelled in that time? </p></statement>
+                        </exercise>
+                        <exercise>
+                                <statement><p> Find the components of the net force on a large crate if three forces are applied: <m>\vec F_1 = -3.0\unit N \ihat + 2.5 \unit N \jhat</m>, <m>\vec F_2 = -6.25\unit N \jhat</m>, and <m>\vec F_3 = 4.5\unit N \ihat + 1.63 \unit{N} \jhat</m>. </p></statement>
+                        </exercise>
+                        <exercise>
+                                <statement><p> Find the components of the net force on a large crate if three forces are applied: <m>F_1 = 3.61 \unit N </m> at <m>71.6^\circ</m> north of east, <m>F_2 = 4.61\unit N</m> due west, and <m>F_3 = 8.13\unit N</m> at <m>21.8^\circ</m> south of east. </p></statement>
+                        </exercise>
+                        <exercise>
+                                <statement><p> Find the magnitude and direction of the net force on a large crate if three forces are applied: <m>\vec F_1 = 4.25\unit N \ihat - 4.66 \unit N \jhat</m>, <m>\vec F_2 = -2.65\unit N \jhat</m>, and <m>\vec F_3 = -5.4\unit N \ihat + 2.93 \unit{N} \jhat</m>. </p></statement>
+                        </exercise>
+                        <exercise>
+                                <statement><p> Find the magnitude and direction of the net force on a large crate if three forces are applied: <m>F_1 = 2.65 \unit N </m> at <m>26.6^\circ</m> north of west, <m>F_2 = 2.22\unit N</m> at <m>56.31^\circ</m> south of west, and <m>F_3 = 7.12\unit N</m> at <m>28.4^\circ</m> north of east. </p></statement>
+                        </exercise>
+
+                </exercises>
+
+        </section>
+
+
         <conclusion>
         <p><date>(Revised August 28, 2017)</date></p>
         <p><date>(Compiled <today />)</date></p>
         </conclusion>
-
 
 </chapter>
 <!-- ********************************************************************************************** -->
