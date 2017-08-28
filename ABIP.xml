@@ -313,8 +313,10 @@
 
                 <assemblage>
                 <figure>
-                <p>Photograph a park with tennis courts and basketball hoops in the background and falling car keys and a dog in the foreground. I think we could do that at Boone County park.</p>
-                <caption xml:id="f-BoonePark">Life is full of examples of physics all around us. </caption>
+                        <description>
+                                <p>Photograph a park with tennis courts and basketball hoops in the background and falling car keys and a dog in the foreground. I think we could do that at Boone County park.</p>
+                        </description>
+                        <caption xml:id="f-BoonePark">Life is full of examples of physics all around us. </caption>
                 </figure>
                 </assemblage>
 
@@ -1507,11 +1509,11 @@
                 <assemblage xml:id="as-NII"><title>Newton's Second Law</title><idx><h>Newton</h><h>Second Law</h></idx> <p>When viewed from an inertial reference frame, the vector-sum of all forces acting on an object will cause that object to accelerate in proportion to its mass: <m>\vec F_\mathrm{net} = m \vec a</m>.</p>
                 </assemblage>
                 <p>Let's take this apart and connect it to your daily experiences.  As with Newton's First Law, the <xref provisional="d-noninertial" text="title">non-inertial rotating reference frame</xref> of the surface of the Earth is a small enough effect that, as long as we don't measure our world too closely, we can pretend that we are viewing it essentially from an inertial reference frame.</p>
-                <aside><title>Touchstone</title>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</aside>
+                <aside><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></aside>
 
                 <p xml:id="d-fma">For this law, it is often sufficient to write down the equation and know that the words are there for back-up.  While most people have no trouble remembering <m>F=ma</m>, it is important to pay attention to two aspects:
                 </p>
-                <aside><title>Touchstone</title>Recall (1) the generic explanation for <xref ref="sss-vectorequations" text="title">vector equations</xref> and (2) the <xref ref="d-2Dmotion" text="title">vector-equations</xref> for two-dimensional motion.</aside>
+                <aside><title>Touchstone</title><p>Recall (1) the generic explanation for <xref ref="sss-vectorequations" text="title">vector equations</xref> and (2) the <xref ref="d-2Dmotion" text="title">vector-equations</xref> for two-dimensional motion.</p></aside>
                 <p>
                 <ul>
                         <li><p> This is a vector-equation, which means that
@@ -2040,7 +2042,6 @@
                                         </ol>
                                         </p>
                                 </statement>
-                                <tabular>
                                 <answer xml:id="a-parkandwalk">
                                         <p>Just as planned, you pull over and park the car.  \studentB<idx><h sortby="\studentB">\studentB</h></idx> suggests one of you stays with the car, probably because \heB\ has physics homework to do.  If you decide to separate, read <xref ref="a-nogas" text="type-local" />.  If you decide to journey together, read <xref ref="a-intosunset" text="type-local" />.</p>
                                 </answer>
@@ -2074,7 +2075,6 @@
                                         <p>You and \studentB<idx><h sortby="\studentB">\studentB</h></idx> happily walk the 25 minutes to the gas station, discussing and working out physics problems the whole way.  You buy a gas can, fill it up, and share the burden of carrying a heavy gas can.  You return to the car, add gas, and drive on to many happy adventures.
                                         <alert>The end!</alert></p>
                                 </answer>
-                                </tabular>
                                 <postlude>
                                         <sidebyside widths="50% 50%" haligns="center right">
                                                 <p></p>
@@ -2088,9 +2088,235 @@
                 </subsubsection>
                 </subsection>
 
+                <subsection xml:id="ss-NIII"><title>Translating Newton's Third Law: Action <ampersand /> Reaction</title>
+                <aside><title>Referenced by</title>
+                        <p>
+                        <xref ref="d-Newtonahead">how to describe forces</xref>,
+                        <xref provisional="ex-braced" text="type-global"/>,
+                        <xref provisional="ex-unbraced" text="type-global"/>
+                        </p>
+                        </aside>
+
+                <introduction>
+                <assemblage xml:id="as-NIII"><title>Newton's Third Law</title><idx><h>Newton</h><h>Third Law</h></idx>
+                <p>For every force acting <em>on</em> one object <em>by</em> an <em>other object</em>, there is an equal-in-magnitude reaction-force acting <em>on</em> the <em>other object</em> in the opposite direction.</p>
+                </assemblage>
+                <p>This law is often shortened to <q>For every action, there is an equal and opposite reaction.</q>  The statement given above is meant to emphasize several points:
+                <ul>
+                <li><p> These <q>actions</q> are specifically forces.</p></li>
+                <li><p> Forces are an interaction in which the acting force is <em>on one object</em> by another and necessitates that there is a reaction force on the other object by the one.  That is to say, an object cannot feel a force without also exerting a force back on the other object.</p></li>
+                </ul>
+                Another way to say this is that all forces come in action/reaction pairs that necessarily have equal magnitude and opposite direction and necessarily act on different objects.
+                </p>
+                <aside><title>Foreshadow</title>
+                        <p>This law is the force-version of the statement of the <xref provisional="s-conservemom" text="title">conservation of momentum</xref>.</p>
+                </aside>
+
+                <p xml:id="d-NIIIbracing">Let's take this apart and connect it to your daily experiences.  Students of physics will often see the terms action and reaction and connect it to the way humans react to the actions of their friends.  However, this implies a causal response that is not true for Newton's forces.  That is to say, this is not a <q>revenge law</q> whereby if you push on me, then I will choose to push you back.  Instead, it is expressing that forces are intrinsically interactions between a pair of objects.  When you push on me, I am -- independent of my choosing to do so -- necessarily pushing back on you.  But, you might say, <q>if that were true, then why am I able to sneak up on you and push you over without falling over myself?</q>  Well, you can think about how that works by reading <xref provisional="cyoa-NIII" text="type-global" />. After we introduce the tool of a free-body diagram in the next subsection, you can also explore this idea by comparing <xref provisional="ex-braced" text="type-global" /> to <xref provisional="ex-unbraced" text="type-global" />.</p>
+
+                </introduction>
+
+                        <subsubsection xml:id="sss-FBD"><title>The Free-Body Diagram (FBD)</title>
+                        <aside><title>Referenced by</title>
+                                <p>
+                                <xref ref="se-equi" text="type-global" />,
+                                <xref ref="d-usesofFma">uses of <m>F=ma</m></xref>
+                                </p>
+                        </aside>
+                        <idx>Free-Body Diagrams</idx>
+
+                        <p>In the more interesting situations where there are several forces acting, it can be easy to lose track of what is pushing whom where.  In order to better organize our information and direct our attention, we can make use of <term>free-body diagrams</term>.  The basic idea is to make a diagram for each individual object that we care about in a given situation, and <em>free</em> from the overall picture.  This allows us to identify the forces acting on a single object (relevant for Newton's second law) and more easily pair them with third-law pairs that act on different objects.</p>
+
+                        <p>To see how this works, the next simple example will build on the previous simple examples to help us consider not only the (2nd law) forces on the object, but also the (3rd law) forces on the people doing the pushing and pulling.
+                                <todo><p>This section, and especially the example needs to be fixed to fit the references and the images in the right place with this format.</p></todo>
+                        </p>
+                        
+                        <example xml:id="se-FBD-AB">
+                        <aside><title>Referenced by</title> <p><xref provisional="f-firstFBD" /></p></aside>
+                        <p>As you revisit <xref ref="se-netFadd" text="type-global" />,
+                                <todo><p>As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!  But, it is still nice to be moving a small mass so that it has a large acc, and the people have small acc.)</p></todo>
+                        imagine that \studentA<idx><h sortby="\studentA">\studentA</h></idx> is exerting <m>\vec F_1 = +5.0\unit{N}\ihat</m> and \studentB<idx><h sortby="\studentB">\studentB</h></idx> is exerting <m>\vec F_2 = +4.0\unit{N}\ihat</m>.  <xref ref="se-netFadd" text="type-global" /> showed<fn><xref ref="se-netFadd" text="type-global" /> uses Newton's second law which tells us about the object on which the forces are applied.</fn> that after <m>1.6\unit s</m> the object moved with a speed of <m>7.2\unitfrac{m}{s}</m>.  Newton's third law tells us about the interaction <em>between</em> objects and, from this, we can deduce the force on the people.  It is then separately possible to use the second law to learn about the motion of the people. In order to better describe the situation, let's assume \studentA\ is to the left of the object, pushing it to the right, and \studentB\ is to the right of the object, pulling it to the right as drawn in <xref ref="f-firstFBD" text="type-global" />.
+                        <ol>
+                        <li><p> Since \studentA\ exerts a force of <m>5.0\unit{N}</m> to the right <m>(+\ihat)</m> on the object, the <em>third law</em> reminds us that the object exerts a force of <m>5.0\unit{N}</m> to the left  <m>(-\ihat)</m> on \studentA.  Since \studentA\ has a mass of \massA, the <em>second law</em> reminds us that \heA\ is accelerated at the rate of
+                            <m> \vec a_1 = \frac{-5.0\unit{N} \ihat}{\massA} = -0.0\sigfrac{58}{8}{m}{s^2}\ihat = -5.9\ten{-2}\unitfrac{m}{s^2} \ihat</m>
+                            which is to the left with a small enough value that it is easy for \himA\ to brace against.   Even if \heA\ doesn't brace, if \heA\ starts from rest, \heA\ will only be moving
+                            <me>v_{1f} = (0\unitfrac{m}{s})+(-0.0\sigfrac{58}{8}{m}{s^2})(1.6\unit s) = -0.0\sigfrac{94}{1}{m}{s}</me>,
+                            which is much slower than the object.
+                            </p></li>
+                        <li><p> Since \studentB\ exerts a force of <m>4.0\unit{N}</m> to the right on the object, the <em>third law</em> reminds us that the object exerts a force of <m>4.0\unit{N}</m> to the left on \studentB. Since \studentB\ has a mass of \massB, the <em>second law</em> reminds us that \heB\ is accelerated at the rate of
+                            <m> \vec a_2 = \frac{-4.0\unit{N} \ihat}{\massB} = -0.0\sigfrac{53}{3}{m}{s^2}\ihat = -5.3\ten{-2}\unitfrac{m}{s^2}</m>
+                            which is also to the left with a small enough value that it is easy for \himB\ to brace against.  Even if \heB\ doesn't brace, if \heB\ starts from rest, \heB\ will only be moving
+                            <me>v_{2f} = (0\unitfrac{m}{s})+(-0.0\sigfrac{53}{3}{m}{s^2})(1.6\unit s) = -0.0\sigfrac{85}{3}{m}{s}</me>,
+                            which is also much slower than the object and different from \studentA.
+                            </p></li>
+                        </ol>
+                        </p>
+                        </example>
+
+                        <p xml:id="d-FBD-AB">There are a couple of important aspects to take away from <xref ref="se-FBD-AB" text="type-global" />, especially as it builds on <xref ref="se-netFadd" text="type-global" /> (which told us about the forces on the object) and <xref ref="se-netF-a" text="type-global" /> (which told us
+<!-- \begin{minipage}{3.25in} -->
+                        about how the object moved).  The earlier examples were relevant to the 2nd law and only affected the object itself.  This information is captured in the middle free-body diagram of <xref ref="f-firstFBD" /> and reproduced here.
+                                <todo><p>Reference the image, not the figure.</p></todo>
+<!-- \end{minipage}
+\hfill
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{10}{object}
+\twori{50}{<m>5\unit N</m>}{black}{40}{<m>4\unit N</m>}{black}
+\end{FBD}
+\end{minipage}}
+-->
+                        </p>
+
+                        <p>As indicated above, the free-body diagram also helps us visualize the third-law (action/reaction) force pairs.  By reproducing the following image<idx><h>Free-Body Diagrams</h><h>Images</h></idx> from <xref ref="f-firstFBD" /> here<todo><p>Reference the image, not the figure.</p></todo> and adding color, we can see that the <m>\color{green}</m> green forces<m>\color{black}</m> form an action-reaction pair and separately the {\color{blue} blue forces} form
+<!-- -\newline
+\begin{minipage}{\textwidth}
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{25}{15}{10}{\studentA}
+\onele{50}{<m>5\unit N</m>}{green}
+\end{FBD}
+\end{minipage}}
+\hfill
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{10}{object}
+\twori{50}{<m>5\unit N</m>}{green}{40}{<m>4\unit N</m>}{blue}
+\end{FBD}
+\end{minipage}}
+\hfill
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{20}{15}{10}{\studentB}
+\onele{40}{<m>4\unit N</m>}{blue}
+\end{FBD}
+\end{minipage}}
+\end{minipage}
+-->
+                        an action-reaction pair.  None of these three objects are in equilibrium.</p>
+
+                        <p xml:id="d-equi">If we now do the same thing<idx><h>Free-Body Diagrams</h><h>Images</h></idx> with the <xref ref="se-equi" text="type-global" />, but let \studentC<idx><h sortby="\studentC">\studentC</h></idx> be the person on the left {\color{green} pushing to the right} and \studentD<idx><h sortby="\studentD">\studentD</h></idx> be the person on the right {\color{blue} pushing to the left}, then we see that while the {\color{green} green forces} form an action-reaction pair showing the third-law interaction between \studentC\ and the object and while the {\color{blue} blue forces} form an action-reaction pair showing the third-law interaction between \studentD\ and the object, it
+<!-- \newline
+\begin{minipage}{\textwidth}
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{10}{\studentC}
+\onele{30}{<m>3\unit N</m>}{green}
+\end{FBD}
+\end{minipage}}
+\hfill
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{10}{object}
+\oneri{30}{<m>3\unit N</m>}{green}
+\onele{30}{<m>3\unit N</m>}{blue}
+\end{FBD}
+\end{minipage}}
+\hfill
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{10}{\studentD}
+\oneri{30}{<m>3\unit N</m>}{blue}
+\end{FBD}
+\end{minipage}}
+\end{minipage}
+-->
+                        is the combination of the {\color{blue} blue} and the {\color{green} green} forces, which only act on the object itself, that coincidentally cancel to leave the object in (second law) equilibrium.  In these images, \studentC\ and \studentD\ are <em>not</em> in equilibrium.</p>
+
+                        <p>To say this more specifically, the forces within one free-body diagram are described by Newton's second law. They do get added together to form the net-force (which is to say that we can add the object's green force to the object's blue force). They are able to cancel each other if they <em>happen to</em> be equal in magnitude and opposite in direction. Finally, they will determine how that specific object accelerates.  On the other hand, Newton's third law describes any specific pair of forces that interact between free-body diagrams (each colored pair); they <em>will necessarily be</em> equal in magnitude and opposite in direction, but they cannot be canceled because they cannot be added because they are on different objects.</p>
+
+                        <assemblage xml:id="f-firstFBD">
+                                <title>A couple of people push a box.<idx><h>Free-Body Diagrams</h><h>Images</h></idx></title>
+                                <p>First we will draw a picture of the situation described by <xref ref="se-FBD-AB" text="type-global" />, which builds on <xref ref="se-netFadd" text="type-global" />.  \studentA<idx><h sortby="\studentA">\studentA</h></idx> stands to the left of the object and exerts a force (pushes) to the right.  \studentB<idx><h sortby="\studentB">\studentB</h></idx> stands to the right of the object and exerts a force (pulls) to the right.  Both of these forces are <em>on</em> the object and, by Newton's second law cause it to accelerate (as described in <xref ref="se-netF-a" text="type-global" />).  By Newton's third law, we can learn about the forces on \studentA\ and \studentB.</p>
+
+                                <figure xml:id="f1-firstFBD">
+                                        <caption><p>\studentA\ and \studentB\ push on a box</p></caption>
+                                        <image xml:id="i-firstFBD-drawing" source="images/i-firstFBD-drawing.svg" width="75%">
+                                        <description><p>The drawing of two people pushing on a box.</p></description>
+                                        <latex-image-code>
+\begin{picture}(200,100)(-30,-25)
+% Dimensions and offset: (width,height)(x offset,y offset)
+% Insert picture commands (\line,\circle, etc...) here:
+\put(0,0){\line(1,0){200}}
+\put(60,2){\line(1,0){60}}
+\drawbox{30}{1}{20}{50} %\studentA
+\drawbox{50}{25}{18}{5} %\studentA's arms
+\drawbox{70}{3}{20}{30} % object
+\drawbox{150}{1}{20}{40} %\studentB
+\drawbox{134}{25}{16}{5} %\studentB's arms
+\put(90,27.5){\oval(2,2)[r]}
+\put(91,27.5){\line(1,0){43}}
+\put(30,53){\scriptsize \studentA}
+\put(70,35){\scriptsize object}
+\put(150,43){\scriptsize \studentB}
+\put(60,-12){\begin{minipage}{60pt}
+\scriptsize The object is on a sheet of ice.
+\end{minipage}}
+\end{picture}
+                                        </latex-image-code>
+                                        </image>
+                                </figure>
+
+                                <p>Now we will draw a free-body diagram for each individual.  Notice that each <em>free-body</em> diagram is on its own, free from the rest of the picture.  These diagrams will be discussed further in the <xref ref="d-FBD-AB" text="type-global">discussion about \ref*{se-FBD-AB}</xref>.</p>
+
+                                <figure xml:id="f2-firstFBD">
+                                        <caption><p>\studentA\ and \studentB\ push on a box</p></caption>
+                                        <sidebyside widths="30% 30% 30%">
+                                                <image xml:id="i-firstFBD-FBD1" source="images/i-firstFBD-FBD1.svg">
+                                                <description><p>\studentA</p></description>
+                                                <latex-image-code>
+<!-- \noindent % \textwidth default is 5in for a book 
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{25}{15}{10}{\studentA}
+\onele{50}{<m>5\unit N</m>}{black}
+\end{FBD}
+\raggedright
+Because \studentA\ pushes on the object to the right, \studentA\ feels a force <em></em>on} \himA\ <em></em>by} the object towards the left.
+\end{minipage}}
+-->
+                                                </latex-image-code>
+                                                </image>
+
+                                                <image xml:id="i-firstFBD-FBD2" source="images/i-firstFBD-FBD2.svg">
+                                                <description><p>\studentA</p></description>
+                                                <latex-image-code>
+<!--
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{10}{object}
+\twori{50}{<m>5\unit N</m>}{black}{40}{<m>4\unit N</m>}{black}
+\end{FBD}
+\raggedright
+The object is in the middle.  Recall from <xref ref="se-netFadd" text="type-global" /> that the <m>F_\mathrm{net} = 9.0 \unit N</m> on this object.
+\end{minipage}}
+-->
+                                                </latex-image-code>
+                                                </image>
+
+                                                <image xml:id="i-firstFBD-FBD3" source="images/i-firstFBD-FBD3.svg">
+                                                <description><p>\studentA</p></description>
+                                                <latex-image-code>
+<!--
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{20}{15}{10}{\studentB}
+\onele{40}{<m>4\unit N</m>}{black}
+\end{FBD}
+\raggedright
+Because \studentB\ pulls on the object to the right, \studentB\ feels a force <em></em>on} \himB\ <em></em>by} the object towards the left.
+\end{minipage}}
+-->
+                                                </latex-image-code>
+                                                </image>
+                                        </sidebyside>
+                                </figure>
+                                
+                                <p>It turns out that this is a little oversimplified.  When we get to <xref provisional="s-Fg" text="type-global" /> and <xref provisional="s-FN" text="type-global" />, we will see that we have to include a downwards force of gravity and an upwards support force.  This will be explained in <xref provisional="f-firstFBDupdate" text="type-global"/>.</p>
+                                        <sidebyside widths="50% 50%" haligns="center right">
+                                                <p></p>
+                                                <tabular halign="right"><row><cell halign="right">
+                                                        Return to: <xref provisional="ex-braced" />, <xref provisional="ex-unbraced" />, <xref provisional="d-rope.net">rope-tension</xref>
+                                                </cell></row></tabular>
+                                        </sidebyside>
+                                </assemblage>
+                        </subsubsection>
+                </subsection>
+
         </section>
+
         <conclusion>
-        <p><date>(Revised August 15, 2017)</date></p>
+        <p><date>(Revised August 28, 2017)</date></p>
         <p><date>(Compiled <today />)</date></p>
         </conclusion>
 
@@ -2223,12 +2449,18 @@
                                 </postlude>
                         </investigation>
 
-        <p>Words for stuff
-                <todo xml:id="todo-1">Consider adding comment about Newton not including <q>inertial reference frame</q> to his laws.</todo>
-        in the conclusion.</p>
-                <aside xml:id="as-touchstone"><title>Touchstone</title><p>You might also recall the discussion in <xref provisional="ss-noninertial" text="type-global" />.</p></aside>
-                <biographical xml:id="bio-eff"><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></biographical>
-                <historical xml:id="his-eff"><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></historical>
+        <p>This is filler to space the margin notes.
+        <todo xml:id="todo-1">Consider adding comment about Newton not including <q>inertial reference frame</q> to his laws.</todo>
+        This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.
+        <aside xml:id="as-touchstone"><title>Touchstone</title><p>Aside with title.</p></aside>
+        This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.
+        <biographical xml:id="bio-eff"><p>This is a biographical, title should be automatically changed to <q>Touchstone</q>.</p></biographical>
+        This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.
+        <historical xml:id="his-eff"><p>This is a historical, title should NOT be automatically changed. Perhaps use this for <q>Foreshadow</q>?</p></historical>
+        This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.
+        </p>
+
+
 
         </introduction>
         <section><title>Centering Assemblages (Important)</title>
