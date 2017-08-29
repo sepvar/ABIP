@@ -2128,7 +2128,8 @@
                         <p>In the more interesting situations where there are several forces acting, it can be easy to lose track of what is pushing whom where.  In order to better organize our information and direct our attention, we can make use of <term>free-body diagrams</term>.  The basic idea is to make a diagram for each individual object that we care about in a given situation, and <em>free</em> from the overall picture.  This allows us to identify the forces acting on a single object (relevant for Newton's second law) and more easily pair them with third-law pairs that act on different objects.</p>
 
                         <p>To see how this works, the next simple example will build on the previous simple examples to help us consider not only the (2nd law) forces on the object, but also the (3rd law) forces on the people doing the pushing and pulling.
-                                <todo><p>This section, and especially the example needs to be fixed to fit the references and the images in the right place with this format.</p></todo>
+                                <todo><p>This section, and especially the example needs to be fixed to fit the references and the images in the right place with this format.</p>
+                                        <p>Also need to move the <xref ref="f-firstFBD" text="type-global" /> above the example.</p></todo>
                         </p>
 
                         <example xml:id="se-FBD-AB">
@@ -2167,7 +2168,7 @@
 -->
                         </p>
 
-                        <p>As indicated above, the free-body diagram also helps us visualize the third-law (action/reaction) force pairs.  By reproducing the following image<idx><h>Free-Body Diagrams</h><h>Images</h></idx> from <xref ref="f-firstFBD" /> here<todo><p>Reference the image, not the figure.</p></todo> and adding color, we can see that the <m>\color{green}</m> green forces<m>\color{black}</m> form an action-reaction pair and separately the {\color{blue} blue forces} form
+                        <p>As indicated above, the free-body diagram also helps us visualize the third-law (action/reaction) force pairs.  By reproducing the following image<idx><h>Free-Body Diagrams</h><h>Images</h></idx> from <xref ref="f-firstFBD" /> here<todo><p>Reference the image, not the figure.</p></todo> and adding color, we can see that the <m>\mathrm{\color{green}{green\ forces}}</m> form an action-reaction pair and separately the <m>\mathrm{\color{blue}{blue\ forces}}</m> form
 <!-- -\newline
 \begin{minipage}{\textwidth}
 \fbox{\begin{minipage}{1.5in}
@@ -2227,6 +2228,22 @@
                                         <image xml:id="i-firstFBD-drawing" source="images/i-firstFBD-drawing.svg" width="75%">
                                         <description><p>The drawing of two people pushing on a box.</p></description>
                                         <latex-image-code>
+                                                <![CDATA[
+                                                %>
+                                                \begin{tikzpicture}
+                                                        \draw [thick, gray] (0,0) -- (7,0);
+                                                        \draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                        \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                        \draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                        \draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                        \draw (3,1) arc (-90:90:.1);
+                                                        \draw (3.1,1.1) -- (4.7,1.1);
+                                                        \node [above] at (1.375,1.75) {\studentA};
+                                                        \node [above] at (2.625,1.2) {object};
+                                                        \node [above] at (5.375,1.5) {\studentB};
+                                                        \node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                                \end{tikzpicture}]]>
+<!--
 \begin{picture}(200,100)(-30,-25)
 % Dimensions and offset: (width,height)(x offset,y offset)
 % Insert picture commands (\line,\circle, etc...) here:
@@ -2246,6 +2263,7 @@
 \scriptsize The object is on a sheet of ice.
 \end{minipage}}
 \end{picture}
+-->
                                         </latex-image-code>
                                         </image>
                                 </figure>
@@ -2253,11 +2271,33 @@
                                 <p>Now we will draw a free-body diagram for each individual.  Notice that each <em>free-body</em> diagram is on its own, free from the rest of the picture.  These diagrams will be discussed further in the <xref ref="d-FBD-AB" text="type-global">discussion about \ref*{se-FBD-AB}</xref>.</p>
 
                                 <figure xml:id="f2-firstFBD">
-                                        <caption><p>\studentA\ and \studentB\ push on a box</p></caption>
+                                        <caption>
+                                                <p>Because \studentA\ (on the left) is pushing the object <font color="green">to the right</font>, (Newton's third law tells us) \studentA\ feels a force <font color="green">to the left</font> <em>on</em> \himA\ <em>by</em> the object. 
+                                                <ellipsis /> For the object (in the middle), <xref ref="se-netFadd" text="type-global" /> showed that <m>F_\mathrm{net} = 9.0 \unit N</m>.
+                                                <ellipsis /> Because \studentB\ (on the right) pulls on the object <font color="blue">to the right</font>, (Newton's third law tells us) \studentB\ feels a force <font color="blue">to the left</font> <em>on</em> \himB\ <em>by</em> the object.</p>
+                                        </caption>
                                         <sidebyside widths="30% 30% 30%">
                                                 <image xml:id="i-firstFBD-FBD1" source="images/i-firstFBD-FBD1.svg">
                                                 <description><p>\studentA</p></description>
                                                 <latex-image-code>
+                                                        <![CDATA[
+                                                        %>
+                                                        \begin{tikzpicture}
+                                                                %\draw [thick, gray] (0,0) -- (7,0);
+                                                                %\draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                                \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                                %\draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                                %\draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                                %\draw (3,1) arc (-90:90:.1);
+                                                                %\draw (3.1,1.1) -- (4.7,1.1);
+                                                                \node [above] at (1.375,1.75) {\studentA};
+                                                                %\node [above] at (2.625,1.2) {object};
+                                                                %\node [above] at (5.375,1.5) {\studentB};
+                                                                %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                                                \draw [->, -latex, green] (1.375,.875) -- (-.625,.875);  \node [above right] at (-.625,.875) {$5\unit N$};
+                                                                \node [left, white] at (-.625,.875) {.};
+                                                                \node [right, white] at (2.375,.875) {.};
+                                                        \end{tikzpicture}]]>
 <!-- \noindent % \textwidth default is 5in for a book
 \fbox{\begin{minipage}{1.5in}
 \begin{FBD}{10}{25}{15}{10}{\studentA}
@@ -2271,8 +2311,27 @@ Because \studentA\ pushes on the object to the right, \studentA\ feels a force <
                                                 </image>
 
                                                 <image xml:id="i-firstFBD-FBD2" source="images/i-firstFBD-FBD2.svg">
-                                                <description><p>\studentA</p></description>
+                                                <description><p>the object</p></description>
                                                 <latex-image-code>
+                                                        <![CDATA[
+                                                        %>
+                                                        \begin{tikzpicture}
+                                                                %\draw [thick, gray] (0,0) -- (7,0);
+                                                                %\draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                                %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                                \draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                                %\draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                                %\draw (3,1) arc (-90:90:.1);
+                                                                %\draw (3.1,1.1) -- (4.7,1.1);
+                                                                %\node [above] at (1.375,1.75) {\studentA};
+                                                                \node [above] at (2.625,1.2) {object};
+                                                                %\node [above] at (5.375,1.5) {\studentB};
+                                                                %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                                                \draw [->, -latex, green] (2.625,.75) -- (4.625,.75);  \node [above left] at (4.625,.75) {$5\unit N$};
+                                                                \draw [->, -latex, blue]   (2.625,.65) -- (4.125,.65);  \node [below left] at (4.125,.65) {$4\unit N$};
+                                                                \node [left, white] at (1.625,.875) {.};
+                                                                \node [right, white] at (4.625,.875) {.};
+                                                        \end{tikzpicture}]]>
 <!--
 \fbox{\begin{minipage}{1.5in}
 \begin{FBD}{10}{15}{15}{10}{object}
@@ -2288,6 +2347,24 @@ The object is in the middle.  Recall from <xref ref="se-netFadd" text="type-glob
                                                 <image xml:id="i-firstFBD-FBD3" source="images/i-firstFBD-FBD3.svg">
                                                 <description><p>\studentA</p></description>
                                                 <latex-image-code>
+                                                        <![CDATA[
+                                                        %>
+                                                        \begin{tikzpicture}
+                                                                %\draw [thick, gray] (0,0) -- (7,0);
+                                                                %\draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                                %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                                %\draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                                \draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                                %\draw (3,1) arc (-90:90:.1);
+                                                                %\draw (3.1,1.1) -- (4.7,1.1);
+                                                                %\node [above] at (1.375,1.75) {\studentA};
+                                                                %\node [above] at (2.625,1.2) {object};
+                                                                \node [above] at (5.375,1.5) {\studentB};
+                                                                %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                                                \draw [->, -latex, blue]   (5.375,.7) -- (3.875,.7);  \node [above right] at (3.875,.7) {$4\unit N$};
+                                                                \node [left, white] at (3.375,.875) {.};
+                                                                \node [right, white] at (6.375,.875) {.};
+                                                        \end{tikzpicture}]]>
 <!--
 \fbox{\begin{minipage}{1.5in}
 \begin{FBD}{10}{20}{15}{10}{\studentB}
@@ -2324,20 +2401,20 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                 <statement>
                 <p>You hold a book a little above your desk.  When you let go, it falls and then hits your desk.
                 <ol>
-                <li><p> While you are holding it, it has no acceleration.  Are there forces acting on it?  
+                <li><p> While you are holding it, it has no acceleration.  Are there forces acting on it?
                         Select one: <q>Yes</q> (<xref ref="A-hbf" text="type-local" />) or <q>No</q> (<xref ref="A-hbnof" text="type-local" />).</p></li>
-                <li><p> While you are holding it, is it in equilibrium?  
+                <li><p> While you are holding it, is it in equilibrium?
                         Select one: <q>Yes</q> (<xref ref="A-true1" text="type-local" />) or <q>No</q> (<xref ref="A-false1" text="type-local" />).</p></li>
-                <li><p> After you let go and while the book falls, it accelerates downwards.  Are there forces acting on it?  
+                <li><p> After you let go and while the book falls, it accelerates downwards.  Are there forces acting on it?
                         Select one: <q>Yes</q> (<xref ref="A-falls" text="type-local" />) or <q>No</q> (<xref ref="A-falls" text="type-local" />).</p></li>
-                <li><p> While it is hitting the desk, is it accelerating?  
+                <li><p> While it is hitting the desk, is it accelerating?
                         Select one: <q>Yes</q> (<xref ref="A-hitY" text="type-local" />) or <q>No</q> (<xref ref="A-hitN" text="type-local" />).</p></li>
-                <li><p> After it has landed and is sitting on the desk, is it in equilibrium? 
+                <li><p> After it has landed and is sitting on the desk, is it in equilibrium?
                         Select one: <q>Yes</q> (<xref ref="A-landedY" text="type-local" />) or <q>No</q> (<xref ref="A-landedN" text="type-local" />).</p></li>
-                <li><p> After it has landed and is sitting on the desk, how many forces are acting on it? 
-                        Select one: 
-                                <q>Zero</q> (<xref ref="A-zero" text="type-local" />), 
-                                <q>One</q> (<xref ref="A-one" text="type-local" />), or 
+                <li><p> After it has landed and is sitting on the desk, how many forces are acting on it?
+                        Select one:
+                                <q>Zero</q> (<xref ref="A-zero" text="type-local" />),
+                                <q>One</q> (<xref ref="A-one" text="type-local" />), or
                                 <q>Two</q> (<xref ref="A-two" text="type-local" />).</p></li>
                 </ol>
                 </p>
@@ -2369,8 +2446,8 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                         <solution><p>This is essentially the same as <xref ref="A-chair1" text="type-local" />, but the carpet exerts more force than the tile.  In either case, force causes a <em>change in</em> velocity. You are trying to speed the chair up and the floor is trying to slow the chair down.  (Both are trying to change the velocity, but cancel to result in a constant velocity.)  When you stop pushing, the chair stops moving because there is a force from the tile acting to oppose the force you apply while you push the chair; when you let go, this force slows the chair until the chair stops and then the force stops acting. (See <xref provisional="s-Ff" text="type-global"/> for more details.)</p></solution>
                 </task>
                 <task>
-                        <introduction><p>Push a chair <em>with wheels</em> across a tile floor, with some strength, then let it go.</p></introduction> 
-                        <task xml:id="A-chair3"> 
+                        <introduction><p>Push a chair <em>with wheels</em> across a tile floor, with some strength, then let it go.</p></introduction>
+                        <task xml:id="A-chair3">
                                 <statement><p>What happens when you stop pushing?</p></statement>
                                 <solution><p>For a chair with wheels being pushed across a tile floor, when you stop pushing it probably continues to move across the floor for at least a short distance.</p></solution>
                         </task>
@@ -2648,13 +2725,13 @@ Earth feels a force by \studentZ\ to the left.
                                 (This is not asked for, but is asked in homework problem <xref provisional="hmwk-pushbrace" text="type-global" />.)
                                 We know <m>F_{C,D}</m>, how hard \studentD\ pushes on \studentC.
                                 We also know that neither person is bracing for the push. So, both \studentC\ and \studentD\ each only feel one force.</p>
-                                
+
                                 <p xml:id="ex-unbraced-want"><alert>What do we want to know?</alert>  We want to know about the forces acting on \studentD, in order to find  <m>F_{D,\textrm{net}}</m> and therefore <m>a_D</m>.</p>
-                                
+
                                 <p xml:id="ex-unbraced-infer"><alert>How are <xref ref="ex-unbraced-know" text="title">what-we-know</xref> and <xref ref="ex-unbraced-want" text="title">what-we-want</xref> related?</alert>
                                 First, since \studentD\ exerts a force on \studentC, Newton's third law tells us that \studentD\ feels a force of <m>F_{D,C}=-215 \unit{N}\ihat</m>.</p>
                                 <p>Second, unlike \studentZ\ in <xref ref="ex-braced" text="type-global" />, \studentD\ chooses not to exert a force on the Earth in the <m>-\ihat</m> direction.</p>
-                                
+
                                 <p><alert>Free-Body Diagrams:</alert> We again draw free-body diagrams:</p>
 
                                 <sidebyside widths="47% 47%">
@@ -2695,9 +2772,9 @@ Earth feels a force by \studentZ\ to the left.
                                         </latex-image-code>
                                         </image>
                                 </sidebyside>
-                                
+
                                 <p><alert>Concepts to Consider:</alert> Newton's third law guarantees that the action-reaction force pairs, <m>F_{D,C}</m> and <m>F_{C,D}</m>, are equal and opposite.  Because these forces are not on the same person, we cannot add these forces.  Newton's second law will then indicate how each person accelerates.</p>
-                                
+
                                 <p>After using Newton's third law to find the forces on \studentD, we can use Newton's second law to find \hisD\ acceleration:
                                 <me> a_D = \frac{F_{D,\mathrm{net}}}{m_D} = \frac{\left[ \vec F_{D,C} \right]}{\massD} = \frac{\left[ \left( -215\unit N \ihat \right) \right]}{\massD} = -\sigfrac{2.68}{75}{m}{s^2} \ihat </me></p>
                         </solution>
