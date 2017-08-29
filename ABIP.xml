@@ -2168,7 +2168,7 @@
 -->
                         </p>
 
-                        <p>As indicated above, the free-body diagram also helps us visualize the third-law (action/reaction) force pairs.  By reproducing the following image<idx><h>Free-Body Diagrams</h><h>Images</h></idx> from <xref ref="f-firstFBD" /> here<todo><p>Reference the image, not the figure.</p></todo> and adding color, we can see that the <m>\mathrm{\color{green}{green\ forces}}</m> form an action-reaction pair and separately the <m>\mathrm{\color{blue}{blue\ forces}}</m> form
+                        <p>As indicated above, the free-body diagram also helps us visualize the third-law (action/reaction) force pairs.  By reproducing the following image<idx><h>Free-Body Diagrams</h><h>Images</h></idx> from <xref ref="f-firstFBD" /> here<todo><p>Reference the image, not the figure.</p></todo> and adding color, we can see that the <m>\mathrm{\color{green}{green\ forces}}</m> form an action-reaction pair and separately the <m>\mathrm{\color{blue}{blue\ forces}}</m> form<todo>Figure out how to color text.</todo>
 <!-- -\newline
 \begin{minipage}{\textwidth}
 \fbox{\begin{minipage}{1.5in}
@@ -2272,7 +2272,7 @@
 
                                 <figure xml:id="f2-firstFBD">
                                         <caption>
-                                                <p>Because \studentA\ (on the left) is pushing the object <font color="green">to the right</font>, (Newton's third law tells us) \studentA\ feels a force <font color="green">to the left</font> <em>on</em> \himA\ <em>by</em> the object. 
+                                                <p>Because \studentA\ (on the left) is pushing the object <font color="green">to the right</font>, (Newton's third law tells us) \studentA\ feels a force <font color="green">to the left</font> <em>on</em> \himA\ <em>by</em> the object.
                                                 <ellipsis /> For the object (in the middle), <xref ref="se-netFadd" text="type-global" /> showed that <m>F_\mathrm{net} = 9.0 \unit N</m>.
                                                 <ellipsis /> Because \studentB\ (on the right) pulls on the object <font color="blue">to the right</font>, (Newton's third law tells us) \studentB\ feels a force <font color="blue">to the left</font> <em>on</em> \himB\ <em>by</em> the object.</p>
                                         </caption>
