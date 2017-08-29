@@ -515,7 +515,7 @@
 
         </section>
         <section xml:id="s-SI-MKS"><title>The Metric System</title>
-                <aside><title>Referenced by</title> <p><xref provisional="ss-weightmass"  text="type-global" /></p></aside>
+                <aside><title>Referenced by</title> <p><xref ref="ss-weightmass"  text="type-global" /></p></aside>
                 <!-- \new{v2.2}{Added detail} -->
 
                 <introduction>
@@ -576,7 +576,7 @@
                         </p>
                         </aside>
 
-                <p>Note internet search comments in <xref provisional="ss-weightmass"  text="type-global" /> regarding the <q>conversion</q> of kilograms-to-pounds, with special attention to (See <xref ref="s-sigfig"  text="type-global">significant digits</xref>.).<idx>Significant Digits</idx></p>
+                <p>Note internet search comments in <xref ref="ss-weightmass"  text="type-global" /> regarding the <q>conversion</q> of kilograms-to-pounds, with special attention to (See <xref ref="s-sigfig"  text="type-global">significant digits</xref>.).<idx>Significant Digits</idx></p>
                 <todo>rephrase this.  I moved that discussion to <xref ref="s-sigfig"  text="type-global" />.</todo>
 
                 </subsection>
@@ -585,7 +585,7 @@
                         <aside><title>Referenced by</title>
                         <p>
                         <xref provisional="sss-unit-N"  text="type-global" />,
-                        <xref provisional="ss-weightmass"  text="type-global" />
+                        <xref ref="ss-weightmass"  text="type-global" />
                         </p>
                         </aside>
 
@@ -603,6 +603,8 @@
                         </p>
                         </aside>
 
+                <p xml:id="p-fundamental">This paragraph should describe a fundamental unit (as opposed to a derived unit).</p>
+                <p xml:id="p-derived">This paragraph should describe a derived unit (as opposed to a fundamental unit).</p>
 
                 </subsection>
 
@@ -790,8 +792,8 @@
 
         <p>Since physics has its roots in the natural philosophy of the ancient Greeks and developed mathematically with Galileo and Newton, it has been around long enough for the technical language to both evolve (Newton used the word <q>action</q> for what we refer to as <q>force</q>) and to be absorbed into everyday (colloquial) language. Words like force and energy have taken on broader meanings in English.  In this text, we will try to be precise with the language.  Hopefully we can avoid using the dismissive phrase, <q>Oh, you <em>know</em> what I <em>mean</em>.</q></p>
 
-        <p>One example of not being careful with the language comes when people use the term <q>massive</q> to mean <q>big.</q>  The word massive actually means <q>has a large amount of material</q> whereas big means <q>takes up a large amount of space</q> (which might be replaced by the word <q>voluminous</q> rather than <q>massive</q>). These are related by <xref provisional="s-density">the density</xref><idx>Density</idx> but it is possible to be massive and not voluminous (see, for example, the discussion of <xref provisional="s-blakhole2">black holes</xref>).  While it is <em></em>technically} inaccurate to use massive to mean big, <q>we</q> know what <q>we</q> mean.</p>
-        <aside><title>Referenced by</title> <p><xref provisional="ss-weightmass" text="type-global" /></p></aside>
+        <p xml:id="p-massive">One example of not being careful with the language comes when people use the term <q>massive</q> to mean <q>big.</q>  The word massive actually means <q>has a large amount of material</q> whereas big means <q>takes up a large amount of space</q> (which might be replaced by the word <q>voluminous</q> rather than <q>massive</q>). These are related by <xref provisional="s-density">the density</xref><idx>Density</idx> but it is possible to be massive and not voluminous (see, for example, the discussion of <xref provisional="s-blakhole2">black holes</xref>).  While it is <em></em>technically} inaccurate to use massive to mean big, <q>we</q> know what <q>we</q> mean.</p>
+        <aside><title>Referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
 
         </section>
 
@@ -799,12 +801,12 @@
                 <aside><title>Referenced by</title>
                 <p>
                 <xref ref="ss-convertunits" text="type-global" />
-                <xref provisional="ss-weightmass" text="type-global" />
+                <xref ref="ss-weightmass" text="type-global" />
                 </p>
                 </aside>
 
-        <p>Note the comments in <xref provisional="ss-weightmass" text="type-global" /> regarding an internet search on the <q><xref ref="ss-convertunits" text="title">conversion</xref></q> of kilograms-to-pounds.<idx>Significant Digits</idx>
-        <todo><p>Remove this sentence and make the next paragraph sensible.  It makes more sense here than in <xref provisional="ss-weightmass" text="type-global" />.</p></todo>
+        <p>Note the comments in <xref ref="ss-weightmass" text="type-global" /> regarding an internet search on the <q><xref ref="ss-convertunits" text="title">conversion</xref></q> of kilograms-to-pounds.<idx>Significant Digits</idx>
+        <todo><p>Remove this sentence and make the next paragraph sensible.  It makes more sense here than in <xref ref="ss-weightmass" text="type-global" />.</p></todo>
         </p>
 
         <p>A short Google<trademark /> search by the author found that the conversation rate between pounds and kilograms was
@@ -824,9 +826,9 @@
                 <xref ref="ss-noninertial">non-inertial reference frames</xref>,
                 air resistance <xref ref="ss-airresistance" text="type-global" />,
                 air resistance <xref ref="ss-ballisticairresistance" text="type-global" />,
-                <xref provisional="ss-NI">Newton's first law</xref>,
-                <xref provisional="ss-NII">Newton's second law</xref>,
-                <xref provisional="s-Fg" text="type-global" />,
+                <xref ref="ss-NI">Newton's first law</xref>,
+                <xref ref="ss-NII">Newton's second law</xref>,
+                <xref ref="s-Fg" text="type-global" />,
                 <xref provisional="d-fundamental">fundamental forces</xref>,
                 <xref provisional="s-FT" text="type-global" />.
                 </p>
@@ -1133,7 +1135,7 @@
 
                 <p>It turns out that, ignoring the effect of <xref ref="ss-airresistance" text="title">air resistance</xref>, all objects fall with the same acceleration (due to the gravity), <m>a_g = 9.81\unitfrac{m}{s^2}</m> downwards. In this book,<idx>Freefall</idx>
                         <assemblage><p><q>being in freefall</q> will mean moving only under the influence of gravity and having an acceleration of <m>a_g = 9.81\unitfrac{m}{s^2}</m> downwards.</p></assemblage>
-                We will start to discuss the reason for this in <xref provisional="s-Fg" text="type-global" /> and then get into more detail in <xref provisional="c-gravity" text="type-global" />. For now, <xref ref="ex-freefall" text="type-global" /> shows the type of experiment that can allow you to calculate the acceleration due to gravity.</p>
+                We will start to discuss the reason for this in <xref ref="s-Fg" text="type-global" /> and then get into more detail in <xref provisional="c-gravity" text="type-global" />. For now, <xref ref="ex-freefall" text="type-global" /> shows the type of experiment that can allow you to calculate the acceleration due to gravity.</p>
 
                         <exercise xml:id="ex-freefall">
                                 <title>How quickly does it fall?</title>
@@ -1199,7 +1201,7 @@
                         <p>
                         <xref ref="d-freefall">freefall</xref>,
                         <xref provisional="A-falls" text="type-global" />,
-                        <xref provisional="s-Fg" text="type-global" />
+                        <xref ref="s-Fg" text="type-global" />
                         </p>
                         </aside>
 
@@ -1390,7 +1392,7 @@
                 <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-heatverb" text="global">heat as a verb</xref></p></aside>
                 <p xml:id="d-forcenoun">The technical term <term>force</term><idx><h>Force</h><h>description</h></idx> refers to the general idea of pushing or pulling.  In the same way<todo><p>Change this to move most of the description of accelerating into a pull up box by moving the language to that other location (paragraph, not section)</p></todo> that physicists use the word <xref ref="d-acc" text="title">acceleration</xref> (technically <em>changing the velocity</em>) to mean <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>), we will use <em>force as a noun</em><idx><h>Force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling.</p>
 
-                <p xml:id="d-interaction">You should note that you can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.</p>
+                <p>You should note that you can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.</p>
                         <remark><title>Push or Pull</title>
                         <p>By now you may have noticed that it is tedious to keep saying <q>pushed or pulled,</q> so I will only say <q>push</q> even when I am including the possibility of <q>pushing or pulling</q>.</p>
                         </remark>
@@ -1399,7 +1401,7 @@
         </paragraphs>
 
         <p>Sometimes we care about the thing doing the pushing or pulling, sometimes we don't.  We always care about the thing being pushed or pulled.  We will <em>distinguish these objects</em> by referring to the object that is pushing as the object <q>causing the force</q> or <q>exerting the force</q> and by referring to the object that is being pushed as the object <q>feeling the force</q>.  We will <em>distinguish these forces</em> as follows:
-                <convention>
+                <convention xml:id="d-interaction">
                 <p>Let's imagine that \studentB<idx><h sortby="\studentB">\studentB</h></idx> gives \studentA<idx><h sortby="\studentA">\studentA</h></idx> a good-natured shove in the arm.  The following are useful descriptions and are different ways of describing the same action.
                 <ul>
                         <li><p> \studentB\ exerted a force <term>on</term> \studentA.</p></li>
@@ -1433,14 +1435,14 @@
                 <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-Newtonahead" text="title">how to describe forces</xref></p></aside>
 
         <introduction>
-        <p>Newton's Laws (recall <xref ref="s-law" text="title">Theory versus Law</xref>) describe our observations about three questions:
+        <p xml:id="sum-NewtonsLaws">Newton's Laws (recall <xref ref="s-law" text="title">Theory versus Law</xref>) describe our observations about three questions:
         <ol>
                 <li><p> What happens to an object when I <em>don't</em> push on it?</p></li>
                 <li><p> What happens <em>to an object</em> when I do push on it?</p></li>
                 <li><p> What happens <em>to me</em> when I push on an object?</p></li>
         </ol>
         The answer to these questions have a precise, concise, technical language and the point of the next three subsections are to translate that into (modern) English, into math, and into intuition.  The statement of these laws has slightly different versions in different texts to emphasize different points.  We will state them as follows<idx><h>Newton</h><h>Laws</h></idx><idx><h>Laws</h><h>Newton</h></idx>:
-        <ol xml:id="sum-NewtonsLaws">
+        <ol>
                 <li><p>When viewed from an inertial reference frame, an object with no forces acting on it will maintain its velocity, which may be zero.</p></li>
                 <li><p> When viewed from an inertial reference frame, the vector-sum of all forces acting on an object will cause that object to accelerate in proportion to its mass: <m>\vec F_\mathrm{net} = m \vec a</m>.</p></li>
                 <li><p> For every force acting (the <q>action</q>) on one object by an other object, there is an equal-in-magnitude reaction-force acting on the other object in the opposite direction.</p></li>
@@ -2035,11 +2037,14 @@
                                 <statement>
                                         <p>On a long road trip with your friend \studentB<idx><h sortby="\studentB">\studentB</h></idx>, your car starts to sputter as it runs out of gas shortly before arriving in a new town.  You see a sign for a gas station in the distance and have to decide what to do.  You and \studentB\ can think of three options.
                                         <todo>I like <q>answer</q> better, but it doesn't fit.  <q>hint</q> fits, but I don't like it.  I can't figure out how to extend that line.  sidebyside hides the answers.</todo>
-                                        <ol label="Plan A">
-                                                <li xml:id="c-parkandwalk"><p>Pull over, park the car, walk to the gas station, buy a gas can, fill it up, carry it back to the car, and drive on!   If you follow this plan, then read <xref ref="a-parkandwalk" text="type-local" />.</p></li>
-                                                <li xml:id="c-coastindrive"><p>Leave the car in drive, continue holding the gas-pedal down until there is absolutely no gas, and hope against all hope that you get the car to the gas station so that nobody needs to carry a heavy gas can. If you follow this plan, then read <xref ref="a-coastindrive" text="type-local" />.</p></li>
-                                                <li xml:id="c-coastinneutral"><p>Speed up to just over the speed limit, put the car in neutral, turn on your blinking hazard-lights, coast as far as you can possibly coast, and hope against all hope that you get the car to the gas station so that nobody needs to carry a heavy gas can. If you follow this plan, then read <xref ref="a-coastinneutral" text="type-local" />.</p></li>
-                                        </ol>
+                                        <dl>
+                                                <li xml:id="c-parkandwalk"><title>Plan A</title>
+                                                        <p>Pull over, park the car, walk to the gas station, buy a gas can, fill it up, carry it back to the car, and drive on!   If you follow this plan, then read <xref ref="a-parkandwalk" text="type-local" />.</p></li>
+                                                <li xml:id="c-coastindrive"><title>Plan B</title>
+                                                        <p>Leave the car in drive, continue holding the gas-pedal down until there is absolutely no gas, and hope against all hope that you get the car to the gas station so that nobody needs to carry a heavy gas can. If you follow this plan, then read <xref ref="a-coastindrive" text="type-local" />.</p></li>
+                                                <li xml:id="c-coastinneutral"><title>Plan C</title>
+                                                        <p>Speed up to just over the speed limit, put the car in neutral, turn on your blinking hazard-lights, coast as far as you can possibly coast, and hope against all hope that you get the car to the gas station so that nobody needs to carry a heavy gas can. If you follow this plan, then read <xref ref="a-coastinneutral" text="type-local" />.</p></li>
+                                        </dl>
                                         </p>
                                 </statement>
                                 <answer xml:id="a-parkandwalk">
@@ -2345,7 +2350,7 @@ The object is in the middle.  Recall from <xref ref="se-netFadd" text="type-glob
                                                 </image>
 
                                                 <image xml:id="i-firstFBD-FBD3" source="images/i-firstFBD-FBD3.svg">
-                                                <description><p>\studentA</p></description>
+                                                <description><p>\studentB</p></description>
                                                 <latex-image-code>
                                                         <![CDATA[
                                                         %>
@@ -2379,11 +2384,11 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                         </sidebyside>
                                 </figure>
 
-                                <p>It turns out that this is a little oversimplified.  When we get to <xref provisional="s-Fg" text="type-global" /> and <xref provisional="s-FN" text="type-global" />, we will see that we have to include a downwards force of gravity and an upwards support force.  This will be explained in <xref provisional="f-firstFBDupdate" text="type-global"/>.</p>
+                                <p>It turns out that this is a little oversimplified.  When we get to <xref ref="s-Fg" text="type-global" /> and <xref ref="s-FN" text="type-global" />, we will see that we have to include a downwards force of gravity and an upwards support force.  This will be explained in <xref provisional="f-firstFBDupdate" text="type-global"/>.</p>
                                         <sidebyside widths="50% 50%" haligns="center right">
                                                 <p></p>
                                                 <tabular halign="right"><row><cell halign="right">
-                                                        Return to: <xref provisional="ex-braced" />, <xref provisional="ex-unbraced" />, <xref provisional="d-rope.net">rope-tension</xref>
+                                                        Return to: <xref ref="ex-braced" />, <xref ref="ex-unbraced" />, <xref provisional="d-rope.net">rope-tension</xref>
                                                 </cell></row></tabular>
                                         </sidebyside>
                                 </assemblage>
@@ -2882,7 +2887,791 @@ Earth feels a force by \studentZ\ to the left.
         </conclusion>
 
 </chapter>
+
 <!-- ********************************************************************************************** -->
+
+<chapter xml:id="c-forcetype"><title>The Many Types of Force</title>
+<aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-interaction" text="title">subscript notation of forces</xref></p></aside>
+
+        <introduction>
+        <p>There are many mechanisms for imparting force on an object.  Perhaps the most obvious is that objects fall towards the Earth.  We call this force <q>gravity</q> and we will discuss it first.  It turns out to be somewhat more complicated because it turns out that the force that helps us fall when we trip is the same force that holds the planets in their orbits.  The complicated general theory will be discussed later<todo>add reference</todo>, but for now <xref ref="s-Fg" text="type-local" /> will describe the phenomenon at the surface of the Earth where we usually experience it.</p>
+        
+        <p>After a brief introduction to the four fundamental forces in <xref provisional="s-fundamental" text="type-local" />, we will consider the <xref ref="s-FN" text="title">normal force</xref>, <xref provisional="s-FT" text="title">tension</xref> (such as in ropes), <xref provisional="s-Ff" text="title">friction</xref>, <xref provisional="s-springs" text="title">springs</xref>, and end with the catch-all additional category of <xref provisional="s-FA" text="title">applied forces</xref>.  <xref provisional="s-Fnet" text="type-local" /> will wrap it up by using examples including multiple types of force to compute the net force, which connects back to Newton's Laws in the previous chapter.</p>
+        
+        </introduction>
+        
+        <section xml:id="s-Fg"><title>Gravity at the Surface of the Earth</title>
+        <aside><title>Referenced by</title> 
+                <p>
+                <xref ref="d-accgrav">freefall</xref>,
+                <xref ref="f-firstFBD" text="type-global"/>
+                </p>
+        </aside>
+
+                <introduction>
+                <p>Perhaps the force that is the most obvious to humanity is the one that helps us fall when we stumble: the gravitational force<idx><h>Gravity</h><h>Surface of Earth</h></idx>.  This is one of the fundamental forces discussed in <xref provisional="s-fundamental" text="type-global" />.  In addition, the details about how the planets, moon, and the sun experience this force will be discussed in <xref provisional="c-gravity" text="type-global" />.  For now, we can consider how this interaction manifests itself on our daily lives.  In this section, we will start with how objects move when the gravitational force is the only force acting.  Subsections <xref ref="ss-weightmass" text="local" /> and <xref provisional="ss-equivmm" text="local" /> will clarify some subtleties and then we'll jump into the examples in <xref ref="ss-local-mg" text="type-local" />.</p>
+
+                <p>We can investigate what happens when the gravitational force is the only force acting on an object by holding it in the air and dropping it<idx>Freefall</idx>.  One of the complications during such an experiment was discussed in <xref ref="ss-airresistance" text="type-hybrid" />.  If we drop a sheet of paper, there is air resistance in addition to the gravitational force.  For this section, I will assume that the mass-to-surface-area ratio is large enough that we can effectively ignore the air resistance.
+                <biographical><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></biographical></p>
+
+                <p xml:id="d-Fgrav">Since objects fall faster than humans are used to paying attention to, the patterns are difficult to see.  The green box of <xref ref="irl-freefall" text="type-hybrid" /> shows you how you can pay close attention to the patterns that result from observing falling objects.  You should go do those experiments before reading further.  Go ahead.  I'll wait.</p>
+
+                <p xml:id="d-Fgball">You did do them, right?  You're not just reading ahead?  Really?  OK.  Doing that experiment will help you see (1) that everything falls at the same rate and (2) that objects accelerate as they fall.  This first point is a bit less intuitive and will be discussed further in <xref provisional="ss-equivmm" text="type-hybrid" />.  This second point should be exactly what you expect, when you consider <xref ref="as-NII" text="title">Newton's second Law</xref>: If there is only one force (the gravitational force), then the object cannot be in <xref ref="sss-equilibrium" text="title">equilibrium</xref> and it must be accelerating.  (You should notice that this is the language of <xref ref="st-Fma" text="title">the story of Newton's second law</xref>.)</p>
+
+                <p>In order to evaluate this further, let's consider a specific object, like a baseball.  Our baseball has a mass of <m>m_b = 0.145\unit{kg}</m>.  If the only force acting <em>on</em> the ball is the gravitational force <em>by</em> the Earth, then the net force is the gravitational force: <m>\vec F_\mathrm{net} = \vec F_{bEg}</m>.
+                <biographical><title>Touchstone</title><p><xref ref="d-interaction" text="title">the on-by notation</xref></p></biographical>
+                Here the subscripts are <m>b</m> (because the force is on the <em>b</em>all), <m>E</m> (because the force is exerted by the <em>E</em>arth), and <m>g</m> (because it is a <em>g</em>ravitational force).  Since the acceleration is due to the gravitational force, I will use either <m>a_g</m> (usually when the object is in <xref ref="ss-freefall" text="title">freefall</xref> and therefore accelerating at this rate) or <m>g</m> (usually when the object is not actually accelerating at that rate).  With this notation, Newton's second law becomes:
+                <me> \vec F_{bEg} = m_b \vec a_g </me>
+                At this point, we know the mass, but we don't know the force or the acceleration.  However, we have conveniently already done the experiment (recall <xref ref="ex-freefall" text="type-hybrid"/>) that will tell us the acceleration is <m>a_g = 9.81\unitfrac{m}{s^2}</m> downwards.  (Recall that <q>downwards</q> is the direction of the vector, which can be expressed as <m>-\jhat</m>.)  If we know the mass and the acceleration, then we can compute the force.</p>
+
+                <example xml:id="se-weightball">
+                        <statement>
+                        <p>If a baseball with mass <m>m_b = 0.145\unit{kg}</m> is dropped (allowed to <xref ref="ss-freefall" text="title">fall freely</xref>) so that it accelerates at <m>a_g = 9.81\unitfrac{m}{s^2}</m> downwards, then while it falls it feels the gravitational force:
+                        <me> \vec F_g = m \vec g = (0.145\unit{kg}) [-(9.81\unitfrac{m}{s^2})\,\jhat] = -\sig{1.42}{24}{N} \jhat = -1.42 \unit N \jhat </me>.
+                        </p>
+                        </statement>
+                </example>
+
+                <p>This is the force of the gravitational force on the baseball.  Although we computed the force while the ball was falling, the gravitational force does not magically vanish when the ball is sitting on the floor.  So, we can say that (as long as the ball is close to the surface of the Earth, as noted in <xref provisional="c-gravity" text="type-hybrid" />) the force always has this value.  Rather than continuing to say <q>the force of gravity</q> we call this force the weight<idx>Weight</idx>.</p>
+
+                <assemblage><p>The weight of an object is computed as its mass times the acceleration due to gravity, even when the object is not actually accelerating at that rate:  <m>\mathbf{F_g \equiv mg}</m>.</p></assemblage>
+
+                </introduction>
+                
+                <subsection xml:id="ss-weightmass"><title>Weight versus Mass</title>
+                <aside><title>Referenced by</title> 
+                        <p>
+                        <xref ref="ss-convertunits" text="type-hybrid" />,
+                        <xref ref="s-sigfig" text="type-hybrid" />
+                        </p>
+                </aside>
+                <idx>Weight</idx>
+
+                <p xml:id="p-defpound">Since all objects have the same acceleration due to gravity at the surface of the Earth, the weight of an object and the mass of an object are very closely correlated, but they are not the same quantity.  This tends to cause some confusion when the discussion is not explicitly technical.  Recall the discussion about being precise in our language, <xref ref="s-precision" text="type-global" />.  One complication for people in the United States is that there are two definitions of the pound; one is a unit of mass<fn xml:id="fn-pound">There are also multiple versions of the pound-mass.  You can find these explained on the internet, but most of these are considered obsolete.  The one I will use is the <q>avoirdupois-pound</q>, which is defined in the NIST publication
+                <!-- found in https://en.wikipedia.org/wiki/Pound_(mass) -->
+                <url href="https://www.nist.gov/sites/default/files/documents/2017/04/28/AppC-12-hb44-final.pdf">Handbook 44</url>, page C-19, as exactly <m>453.592 37\unit{g}</m>.</fn>
+                and the other is a unit of force.  Since the pound-force<fn xml:id="fn-kg-pound">There is also a unit of force called the kilogram-force.</fn> 
+                <!-- https://en.wikipedia.org/wiki/Pound_(force) -->
+                is defined as the standard unit of mass times the standard unit for the acceleration due to gravity, as discussed in <xref ref="s-SI-MKS" text="type-hybrid" /><todo>Update <xref ref="s-SI-MKS" text="type-hybrid" /> with this information.</todo>, the conversion directly from pound-force to Newtons will <em>not</em> match the longer, but more appropriate, conversion from pound-mass to kilogram that gets multiplied by the local acceleration due to gravity (as opposed to the standard <m>g</m>) into Newtons.  It may also be useful to review the comments about unit-conversion in the section on <xref ref="s-sigfig" text="title">significant digits</xref><idx>Significant Digits</idx>.</p>
+
+                <p xml:id="p-weightmass">In the discussion about <xref ref="p-massive" text="title">being precise</xref>, we distinguished <q>massive</q> (the amount) from <q>voluminous</q> (the size).  Now that we understand <xref ref="as-NII" text="title">Newton's second law</xref>, we can distinguish <q>massive</q>
+                (an amount of material causing a difficulty in making accelerate)
+                from <q>weighty</q> (a strength needed to lift).
+                The concept that goes with
+                <assemblage><p>mass is the amount of material,</p></assemblage>
+                whereas, the concept that goes with
+                <assemblage><p>weight is how strongly the gravitational force pulls on the object.</p></assemblage>
+                Having mass affects both the inertia (ease of moving) and the weight (force of gravity).
+                Having weight expresses the gravitational force due to whichever large object (moon, planet, sun, etc.) you happen to be on or near.  Noticing that the SI-unit (<xref ref="s-SI-MKS" text="type-global" />) is different for different types of quantities, such as a kilogram (a <xref ref="p-fundamental" text="title">fundamental unit</xref>) for mass and a Newton (a <xref ref="p-derived" text="title">derived unit</xref>) for weight, may help you remember that these are different kinds of quantities.</p>
+
+                <p>The interesting aspect of this relationship is that while having more mass makes an object harder to move (the same force produces less acceleration for more massive objects), when objects fall under the influence of the gravitational force, they accelerate at the <em>same</em> rate.  This reveals that the gravitational force must be stronger for more massive objects <em>by the exact amount</em> needed to compensate for that larger mass.  This is called the equivalence principle and is discussed in <xref provisional="ss-equivmm" text="type-hybrid" />.</p>
+
+
+                </subsection>
+                
+                <subsection xml:id="ss-local-mg"><title>Calculating the weight</title>
+
+                <p>When calculating the forces acting on a person or an object, we will often need to account for the force of gravity, while other forces may also be at work.  As mentioned above, the weight is found by multiplying the mass times the local acceleration due to gravity, even if the object is not actually accelerating at that rate.  <xref provisional="c-gravity" text="type-global" /> will clarify why it is true<fn xml:id="fn-accgrav-nuance">The short answer is that the altitude (distance from the surface of the Earth) and local geology affect the strength of the gravitational field.  Since the Earth is slightly oblate (bulges at the equator), the altitude at different latitudes corresponds to a different distance from the center of the Earth.  In addition, while the spin of the Earth does not affect the strength of the gravitational field, it does affect how objects accelerate. The <url href="http://www2.csr.utexas.edu/grace/gallery/animations/ggm01/ggm01_gif-200.html">GRACE project</url> has measured the variations across the globe.</fn>, but for now please note that the acceleration due to gravity is (1) different according to where we are and also (2) the same for all objects at that location.<idx><h>Acceleration</h><h>Gravity</h></idx><idx><h>Gravity</h><h>Acceleration</h></idx>
+                </p>
+
+                <p xml:id="d-weightmass">Because of the peculiarities in the <xref ref="p-defpound" text="title">definition of pound</xref> it will be useful to build some intuition about masses in terms of kilograms and Newtons.  <xref ref="t-weightmass" text="type-hybrid" /> lists the mass of some common objects and, using the standard value for <m>g</m>, their corresponding weights. <xref provisional="c-weightmass" text="type-hybrid" /> asks you to estimate the mass of some other common objects.  <xref provisional="c-massweight" text="type-hybrid" /> asks you to think of common objects with a specified mass.</p>
+
+                <table xml:id="t-weightmass"> <!-- -->
+                <caption>The list of objects is intended to give a sense of scale so that the reader can better estimate the value of the mass of an object.  You might notice that (except for the apple) each of these is between 4 and 4.5 times heavier than the previous object.  Note that these are rough estimates; for example, while the author weighs about <m>200\unit{lbs}</m> this is not typical, nor average.
+                <!-- reference weight of an apple:  \url{http://www.applejournal.com/ref.htm} -->
+                </caption>
+                <tabular>
+                        <row below="minor"><cell>Object</cell> <cell>pounds</cell> <cell>mass (kg)</cell> <cell>weight (N)</cell></row> 
+                        <row><cell>apple</cell> <cell>0.33</cell> <cell>0.15</cell> <cell>1.5</cell></row> 
+                        <row><cell>lean, healthy cat</cell> <cell>10</cell> <cell>4.6</cell> <cell>45</cell></row> 
+                        <row><cell>medium-sized dog</cell> <cell>44</cell> <cell>20</cell> <cell>196</cell></row> 
+                        <row><cell>human</cell> <cell>200</cell> <cell>91</cell> <cell>890</cell></row> 
+                        <row><cell>horse</cell> <cell>1000</cell> <cell>362</cell> <cell><m>3.56\ten{3}</m></cell></row> 
+                        <row><cell>large pick-up truck</cell> <cell>4000</cell> <cell><m>1.81\ten{3}</m></cell> <cell><m>1.78\ten{4}</m></cell></row>
+                </tabular>
+                </table>
+
+                <p>Now let's do some calculations<ellipsis />
+
+                <example>
+                        <statement>
+                        <p>\studentA<idx><h sortby="\studentA">\studentA</h></idx> notices that \heA\ needs to exert <m>F=1.5\unit{N}</m> to support the apple listed in <xref ref="t-weightmass" text="type-hybrid" />. \HeA\ then drops it  and notices its acceleration of <m>9.81\unitfrac{m}{s^2}</m>.  \HeA\ computes the mass to be
+                                <me> m = \frac{F_g}{a_a} \ = \ \frac{1.5\unit{N}}{9.81\unitfrac{m}{s^2}} \ = \ \frac{1.5\unitfrac{kg \cdot m}{s^2}}{9.81\unitfrac{m}{s^2}} \ = \ 0.\sig{15}{3}{kg} </me>
+                        (If you know the weight, you can compute the mass, even if the mass is not actually in freefall.)
+                        </p></statement>
+                </example>
+                </p>
+                
+                <example xml:id="se-weightA">
+                        <statement>
+                        <p>\studentA<idx><h sortby="\studentA">\studentA</h></idx>, who knows \hisA\ own mass (<m>\massA</m>), then imagines
+                                <aside><title>Referenced by</title> 
+                                        <p>
+                                        <xref provisional="f-firstFBDupdate" text="type-global" />,
+                                        <xref provisional="f-firstFBDangle" text="type-global" />
+                                        </p>
+                                </aside> 
+                        dropping \himselfA\ (!) from a (small) height.  While \heA\ falls, \heA\ recognizes the gravitational force on \himA, which is computed to be
+                        <me> \vec F_g = m \vec g = (\massA) [-(9.81\unitfrac{m}{s^2})\,\jhat] = -\sig{833}{.85}{N} \jhat = -834 \unit N \jhat </me>
+                        Since \heA\ is in freefall and there is only one force is acting on \himA, the net force is easy to compute:  <m>\vec F_\mathrm{net} = -834 \unit N</m>.
+                        However, if you know the mass something, you can compute the weight even if that object is not in freefall.
+                        You should repeat this calculation for the mass in <xref ref="se-netF-a" text="type-global" />.</p>
+                        </statement>
+                        <answer>Since the object in <xref ref="se-netF-a" text="type-global" /> has a mass of <m>2.0\unit{kg}</m>, we can find the weight by
+                                <me> \vec F_g = m \vec g = (2.0\unit{kg}) [-(9.81\unitfrac{m}{s^2})\,\jhat] = -\sig{19}{.62}{N} \jhat = -20 \unit N \jhat </me>.
+                        </answer>
+                </example>
+
+                <p>You should note that
+                <assemblage><p><tabular>
+                        <row><cell><m>F_\mathrm{net} \ (=ma)</m> is always related to the actual acceleration of the object.</cell></row>
+                        <row><cell><m>F_g\ (=mg)</m> is always related to the local acceleration due to gravity.</cell></row>
+                        </tabular></p>
+                </assemblage>
+                You should also note that
+                <assemblage><p>the actual acceleration is only equal to the local acceleration due to gravity if the object is in freefall.</p></assemblage>
+                </p>
+
+                <example xml:id="se-FNB">
+                        <statement>
+                        <p>If <aside><title>Referenced by</title> <p><xref provisional="f-firstFBDupdate" text="type-global" />, <xref provisional="f-firstFBDangle" text="type-global" /></p></aside> \studentB<idx><h sortby="\studentB">\studentB</h></idx> is not falling, but rather standing safely on the floor, then the gravitational force is still acting.  It can be computed as
+                                <me> \vec F_g = m \vec g = (\massB) [-(9.81\unitfrac{m}{s^2})\,\jhat] = -\sig{735}{.75}{N} \jhat = -736 \unit N \jhat </me>
+                        However, since we can see that \hisB\ acceleration is zero, the <m>\vec F_\mathrm{net}</m> <em>must be zero</em>.  The only way that can happen, though is if there is another force acting upwards on \studentB.  What could possibly be pushing up on \himB?  <xref ref="A-floor" text="type-local" />.  Whatever it is pushing up on \himB, it is supplying a support force, which can be calculated since
+                                <m>\vec F_\mathrm{net} = \vec F_g + \vec F_\mathrm{support}</m> 
+                        and we can solve for
+                                <me> \vec F_\mathrm{support} = \vec F_\mathrm{net} - \vec F_g = m\left(0\unitfrac{m}{s^2}\right) - \left[ -(\sig{735}{.8}{N}) \jhat\right] = +736\unit N \jhat </me>
+                        Because it is in the direction opposite to <m>\vec F_g</m>, it is upwards <m>(+\jhat)</m>.</p>
+
+                        <p>Can you identify <em>why</em> the support force is equal in magnitude and opposite in direction to the gravitational force?  
+                        Select one: 
+                                <xref ref="A-second" text="title">Newton's second law</xref>
+                        or
+                                <xref ref="A-third" text="title">Newton's third law</xref>.
+                        </p>
+                        </statement>
+                        
+                        <answer xml:id="A-floor">I hope you guessed the floor.  That is the only thing pushing up on \studentB<idx><h sortby="\studentB">\studentB</h></idx>.  One useful way to think about it is that the floor is the thing keeping \himB\ from falling.  The direction of this force is <em>normal</em> (perpendicular) to the horizontal floor, so it is in the vertical direction.  This will be discussed in more detail in <xref ref="s-FN" text="type-global"/>.</answer>
+                        
+                        <answer xml:id="A-second">You can tell that it is Newton's second law <m>(\vec F_\mathrm{net} = m \vec a)</m> because the forces we are considering are acting on the <em>same</em> object.  In this case, the gravitational force is caused by the Earth and the normal force is caused by the floor by they are both felt by \studentB<idx><h sortby="\studentB">\studentB</h></idx>.  These forces happen to be equal and opposite because \heB\ happens to be in equilibrium. \HeB\ does not <em>have to be</em> in equilibrium, such as when \heB\ jumps, in which case the forces would not be equal and might not be opposite.</answer>
+                        
+                        <answer xml:id="A-third"><p>If it were Newton's third law, then the two forces we were discussing would be acting on different objects and would be unrelated to the fact that the object (in this case, \studentB<idx><h sortby="\studentB">\studentB</h></idx>) is in equilibrium.  The gravitational force and the normal force in this case are both acting on \studentB, so although they happen to be equal and opposite, this is not due to Newton's third law.</p>
+
+                        <p>You should, however, note that the force that is reaction-paired to the gravitational force on \studentB<idx><h sortby="\studentB">\studentB</h></idx> by the Earth is a gravitational force on the Earth by \studentB.  Similarly, the reaction-paired force to the normal force on \studentB\ by the floor is a normal force on the floor by \studentB.  (Please note the <q>on</q> and <q>by</q> in each case.)</p></answer>
+                </example>
+                
+                <p>As was mentioned earlier, the value of the acceleration due to gravity also varies across the surface, although this is less than about a percent or so (see <xref ref="t-gworld" text="type-hybrid"/>).  Nonetheless, this means that your weight can change even when your mass remains the same.</p>
+
+                <example xml:id="se-gworld">
+                        <statement>
+                        <p>While talking to your friend \studentB<idx><h sortby="\studentB">\studentB</h></idx>, you learn that \hisB\ parents, \studentE<idx><h sortby="\studentE">\studentE</h></idx> and \studentF<idx><h sortby="\studentF">\studentF</h></idx>, grew up in Norway, visited Puerto Rico, and climbed Mount Everest before settling in the United States.  Using <xref ref="t-gworld" text="type-local" />, compute \studentE's weight at each location, assuming \hisE\ mass is \massE: 
+                                <xref ref="A-Norway" text="title">Norway</xref>,
+                                <xref ref="A-Puerto" text="title">Puerto Rico</xref>, and
+                                <xref ref="A-Everest" text="title">Mt. Everest</xref>.
+                        </p></statement>
+
+                        <answer xml:id="A-Norway">[Norway] <m>F_g = mg = (\massE)(9.825\unitfrac{m}{s^2}) \ = \ \sig{933}{.4}{N}</m>.</answer>
+
+                        <answer xml:id="A-Puerto">[Puerto Rico] <m>F_g = mg = (\massE)(9.782\unitfrac{m}{s^2}) \ = \ \sig{929}{.3}{N}</m>.</answer>
+
+                        <answer xml:id="A-Everest">[Mount Everest] <m>F_g = mg = (\massE)(9.763\unitfrac{m}{s^2}) \ = \ \sig{927}{.5}{N}</m>.</answer>
+                </example>
+
+                <p>Because the variation is small, throughout this text when we are considering situations <q>at the surface of the Earth</q>, we will assume that
+                <assemblage><p>the acceleration due to gravity is <m>9.81\unitfrac{m}{s^2}</m> to three significant figures.</p></assemblage>
+                </p>
+
+                <example xml:id="se-t-gworld">
+                        <statement>
+                        <p>Consider the values for the acceleration due to gravity at various locations around the Earth.  Look for a <xref ref="A-gworld" text="title">pattern</xref> in the values as the latitude increases.  You might notice the values for Mount Everest and Denver; Can you <xref ref="A-gpeaks" text="title">explain</xref> any peculiarity? </p>
+                        </statement>
+
+                        <answer xml:id="A-gworld">Because the Earth was spinning as it cooled (forming the crust), it formed an oblate spheroid.<fn xml:id="fn-oblate">The equator is slightly further from the center than the poles are.</fn>  Since the strength of the gravitational interaction depends (among other things) on how far you are from the center (slightly weaker further away), the acceleration due to gravity is smaller when you are at smaller latitudes (closer to the equator). </answer>
+
+                        <answer xml:id="A-gpeaks">In addition to being an oblate spheroid (<xref ref="fn-oblate" text="type-local" />), the Earth has mountains and valleys.  Since the strength of the gravitational interaction depends (among other things) on how far you are from the center (slightly weaker further away), the acceleration due to gravity is smaller when you are at at high altitudes, such as Denver, CO and Mount Everest.</answer>
+                </example>
+                
+                <table xml:id="t-gworld">
+                <caption>
+                        <p>Comparison of <m>g</m> at a few places on Earth.<fn xml:id="fn-compute-g">While both the latitude-longitude and the local value of <m>g</m> were found using the <url href="https://www.wolframalpha.com/">WolframAlpha<registered /> computational knowledge engine</url>, these <m>g</m> values do not necessarily correspond to these coordinates.  The <m>g</m> values are based on a theoretical model of the Earth.</fn> <xref ref="se-t-gworld" text="type-hybrid" /> considers some patterns in this table.</p>
+                </caption>
+
+                <tabular>
+                        <row below="minor">
+                                <cell>Location</cell> 
+                                <cell>latitude</cell> <cell>longitude</cell> 
+                                <cell>local <m>g (\!\!\unitfrac{m}{s^2})</m></cell></row> 
+                        <row><cell>San Juan, Puerto Rico</cell> 
+                                <cell><m>18^\circ 26' 24'' \unit{N}</m> </cell> <cell><m>66^\circ 7' 48'' \unit W</m></cell>
+                                <cell><m>9.782 \unitfrac{m}{s^2}</m></cell></row> 
+                        <row><cell>Brownsville, TX</cell> 
+                                <cell><m>26^\circ 1' 6'' \unit{N}</m> </cell> <cell><m>97^\circ 27' 14'' \unit W</m></cell>
+                                <cell><m>9.788 \unitfrac{m}{s^2}</m></cell></row> 
+                        <row><cell>Mount Everest</cell> 
+                                <cell><m>27^\circ 59' 17'' \unit{N}</m> </cell> <cell><m>86^\circ 55' 31'' \unit E</m></cell>
+                                <cell> <m>9.763\unitfrac{m}{s^2}</m></cell></row> 
+                        <row><cell>Cincinnati, OH</cell> 
+                                <cell><m>39^\circ 8' 24'' \unit{N}</m> </cell> <cell><m>84^\circ 30' 23'' \unit W</m></cell>
+                                <cell> <m>9.801\unitfrac{m}{s^2}</m></cell></row> 
+                        <row><cell>Denver, CO</cell> 
+                                <cell><m>39^\circ 45' 43'' \unit{N}</m> </cell> <cell><m>104^\circ 52' 50'' \unit W</m></cell>
+                                <cell> <m>9.798\unitfrac{m}{s^2}</m></cell></row> 
+                        <row><cell>Paris, France</cell> 
+                                <cell><m>48^\circ 51' 36'' \unit{N}</m> </cell> <cell><m>2^\circ 20' 24'' \unit E</m></cell>
+                                <cell> <m>9.813\unitfrac{m}{s^2}</m></cell></row> 
+                        <row><cell>Oslo, Norway</cell> 
+                                <cell><m>59^\circ 54' 36'' \unit{N}</m> </cell> <cell><m>10^\circ 45' \phantom{24''} \unit E</m></cell>
+                                <cell> <m>9.825\unitfrac{m}{s^2}</m></cell></row> 
+                        <row><cell>Anchorage, AK</cell> 
+                                <cell><m>61^\circ 10' 39'' \unit{N}</m> </cell> <cell><m>149^\circ 16' 28'' \unit E</m></cell>
+                                <cell><m>9.826\unitfrac{m}{s^2}</m></cell></row>
+                </tabular>
+                </table>
+                <p><todo><p>Gather values of <m>g</m> at various locations.  Wiki has a list, but need to find the source.  Wolfram has numbers, but they seem to be calculated off a formula, not measurements.  <url href="http://www.physics.montana.edu/demonstrations/video/1_mechanics/demos/localgravitychart.html">U Montana</url> has values but no reference.  <url href="http://www.calpoly.edu/~gthorncr/ME302/documents/AccuracyofGravity.pdf">Glen Thorncroft at Cal Poly</url> has a formula and lists the level of each effect.</p></todo></p>
+
+
+                </subsection>
+
+
+        </section>
+
+        <section xml:id="s-fundamental"><title>Fundamental Forces</title><idx><h>Force</h><h>Fundamental</h></idx>
+
+        <p>The previous section describes our (macroscopic) experience of the gravitational interaction when standing on the surface of the Earth.  This is essentially the same across the surface, but does change with altitude and the difference can be measured on mountain tops and in caves.  In fact, one can use the differences from one location to another to predict where we might find a a pocket of oil.</p>
+
+        <p xml:id="d-fundamental">In later sections, we will consider this and other interactions that depend on the physical properties, such as mass and charge.  All particles with the property of mass (which we will start to call gravitational charge) will interact according to the gravitational force; however, this description is better described by the mathematics in <xref provisional="c-gravity" text="type-global"/>.  All particles with the property of electrical charge will interact according to the electrical force.  The basic theory will be discussed in <xref provisional="c-electric" text="type-global"/>.  A more complicated version that incorporates quantum mechanics is called quantum electrodynamics (QED) and this will be touched on in <xref provisional="ss-QED" text="type-global" />.  Particles like protons and neutrons (hadrons) are actually made up of other particles (quarks) that are held together by an interaction that is sometimes called the strong nuclear force (<xref provisional="ss-strong" text="type-global" />) and is described by the theory of quantum chromodynamics (QCD); this will be touched on in <xref provisional="ss-QCD" text="type-global" />.  Finally, in <xref provisional="ss-weak" text="type-global"/> another fundamental force, called the weak nuclear force, will be discussed.</p>
+
+        <p>For the most part, these theories describe the interaction between microscopic particles, so we will not discuss them in detail here.  However, the gravitational interaction is exception in a variety of ways.  In particular, the gravitational interaction does affect macroscopic objects.  These fundamental forces have a particular description that allows us to pretend (recall <xref ref="s-effective2" text="title">effective theories</xref>) that they are action-at-a-distance interactions.  All other forces (introduced next) will require physical contact in order to exert the force.</p>
+
+        </section>
+        
+        <section xml:id="s-FN"><title>Normal Force</title>
+        <aside><title>Referenced by</title> 
+                <p>
+                <xref ref="f-firstFBD" />,
+                <xref ref="A-floor" text="type-global" />,
+                <xref provisional="s-FT" />
+                </p>
+        </aside>
+        <idx><h>Force</h><h>Normal</h></idx>
+        
+                <introduction>
+
+                <p>The word <q>normal</q> <url href="http://etymonline.com/index.php?term=normal">originates</url><idx>Normal</idx> with the idea of conformity to the pattern.  While in everyday life this the typical state of being, the origins actually refer to a carpenter's square, which put corners into a right angle.  In math and physics, the word is used to mean perpendicular.  In the context of forces,
+                <assemblage><p>the normal force is the force that a surface exerts to keep objects from passing through them.  The direction of this force is always in the outward direction, normal (perpendicular) to the surface.</p></assemblage>
+                </p>
+
+                <p>Let's consider some specific situations<ellipsis /> In <xref ref="se-FNB" text="type-global" /><todo>DO we need to repeat the example here? no?</todo>, \studentB\ felt the downwards gravitational force even while \heB\ was standing on the ground.  We noticed that \heB\ was not falling (and so not accelerating).  Colloquially, we say that the ground is supporting \studentB.  This support force is keeping \studentB\ from passing through the floor; this is a normal force.  The normal force from the floor is acting upwards, which is normal (perpendicular) to the surface of the floor.  <xref ref="f-firstFBDupdate" text="type-global" /> updates the free-body diagrams of <xref ref="f-firstFBD" text="type-global" /> to show how the gravitational and normal forces impact that calculation.</p>
+
+                <assemblage xml:id="f-firstFBDupdate">
+                        <title>An updated version of <xref ref="f-firstFBD" text="type-global" />, people pushing a box.</title>
+                        <idx><h>Free-Body Diagrams</h><h>Images</h></idx>
+                        
+                        <p>Again, we can start by drawing a picture of the situation.  The description is the same as it was for <xref ref="f-firstFBD" text="type-global" />.  In addition to those forces, each of the three bodies has a downwards gravitational force.  This analogous to the calculation in <xref ref="se-weightA" text="type-global" />, which was only for \studentA<idx><h sortby="\studentA">\studentA</h></idx>; but you can calculate the weight for the mass in <xref ref="se-netF-a" text="type-global" /> and \studentB<idx><h sortby="\studentB">\studentB</h></idx>'s weight was computed in <xref ref="se-FNB" text="type-global" />.  In addition to the downward gravitational force (the weight), Newton's second law and the fact that nothing is accelerating up or down together tells us that there must also be a normal force on each body.  This is analogous to the calculation in <xref ref="se-FNB" text="type-global" />, which was only for \studentB; but you can deduce it for the object and for \studentA.</p>
+                        <figure xml:id="f1-firstFBDupdate">
+                                <caption><p>\studentA\ and \studentB\ push on a box</p></caption>
+                                <image xml:id="i-firstFBDupdate-drawing" source="images/i-firstFBDupdate-drawing.svg" width="75%">
+                                <description><p>The drawing of two people pushing on a box.</p></description>
+                                <latex-image-code>
+                                        <![CDATA[
+                                        %>
+                                        \begin{tikzpicture}
+                                                \draw [thick, gray] (0,0) -- (7,0);
+                                                \draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                \draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                \draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                \draw (3,1) arc (-90:90:.1);
+                                                \draw (3.1,1.1) -- (4.7,1.1);
+                                                \node [above] at (1.375,1.75) {\studentA};
+                                                \node [above] at (2.625,1.2) {object};
+                                                \node [above] at (5.375,1.5) {\studentB};
+                                                \node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                        \end{tikzpicture}]]>
+<!--
+\begin{picture}(200,100)(-30,-25)
+% Dimensions and offset: (width,height)(x offset,y offset)
+% Insert picture commands (\line,\circle, etc...) here:
+\put(0,0){\line(1,0){200}}
+\put(60,2){\line(1,0){60}}
+\drawbox{30}{1}{20}{50} %\studentA
+\drawbox{50}{25}{18}{5} %\studentA's arms
+\drawbox{70}{3}{20}{30} % object
+\drawbox{150}{1}{20}{40} %\studentB
+\drawbox{134}{25}{16}{5} %\studentB's arms
+\put(90,27.5){\oval(2,2)[r]}
+\put(91,27.5){\line(1,0){43}}
+\put(30,53){\scriptsize \studentA}
+\put(70,35){\scriptsize object}
+\put(150,43){\scriptsize \studentB}
+\put(60,-12){\begin{minipage}{60pt}
+\scriptsize The object is on a sheet of ice.
+\end{minipage}}
+\end{picture}
+-->
+                                </latex-image-code>
+                                </image>
+                        </figure>
+
+                        <p>Now, as in <xref ref="f-firstFBD" text="type-global" />, we will draw a free-body diagram for each individual separately.  However, this time we will use <xref ref="se-weightA" text="type-global" /> and <xref ref="se-FNB" text="type-global" /> to include the gravitational force (the weight) and the normal force.</p>
+
+                        <figure xml:id="f2-firstFBDupdate">
+                                <caption>
+                                        <p>Even with the vertical forces, \studentA\ still has a <m>\vec F_\mathrm{net} = -5.0\unit N \ihat</m>.
+                                        <ellipsis /> Even with the vertical forces, the object still has a <m>\vec F_\mathrm{net} = +9.0\unit N \ihat</m>.
+                                        <ellipsis /> Even with the vertical forces, \studentB\ still has a <m>\vec F_\mathrm{net} = -4.0\unit N \ihat</m>.
+                                        </p>
+                                </caption>
+                                <sidebyside widths="30% 30% 30%">
+                                        <image xml:id="i-firstFBDupdate-FBD1" source="images/i-firstFBDupdate-FBD1.svg">
+                                        <description><p>\studentA</p></description>
+                                        <latex-image-code>
+                                                <![CDATA[
+                                                %>
+                                                \begin{tikzpicture}
+                                                        %\draw [thick, gray] (0,0) -- (7,0);
+                                                        %\draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                        \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                        %\draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                        %\draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                        %\draw (3,1) arc (-90:90:.1);
+                                                        %\draw (3.1,1.1) -- (4.7,1.1);
+                                                        \node [above] at (1.375,1.75) {\studentA};
+                                                        %\node [above] at (2.625,1.2) {object};
+                                                        %\node [above] at (5.375,1.5) {\studentB};
+                                                        %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                                        \draw [->, -latex, green] (1.375,.875) -- (.575,.875);  \node [above right] at (.575,.875) {$5\unit N$};
+                                                        \draw [->, -latex] (1.375,.90) -- (1.375,4.9);  \node [below right] at (1.375,4.9) {$834 \unit N$};
+                                                        \draw [->, -latex] (1.375,.85) -- (1.375,-3.15);  \node [above right] at (1.375,-3.15) {$834 \unit N$};
+                                                        \node [left, white] at (.375,.875) {.};
+                                                        \node [right, white] at (2.375,.875) {.};
+                                                \end{tikzpicture}]]>
+<!-- \noindent % \textwidth default is 5in for a book
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{25}{15}{80}{\studentA}
+\onele{20}{<m>5\unit N</m>}{black}
+\onedo{100}{<m>834\unit N</m>}{black}
+\oneup{100}{<m>834\unit N</m>}{black}
+\end{FBD}
+\raggedright
+
+\end{minipage}}
+-->
+                                        </latex-image-code>
+                                        </image>
+
+                                        <image xml:id="i-firstFBDupdate-FBD2" source="images/i-firstFBDupdate-FBD2.svg">
+                                        <description><p>the object</p></description>
+                                        <latex-image-code>
+                                                <![CDATA[
+                                                %>
+                                                \begin{tikzpicture}
+                                                        %\draw [thick, gray] (0,0) -- (7,0);
+                                                        %\draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                        %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                        \draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                        %\draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                        %\draw (3,1) arc (-90:90:.1);
+                                                        %\draw (3.1,1.1) -- (4.7,1.1);
+                                                        %\node [above] at (1.375,1.75) {\studentA};
+                                                        \node [above] at (2.625,1.2) {object};
+                                                        %\node [above] at (5.375,1.5) {\studentB};
+                                                        %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                                        \draw [->, -latex, green] (2.625,.75) -- (3.425,.75);  \node [above left] at (3.425,.75) {$5\unit N$};
+                                                        \draw [->, -latex, blue]   (2.625,.65) -- (3.225,.65);  \node [below left] at (3.225,.65) {$4\unit N$};
+                                                        \draw [->, -latex] (2.625,.8) -- (2.625,2.2);  \node [below right] at (2.625,2.2) {$20 \unit N$};
+                                                        \draw [->, -latex] (2.625,.6) -- (2.625,-.8);  \node [above right] at (2.625,-.8) {$20 \unit N$};
+                                                        \node [left, white] at (1.625,.875) {.};
+                                                        \node [right, white] at (3.625,.875) {.};
+                                                \end{tikzpicture}]]>
+<!--
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{25}{object}
+\twori{20}{<m>5\unit N</m>}{black}{16}{<m>4\unit N</m>}{black}
+\onedo{35}{<m>20\unit N</m>}{black}
+\oneup{35}{<m>20\unit N</m>}{black}
+\end{FBD}
+\raggedright
+
+\end{minipage}}
+-->
+                                        </latex-image-code>
+                                        </image>
+
+                                        <image xml:id="i-firstFBDupdate-FBD3" source="images/i-firstFBDupdate-FBD3.svg">
+                                        <description><p>\studentB</p></description>
+                                        <latex-image-code>
+                                                <![CDATA[
+                                                %>
+                                                \begin{tikzpicture}
+                                                        %\draw [thick, gray] (0,0) -- (7,0);
+                                                        %\draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                        %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                        %\draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                        \draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                        %\draw (3,1) arc (-90:90:.1);
+                                                        %\draw (3.1,1.1) -- (4.7,1.1);
+                                                        %\node [above] at (1.375,1.75) {\studentA};
+                                                        %\node [above] at (2.625,1.2) {object};
+                                                        \node [above] at (5.375,1.5) {\studentB};
+                                                        %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                                        \draw [->, -latex, blue]   (5.375,.7) -- (4.775,.7);  \node [above right] at (4.775,.7) {$4\unit N$};
+                                                        \draw [->, -latex] (5.375,.75) -- (5.375,4.25);  \node [below right] at (5.375,4.25) {$736 \unit N$};
+                                                        \draw [->, -latex] (5.375,.65) -- (5.375,-2.85);  \node [above right] at (5.375,-2.85) {$736 \unit N$};
+                                                        \node [left, white] at (4.375,.875) {.};
+                                                        \node [right, white] at (6.375,.875) {.};
+                                                \end{tikzpicture}]]>
+<!--
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{20}{15}{75}{\studentB}
+\onele{16}{<m>4\unit N</m>}{black}
+\onedo{88}{<m>736\unit N</m>}{black}
+\oneup{88}{<m>736\unit N</m>}{black}
+\end{FBD}
+\raggedright
+
+\end{minipage}}
+-->
+                                        </latex-image-code>
+                                        </image>
+                                </sidebyside>
+                        </figure>
+
+                        <sidebyside widths="50% 50%" haligns="center right">
+                                <p></p>
+                                <tabular halign="right"><row><cell halign="right">
+                                        Return to: <xref ref="ex-braced" />, <xref ref="ex-unbraced" />, <xref ref="s-FN" />,
+                                                <xref provisional="d-rope.net">rope-tension</xref>, <xref provisional="f-firstFBDangle" />
+                                </cell></row></tabular>
+                        </sidebyside>
+                </assemblage>
+
+                <p>Let's consider some other specific situations<ellipsis /> If you decide to lean against a wall, the wall will provide a normal force that pushes horizontally, keeping you from moving through the wall.</p>
+
+                <example xml:id="se-ladderN">
+                        <statement>
+                                <p>\studentC\ leans a <m>22.7\unit{kg}</m> ladder against a wall at an angle of <m>75.5^\circ</m>, consistent with
+                                <url href="https://www.osha.gov/">OSHA</url> standard
+                                <url href="https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=standards&amp;p_id=10839">1926.1053(a)(1)(ii)</url>,
+                                so that about <m>\txtfrac{1}{8}</m> of the weight is leaning into the wall.
+                                <ol>
+                                <li><p> Find the magnitude and direction of the normal force exerted <em>by the wall</em> on the ladder.
+                                        (<xref ref="A-wallladder" text="type-local" />)</p></li>
+                                <li><p> Find the magnitude and direction of the normal force exerted <em>by the floor</em> on the ladder.
+                                        (<xref ref="A-floorladder" text="type-local" />)</p></li>
+                                </ol>
+                                </p>
+                        </statement>
+
+                        <answer xml:id="A-wallladder">
+                                <p>Since the weight is <m>F_g = mg = (22.7\unit{kg})(9.81\unitfrac{m}{s^2}) = \sig{222}{.69}{N}</m>, an eighth of this is <m>\sig{27.8}{36}{N}</m>.  This force is pressing into the wall (horizontally, which I will choose as the <m>+\ihat</m> direction).  By <xref ref="as-NIII" text="title">Newton's third law</xref> if the ladder presses into the wall with <m>\sig{27.8}{36}{N}</m> in the <m>+\ihat</m> direction (this is also a normal force), then the wall pushes the ladder with a normal force of <m>\sig{27.8}{36}{N}</m> in the <m>-\ihat</m> direction.  <em>Notice that this is normal (perpendicular) to the surface of the wall.</em></p>
+                        </answer>
+
+                        <answer xml:id="A-floorladder">
+                                <p>Since the full weight of the ladder, <m>F_g = \sig{222}{.69}{N}</m>, is still pressing downwards <m>(-\jhat)</m> into the floor (as a normal force), <xref ref="as-NIII" text="title">Newton's third law</xref> says that the floor pushes the ladder upwards <m>(+\jhat)</m> with a normal force of <m>\sig{222}{.69}{N}</m>.  <em>Notice that this is normal (perpendicular) to the surface of the floor.</em></p>
+                        </answer>
+
+                        <conclusion><p><xref provisional="ex-ladder2" text="type-global"/> goes into the full details of how one calculates the necessary values.</p></conclusion>
+
+                </example>
+
+                <p>If you lose control of your car and run into a tree, the tree also provides a normal force pushing the car away from the tree; this normal force will stop the car.</p>
+
+                <example xml:id="se-tree">
+                        <statement>
+                                <p>\studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> is driving home after a late night of studying at the library.  \HeZ\ is kind of tired and drifts off during the drive.  While traveling <m>\vec v_i = 13.0\unitfrac ms \ihat</m>, \studentZ\ runs into a tree, bringing \hisZ\ car <m>(m=2.1\ten{3}\unit{kg})</m> to a halt in <m>\Delta t = 0.243\unit s</m>.  (\studentZ\ remains unharmed because \heZ\ was awake enough to wear \hisZ\ seatbelt and had a car with a functioning airbag.  Whew.)  Find the normal force by the tree on the car. </p>
+
+                                <sidebyside widths="30% 70%">
+                                        <p>To be clear about what is happening, I will draw the picture.</p>
+                                        <image xml:id="i-se-tree" source="images/i-se-tree.svg">
+                                        <description>Car hits tree</description>
+                                        <latex-image-code>
+        \begin{picture}(120,80)(-10,-5)
+        \put(0,0){\line(1,0){100}}
+        \drawbox{70}{1}{20}{50} %\studentA
+        \drawbox{10}{5}{30}{20} % object
+        \put(15,3){\circle{5}}
+        \put(35,3){\circle{5}}
+        \put(0,40){\scriptsize <m>v=13.0\unitfrac ms</m>}
+        \put (10,35){\vector(1,0){30}}
+        \put(72,33){\scriptsize Tree}
+        \put(15,15){\scriptsize car}
+        \end{picture}
+                                        </latex-image-code>
+                                        </image>
+                                </sidebyside>
+                        </statement>
+
+                        <solution>
+                                <p>In order to find the force, we will first need to find the acceleration.
+                                        <me> \vec a = \frac{\vec v_f-\vec v_i}{\Delta t} = \frac{(0\unitfrac ms)-(13.0\unitfrac ms \ihat)}{0.243\unit s} = -\sigfrac{53.4}{9}{m}{s^2}\ihat </me>
+                                That the acceleration is in the direction opposite the velocity corresponds to the object slowing down.  Now we can find the <term>net force</term> from Newton's second law:
+                                        <me> \vec F_\mathrm{net} = m \vec a = (2.1\ten{3}\unit{kg})(-\sigfrac{53.4}{9}{m}{s^2}\ihat) = -\sig{1.1}{2\ten{5}}{N} \ihat </me>
+                                There are three forces acting on the car, as can be seen in analogy with the free-body diagrams of <xref ref="f-firstFBDupdate" text="type-global" />.  So, we can draw a free-body diagram here as well.</p>
+
+                                <image xml:id="i-se-tree-FBD" source="images/i-se-tree-FBD.svg">
+                                <description>FBD for the car hitting the tree</description>
+                                <latex-image-code>
+        \fbox{\begin{minipage}[b]{100pt}
+        \begin{FBD}{15}{10}{15}{25}{car}
+        \onele{40}{<m>F_{N,\mathrm{tree}}</m>}{rgb:red,0;green,2;blue,1}
+        \onedo{30}{<m>F_g</m>}{rgb:red,0;green,2;blue,1}
+        \oneup{30}{<m>F_{N,\mathrm{ground}}</m>}{rgb:red,0;green,2;blue,1}
+        \end{FBD}
+        \end{minipage}}
+                                </latex-image-code>
+                                </image>
+
+                                <p>The gravitational force on the car is
+                                        <me> \vec F_g = m\vec g = (2.1\ten{3}\unit{kg})(-9.81\unitfrac{m}{s^2}\jhat) = -\sig{2.0}{6\ten{4}}{N}\jhat </me>
+                                Since this in the vertical direction and the net force is in the horizontal direction, there must be an upwards normal force from the ground
+                                        <me> F_{N,\mathrm{ground}} = \sig{2.0}{6\ten{4}}{N}\jhat</me>.
+                                <em>This is normal (perpendicular) to the surface of the ground.</em>  The remaining horizontal force is the normal force from the tree,
+                                        <me> \deq F_{N,\mathrm{tree}} = -\sig{1.1}{2\ten{5}}{N} \ihat</me>.
+                                <em>This is normal (perpendicular) to the surface of the tree.</em>
+                                </p>
+                        </solution>
+                </example>
+
+                <p>(Notice that <xref ref="se-tree" text="type-global" /> also shows why it is not always necessary to consider the vertical forces when we <q>know</q> that they cancel.)  If you throw a ball at the ceiling, the ceiling will provide a normal force downwards, keeping the ball from moving through the surface.</p>
+
+                <example xml:id="se-ceiling">
+                        <statement>
+                                <p>\studentC<idx><h sortby="\studentC">\studentC</h></idx> recalls that one time \heC\ got bored one day in physics class (what?!?) and tossed a baseball (<m>m_b = 0.145\unit{kg}</m>) at the ceiling<ellipsis /> a little too hard <ellipsis /> as recounted in <xref ref="ex-ceiling" text="type-global"/>.  The acceleration during that collision with the ceiling was <m>\vec a = - \sigfrac{28.0}{9}{m}{s^2} \jhat</m>.  Find the normal force by the ceiling on the ball.</p>
+                        </statement>
+
+                        <solution>
+                                <p>There are five stages to the motion: (a) throwing, (b) falling up, (c) hitting the ceiling, (d) falling down, and (e) catching.  We can show the forces involved in each (although we only care about the forces during (c) hitting the ceiling).</p>
+
+                                <sidebyside widths="19% 19% 19% 19% 19%">
+                                        <image xml:id="i-se-ceiling-a" source="images/i-se-ceiling-a.svg">
+                                        <latex-image-code>
+        \color{lightgray}
+        \fbox{\begin{minipage}[b]{55pt}
+        \begin{picture}(50,100)(0,0)
+        \put(25,25){\circle{10}}
+        \put(25,26){\vector(0,1){25}}
+        \put(25,24){\vector(0,-1){15}}
+        \put(28,35){<m>F_\mathrm{throw}</m>}
+        \put(28,10){<m>F_g</m>}
+        \end{picture}
+        \centering{(a) throwing}
+        \end{minipage}}
+        \color{rgb:red,0;green,2;blue,1}
+                                        </latex-image-code>
+                                        </image>
+                                        <image xml:id="i-se-ceiling-b" source="images/i-se-ceiling-b.svg">
+                                        <latex-image-code>
+        \color{lightgray}
+        \fbox{\begin{minipage}[b]{55pt}
+        \begin{picture}(50,100)(0,0)
+        \put(25,50){\circle{10}}
+        \put(25,50){\vector(0,-1){15}}
+        \put(28,35){<m>F_g</m>}
+        \end{picture}
+        \centering{(b) falling up}
+        \end{minipage}}
+        \color{rgb:red,0;green,2;blue,1}
+                                        </latex-image-code>
+                                        </image>
+                                        <image xml:id="i-se-ceiling-c" source="images/i-se-ceiling-c.svg">
+                                        <latex-image-code>
+        \color{rgb:red,0;green,2;blue,1}
+        \fbox{\begin{minipage}[b]{55pt}
+        \begin{picture}(50,100)(0,0)
+        \put(25,95){\circle{10}}
+        \put(26,95){\vector(0,-1){25}}
+        \put(24,95){\vector(0,-1){15}}
+        \put(28,75){<m>F_N</m>}
+        \put(10,75){<m>F_g</m>}
+        \end{picture}
+        \centering{(c) \\ hitting}
+        \end{minipage}}
+        \color{rgb:red,0;green,2;blue,1}
+                                        </latex-image-code>
+                                        </image>
+                                        <image xml:id="i-se-ceiling-d" source="images/i-se-ceiling-d.svg">
+                                        <latex-image-code>
+        \color{lightgray}
+        \fbox{\begin{minipage}[b]{55pt}
+        \begin{picture}(50,100)(0,0)
+        \put(25,50){\circle{10}}
+        \put(25,50){\vector(0,-1){15}}
+        \put(28,35){<m>F_g</m>}
+        \end{picture}
+        \centering{(d) falling down}
+        \end{minipage}}
+        \color{rgb:red,0;green,2;blue,1}
+                                        </latex-image-code>
+                                        </image>
+                                        <image xml:id="i-se-ceiling-e" source="images/i-se-ceiling-e.svg">
+                                        <latex-image-code>
+        \color{lightgray}
+        \fbox{\begin{minipage}[b]{55pt}
+        \begin{picture}(50,100)(0,0)
+        \put(25,25){\circle{10}}
+        \put(25,26){\vector(0,1){25}}
+        \put(25,24){\vector(0,-1){15}}
+        \put(28,35){<m>F_\mathrm{catch}</m>}
+        \put(28,10){<m>F_g</m>}
+        \end{picture}
+        \centering{(e) catching}
+        \end{minipage}}
+        \color{rgb:red,0;green,2;blue,1}
+                                        </latex-image-code>
+                                        </image>
+                                </sidebyside>
+
+                                <p>In this particular problem, we are only concerned with step (c) when the ball hits the ceiling, because that is the only part where the normal force acts. <xref provisional="se-throw-up" text="type-global" /> will describe what happens during steps (a) and (e).</p>
+
+                                <p>During step (c), we have the actual acceleration, which tells us about the net force.  We will also need to know the weight of the baseball, because gravity is still acting during the collision.
+                                <md>
+                                <mrow>\vec F_N + \vec F_g \amp =  \vec F_\mathrm{net} \ = \ m \vec a </mrow>
+                                <mrow>\vec F_N + m \vec g \amp =  m \vec a </mrow>
+                                <mrow>\vec F_N  \amp =  m \vec a - m \vec g </mrow>
+                                <mrow>\vec F_N
+                                        \amp =  \left[ (0.145\unit{kg})(-\sigfrac{28.0}{9}{m}{s^2}\jhat) \right] - \left[ (0.145\unit{kg})(-9.81\unitfrac{m}{s^2}\jhat) \right] </mrow>
+                                <mrow>\vec F_N  \amp =  \left[ -\sig{4.07}{3}{N} \jhat \right] - \left[  - \sig{1.42}{2}{N} \jhat \right] \ = \ -\sig{2.65}{1}{N} \jhat </mrow>
+                                </md>
+                                You can see that the downward normal force <m>(\sig{2.65}{1}{N})</m> combined with the downward gravitational force <m>(\sig{1.42}{2}{N})</m> together create the downward net force <m>(\sig{4.07}{3}{N})</m>.</p>
+                        </solution>
+                </example>
+
+                <p xml:id="d-bank-shot">If you make a <q>bank shot</q> with either a basketball off the backboard or a pool ball<fn xml:id="fn-pool-details">Resources for
+                        <url href="http://wpapool.com/equipment-specifications/\#Balls-and-Ball-Rack">specifications</url> and
+                        <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">a PDF version</url>.
+                        These provide:
+                                weight (<m>5.5\unit{oz}=0.\sig{155}{92}{kg}</m> and <m>6.0\unit{oz}=0.\sig{170}{097}{kg}</m> cue),
+                                diameter (<m>2.250\pm 0.005\unit{in}=\sig{5.71}{5}{cm}\pm 0.0127\unit{cm}</m>),
+                                rail height (<m>63.5 \%</m> of the ball height, <m>= \sig{3.62}{9}{cm}</m>),  and
+                                dimension limits on the cue stick:
+                                        <m>L_\mathrm{min}=40.00\unit{in}=1.016\unit{m}</m>,
+                                        <m>m_\mathrm{max} = 25.0\unit{oz} = 0.\sig{708}{75}{kg}</m>, and
+                                        tip-width <m>w_\mathrm{max}=1.4\unit{cm}</m>.
+                        You might also consider the information and calculations at
+                        <url href="http://billiards.colostate.edu/technical_proofs/index.html">Dr. Dave's site</url>,
+                        which gives
+                                slow (<m>1\unit{mph}</m>), medium (<m>3\unit{mph}</m>), and fast (<m>7\unit{mph}</m>);
+                                coefficient of friction ball-to-ball <m>\mu=0.06</m>; and
+                                ball-ball collision times as <m>250\unit{\mu s}</m>-<m>300\unit{\mu s}</m>.
+                </fn>
+                off the bumper, then the surface provides a normal force that is perpendicular to the surface, in this case redirecting the ball rather than stopping it.  Unfortunately, the actual mechanism is somewhat more complicated than we are ready for; these are considered a little bit in the <xref ref="irl-poolcushion" text="type-hybrid" />. <todo><xref ref="irl-poolcushion" text="type-hybrid" /> should be moved to a section that has more about friction and angular momentum.  It is too complex for this section.</todo></p>
+
+                <investigation xml:id="irl-poolcushion"><title>Pool balls and bumpers / cushions</title>
+                        <idx><h>Pool</h><h>Real Life</h></idx>
+                        <prelude xml:id="p-bank-shot">
+                                <p>Consider moving <xref ref="d-bank-shot" text="type-local" /> to the prelude inside <xref ref="irl-poolcushion" text="type-hybrid" />.  I wonder how the references and footnote will sit.</p>
+                        </prelude>
+                        <introduction>
+                                <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ shoots a bank-shot and the ricochet reminds all of you about the normal force from the bumper on the ball.</p>
+                        </introduction>
+                        <task>
+                                <statement><p>Find a billiards table. Notice the felt, the bumpers (cushion), and the dimensions of the table. 
+                                        Does the ball roll as far on felt as it does on hardwood?  (<xref ref="A-pool-roll" text="type-local" />) How soft is the bumper? (<xref ref="A-pool-bumper" text="type-local" />)</p></statement>
+                                <answer xml:id="A-pool-roll"><p>First, you should not roll a pool ball across just any floor; there is felt on the pool table for a reason.  
+                                        However, if you have a clean, smooth surface and are able to reproduce your rolling speed, you will find that the pool ball rolls further on the stiff, nonyielding surface than it will on the felt.  The reason for this is beyond the scope of this textbook, but you can read more from
+                                        <url href="http://stacks.iop.org/0031-9120/30/i=3/a=009"><q>Sliding and rolling: the physics of a rolling ball,</q> J. Hierrezuelo and C. Carnero, Physics Education, Volume 30, Number 3</url> (unofficially at
+                                        <url href="http://billiards.colostate.edu/physics/Hierrezuelo_PhysEd_95_article.pdf">this PDF</url>).</p></answer>
+                                <answer xml:id="A-pool-bumper"><p>The cushion (sometimes called a bumper) is pretty still to the touch, but it is made of a springy rubber 
+                                        that allows the balls to bounce reasonably well.  The
+                                        <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">document</url> indicates that you should be able to firmly strike a ball at some angle to the far wall and have it bounce around the table four to four-and-a-half times.  If the bumpers were perfectly <xref provisional="s-elastic" text="title">elastic</xref>, then the normal force would be normal to the restign surface; but since the bumper has some flexibility, when the ball hits the bumper with a glancing blow, then bumper bends inwards and the normal force is directed in a way that depends on the shape of the dent. </p></answer>
+                        </task>
+                        <task>
+                                <statement><p>Find a set of pool balls. Compare the solid-colored balls, the striped balls, and the cue ball. 
+                                        Are there differences in size of weight?</p></statement>
+                                <answer xml:id="A-noncue"><p>The <url href="http://wpapool.com/equipment-specifications/\#Balls-and-Ball-Rack">specifications</url> 
+                                        show that there is no difference between the solids and stripes, but the cue ball weighs <m>9\%</m> more that the other balls (<m>6.0\unit{oz}</m> versus <m>5.5\unit{oz}</m>).  The colored balls and the cue ball are otherwise identical.  </p></answer>
+                        </task>
+                        <task>
+                                <statement><p>Hit the cue-ball off of a bumper in the manner intended for
+                                        <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">testing cushions</url>. Compare the angle it leaves the bumper (reflected angle) match the angle at which it came in (incident angle). Does the spin of the ball matter?</p></statement>
+                                <answer xml:id="A-pool-spin"><p>Because the bumper is covered in felt, it has a small grip on the ball.  
+                                        Because the bumper has some give to it, it dents in when hit and provide more surface area, which increases the grip.  Both of these mean that the spin of the ball gets transferred to the pool table somewhat and change the way a spinning ball exits from the bumper collision.  </p></answer>
+                        </task>
+                        <task>
+                                <statement><p>Place a pool ball against the bumper and ricochet the cue ball off the pool ball instead of the bumper itself. Notice how the pool ball reacts.
+                                        Why does the pool ball jump off the bumper? </p>
+                                        <p>Does the pool ball move along the wall? </p>
+                                        <p>Where did you hit the pool ball?</p></statement>
+                                <answer xml:id="A-pool-later"><p>This answer is getting 
+                                        <assemblage><p>too complex for the section</p></assemblage> 
+                                        it is in.  I need to move the IRL before I finish considering how to answer this question. </p></answer>
+                        </task>
+                        <conclusion>
+                                <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
+                                        <xref provisional="irl-poolfriction" text="title">friction</xref>,
+                                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
+                                        <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.
+                                </p>
+                                <sidebyside widths="50% 50%" haligns="center right">
+                                        <p></p>
+                                        <tabular halign="right"><row><cell halign="right">
+                                                Return to: the discussion of <xref ref="d-bank-shot">pool</xref>
+                                        </cell></row></tabular>
+                                </sidebyside>
+                        </conclusion>
+                </investigation>
+
+
+                </introduction>
+
+                <subsection xml:id="ss-scales"><title>Bathroom Scales Measure the Normal Force</title>
+                <aside><title>Referenced by</title> 
+                        <p>Discussion of <xref provisional="d-usesofFma">uses of <m>F=ma</m></xref></p>
+                </aside>
+
+                <p>To get a good sense of what how the normal force works, it helps to consider the way a bathroom scale works.  Consider the concepts presented in the <xref ref="irl-scale" text="type-global"/>.
+
+                <investigation xml:id="irl-scale"><title>Playing with a scale.</title><idx><h>Force</h><h>Normal</h></idx>
+                        <introduction>
+                                <p>While speaking to your friend, \studentB<idx><h sortby="\studentB">\studentB</h></idx> about \hisB\ recent accomplishment of losing <m>45\unit{N}</m>, you mention that your scale always gives a different number than the one in the doctor's office.  You suggest \heB\ gets on your scale to verify the calibration.  \studentB\ currently has a mass of <m>\massB</m>.</p>
+                        </introduction>
+                        <task>
+                                <statement><p>Imagine losing <m>45\unit{N}</m>. Compare this to your weight.  Is this a lot of weight to lose? </p></statement>
+                                <solution xml:id="A-weight-loss"><p> Since \studentB<idx><h sortby="\studentB">\studentB</h></idx> weighs <m>(\massB)(9.81\unitfrac{m}{s^2})=736\unit{N}</m>, <m>45\unit{N}</m> is about <m>6\%</m> of her weight.  This is fairly substantial.  You should compute how much <m>6\%</m> of your weight is and convert that to kilograms and Newtons.  </p></solution>
+                        </task>
+                        <task xml:id="Q-weight-gain">
+                                <statement><p>Place your toe on the scale while \studentB\ weighs \himselfB. This increases the value the scale reads. Does \studentB\ weigh more? </p></statement>
+                                <solution xml:id="A-weight-gain"><p>When one person stands on the scale, the scale provides just enough of an upwards normal force to keep that person in equilibrium<todo>link equilibrium?</todo>.  In that case, the upwards force is balancing the weight of the person.  This gives the impression that the scale is telling you your weight; however, when you press down or help support whomever is standing on the scale, the scale adjusts the amount it must provide.  The scale is not trying to tell you your weight.  Rather the scale is trying to create equilibrium by balancing whatever force(s) are pressing into it.  Your weight is determined by the gravitational force<todo>link the gravitational force?</todo> and does not change when you press harder or lighter onto the scale.  </p></solution>
+                        </task>
+                        <task xml:id="Q-scale-increase">
+                                <statement><p>With your hands, press down on \studentB's shoulders while \heB\ stands on the scale. Control the value read by the scale (HINT: <xref ref="Q-weight-gain" text="type-local" />).  Increase the reading by <m>20\unit{N}</m>, <m>30\unit{N}</m>, etc. Does \studentB's weight change? (<xref ref="A-weight-gain" text="type-global" />) Are you adding weight to the scale? (<xref ref="A-scale-increase" text="type-global" />)</p></statement>
+                                <solution xml:id="A-scale-increase"><p>When you press down on \studentB's shoulders, you are not adding weight.  Weight has a specific definition: it is specifically the value that the gravitational force<todo>link the gravitational force</todo> pulls on any object.  Pushing the person does not change their weight; it does, however, change the amount that they press into the Earth.  That is to say, it increases their downwards normal force, but not their weight. </p></solution>
+                        </task>
+                        <task xml:id="Q-scale-decrease">
+                                <statement><p>Have \studentB\ lean on a nearby table or counter while \heB\ stands on the scale. Control the value read by the scale (HINT: <xref ref="Q-scale-increase" text="type-local" />).  Decrease the reading by <m>20\unit{N}</m>, <m>30\unit{N}</m>, etc. Does \studentB's weight change? (<xref ref="A-weight-gain" text="type-global" />) </p></statement>
+                        </task>
+                        <task>
+                                <statement><p>Hold the scale against the wall and press into it. Control the value read by the scale (HINT: <xref ref="Q-scale-decrease" text="type-local" />).  Increase the reading by <m>20\unit{N}</m>, <m>30\unit{N}</m>, etc. What is the scale measuring? </p></statement>
+                                <solution xml:id="A-scale-measure"><p>Since your weight is a force pulling downwards, having the scale on the wall shows that the scale cannot be balancing weight.  Since you are pushing into the wall, you are exerting a normal force into the scale and the scale is exerting a normal force back at you.  Both of these forces are horizontal (assuming the wall is plumb).</p>  
+                                <p> Another way to think about this is: If you can control the value read by the scale (such as against the wall) while at the same time not changing your actual mass, the scale cannot literally be measuring the weight of the object on the scale.</p></solution>
+                        </task>
+                        <task>
+                                <statement><p>Imagine placing a scale on a ramp that can be laid flat or raised to any angle up to a vertical (making it a wall). Imagine standing on the scale on the ramp while it is lifted from horizontal (like a floor) to vertical (like a wall).  Does the scale always read the same value while it is raised to different angles?</p></statement>
+                                <solution xml:id="A-scale-ramp"><p>When the scale is on the flat, horizontal floor, it balances your full weight.  When the scale is on the vertical wall it does not carry any of your weight.  At any angle in between those values, it carries some fraction of your weight while friction keeps you from sliding down the ramp<todo>link to the section on friction and ramps</todo>.  It will turn out that since the cosine function<todo>link to the trig section</todo> behaves in just the right way, we can use<todo>link <q>can use</q> to the section on ramps</todo> the cosine to find the component of the weight that the normal force from the scale has to support.</p></solution>
+                        </task>
+                        <conclusion>
+                                <sidebyside widths="50% 50%" haligns="center right">
+                                        <p></p>
+                                        <tabular halign="right"><row><cell halign="right">
+                                                Return to: <xref provisional="ss-scales" text="type-global"/>
+                                        </cell></row></tabular>
+                                </sidebyside>
+                        </conclusion>
+                </investigation>
+
+                Some digital scales are inconvenient for understanding how they work because they don't display the value until it has come to something close to equilibrium.  If you have access to an analog scale, then you can watch the value change as it settles down and it might be easier to build your intuition.</p>
+
+                <p>As you consider the values that you read on the scale, you should consider what happens if you jump off of or land upon a scale.  <em>Note that actually doing this can decalibrate your scale, if not break it entirely.  Scales are not meant to be handled this way.</em> While you are jumping from your scale, it must provide not only the force necessary to support your weight, but also the upwards force require to accelerate you upwards.  While you are landing on the scale, it musty provide not only the force necessary to support your weight, but also the upwards force necessary to decelerate you.</p>
+
+                <p>Bathroom scales use leverage (i.e., <xref provisional="s-leverarm" text="title">torque</xref>) and a <xref provisional="s-springs" text="title">spring</xref>-system to balance the force pressing into them.  The mechanism can be seen at <url href="http://home.howstuffworks.com/inside-scale-htm">How Stuff Works</url>.</p>
+
+                </subsection>
+
+        </section>
+
+</chapter>
+
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
 
