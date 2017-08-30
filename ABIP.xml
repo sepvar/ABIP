@@ -399,7 +399,7 @@
                 <subsection><title>Things on the ground</title>
 
                         <example xml:id="sss-tea"><title>Hot Tea and Iced Tea</title>
-                        <aside><title>Referenced by</title> <p><xref provisional="s-surface.tension"  text="type-global" /></p></aside>
+                        <aside><title>Referenced by</title> <p><xref provisional="s-surface-tension"  text="type-global" /></p></aside>
 
                         <p>On 28 April, 2017,<!--\new{v2.3}{New source of info} -->
                         <url href="http://www.cbc.ca/podcasting">CBC Broadcasting</url> published a
@@ -829,7 +829,7 @@
                 <xref ref="ss-NI">Newton's first law</xref>,
                 <xref ref="ss-NII">Newton's second law</xref>,
                 <xref ref="s-Fg" text="type-global" />,
-                <xref ref="d-fundamental">fundamental forces</xref>,
+                <xref ref="d-fundamental">fundamental f rces</xref>,
                 <xref provisional="s-FT" text="type-global" />.
                 </p>
                 </aside>
@@ -3666,6 +3666,125 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p>Bathroom scales use leverage (i.e., <xref provisional="s-leverarm" text="title">torque</xref>) and a <xref provisional="s-springs" text="title">spring</xref>-system to balance the force pressing into them.  The mechanism can be seen at <url href="http://home.howstuffworks.com/inside-scale-htm">How Stuff Works</url>.</p>
 
+                </subsection>
+
+        </section>
+        <section xml:id="s-FT"><title>Tension</title>
+        <aside><title>Referenced by</title> 
+                <p>Discussion of <xref provisional="d-fma"><m>F=ma</m></xref></p>
+        </aside>
+        <idx><h>Force</h><h>Tension</h></idx>
+
+                <introduction>
+                <p>Where the <xref ref="s-FN" text="title">normal force</xref> is appropriate for pushing against surfaces,
+                <assemblage><p>tension is the pulling force that is transmitted through materials such as cable, chain, or rope.</p></assemblage>
+                Tension is closely related to the compression force experienced by support beams.  One can simplistically think of tension as pulling<todo>add a link to (and the section itself) to a section on the modulus and stress/strain.</todo> and compression as pushing<todo>Maybe add an IRL about a house settling and the compression forces.  Loading a pick-up truck and watching the bed sag as weight is added.  Hammock as an example of adding weight and increasing the tension force.</todo> on the intermediate object that transmits force between the objects at either end.<fn xml:id="fn-rope-compression">It doesn't usually make sense to talk about the compression of a rope or chain.</fn>
+                When engineers design the skeleton of bridges and buildings, one of the primary considerations is the tension and compression of the steel beams.  You can build your intuition by considering the <xref ref="irl-tension" text="type-global"/>.<todo>Still need to update the <xref ref="irl-tension" text="type-global"/>.</todo></p>
+                
+                <investigation xml:id="irl-tension"><title>Pull my finger.</title>
+                        <idx><h>Force</h><h>Tension</h></idx>
+                        <introduction>
+                                <p>We talk about tension and stress in our daily lives.  This is an analogy to the physical version of tension, stress, and strain.  While 
+                                <url href="http://etymonline.com/index.php?allowed_in_frame=0&amp;search=stress">stress</url> and 
+                                <url href="http://etymonline.com/index.php?search=strain&amp;searchmode=&amp;p=0&amp;allowed_in_frame=0">strain</url> 
+                                come from the the concept of tightening, 
+                                <url href="http://etymonline.com/index.php?allowed_in_frame=0&amp;search=tension">tension</url> 
+                                comes from the concept of stretching.
+                                </p>
+                        </introduction>
+                        <task xml:id="Q-swing-tension">
+                                <statement><p>Sit on a swing. Notice the tightness of the support ropes/chains. 
+                                        How tight are the supports when the swing is empty? 
+                                        When a small child is in the swing? 
+                                        When a full-sized adult is in the swing? </p></statement>
+                                <answer xml:id="A-swing-tension"><p>To make this comparison, let's consider a swing that is supported by chains.
+                                        If you are sitting in the swing and take hold of the chains at about shoulder height, you should be able to shake them in (towards your chest) and out (away from you, towards your neighbor swings).  You can do this same motion while standing next to the swing.  If you do this when the swing is empty, it is very easy to do this.  If you ask a series of successively larger people to sit in the swing, you will notice that it gets progressively more difficult to extend them very far.  The chains are increasing in tension; they are pulled more taut.  Your ability to move the chain in this way is exactly analogous to the way a bow draws across a violin or the way your fingers pluck a guitar, as described in <xref provisional="ss-stringed-instruments" text="type-global" />.</p></answer>
+                        </task>
+                        <task xml:id="Q-fan-tension">
+                                <statement><p>Install a fan or light fixture that hangs from the ceiling. You don't want the fan to be supported by the electrical wires, 
+                                        but rather by the metal shaft. How is the fan supported? </p></statement>
+                                <answer xml:id="A-fan-tension"><p>You might also consider <xref ref="A-chandelier-tension" text="type-local" />, which discusses the case of
+                                        hanging a light fixture from the ceiling. If you have ever installed a fan in your house, then you will notice that you have to support the fan while the wires are connected.  Usually the fan has a shaft that connects to the ceiling at one end and the fan at the other and provides a mechanism for supporting the fan while you manage the wires, which pass through the shaft.  Since the fan houses the motor, it is usually reasonably heavy.   The nice property of use a metal shaft to support the fan is that it doesn't stretch or wiggle like a chain might.  The difficulty in this example is that it is more difficulty to notice the tension in the shaft.  If you are the person hanging the fan, then one thing you might be able to notice is that if you flick the metal with a finger when it is not supporting anything, it will have a slightly different <q>ting</q> than when it is supporting the fan.<todo>Is this sufficiently noticeable?</todo></p></answer>
+                                <answer xml:id="A-chandelier-tension"><p>If you have ever installed a chandelier in your house, then you will notice that the light has to be supported
+                                        between the joists of the ceiling.  There will be an electrical box with a screw to which you will attach the support for the chain that holds the chandelier.  The wires will run through the support chain.  The heavier the chandelier, the tauter the chain, much as described in <xref ref="A-swing-tension" text="type-local" />. This tension is much easier to see than the tension in the shaft of the fan.</p></answer>
+                        </task>
+                        <task xml:id="Q-doorknob">
+                                <statement><p>Pull on a doorknob. Imagine replacing the knobs (inside and outside) with large knots on a rope that runs through the hole the doorknob used to occupy. What if the doorknob were replaced with a rope, knotted on either side of the door? </p></statement>
+                                <answer xml:id="A-doorknob"><p>[Answer]</p></answer>
+                        </task>
+                        <task xml:id="Q-dog-leash">
+                                <statement><p>Take a dog for a walk on a leash. Try to pay attention to Newton's second and third law when the dog changes its level of enthusiasm for pulling on the leash. If the dog pulls very hard on the leash and you balance that force without allowing the dog to move away from you, then describe the way the force connects you to the dog.</p></statement>
+                                <answer xml:id="A-dog-leash"><p>[Answer]</p></answer>
+                        </task>
+                        <conclusion>
+                                <sidebyside widths="50% 50%" haligns="center right">
+                                        <p></p>
+                                        <tabular halign="right"><row><cell halign="right">
+                                                Return to: <xref ref="s-FT" text="type-global" />
+                                        </cell></row></tabular>
+                                </sidebyside>
+                        </conclusion>
+                </investigation>
+
+                <p>When considering the tension in the rope, the context is generally that the rope is connecting two objects that are trying to pull on each other.  It is convenient to recognize that each object only <q>sees</q> the rope, not the object at the far side.  This can be seen in a couple of contexts.</p>
+
+                <p>We will start with the <xref ref="s-effective2" text="title">simplistic approximation</xref> of ropes that only transmit the force.  As your understanding improves, we will add some examples where the tension in the rope also affects the rope itself.  In that more complicated situation, the tension will change across the rope<todo>maybe add links</todo> and the rope may stretch<todo>maybe add links</todo>.  Since ropes and cables are twisted strands while chains are links, ropes and cables can also introduce a <xref provisional="s-torsion" text="title">torsion</xref> that tends not to occur in chains.
+                <aside><title>Foreshadow</title></aside></p>
+
+                </introduction>
+
+                <subsection xml:id="ss-tension-support"><title>Tension as a Support Force</title>
+
+                        <introduction>
+                        <p>Ropes and chains (and beams) can use tension to support (from above) dangling objects.</p>
+                
+                        <example xml:id="se-purse">
+                                <statement>
+                                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> hangs her purse <m>(m=1.36\unit{kg})</m> on a hook.  How much tension is in the shoulder strap to keep it from falling?</p>
+                                </statement>
+                                <solution>
+                                        <p>The strap connects the hook to the purse.  We can consider the interaction between the hook and the strap or between the purse and the strap.  We will consider the latter since we don't know anything about the hook.  Considering the forces on the purse, we know that there is a downwards gravitational force of <m>\deq F_g = (1.36\unit{kg})(9.81\unitfrac{m}{s^2}) = \sig{13.3}{4}{N}</m> and that the net force must zero (because the purse is not accelerating). So, the strap must provide an upwards (tension) force.
+                                        <md>
+                                        <mrow> \vec F_T + \vec F_g \amp = m \cancelto{0}{\vec a} </mrow>
+                                        <mrow>\vec F_T + (-\sig{13.3}{4}{N} \jhat) \amp = 0\unit N </mrow>
+                                        <mrow>\vec F_T \amp = +\sig{13.3}{4}{N} \jhat </mrow>
+                                        </md>
+                                        This is the upwards force that the strap applies to the purse; however, the tension strap is doing two jobs: It is pulling up on the purse (as indicated above) <em>and</em> it is pulling down on the hook.</p>
+                                </solution>
+                        </example>
+
+                        <p>The important thing to take away from <xref ref="se-purse" text="type-global" /> is not that we can compute the value (although that is, of course, a useful skill), but rather that
+                        <assemblage><p>the tension is conveying the force between the two objects.</p></assemblage>
+                        In the same way that the <xref ref="s-FN" text="title">normal force</xref> on a scale does not measure your weight, but rather the amount you press into the scale, the tension passes force on to the attached object.  The hook doesn't feel the weight of the purse, but does feel the tension required to support the purse.</p>
+
+                        <p>In <xref provisional="sss-multiple-mass" text="title">an upcoming section</xref>, we will consider what happens when multiple masses are hung from the rope.</p>
+                        
+                        </introduction>
+                        
+                        <subsubsection><title>How Physicists Use the Words (Vocabulary)</title>
+
+                        <p>You can probably think of several examples of objects dangling: a purse on a hook, a flag on a pole, a shop sign attached to a post, a pendulum,a swing set, etc.  Since these are all similar in some ways (although different in other ways), <em>we can treat all of them as a mass at the end of a rope</em>.  Typically, because we do not want to deal with the complications that come from sagging supports, we will use the <xref ref="s-effective2" text="title">approximation</xref> of an <q><em>immovable support</em>.</q>  This will be indicated by hashing the surface.
+                        <todo>Add <insert>a description of the</insert> <stale>an</stale> image of an immovable surface to that section</todo>
+                        </p>
+
+                        <figure xml:id="f-immovable-surface">
+                                <caption>[Add caption]</caption>
+                                <image xml:id="i-immovable-surface" source="images/i-immovable-surface.svg">
+                                <latex-image-code>
+\begin{picture}(35,80)
+\put(0,70){\line(1,0){25}}
+\multiput(5,70)(5,0){4}{\line(1,1){5}}
+\put(12.5,70){\line(0,-1){50}}
+\put(7.5,20){\line(1,0){10}}
+\put(7.5,20){\line(0,-1){10}}
+\put(17.5,10){\line(-1,0){10}}
+\put(17.5,10){\line(0,1){10}}
+\end{picture}
+                                </latex-image-code>
+                                </image>
+                        </figure>
+
+                        </subsubsection>
                 </subsection>
 
         </section>
