@@ -399,7 +399,7 @@
                 <subsection><title>Things on the ground</title>
 
                         <example xml:id="sss-tea"><title>Hot Tea and Iced Tea</title>
-                        <aside><title>Referenced by</title> <p><xref provisional="s-surface.tension"  text="type-global" /></p></aside>
+                        <aside><title>Referenced by</title> <p><xref provisional="s-surface-tension"  text="type-global" /></p></aside>
 
                         <p>On 28 April, 2017,<!--\new{v2.3}{New source of info} -->
                         <url href="http://www.cbc.ca/podcasting">CBC Broadcasting</url> published a
@@ -2895,13 +2895,13 @@ Earth feels a force by \studentZ\ to the left.
 
         <introduction>
         <p>There are many mechanisms for imparting force on an object.  Perhaps the most obvious is that objects fall towards the Earth.  We call this force <q>gravity</q> and we will discuss it first.  It turns out to be somewhat more complicated because it turns out that the force that helps us fall when we trip is the same force that holds the planets in their orbits.  The complicated general theory will be discussed later<todo>add reference</todo>, but for now <xref ref="s-Fg" text="type-local" /> will describe the phenomenon at the surface of the Earth where we usually experience it.</p>
-        
+
         <p>After a brief introduction to the four fundamental forces in <xref provisional="s-fundamental" text="type-local" />, we will consider the <xref ref="s-FN" text="title">normal force</xref>, <xref provisional="s-FT" text="title">tension</xref> (such as in ropes), <xref provisional="s-Ff" text="title">friction</xref>, <xref provisional="s-springs" text="title">springs</xref>, and end with the catch-all additional category of <xref provisional="s-FA" text="title">applied forces</xref>.  <xref provisional="s-Fnet" text="type-local" /> will wrap it up by using examples including multiple types of force to compute the net force, which connects back to Newton's Laws in the previous chapter.</p>
-        
+
         </introduction>
-        
+
         <section xml:id="s-Fg"><title>Gravity at the Surface of the Earth</title>
-        <aside><title>Referenced by</title> 
+        <aside><title>Referenced by</title>
                 <p>
                 <xref ref="d-accgrav">freefall</xref>,
                 <xref ref="f-firstFBD" text="type-global"/>
@@ -2937,9 +2937,9 @@ Earth feels a force by \studentZ\ to the left.
                 <assemblage><p>The weight of an object is computed as its mass times the acceleration due to gravity, even when the object is not actually accelerating at that rate:  <m>\mathbf{F_g \equiv mg}</m>.</p></assemblage>
 
                 </introduction>
-                
+
                 <subsection xml:id="ss-weightmass"><title>Weight versus Mass</title>
-                <aside><title>Referenced by</title> 
+                <aside><title>Referenced by</title>
                         <p>
                         <xref ref="ss-convertunits" text="type-hybrid" />,
                         <xref ref="s-sigfig" text="type-hybrid" />
@@ -2950,7 +2950,7 @@ Earth feels a force by \studentZ\ to the left.
                 <p xml:id="p-defpound">Since all objects have the same acceleration due to gravity at the surface of the Earth, the weight of an object and the mass of an object are very closely correlated, but they are not the same quantity.  This tends to cause some confusion when the discussion is not explicitly technical.  Recall the discussion about being precise in our language, <xref ref="s-precision" text="type-global" />.  One complication for people in the United States is that there are two definitions of the pound; one is a unit of mass<fn xml:id="fn-pound">There are also multiple versions of the pound-mass.  You can find these explained on the internet, but most of these are considered obsolete.  The one I will use is the <q>avoirdupois-pound</q>, which is defined in the NIST publication
                 <!-- found in https://en.wikipedia.org/wiki/Pound_(mass) -->
                 <url href="https://www.nist.gov/sites/default/files/documents/2017/04/28/AppC-12-hb44-final.pdf">Handbook 44</url>, page C-19, as exactly <m>453.592 37\unit{g}</m>.</fn>
-                and the other is a unit of force.  Since the pound-force<fn xml:id="fn-kg-pound">There is also a unit of force called the kilogram-force.</fn> 
+                and the other is a unit of force.  Since the pound-force<fn xml:id="fn-kg-pound">There is also a unit of force called the kilogram-force.</fn>
                 <!-- https://en.wikipedia.org/wiki/Pound_(force) -->
                 is defined as the standard unit of mass times the standard unit for the acceleration due to gravity, as discussed in <xref ref="s-SI-MKS" text="type-hybrid" /><todo>Update <xref ref="s-SI-MKS" text="type-hybrid" /> with this information.</todo>, the conversion directly from pound-force to Newtons will <em>not</em> match the longer, but more appropriate, conversion from pound-mass to kilogram that gets multiplied by the local acceleration due to gravity (as opposed to the standard <m>g</m>) into Newtons.  It may also be useful to review the comments about unit-conversion in the section on <xref ref="s-sigfig" text="title">significant digits</xref><idx>Significant Digits</idx>.</p>
 
@@ -2968,7 +2968,7 @@ Earth feels a force by \studentZ\ to the left.
 
 
                 </subsection>
-                
+
                 <subsection xml:id="ss-local-mg"><title>Calculating the weight</title>
 
                 <p>When calculating the forces acting on a person or an object, we will often need to account for the force of gravity, while other forces may also be at work.  As mentioned above, the weight is found by multiplying the mass times the local acceleration due to gravity, even if the object is not actually accelerating at that rate.  <xref provisional="c-gravity" text="type-global" /> will clarify why it is true<fn xml:id="fn-accgrav-nuance">The short answer is that the altitude (distance from the surface of the Earth) and local geology affect the strength of the gravitational field.  Since the Earth is slightly oblate (bulges at the equator), the altitude at different latitudes corresponds to a different distance from the center of the Earth.  In addition, while the spin of the Earth does not affect the strength of the gravitational field, it does affect how objects accelerate. The <url href="http://www2.csr.utexas.edu/grace/gallery/animations/ggm01/ggm01_gif-200.html">GRACE project</url> has measured the variations across the globe.</fn>, but for now please note that the acceleration due to gravity is (1) different according to where we are and also (2) the same for all objects at that location.<idx><h>Acceleration</h><h>Gravity</h></idx><idx><h>Gravity</h><h>Acceleration</h></idx>
@@ -2981,12 +2981,12 @@ Earth feels a force by \studentZ\ to the left.
                 <!-- reference weight of an apple:  \url{http://www.applejournal.com/ref.htm} -->
                 </caption>
                 <tabular>
-                        <row below="minor"><cell>Object</cell> <cell>pounds</cell> <cell>mass (kg)</cell> <cell>weight (N)</cell></row> 
-                        <row><cell>apple</cell> <cell>0.33</cell> <cell>0.15</cell> <cell>1.5</cell></row> 
-                        <row><cell>lean, healthy cat</cell> <cell>10</cell> <cell>4.6</cell> <cell>45</cell></row> 
-                        <row><cell>medium-sized dog</cell> <cell>44</cell> <cell>20</cell> <cell>196</cell></row> 
-                        <row><cell>human</cell> <cell>200</cell> <cell>91</cell> <cell>890</cell></row> 
-                        <row><cell>horse</cell> <cell>1000</cell> <cell>362</cell> <cell><m>3.56\ten{3}</m></cell></row> 
+                        <row below="minor"><cell>Object</cell> <cell>pounds</cell> <cell>mass (kg)</cell> <cell>weight (N)</cell></row>
+                        <row><cell>apple</cell> <cell>0.33</cell> <cell>0.15</cell> <cell>1.5</cell></row>
+                        <row><cell>lean, healthy cat</cell> <cell>10</cell> <cell>4.6</cell> <cell>45</cell></row>
+                        <row><cell>medium-sized dog</cell> <cell>44</cell> <cell>20</cell> <cell>196</cell></row>
+                        <row><cell>human</cell> <cell>200</cell> <cell>91</cell> <cell>890</cell></row>
+                        <row><cell>horse</cell> <cell>1000</cell> <cell>362</cell> <cell><m>3.56\ten{3}</m></cell></row>
                         <row><cell>large pick-up truck</cell> <cell>4000</cell> <cell><m>1.81\ten{3}</m></cell> <cell><m>1.78\ten{4}</m></cell></row>
                 </tabular>
                 </table>
@@ -3001,16 +3001,16 @@ Earth feels a force by \studentZ\ to the left.
                         </p></statement>
                 </example>
                 </p>
-                
+
                 <example xml:id="se-weightA">
                         <statement>
                         <p>\studentA<idx><h sortby="\studentA">\studentA</h></idx>, who knows \hisA\ own mass (<m>\massA</m>), then imagines
-                                <aside><title>Referenced by</title> 
+                                <aside><title>Referenced by</title>
                                         <p>
                                         <xref provisional="f-firstFBDupdate" text="type-global" />,
                                         <xref provisional="f-firstFBDangle" text="type-global" />
                                         </p>
-                                </aside> 
+                                </aside>
                         dropping \himselfA\ (!) from a (small) height.  While \heA\ falls, \heA\ recognizes the gravitational force on \himA, which is computed to be
                         <me> \vec F_g = m \vec g = (\massA) [-(9.81\unitfrac{m}{s^2})\,\jhat] = -\sig{833}{.85}{N} \jhat = -834 \unit N \jhat </me>
                         Since \heA\ is in freefall and there is only one force is acting on \himA, the net force is easy to compute:  <m>\vec F_\mathrm{net} = -834 \unit N</m>.
@@ -3037,33 +3037,33 @@ Earth feels a force by \studentZ\ to the left.
                         <p>If <aside><title>Referenced by</title> <p><xref provisional="f-firstFBDupdate" text="type-global" />, <xref provisional="f-firstFBDangle" text="type-global" /></p></aside> \studentB<idx><h sortby="\studentB">\studentB</h></idx> is not falling, but rather standing safely on the floor, then the gravitational force is still acting.  It can be computed as
                                 <me> \vec F_g = m \vec g = (\massB) [-(9.81\unitfrac{m}{s^2})\,\jhat] = -\sig{735}{.75}{N} \jhat = -736 \unit N \jhat </me>
                         However, since we can see that \hisB\ acceleration is zero, the <m>\vec F_\mathrm{net}</m> <em>must be zero</em>.  The only way that can happen, though is if there is another force acting upwards on \studentB.  What could possibly be pushing up on \himB?  <xref ref="A-floor" text="type-local" />.  Whatever it is pushing up on \himB, it is supplying a support force, which can be calculated since
-                                <m>\vec F_\mathrm{net} = \vec F_g + \vec F_\mathrm{support}</m> 
+                                <m>\vec F_\mathrm{net} = \vec F_g + \vec F_\mathrm{support}</m>
                         and we can solve for
                                 <me> \vec F_\mathrm{support} = \vec F_\mathrm{net} - \vec F_g = m\left(0\unitfrac{m}{s^2}\right) - \left[ -(\sig{735}{.8}{N}) \jhat\right] = +736\unit N \jhat </me>
                         Because it is in the direction opposite to <m>\vec F_g</m>, it is upwards <m>(+\jhat)</m>.</p>
 
-                        <p>Can you identify <em>why</em> the support force is equal in magnitude and opposite in direction to the gravitational force?  
-                        Select one: 
+                        <p>Can you identify <em>why</em> the support force is equal in magnitude and opposite in direction to the gravitational force?
+                        Select one:
                                 <xref ref="A-second" text="title">Newton's second law</xref>
                         or
                                 <xref ref="A-third" text="title">Newton's third law</xref>.
                         </p>
                         </statement>
-                        
+
                         <answer xml:id="A-floor">I hope you guessed the floor.  That is the only thing pushing up on \studentB<idx><h sortby="\studentB">\studentB</h></idx>.  One useful way to think about it is that the floor is the thing keeping \himB\ from falling.  The direction of this force is <em>normal</em> (perpendicular) to the horizontal floor, so it is in the vertical direction.  This will be discussed in more detail in <xref ref="s-FN" text="type-global"/>.</answer>
-                        
+
                         <answer xml:id="A-second">You can tell that it is Newton's second law <m>(\vec F_\mathrm{net} = m \vec a)</m> because the forces we are considering are acting on the <em>same</em> object.  In this case, the gravitational force is caused by the Earth and the normal force is caused by the floor by they are both felt by \studentB<idx><h sortby="\studentB">\studentB</h></idx>.  These forces happen to be equal and opposite because \heB\ happens to be in equilibrium. \HeB\ does not <em>have to be</em> in equilibrium, such as when \heB\ jumps, in which case the forces would not be equal and might not be opposite.</answer>
-                        
+
                         <answer xml:id="A-third"><p>If it were Newton's third law, then the two forces we were discussing would be acting on different objects and would be unrelated to the fact that the object (in this case, \studentB<idx><h sortby="\studentB">\studentB</h></idx>) is in equilibrium.  The gravitational force and the normal force in this case are both acting on \studentB, so although they happen to be equal and opposite, this is not due to Newton's third law.</p>
 
                         <p>You should, however, note that the force that is reaction-paired to the gravitational force on \studentB<idx><h sortby="\studentB">\studentB</h></idx> by the Earth is a gravitational force on the Earth by \studentB.  Similarly, the reaction-paired force to the normal force on \studentB\ by the floor is a normal force on the floor by \studentB.  (Please note the <q>on</q> and <q>by</q> in each case.)</p></answer>
                 </example>
-                
+
                 <p>As was mentioned earlier, the value of the acceleration due to gravity also varies across the surface, although this is less than about a percent or so (see <xref ref="t-gworld" text="type-hybrid"/>).  Nonetheless, this means that your weight can change even when your mass remains the same.</p>
 
                 <example xml:id="se-gworld">
                         <statement>
-                        <p>While talking to your friend \studentB<idx><h sortby="\studentB">\studentB</h></idx>, you learn that \hisB\ parents, \studentE<idx><h sortby="\studentE">\studentE</h></idx> and \studentF<idx><h sortby="\studentF">\studentF</h></idx>, grew up in Norway, visited Puerto Rico, and climbed Mount Everest before settling in the United States.  Using <xref ref="t-gworld" text="type-local" />, compute \studentE's weight at each location, assuming \hisE\ mass is \massE: 
+                        <p>While talking to your friend \studentB<idx><h sortby="\studentB">\studentB</h></idx>, you learn that \hisB\ parents, \studentE<idx><h sortby="\studentE">\studentE</h></idx> and \studentF<idx><h sortby="\studentF">\studentF</h></idx>, grew up in Norway, visited Puerto Rico, and climbed Mount Everest before settling in the United States.  Using <xref ref="t-gworld" text="type-local" />, compute \studentE's weight at each location, assuming \hisE\ mass is \massE:
                                 <xref ref="A-Norway" text="title">Norway</xref>,
                                 <xref ref="A-Puerto" text="title">Puerto Rico</xref>, and
                                 <xref ref="A-Everest" text="title">Mt. Everest</xref>.
@@ -3089,7 +3089,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <answer xml:id="A-gpeaks">In addition to being an oblate spheroid (<xref ref="fn-oblate" text="type-local" />), the Earth has mountains and valleys.  Since the strength of the gravitational interaction depends (among other things) on how far you are from the center (slightly weaker further away), the acceleration due to gravity is smaller when you are at at high altitudes, such as Denver, CO and Mount Everest.</answer>
                 </example>
-                
+
                 <table xml:id="t-gworld">
                 <caption>
                         <p>Comparison of <m>g</m> at a few places on Earth.<fn xml:id="fn-compute-g">While both the latitude-longitude and the local value of <m>g</m> were found using the <url href="https://www.wolframalpha.com/">WolframAlpha<registered /> computational knowledge engine</url>, these <m>g</m> values do not necessarily correspond to these coordinates.  The <m>g</m> values are based on a theoretical model of the Earth.</fn> <xref ref="se-t-gworld" text="type-hybrid" /> considers some patterns in this table.</p>
@@ -3097,31 +3097,31 @@ Earth feels a force by \studentZ\ to the left.
 
                 <tabular>
                         <row below="minor">
-                                <cell>Location</cell> 
-                                <cell>latitude</cell> <cell>longitude</cell> 
-                                <cell>local <m>g (\!\!\unitfrac{m}{s^2})</m></cell></row> 
-                        <row><cell>San Juan, Puerto Rico</cell> 
+                                <cell>Location</cell>
+                                <cell>latitude</cell> <cell>longitude</cell>
+                                <cell>local <m>g (\!\!\unitfrac{m}{s^2})</m></cell></row>
+                        <row><cell>San Juan, Puerto Rico</cell>
                                 <cell><m>18^\circ 26' 24'' \unit{N}</m> </cell> <cell><m>66^\circ 7' 48'' \unit W</m></cell>
-                                <cell><m>9.782 \unitfrac{m}{s^2}</m></cell></row> 
-                        <row><cell>Brownsville, TX</cell> 
+                                <cell><m>9.782 \unitfrac{m}{s^2}</m></cell></row>
+                        <row><cell>Brownsville, TX</cell>
                                 <cell><m>26^\circ 1' 6'' \unit{N}</m> </cell> <cell><m>97^\circ 27' 14'' \unit W</m></cell>
-                                <cell><m>9.788 \unitfrac{m}{s^2}</m></cell></row> 
-                        <row><cell>Mount Everest</cell> 
+                                <cell><m>9.788 \unitfrac{m}{s^2}</m></cell></row>
+                        <row><cell>Mount Everest</cell>
                                 <cell><m>27^\circ 59' 17'' \unit{N}</m> </cell> <cell><m>86^\circ 55' 31'' \unit E</m></cell>
-                                <cell> <m>9.763\unitfrac{m}{s^2}</m></cell></row> 
-                        <row><cell>Cincinnati, OH</cell> 
+                                <cell> <m>9.763\unitfrac{m}{s^2}</m></cell></row>
+                        <row><cell>Cincinnati, OH</cell>
                                 <cell><m>39^\circ 8' 24'' \unit{N}</m> </cell> <cell><m>84^\circ 30' 23'' \unit W</m></cell>
-                                <cell> <m>9.801\unitfrac{m}{s^2}</m></cell></row> 
-                        <row><cell>Denver, CO</cell> 
+                                <cell> <m>9.801\unitfrac{m}{s^2}</m></cell></row>
+                        <row><cell>Denver, CO</cell>
                                 <cell><m>39^\circ 45' 43'' \unit{N}</m> </cell> <cell><m>104^\circ 52' 50'' \unit W</m></cell>
-                                <cell> <m>9.798\unitfrac{m}{s^2}</m></cell></row> 
-                        <row><cell>Paris, France</cell> 
+                                <cell> <m>9.798\unitfrac{m}{s^2}</m></cell></row>
+                        <row><cell>Paris, France</cell>
                                 <cell><m>48^\circ 51' 36'' \unit{N}</m> </cell> <cell><m>2^\circ 20' 24'' \unit E</m></cell>
-                                <cell> <m>9.813\unitfrac{m}{s^2}</m></cell></row> 
-                        <row><cell>Oslo, Norway</cell> 
+                                <cell> <m>9.813\unitfrac{m}{s^2}</m></cell></row>
+                        <row><cell>Oslo, Norway</cell>
                                 <cell><m>59^\circ 54' 36'' \unit{N}</m> </cell> <cell><m>10^\circ 45' \phantom{24''} \unit E</m></cell>
-                                <cell> <m>9.825\unitfrac{m}{s^2}</m></cell></row> 
-                        <row><cell>Anchorage, AK</cell> 
+                                <cell> <m>9.825\unitfrac{m}{s^2}</m></cell></row>
+                        <row><cell>Anchorage, AK</cell>
                                 <cell><m>61^\circ 10' 39'' \unit{N}</m> </cell> <cell><m>149^\circ 16' 28'' \unit E</m></cell>
                                 <cell><m>9.826\unitfrac{m}{s^2}</m></cell></row>
                 </tabular>
@@ -3143,9 +3143,9 @@ Earth feels a force by \studentZ\ to the left.
         <p>For the most part, these theories describe the interaction between microscopic particles, so we will not discuss them in detail here.  However, the gravitational interaction is exception in a variety of ways.  In particular, the gravitational interaction does affect macroscopic objects.  These fundamental forces have a particular description that allows us to pretend (recall <xref ref="s-effective2" text="title">effective theories</xref>) that they are action-at-a-distance interactions.  All other forces (introduced next) will require physical contact in order to exert the force.</p>
 
         </section>
-        
+
         <section xml:id="s-FN"><title>Normal Force</title>
-        <aside><title>Referenced by</title> 
+        <aside><title>Referenced by</title>
                 <p>
                 <xref ref="f-firstFBD" />,
                 <xref ref="A-floor" text="type-global" />,
@@ -3153,7 +3153,7 @@ Earth feels a force by \studentZ\ to the left.
                 </p>
         </aside>
         <idx><h>Force</h><h>Normal</h></idx>
-        
+
                 <introduction>
 
                 <p>The word <q>normal</q> <url href="http://etymonline.com/index.php?term=normal">originates</url><idx>Normal</idx> with the idea of conformity to the pattern.  While in everyday life this the typical state of being, the origins actually refer to a carpenter's square, which put corners into a right angle.  In math and physics, the word is used to mean perpendicular.  In the context of forces,
@@ -3165,7 +3165,7 @@ Earth feels a force by \studentZ\ to the left.
                 <assemblage xml:id="f-firstFBDupdate">
                         <title>An updated version of <xref ref="f-firstFBD" text="type-global" />, people pushing a box.</title>
                         <idx><h>Free-Body Diagrams</h><h>Images</h></idx>
-                        
+
                         <p>Again, we can start by drawing a picture of the situation.  The description is the same as it was for <xref ref="f-firstFBD" text="type-global" />.  In addition to those forces, each of the three bodies has a downwards gravitational force.  This analogous to the calculation in <xref ref="se-weightA" text="type-global" />, which was only for \studentA<idx><h sortby="\studentA">\studentA</h></idx>; but you can calculate the weight for the mass in <xref ref="se-netF-a" text="type-global" /> and \studentB<idx><h sortby="\studentB">\studentB</h></idx>'s weight was computed in <xref ref="se-FNB" text="type-global" />.  In addition to the downward gravitational force (the weight), Newton's second law and the fact that nothing is accelerating up or down together tells us that there must also be a normal force on each body.  This is analogous to the calculation in <xref ref="se-FNB" text="type-global" />, which was only for \studentB; but you can deduce it for the object and for \studentA.</p>
                         <figure xml:id="f1-firstFBDupdate">
                                 <caption><p>\studentA\ and \studentB\ push on a box</p></caption>
@@ -3565,26 +3565,26 @@ Earth feels a force by \studentZ\ to the left.
                                 <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ shoots a bank-shot and the ricochet reminds all of you about the normal force from the bumper on the ball.</p>
                         </introduction>
                         <task>
-                                <statement><p>Find a billiards table. Notice the felt, the bumpers (cushion), and the dimensions of the table. 
+                                <statement><p>Find a billiards table. Notice the felt, the bumpers (cushion), and the dimensions of the table.
                                         Does the ball roll as far on felt as it does on hardwood?  (<xref ref="A-pool-roll" text="type-local" />) How soft is the bumper? (<xref ref="A-pool-bumper" text="type-local" />)</p></statement>
-                                <answer xml:id="A-pool-roll"><p>First, you should not roll a pool ball across just any floor; there is felt on the pool table for a reason.  
+                                <answer xml:id="A-pool-roll"><p>First, you should not roll a pool ball across just any floor; there is felt on the pool table for a reason.
                                         However, if you have a clean, smooth surface and are able to reproduce your rolling speed, you will find that the pool ball rolls further on the stiff, nonyielding surface than it will on the felt.  The reason for this is beyond the scope of this textbook, but you can read more from
                                         <url href="http://stacks.iop.org/0031-9120/30/i=3/a=009"><q>Sliding and rolling: the physics of a rolling ball,</q> J. Hierrezuelo and C. Carnero, Physics Education, Volume 30, Number 3</url> (unofficially at
                                         <url href="http://billiards.colostate.edu/physics/Hierrezuelo_PhysEd_95_article.pdf">this PDF</url>).</p></answer>
-                                <answer xml:id="A-pool-bumper"><p>The cushion (sometimes called a bumper) is pretty still to the touch, but it is made of a springy rubber 
+                                <answer xml:id="A-pool-bumper"><p>The cushion (sometimes called a bumper) is pretty still to the touch, but it is made of a springy rubber
                                         that allows the balls to bounce reasonably well.  The
                                         <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">document</url> indicates that you should be able to firmly strike a ball at some angle to the far wall and have it bounce around the table four to four-and-a-half times.  If the bumpers were perfectly <xref provisional="s-elastic" text="title">elastic</xref>, then the normal force would be normal to the restign surface; but since the bumper has some flexibility, when the ball hits the bumper with a glancing blow, then bumper bends inwards and the normal force is directed in a way that depends on the shape of the dent. </p></answer>
                         </task>
                         <task>
-                                <statement><p>Find a set of pool balls. Compare the solid-colored balls, the striped balls, and the cue ball. 
+                                <statement><p>Find a set of pool balls. Compare the solid-colored balls, the striped balls, and the cue ball.
                                         Are there differences in size of weight?</p></statement>
-                                <answer xml:id="A-noncue"><p>The <url href="http://wpapool.com/equipment-specifications/\#Balls-and-Ball-Rack">specifications</url> 
+                                <answer xml:id="A-noncue"><p>The <url href="http://wpapool.com/equipment-specifications/\#Balls-and-Ball-Rack">specifications</url>
                                         show that there is no difference between the solids and stripes, but the cue ball weighs <m>9\%</m> more that the other balls (<m>6.0\unit{oz}</m> versus <m>5.5\unit{oz}</m>).  The colored balls and the cue ball are otherwise identical.  </p></answer>
                         </task>
                         <task>
                                 <statement><p>Hit the cue-ball off of a bumper in the manner intended for
                                         <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">testing cushions</url>. Compare the angle it leaves the bumper (reflected angle) match the angle at which it came in (incident angle). Does the spin of the ball matter?</p></statement>
-                                <answer xml:id="A-pool-spin"><p>Because the bumper is covered in felt, it has a small grip on the ball.  
+                                <answer xml:id="A-pool-spin"><p>Because the bumper is covered in felt, it has a small grip on the ball.
                                         Because the bumper has some give to it, it dents in when hit and provide more surface area, which increases the grip.  Both of these mean that the spin of the ball gets transferred to the pool table somewhat and change the way a spinning ball exits from the bumper collision.  </p></answer>
                         </task>
                         <task>
@@ -3592,8 +3592,8 @@ Earth feels a force by \studentZ\ to the left.
                                         Why does the pool ball jump off the bumper? </p>
                                         <p>Does the pool ball move along the wall? </p>
                                         <p>Where did you hit the pool ball?</p></statement>
-                                <answer xml:id="A-pool-later"><p>This answer is getting 
-                                        <assemblage><p>too complex for the section</p></assemblage> 
+                                <answer xml:id="A-pool-later"><p>This answer is getting
+                                        <assemblage><p>too complex for the section</p></assemblage>
                                         it is in.  I need to move the IRL before I finish considering how to answer this question. </p></answer>
                         </task>
                         <conclusion>
@@ -3616,7 +3616,7 @@ Earth feels a force by \studentZ\ to the left.
                 </introduction>
 
                 <subsection xml:id="ss-scales"><title>Bathroom Scales Measure the Normal Force</title>
-                <aside><title>Referenced by</title> 
+                <aside><title>Referenced by</title>
                         <p>Discussion of <xref provisional="d-usesofFma">uses of <m>F=ma</m></xref></p>
                 </aside>
 
@@ -3643,7 +3643,7 @@ Earth feels a force by \studentZ\ to the left.
                         </task>
                         <task>
                                 <statement><p>Hold the scale against the wall and press into it. Control the value read by the scale (HINT: <xref ref="Q-scale-decrease" text="type-local" />).  Increase the reading by <m>20\unit{N}</m>, <m>30\unit{N}</m>, etc. What is the scale measuring? </p></statement>
-                                <solution xml:id="A-scale-measure"><p>Since your weight is a force pulling downwards, having the scale on the wall shows that the scale cannot be balancing weight.  Since you are pushing into the wall, you are exerting a normal force into the scale and the scale is exerting a normal force back at you.  Both of these forces are horizontal (assuming the wall is plumb).</p>  
+                                <solution xml:id="A-scale-measure"><p>Since your weight is a force pulling downwards, having the scale on the wall shows that the scale cannot be balancing weight.  Since you are pushing into the wall, you are exerting a normal force into the scale and the scale is exerting a normal force back at you.  Both of these forces are horizontal (assuming the wall is plumb).</p>
                                 <p> Another way to think about this is: If you can control the value read by the scale (such as against the wall) while at the same time not changing your actual mass, the scale cannot literally be measuring the weight of the object on the scale.</p></solution>
                         </task>
                         <task>
@@ -3666,6 +3666,125 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p>Bathroom scales use leverage (i.e., <xref provisional="s-leverarm" text="title">torque</xref>) and a <xref provisional="s-springs" text="title">spring</xref>-system to balance the force pressing into them.  The mechanism can be seen at <url href="http://home.howstuffworks.com/inside-scale-htm">How Stuff Works</url>.</p>
 
+                </subsection>
+
+        </section>
+        <section xml:id="s-FT"><title>Tension</title>
+        <aside><title>Referenced by</title> 
+                <p>Discussion of <xref provisional="d-fma"><m>F=ma</m></xref></p>
+        </aside>
+        <idx><h>Force</h><h>Tension</h></idx>
+
+                <introduction>
+                <p>Where the <xref ref="s-FN" text="title">normal force</xref> is appropriate for pushing against surfaces,
+                <assemblage><p>tension is the pulling force that is transmitted through materials such as cable, chain, or rope.</p></assemblage>
+                Tension is closely related to the compression force experienced by support beams.  One can simplistically think of tension as pulling<todo>add a link to (and the section itself) to a section on the modulus and stress/strain.</todo> and compression as pushing<todo>Maybe add an IRL about a house settling and the compression forces.  Loading a pick-up truck and watching the bed sag as weight is added.  Hammock as an example of adding weight and increasing the tension force.</todo> on the intermediate object that transmits force between the objects at either end.<fn xml:id="fn-rope-compression">It doesn't usually make sense to talk about the compression of a rope or chain.</fn>
+                When engineers design the skeleton of bridges and buildings, one of the primary considerations is the tension and compression of the steel beams.  You can build your intuition by considering the <xref ref="irl-tension" text="type-global"/>.<todo>Still need to update the <xref ref="irl-tension" text="type-global"/>.</todo></p>
+                
+                <investigation xml:id="irl-tension"><title>Pull my finger.</title>
+                        <idx><h>Force</h><h>Tension</h></idx>
+                        <introduction>
+                                <p>We talk about tension and stress in our daily lives.  This is an analogy to the physical version of tension, stress, and strain.  While 
+                                <url href="http://etymonline.com/index.php?allowed_in_frame=0&amp;search=stress">stress</url> and 
+                                <url href="http://etymonline.com/index.php?search=strain&amp;searchmode=&amp;p=0&amp;allowed_in_frame=0">strain</url> 
+                                come from the the concept of tightening, 
+                                <url href="http://etymonline.com/index.php?allowed_in_frame=0&amp;search=tension">tension</url> 
+                                comes from the concept of stretching.
+                                </p>
+                        </introduction>
+                        <task xml:id="Q-swing-tension">
+                                <statement><p>Sit on a swing. Notice the tightness of the support ropes/chains. 
+                                        How tight are the supports when the swing is empty? 
+                                        When a small child is in the swing? 
+                                        When a full-sized adult is in the swing? </p></statement>
+                                <answer xml:id="A-swing-tension"><p>To make this comparison, let's consider a swing that is supported by chains.
+                                        If you are sitting in the swing and take hold of the chains at about shoulder height, you should be able to shake them in (towards your chest) and out (away from you, towards your neighbor swings).  You can do this same motion while standing next to the swing.  If you do this when the swing is empty, it is very easy to do this.  If you ask a series of successively larger people to sit in the swing, you will notice that it gets progressively more difficult to extend them very far.  The chains are increasing in tension; they are pulled more taut.  Your ability to move the chain in this way is exactly analogous to the way a bow draws across a violin or the way your fingers pluck a guitar, as described in <xref provisional="ss-stringed-instruments" text="type-global" />.</p></answer>
+                        </task>
+                        <task xml:id="Q-fan-tension">
+                                <statement><p>Install a fan or light fixture that hangs from the ceiling. You don't want the fan to be supported by the electrical wires, 
+                                        but rather by the metal shaft. How is the fan supported? </p></statement>
+                                <answer xml:id="A-fan-tension"><p>You might also consider <xref ref="A-chandelier-tension" text="type-local" />, which discusses the case of
+                                        hanging a light fixture from the ceiling. If you have ever installed a fan in your house, then you will notice that you have to support the fan while the wires are connected.  Usually the fan has a shaft that connects to the ceiling at one end and the fan at the other and provides a mechanism for supporting the fan while you manage the wires, which pass through the shaft.  Since the fan houses the motor, it is usually reasonably heavy.   The nice property of use a metal shaft to support the fan is that it doesn't stretch or wiggle like a chain might.  The difficulty in this example is that it is more difficulty to notice the tension in the shaft.  If you are the person hanging the fan, then one thing you might be able to notice is that if you flick the metal with a finger when it is not supporting anything, it will have a slightly different <q>ting</q> than when it is supporting the fan.<todo>Is this sufficiently noticeable?</todo></p></answer>
+                                <answer xml:id="A-chandelier-tension"><p>If you have ever installed a chandelier in your house, then you will notice that the light has to be supported
+                                        between the joists of the ceiling.  There will be an electrical box with a screw to which you will attach the support for the chain that holds the chandelier.  The wires will run through the support chain.  The heavier the chandelier, the tauter the chain, much as described in <xref ref="A-swing-tension" text="type-local" />. This tension is much easier to see than the tension in the shaft of the fan.</p></answer>
+                        </task>
+                        <task xml:id="Q-doorknob">
+                                <statement><p>Pull on a doorknob. Imagine replacing the knobs (inside and outside) with large knots on a rope that runs through the hole the doorknob used to occupy. What if the doorknob were replaced with a rope, knotted on either side of the door? </p></statement>
+                                <answer xml:id="A-doorknob"><p>[Answer]</p></answer>
+                        </task>
+                        <task xml:id="Q-dog-leash">
+                                <statement><p>Take a dog for a walk on a leash. Try to pay attention to Newton's second and third law when the dog changes its level of enthusiasm for pulling on the leash. If the dog pulls very hard on the leash and you balance that force without allowing the dog to move away from you, then describe the way the force connects you to the dog.</p></statement>
+                                <answer xml:id="A-dog-leash"><p>[Answer]</p></answer>
+                        </task>
+                        <conclusion>
+                                <sidebyside widths="50% 50%" haligns="center right">
+                                        <p></p>
+                                        <tabular halign="right"><row><cell halign="right">
+                                                Return to: <xref ref="s-FT" text="type-global" />
+                                        </cell></row></tabular>
+                                </sidebyside>
+                        </conclusion>
+                </investigation>
+
+                <p>When considering the tension in the rope, the context is generally that the rope is connecting two objects that are trying to pull on each other.  It is convenient to recognize that each object only <q>sees</q> the rope, not the object at the far side.  This can be seen in a couple of contexts.</p>
+
+                <p>We will start with the <xref ref="s-effective2" text="title">simplistic approximation</xref> of ropes that only transmit the force.  As your understanding improves, we will add some examples where the tension in the rope also affects the rope itself.  In that more complicated situation, the tension will change across the rope<todo>maybe add links</todo> and the rope may stretch<todo>maybe add links</todo>.  Since ropes and cables are twisted strands while chains are links, ropes and cables can also introduce a <xref provisional="s-torsion" text="title">torsion</xref> that tends not to occur in chains.
+                <aside><title>Foreshadow</title></aside></p>
+
+                </introduction>
+
+                <subsection xml:id="ss-tension-support"><title>Tension as a Support Force</title>
+
+                        <introduction>
+                        <p>Ropes and chains (and beams) can use tension to support (from above) dangling objects.</p>
+                
+                        <example xml:id="se-purse">
+                                <statement>
+                                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> hangs her purse <m>(m=1.36\unit{kg})</m> on a hook.  How much tension is in the shoulder strap to keep it from falling?</p>
+                                </statement>
+                                <solution>
+                                        <p>The strap connects the hook to the purse.  We can consider the interaction between the hook and the strap or between the purse and the strap.  We will consider the latter since we don't know anything about the hook.  Considering the forces on the purse, we know that there is a downwards gravitational force of <m>\deq F_g = (1.36\unit{kg})(9.81\unitfrac{m}{s^2}) = \sig{13.3}{4}{N}</m> and that the net force must zero (because the purse is not accelerating). So, the strap must provide an upwards (tension) force.
+                                        <md>
+                                        <mrow> \vec F_T + \vec F_g \amp = m \cancelto{0}{\vec a} </mrow>
+                                        <mrow>\vec F_T + (-\sig{13.3}{4}{N} \jhat) \amp = 0\unit N </mrow>
+                                        <mrow>\vec F_T \amp = +\sig{13.3}{4}{N} \jhat </mrow>
+                                        </md>
+                                        This is the upwards force that the strap applies to the purse; however, the tension strap is doing two jobs: It is pulling up on the purse (as indicated above) <em>and</em> it is pulling down on the hook.</p>
+                                </solution>
+                        </example>
+
+                        <p>The important thing to take away from <xref ref="se-purse" text="type-global" /> is not that we can compute the value (although that is, of course, a useful skill), but rather that
+                        <assemblage><p>the tension is conveying the force between the two objects.</p></assemblage>
+                        In the same way that the <xref ref="s-FN" text="title">normal force</xref> on a scale does not measure your weight, but rather the amount you press into the scale, the tension passes force on to the attached object.  The hook doesn't feel the weight of the purse, but does feel the tension required to support the purse.</p>
+
+                        <p>In <xref provisional="sss-multiple-mass" text="title">an upcoming section</xref>, we will consider what happens when multiple masses are hung from the rope.</p>
+                        
+                        </introduction>
+                        
+                        <subsubsection><title>How Physicists Use the Words (Vocabulary)</title>
+
+                        <p>You can probably think of several examples of objects dangling: a purse on a hook, a flag on a pole, a shop sign attached to a post, a pendulum,a swing set, etc.  Since these are all similar in some ways (although different in other ways), <em>we can treat all of them as a mass at the end of a rope</em>.  Typically, because we do not want to deal with the complications that come from sagging supports, we will use the <xref ref="s-effective2" text="title">approximation</xref> of an <q><em>immovable support</em>.</q>  This will be indicated by hashing the surface.
+                        <todo>Add <insert>a description of the</insert> <stale>an</stale> image of an immovable surface to that section</todo>
+                        </p>
+
+                        <figure xml:id="f-immovable-surface">
+                                <caption>[Add caption]</caption>
+                                <image xml:id="i-immovable-surface" source="images/i-immovable-surface.svg">
+                                <latex-image-code>
+\begin{picture}(35,80)
+\put(0,70){\line(1,0){25}}
+\multiput(5,70)(5,0){4}{\line(1,1){5}}
+\put(12.5,70){\line(0,-1){50}}
+\put(7.5,20){\line(1,0){10}}
+\put(7.5,20){\line(0,-1){10}}
+\put(17.5,10){\line(-1,0){10}}
+\put(17.5,10){\line(0,1){10}}
+\end{picture}
+                                </latex-image-code>
+                                </image>
+                        </figure>
+
+                        </subsubsection>
                 </subsection>
 
         </section>
