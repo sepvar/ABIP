@@ -1072,7 +1072,7 @@
                                         <p xml:id="d-accgrav">The patterns that you see when you drop objects is that objects fall faster than humans are used to paying attention to.  This Investigation <!-- <xref ref="irl-freefall" text="type-global" /> --> shows you how you can pay close attention to the patterns that result from observing falling objects. You should go do those experiments before reading further.  Go ahead.  I'll wait.</p>
                                 </prelude>
                                 <introduction>
-                                        <p>Because \studentC<idx><h sortby="\studentC">\studentC</h></idx> is a pitcher on the local baseball team, \heC\ decides to drop a ball and watch what happens.  You and \studentD<idx><h sortby="\studentD">\studentD</h></idx> decide to join him.  \studentD\ provides a few other objects that can also be dropped: a tennis ball, a hammer, a small Wonder Woman toy, and a broken cell phone.  Some of these are dropped at the same time.</p>
+                                        <p>Because \studentC<idx><h sortby="\studentC">\studentC</h></idx> is a pitcher on the local baseball team, \heC\ decides to drop a ball and watch what happens.  You and \studentD<idx><h sortby="\studentD">\studentD</h></idx> decide to join \himC.  \studentD\ provides a few other objects that can also be dropped: a tennis ball, a hammer, a small Wonder Woman toy, and a broken cell phone.  Some of these are dropped at the same time.</p>
 
                                         <p></p>
                                         <observation><p>\studentD\ notices that it is important to release the objects at exactly the same time.</p></observation>
@@ -1140,7 +1140,7 @@
                         <exercise xml:id="ex-freefall">
                                 <title>How quickly does it fall?</title>
                                 <statement>
-                                        <p>Your friend, \studentC<idx><h sortby="\studentC">\studentC</h></idx>, is a baseball player and is curious to learn about the rate that baseballs fly through the air.  You get on a <m>12\unit{ft}</m> ladder and \heC\ lays on the ground below you aiming his radar gun (which measures speed) upwards.  Each rung is <m>1.0\unit{ft}</m> apart and his gun is at the first rung.  When you drop the ball three rungs above the gun, he measures the final velocity to be <m>4.24\unitfrac ms</m>.  When you drop the ball six rungs above the gun, he measures the final velocity to be <m>6.00\unitfrac ms</m>.  When you drop the ball eleven  rungs above the gun, he measures the final velocity to be <m>8.11\unitfrac ms</m>.  Find the acceleration of the ball in each case.</p>
+                                        <p>Your friend, \studentC<idx><h sortby="\studentC">\studentC</h></idx>, is a baseball player and is curious to learn about the rate that baseballs fly through the air.  You get on a <m>12\unit{ft}</m> ladder and \heC\ lays on the ground below you aiming \hisC\ radar gun (which measures speed) upwards.  Each rung is <m>1.0\unit{ft}</m> apart and \hisC\ gun is at the first rung.  When you drop the ball three rungs above the gun, \heC\ measures the final velocity to be <m>4.24\unitfrac ms</m>.  When you drop the ball six rungs above the gun, \heC\ measures the final velocity to be <m>6.00\unitfrac ms</m>.  When you drop the ball eleven rungs above the gun, \heC\ measures the final velocity to be <m>8.11\unitfrac ms</m>.  Find the acceleration of the ball in each case.</p>
                                 </statement>
                                 <hint>
                                         <p>The first thing we should do is notice what information is given to us and make sure that everything is in consistent units.  I will convert everything to metric.
@@ -2507,7 +2507,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
 
                 <exploration xml:id="cyoa-NIII"><title>The Town Bully</title>
                         <statement>
-                                <p>\studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> is the town bully.  One day, he spies a biology student, \studentC<idx><h sortby="\studentC">\studentC</h></idx>, minding \hisC\ own business studying an interesting ecological phenomenon.  At the same time, you are standing across the street chatting with your friend \studentD<idx><h sortby="\studentD">\studentD</h></idx>, who happens to be taking a psychology class.  \studentD\ has been quite fascinated lately with watching the way others interact and points out the way \studentZ\ is menacingly approaching the unsuspecting \studentC.  You both predict that \studentZ\ is going to push \studentC\ over.  \studentD\ is mesmerized by the psychological effects and you, having just learned about Newton's laws, are excited to see if this action does indeed produce a reaction.
+                                <p>\studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> is the town bully.  One day, \heZ\ spies a biology student, \studentC<idx><h sortby="\studentC">\studentC</h></idx>, minding \hisC\ own business studying an interesting ecological phenomenon.  At the same time, you are standing across the street chatting with your friend \studentD<idx><h sortby="\studentD">\studentD</h></idx>, who happens to be taking a psychology class.  \studentD\ has been quite fascinated lately with watching the way others interact and points out the way \studentZ\ is menacingly approaching the unsuspecting \studentC.  You both predict that \studentZ\ is going to push \studentC\ over.  \studentD\ is mesmerized by the psychological effects and you, having just learned about Newton's laws, are excited to see if this action does indeed produce a reaction.
                                 <ol>
                                 <li xml:id="c-one">
                                         <p>If you watch the way \studentC\ is standing before, during, and after \studentZ\ pushes \himC, then read <xref ref="a-NIIIaction" text="type-local" />.  (See also <xref ref="a-guilty" text="type-local" />.)</p></li>
@@ -2519,7 +2519,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                 </p>
                         </statement>
                         <answer xml:id="a-NIIIaction">
-                                <p>As \studentC<idx><h sortby="\studentC">\studentC</h></idx> gets pushed, you notice that \heC\ was not aware of the pending doom.  \HeC\ is standing casually with \hisC\ feet set to support his own weight, but not to brace \himC\ against the sideways force.  When \heC\ gets pushed from the side, \hisC\ feet stay in place and \hisC\ torso topples, rotating \himC\ about \hisC\ center of mass as \heC\ falls to the ground.
+                                <p>As \studentC<idx><h sortby="\studentC">\studentC</h></idx> gets pushed, you notice that \heC\ was not aware of the pending doom.  \HeC\ is standing casually with \hisC\ feet set to support \hisC\ own weight, but not to brace \himC\ against the sideways force.  When \heC\ gets pushed from the side, \hisC\ feet stay in place and \hisC\ torso topples, rotating \himC\ about \hisC\ center of mass as \heC\ falls to the ground.
                                 <aside><title>Foreshadow</title>
                                         <p>The physics of why an object (or person) rotates when they fall over is discussed with <xref provisional="c-torque" text="title">torque</xref>.</p>
                                 </aside>
@@ -2529,7 +2529,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                 <p>As \studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> pushes, you notice that because \heZ\ was being intentional, \heZ\ put one foot behind \himZ\ to brace \hisZ\ body during the push.  \HeZ\ leans into the push and stays standing.  You are intrigued.  If you decide to do a follow-up experiment by pushing \studentD<idx><h sortby="\studentD">\studentD</h></idx> over without bracing yourself, then read <xref ref="a-NIIIexperiment" text="type-local" />.  If you decide to exercise self-restraint, then read <xref ref="a-NIIIrestraint" text="type-local" />.</p>
                         </answer>
                         <answer xml:id="a-NIIIconcern">
-                                <p>Being the thoughtful and considerate person you are, you rush over and startle \studentC<idx><h sortby="\studentC">\studentC</h></idx> out of \hisC\ reverie.  \studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> is quite angry and now focuses \hisZ\ attention on you!  \HeZ\ rushes towards you and shoves as hard as he can.  You go <em>flying</em> backwards and land on your tailbone while he just stands there laughing.  \studentC\ and \studentD<idx><h sortby="\studentD">\studentD</h></idx> both rush over to help you while \studentZ\ wanders off.  Surprisingly, \studentC\ has an icepack, which helps.  If you go speak to your faculty members about this, please read <xref ref="a-NIIIfaculty" text="type-local" />. If you decide to talk to Campus Security, please read <xref ref="a-NIIIsecurity" text="type-local" />.</p>
+                                <p>Being the thoughtful and considerate person you are, you rush over and startle \studentC<idx><h sortby="\studentC">\studentC</h></idx> out of \hisC\ reverie.  \studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> is quite angry and now focuses \hisZ\ attention on you!  \HeZ\ rushes towards you and shoves as hard as \heZ\ can.  You go <em>flying</em> backwards and land on your tailbone while \heZ\ just stands there laughing.  \studentC\ and \studentD<idx><h sortby="\studentD">\studentD</h></idx> both rush over to help you while \studentZ\ wanders off.  Surprisingly, \studentC\ has an icepack, which helps.  If you go speak to your faculty members about this, please read <xref ref="a-NIIIfaculty" text="type-local" />. If you decide to talk to Campus Security, please read <xref ref="a-NIIIsecurity" text="type-local" />.</p>
                         </answer>
                         <answer xml:id="a-NIIIexperiment">
                                 <p>You turn and push \studentD<idx><h sortby="\studentD">\studentD</h></idx> over.  Like \studentC<idx><h sortby="\studentC">\studentC</h></idx>, \heD\ did not expect it and was not braced, so \heD\ falls over. Similarly, you decided not to brace yourself and in pushing \studentD, you fall over backwards!  \studentD\ did not have to <em>choose</em> to push on you.  The act of you deciding to push \himD\ necessarily and simultaneously produces a force on you, equal in magnitude and opposite in direction.  Unfortunately, \studentD\ doesn't think this was a useful exercise and shouts <q>I have the whole thing on video!</q> and storms off to Campus Security.  You are arrested for assault, miss your physics class for a couple of weeks and ultimately fail all of your classes. I certainly hope this was all happening in your head and not in real life!  You learned something about physics, but at what cost to your humanity?  <alert>The end!</alert></p>
@@ -2603,7 +2603,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                 We know <m>m_C</m>, which is useful for relating <m>F_{C,\mathrm{net}}</m> to <m>a_C</m>.
                                 (This is not asked for, but is asked in homework problem <xref provisional="hmwk-pushbrace" text="type-global" />.)
                                 We know <m>F_{C,Z}</m>, how hard \studentZ\ pushes on \studentC.
-                                We also know that \studentC\ is not bracing \himselfC\ (because \heC\ <q>has \hisC\ back turned</q>) so he only feels one force, and that \studentZ\ is bracing \himselfZ\ (because the problem states that \heZ\ <q>leans in</q>) so he exerts multiple forces.</p>
+                                We also know that \studentC\ is not bracing \himselfC\ (because \heC\ <q>has \hisC\ back turned</q>) so \heC\ only feels one force, and that \studentZ\ is bracing \himselfZ\ (because the problem states that \heZ\ <q>leans in</q>) so \heC\ exerts multiple forces.</p>
 
                                 <p xml:id="ex-braced-want"><alert>What do we want to know?</alert>  We want to know about the forces acting on \studentZ, in order to find  <m>F_{Z,\textrm{net}}</m> and therefore <m>a_Z</m>.</p>
 
@@ -2696,7 +2696,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <p>(To better understand <xref ref="ss-NIII" text="title">Newton's third law</xref>, you should compare this example to <xref ref="ex-braced" text="type-global" />.) </p>
                         </introduction>
                         <statement>
-                                <p>In the lab room one day, while waiting for the instructor, \studentD<idx><h sortby="\studentD">\studentD</h></idx> (who has a mass of <m>m_D=\massD</m>) decides to try a physics experiment to test Newton's third law.  \HeD\ politely asks \hisD\ lab partner, \studentC<idx><h sortby="\studentC">\studentC</h></idx> (<m>m_C=\massC</m>), to turn \hisC\ back while \heD\ squares his feet underneath \himselfD\ and pushes with a force of <m>\vec F_{C,D} = 215\unit{N}\ihat</m>.  Despite the experience of <xref ref="ex-braced" text="type-global" /> (as told in <xref ref="cyoa-NIII" text="type-global"/>), \studentC\ reluctantly agrees.  How does <em>\studentD</em> accelerate during this exchange?</p>
+                                <p>In the lab room one day, while waiting for the instructor, \studentD<idx><h sortby="\studentD">\studentD</h></idx> (who has a mass of <m>m_D=\massD</m>) decides to try a physics experiment to test Newton's third law.  \HeD\ politely asks \hisD\ lab partner, \studentC<idx><h sortby="\studentC">\studentC</h></idx> (<m>m_C=\massC</m>), to turn \hisC\ back while \heD\ squares \hisD\ feet underneath \himselfD\ and pushes with a force of <m>\vec F_{C,D} = 215\unit{N}\ihat</m>.  Despite the experience of <xref ref="ex-braced" text="type-global" /> (as told in <xref ref="cyoa-NIII" text="type-global"/>), \studentC\ reluctantly agrees.  How does <em>\studentD</em> accelerate during this exchange?</p>
                                 <image xml:id="i-unbraced" source="images/i-unbraced.svg">
                                 <description>This image shows \studentD\ pushing \studentC in order to see the reaction forces.</description>
                                 <latex-image-code>
@@ -2830,7 +2830,7 @@ Earth feels a force by \studentZ\ to the left.
                 <exercises><title>Problems</title><todo>Add more variety of problems.</todo>
 
                         <exercise xml:id="hmwk-pushbrace">
-                                <statement><p>If \studentZ, with <m>m_Z=\massZ</m>, braces \himselfZ\ (so that he does not accelerate) and pushes \studentC\ (<m>m_C=\massC</m>) with a force of <m>\vec F_{C,Z} = 215\unit{N}\ihat</m>, find the following:
+                                <statement><p>If \studentZ, with <m>m_Z=\massZ</m>, braces \himselfZ\ (so that \heZ\ does not accelerate) and pushes \studentC\ (<m>m_C=\massC</m>) with a force of <m>\vec F_{C,Z} = 215\unit{N}\ihat</m>, find the following:
                                 <ol>
                                 <li><p> What is the acceleration of \studentC?
                                         <solution><m>\deq\vec a_C = \frac{215 \unit{N}\ihat}{\massC} = \sigfrac{2.38}{9}{m}{s^2} \ihat</m>.</solution>
@@ -3628,7 +3628,7 @@ Earth feels a force by \studentZ\ to the left.
                         </introduction>
                         <task>
                                 <statement><p>Imagine losing <m>45\unit{N}</m>. Compare this to your weight.  Is this a lot of weight to lose? </p></statement>
-                                <solution xml:id="A-weight-loss"><p> Since \studentB<idx><h sortby="\studentB">\studentB</h></idx> weighs <m>(\massB)(9.81\unitfrac{m}{s^2})=736\unit{N}</m>, <m>45\unit{N}</m> is about <m>6\%</m> of her weight.  This is fairly substantial.  You should compute how much <m>6\%</m> of your weight is and convert that to kilograms and Newtons.  </p></solution>
+                                <solution xml:id="A-weight-loss"><p> Since \studentB<idx><h sortby="\studentB">\studentB</h></idx> weighs <m>(\massB)(9.81\unitfrac{m}{s^2})=736\unit{N}</m>, <m>45\unit{N}</m> is about <m>6\%</m> of \hisB\ weight.  This is fairly substantial.  You should compute how much <m>6\%</m> of your weight is and convert that to kilograms and Newtons.  </p></solution>
                         </task>
                         <task xml:id="Q-weight-gain">
                                 <statement><p>Place your toe on the scale while \studentB\ weighs \himselfB. This increases the value the scale reads. Does \studentB\ weigh more? </p></statement>
@@ -3670,7 +3670,7 @@ Earth feels a force by \studentZ\ to the left.
 
         </section>
         <section xml:id="s-FT"><title>Tension</title>
-        <aside><title>Referenced by</title> 
+        <aside><title>Referenced by</title>
                 <p>Discussion of <xref provisional="d-fma"><m>F=ma</m></xref></p>
         </aside>
         <idx><h>Force</h><h>Tension</h></idx>
@@ -3680,28 +3680,28 @@ Earth feels a force by \studentZ\ to the left.
                 <assemblage><p>tension is the pulling force that is transmitted through materials such as cable, chain, or rope.</p></assemblage>
                 Tension is closely related to the compression force experienced by support beams.  One can simplistically think of tension as pulling<todo>add a link to (and the section itself) to a section on the modulus and stress/strain.</todo> and compression as pushing<todo>Maybe add an IRL about a house settling and the compression forces.  Loading a pick-up truck and watching the bed sag as weight is added.  Hammock as an example of adding weight and increasing the tension force.</todo> on the intermediate object that transmits force between the objects at either end.<fn xml:id="fn-rope-compression">It doesn't usually make sense to talk about the compression of a rope or chain.</fn>
                 When engineers design the skeleton of bridges and buildings, one of the primary considerations is the tension and compression of the steel beams.  You can build your intuition by considering the <xref ref="irl-tension" text="type-global"/>.<todo>Still need to update the <xref ref="irl-tension" text="type-global"/>.</todo></p>
-                
+
                 <investigation xml:id="irl-tension"><title>Pull my finger.</title>
                         <idx><h>Force</h><h>Tension</h></idx>
                         <introduction>
-                                <p>We talk about tension and stress in our daily lives.  This is an analogy to the physical version of tension, stress, and strain.  While 
-                                <url href="http://etymonline.com/index.php?allowed_in_frame=0&amp;search=stress">stress</url> and 
-                                <url href="http://etymonline.com/index.php?search=strain&amp;searchmode=&amp;p=0&amp;allowed_in_frame=0">strain</url> 
-                                come from the the concept of tightening, 
-                                <url href="http://etymonline.com/index.php?allowed_in_frame=0&amp;search=tension">tension</url> 
+                                <p>We talk about tension and stress in our daily lives.  This is an analogy to the physical version of tension, stress, and strain.  While
+                                <url href="http://etymonline.com/index.php?allowed_in_frame=0&amp;search=stress">stress</url> and
+                                <url href="http://etymonline.com/index.php?search=strain&amp;searchmode=&amp;p=0&amp;allowed_in_frame=0">strain</url>
+                                come from the the concept of tightening,
+                                <url href="http://etymonline.com/index.php?allowed_in_frame=0&amp;search=tension">tension</url>
                                 comes from the concept of stretching.
                                 </p>
                         </introduction>
                         <task xml:id="Q-swing-tension">
-                                <statement><p>Sit on a swing. Notice the tightness of the support ropes/chains. 
-                                        How tight are the supports when the swing is empty? 
-                                        When a small child is in the swing? 
+                                <statement><p>Sit on a swing. Notice the tightness of the support ropes/chains.
+                                        How tight are the supports when the swing is empty?
+                                        When a small child is in the swing?
                                         When a full-sized adult is in the swing? </p></statement>
                                 <answer xml:id="A-swing-tension"><p>To make this comparison, let's consider a swing that is supported by chains.
                                         If you are sitting in the swing and take hold of the chains at about shoulder height, you should be able to shake them in (towards your chest) and out (away from you, towards your neighbor swings).  You can do this same motion while standing next to the swing.  If you do this when the swing is empty, it is very easy to do this.  If you ask a series of successively larger people to sit in the swing, you will notice that it gets progressively more difficult to extend them very far.  The chains are increasing in tension; they are pulled more taut.  Your ability to move the chain in this way is exactly analogous to the way a bow draws across a violin or the way your fingers pluck a guitar, as described in <xref provisional="ss-stringed-instruments" text="type-global" />.</p></answer>
                         </task>
                         <task xml:id="Q-fan-tension">
-                                <statement><p>Install a fan or light fixture that hangs from the ceiling. You don't want the fan to be supported by the electrical wires, 
+                                <statement><p>Install a fan or light fixture that hangs from the ceiling. You don't want the fan to be supported by the electrical wires,
                                         but rather by the metal shaft. How is the fan supported? </p></statement>
                                 <answer xml:id="A-fan-tension"><p>You might also consider <xref ref="A-chandelier-tension" text="type-local" />, which discusses the case of
                                         hanging a light fixture from the ceiling. If you have ever installed a fan in your house, then you will notice that you have to support the fan while the wires are connected.  Usually the fan has a shaft that connects to the ceiling at one end and the fan at the other and provides a mechanism for supporting the fan while you manage the wires, which pass through the shaft.  Since the fan houses the motor, it is usually reasonably heavy.   The nice property of use a metal shaft to support the fan is that it doesn't stretch or wiggle like a chain might.  The difficulty in this example is that it is more difficulty to notice the tension in the shaft.  If you are the person hanging the fan, then one thing you might be able to notice is that if you flick the metal with a finger when it is not supporting anything, it will have a slightly different <q>ting</q> than when it is supporting the fan.<todo>Is this sufficiently noticeable?</todo></p></answer>
@@ -3737,10 +3737,10 @@ Earth feels a force by \studentZ\ to the left.
 
                         <introduction>
                         <p>Ropes and chains (and beams) can use tension to support (from above) dangling objects.</p>
-                
+
                         <example xml:id="se-purse">
                                 <statement>
-                                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> hangs her purse <m>(m=1.36\unit{kg})</m> on a hook.  How much tension is in the shoulder strap to keep it from falling?</p>
+                                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> hangs \hisD\ purse <m>(m=1.36\unit{kg})</m> on a hook.  How much tension is in the shoulder strap to keep it from falling?</p>
                                 </statement>
                                 <solution>
                                         <p>The strap connects the hook to the purse.  We can consider the interaction between the hook and the strap or between the purse and the strap.  We will consider the latter since we don't know anything about the hook.  Considering the forces on the purse, we know that there is a downwards gravitational force of <m>\deq F_g = (1.36\unit{kg})(9.81\unitfrac{m}{s^2}) = \sig{13.3}{4}{N}</m> and that the net force must zero (because the purse is not accelerating). So, the strap must provide an upwards (tension) force.
@@ -3758,9 +3758,9 @@ Earth feels a force by \studentZ\ to the left.
                         In the same way that the <xref ref="s-FN" text="title">normal force</xref> on a scale does not measure your weight, but rather the amount you press into the scale, the tension passes force on to the attached object.  The hook doesn't feel the weight of the purse, but does feel the tension required to support the purse.</p>
 
                         <p>In <xref provisional="sss-multiple-mass" text="title">an upcoming section</xref>, we will consider what happens when multiple masses are hung from the rope.</p>
-                        
+
                         </introduction>
-                        
+
                         <subsubsection><title>How Physicists Use the Words (Vocabulary)</title>
 
                         <p>You can probably think of several examples of objects dangling: a purse on a hook, a flag on a pole, a shop sign attached to a post, a pendulum,a swing set, etc.  Since these are all similar in some ways (although different in other ways), <em>we can treat all of them as a mass at the end of a rope</em>.  Typically, because we do not want to deal with the complications that come from sagging supports, we will use the <xref ref="s-effective2" text="title">approximation</xref> of an <q><em>immovable support</em>.</q>  This will be indicated by hashing the surface.
