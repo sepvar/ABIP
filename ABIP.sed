@@ -1,3 +1,4 @@
+s/ sortby="\\student[A-Z]"//g
 /<\/macros>/,$ s/\\student\([A-Z]\)*\\*/\\student\1/g
 /<\/macros>/,$ s/\\\([hH]\)e\([A-Z]\)*\\*/\\\1e\2/g
 /<\/macros>/,$ s/\\\([hH]\)i\([sm]\)\([A-Z]\)*\\*/\\\1i\2\3/g
