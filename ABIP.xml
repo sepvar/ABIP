@@ -102,6 +102,7 @@
         -->
                 <package>xcolor</package>
                 <package>coordsys</package>
+                <package>cancel</package>
         </latex-preamble>
 
         <cross-references text="global" />
@@ -1584,7 +1585,7 @@
 
                         <p>The word <q>net</q> that goes with force is here to indicate the total, which is useful to think of as <q>everything collected with the net.</q><fn xml:id="fn-net">Although according to <url href="http://www.etymonline.com/index.php?term=net&amp;allowed_in_frame=0">etymonline.com</url> (Mar, 2017), it is actually from the Old French <em>net</em> for <q>neat</q> or <q>clean</q>, having the sense of trim and elegant.</fn> The intention here is that wherever there are multiple forces acting on a single object, we must combine them as <xref ref="ss-vectors" text="title">vectors</xref> as follows: </p>
                         <todo>Maybe these should be sidebyside with the figure above the example?</todo>
-                        <example xml:id="se-netFadd"><title>Net Force, Vector-Add Same-Direction</title>
+                        <example xml:id="se-netFadd"><title>Net Force, Vector-Add Forces in the Same-Direction</title>
                                 <statement>
                                         <sidebyside widths="45% 50%">
                                         <p>If there is a <m>5.0 \unit{N}</m> force to the right and a <m>4.0 \unit{N}</m> force to the right, then the net force is <m>9.0 \unit{N}</m> to the right.</p>
@@ -1627,7 +1628,7 @@
                         </aside>
                         <todo>Make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.</todo>
 
-                        <example xml:id="se-netFsub"><title>Net Force, Vector-Add Opposite-Direction</title>
+                        <example xml:id="se-netFsub"><title>Net Force, Vector-Add Forces in the Opposite-Direction</title>
                                 <statement>
                                         <sidebyside widths="45% 50%">
                                         <p>If there is a <m>5.0 \unit{N}</m> force to the left and a <m>4.0 \unit{N}</m> force to the right, then the net force is <m>1.0 \unit{N}</m> to the left.</p>
@@ -1667,7 +1668,7 @@
                                 </p>
                         </aside>
 
-                        <example xml:id="se-equi"><title>Net Force, Vector-Add Equal Magnitude</title>
+                        <example xml:id="se-equi"><title>Net Force, Vector-Add Equal-Magnitude Opposite-Direction Forces</title>
                                 <statement>
                                         <sidebyside widths="45% 50%">
                                         <p>If there is a <m>3.0 \unit{N}</m> force to the right and a <m>3.0 \unit{N}</m> force to the left, then the net force is <m>0.0 \unit{N}</m>.</p>
@@ -1890,7 +1891,7 @@
 
                         <p>Generally, the point of finding the net force is that it causes an object to change its velocity. Let's also consider a few simple examples of this calculation.</p>
 
-                        <example xml:id="se-netF-a"><title>The net force causes acceleration</title>
+                        <example xml:id="se-netF-a"><title>The acceleration of a box feeling a net force</title>
                         <aside><title>Referenced by</title>
                                 <p>
                                 <xref ref="d-mfa">finding <m>m</m> from <m>F=ma</m></xref>,
@@ -2117,7 +2118,7 @@
                         <p>This law is the force-version of the statement of the <xref provisional="s-conservemom" text="title">conservation of momentum</xref>.</p>
                 </aside>
 
-                <p xml:id="d-NIIIbracing">Let's take this apart and connect it to your daily experiences.  Students of physics will often see the terms action and reaction and connect it to the way humans react to the actions of their friends.  However, this implies a causal response that is not true for Newton's forces.  That is to say, this is not a <q>revenge law</q> whereby if you push on me, then I will choose to push you back.  Instead, it is expressing that forces are intrinsically interactions between a pair of objects.  When you push on me, I am -- independent of my choosing to do so -- necessarily pushing back on you.  But, you might say, <q>if that were true, then why am I able to sneak up on you and push you over without falling over myself?</q>  Well, you can think about how that works by reading <xref ref="cyoa-NIII" text="type-global" />. After we introduce the tool of a free-body diagram in the next subsection, you can also explore this idea by comparing <xref ref="ex-braced" text="type-global" /> to <xref ref="ex-unbraced" text="type-global" />.</p>
+                <p xml:id="d-NIIIbracing">Let's take this apart and connect it to your daily experiences.  Students of physics will often see the terms action and reaction and connect it to the way humans react to the actions of their friends.  However, this implies a causal<fn xml:id="causual">Please note that <q>causal</q> and <q>casual</q> are different words.</fn> response that is not true for Newton's forces.  That is to say, this is not a <q>revenge law</q> whereby if you push on me, then I will choose to push you back.  Instead, it is expressing that forces are intrinsically interactions between a pair of objects.  When you push on me, I am -- independent of my choosing to do so -- necessarily pushing back on you.  But, you might say, <q>if that were true, then why am I able to sneak up on you and push you over without falling over myself?</q>  Well, you can think about how that works by reading <xref ref="cyoa-NIII" text="type-global" />. After we introduce the tool of a free-body diagram in the next subsection, you can also explore this idea by comparing <xref ref="ex-braced" text="type-global" /> to <xref ref="ex-unbraced" text="type-global" />.</p>
 
                 </introduction>
 
@@ -2132,101 +2133,16 @@
 
                         <p>In the more interesting situations where there are several forces acting, it can be easy to lose track of what is pushing whom where.  In order to better organize our information and direct our attention, we can make use of <term>free-body diagrams</term>.  The basic idea is to make a diagram for each individual object that we care about in a given situation, and <em>free</em> from the overall picture.  This allows us to identify the forces acting on a single object (relevant for Newton's second law) and more easily pair them with third-law pairs that act on different objects.</p>
 
-                        <p>To see how this works, the next simple example will build on the previous simple examples to help us consider not only the (2nd law) forces on the object, but also the (3rd law) forces on the people doing the pushing and pulling.
-                                <todo><p>This section, and especially the example needs to be fixed to fit the references and the images in the right place with this format.</p>
-                                        <p>Also need to move the <xref ref="f-firstFBD" text="type-global" /> above the example.</p></todo>
-                        </p>
+                        <p>To see how this works, the next example will build on the previous examples to help us consider not only the (2nd law) forces on the object, but also the (3rd law) forces on the people doing the pushing and pulling.</p>
 
-                        <example xml:id="se-FBD-AB">
-                        <aside><title>Referenced by</title> <p><xref ref="f-firstFBD" /></p></aside>
-                        <p>As you revisit <xref ref="se-netFadd" text="type-global" />,
-                                <todo><p>As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!  But, it is still nice to be moving a small mass so that it has a large acc, and the people have small acc.)</p></todo>
-                        imagine that \studentA<idx><h sortby="\studentA">\studentA</h></idx> is exerting <m>\vec F_1 = +5.0\unit{N}\ihat</m> and \studentB<idx><h sortby="\studentB">\studentB</h></idx> is exerting <m>\vec F_2 = +4.0\unit{N}\ihat</m>.  <xref ref="se-netFadd" text="type-global" /> showed<fn><xref ref="se-netFadd" text="type-global" /> uses Newton's second law which tells us about the object on which the forces are applied.</fn> that after <m>1.6\unit s</m> the object moved with a speed of <m>7.2\unitfrac{m}{s}</m>.  Newton's third law tells us about the interaction <em>between</em> objects and, from this, we can deduce the force on the people.  It is then separately possible to use the second law to learn about the motion of the people. In order to better describe the situation, let's assume \studentA\ is to the left of the object, pushing it to the right, and \studentB\ is to the right of the object, pulling it to the right as drawn in <xref ref="f-firstFBD" text="type-global" />.
-                        <ol>
-                        <li><p> Since \studentA\ exerts a force of <m>5.0\unit{N}</m> to the right <m>(+\ihat)</m> on the object, the <em>third law</em> reminds us that the object exerts a force of <m>5.0\unit{N}</m> to the left  <m>(-\ihat)</m> on \studentA.  Since \studentA\ has a mass of \massA, the <em>second law</em> reminds us that \heA\ is accelerated at the rate of
-                            <m> \vec a_1 = \frac{-5.0\unit{N} \ihat}{\massA} = -0.0\sigfrac{58}{8}{m}{s^2}\ihat = -5.9\ten{-2}\unitfrac{m}{s^2} \ihat</m>
-                            which is to the left with a small enough value that it is easy for \himA\ to brace against.   Even if \heA\ doesn't brace, if \heA\ starts from rest, \heA\ will only be moving
-                            <me>v_{1f} = (0\unitfrac{m}{s})+(-0.0\sigfrac{58}{8}{m}{s^2})(1.6\unit s) = -0.0\sigfrac{94}{1}{m}{s}</me>,
-                            which is much slower than the object.
-                            </p></li>
-                        <li><p> Since \studentB\ exerts a force of <m>4.0\unit{N}</m> to the right on the object, the <em>third law</em> reminds us that the object exerts a force of <m>4.0\unit{N}</m> to the left on \studentB. Since \studentB\ has a mass of \massB, the <em>second law</em> reminds us that \heB\ is accelerated at the rate of
-                            <m> \vec a_2 = \frac{-4.0\unit{N} \ihat}{\massB} = -0.0\sigfrac{53}{3}{m}{s^2}\ihat = -5.3\ten{-2}\unitfrac{m}{s^2}</m>
-                            which is also to the left with a small enough value that it is easy for \himB\ to brace against.  Even if \heB\ doesn't brace, if \heB\ starts from rest, \heB\ will only be moving
-                            <me>v_{2f} = (0\unitfrac{m}{s})+(-0.0\sigfrac{53}{3}{m}{s^2})(1.6\unit s) = -0.0\sigfrac{85}{3}{m}{s}</me>,
-                            which is also much slower than the object and different from \studentA.
-                            </p></li>
-                        </ol>
-                        </p>
-                        </example>
-
-                        <p xml:id="d-FBD-AB">There are a couple of important aspects to take away from <xref ref="se-FBD-AB" text="type-global" />, especially as it builds on <xref ref="se-netFadd" text="type-global" /> (which told us about the forces on the object) and <xref ref="se-netF-a" text="type-global" /> (which told us
-<!-- \begin{minipage}{3.25in} -->
-                        about how the object moved).  The earlier examples were relevant to the 2nd law and only affected the object itself.  This information is captured in the middle free-body diagram of <xref ref="f-firstFBD" /> and reproduced here.
-                                <todo><p>Reference the image, not the figure.</p></todo>
-<!-- \end{minipage}
-\hfill
-\fbox{\begin{minipage}{1.5in}
-\begin{FBD}{10}{15}{15}{10}{object}
-\twori{50}{<m>5\unit N</m>}{black}{40}{<m>4\unit N</m>}{black}
-\end{FBD}
-\end{minipage}}
--->
-                        </p>
-
-                        <p>As indicated above, the free-body diagram also helps us visualize the third-law (action/reaction) force pairs.  By reproducing the following image<idx><h>Free-Body Diagrams</h><h>Images</h></idx> from <xref ref="f-firstFBD" /> here<todo><p>Reference the image, not the figure.</p></todo> and adding color, we can see that the <m>\mathrm{\color{green}{green\ forces}}</m> form an action-reaction pair and separately the <m>\mathrm{\color{blue}{blue\ forces}}</m> form<todo>Figure out how to color text.</todo>
-<!-- -\newline
-\begin{minipage}{\textwidth}
-\fbox{\begin{minipage}{1.5in}
-\begin{FBD}{10}{25}{15}{10}{\studentA}
-\onele{50}{<m>5\unit N</m>}{green}
-\end{FBD}
-\end{minipage}}
-\hfill
-\fbox{\begin{minipage}{1.5in}
-\begin{FBD}{10}{15}{15}{10}{object}
-\twori{50}{<m>5\unit N</m>}{green}{40}{<m>4\unit N</m>}{blue}
-\end{FBD}
-\end{minipage}}
-\hfill
-\fbox{\begin{minipage}{1.5in}
-\begin{FBD}{10}{20}{15}{10}{\studentB}
-\onele{40}{<m>4\unit N</m>}{blue}
-\end{FBD}
-\end{minipage}}
-\end{minipage}
--->
-                        an action-reaction pair.  None of these three objects are in equilibrium.</p>
-
-                        <p xml:id="d-equi">If we now do the same thing<idx><h>Free-Body Diagrams</h><h>Images</h></idx> with the <xref ref="se-equi" text="type-global" />, but let \studentC<idx><h sortby="\studentC">\studentC</h></idx> be the person on the left {\color{green} pushing to the right} and \studentD<idx><h sortby="\studentD">\studentD</h></idx> be the person on the right {\color{blue} pushing to the left}, then we see that while the {\color{green} green forces} form an action-reaction pair showing the third-law interaction between \studentC\ and the object and while the {\color{blue} blue forces} form an action-reaction pair showing the third-law interaction between \studentD\ and the object, it
-<!-- \newline
-\begin{minipage}{\textwidth}
-\fbox{\begin{minipage}{1.5in}
-\begin{FBD}{10}{15}{15}{10}{\studentC}
-\onele{30}{<m>3\unit N</m>}{green}
-\end{FBD}
-\end{minipage}}
-\hfill
-\fbox{\begin{minipage}{1.5in}
-\begin{FBD}{10}{15}{15}{10}{object}
-\oneri{30}{<m>3\unit N</m>}{green}
-\onele{30}{<m>3\unit N</m>}{blue}
-\end{FBD}
-\end{minipage}}
-\hfill
-\fbox{\begin{minipage}{1.5in}
-\begin{FBD}{10}{15}{15}{10}{\studentD}
-\oneri{30}{<m>3\unit N</m>}{blue}
-\end{FBD}
-\end{minipage}}
-\end{minipage}
--->
-                        is the combination of the {\color{blue} blue} and the {\color{green} green} forces, which only act on the object itself, that coincidentally cancel to leave the object in (second law) equilibrium.  In these images, \studentC\ and \studentD\ are <em>not</em> in equilibrium.</p>
-
-                        <p>To say this more specifically, the forces within one free-body diagram are described by Newton's second law. They do get added together to form the net-force (which is to say that we can add the object's green force to the object's blue force). They are able to cancel each other if they <em>happen to</em> be equal in magnitude and opposite in direction. Finally, they will determine how that specific object accelerates.  On the other hand, Newton's third law describes any specific pair of forces that interact between free-body diagrams (each colored pair); they <em>will necessarily be</em> equal in magnitude and opposite in direction, but they cannot be canceled because they cannot be added because they are on different objects.</p>
-
-                        <assemblage xml:id="f-firstFBD">
-                                <title>A couple of people push a box.<idx><h>Free-Body Diagrams</h><h>Images</h></idx></title>
-                                <p>First we will draw a picture of the situation described by <xref ref="se-FBD-AB" text="type-global" />, which builds on <xref ref="se-netFadd" text="type-global" />.  \studentA<idx><h sortby="\studentA">\studentA</h></idx> stands to the left of the object and exerts a force (pushes) to the right.  \studentB<idx><h sortby="\studentB">\studentB</h></idx> stands to the right of the object and exerts a force (pulls) to the right.  Both of these forces are <em>on</em> the object and, by Newton's second law cause it to accelerate (as described in <xref ref="se-netF-a" text="type-global" />).  By Newton's third law, we can learn about the forces on \studentA\ and \studentB.</p>
+                        <example xml:id="f-firstFBD">
+                                <title>The reaction forces on people pushing a box<idx><h>Free-Body Diagrams</h><h>Images</h></idx></title>
+                                <p>Let's reconsider <xref ref="se-netFadd" text="type-global" />
+                                <todo>
+                                        <p>As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!  But, it is still nice to be moving a small mass so that it has a large acc, and the people have small acc.)</p>
+                                </todo>
+                                and imagine that \studentA<idx><h sortby="\studentA">\studentA</h></idx> stands to the left of the object and exerts a force to the right (pushes) with magnitude <m>\vec F_1 = +5.0\unit{N}\ihat</m> and that \studentB<idx><h sortby="\studentB">\studentB</h></idx> stands to the right of the object and exerts a force to the right (pulls) with magnitude <m>\vec F_2 = +4.0\unit{N}\ihat</m>, as drawn in <xref ref="f1-firstFBD" text="type-global" />.  Both of these forces are <em>on</em> the object and, by <xref ref="as-NII" text="title">Newton's second law</xref> cause it to accelerate (as described in <xref ref="se-netF-a" text="type-global" />).  <xref ref="as-NIII" text="title">Newton's third law</xref> tells us about the interaction <em>between</em> objects and, from this, we can deduce the force on \studentA\ and \studentB.<fn>It is then separately possible to use <xref ref="as-NII" text="title">the second law</xref> to learn about the motion of the people, as will be shown in <xref ref="se-FBD-AB" text="type-global" />.</fn>
+                                </p>
 
                                 <figure xml:id="f1-firstFBD">
                                         <caption><p>\studentA\ and \studentB\ push on a box</p></caption>
@@ -2273,13 +2189,15 @@
                                         </image>
                                 </figure>
 
-                                <p>Now we will draw a free-body diagram for each individual.  Notice that each <em>free-body</em> diagram is on its own, free from the rest of the picture.  These diagrams will be discussed further in the <xref ref="d-FBD-AB" text="type-global">discussion about \ref*{se-FBD-AB}</xref>.</p>
+                                <p>Now we will draw a free-body diagram for each individual.  Notice that each <em>free-body</em> diagram is on its own, free from the rest of the picture. </p>
 
                                 <figure xml:id="f2-firstFBD">
                                         <caption>
-                                                <p>Because \studentA\ (on the left) is pushing the object <font color="green">to the right</font>, (Newton's third law tells us) \studentA\ feels a force <font color="green">to the left</font> <em>on</em> \himA\ <em>by</em> the object.
-                                                <ellipsis /> For the object (in the middle), <xref ref="se-netFadd" text="type-global" /> showed that <m>F_\mathrm{net} = 9.0 \unit N</m>.
-                                                <ellipsis /> Because \studentB\ (on the right) pulls on the object <font color="blue">to the right</font>, (Newton's third law tells us) \studentB\ feels a force <font color="blue">to the left</font> <em>on</em> \himB\ <em>by</em> the object.</p>
+                                                <sidebyside widths="30% 30% 30%">
+                                                <p>Because \studentA\ pushes the object <font color="green">to the right</font>, Newton's third law tells us \studentA\ feels a force <font color="green">to the left</font> <em>on</em> \himA\ <em>by</em> the object.</p>
+                                                <p> For the object (in the middle), <xref ref="se-netFadd" text="type-global" /> showed that <m>F_\mathrm{net} = 9.0 \unit N</m>.</p>
+                                                <p> Because \studentB\ pulls on the object <font color="blue">to the right</font>, Newton's third law tells us \studentB\ feels a force <font color="blue">to the left</font> <em>on</em> \himB\ <em>by</em> the object.</p>
+                                                </sidebyside>
                                         </caption>
                                         <sidebyside widths="30% 30% 30%">
                                                 <image xml:id="i-firstFBD-FBD1" source="images/i-firstFBD-FBD1.svg">
@@ -2385,13 +2303,96 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                 </figure>
 
                                 <p>It turns out that this is a little oversimplified.  When we get to <xref ref="s-Fg" text="type-global" /> and <xref ref="s-FN" text="type-global" />, we will see that we have to include a downwards force of gravity and an upwards support force.  This will be explained in <xref ref="f-firstFBDupdate" text="type-global"/>.</p>
-                                        <sidebyside widths="50% 50%" haligns="center right">
-                                                <p></p>
-                                                <tabular halign="right"><row><cell halign="right">
-                                                        Return to: <xref ref="ex-braced" />, <xref ref="ex-unbraced" />, <xref provisional="d-rope.net">rope-tension</xref>
-                                                </cell></row></tabular>
-                                        </sidebyside>
-                                </assemblage>
+                                <sidebyside widths="50% 50%" haligns="center right">
+                                        <p></p>
+                                        <tabular halign="right"><row><cell halign="right">
+                                                Return to: <xref ref="ex-braced" />, <xref ref="ex-unbraced" />, <xref ref="d-rope-net">rope-tension</xref>
+                                        </cell></row></tabular>
+                                </sidebyside>
+                        </example>
+
+                        <p>As indicated above, the free-body diagram also helps us visualize the third-law (action/reaction) force pairs.  By evaluating the colored forces in <xref ref="f2-firstFBD" text="type-global" /><idx><h>Free-Body Diagrams</h><h>Images</h></idx>, we can see that the <m>\mathrm{\color{green}{green\ forces}}</m> form an action-reaction pair and separately the <m>\mathrm{\color{blue}{blue\ forces}}</m> form<todo>Figure out how to color text.</todo>                         an action-reaction pair.  Notice the following:
+                        <ol>
+                          <li>The <xref ref="as-NIII" text="title">third law</xref> action-reaction pairs are located of different objects and cannot be added. (You cannot add blue to blue nor green to green.)</li>
+                          <li>The <xref ref="as-NII" text="title">second law</xref> forces on the object should be added to find that specific object's acceleration.  (You <em>should</em> add the blue force to the green force on the middle object.)</li>
+                        </ol>
+                        None of these three are in equilibrium, because they each have a net force.   <xref ref="se-netF-a" text="type-global" /> calculates the acceleration of the object. <xref ref="se-FBD-AB" text="type-global" /> calculates the acceleration of the people.</p>
+<!-- -\newline
+\begin{minipage}{\textwidth}
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{25}{15}{10}{\studentA}
+\onele{50}{<m>5\unit N</m>}{green}
+\end{FBD}
+\end{minipage}}
+\hfill
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{10}{object}
+\twori{50}{<m>5\unit N</m>}{green}{40}{<m>4\unit N</m>}{blue}
+\end{FBD}
+\end{minipage}}
+\hfill
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{20}{15}{10}{\studentB}
+\onele{40}{<m>4\unit N</m>}{blue}
+\end{FBD}
+\end{minipage}}
+\end{minipage}
+-->
+
+                        <example xml:id="se-FBD-AB">
+                                <title>The acceleration of people pushing a box</title>
+                                <aside><title>Referenced by</title> <p><xref ref="f-firstFBD" /></p></aside>
+                                <p>In the same way that <xref ref="se-netF-a" text="type-global" /> was able to use <xref ref="as-NII" text="title">Newton's second law</xref> to compute the acceleration of an object after <xref ref="se-netFadd" text="type-global" /> found the net force, we can use the forces found in <xref ref="f-firstFBD" text="type-global" /> to compute the acceleration of the people pushing the box.
+                                        <todo><p>As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!  But, it is still nice to be moving a small mass so that it has a large acc, and the people have small acc.)</p></todo>
+                                Recall that <xref ref="f1-firstFBD" text="type-global" /> shows how \studentA<idx><h sortby="\studentA">\studentA</h></idx> and \studentB<idx><h sortby="\studentB">\studentB</h></idx> exert forces on the box (and, from <xref ref="as-NIII" text="title">Newton's third law</xref>, how the box exerts force on the people).  
+                                <ol>
+                                <li><p> Since \studentA\ exerts a force of <m>5.0\unit{N}</m> to the right <m>(+\ihat)</m> on the object, the <em>third law</em> reminds us that the object exerts a force of <m>5.0\unit{N}</m> to the left  <m>(-\ihat)</m> on \studentA.  Since \studentA\ has a mass of \massA, the <em>second law</em> reminds us that \heA\ is accelerated at the rate of
+                                    <me> \vec a_1 = \frac{-5.0\unit{N} \ihat}{\massA} = -0.0\sigfrac{58}{8}{m}{s^2}\ihat = -5.9\ten{-2}\unitfrac{m}{s^2} \ihat</me>
+                                    which is to the left with a small enough value that it is easy for \himA\ to brace against.   Even if \heA\ doesn't brace, if \heA\ starts from rest, \heA\ will only be moving
+                                    <me>v_{1f} = (0\unitfrac{m}{s})+(-0.0\sigfrac{58}{8}{m}{s^2})(1.6\unit s) = -0.0\sigfrac{94}{1}{m}{s}</me>,
+                                    which is much slower than the object.
+                                    </p></li>
+                                <li><p> Since \studentB\ exerts a force of <m>4.0\unit{N}</m> to the right on the object, the <em>third law</em> reminds us that the object exerts a force of <m>4.0\unit{N}</m> to the left on \studentB. Since \studentB\ has a mass of \massB, the <em>second law</em> reminds us that \heB\ is accelerated at the rate of
+                                    <me> \vec a_2 = \frac{-4.0\unit{N} \ihat}{\massB} = -0.0\sigfrac{53}{3}{m}{s^2}\ihat = -5.3\ten{-2}\unitfrac{m}{s^2}</me>
+                                    which is also to the left with a small enough value that it is easy for \himB\ to brace against.  Even if \heB\ doesn't brace, if \heB\ starts from rest, \heB\ will only be moving
+                                    <me>v_{2f} = (0\unitfrac{m}{s})+(-0.0\sigfrac{53}{3}{m}{s^2})(1.6\unit s) = -0.0\sigfrac{85}{3}{m}{s}</me>,
+                                    which is also much slower than the object and different from \studentA.
+                                    </p></li>
+                                </ol>
+                                It might be interesting to note that, since everybody and thing has a different mass, the accelerations are all different.  This would also be true if the forces were all the same.
+                                </p>
+                        </example>
+
+                        <p xml:id="d-equi">If we now do the same thing<idx><h>Free-Body Diagrams</h><h>Images</h></idx> with the <xref ref="se-equi" text="type-global" />, but let \studentC<idx><h sortby="\studentC">\studentC</h></idx> be the person on the left {\color{green} pushing to the right} and \studentD<idx><h sortby="\studentD">\studentD</h></idx> be the person on the right {\color{blue} pushing to the left}, then we see that while the {\color{green} green forces} form an action-reaction pair showing the third-law interaction between \studentC\ and the object and while the {\color{blue} blue forces} form an action-reaction pair showing the third-law interaction between \studentD\ and the object, it is the combination of the {\color{blue} blue} and the {\color{green} green} forces, which only act on the object itself, that coincidentally cancel to leave the object in (second law) equilibrium.  In these images, \studentC\ and \studentD\ are <em>not</em> in equilibrium.<todo>Make an exercise that calculates the acceleration of \studentC\ and \studentD.</todo></p>
+
+<!-- \newline
+\begin{minipage}{\textwidth}
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{10}{\studentC}
+\onele{30}{<m>3\unit N</m>}{green}
+\end{FBD}
+\end{minipage}}
+\hfill
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{10}{object}
+\oneri{30}{<m>3\unit N</m>}{green}
+\onele{30}{<m>3\unit N</m>}{blue}
+\end{FBD}
+\end{minipage}}
+\hfill
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{10}{\studentD}
+\oneri{30}{<m>3\unit N</m>}{blue}
+\end{FBD}
+\end{minipage}}
+\end{minipage}
+-->
+
+
+
+
+                        <p xml:id="d-FBD-AB">The point of <xref first="f-firstFBD" last="se-FBD-AB" text="global">Examples</xref> in comparison to Examples <xref ref="se-netFadd" text="global" /> (which told us about the forces on the object) and <xref ref="se-netF-a" text="global" /> (which told us about how the object moved) is to highlight the different roles of Newton's second and third laws.  The earlier examples were relevant to the second law and only affected the object itself.  To say this more specifically, the forces within one free-body diagram are described by Newton's second law. They do get added together to form the net-force (which is to say that we can add the object's green force to the object's blue force). They are able to cancel each other if they <em>happen to</em> be equal in magnitude and opposite in direction. Finally, they will determine how that specific object accelerates.  On the other hand, Newton's third law describes any specific pair of forces that interact between free-body diagrams (each colored pair); they <em>will necessarily be</em> equal in magnitude and opposite in direction, but they cannot be canceled because they cannot be added because they are on different objects.</p>
+
                         </subsubsection>
                 </subsection>
 
@@ -3162,7 +3163,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p>Let's consider some specific situations<ellipsis /> In <xref ref="se-FNB" text="type-global" /><todo>DO we need to repeat the example here? no?</todo>, \studentB\ felt the downwards gravitational force even while \heB\ was standing on the ground.  We noticed that \heB\ was not falling (and so not accelerating).  Colloquially, we say that the ground is supporting \studentB.  This support force is keeping \studentB\ from passing through the floor; this is a normal force.  The normal force from the floor is acting upwards, which is normal (perpendicular) to the surface of the floor.  <xref ref="f-firstFBDupdate" text="type-global" /> updates the free-body diagrams of <xref ref="f-firstFBD" text="type-global" /> to show how the gravitational and normal forces impact that calculation.</p>
 
-                <assemblage xml:id="f-firstFBDupdate">
+                <example xml:id="f-firstFBDupdate">
                         <title>An updated version of <xref ref="f-firstFBD" text="type-global" />, people pushing a box.</title>
                         <idx><h>Free-Body Diagrams</h><h>Images</h></idx>
 
@@ -3276,8 +3277,8 @@ Earth feels a force by \studentZ\ to the left.
                                                         \node [above] at (2.625,1.2) {object};
                                                         %\node [above] at (5.375,1.5) {\studentB};
                                                         %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
-                                                        \draw [->, -latex, green] (2.625,.75) -- (3.425,.75);  \node [above left] at (3.425,.75) {$5\unit N$};
-                                                        \draw [->, -latex, blue]   (2.625,.65) -- (3.225,.65);  \node [below left] at (3.225,.65) {$4\unit N$};
+                                                        \draw [->, -latex, green] (2.625,.65) -- (3.425,.65);  \node [below left] at (3.425,.65) {$5\unit N$};
+                                                        \draw [->, -latex, blue]   (2.625,.75) -- (3.225,.75);  \node [above left] at (3.225,.75) {$4\unit N$};
                                                         \draw [->, -latex] (2.625,.8) -- (2.625,2.2);  \node [below right] at (2.625,2.2) {$20 \unit N$};
                                                         \draw [->, -latex] (2.625,.6) -- (2.625,-.8);  \node [above right] at (2.625,-.8) {$20 \unit N$};
                                                         \node [left, white] at (1.625,.875) {.};
@@ -3340,10 +3341,10 @@ Earth feels a force by \studentZ\ to the left.
                                 <p></p>
                                 <tabular halign="right"><row><cell halign="right">
                                         Return to: <xref ref="ex-braced" />, <xref ref="ex-unbraced" />, <xref ref="s-FN" />,
-                                                <xref provisional="d-rope.net">rope-tension</xref>, <xref provisional="f-firstFBDangle" />
+                                                <xref ref="d-rope-net">rope-tension</xref>, <xref provisional="f-firstFBDangle" />
                                 </cell></row></tabular>
                         </sidebyside>
-                </assemblage>
+                </example>
 
                 <p>Let's consider some other specific situations<ellipsis /> If you decide to lean against a wall, the wall will provide a normal force that pushes horizontally, keeping you from moving through the wall.</p>
 
@@ -3785,6 +3786,226 @@ Earth feels a force by \studentZ\ to the left.
                         </figure>
 
                         </subsubsection>
+
+                </subsection>
+                <subsection xml:id="ss-tension-drag"><title>Tension as Dragging Force</title>
+
+                <p xml:id="d-rope-net">We can also consider the tension in a rope used to drag an object across the floor.  You may recall that in <xref ref="f-firstFBD" text="type-global" /> (and the updated version, <xref ref="f-firstFBDupdate" text="type-global" />) \studentB<idx><h sortby="\studentB">\studentB</h></idx> pulled a box across a sheet of ice.  It is possible that  \studentB\ was grabbing the object itself, but it is more likely that \heB\ was pulling on a rope that was attached to the object.  In that case, the tension in the rope was <m>4.0 \unit N</m>.  This tension is what pulled \studentB\ leftwards <em>and</em> what pulled the object rightwards.</p>
+
+                <p>We can further update this by considering the case where \studentB\ pulls the rope up at an angle.  In that case, some of the tension is used to drag the box and some is used to reduce the normal force.  In <xref ref="f-firstFBDangle" text="type-global" />, we will have \studentA\ continue to push with <m>5.0\unit{N}</m> horizontally and have \studentB\ pull with <m>4.0\unit{N}</m> at a <m>14^\circ</m> angle above the horizontal.  You should note that since the tension on the object is pulling up, helping the normal force, this allows the normal force (what a scale would read) to be a little smaller. You should also note that since the tension on \studentB\ is pulling down, counter-acting the normal force, this requires the normal force (what a scale would read) to be a little larger.</p>
+
+                <example xml:id="f-firstFBDangle"> 
+                        <title>Pushing a box at an angle; A modification of <xref ref="f-firstFBDupdate" text="title" />.</title>
+                        <idx><h>Free-Body Diagrams</h><h>Images</h></idx>
+                        <p>Again, we can start by drawing a picture of the situation.  The description is the same as it was for <xref ref="f-firstFBDupdate" text="title" /> except that \studentB\ pulls at a slight angle upwards.  We will again need the gravitational force for \studentA<idx><h sortby="\studentA">\studentA</h></idx> (<xref ref="se-weightA" text="type-global" />) and \studentB<idx><h sortby="\studentB">\studentB</h></idx> (<xref ref="se-FNB" text="type-global" />).  As before, since nothing is accelerating up or down together, there must also be a normal force on each body.</p>
+                        <figure xml:id="f1-firstFBDangle">
+                                <caption><p>\studentA\ and \studentB\ push on a box.  \studentB\ pulls at an angle.</p></caption>
+                                <image xml:id="i-firstFBDangle-drawing" source="images/i-firstFBDangle-drawing.svg" width="75%">
+                                <description><p>The drawing of two people pushing on a box; one pulls at an angle.</p></description>
+                                <latex-image-code>
+                                        <![CDATA[
+                                        %>
+                                        \begin{tikzpicture}
+                                                \draw [thick, gray] (0,0) -- (7,0);
+                                                \draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                \draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                \draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                \draw (3,.575) arc (-90:90:.1);
+                                                \draw (3.1,.675) -- (4.7,1.1);
+                                                \node [above] at (1.375,1.75) {\studentA};
+                                                \node [above] at (2.625,1.2) {object};
+                                                \node [above] at (5.375,1.5) {\studentB};
+                                                \node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                        \end{tikzpicture}]]>
+<!--
+\begin{picture}(220,85)(-10,-25)
+\put(0,0){\line(1,0){200}}
+\put(60,2){\line(1,0){60}}
+\drawbox{30}{1}{20}{50} %\studentA
+\drawbox{50}{25}{18}{5} %\studentA's arms
+\drawbox{70}{3}{20}{30} % object
+\drawbox{150}{1}{20}{40} %\studentB
+\drawbox{134}{25}{16}{5} %\studentB's arms
+\put(90,16.5){\oval(2,2)[r]}
+\put(91,16.5){\line(4,1){44}}
+\put(30,53){\scriptsize \studentA}
+\put(70,35){\scriptsize object}
+\put(150,43){\scriptsize \studentB}
+\put(60,-12){\begin{minipage}{60pt}
+\scriptsize The object is on a sheet of ice.
+\end{minipage}}
+\end{picture}
+-->
+                                </latex-image-code>
+                                </image>
+                        </figure>
+
+                        <p>Now, as in <xref ref="f-firstFBDupdate" text="type-global" />, we will draw a free-body diagram for each individual separately.  However, this time we will put the tension of the rope at the appropriate angle.  We will need to do a small calculation to find the value of the normal forces.</p>
+
+                        <figure xml:id="f2-firstFBDangle">
+                                <caption>
+                                        <p>The forces on \studentA\ have not changed.
+                                        <ellipsis /> The forces on the object <em>have</em> changed.
+                                        <ellipsis /> The forces on \studentB\ <em>have</em> changed.
+                                        </p>
+                                </caption>
+                                <sidebyside widths="30% 30% 30%">
+                                        <image xml:id="i-firstFBDangle-FBD1" source="images/i-firstFBDangle-FBD1.svg">
+                                        <description><p>\studentA</p></description>
+                                        <latex-image-code>
+                                                <![CDATA[
+                                                %>
+                                                \begin{tikzpicture}
+                                                        %\draw [thick, gray] (0,0) -- (7,0);
+                                                        %\draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                        \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                        %\draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                        %\draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                        %\draw (3,.575) arc (-90:90:.1);
+                                                        %\draw (3.1,.675) -- (4.7,1.1);
+                                                        \node [above] at (1.375,1.75) {\studentA};
+                                                        %\node [above] at (2.625,1.2) {object};
+                                                        %\node [above] at (5.375,1.5) {\studentB};
+                                                        %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                                        \draw [->, -latex, green] (1.375,.875) -- (.575,.875);  \node [above right] at (.575,.875) {$5\unit N$};
+                                                        \draw [->, -latex] (1.375,.90) -- (1.375,4.9);  \node [below right] at (1.375,4.9) {$834 \unit N$};
+                                                        \draw [->, -latex] (1.375,.85) -- (1.375,-3.15);  \node [above right] at (1.375,-3.15) {$834 \unit N$};
+                                                        \node [left, white] at (.375,.875) {.};
+                                                        \node [right, white] at (2.375,.875) {.};
+                                                \end{tikzpicture}]]>
+<!-- \noindent % \textwidth default is 5in for a book
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{25}{15}{80}{\studentA}
+\onele{20}{<m>5\unit N</m>}{black}
+\onedo{100}{<m>834\unit N</m>}{black}
+\oneup{100}{<m>834\unit N</m>}{black}
+\end{FBD}
+\raggedright
+
+\end{minipage}}
+-->
+                                        </latex-image-code>
+                                        </image>
+
+                                        <image xml:id="i-firstFBDangle-FBD2" source="images/i-firstFBDangle-FBD2.svg">
+                                        <description><p>the object</p></description>
+                                        <latex-image-code>
+                                                <![CDATA[
+                                                %>
+                                                \begin{tikzpicture}
+                                                        %\draw [thick, gray] (0,0) -- (7,0);
+                                                        %\draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                        %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                        \draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                        %\draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                        %\draw (3,.575) arc (-90:90:.1);
+                                                        %\draw (3.1,.675) -- (4.7,1.1);
+                                                        %\node [above] at (1.375,1.75) {\studentA};
+                                                        \node [above] at (2.625,1.2) {object};
+                                                        %\node [above] at (5.375,1.5) {\studentB};
+                                                        %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                                        \draw [->, -latex, green] (2.625,.65) -- (3.425,.65);  \node [below left] at (3.425,.65) {$5\unit N$};
+                                                        \draw [->, -latex, blue]   (2.625,.75) -- (3.225,.90);  \node [above left] at (3.225,.90) {$4\unit N$};
+                                                        \draw [->, -latex] (2.625,.8) -- (2.625,2.1);  \node [below right] at (2.625,2.1) {$F_N$};
+                                                        \draw [->, -latex] (2.625,.6) -- (2.625,-.8);  \node [above right] at (2.625,-.8) {$20 \unit N$};
+                                                        \node [left, white] at (1.625,.875) {.};
+                                                        \node [right, white] at (3.625,.875) {.};
+                                                        
+                                                        \draw [thick, blue] (1.75,-2) -- (3.4, -2) -- (3.4,-1.59) -- (1.75,-2);
+                                                        \draw (1.75,-2) arc (0:14:.2);
+                                                        \node [above right] at (1.75,-2) {$14^\circ$};
+                                                        \node [below] at (2.575,-2) {\tiny $F_{Tx} = F_T \cos 14^\circ = \sig{3.8}{8}{N}$};
+                                                        \node [left] at (3.4,-1.59) {\tiny $F_T = 4.0\unit N$};
+                                                        \node [right] at (3.4,-1.59) {\tiny $F_{Ty} =$};
+                                                        \node [right] at (3.4,-1.80) {\tiny $= F_T \sin 14^\circ$};
+                                                        \node [right] at (3.4,-2.01) {\tiny $= 0.\sig{96}{8}{N}$};
+                                                \end{tikzpicture}]]>
+<!--
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{15}{15}{25}{object}
+\oneri{20}{}{black}\put(43,30){\color{black}\tiny  <m>5\unit N</m>}
+\onedo{35}{<m>20\unit N</m>}{black}
+\oneup{35}{<m>F_N</m>}{black}
+\put(26,41){\color{black} \vector(4,1){20}}
+\put(43,46){\color{black} \tiny <m>4 \unit{N}</m>}
+\end{FBD}
+\raggedright
+
+\end{minipage}}
+\begin{picture}(100,60)
+\put(0,10){\line(4,1){80}}
+\put(0,10){\line(1,0){80}}
+\put(80,10){\line(0,1){20}}
+\put(15,10){\oval(5,8)[rt]}
+\put(25,11){\tiny <m>14^\circ</m>}
+\put(35,28){\tiny <m>F_T=4.0 \unit{N}</m>}
+\put(82,30){\tiny <m>F_{Ty}=</m>}
+\put(82,20){\tiny <m>= F_T\,\sin 14^\circ</m>}
+\put(82,10){\tiny <m> = 0.\sig{96}{8}{N}</m>}
+\put(5,0){\tiny <m>F_{Tx}=F_T \, \cos 14^\circ = \sig{3.8}{8}{N}</m>}
+\end{picture}
+-->
+                                        </latex-image-code>
+                                        </image>
+
+                                        <image xml:id="i-firstFBDangle-FBD3" source="images/i-firstFBDangle-FBD3.svg">
+                                        <description><p>\studentB</p></description>
+                                        <latex-image-code>
+                                                <![CDATA[
+                                                %>
+                                                \begin{tikzpicture}
+                                                        %\draw [thick, gray] (0,0) -- (7,0);
+                                                        %\draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                        %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                        %\draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                        \draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                        %\draw (3,.575) arc (-90:90:.1);
+                                                        %\draw (3.1,.675) -- (4.7,1.1);
+                                                        %\node [above] at (1.375,1.75) {\studentA};
+                                                        %\node [above] at (2.625,1.2) {object};
+                                                        \node [above] at (5.375,1.5) {\studentB};
+                                                        %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                                        \draw [->, -latex, blue]   (5.375,.7) -- (4.775,.55);  \node [above] at (4.775,.55) {$4\unit N$};
+                                                        \draw [->, -latex] (5.375,.75) -- (5.375,4.25);  \node [below right] at (5.375,4.25) {$F_N$};
+                                                        \draw [->, -latex] (5.375,.65) -- (5.375,-2.85);  \node [above right] at (5.375,-2.85) {$736 \unit N$};
+                                                        \node [left, white] at (4.375,.875) {.};
+                                                        \node [right, white] at (6.375,.875) {.};
+                                                \end{tikzpicture}]]>
+<!--
+\fbox{\begin{minipage}{1.5in}
+\begin{FBD}{10}{20}{15}{75}{\studentB}
+%\onele{16}{<m>4\unit N</m>}{black}
+\onedo{88}{<m>736\unit N</m>}{black}
+\oneup{88}{<m>F_N</m>}{black}
+\put(24,94){\color{black} \vector(-4,-1){20}}
+\put(0,92){\color{black} \tiny <m>4\unit{N}</m>}
+\end{FBD}
+\raggedright
+
+\end{minipage}}
+-->
+                                        </latex-image-code>
+                                        </image>
+                                </sidebyside>
+                        </figure>
+
+                        <p><em>For the object</em>: Since the y-component of the net force is zero, we can find the normal force to be
+                        <m>F_N = -[(-20\unit{N})+(+0.\sig{96}{8}{N})] = 19\unit{N}</m>.
+                        The x-component of the net force is <m>F_{\mathrm{net},x}=(5.0\unit N)+(\sig{3.8}{8}{N}) = \sig{8.8}{8}{N}</m>.</p>
+
+                        <p><em>For \studentB</em>: Since the y-component of the net force is zero, we can find the normal force to be
+                        <m>F_N = -[(-736\unit{N})+(-0.\sig{96}{8}{N}) = 737\unit{N}</m>.
+                        The x-component of the net force is <m>F_{\mathrm{net},x}=(-\sig{3.8}{8}{N})</m>.</p>
+
+                        <sidebyside widths="50% 50%" haligns="center right">
+                                <p></p>
+                                <tabular halign="right"><row><cell halign="right">
+                                        Return to: <xref ref="d-rope-net" text="title">rope-tension</xref>
+                                </cell></row></tabular>
+                        </sidebyside>
+                </example>
+
                 </subsection>
 
         </section>
@@ -3877,7 +4098,7 @@ Earth feels a force by \studentZ\ to the left.
         <p>This chapter holds a few empty-format structures that I have used once and expect to use again.</p>
 
                                 <investigation xml:id="irl-">
-                                <title><idx><h>EMPTY</h><h>Real Life</h></idx> EMPTY IRL</title>
+                                <title><idx><h>Placeholder</h><h>Real Life</h></idx> EMPTY IRL</title>
                                 <prelude>
                                         <p xml:id="d-"></p>
                                 </prelude>

@@ -380,114 +380,12 @@ I created this as a PDF that, I believe, can be easily viewed on a computer or t
 
 </section><section><title></title>Tension}\label{s-FT}<aside><title>Referenced by</title> <p>Discussion of <xref provisional=""></xref></p></aside>[<m>F=ma</m>]{d-fma}<idx><h></h><h></h></idx>{Force!Tension}
 </subsection><subsection><title></title>Tension as a Support Force}\label{ss-tension-support}
+</subsection><subsection><title></title>Tension as Dragging Force}\label{ss-tension-drag}
 
 
 
 % YOU ARE HERE
 
-
-
-</subsection><subsection><title></title>Tension as Dragging Force}\label{ss-tension-drag}
-
-We can also consider the <p xml:id=""></p>d-rope.net}{tension} in a rope used to drag an object across the floor.  You may recall that in <xref ref="" />f-firstFBD} (and the updated version, <xref ref="" />f-firstFBDupdate}) \studentB<idx><h sortby="\studentB">\studentB</h></idx> pulled a box across a sheet of ice.  It is possible that  \studentB\ was grabbing the object itself, but it is more likely that \heB\ was pulling on a rope that was attached to the object.  In that case, the tension in the rope was <m>4.0 \unit N</m>.  This tension is what pulled \studentB\ leftwards <em></em>and} what pulled the object rightwards.
-
-We can further update this by considering the case where \studentB\ pulls the rope up at an angle.  In that case, some of the tension is used to drag the box and some is used to reduce the normal force.  In <xref ref="" />f-firstFBDangle}, we will have \studentA\ continue to push with <m>5.0\unit{N}</m> horizontally and have \studentB\ pull with <m>4.0\unit{N}</m> at a <m>14^\circ</m> angle above the horizontal.
-%
-\begin{figure}
-\hrule\hrule
-\caption{\label{f-firstFBDangle} An updated version of \protect{<xref ref="" />f-firstFBDupdate}}, people pushing a box.}<idx><h></h><h></h></idx>{Free-Body Diagrams!Images}
-Again, we can start by drawing a picture of the situation.  The description is the same as it was for <xref ref="" />f-firstFBDupdate} except that \studentB\ pulls at a slight
-
-\noindent
-\begin{minipage}[b]{150pt}
-angle upwards.  We will again need the gravitational force for \studentA<idx><h sortby="\studentA">\studentA</h></idx> (<xref ref="" text="type-global" />se-weightA}) and \studentB<idx><h sortby="\studentB">\studentB</h></idx> (<xref ref="" text="type-global" />se-FNB}).  As before, since nothing is accelerating up or down together, there must also be a normal force on each body.
-\end{minipage}
-\hfill\begin{minipage}[b]{220pt}
-\begin{picture}(220,85)(-10,-25)
-\put(0,0){\line(1,0){200}}
-\put(60,2){\line(1,0){60}}
-\drawbox{30}{1}{20}{50} %\studentA
-\drawbox{50}{25}{18}{5} %\studentA's arms
-\drawbox{70}{3}{20}{30} % object
-\drawbox{150}{1}{20}{40} %\studentB
-\drawbox{134}{25}{16}{5} %\studentB's arms
-\put(90,16.5){\oval(2,2)[r]}
-\put(91,16.5){\line(4,1){44}}
-\put(30,53){\scriptsize \studentA}
-\put(70,35){\scriptsize object}
-\put(150,43){\scriptsize \studentB}
-\put(60,-12){\begin{minipage}{60pt}
-\scriptsize The object is on a sheet of ice.
-\end{minipage}}
-\end{picture}
-\end{minipage}
-
-
-Now, as in <xref ref="" />f-firstFBDupdate}, we will draw a free-body diagram for each individual separately.  However, this time we will put the tension of the rope at the appropriate angle.  We will need to do a small calculation to find the value of the normal forces.
-
-\noindent % \textwidth default is 5in for a book
-\fbox{\begin{minipage}{1.5in}
-\begin{FBD}{10}{25}{15}{80}{\studentA}
-\onele{20}{<m>5\unit N</m>}{black}
-\onedo{100}{<m>834\unit N</m>}{black}
-\oneup{100}{<m>834\unit N</m>}{black}
-\end{FBD}
-\raggedright
-The forces on \studentA\ have not changed.
-\end{minipage}}
-\hfill
-\begin{minipage}{1.5in}
-\fbox{\begin{minipage}{1.5in}
-\begin{FBD}{10}{15}{15}{25}{object}
-\oneri{20}{}{black}\put(43,30){\color{black}\tiny  <m>5\unit N</m>}
-\onedo{35}{<m>20\unit N</m>}{black}
-\oneup{35}{<m>F_N</m>}{black}
-\put(26,41){\color{black} \vector(4,1){20}}
-\put(43,46){\color{black} \tiny <m>4 \unit{N}</m>}
-\end{FBD}
-\raggedright
-The forces on the object <em></em>have} changed.
-\end{minipage}}
-\begin{picture}(100,60)
-\put(0,10){\line(4,1){80}}
-\put(0,10){\line(1,0){80}}
-\put(80,10){\line(0,1){20}}
-\put(15,10){\oval(5,8)[rt]}
-\put(25,11){\tiny <m>14^\circ</m>}
-\put(35,28){\tiny <m>F_T=4.0 \unit{N}</m>}
-\put(82,30){\tiny <m>F_{Ty}=</m>}
-\put(82,20){\tiny <m>= F_T\,\sin 14^\circ</m>}
-\put(82,10){\tiny <m> = 0.\sig{96}{8}{N}</m>}
-\put(5,0){\tiny <m>F_{Tx}=F_T \, \cos 14^\circ = \sig{3.8}{8}{N}</m>}
-\end{picture}
-\end{minipage}
-\hfill
-\fbox{\begin{minipage}{1.5in}
-\begin{FBD}{10}{20}{15}{75}{\studentB}
-%\onele{16}{<m>4\unit N</m>}{black}
-\onedo{88}{<m>736\unit N</m>}{black}
-\oneup{88}{<m>F_N</m>}{black}
-\put(24,94){\color{black} \vector(-4,-1){20}}
-\put(0,92){\color{black} \tiny <m>4\unit{N}</m>}
-\end{FBD}
-\raggedright
-The forces on \studentB\ <em></em>have} changed.
-\end{minipage}}
-
-\noindent
-<em></em>For the object}: Since the y-component of the net force is zero, we can find the normal force to be <m>F_N = -[(-20\unit{N})+(+0.\sig{96}{8}{N})] = 19\unit{N}</m>.
-The x-component of the net force is <m>F_{\mathrm{net},x}=(5.0\unit N)+(\sig{3.8}{8}{N}) = \sig{8.8}{8}{N}</m>.
-
-<em></em>For \studentB}: Since the y-component of the net force is zero, we can find the normal force to be <m>F_N = -[(-736\unit{N})+(-0.\sig{96}{8}{N}) = 737\unit{N}</m>.
-The x-component of the net force is <m>F_{\mathrm{net},x}=(-\sig{3.8}{8}{N})</m>.
-
-\flushright
-<assemblage>Return to: </assemblage> <xref provisional=""></xref>[rope-tension]{d-rope.net}
-\hrule\hrule
-\end{figure}
-%
-You should note that since the tension on the object is pulling up, helping the normal force, this allows the normal force (what a scale would read) to be a little smaller.
-You should also note that since the tension on \studentB\ is pulling down, counter-acting the normal force, this requires the normal force (what a scale would read) to be a little larger.
 
 </subsection><subsection><title></title>Pulleys}
 
