@@ -1,76 +1,76 @@
-s/\\student\([A-Z]\)*\\*/\\student\1/g
-s/\\\([hH]\)e\([A-Z]\)*\\*/\\\1e\2/g
-s/\\\([hH]\)i\([sm]\)\([A-Z]\)*\\*/\\\1i\2\3/g
-s/\\\([hH]\)imself\([A-Z]\)*\\*/\\\1imself\2/g
-s/\\studentA/Abdul/g 
-s/\\studentB/Beth/g         
-s/\\studentC/Carl/g         
-s/\\studentD/Diane/g       
-s/\\studentE/Erik/g       
-s/\\studentF/Frances/g   
-s/\\studentX/Xerxes/g   
-s/\\studentZ/Zambert/g 
-s/\\massA/\\mbox{\$85.0\\unit{kg}\$}/g 
-s/\\massB/\\mbox{\$75.0\\unit{kg}\$}/g 
-s/\\massC/\\mbox{\$90.0\\unit{kg}\$}/g
-s/\\massD/\\mbox{\$80.0\\unit{kg}\$}/g
-s/\\massE/\\mbox{\$95.0\\unit{kg}\$}/g
-s/\\massF/\\mbox{\$85.0\\unit{kg}\$}/g
-s/\\massX/\\mbox{\$62.5\\unit{kg}\$}/g
-s/\\massZ/\\mbox{\$95.0\\unit{kg}\$}/g
-s/\\heA/he/g 
-s/\\himA/him/g 
-s/\\hisA/his/g 
-s/\\himselfA/himself/g
-s/\\HeA/He/g 
-s/\\HimA/Him/g 
-s/\\HisA/His/g 
-s/\\heC/he/g 
-s/\\himC/him/g 
-s/\\hisC/his/g 
-s/\\himselfC/himself/g 
-s/\\HeC/He/g 
-s/\\HimC/Him/g 
-s/\\HisC/His/g 
-s/\\heE/he/g 
-s/\\himE/him/g 
-s/\\hisE/his/g 
-s/\\himselfE/himself/g 
-s/\\HeE/He/g 
-s/\\HimE/Him/g 
-s/\\HisE/His/g 
-s/\\heZ/he/g 
-s/\\himZ/him/g 
-s/\\hisZ/his/g 
-s/\\himselfZ/himself/g 
-s/\\HeZ/He/g 
-s/\\HimZ/Him/g 
-s/\\HisZ/His/g 
-s/\\heB/she/g 
-s/\\himB/her/g 
-s/\\hisB/her/g 
-s/\\himselfB/herself/g 
-s/\\HeB/She/g 
-s/\\HimB/Her/g 
-s/\\HisB/Her/g 
-s/\\heD/she/g 
-s/\\himD/her/g 
-s/\\hisD/her/g 
-s/\\himselfD/herself/g 
-s/\\HeD/She/g 
-s/\\HimD/Her/g 
-s/\\HisD/Her/g 
-s/\\heF/she/g 
-s/\\himF/her/g 
-s/\\hisF/her/g 
-s/\\himselfF/herself/g 
-s/\\HeF/She/g 
-s/\\HimF/Her/g 
-s/\\HisF/Her/g 
-s/\\heX/Xerxes/g 
-s/\\himX/Xerxes/g 
-s/\\hisX/Xerxes/g 
-s/\\himselfX/the person of Xerxes/g 
-s/\\HeX/Xerxes/g 
-s/\\HimX/Xerxes/g 
-s/\\HisX/Xerxes/g 
+/<\/macros>/,$ s/\\student\([A-Z]\)*\\*/\\student\1/g
+/<\/macros>/,$ s/\\\([hH]\)e\([A-Z]\)*\\*/\\\1e\2/g
+/<\/macros>/,$ s/\\\([hH]\)i\([sm]\)\([A-Z]\)*\\*/\\\1i\2\3/g
+/<\/macros>/,$ s/\\\([hH]\)imself\([A-Z]\)*\\*/\\\1imself\2/g
+/<\/macros>/,$ s/\\studentA/Abdul/g 
+/<\/macros>/,$ s/\\studentB/Beth/g         
+/<\/macros>/,$ s/\\studentC/Carl/g         
+/<\/macros>/,$ s/\\studentD/Diane/g       
+/<\/macros>/,$ s/\\studentE/Erik/g       
+/<\/macros>/,$ s/\\studentF/Frances/g   
+/<\/macros>/,$ s/\\studentX/Xerxes/g   
+/<\/macros>/,$ s/\\studentZ/Zambert/g 
+/<\/macros>/,$ s/\\massA/\\mbox{\$85.0\\unit{kg}\$}/g 
+/<\/macros>/,$ s/\\massB/\\mbox{\$75.0\\unit{kg}\$}/g 
+/<\/macros>/,$ s/\\massC/\\mbox{\$90.0\\unit{kg}\$}/g
+/<\/macros>/,$ s/\\massD/\\mbox{\$80.0\\unit{kg}\$}/g
+/<\/macros>/,$ s/\\massE/\\mbox{\$95.0\\unit{kg}\$}/g
+/<\/macros>/,$ s/\\massF/\\mbox{\$85.0\\unit{kg}\$}/g
+/<\/macros>/,$ s/\\massX/\\mbox{\$62.5\\unit{kg}\$}/g
+/<\/macros>/,$ s/\\massZ/\\mbox{\$95.0\\unit{kg}\$}/g
+/<\/macros>/,$ s/\\heA/he/g 
+/<\/macros>/,$ s/\\himA/him/g 
+/<\/macros>/,$ s/\\hisA/his/g 
+/<\/macros>/,$ s/\\himselfA/himself/g
+/<\/macros>/,$ s/\\HeA/He/g 
+/<\/macros>/,$ s/\\HimA/Him/g 
+/<\/macros>/,$ s/\\HisA/His/g 
+/<\/macros>/,$ s/\\heC/he/g 
+/<\/macros>/,$ s/\\himC/him/g 
+/<\/macros>/,$ s/\\hisC/his/g 
+/<\/macros>/,$ s/\\himselfC/himself/g 
+/<\/macros>/,$ s/\\HeC/He/g 
+/<\/macros>/,$ s/\\HimC/Him/g 
+/<\/macros>/,$ s/\\HisC/His/g 
+/<\/macros>/,$ s/\\heE/he/g 
+/<\/macros>/,$ s/\\himE/him/g 
+/<\/macros>/,$ s/\\hisE/his/g 
+/<\/macros>/,$ s/\\himselfE/himself/g 
+/<\/macros>/,$ s/\\HeE/He/g 
+/<\/macros>/,$ s/\\HimE/Him/g 
+/<\/macros>/,$ s/\\HisE/His/g 
+/<\/macros>/,$ s/\\heZ/he/g 
+/<\/macros>/,$ s/\\himZ/him/g 
+/<\/macros>/,$ s/\\hisZ/his/g 
+/<\/macros>/,$ s/\\himselfZ/himself/g 
+/<\/macros>/,$ s/\\HeZ/He/g 
+/<\/macros>/,$ s/\\HimZ/Him/g 
+/<\/macros>/,$ s/\\HisZ/His/g 
+/<\/macros>/,$ s/\\heB/she/g 
+/<\/macros>/,$ s/\\himB/her/g 
+/<\/macros>/,$ s/\\hisB/her/g 
+/<\/macros>/,$ s/\\himselfB/herself/g 
+/<\/macros>/,$ s/\\HeB/She/g 
+/<\/macros>/,$ s/\\HimB/Her/g 
+/<\/macros>/,$ s/\\HisB/Her/g 
+/<\/macros>/,$ s/\\heD/she/g 
+/<\/macros>/,$ s/\\himD/her/g 
+/<\/macros>/,$ s/\\hisD/her/g 
+/<\/macros>/,$ s/\\himselfD/herself/g 
+/<\/macros>/,$ s/\\HeD/She/g 
+/<\/macros>/,$ s/\\HimD/Her/g 
+/<\/macros>/,$ s/\\HisD/Her/g 
+/<\/macros>/,$ s/\\heF/she/g 
+/<\/macros>/,$ s/\\himF/her/g 
+/<\/macros>/,$ s/\\hisF/her/g 
+/<\/macros>/,$ s/\\himselfF/herself/g 
+/<\/macros>/,$ s/\\HeF/She/g 
+/<\/macros>/,$ s/\\HimF/Her/g 
+/<\/macros>/,$ s/\\HisF/Her/g 
+/<\/macros>/,$ s/\\heX/Xerxes/g 
+/<\/macros>/,$ s/\\himX/Xerxes/g 
+/<\/macros>/,$ s/\\hisX/Xerxes/g 
+/<\/macros>/,$ s/\\himselfX/the person of Xerxes/g 
+/<\/macros>/,$ s/\\HeX/Xerxes/g 
+/<\/macros>/,$ s/\\HimX/Xerxes/g 
+/<\/macros>/,$ s/\\HisX/Xerxes/g 
