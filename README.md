@@ -9,3 +9,24 @@ I am also going to create an ABIP.xml for accessing the MathbookXML format.
 I will need to translate ABIP.tex into xml 
 That file will need a new name...  Maybe I will call that the "Connected Physics" that I took as the temporary title.
 
+NOTES:
+the mathbook-abip-html file resides in mathbook/user/ and holds the specific preferences for formatting style
+	I have copied the mathbook-abip-* files to my directory in order to include them in git
+	If change the file, then re-copy (not automatic)
+	If git pull finds changes, then re-copy to mathbook/user (not automatic)
+The location of the files are different on the Surface, the laptop, and the server.
+AIY = ABIP
+BEE = mathbook
+CEE = lab manual
+
+To compile the XML to HTML 
+	(Use aiy to get to the correct directory)
+	xsltproc ../mathbook/user/mathbook-abip-html.xsl ABIP.xml
+
+To complie the XML to LaTeX
+	xsltproc ../mathbook/user/mathbook-abip-latex.xsl ABIP.xml
+	(Use WindEdt to pdflatex)
+
+To render the images in SVG (useful for HTML)
+	~/Desktop/Book/mathbook/script/mbx -v -c latex-image -f svg -d images ~/Desktop/Book/Itself/ABIP.xml
+	~/Desktop/Book/mathbook/script/mbx -v -c latex-image -r [specific image reference] -f svg -d images ~/Desktop/Book/Itself/ABIP.xml

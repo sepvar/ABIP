@@ -26,6 +26,168 @@
                 \text{Direction:} \amp \displaystyle #5 = \amp \displaystyle \tan^{-1}\left( \frac{#2}{#1} \right) \amp = \displaystyle #6 \mbox{#7}
                 \end{array}}
 
+\newcommand{\drawbox}[4]{% 1=x-location of box, 2=y-location of box, 3=x-size of box, 4=y-size of box
+    \setcounter{boxlen}{#1}\addtocounter{boxlen}{#3}
+    \setcounter{boxwid}{#2}\addtocounter{boxwid}{#4}
+    \put(#1,#2){\line(1,0){#3}}
+    \put(#1,#2){\line(0,1){#4}}
+    \put(\theboxlen,\theboxwid){\line(-1,0){#3}}
+    \put(\theboxlen,\theboxwid){\line(0,-1){#4}} }
+
+\newenvironment{FBD}[5]% 1=half-x-size-box, 2=half-y-size-box, 3=x-lower-left, 4=y-lower-left; (3,4) also (x,y) space outside box, 5=label
+    {\setcounter{centx}{#3}\addtocounter{centx}{#1}
+    \setcounter{centy}{#4}\addtocounter{centy}{#2}
+    \setcounter{piclen}{\thecentx}\addtocounter{piclen}{\thecentx}
+    \setcounter{picwid}{\thecenty}\addtocounter{picwid}{\thecenty}
+    \setcounter{FBDlen}{#1}\addtocounter{FBDlen}{#1}
+    \setcounter{FBDwid}{#2}\addtocounter{FBDwid}{#2}
+    \setcounter{lbly}{#4}\addtocounter{lbly}{#2}\addtocounter{lbly}{#2}\addtocounter{lbly}{5}
+    \begin{center}\begin{picture}(\thepiclen,\thepicwid)
+    \put(#3,\thelbly){\setvlabel{$\scriptsize #5$}}
+    \drawbox{#3}{#4}{\theFBDlen}{\theFBDwid}}
+    {\end{picture}\end{center}}
+\newcommand{\oneup}[3]{% 1=sizeof-vector, 2=label, 3=color
+        \addtocounter{centy}{2}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#1}\addtocounter{lbly}{-5}
+        \put(\thecentx,\thecenty){\color{#3}\vector(0,1){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centy}{-2}}
+\newcommand{\onedo}[3]{% 1=sizeof-vector, 2=label, 3=color
+        \addtocounter{centy}{-2}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#1}\addtocounter{lbly}{3}
+        \put(\thecentx,\thecenty){\color{#3}\vector(0,-1){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centy}{2}}
+\newcommand{\oneri}[3]{% 1=sizeof-vector, 2=label, 3=color
+        \addtocounter{centx}{2}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}\addtocounter{lblx}{-5}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\color{#3}\vector(1,0){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centx}{-2}}
+\newcommand{\onele}[3]{% 1=sizeof-vector, 2=label, 3=color
+        \addtocounter{centx}{-2}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\color{#3}\vector(-1,0){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centx}{2}}
+
+\newcommand{\twoup}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
+        \addtocounter{centy}{2}
+        \put(\thecentx,\thecenty){\circle*{1}}
+%
+        \addtocounter{centx}{-5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-10}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#1}\addtocounter{lbly}{-5}
+        \put(\thecentx,\thecenty){\color{#3}\vector(0,1){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centx}{5}
+%
+        \addtocounter{centx}{5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#4}\addtocounter{lbly}{-5}
+        \put(\thecentx,\thecenty){\color{#6}\vector(0,1){#4}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-5}
+%
+        \addtocounter{centy}{-2}}
+\newcommand{\twodo}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
+        \addtocounter{centy}{-2}
+        \put(\thecentx,\thecenty){\circle*{1}}
+%
+        \addtocounter{centx}{-5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-10}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#1}\addtocounter{lbly}{3}
+        \put(\thecentx,\thecenty){\color{#3}\vector(0,-1){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centx}{5}
+%
+        \addtocounter{centx}{5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#4}\addtocounter{lbly}{3}
+        \put(\thecentx,\thecenty){\color{#6}\vector(0,-1){#4}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-5}
+%
+        \addtocounter{centy}{2}}
+\newcommand{\twori}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
+        \addtocounter{centx}{2}
+        \put(\thecentx,\thecenty){\circle*{1}}
+%
+        \addtocounter{centy}{5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}\addtocounter{lblx}{-5}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\color{#3}\vector(1,0){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centy}{-5}
+%
+        \addtocounter{centy}{-5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}\addtocounter{lblx}{-5}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-10}
+        \put(\thecentx,\thecenty){\color{#6}\vector(1,0){#4}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centy}{5}
+%
+        \addtocounter{centx}{-2}}
+\newcommand{\twole}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
+        \addtocounter{centx}{-2}
+        \put(\thecentx,\thecenty){\circle*{1}}
+%
+        \addtocounter{centy}{5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\color{#3}\vector(-1,0){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centy}{-5}
+%
+        \addtocounter{centy}{-5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-10}
+        \put(\thecentx,\thecenty){\color{#6}\vector(-1,0){#4}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centy}{5}
+%
+        \addtocounter{centx}{2}}
+\newcommand{\oneur}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
+        \addtocounter{centx}{#3}
+        \addtocounter{centy}{#4}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}%\addtocounter{lblx}{#3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#2}%\addtocounter{lbly}{#4}
+        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-#3}
+        \addtocounter{centy}{-#4}}
+\newcommand{\oneul}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
+        \addtocounter{centx}{#3}
+        \addtocounter{centy}{#4}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}%\addtocounter{lblx}{#3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#2}%\addtocounter{lbly}{#4}
+        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-#3}
+        \addtocounter{centy}{-#4}}
+\newcommand{\onedl}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
+        \addtocounter{centx}{#3}
+        \addtocounter{centy}{#4}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}%\addtocounter{lblx}{#3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#2}\addtocounter{lbly}{#4}
+        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-#3}
+        \addtocounter{centy}{-#4}}
+\newcommand{\onedr}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
+        \addtocounter{centx}{#3}
+        \addtocounter{centy}{#4}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}%\addtocounter{lblx}{#3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#2}\addtocounter{lbly}{#4}
+        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-#3}
+        \addtocounter{centy}{-#4}}
+
 
 <!-- ********************************************************************************************** -->
 <!-- %
@@ -113,6 +275,11 @@
         <rename element="biographical" lang="en-US">Touchstone</rename>
         <rename element="heuristic" lang="en-US">Translation</rename>
 
+<!-- 
+        <feedback>
+                <url>mailto:christj@thomasmore.edu</url>
+        </feedback>
+-->
 
     </docinfo>
 
@@ -134,7 +301,7 @@
         </author>
 
         <credit>
-            <title>MathBookXML</title>
+            <title>PreTeXt Format</title>
             <author>
                 <personname>Robert A. Beezer</personname>
                 <department>Department of Mathematics and Computer Science</department>
@@ -336,6 +503,10 @@
         <section xml:id="s-law"><title>Theory versus Law</title>
                 <aside><title>Referenced by</title> <p><xref ref="s-Newton"  text="type-global" /></p></aside>
         </section>
+
+        <conclusion><title>List of examples</title>
+                <list-of elements="example" scope="chapter" />
+        </conclusion>                                        
 </chapter>
 
 
@@ -448,7 +619,12 @@
 
         <p>The term <q>effective theory</q> is used in physics to describe a wide-reaching phenomenon which can be approximated by a simpler theory in a smaller circumstance.  So, for example, Einstein's theory of general relativity as a complex description of the gravitational interaction.  It would be unwieldy and impractical to use that to describe our day-to-day interactions with the gravitational interaction.  On the other hand, Newton's theory of the gravitational interaction is a special case of Einstein's general theory of relativity that works perfectly well so long as you behave yourself and do not try to travel at a significant fraction of the speed of light.  We can say that Newton's theory of gravity is an effective theory for Einstein's theory of gravity that accounts for acceleration at low speeds.  Likewise, Einstein's special theory of relativity is an effective theory of the general theory of relativity.  The special theory is relevant when you do not allow for acceleration, but do allow for faster speeds.  Once you reach beyond the limitations of the effective theory, the description <q>breaks down</q>.</p>
 
+        <p>For example, see <xref ref="p-g-to-3-digits" text="title">the discussion on the acceleration due to gravity being <q>locally constant</q></xref>.</p>
+
         </section>
+        <conclusion><title>List of examples</title>
+                <list-of elements="example" scope="chapter" />
+        </conclusion>
 
 </chapter>
 
@@ -779,6 +955,9 @@
                 <biblio type="raw" xml:id="biblio-wiki-SI"><title>International System of Units (SI)</title>, <journal>Wikipedia</journal> (Visited June, 2017), <url href="https://en.wikipedia.org/wiki/International_System_of_Units" />.</biblio>
                 <biblio type="raw" xml:id="biblio-wiki-CGPM"><title>General Conference on Weights and Measures</title>, <journal>Wikipedia</journal> (Visited June, 2017), <url href="https://en.wikipedia.org/wiki/General_Conference_on_Weights_and_Measures" />.</biblio>
         </references>
+        <conclusion><title>List of examples</title>
+                <list-of elements="example" scope="chapter" />
+        </conclusion>
 </chapter>
 
 <!-- ********************************************************************************************** -->
@@ -849,6 +1028,9 @@
         <todo><p>Decide if this should be filled out more or if it should reference the variety of places where the text fills out these kinds of details.</p></todo></p>
 
         </section>
+        <conclusion><title>List of examples</title>
+                <list-of elements="example" scope="chapter" />
+        </conclusion>
 </chapter>
 
 <!-- ********************************************************************************************** -->
@@ -1299,6 +1481,9 @@
 
                 </subsection>
         </section>
+        <conclusion><title>List of examples</title>
+                <list-of elements="example" scope="chapter" />
+        </conclusion>
 </chapter>
 
 <!-- ********************************************************************************************** -->
@@ -1376,6 +1561,9 @@
                         </investigation>
                 </subsection>
         </section>
+        <conclusion><title>List of examples</title>
+                <list-of elements="example" scope="chapter" />
+        </conclusion>
 </chapter>
 
 
@@ -2344,7 +2532,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                 <aside><title>Referenced by</title> <p><xref ref="f-firstFBD" /></p></aside>
                                 <p>In the same way that <xref ref="se-netF-a" text="type-global" /> was able to use <xref ref="as-NII" text="title">Newton's second law</xref> to compute the acceleration of an object after <xref ref="se-netFadd" text="type-global" /> found the net force, we can use the forces found in <xref ref="f-firstFBD" text="type-global" /> to compute the acceleration of the people pushing the box.
                                         <todo><p>As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!  But, it is still nice to be moving a small mass so that it has a large acc, and the people have small acc.)</p></todo>
-                                Recall that <xref ref="f1-firstFBD" text="type-global" /> shows how \studentA<idx><h sortby="\studentA">\studentA</h></idx> and \studentB<idx><h sortby="\studentB">\studentB</h></idx> exert forces on the box (and, from <xref ref="as-NIII" text="title">Newton's third law</xref>, how the box exerts force on the people).  
+                                Recall that <xref ref="f1-firstFBD" text="type-global" /> shows how \studentA<idx><h sortby="\studentA">\studentA</h></idx> and \studentB<idx><h sortby="\studentB">\studentB</h></idx> exert forces on the box (and, from <xref ref="as-NIII" text="title">Newton's third law</xref>, how the box exerts force on the people).
                                 <ol>
                                 <li><p> Since \studentA\ exerts a force of <m>5.0\unit{N}</m> to the right <m>(+\ihat)</m> on the object, the <em>third law</em> reminds us that the object exerts a force of <m>5.0\unit{N}</m> to the left  <m>(-\ihat)</m> on \studentA.  Since \studentA\ has a mass of \massA, the <em>second law</em> reminds us that \heA\ is accelerated at the rate of
                                     <me> \vec a_1 = \frac{-5.0\unit{N} \ihat}{\massA} = -0.0\sigfrac{58}{8}{m}{s^2}\ihat = -5.9\ten{-2}\unitfrac{m}{s^2} \ihat</me>
@@ -2881,9 +3069,12 @@ Earth feels a force by \studentZ\ to the left.
 
         </section>
 
+        <conclusion><title>List of examples</title>
+                <list-of elements="example exercise" scope="chapter" />
+        </conclusion>
 
         <conclusion>
-        <p><date>(Revised August 28, 2017)</date></p>
+        <p><date>(Revised September 1, 2017)</date></p>
         <p><date>(Compiled <today />)</date></p>
         </conclusion>
 
@@ -2926,6 +3117,7 @@ Earth feels a force by \studentZ\ to the left.
                 At this point, we know the mass, but we don't know the force or the acceleration.  However, we have conveniently already done the experiment (recall <xref ref="ex-freefall" text="type-hybrid"/>) that will tell us the acceleration is <m>a_g = 9.81\unitfrac{m}{s^2}</m> downwards.  (Recall that <q>downwards</q> is the direction of the vector, which can be expressed as <m>-\jhat</m>.)  If we know the mass and the acceleration, then we can compute the force.</p>
 
                 <example xml:id="se-weightball">
+                        <title>Calculate the weight of a ball in freefall</title>
                         <statement>
                         <p>If a baseball with mass <m>m_b = 0.145\unit{kg}</m> is dropped (allowed to <xref ref="ss-freefall" text="title">fall freely</xref>) so that it accelerates at <m>a_g = 9.81\unitfrac{m}{s^2}</m> downwards, then while it falls it feels the gravitational force:
                         <me> \vec F_g = m \vec g = (0.145\unit{kg}) [-(9.81\unitfrac{m}{s^2})\,\jhat] = -\sig{1.42}{24}{N} \jhat = -1.42 \unit N \jhat </me>.
@@ -2995,6 +3187,7 @@ Earth feels a force by \studentZ\ to the left.
                 <p>Now let's do some calculations<ellipsis />
 
                 <example>
+                        <title>Calculate the mass from the weight</title>
                         <statement>
                         <p>\studentA<idx><h sortby="\studentA">\studentA</h></idx> notices that \heA\ needs to exert <m>F=1.5\unit{N}</m> to support the apple listed in <xref ref="t-weightmass" text="type-hybrid" />. \HeA\ then drops it  and notices its acceleration of <m>9.81\unitfrac{m}{s^2}</m>.  \HeA\ computes the mass to be
                                 <me> m = \frac{F_g}{a_a} \ = \ \frac{1.5\unit{N}}{9.81\unitfrac{m}{s^2}} \ = \ \frac{1.5\unitfrac{kg \cdot m}{s^2}}{9.81\unitfrac{m}{s^2}} \ = \ 0.\sig{15}{3}{kg} </me>
@@ -3004,6 +3197,7 @@ Earth feels a force by \studentZ\ to the left.
                 </p>
 
                 <example xml:id="se-weightA">
+                        <title>Calculate weight from the mass</title>
                         <statement>
                         <p>\studentA<idx><h sortby="\studentA">\studentA</h></idx>, who knows \hisA\ own mass (<m>\massA</m>), then imagines
                                 <aside><title>Referenced by</title>
@@ -3034,8 +3228,10 @@ Earth feels a force by \studentZ\ to the left.
                 </p>
 
                 <example xml:id="se-FNB">
+                        <title>Deducing the existence of forces using Newton's second law</title>
                         <statement>
-                        <p>If <aside><title>Referenced by</title> <p><xref ref="f-firstFBDupdate" text="type-global" />, <xref provisional="f-firstFBDangle" text="type-global" /></p></aside> \studentB<idx><h sortby="\studentB">\studentB</h></idx> is not falling, but rather standing safely on the floor, then the gravitational force is still acting.  It can be computed as
+                        <p>If \studentB<idx><h sortby="\studentB">\studentB</h></idx> is not falling, but rather standing safely on the floor, then the gravitational force is still acting.  It can be computed as
+                        <aside><title>Referenced by</title> <p><xref ref="f-firstFBDupdate" text="type-global" />, <xref provisional="f-firstFBDangle" text="type-global" /></p></aside>
                                 <me> \vec F_g = m \vec g = (\massB) [-(9.81\unitfrac{m}{s^2})\,\jhat] = -\sig{735}{.75}{N} \jhat = -736 \unit N \jhat </me>
                         However, since we can see that \hisB\ acceleration is zero, the <m>\vec F_\mathrm{net}</m> <em>must be zero</em>.  The only way that can happen, though is if there is another force acting upwards on \studentB.  What could possibly be pushing up on \himB?  <xref ref="A-floor" text="type-local" />.  Whatever it is pushing up on \himB, it is supplying a support force, which can be calculated since
                                 <m>\vec F_\mathrm{net} = \vec F_g + \vec F_\mathrm{support}</m>
@@ -3063,6 +3259,7 @@ Earth feels a force by \studentZ\ to the left.
                 <p>As was mentioned earlier, the value of the acceleration due to gravity also varies across the surface, although this is less than about a percent or so (see <xref ref="t-gworld" text="type-hybrid"/>).  Nonetheless, this means that your weight can change even when your mass remains the same.</p>
 
                 <example xml:id="se-gworld">
+                        <title>Weight can vary even if mass does not</title>
                         <statement>
                         <p>While talking to your friend \studentB<idx><h sortby="\studentB">\studentB</h></idx>, you learn that \hisB\ parents, \studentE<idx><h sortby="\studentE">\studentE</h></idx> and \studentF<idx><h sortby="\studentF">\studentF</h></idx>, grew up in Norway, visited Puerto Rico, and climbed Mount Everest before settling in the United States.  Using <xref ref="t-gworld" text="type-local" />, compute \studentE's weight at each location, assuming \hisE\ mass is \massE:
                                 <xref ref="A-Norway" text="title">Norway</xref>,
@@ -3077,11 +3274,13 @@ Earth feels a force by \studentZ\ to the left.
                         <answer xml:id="A-Everest">[Mount Everest] <m>F_g = mg = (\massE)(9.763\unitfrac{m}{s^2}) \ = \ \sig{927}{.5}{N}</m>.</answer>
                 </example>
 
-                <p>Because the variation is small, throughout this text when we are considering situations <q>at the surface of the Earth</q>, we will assume that
+                <p xml:id="p-g-to-3-digits">Because the variation is small, throughout this text when we are considering situations <q>at the surface of the Earth</q>, we will assume that
                 <assemblage><p>the acceleration due to gravity is <m>9.81\unitfrac{m}{s^2}</m> to three significant figures.</p></assemblage>
+                This statement is making an approximation that allows us to compute values to a useful precision.  You should note from <xref ref="t-gworld" text="type-local" /> that the value of <m>g</m> does vary around the world, but that your distance from the center of the Earth has to change <em>significantly</em> for the value to change by a noticeable amount.  The consequence of this is that whenever we consider motion that stays within a vertical range of tens-of-meters, we can consider the acceleration due to gravity to be constant.  Sometimes this is referred to as being <q>locally constant</q>.  This is an example of a useful approximation that is essentially true, as discussed in <xref ref="s-effective2" text="type-global" />.
                 </p>
 
                 <example xml:id="se-t-gworld">
+                        <title>The acceleration due to gravity is only <q>locally constant</q></title>
                         <statement>
                         <p>Consider the values for the acceleration due to gravity at various locations around the Earth.  Look for a <xref ref="A-gworld" text="title">pattern</xref> in the values as the latitude increases.  You might notice the values for Mount Everest and Denver; Can you <xref ref="A-gpeaks" text="title">explain</xref> any peculiarity? </p>
                         </statement>
@@ -3107,7 +3306,7 @@ Earth feels a force by \studentZ\ to the left.
                         <row><cell>Brownsville, TX</cell>
                                 <cell><m>26^\circ 1' 6'' \unit{N}</m> </cell> <cell><m>97^\circ 27' 14'' \unit W</m></cell>
                                 <cell><m>9.788 \unitfrac{m}{s^2}</m></cell></row>
-                        <row><cell>Mount Everest</cell>
+                        <row><cell>Mount Everest (Napal/China border)</cell>
                                 <cell><m>27^\circ 59' 17'' \unit{N}</m> </cell> <cell><m>86^\circ 55' 31'' \unit E</m></cell>
                                 <cell> <m>9.763\unitfrac{m}{s^2}</m></cell></row>
                         <row><cell>Cincinnati, OH</cell>
@@ -3164,63 +3363,26 @@ Earth feels a force by \studentZ\ to the left.
                 <p>Let's consider some specific situations<ellipsis /> In <xref ref="se-FNB" text="type-global" /><todo>DO we need to repeat the example here? no?</todo>, \studentB\ felt the downwards gravitational force even while \heB\ was standing on the ground.  We noticed that \heB\ was not falling (and so not accelerating).  Colloquially, we say that the ground is supporting \studentB.  This support force is keeping \studentB\ from passing through the floor; this is a normal force.  The normal force from the floor is acting upwards, which is normal (perpendicular) to the surface of the floor.  <xref ref="f-firstFBDupdate" text="type-global" /> updates the free-body diagrams of <xref ref="f-firstFBD" text="type-global" /> to show how the gravitational and normal forces impact that calculation.</p>
 
                 <example xml:id="f-firstFBDupdate">
-                        <title>An updated version of <xref ref="f-firstFBD" text="type-global" />, people pushing a box.</title>
+                        <title>People pushing a box also feel the gravitational and the normal forces</title>
                         <idx><h>Free-Body Diagrams</h><h>Images</h></idx>
 
-                        <p>Again, we can start by drawing a picture of the situation.  The description is the same as it was for <xref ref="f-firstFBD" text="type-global" />.  In addition to those forces, each of the three bodies has a downwards gravitational force.  This analogous to the calculation in <xref ref="se-weightA" text="type-global" />, which was only for \studentA<idx><h sortby="\studentA">\studentA</h></idx>; but you can calculate the weight for the mass in <xref ref="se-netF-a" text="type-global" /> and \studentB<idx><h sortby="\studentB">\studentB</h></idx>'s weight was computed in <xref ref="se-FNB" text="type-global" />.  In addition to the downward gravitational force (the weight), Newton's second law and the fact that nothing is accelerating up or down together tells us that there must also be a normal force on each body.  This is analogous to the calculation in <xref ref="se-FNB" text="type-global" />, which was only for \studentB; but you can deduce it for the object and for \studentA.</p>
+                        <p>Let's start from a familiar example so that we focus our attention on the <em>new</em> aspect.  Starting from <xref ref="f-firstFBD" text="type-global" />, we can observe that each of the three bodies also has a downwards gravitational force.  This is analogous to the calculation in <xref ref="se-weightA" text="type-global" />, which was only for \studentA<idx><h sortby="\studentA">\studentA</h></idx>; but you can calculate the weight for the mass in <xref ref="se-netF-a" text="type-global" /> and \studentB<idx><h sortby="\studentB">\studentB</h></idx>'s weight was computed in <xref ref="se-FNB" text="type-global" />.  In addition to the downward gravitational force (the weight), Newton's second law and the fact that nothing is accelerating up or down together tells us that there must also be a normal force on each body.  This is analogous to the calculation in <xref ref="se-FNB" text="type-global" />, which was only for \studentB; but you can deduce it for the object and for \studentA.</p>
                         <figure xml:id="f1-firstFBDupdate">
                                 <caption><p>\studentA\ and \studentB\ push on a box</p></caption>
-                                <image xml:id="i-firstFBDupdate-drawing" source="images/i-firstFBDupdate-drawing.svg" width="75%">
-                                <description><p>The drawing of two people pushing on a box.</p></description>
-                                <latex-image-code>
-                                        <![CDATA[
-                                        %>
-                                        \begin{tikzpicture}
-                                                \draw [thick, gray] (0,0) -- (7,0);
-                                                \draw [thick, darkblue] (2,.1) -- (4,.1);
-                                                \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
-                                                \draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
-                                                \draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
-                                                \draw (3,1) arc (-90:90:.1);
-                                                \draw (3.1,1.1) -- (4.7,1.1);
-                                                \node [above] at (1.375,1.75) {\studentA};
-                                                \node [above] at (2.625,1.2) {object};
-                                                \node [above] at (5.375,1.5) {\studentB};
-                                                \node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
-                                        \end{tikzpicture}]]>
-<!--
-\begin{picture}(200,100)(-30,-25)
-% Dimensions and offset: (width,height)(x offset,y offset)
-% Insert picture commands (\line,\circle, etc...) here:
-\put(0,0){\line(1,0){200}}
-\put(60,2){\line(1,0){60}}
-\drawbox{30}{1}{20}{50} %\studentA
-\drawbox{50}{25}{18}{5} %\studentA's arms
-\drawbox{70}{3}{20}{30} % object
-\drawbox{150}{1}{20}{40} %\studentB
-\drawbox{134}{25}{16}{5} %\studentB's arms
-\put(90,27.5){\oval(2,2)[r]}
-\put(91,27.5){\line(1,0){43}}
-\put(30,53){\scriptsize \studentA}
-\put(70,35){\scriptsize object}
-\put(150,43){\scriptsize \studentB}
-\put(60,-12){\begin{minipage}{60pt}
-\scriptsize The object is on a sheet of ice.
-\end{minipage}}
-\end{picture}
--->
-                                </latex-image-code>
+                                <image xml:id="i-firstFBDupdate-drawing" source="images/i-firstFBD-drawing.svg" width="75%">
+                                <description><p>The same drawing of two people pushing on a box as was seen in the earlier example.</p></description>
                                 </image>
                         </figure>
 
-                        <p>Now, as in <xref ref="f-firstFBD" text="type-global" />, we will draw a free-body diagram for each individual separately.  However, this time we will use <xref ref="se-weightA" text="type-global" /> and <xref ref="se-FNB" text="type-global" /> to include the gravitational force (the weight) and the normal force.</p>
+                        <p>Now, as in <xref ref="f2-firstFBD" text="type-global" />, we will draw a free-body diagram for each individual separately.  However, this time we will use the information calculated in <xref ref="se-weightA" text="type-global" /> and <xref ref="se-FNB" text="type-global" /> to include the gravitational force (the weight) and the normal force.  I will use the <xref ref="d-interaction"><q>on-by</q> notation</xref> to distinguish the forces.</p>
 
                         <figure xml:id="f2-firstFBDupdate">
                                 <caption>
-                                        <p>Even with the vertical forces, \studentA\ still has a <m>\vec F_\mathrm{net} = -5.0\unit N \ihat</m>.
-                                        <ellipsis /> Even with the vertical forces, the object still has a <m>\vec F_\mathrm{net} = +9.0\unit N \ihat</m>.
-                                        <ellipsis /> Even with the vertical forces, \studentB\ still has a <m>\vec F_\mathrm{net} = -4.0\unit N \ihat</m>.
-                                        </p>
+                                        <sidebyside widths="30% 30% 30%">
+                                        <p>Even with the vertical forces, \studentA\ still has a <m>\vec F_\mathrm{net} = -5.0\unit N \ihat</m>.</p>
+                                        <p>Even with the vertical forces, the object still has a <m>\vec F_\mathrm{net} = +9.0\unit N \ihat</m>.</p>
+                                        <p>Even with the vertical forces, \studentB\ still has a <m>\vec F_\mathrm{net} = -4.0\unit N \ihat</m>.</p>
+                                        </sidebyside>
                                 </caption>
                                 <sidebyside widths="30% 30% 30%">
                                         <image xml:id="i-firstFBDupdate-FBD1" source="images/i-firstFBDupdate-FBD1.svg">
@@ -3236,13 +3398,13 @@ Earth feels a force by \studentZ\ to the left.
                                                         %\draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
                                                         %\draw (3,1) arc (-90:90:.1);
                                                         %\draw (3.1,1.1) -- (4.7,1.1);
-                                                        \node [above] at (1.375,1.75) {\studentA};
-                                                        %\node [above] at (2.625,1.2) {object};
-                                                        %\node [above] at (5.375,1.5) {\studentB};
+                                                        \node [left above, gray] at (1.375,1.75) {\studentA};
+                                                        %\node [right above, gray] at (2.625,1.2) {object};
+                                                        %\node [left above, gray] at (5.375,1.5) {\studentB};
                                                         %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
-                                                        \draw [->, -latex, green] (1.375,.875) -- (.575,.875);  \node [above right] at (.575,.875) {$5\unit N$};
-                                                        \draw [->, -latex] (1.375,.90) -- (1.375,4.9);  \node [below right] at (1.375,4.9) {$834 \unit N$};
-                                                        \draw [->, -latex] (1.375,.85) -- (1.375,-3.15);  \node [above right] at (1.375,-3.15) {$834 \unit N$};
+                                                        \draw [->, -latex, green] (1.375,.875) -- (.575,.875);  \node [above right, green] at (.575,.875) {\small $5\unit N$};
+                                                        \draw [->, -latex, cyan] (1.375,.90) -- (1.375,4.9);  \node [below right, cyan] at (1.375,4.9) {\small $834 \unit N$};
+                                                        \draw [->, -latex, brown] (1.375,.85) -- (1.375,-3.15);  \node [above right, brown] at (1.375,-3.15) {\small $834 \unit N$};
                                                         \node [left, white] at (.375,.875) {.};
                                                         \node [right, white] at (2.375,.875) {.};
                                                 \end{tikzpicture}]]>
@@ -3273,14 +3435,14 @@ Earth feels a force by \studentZ\ to the left.
                                                         %\draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
                                                         %\draw (3,1) arc (-90:90:.1);
                                                         %\draw (3.1,1.1) -- (4.7,1.1);
-                                                        %\node [above] at (1.375,1.75) {\studentA};
-                                                        \node [above] at (2.625,1.2) {object};
-                                                        %\node [above] at (5.375,1.5) {\studentB};
+                                                        %\node [left above, gray] at (1.375,1.75) {\studentA};
+                                                        \node [right above, gray] at (2.625,1.2) {object};
+                                                        %\node [left above, gray] at (5.375,1.5) {\studentB};
                                                         %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
-                                                        \draw [->, -latex, green] (2.625,.65) -- (3.425,.65);  \node [below left] at (3.425,.65) {$5\unit N$};
-                                                        \draw [->, -latex, blue]   (2.625,.75) -- (3.225,.75);  \node [above left] at (3.225,.75) {$4\unit N$};
-                                                        \draw [->, -latex] (2.625,.8) -- (2.625,2.2);  \node [below right] at (2.625,2.2) {$20 \unit N$};
-                                                        \draw [->, -latex] (2.625,.6) -- (2.625,-.8);  \node [above right] at (2.625,-.8) {$20 \unit N$};
+                                                        \draw [->, -latex, green] (2.625,.65) -- (3.425,.65);  \node [below left, green] at (3.425,.65) {$5\unit N$};
+                                                        \draw [->, -latex, blue]   (2.625,.75) -- (3.225,.75);  \node [above left, blue] at (3.225,.75) {$4\unit N$};
+                                                        \draw [->, -latex, teal] (2.625,.8) -- (2.625,2.2);  \node [below right, teal] at (2.625,2.2) {$20 \unit N$};
+                                                        \draw [->, -latex, violet] (2.625,.6) -- (2.625,-.8);  \node [above right, violet] at (2.625,-.8) {$20 \unit N$};
                                                         \node [left, white] at (1.625,.875) {.};
                                                         \node [right, white] at (3.625,.875) {.};
                                                 \end{tikzpicture}]]>
@@ -3311,13 +3473,13 @@ Earth feels a force by \studentZ\ to the left.
                                                         \draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
                                                         %\draw (3,1) arc (-90:90:.1);
                                                         %\draw (3.1,1.1) -- (4.7,1.1);
-                                                        %\node [above] at (1.375,1.75) {\studentA};
-                                                        %\node [above] at (2.625,1.2) {object};
-                                                        \node [above] at (5.375,1.5) {\studentB};
+                                                        %\node [left above, gray] at (1.375,1.75) {\studentA};
+                                                        %\node [right above, gray] at (2.625,1.2) {object};
+                                                        \node [left above, gray] at (5.375,1.5) {\studentB};
                                                         %\node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
-                                                        \draw [->, -latex, blue]   (5.375,.7) -- (4.775,.7);  \node [above right] at (4.775,.7) {$4\unit N$};
-                                                        \draw [->, -latex] (5.375,.75) -- (5.375,4.25);  \node [below right] at (5.375,4.25) {$736 \unit N$};
-                                                        \draw [->, -latex] (5.375,.65) -- (5.375,-2.85);  \node [above right] at (5.375,-2.85) {$736 \unit N$};
+                                                        \draw [->, -latex, blue]   (5.375,.7) -- (4.775,.7);  \node [above right, blue] at (4.775,.7) {$4\unit N$};
+                                                        \draw [->, -latex, orange] (5.375,.75) -- (5.375,4.25);  \node [below right, orange] at (5.375,4.25) {$736 \unit N$};
+                                                        \draw [->, -latex. magenta] (5.375,.65) -- (5.375,-2.85);  \node [above right, magenta] at (5.375,-2.85) {$736 \unit N$};
                                                         \node [left, white] at (4.375,.875) {.};
                                                         \node [right, white] at (6.375,.875) {.};
                                                 \end{tikzpicture}]]>
@@ -3336,6 +3498,8 @@ Earth feels a force by \studentZ\ to the left.
                                         </image>
                                 </sidebyside>
                         </figure>
+                        
+                        <p>The normal forces and the gravitational forces are all caused by each object interacting with the Earth.  So, while we can use Newton's second law to deduce the value of each normal force, the normal and gravitational forces are not third-law pairs. In order to see the third-law pairs, please review <xref ref="f-firstFBD-third" text="type-global" /></p>
 
                         <sidebyside widths="50% 50%" haligns="center right">
                                 <p></p>
@@ -3349,6 +3513,7 @@ Earth feels a force by \studentZ\ to the left.
                 <p>Let's consider some other specific situations<ellipsis /> If you decide to lean against a wall, the wall will provide a normal force that pushes horizontally, keeping you from moving through the wall.</p>
 
                 <example xml:id="se-ladderN">
+                        <title>Ladders push on the wall and on the floor</title>
                         <statement>
                                 <p>\studentC\ leans a <m>22.7\unit{kg}</m> ladder against a wall at an angle of <m>75.5^\circ</m>, consistent with
                                 <url href="https://www.osha.gov/">OSHA</url> standard
@@ -3378,6 +3543,7 @@ Earth feels a force by \studentZ\ to the left.
                 <p>If you lose control of your car and run into a tree, the tree also provides a normal force pushing the car away from the tree; this normal force will stop the car.</p>
 
                 <example xml:id="se-tree">
+                        <title>The normal force stops a crashing car</title>
                         <statement>
                                 <p>\studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> is driving home after a late night of studying at the library.  \HeZ\ is kind of tired and drifts off during the drive.  While traveling <m>\vec v_i = 13.0\unitfrac ms \ihat</m>, \studentZ\ runs into a tree, bringing \hisZ\ car <m>(m=2.1\ten{3}\unit{kg})</m> to a halt in <m>\Delta t = 0.243\unit s</m>.  (\studentZ\ remains unharmed because \heZ\ was awake enough to wear \hisZ\ seatbelt and had a car with a functioning airbag.  Whew.)  Find the normal force by the tree on the car. </p>
 
@@ -3436,6 +3602,7 @@ Earth feels a force by \studentZ\ to the left.
                 <p>(Notice that <xref ref="se-tree" text="type-global" /> also shows why it is not always necessary to consider the vertical forces when we <q>know</q> that they cancel.)  If you throw a ball at the ceiling, the ceiling will provide a normal force downwards, keeping the ball from moving through the surface.</p>
 
                 <example xml:id="se-ceiling">
+                        <title>The normal force acts to reflect objects off a surface (ceiling)</title>
                         <statement>
                                 <p>\studentC<idx><h sortby="\studentC">\studentC</h></idx> recalls that one time \heC\ got bored one day in physics class (what?!?) and tossed a baseball (<m>m_b = 0.145\unit{kg}</m>) at the ceiling<ellipsis /> a little too hard <ellipsis /> as recounted in <xref ref="ex-ceiling" text="type-global"/>.  The acceleration during that collision with the ceiling was <m>\vec a = - \sigfrac{28.0}{9}{m}{s^2} \jhat</m>.  Find the normal force by the ceiling on the ball.</p>
                         </statement>
@@ -3668,6 +3835,21 @@ Earth feels a force by \studentZ\ to the left.
                 <p>Bathroom scales use leverage (i.e., <xref provisional="s-leverarm" text="title">torque</xref>) and a <xref provisional="s-springs" text="title">spring</xref>-system to balance the force pressing into them.  The mechanism can be seen at <url href="http://home.howstuffworks.com/inside-scale-htm">How Stuff Works</url>.</p>
 
                 </subsection>
+                
+                
+                <subsection>
+                        <title>The normal force and the third law</title>
+                        
+                <p>the third law</p>
+                
+                <example xml:id="f-firstFBD-third">
+                        <title>Using the second and third laws to find all forces acting</title>
+                        <statement>
+                        <p>See <xref ref="f-firstFBDupdate" text="type-global" /> and add the FBD for the Earth.</p>
+                        </statement>
+                </example>
+                
+                </subsection>
 
         </section>
         <section xml:id="s-FT"><title>Tension</title>
@@ -3740,6 +3922,7 @@ Earth feels a force by \studentZ\ to the left.
                         <p>Ropes and chains (and beams) can use tension to support (from above) dangling objects.</p>
 
                         <example xml:id="se-purse">
+                                <title>Tension supports hanging objects</title>
                                 <statement>
                                         <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> hangs \hisD\ purse <m>(m=1.36\unit{kg})</m> on a hook.  How much tension is in the shoulder strap to keep it from falling?</p>
                                 </statement>
@@ -3794,7 +3977,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p>We can further update this by considering the case where \studentB\ pulls the rope up at an angle.  In that case, some of the tension is used to drag the box and some is used to reduce the normal force.  In <xref ref="f-firstFBDangle" text="type-global" />, we will have \studentA\ continue to push with <m>5.0\unit{N}</m> horizontally and have \studentB\ pull with <m>4.0\unit{N}</m> at a <m>14^\circ</m> angle above the horizontal.  You should note that since the tension on the object is pulling up, helping the normal force, this allows the normal force (what a scale would read) to be a little smaller. You should also note that since the tension on \studentB\ is pulling down, counter-acting the normal force, this requires the normal force (what a scale would read) to be a little larger.</p>
 
-                <example xml:id="f-firstFBDangle"> 
+                <example xml:id="f-firstFBDangle">
                         <title>Pushing a box at an angle; A modification of <xref ref="f-firstFBDupdate" text="title" />.</title>
                         <idx><h>Free-Body Diagrams</h><h>Images</h></idx>
                         <p>Again, we can start by drawing a picture of the situation.  The description is the same as it was for <xref ref="f-firstFBDupdate" text="title" /> except that \studentB\ pulls at a slight angle upwards.  We will again need the gravitational force for \studentA<idx><h sortby="\studentA">\studentA</h></idx> (<xref ref="se-weightA" text="type-global" />) and \studentB<idx><h sortby="\studentB">\studentB</h></idx> (<xref ref="se-FNB" text="type-global" />).  As before, since nothing is accelerating up or down together, there must also be a normal force on each body.</p>
@@ -3911,7 +4094,7 @@ Earth feels a force by \studentZ\ to the left.
                                                         \draw [->, -latex] (2.625,.6) -- (2.625,-.8);  \node [above right] at (2.625,-.8) {$20 \unit N$};
                                                         \node [left, white] at (1.625,.875) {.};
                                                         \node [right, white] at (3.625,.875) {.};
-                                                        
+
                                                         \draw [thick, blue] (1.75,-2) -- (3.4, -2) -- (3.4,-1.59) -- (1.75,-2);
                                                         \draw (1.75,-2) arc (0:14:.2);
                                                         \node [above right] at (1.75,-2) {$14^\circ$};
@@ -4009,6 +4192,13 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
         </section>
+        <conclusion><title>List of examples</title>
+                <list-of elements="example" scope="chapter" />
+        </conclusion>
+        <conclusion>
+        <p><date>(Revised September 1, 2017)</date></p>
+        <p><date>(Compiled <today />)</date></p>
+        </conclusion>
 
 </chapter>
 
