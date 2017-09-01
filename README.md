@@ -30,3 +30,9 @@ To complie the XML to LaTeX
 To render the images in SVG (useful for HTML)
 	~/Desktop/Book/mathbook/script/mbx -v -c latex-image -f svg -d images ~/Desktop/Book/Itself/ABIP.xml
 	~/Desktop/Book/mathbook/script/mbx -v -c latex-image -r [specific image reference] -f svg -d images ~/Desktop/Book/Itself/ABIP.xml
+
+To remove the \student latex commands:
+	sed -i.bak -f ABIP.sed ABIP.xml
+	(compile it)
+	mv ABIP.xml.bak ABIP.xml
+	(git status, etc)
