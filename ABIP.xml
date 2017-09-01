@@ -275,7 +275,7 @@
         <rename element="biographical" lang="en-US">Touchstone</rename>
         <rename element="heuristic" lang="en-US">Translation</rename>
 
-<!-- 
+<!--
         <feedback>
                 <url>mailto:christj@thomasmore.edu</url>
         </feedback>
@@ -506,7 +506,7 @@
 
         <conclusion><title>List of examples</title>
                 <list-of elements="example" scope="chapter" />
-        </conclusion>                                        
+        </conclusion>
 </chapter>
 
 
@@ -1026,6 +1026,8 @@
 
         <p>One final case that should be mentioned up front is to notice that humans experience the Earth <em>as if</em> it were stationary.
         <todo><p>Decide if this should be filled out more or if it should reference the variety of places where the text fills out these kinds of details.</p></todo></p>
+
+        <p>Sometimes we imagine objects to be <q>massless</q> or <q>frictionless</q>.  In these instances we <em>usually</em> mean that the mass (or amount of friction) is small enough to not impact the significant digits of our calculation.  In those cases, if we consider a more-precise measurement/computation, then the mass (or amount of friction) would impact the significant digits.  (See comments in <xref ref="ex-atwood-tension" text="type-global" />.)</p>
 
         </section>
         <conclusion><title>List of examples</title>
@@ -3498,7 +3500,7 @@ Earth feels a force by \studentZ\ to the left.
                                         </image>
                                 </sidebyside>
                         </figure>
-                        
+
                         <p>The normal forces and the gravitational forces are all caused by each object interacting with the Earth.  So, while we can use Newton's second law to deduce the value of each normal force, the normal and gravitational forces are not third-law pairs. In order to see the third-law pairs, please review <xref ref="f-firstFBD-third" text="type-global" /></p>
 
                         <sidebyside widths="50% 50%" haligns="center right">
@@ -3610,21 +3612,25 @@ Earth feels a force by \studentZ\ to the left.
                         <solution>
                                 <p>There are five stages to the motion: (a) throwing, (b) falling up, (c) hitting the ceiling, (d) falling down, and (e) catching.  We can show the forces involved in each (although we only care about the forces during (c) hitting the ceiling).</p>
 
+                                <figure xml:id="f-ceiling">
+                                        <caption>
+                                                <p>When a ball is thrown there are five distinct stages because the forces on the ball change and we can, at this point, only manage to describe a situation in which the forces do not change. </p>
+                                        </caption>
                                 <sidebyside widths="19% 19% 19% 19% 19%">
                                         <image xml:id="i-se-ceiling-a" source="images/i-se-ceiling-a.svg">
                                         <latex-image-code>
-        \color{lightgray}
-        \fbox{\begin{minipage}[b]{55pt}
         \begin{picture}(50,100)(0,0)
-        \put(25,25){\circle{10}}
-        \put(25,26){\vector(0,1){25}}
-        \put(25,24){\vector(0,-1){15}}
-        \put(28,35){<m>F_\mathrm{throw}</m>}
-        \put(28,10){<m>F_g</m>}
+        \put(25,25){\color{lightgray}\circle{10}}
+        \put(25,26){\color{lightgray}\vector(0,1){25}}
+        \put(25,24){\color{lightgray}\vector(0,-1){15}}
+        \put(28,35){\color{lightgray}<m>F_\mathrm{throw}</m>}
+        \put(28,10){\color{lightgray}<m>F_g</m>}
+        \put(0,0){\centering{\color{lightgray} (a) throwing}}
+        \put(0,0){\color{lightgray}\line(0,1){100}}
+        \put(0,0){\color{lightgray}\line(1,0){50}}
+        \put(50,100){\color{lightgray}\line(0,-1){100}}
+        \put(50,100){\color{lightgray}\line(-1,0){50}}
         \end{picture}
-        \centering{(a) throwing}
-        \end{minipage}}
-        \color{rgb:red,0;green,2;blue,1}
                                         </latex-image-code>
                                         </image>
                                         <image xml:id="i-se-ceiling-b" source="images/i-se-ceiling-b.svg">
@@ -3688,6 +3694,7 @@ Earth feels a force by \studentZ\ to the left.
                                         </latex-image-code>
                                         </image>
                                 </sidebyside>
+                                </figure>
 
                                 <p>In this particular problem, we are only concerned with step (c) when the ball hits the ceiling, because that is the only part where the normal force acts. <xref provisional="se-throw-up" text="type-global" /> will describe what happens during steps (a) and (e).</p>
 
@@ -3835,20 +3842,20 @@ Earth feels a force by \studentZ\ to the left.
                 <p>Bathroom scales use leverage (i.e., <xref provisional="s-leverarm" text="title">torque</xref>) and a <xref provisional="s-springs" text="title">spring</xref>-system to balance the force pressing into them.  The mechanism can be seen at <url href="http://home.howstuffworks.com/inside-scale-htm">How Stuff Works</url>.</p>
 
                 </subsection>
-                
-                
+
+
                 <subsection>
                         <title>The normal force and the third law</title>
-                        
+
                 <p>the third law</p>
-                
+
                 <example xml:id="f-firstFBD-third">
                         <title>Using the second and third laws to find all forces acting</title>
                         <statement>
                         <p>See <xref ref="f-firstFBDupdate" text="type-global" /> and add the FBD for the Earth.</p>
                         </statement>
                 </example>
-                
+
                 </subsection>
 
         </section>
@@ -4190,8 +4197,585 @@ Earth feels a force by \studentZ\ to the left.
                 </example>
 
                 </subsection>
+                
+                <subsection><title>Pulleys</title>
+
+                <p>While the flexibility of ropes makes them inconvenient for pushing, their flexibility makes them <em>very useful</em> for changing the direction of the pull.  The mechanism for changing the direction is the pulley.  Furthermore, by allowing us to change the direction of the pull, we are also able to double, triple, or further improve the strength of the pull.  The term for this is <q>the mechanical advantage</q> of a pulley-system.</p>
+
+                <p>First we will consider three simple cases of redirecting the force.  In each of these cases, I will <xref ref="s-effective2" text="title">assume</xref> that the pulley and rope have no mass and that there is no friction in the turning of the pulley (assume it is trivially easy to spin).  If we do not make this assumption, then the problem gets significantly more complicated.<todo>add a reference to the section (problem?) where this is considered.</todo></p>
+                
+                <example><title>The tension in a rope over a pulley</title>
+                        <statement>
+                        <sidebyside widths="74% 24%">
+                                <p>\studentA<idx><h sortby="\studentA">\studentA</h></idx> decides to hold a box that weighs <m>20\unit N</m> using a pulley-system.  What is the tension in the rope?</p>
+                                <figure>
+                                        <caption>Tension in a rope hanging over a pulley</caption>
+                                        <image xml:id="i-rope-pulley" source="images/i-rope-pulley.svg">
+                                        <description>\studentA holds a rope that drapes over a pulley and supports a mass.</description>
+                                        <latex-image-code>
+\begin{picture}(100,120)(0,7)
+\put(31,105){\oval(36,36)[t]}
+\put(31,105){\circle{33}}
+\put(31,106){\line(0,1){29}}
+\put(49,105){\line(0,-1){62}}
+\put(13,105){\line(0,-1){70}}
+\put(-30,7){\line(1,0){100}} % floor
+\put(0,135){\line(1,0){62}} % ceiling
+\multiput(5,135)(10,0){6}{\line(1,1){5}} % immovable
+%
+\drawbox{-26}{8}{20}{50} %\studentA
+\drawbox{-6}{32}{18}{5} %\studentA's arms
+\put(-26,60){\scriptsize \studentA}
+%
+%\drawbox{5}{19}{16}{16}
+%\put(6,25){\small <m>m_1</m>}
+%
+\drawbox{41}{19}{16}{24}
+\put(42,25){\small <m>m</m>}
+%
+%\put(49,-1){\vector(0,1){20}}
+%\put(49,-1){\vector(0,-1){20}}
+%\put(51,-1){\tiny <m>12\unit m</m>}
+\end{picture}
+                                        </latex-image-code>
+                                        </image>
+                                </figure>
+                        </sidebyside>
+                        </statement>
+                        <solution>
+                                <p>Since the mass is in equilibrium, the net force is zero and the tension must balance the weight.  This tells us that the tension in the rope is <m>20 \unit N</m>.</p>
+
+                                <p>If the pulley were difficult to turn (had friction) that stickiness could help support the mass and the tension on \studentA's side might be less than <m>20\unit N</m>; but since we assumed the pulley to be frictionless, \studentA\ must provide the full <m>20\unit N</m> of tension to the rope.</p>
+                        </solution>
+                </example>
+
+                <p>The interesting aspect is that \studentA\ must pull <em>down</em> in order to produce the <em>upward</em> tension on the box.  This means that both \studentA\ and the mass are pulling down.  Since the rope is draped over the pulley, the pulley feels <m>40\unit N</m> downwards, <m>20\unit N</m> from the tension supporting the mass and <m>20\unit N</m> from \studentA\ who is creating the tension that supports the mass.  This means that the second rope that is connecting the pulley to the ceiling must be supporting the full <m>40\unit N</m> in order to keep the pulley in equilibrium.</p>
+
+
+                </subsection>
+
+                <subsection><title>Interesting Complications</title>
+
+                        <subsubsection><title>What is the net force on the rope itself?</title>
+
+                        <p>The answer to this depends on how complicated you want the answer to be (recall the discussion about effective theories in <xref ref="s-effective2" text="type-global" />).  Some reasonable answers are:
+                        <ul>
+                        <li><p> If the rope (and the attachments) are static, then the net force on the rope must be zero even while it maintains the tension.  It is also possible that the rope is accelerating, in which case the net force on the rope while it transfers the forces between the objects at each end is whatever is necessary to produce the acceleration <m>\vec F_\mathrm{net} = m_\mathrm{rope} \vec a_\mathrm{rope}</m>.</p></li>
+                        <li><p> A different answer is to assume that the mass of the rope is small enough that whether it is in equilibrium or accelerating, it does not require a net force and it merely passes its tension through to the object at the other end.</p></li>
+                        </ul>
+                        </p>
+
+                        </subsubsection>
+                        
+                        <subsubsection xml:id="sss-multiple-mass"><title>Multiple Masses</title>
+                        <aside><title>Referenced by</title> <p><xref provisional="ss-tension-support" text="type-global"/></p></aside>
+
+                        <p>Now that we have a few examples of tension under our belts, we can consider some more interesting examples.</p>
+
+                        <p><xref ref="ex-multiweight-tension" text="type-hybrid" /> considers the case of hanging multiple masses, which extends the ideas of <xref ref="ss-tension-support" text="type-hybrid"/>.</p>
+                        
+                        <example xml:id="ex-multiweight-tension"><title>Tension between masses hung in a chain</title>
+                        <aside><title>Referenced by</title> <p><xref provisional="sss-multiple-mass"  text="type-global" /></p></aside>
+
+                                <statement>
+                                        <p>While preparing to hang some ornament on a tree, you chain them from a hook on the wall.  You hang ornament 1 from ornament 2 from ornament 3.  What is the tension in each subsequent string?</p>
+                                </statement>
+                                <solution>
+                                        <p>The first thing we should do is notice what information is given to us and make sure that everything is in consistent units.  I will convert everything to <xref ref="ss-convertunits" text="title">SI units</xref>.</p>
+                                </solution>
+                        </example>
+                        
+                        <p><xref ref="ex-multidrag-tension" text="type-global" /> considers the case of dragging multiple masses, which extends the ideas of <xref ref="ss-tension-drag" text="type-hybrid"/>.</p>
+                        
+                        <example xml:id="ex-multidrag-tension"><title>Tension in a caravan</title>
+                        <aside><title>Referenced by</title> <p><xref provisional="sss-multiple-mass"  text="type-global" /></p></aside>
+
+                                <statement>
+                                        <p>While pulling a sled on which your son sits, your son's sled is tied to a sled on which your dog sits.  Your dog's sled is then connected to a sled with provisions for the day.  What is the tension in each subsequent string?</p>
+                                </statement>
+                                <solution>
+                                        <p>The first thing we should do is notice what information is given to us and make sure that everything is in consistent units.  I will convert everything to <xref ref="ss-convertunits" text="title">SI units</xref>.</p>
+                                </solution>
+                        </example>
+                        
+                        <p>You should note that these examples are essentially expressing the same idea in two different contexts.</p>
+
+                        </subsubsection>
+                        
+                        <subsubsection xml:id="sss-Atwood"><title>Atwood's Machine</title>
+
+                        <example xml:id="ex-atwood-acc"><title>The acceleration of masses on Atwood's Machine</title>
+                                <statement>
+                                        <sidebyside widths="70% 30%">
+                                                <p>The<todo>imported a homework problem from Giordano.  Need to modify it to fit my purposes.</todo> two crates in the figure (p. 114) hang over a pulley (in what is called an <q>Atwood's machine</q>).  I will select <m>m_1=35\unit{kg}</m> (because it looks smaller) and <m>m_2=85\unit{kg}</m> (because it looks bigger).  We will assume that the pulley is massless and frictionless (so that the tension is the same throughout the rope).  Find the acceleration and the time it takes <m>m_2</m> to accelerate down for the <m>12\unit m</m> to the floor.</p>
+                                                
+                                                <figure xml:id="f-atwood-acc">
+                                                        <caption>Masses hung over Atwood's Machine</caption>
+                                                        <image xml:id="i-atwood-acc" source="image/i-atwood-acc">
+                                                        <description>Masses hung over Atwood's Machine</description>
+                                                        <latex-image-code>
+\begin{picture}(100,150)(0,-50)
+\put(31,80){\oval(36,36)[t]}
+\put(31,80){\circle{33}}
+\put(31,81){\line(0,1){29}}
+\put(49,80){\line(0,-1){62}}
+\put(13,80){\line(0,-1){70}}
+%
+\put(5,-6){\line(0,1){16}}
+\put(5,-6){\line(1,0){16}}
+\put(21,10){\line(0,-1){16}}
+\put(21,10){\line(-1,0){16}}
+\put(6,0){\small $m_1$}
+%
+\put(41,-6){\line(0,1){24}}
+\put(41,-6){\line(1,0){16}}
+\put(57,18){\line(0,-1){24}}
+\put(57,18){\line(-1,0){16}}
+\put(42,0){\small $m_2$}
+%
+\put(49,-26){\vector(0,1){20}}
+\put(49,-26){\vector(0,-1){20}}
+\put(51,-26){\tiny $12\unit m$}
+\end{picture}
+                                                        </latex-image-code>
+                                                        </image>
+                                                </figure>
+                                        </sidebyside>
+                                </statement>
+                                <solution>
+                                        <p>The easy way to do this is to say that <m>m_1</m> pulls down on the left with 
+                                        <m>F_{g1} = (35\unit{kg})(9.81\unitfrac{m}{s^2})=\sig{34}{3.4}{N}</m> and <m>m_2</m> pulls down on the right with
+                                        <m>F_{g2}=(85\unit{kg})(9.81\unitfrac{m}{s^2})=\sig{83}{3.5}{N}</m> for a difference of <m>F_{net} = \sig{49}{0}{N}</m> down to the right.  Since this has to move both <m>m_1</m> and <m>m_2</m>, the acceleration is
+                                                <me> a = \frac{F_{\rm net}}{m_1+m_2} = \frac{\sig{49}{0}{N}}{(35\unit{kg})+(85\unit{kg})} 
+                                                        = \frac{\sig{49}{0}{N}}{\sig{120}{}{kg}} = \sigfrac{4.0}{87}{m}{s^2} </me>
+                                        This acceleration then causes <m>m_2</m> to drop and the time it takes is found from the equation that include distance and time, 
+                                        <md> 
+                                                <mrow> y_f \amp =  y_i + v_i \, t + \frac{1}{2} a \,  t^2 </mrow>
+                                                <mrow> (0\unit m) \amp = (12\unit m) + (0\unitfrac ms) \, t + \frac{1}{2} (-\sigfrac{4.0}{9}{m}{s^2}) \,  t^2 </mrow>
+                                        </md>
+                                        which we can solve for time:
+                                                <me> t \ = \ \sqrt{ \frac{-(12\unit m)}{\frac{1}{2} (-\sigfrac{4.0}{9}{m}{s^2})} } \ = \  \sqrt{ \sig{5.8}{7}{s^2}} \ = \ \sig{2.4}{2}{s} </me>
+                                        </p>
+                                </solution>
+                        </example>
+                        
+                        <p><xref ref="ex-atwood-acc" text="type-hybrid" /> computes the acceleration, but does so in a way that avoids the question of the tension in the rope.  Based on that example, it is possible to then deduce the tension by considering the net force on either of the masses.</p>
+                        
+                        <example xml:id="ex-atwood-tension"><title>Atwood's tension from the acceleration</title>
+                                <statement>
+                                        <p>Given the acceleration from <xref ref="ex-atwood-acc" text="type-hybrid" />, find the tension in the rope.</p>
+                                </statement>
+                                <solution>
+                                        <p>Since that example used the two masses as a single system, it did not reference the <q>internal force</q> of tension.  By considering the two masses as separate objects, the tension is no longer <q>internal</q> to the system.  This allows us to compute the tension with Newton's second law using one or the other mass.  Here we do both to verifyt hat the result is the same.</p>
+                                        
+                                        <sidebyside widths="49% 49%">
+                                                <p>For the lighter mass (on the left),
+                                                <md>
+                                                        <mrow>F_\mathrm{net} \amp = m_1 a_1 </mrow>
+                                                        <mrow> \amp = (35 \unit{kg})(\sigfrac{4.0}{9}{m}{s^2}) </mrow>
+                                                        <mrow> \amp = \sig{14}{3}{N} </mrow>
+                                                </md>
+                                                With the net force and the gravitational force (weight), we can find the tension:
+                                                <md>
+                                                        <mrow> \vec F_\mathrm{net} \amp = \vec F_g + \vec F_T </mrow>
+                                                        <mrow> \vec F_T \amp = \vec F_\mathrm{net} - \vec F_g </mrow>
+                                                        <mrow> \vec F_T \amp = (+\sig{14}{3}{N} \jhat) - (-\sig{34}{3}{N} \jhat) </mrow>
+                                                        <mrow> \vec F_T \amp = +\sig{48}{6}{N} \jhat </mrow>
+                                                </md>
+                                                </p>
+                                                <p>For the heavier mass (on the right),
+                                                <md>
+                                                        <mrow>F_\mathrm{net} \amp = m_1 a_1 </mrow>
+                                                        <mrow> \amp = (85 \unit{kg})(\sigfrac{4.0}{9}{m}{s^2}) </mrow>
+                                                        <mrow> \amp = \sig{34}{8}{N} </mrow>
+                                                </md>
+                                                With the net force and the gravitational force (weight), we can find the tension:
+                                                <md>
+                                                        <mrow> \vec F_\mathrm{net} \amp = \vec F_g + \vec F_T </mrow>
+                                                        <mrow> \vec F_T \amp = \vec F_\mathrm{net} - \vec F_g </mrow>
+                                                        <mrow> \vec F_T \amp = (-\sig{34}{8}{N} \jhat) - (-\sig{83}{3}{N} \jhat) </mrow>
+                                                        <mrow> \vec F_T \amp = +\sig{48}{5}{N} \jhat </mrow>
+                                                </md>
+                                                </p>
+                                        </sidebyside>
+                                        <p>These are consistent to within the precision of our calculation.  You should notice that 
+                                        <ol>
+                                        <li><p>the tension is larger than the weight of the lighter mass and therefore pulls it upwards,</p></li>
+                                        <li><p>the tension is smaller than the weight of the heavier mass and therefore keeps it from falling as fast as it would in freefall.</p></li>
+                                        <li><p>The tension is the same on both sides of the pulley specifically because we assumed that it did not take any effort to turn the pulley.  This is usually expressed with three specific (and independent) assumptions:</p>
+                                                <ol>
+                                                  <li><p>The rope has an insignificant amount of mass -- the rope is <q>massless</q>. (This means that its mass is too small to impact the significant digits.)</p></li>
+                                                  <li><p>The pulley has an insignificant amount of mass -- the pulley is <q>massless</q>. (This means that its inertial mass<fn>See <xref provisional="ss-equivmm" text="type-hybrid" /> for the distinction between <q>mass</q> and <q>inertial mass</q>.</fn> is too small to impact the significant digits.)</p></li>
+                                                  <li><p>The pulley has an insignificant amount of friction -- the pulley is <q>frictionless</q>. (This means that any force that might resist turning the pulley is too small to impact the significant digits.)</p></li>
+                                                </ol>
+                                                </li>
+                                        </ol>
+                                        </p>
+                                </solution> 
+                        </example>
+                        
+                        <p>The examples above are straightforward mathematically, but seem to cause some conceptual problems with students.  Because of this, we can consider the same problem in a way that seems to be easier conceptually, although it is a little more involved mathematically.</p>
+                        
+                        <example xml:id="ex-atwood-acc-and-ten"><title>Computing the acceleration and tension for Atwood's machine</title>
+                                <statement>
+                                        <p>Given the description from <xref ref="ex-atwood-acc" text="type-hybrid" />, we can calculate the tension and acceleration.  </p>
+                                </statement>
+                                <solution>
+                                        <p><xref ref="f-atwood-acc" text="type-hybrid" /> allows us to draw the free-body-diagrams from which we can write down Newton's second law for each individual object.</p>
+                                        
+                                        <sidebyside widths="70% 30%">
+                                        <paragraphs>
+                                                <p>For these equations, I am explicitly putting the sign in by hand to indicate the direction (positive is up and negative is down).  Doing this, the value of <m>F_T</m>, <m>F_g</m>, and <m>a</m> will be positive because they are the magnitudes.</p>
+
+                                                <p>The equation for <m>m_1</m> is
+                                                <md>
+                                                        <mrow> \vec F_{g1} + \vec F_{T1} \amp = m_1 \vec a_1 </mrow>
+                                                        <mrow> (-F_{g1}) + (+F_T) \amp = m_1 (+a) </mrow>
+                                                        <mrow>(-\sig{34}{3}{N}) + (+F_T) \amp = (35\unit{kg}) (+a) </mrow>
+                                                </md>
+                                                The equation for <m>m_2</m> is
+                                                <md>
+                                                        <mrow> \vec F_{g2} + \vec F_{T2} \amp = m_1 \vec a_2 </mrow>
+                                                        <mrow> (-F_{g2}) + (+F_T) \amp = m_1 (-a) </mrow>
+                                                        <mrow>(-\sig{83}{3}{N}) + (+F_T) \amp = (85\unit{kg}) (+a) </mrow>
+                                                </md>
+                                                In these equations, I have noticed that the tensions <m>F_{T1}</m> and <m>F_{T2}</m> have to have the same magnitude, even though they are  different forces.  I am using <m>F_T</m> to indicate that magnitude.  Similarly, the accelerations <m>a_1</m> and <m>a_2</m> have to have the same magnitude (because the masses are connected) even though they have opposite directions.  I am using <m>a</m> to indicate that magnitude.  In each case, the sign indicates the different directions.</p>
+                                        </paragraphs>
+                                        <figure xml:id="f-atwood-acc-and-ten">
+                                                <caption>The free-body diagrams for the Atwood's machine system</caption>
+<!--                                                <image xml:id="i-atwood-acc-and-ten" source="images/i-atwood-acc-and-ten.svg">
+                                                <description>The free-body diagrams for the Atwood's machine system</description>
+                                                <latex-image-code>
+\begin{picture}(100,150)(0,-50)
+%\put(31,80){\oval(36,36)[t]}
+\put(31,80){\circle{33}}
+\put(31,81){\vector(0,1){50}}
+\put(47.5,80){\vector(0,-1){30}}
+\put(14.5,80){\vector(0,-1){30}}
+\put(50,55){\tiny <m>F_T</m>}
+\put(15,55){\tiny <m>F_T</m>}
+%
+\put(5,-6){\line(0,1){16}}
+\put(5,-6){\line(1,0){16}}
+\put(21,10){\line(0,-1){16}}
+\put(21,10){\line(-1,0){16}}
+\put(13,4){\vector(0,1){30}}
+\put(13,0){\vector(0,-1){20}}
+\put(14,20){\tiny <m>F_T</m>}
+\put(14,-15){\tiny <m>F_{g1}</m>}
+%
+\put(49,8){\vector(0,1){30}}
+\put(49,4){\vector(0,-1){40}}
+\put(41,-6){\line(0,1){24}}
+\put(41,-6){\line(1,0){16}}
+\put(57,18){\line(0,-1){24}}
+\put(57,18){\line(-1,0){16}}
+\put(51,30){\tiny <m>F_T</m>}
+\put(51,-15){\tiny <m>F_{g1}</m>}
+\end{picture}
+                                                </latex-image-code>
+                                                </image>
+-->                                        </figure>
+                                        </sidebyside>
+                                                                                        
+                                        <p>These equations can be combined as two-equations-with-two-unknowns and solved in the familiar ways.  It is useful to be aware that you can do these independently of each other.  So, if you need the acceleration, you can solve <xref ref="item-atwood-acc" text="type-local" /> and if you need the tension, you can solve <xref ref="item-atwood-ten" text="type-local" />.
+                                        <ol>
+                                          <li xml:id="item-atwood-acc"><p>If we solve one equation for <m>F_T</m> and plug it into the other, then we get the following equation.
+                                                (Since the coefficient of <m>F_T</m> is the same in these equations, if we subtract the second equation from the first, then we also get the following equation.)</p>
+                                                <p>Computing the acceleration:
+                                                <me>(-\sig{34}{3}{N}) - (-\sig{83}{3}{N}) \ = \ \left[ (35\unit{kg}) + (85\unit{kg}) \right] (a)</me>
+                                                <me>a \ = \ \frac{\sig{49}{0}{N}}{(35\unit{kg})+(85\unit{kg})} = \sigfrac{4.0}{87}{m}{s^2}</me>
+                                                </p></li>
+                                          <li xml:id="item-atwood-ten"><p>If we solve the first equation for <m>a</m> and plug it into the second, then we get the following equation.</p>
+                                                <p>Computing the tension:
+                                                <me>(-\sig{83}{3}{N}) + (F_T) \ = \  - (85\unit{kg}) \left[ \frac{(-\sig{34}{3}{N}) + (F_T)}{(35\unit{kg})} \right]</me>
+                                                <me>F_T \ = \ \frac{-(35\unit{kg})(-\sig{83}{3}{N})-(85\unit{kg})(-\sig{34}{3}{N})}{[(35\unit{kg})+(85\unit{kg})]} \ = \ \sig{48}{6}{N}</me>
+                                                </p></li>
+                                        </ol>
+                                        </p>
+                                        
+                                        <p>It is useful to verify the following: The tension is not enough to support <m>m_2</m>, so it falls:
+                                        <me>\vec a_2 = \frac{\vec F_\mathrm{net}}{m_2} =
+                                                \frac{(+\sig{48}{6}{N})+(-\sig{83}{3}{N})}{(85\unit{kg})}=-\sigfrac{4.0}{9}{m}{s^2}</me>.
+                                        The tension is also more than enough to lift <m>m_1</m>, so it rises:
+                                        <me>\vec a_2 = \frac{\vec F_\mathrm{net}}{m_2} =
+                                                \frac{(+\sig{48}{6}{N})+(-\sig{34}{3}{N})}{(35\unit{kg})}=+\sigfrac{4.0}{9}{m}{s^2}</me>.
+                                        </p>
+                                </solution>
+                        </example>
+                        
+                        </subsubsection>
+                        
+                        <subsubsection><title>Surface Tension</title>
+
+                        <p xml:id="d-surf-tension">As a final note, <xref provisional="s-surface-tension" text="title">surface tension</xref> is something else entirely.  It is mentioned here only because it has the word <q>tension</q> in the name.</p>
+                        
+                        <p>See <xref ref="sss-tea" text="type-global"/> for a comment on the contribution to hot versus cold spoon noises.</p>
+
+                        </subsubsection>
+                </subsection>
 
         </section>
+        <section xml:id="s-Ff"><title>Frictional Force</title>
+        <aside><title>Referenced by</title> 
+                <p>
+                <xref ref="A-chair2" text="type-global" />,
+                <xref ref="A-chair6" text="type-global" />,
+                <xref ref="A-chair7" text="type-global" />,
+                <xref ref="A-fly-balls" text="type-global" />
+                </p>
+        </aside>
+        
+                <subsection><title>sliding friction</title>
+                        <subsubsection><title>static friction</title>
+                        </subsubsection>
+                        <subsubsection><title>kinetic friction</title>
+                        </subsubsection>
+                </subsection>
+                <subsection><title>rolling friction</title>
+                        
+        <investigation xml:id="irl-poolfriction"><title>Rolling pool balls and friction</title>
+                <idx><h>Pool</h><h>Real Life</h></idx>
+                <introduction>
+                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>Hit the cue-ball off of a bumper in the manner intended for
+                                <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">testing cushions</url>.
+                                Compare the strength of the hit to the distance travelled.</p>
+                                <p>How much is the total distance affected by the number of bumpers hit?  (<xref ref="A-N-bump" text="type-local"/>)
+                                Does it matter if you shoot along the length of the table versus the width of the table?   (<xref ref="A-len-wid" text="type-local"/>)
+                                Why does friction slow the ball down instead of just make it turn <m>v=\omega r</m> (no slip)   (<xref ref="A-slow" text="type-local"/>)
+                                </p>
+                        </statement>
+                        <answer xml:id="A-N-bump">
+                                <p>[Answer]</p>
+                        </answer>
+                        <answer xml:id="A-len-wid">
+                                <p>[Answer]</p>
+                        </answer>
+                        <answer xml:id="A-slow">
+                                <p>[Answer]</p>
+                        </answer>
+                </task>
+                <conclusion>
+                        <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
+                        <xref provisional="irl-poolnormal" text="title">normal force</xref>, 
+                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>, 
+                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and 
+                        <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.
+                        </p>
+                        
+                        <sidebyside widths="50% 50%" haligns="center right">
+                                <p></p>
+                                <tabular halign="right"><row><cell halign="right">
+                                        Return to: <xref provisional="d-bank-shot">pool</xref>
+                                </cell></row></tabular>
+                        </sidebyside>
+                </conclusion>
+        </investigation>
+                </subsection>
+                <subsection><title>Air Resistance</title>
+                </subsection>
+                
+        </section>
+        
+        
+        <section xml:id="s-springs"><title>Spring Force</title>
+        <aside><title>Referenced by</title> 
+                <p>
+                <xref ref="d-fma" text="title"><m>F=ma</m></xref>,
+                <xref ref="d-usesofFma" text="title">uses of <m>F=ma</m></xref>,
+                <xref ref="ss-scales" text="type-hybrid"/>
+                </p>
+        </aside>
+
+        </section>
+        
+        
+        <section xml:id="s-FA"><title>Applied Force</title>
+
+        <p>The term <q>an applied force</q> is used to describe any force applied by any object when there isn't really a formula to find it.  So this is kind of a <q>any other force</q> category.  I will use this type of force to describe forces exerted by people.  We have seen some examples where a person throws an object.  We can now revisit those examples and consider the force exerted (applied) by the person who threw the object.</p>
+        
+        <example xml:id="se-throw-up"><title>Applying a force to throw a ball</title>
+                <statement>
+                        <p>\studentC<idx><h sortby="\studentC">\studentC</h></idx> recalls that one time \heC\ got bored one day in physics class (what?!?) and tossed a baseball <m>(m_b = 0.145\unit{kg})</m> at the ceiling<ellipsis /> a little too hard <ellipsis /> as recounted in <xref ref="ex-ceiling" text="type-global"/>.  Recall that <xref ref="se-ceiling" text="type-global" /> found the normal force by the ceiling on the ball.  Please now find the force \studentC\ applied while throwing and catching the ball assuming that the throw took <m>0.200\unit{s}</m> to gain the speed of <m>5.00\unitfrac ms</m> and the catch took <m>0.250\unit s</m> to slow the ball from <m>4.73\unitfrac ms</m> to rest.</p>
+                </statement>
+                <solution>
+                        <figure xml:id="f-throw-up">
+                                <caption>
+                                        <p>When a ball is thrown there are five distinct stages because the forces on the ball change and we can, at this point, only manage to describe a situation in which the forces do not change. </p>
+                                </caption>
+                        <sidebyside widths="19% 19% 19% 19% 19%">
+                                <image xml:id="i-se-throw-up-a" source="images/i-se-throw-up-a.svg">
+                                <latex-image-code>
+\begin{picture}(50,100)(0,0)
+\put(25,25){\color{green}\circle{10}}
+\put(25,26){\color{green}\vector(0,1){25}}
+\put(25,24){\color{green}\vector(0,-1){15}}
+\put(28,35){\color{green}<m>F_\mathrm{throw}</m>}
+\put(28,10){\color{green}<m>F_g</m>}
+\put(0,0){\centering{\color{green} (a) throwing}}
+\put(0,0){\color{green}\line(0,1){100}}
+\put(0,0){\color{green}\line(1,0){50}}
+\put(50,100){\color{green}\line(0,-1){100}}
+\put(50,100){\color{green}\line(-1,0){50}}
+\end{picture}
+                                </latex-image-code>
+                                </image>
+                                <image xml:id="i-se-throw-up-b" source="images/i-se-throw-up-b.svg">
+                                <latex-image-code>
+\color{lightgray}
+\fbox{\begin{minipage}[b]{55pt}
+\begin{picture}(50,100)(0,0)
+\put(25,50){\circle{10}}
+\put(25,50){\vector(0,-1){15}}
+\put(28,35){<m>F_g</m>}
+\end{picture}
+\centering{(b) falling up}
+\end{minipage}}
+\color{rgb:red,0;green,2;blue,1}
+                                </latex-image-code>
+                                </image>
+                                <image xml:id="i-se-throw-up-c" source="images/i-se-throw-up-c.svg">
+                                <latex-image-code>
+\color{lightgray}
+\fbox{\begin{minipage}[b]{55pt}
+\begin{picture}(50,100)(0,0)
+\put(25,95){\circle{10}}
+\put(26,95){\vector(0,-1){25}}
+\put(24,95){\vector(0,-1){15}}
+\put(28,75){<m>F_N</m>}
+\put(10,75){<m>F_g</m>}
+\end{picture}
+\centering{(c) \\ hitting}
+\end{minipage}}
+\color{rgb:red,0;green,2;blue,1}
+                                </latex-image-code>
+                                </image>
+                                <image xml:id="i-se-throw-up-d" source="images/i-se-throw-up-d.svg">
+                                <latex-image-code>
+\color{lightgray}
+\fbox{\begin{minipage}[b]{55pt}
+\begin{picture}(50,100)(0,0)
+\put(25,50){\circle{10}}
+\put(25,50){\vector(0,-1){15}}
+\put(28,35){<m>F_g</m>}
+\end{picture}
+\centering{(d) falling down}
+\end{minipage}}
+\color{rgb:red,0;green,2;blue,1}
+                                </latex-image-code>
+                                </image>
+                                <image xml:id="i-se-throw-up-e" source="images/i-se-throw-up-e.svg">
+                                <latex-image-code>
+\color{rgb:red,0;green,2;blue,1}
+\fbox{\begin{minipage}[b]{55pt}
+\begin{picture}(50,100)(0,0)
+\put(25,25){\circle{10}}
+\put(25,26){\vector(0,1){25}}
+\put(25,24){\vector(0,-1){15}}
+\put(28,35){<m>F_\mathrm{catch}</m>}
+\put(28,10){<m>F_g</m>}
+\end{picture}
+\centering{(e) catching}
+\end{minipage}}
+\color{rgb:red,0;green,2;blue,1}
+                                </latex-image-code>
+                                </image>
+                        </sidebyside>
+                        </figure>
+
+                        <p>In this particular problem, we are only concerned with steps (a) and (e) because that's where \studentC\ throws and catches the ball. In each case, we need the acceleration: </p>
+
+                        <sidebyside widths="49% 49%">
+                        <md>
+                                <mrow> \vec a_\mathrm{throw} \amp = \frac{(+5.00\unitfrac ms \jhat)-(0\unitfrac ms \jhat)}{0.200\unit s} </mrow>
+                                <mrow> \amp = +\sigfrac{25.0}{0}{m}{s^2} \jhat </mrow>
+                        </md>
+                        <md>
+                                <mrow> \vec a_\mathrm{catch} \amp = \frac{(0\unitfrac ms \jhat)-(-4.73\unitfrac ms \jhat)}{0.250\unit s} </mrow>
+                                <mrow> \amp = +\sigfrac{18.9}{2}{m}{s^2} \jhat </mrow>
+                        </md>
+                        </sidebyside>
+
+                        <p>During each step, we have the actual acceleration, which tells us about the net force.  We will also need to know the weight of the baseball <m>F_g=\sig{1.42}{2}{N}</m>, because gravity is still acting during the collision.  Let's consider the throwing part first.
+                        <md>
+                                <mrow> \vec F_N + \vec F_g \amp =  \vec F_\mathrm{net} \ = \ m \vec a </mrow>
+                                <mrow> \vec F_A  \amp =  m \vec a - \vec F_g </mrow>
+                                <mrow> \vec F_A  \amp =  \left[ (0.145\unit{kg})(+\sigfrac{25.0}{0}{m}{s^2}\jhat) \right] - \left[  - \sig{1.42}{2}{N} \jhat \right] </mrow>
+                                <mrow> \vec F_A  \amp =  \left[ +\sig{3.62}{5}{N} \jhat \right] - \left[  - \sig{1.42}{2}{N} \jhat \right] \ = \ +\sig{5.04}{7}{N} \jhat </mrow>
+                        </md>
+                        You can see that the upward applied force <m>(\sig{5.04}{7}{N})</m> has to be large enough so that when it is combined with the downward gravitational force <m>(\sig{1.42}{2}{N})</m> they can together result in the necessary (but smaller) upward net force <m>(\sig{3.62}{5}{N})</m> to get it going upwards.</p>
+
+                        <p>For the catching part, the ball is moving downwards and needs to be stopped, so the catching applied force must be upwards.
+                        <md>
+                                <mrow> \vec F_A + \vec F_g \amp =  \vec F_\mathrm{net} \ = \ m \vec a </mrow>
+                                <mrow> \vec F_A  \amp =  m \vec a - \vec F_g </mrow>
+                                <mrow> \vec F_A  \amp =  \left[ (0.145\unit{kg})(+\sigfrac{18.9}{2}{m}{s^2}\jhat) \right] - \left[  - \sig{1.42}{2}{N} \jhat \right] </mrow>
+                                <mrow> \vec F_A  \amp =  \left[ +\sig{2.74}{3}{N} \jhat \right] - \left[  - \sig{1.42}{2}{N} \jhat \right] \ = \ +\sig{4.16}{5}{N} \jhat </mrow>
+                        </md>
+                        You can see that the upward applied force <m>(\sig{4.16}{5}{N})</m> has to be large enough so that when it is combined with the downward gravitational force <m>(\sig{1.42}{2}{N})</m> they can together result in the necessary upward net force <m>(\sig{2.74}{3}{N})</m> to stop it from continuing downwards.</p>
+                </solution>
+        </example>
+        
+        </section>
+        
+        <section xml:id="s-Fnet"><title>Putting it Together, <m>F_\mathrm{net}</m></title>
+
+                <subsection><title>Translational Equilibrium</title>
+
+                <p xml:id="ss-transeq">blah blah blah Translational equilibrium: <m>F_\mathrm{net} = m \cancel{0}{a}</m>.  blah blah blah</p>
+
+                </subsection>
+                
+                <subsection><title>Static Equilibrium</title>
+                </subsection>
+                
+                <subsection><title>Dynamic Equilibrium</title>
+                </subsection>
+
+        </section>
+        
+        
+        <section><title>Summary and Homework</title>
+
+                <subsection><title>Summary of Concepts and Equations</title>
+
+                        <p><ellipsis /></p>
+
+                </subsection>
+                
+                <subsection><title>Conceptual Questions</title>
+
+                        <exercises>
+                        
+                        <exercise xml:id="c-weightmass"> 
+                                <statement>
+                                        <p>Estimate, preferably without using the internet, the mass of the following: (a) a four-door sedan, (b) dishwasher, (c) a pair of glasses, (d) a cell phone.  You should be able to estimate to within one significant digit.</p>
+                                </statement>
+                        </exercise>
+                        <exercise xml:id="c-massweight">
+                                <statement>
+                                        <p>List at least one object, preferably without using the internet, that has the following mass: 
+                                        (a) <m>2500\unit{kg}</m> 
+                                        (b) <m>41\unit{kg}</m>, 
+                                        (c) <m>3\unit{kg}</m>, 
+                                        (d) <m>50\unit{g}</m>.</p>
+                                </statement>
+                        </exercise>
+                        
+                        </exercises>
+                </subsection>
+                
+                <subsection><title>Problems</title>
+                        <todo>Add more problems.</todo>
+
+                </subsection>
+
+        </section>
+
         <conclusion><title>List of examples</title>
                 <list-of elements="example" scope="chapter" />
         </conclusion>
@@ -4203,6 +4787,75 @@ Earth feels a force by \studentZ\ to the left.
 </chapter>
 
 <!-- ********************************************************************************************** -->
+
+<chapter><title>Energy and the Transfer of Energy</title>
+        <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-heatverb" text="type-global">heat as a verb</xref></p></aside>
+
+        <introduction>
+        <p xml:id="d-energynoun">Energy is a noun<idx><h>Energy</h><h>noun</h></idx>; objects can <em>have</em> energy.  </p>
+        <p xml:id="d-workverb">Work is a verb<idx><h>Work</h><h>verb</h></idx>; doing work is the process of <em>exchanging</em> energy.</p>
+        </introduction>
+
+        <section><title>Objects Can Have Energy</title>
+        </section>
+        
+        <section><title>A Force Can Transfer Energy</title>
+                <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-pushvector">the direction of forces</xref></p></aside>
+        </section>
+        
+        <section xml:id="s-Wfr"><title>Dissipating Energy</title>
+
+        <p>pool balls on cushion/bumper</p>
+
+        </section>
+        
+        <section xml:id="s-PE"><title>Conserving Energy</title>
+
+        <introduction>
+                <investigation xml:id="irl-poolelastic"><title>1-D elastic collisions of pool balls and inelastic collisions off the bumper</title>
+                        <idx><h>Pool</h><h>Real Life</h></idx>
+                        <introduction>
+                                <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
+                        </introduction>
+                        <task>
+                                <statement>
+                                        <p>collide some pool balls and notice where they hit each other.  Can you determine the angle at which they roll away?</p>
+                                </statement>
+                                <answer>
+                                        <p><m>90^\circ</m></p>
+                                </answer>
+                        </task>
+
+                        <conclusion>
+                                <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
+                                <xref provisional="irl-poolnormal" text="title">normal force</xref>,
+                                <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                                <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
+                                <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.</p>
+
+                                <sidebyside widths="50% 50%" haligns="center right">
+                                        <p></p>
+                                        <tabular halign="right"><row><cell halign="right">
+                                                Return to: <xref provisional="d-bank-shot">pool</xref>
+                                        </cell></row></tabular>
+                                </sidebyside>
+                        </conclusion>
+                </investigation>
+        </introduction>
+
+                <subsection xml:id="ss-PEg"><title>Gravitational Potential Energy</title>
+                        <aside><title>Referenced by</title> <p><xref provisional="s-PEG" text="type-global"/></p></aside>
+                <p>See also <xref provisional="s-PEG" text="type-global" />.</p>
+                </subsection>
+                
+                <subsection xml:id="ss-PEs"><title>Spring Potential Energy</title>
+                </subsection>
+                
+                <subsection><title>Conservative Forces in General</title>
+                </subsection>
+        </section>
+</chapter>
+
 <!-- ********************************************************************************************** -->
 
 
