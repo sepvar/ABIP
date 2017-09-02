@@ -20,6 +20,10 @@
         \newcommand{\khat}{\hat k}
         \newcommand{\vect}[3]{#1 \ihat #2 \jhat #3 \khat}
 
+        \newcommand{\KE}{\mbox{KE}}
+        \newcommand{\PE}{\mbox{PE}}
+        \newcommand{\E}{\mbox{E}}
+
         \newcommand{\magdir}[7]{\begin{array}{lccl}
                 % x-comp, y-comp, mag label, mag, angle name, angle, angle-descriptor (North of East)
                 \text{Magnitude:} \amp \displaystyle #3 = \amp \displaystyle \sqrt{\left(#1\right)^2+\left(#2\right)^2} \amp = \displaystyle #4 \\[6pt]
@@ -4860,8 +4864,6 @@ Earth feels a force by \studentZ\ to the left.
 
 
 
-
-
 <part xml:id="P-UsingMFE"><title>Interesting Uses of Motion, Force, and Energy</title>
         <introduction>
         <p>The chapters in this Part develop the ideas in <xref ref="P-IntroMFE"  text="type-global" /> by introducing momentum, circular motion, rotational motion, torque, and the Newtonian theory of gravitation.</p>
@@ -4869,9 +4871,509 @@ Earth feels a force by \studentZ\ to the left.
 </part>
 
 <!-- ********************************************************************************************** -->
+
+<chapter xml:id="c-momentum"><title>Momentum: A Better Way to Describe Force</title>
+        <aside><title>Referenced by</title> 
+                <p>
+                <xref ref="d-objectinmotion">objects in motion</xref>,
+                <xref ref="sss-inertia" text="type-global" />,
+                <xref ref="ss-NIII" text="type-global" />,
+                <xref ref="A-chair6" text="type-global" />
+                </p>
+        </aside>
+
+        <introduction>
+        <p>Useful to include?
+        <url href="https://www.wired.com/2017/06/physics-bullets-versus-wonder-womans-bracelets/">The Physics of Bullets Vs. Wonder Woman's Bracelets</url>
+        </p>
+        </introduction>
+
+        <section><title>Revising Newton's First and Second Laws</title>
+
+                <subsection xml:id="ss-inertia"><title>Inertia and Momentum</title>
+                        <aside><title>Referenced by</title> <p><xref provisional="sss-inertia" text="type-global" /></p></aside>
+                        <p>Recall <xref ref="sss-inertia" text="type-global" /></p>.
+                </subsection>
+
+        </section>
+        
+        <section xml:id="s-conservemom"><title>Revising Newton's Third Law: Conservation of Momentum</title>
+        <aside><title>Referenced by</title> <p><xref provisional="ss-NIII" text="type-global" /></p></aside>
+        </section>
+        
+        
+        <section xml:id="s-2Dcollisions"><title>Two-Dimensional Collisions</title>
+        <aside><title>Referenced by</title> <p><xref provisional="sss-vectorequations" text="type-global"/></p></aside>
+
+        <p>pool balls?  What about rolling?</p>
+
+        <investigation xml:id="irl-pool2Dcollision"><title>2-D collisions of pool balls</title><idx><h>Pool</h><h>Real Life</h></idx>
+                <introduction>
+                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>collide some pool balls and notice where they hit each other.  Can you determine the angle at which they roll away?</p>
+                        </statement>
+                        <answer>
+                                <p><m>90^\circ</m></p>
+                        </answer>
+                </task>
+
+                <conclusion>
+                        <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
+                        <xref provisional="irl-poolnormal" text="title">normal force</xref>,
+                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
+                        <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.</p>
+
+                        <sidebyside widths="50% 50%" haligns="center right">
+                                <p></p>
+                                <tabular halign="right"><row><cell halign="right">
+                                        Return to: <xref provisional="d-bank-shot">pool</xref>
+                                </cell></row></tabular>
+                        </sidebyside>
+                </conclusion>
+        </investigation>
+
+        </section>
+</chapter>
+
 <!-- ********************************************************************************************** -->
+
+<chapter><title>Rotational Motion</title>
+
+        <section><title>The Equations of Rotational Motion</title>
+
+        <investigation xml:id="irl-poolrotmot"><title>Rolling pool balls</title><idx><h>Pool</h><h>Real Life</h></idx>
+                <introduction>
+                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>Roll a striped ball along the table.  Use the stripe to notice the rate of rotation.  How does the rotation compare to the translation?</p>
+                        </statement>
+                        <answer>
+                                <p>[Answer]</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Roll a striped ball along the table.  Notice the distance the ball travels.  
+                                Why does friction slow the ball down instead of just make it turn <m>v=\omega r</m> (no slip)</p>
+                        </statement>
+                        <answer>
+                                <p>[Answer]</p>
+                        </answer>
+                </task>
+
+                <conclusion>
+                        <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
+                        <xref provisional="irl-poolnormal" text="title">normal force</xref>,
+                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
+                        <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.</p>
+
+                        <sidebyside widths="50% 50%" haligns="center right">
+                                <p></p>
+                                <tabular halign="right"><row><cell halign="right">
+                                        Return to: <xref provisional="d-bank-shot">pool</xref>
+                                </cell></row></tabular>
+                        </sidebyside>
+                </conclusion>
+        </investigation>
+
+        </section>
+        
+        
+        <section><title>Angular Momentum</title>
+
+        <investigation xml:id="irl-poolangmom"><title>Rolling pool balls</title><idx><h>Pool</h><h>Real Life</h></idx>
+                <introduction>
+                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>Roll a striped ball along the table.  Use the stripe to notice the rate of rotation.  How does the rotation compare to the translation?</p>
+                        </statement>
+                        <answer>
+                                <p>[Answer]</p>
+                        </answer>
+                </task>
+
+                <conclusion>
+                        <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
+                        <xref provisional="irl-poolnormal" text="title">normal force</xref>,
+                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
+                        <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.</p>
+
+                        <sidebyside widths="50% 50%" haligns="center right">
+                                <p></p>
+                                <tabular halign="right"><row><cell halign="right">
+                                        Return to: <xref provisional="d-bank-shot">pool</xref>
+                                </cell></row></tabular>
+                        </sidebyside>
+                </conclusion>
+        </investigation>
+
+        </section>
+        
+        <section xml:id="s-noninertial"><title>Non-inertial Rotational Reference Frames</title>
+        <aside><title>Referenced by</title> 
+                <p>
+                <xref ref="ss-noninertial" text="type-global" />,
+                <xref ref="d-NewtonInertial" text="title">non-inertial reference frames</xref>,
+                <xref ref="ss-NI" text="type-global" />
+                </p>
+        </aside>
+        <idx><h>Reference Frames</h><h>Inertial</h></idx>
+        <idx><h>Reference Frames</h><h>Non-inertial</h></idx>
+
+                <introduction><aside><title>Referenced by</title> <p><xref provisional="ss-NII" text="type-global" /></p></aside>
+                        <p xml:id="d-noninertial">Because the Earth rotates, we are actually in a non-inertial reference frame.  In fact, we can prove that the Earth rotates by observing the effects, such as the <xref ref="d-coriolis" text="type-global">Coriolis effect</xref>, that in our non-inertial frame seem to require unexplainable forces but which, in a non-rotating frame, follow the expected laws of physics.</p>
+                </introduction>
+
+                <subsection xml:id="ss-coriolis"><title>The Coriolis Effect</title>
+                <aside><title>Referenced by</title>
+                        <p>
+                        <xref ref="d-NewtonInertial" text="title">non-inertial reference frames</xref>,
+                        <xref ref="d-noninertial" text="title">Non-inertial Rotational Reference Frames</xref>
+                        </p>
+                </aside>
+
+                <p xml:id="d-coriolis">weather <ellipsis /> AND <ellipsis />
+                In her podcast, <em>Spacepod</em><fn xml:id="fn-spacepod-ocean">Nugent, Carrie (Producer, Host). <em>Spacepod</em> [Audio podcast], episode 89 (19 May, 2017).  Retrieved from 
+                <!-- <xref ref="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99" text="title">\nolinkurl{http://spacepod.libsyn.com/}</xref> -->
+                <url href="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99">http://spacepod.libsyn.com/</url> on 9 Apr. 2017.</fn>
+                Dr. Carrie Nugent interviews Dr. Andy Thompson about <q>underwater flying objects</q> that investigate the ocean.  He notes that ocean waters, because they are such a large-scale system, can see the effect of the rotation of the Earth.</p>
+
+                </subsection>
+                
+                <subsection xml:id="ss-Foucault"><title>The Foucault Pendulum</title>
+
+                <p>See <url href="https://www.youtube.com/watch?v=sWDi-Xk3rgw">youtube video</url> by <url href="http://sixtysymbols.com/">Sixty Symbols</url>.</p>
+
+                </subsection>
+        </section>
+
+</chapter>
+
 <!-- ********************************************************************************************** -->
+
+
+<chapter><title>Circular Motion and Centripetal Force</title>
+
+        <section><title>Circular Motion</title>
+        </section>
+        
+        <section xml:id="s-centripetal"><title>Centripetal Force</title>
+        <aside><title>Referenced by</title> 
+                <p>Discussion of <xref provisional="d-fma" text="title"><m>F=ma</m></xref>
+                </p>
+        </aside>
+
+        </section>
+</chapter>
+
 <!-- ********************************************************************************************** -->
+
+
+<chapter xml:id="c-torque"><title>Torque and the <m>F=ma</m> of Rotations</title>
+<aside><title>Referenced by</title> <p><xref provisional="a-NIIIaction" text="type-global" /></p></aside>
+
+        <section xml:id="s-leverarm"><title>Leverage</title>
+        <aside><title>Referenced by</title> <p><xref provisional="ss-scales" text="type-global" /></p></aside>
+        </section>
+        
+        <section><title>Putting it all together, <m>\tau_\mathrm{net}</m></title>
+
+                <subsection><title>Rotational Equilibrium</title>
+
+                <p xml:id="ss-roteq">blah blah blah. Rotational equilibrium: <m>\tau_\mathrm{net} = I \cancelto{0}{\alpha}</m>.  blah blah blah</p>
+                
+
+                </subsection>
+                
+                <subsection><title>Static (Rotational) Equilibrium</title>
+                </subsection>
+                
+                <subsection><title>Dynamic (Rotational) Equilibrium</title>
+
+                <example xml:id="ex-ladder2"><title>\studentC<idx><h sortby="\studentC">\studentC</h></idx> uses a ladder</title>
+                        <statement>
+                                <p>\studentC\ leans a <m>22.7\unit{kg}</m> ladder against a wall at an angle of <m>75.5^\circ</m>, consistent with 
+                                <url href="https://www.osha.gov/">OSHA</url> standard 
+                                <url href="https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=standards&amp;p_id=10839">1926.1053(a)(1)(ii)</url>.
+                                The coefficient of friction between the ladder and the floor is <m>\mu_f=0.31</m>.
+                                The coefficient of friction between the ladder and the wall is <m>\mu_w=0.19</m>.
+                                Use the rotational and translational equilibrium to determine if the ladder slides.</p>
+                        </statement>
+                        <solution>
+                                <p>Since we are asked to distinguish between two cases that cannot both be true, we should assume one (the easier one to calculate is that the ladder does not slip) and then verify that the result is consistent with that assumption.</p>
+
+                                <p xml:id="ex-ladder2-know"><alert>What do we know?</alert>
+                                We know that the floor has a normal force <m>(F_{Nf})</m> upwards and a frictional force <m>(F_{ff})</m> to the left.
+                                We know that the wall has a normal force <m>(F_{Nw})</m> to the right and a frictional force <m>(F_{fw})</m> up (keeping the ladder from sliding down).
+                                We know the weight is <m> F_g = mg = (22.7\unit{kg})(9.81\unitfrac{m}{s^2}) = \sig{222}{.69}{N} </m>.</p>
+
+                                <figure xml:id="f-ladder2">
+                                        <caption>Diagram of the ladder against the wall</caption>
+                                        <image xml:id="i-ladder2" source="images/i-ladder2.svg">
+                                        <description>Diagram of the ladder against the wall</description>
+                                        <latex-image-code>
+\begin{picture}(100,100)(-10,-5)
+% Dimensions and offset: (width,height)(x offset,y offset)
+% Insert picture commands (\line,\circle, etc...) here:
+\put(0,0){\line(0,1){100}}
+\put(0,0){\line(1,0){75}}
+\put(20,0){\color{blue}\line(-1,4){20}}     % ladder
+\put(10,40){\color{red}\vector(0,-1){30}}   % Fg
+\put(20,1){\color{red}\vector(0,1){25}}     % FNf
+\put(19,1){\color{red}\vector(-1,0){12}}
+\put(1,80){\color{red}\vector(1,0){12}}
+\put(1,81){\color{red}\vector(0,1){8}}
+\end{picture}
+                                        </latex-image-code>
+                                        </image>
+                                </figure>
+                                
+                                <p xml:id="ex-ladder2-want"><alert>What do we want to know?</alert>  We want to know about the the magnitudes of both normal forces and both frictional forces.  Can we easily deduce the magnitude of <m>F_{Nf}</m>? <xref ref="A-ladderNf" text="type-global" />.</p>
+
+
+                                <p xml:id="ex-ladder2-infer"><alert>How are what-we-know and what-we-want related?</alert> The forces acting on any body are related by static <xref ref="ss-transeq" text="title">translational equilibrium</xref>
+                                <md>
+                                <mrow> x: \hspace{.5cm} 0 \amp = \cancel{0}{F_{gx}} + \zero{F_{Nfx}}{0} + F_{ffx} + F_{Nwx} + \cancelto{0}{F_{fwx}} </mrow>
+                                <mrow> y: \hspace{.5cm} 0 \amp = F_{gy} + F_{Nfy} + \cancelto{0}{F_{ffy}} + \cancelto{0}{F_{Nwy}} + F_{fwy} </mrow>
+                                </md>
+                                and static <xref ref="ss-roteq" text="title">rotational equilibrium</xref>, assuming the pivot point is at the ground, and using the relationship <m>F_f=\mu F_N</m>, we find
+                                <md>
+                                <mrow> 0 \amp = \tau_{g} + \cancelto{0}{\tau_{Nf}} + \cancelto{0}{\tau_{ff}} + \tau_{Nw} + \tau_{fw} </mrow>
+                                <mrow> 0 \amp = \left[ F_g \frac{l}{2} \sin 14.5^\circ \right] + \left[ - F_{Nw} l \sin(75.5^\circ) \right] + \left[ - F_{fw} l \sin(14.5^\circ) \right] </mrow>
+                                <mrow> F_{Nw} \amp = \left[ F_g \frac{l}{2} \sin 14.5^\circ \right] / \left[  l \sin(75.5^\circ) + \mu_w l \sin(14.5^\circ) \right] </mrow>
+                                </md>
+                                </p>
+                                
+                                <!-- <p><alert>Free-Body Diagrams:</alert> Since the picture is so simple, we will not draw the free-body diagram.</p> -->
+
+                                <p xml:id="ex-ladder2-concepts"><alert>Concepts to consider:</alert> First, the length of the ladder cancels from the expression; what matters is the angle at which it is propped.</p>
+
+                                <p>Second, every force value will be linearly dependent on the mass of the ladder.  So once we solve this problem, we can easily scale the answers to any mass.</p>
+
+                                <p>Third, the friction with the wall is, by far, the smallest effect and it might be interesting to approximate all of this with <m>\mu_w=0</m>.  You can check your calculation against <xref ref="A-nowall" text="type-global" />.</p>
+
+                                <p><alert>Solution to the example:</alert> When we worry about significant figures,
+                                <md>
+                                <mrow> F_{Nw} \amp = \frac{\left[ (\sig{222}{.7}{N})(\txtfrac{1}{2}) (0.\sig{250}{4}{}) \right]}
+                                                {\left[  (0.\sig{968}{2}{}) + (0.19) (0.\sig{250}{4}{}) \right]}
+                                        \ = \ \frac{\left[ (\sig{27.8}{8}{N})\right]}{\left[  (0.\sig{968}{2}{}) + (0.0\sig{47}{6}{}) \right]} </mrow>
+                                <mrow> F_{Nw} \amp = \frac{\left[ (\sig{27.8}{8}{N})\right]}{\left[  (\sig{1.015}{7}{}) \right]}
+                                        \ = \ \sig{27.4}{4}{N} </mrow>
+                                <mrow> F_{fw,\mathrm{max}} \amp = (0.19)(\sig{27.4}{4}{N}) \ = \ \sig{5.2}{15}{N} </mrow>
+                                <mrow> F_{Nf} \amp = F_g - F_{fw} = (\sig{222}{.7}{N})-(\sig{5.2}{15}{N}) \ = \ \sig{217}{.5}{N} </mrow>
+                                <mrow> F_{ff,\mathrm{max}} \amp = (0.31)(\sig{217}{.5}{N}) \ = \ \sig{672}{.4}{N} </mrow>
+                                </md>
+                                Since <m>F_{ff} >F_{Nw}</m>, the friction is sufficient to hold the ladder in place, as assumed.</p>
+
+                        </solution>
+
+                        <answer xml:id="A-ladderNf">
+                        <p>Since the full weight of the ladder, <m>F_g = \sig{222}{.69}{N}</m>, is still pressing downwards into the floor (as a normal force), it is tempting to say that <xref ref="as-NIII" text="title">Newton's third law</xref> implies that the floor pushes the ladder upwards with a normal force of <m>\sig{222}{.69}{N}</m> but this would not account for the frictional force on the wall, <m>F_{fw}</m>.  If there were no friction between the ladder and the wall, then we could deduce <m>F_{Nf}</m>, but at this point, we cannot.</p>
+                        </answer>
+
+                        <answer xml:id="A-nowall">
+                        <p>If we consider <m>\mu_w\rightarrow 0</m>, then <m>F_{fw}=0\unit N</m>,  <m>\vec F_{Nf} = -\vec F_g = \sig{222}{.7}{N} \jhat</m>, and <m>\vec F_{Nw} = - \vec F_{ff} = \sig{28.7}{9}{N} \ihat</m>.  In this case, <m>\mu_f</m> could be as small as <m>0.\sig{129}{3}{}</m> and still hold the ladder in place, unless \studentC<idx><h sortby="\studentC">\studentC</h></idx> climbs the ladder, in which case see <xref ref="A-nowallC" text="type-global" />.</p>
+                        </answer>
+
+                        <answer xml:id="A-nowallC">
+                        <p>If we consider <m>\mu_w\rightarrow 0</m> with \studentC<idx><h sortby="\studentC">\studentC</h></idx> <m>(m=\massC)</m> at the third-rung-from-the-top of the ladder, (<m>1.53\unit m</m> up the ladder), then <m>F_{fw}=0\unit N</m>,  <m>\vec F_{Nf} = \sig{1105}{.6}{N} \jhat</m>, and <m>\vec F_{Nw} = - \vec F_{ff} = \sig{171}{.97}{N} \ihat</m>.  In this case, <m>\mu_f</m> could be as small as <m>0.\sig{155}{5}{}</m> and still hold the ladder in place.</p>
+                        </answer>
+
+                        <conclusion>
+                                <p><alert>Aside:</alert> Since <m>F_{ff}</m> only needs to be <m>\sig{27.4}{4}{N}</m> to hold the ladder in place, it is possible for the ladder to not slide on a floor that only has <m>\mu_\mathrm{min} = (\sig{27.4}{4}{N})/(\sig{217}{.5}{N}) = 0.\sig{126}{2}{}</m>; but that would not allow a person to climb the ladder.</p>
+
+                                <p><alert>Homework:</alert> Homework problem <xref ref="h-ladderC" text="type-global" /> asks you to determine if the ladder slides when \studentC\ climbs to different locations on the ladder.</p>
+                                
+                                <sidebyside widths="50% 50%" haligns="center right">
+                                        <p></p>
+                                        <tabular halign="right"><col width="50%" /><row><cell halign="right">
+                                                <p>Return to: <xref ref="se-ladderN" text="type-global" />, <xref ref="ss-roteq"  text="type-global"/></p>
+                                        </cell></row></tabular>
+                                </sidebyside>
+                        </conclusion>
+                </example>
+
+                </subsection>
+                
+        </section>
+        
+        <section xml:id="s-torsion"><title>Torsion</title>
+        <aside><title>Referenced by</title> <p><xref provisional="s-FT" text="type-global"/></p></aside>
+        </section>
+        
+        <section><title>Summary and Homework</title>
+
+                <subsection><title>Summary of Concepts and Equations</title>
+
+                <p><ellipsis /></p>
+
+                </subsection>
+                
+                <subsection><title>Conceptual Questions</title>
+                <todo>Add conceptual problems.</todo>
+                </subsection>
+                
+                <exercises><title>Problems</title>
+                <todo>Add more problems.</todo>
+
+                <exercise xml:id="h-ladderC">    
+                        <statement>
+                                <p>\studentC\ leans a <m>22.7\unit{kg}</m> ladder against a wall at an angle of <m>75.5^\circ</m>, consistent with 
+                                <url href="https://www.osha.gov/">OSHA</url> standard 
+                                <url href="https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=standards&amp;p_id=10839">1926.1053(a)(1)(ii)</url>.
+                                The coefficient of friction between the ladder and the floor is <m>\mu_f=0.31</m>.
+                                The coefficient of friction between the ladder and the wall is <m>\mu_w=0.19</m>.
+                                Use the rotational and translational equilibrium to determine if the ladder slides when \studentC\ <m>(\massC)</m> climbs to <ellipsis />
+                                <ol>
+                                  <li><p>the third-rung from the top of the ladder, so that he is <m>1.53\unit m</m> from the bottom of the ladder.  (<xref ref="A-ladderC-a" text="type-local" />) </p>
+                                      <ul>
+                                        <li><p>(You might also consider <xref ref="A-nowallC" text="type-global" /> for the case of <m>\mu_w = 0</m>.)</p></li>
+                                      </ul></li>
+                                  <li><p>the third-rung from the bottom of the ladder, so that he is <m>0.914\unit m</m> from the bottom of the ladder. (<xref ref="A-ladderC-b" text="type-local" />) </p></li>
+                                </ol>
+                                </p>
+                        </statement>
+                        <solution xml:id="A-ladderC-a">
+                                <p>The normal force from the wall is the only force to the right.  The frictional force from the floor is the only force to the left.  Using the calculations in <xref ref="ex-ladder2" text="type-global" />, we notice that 
+                                <md>
+                                <mrow> F_{Nw} \amp = \sig{163}{.9}{N} </mrow>
+                                <mrow> F_{fw,\mathrm{max}} \amp = (0.19)(\sig{163}{.9}{N}) \ = \ \sig{31}{.14}{N} </mrow>
+                                <mrow> F_{Nf} \amp = \sig{1074}{.4}{N} </mrow>
+                                <mrow> F_{ff,\mathrm{max}} \amp = \sig{333}{.0}{N} \gt \sig{163}{.9}{N} </mrow>
+                                </md>
+                                The frictional force with the floor can support a normal force from the wall of <m>333\unit N</m>, but the normal force is only <m>164\unit N</m> so the ladder stays in place.  In fact it is possible to compute the smallest coefficient of floor-friction that will keep the ladder in place:
+                                <m>\mu_\mathrm{min} = 0.\sig{152}{56}{}</m>.
+                                </p>
+                        </solution>
+                        
+                        <solution xml:id="A-ladderC-b">
+                                <p>The normal force from the wall is the only force to the right.  The frictional force from the floor is the only force to the left.  Using the calculations in <xref ref="ex-ladder2" text="type-global" />, we notice that
+                                <md>
+                                <mrow> F_{Nw} \amp = \sig{108}{.97}{N} </mrow>
+                                <mrow> F_{fw,\mathrm{max}} \amp = (0.19)(\sig{108}{.97}{N}) \ = \ \sig{20}{.70}{N} </mrow>
+                                <mrow> F_{Nf} \amp = \sig{1084}{.9}{N} </mrow>
+                                <mrow> F_{ff,\mathrm{max}} \amp = \sig{336}{.3}{N} \gt \sig{108}{.97}{N} </mrow>
+                                </md>
+                                The frictional force with the floor can support a normal force from the wall of <m>336\unit N</m>, but the normal force is only <m>109\unit N</m> so the ladder stays in place.  In fact it is possible to compute the smallest coefficient of floor-friction that will keep the ladder in place:
+                                <m>\mu_\mathrm{min} = 0.\sig{100}{45}{}</m>
+                                </p>
+
+                                <p>If, hypothetically, <m>\mu_w = 0</m>, then<todo>Make this a different homework problem.</todo>
+                                <md>
+                                <mrow> F_{Nw} \amp = \sig{114}{.3}{N} </mrow>
+                                <mrow> F_{fw,\mathrm{max}} \amp = 0 \unit N </mrow>
+                                <mrow> F_{Nf} \amp = \sig{1105}{.6}{N} </mrow>
+                                <mrow> F_{ff,\mathrm{max}} \amp = \sig{342}{.7}{N} \gt \sig{114}{.3}{N} </mrow>
+                                </md>
+                                The frictional force with the floor can support a normal force from the wall of <m>336\unit N</m>, but the normal force is only <m>109\unit N</m> so the ladder stays in place.  In fact it is possible to compute the smallest coefficient of floor-friction that will keep the ladder in place:
+                                <m>\mu_\mathrm{min} = 0.\sig{103}{4}{}</m>
+                                </p>
+                        </solution>
+                </exercise>
+                </exercises>
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+
+<chapter><title>Energy of Rotating Objects</title>
+        <section><title>Rotational Kinetic Energy</title>
+        pool balls
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+
+<chapter xml:id="c-gravity"><title>The Gravitational Force on a Large Scale</title>
+<aside><title>Referenced by</title> 
+        <p>
+        <xref ref="d-accgrav" text="title">freefall</xref>,
+        <xref ref="d-fundamental" text="title">fundamental forces</xref>
+        </p>
+</aside>
+
+<section xml:id="s-Gfield"><title>Gravitational Force and Field</title>
+<aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-fma" text="title"><m>F=ma</m></xref></p></aside>
+
+        <introduction>
+                <p>The value of the acceleration due to gravity  varies according to the mass and size of any celestial body.
+                This means that, as was seen in <xref ref="se-gworld" text="type-global" />, your weight can change even when your mass remains the same.</p>
+                <todo>Reference a table of <m>g</m> on other planets and compute the weight of a space craft at each planet.</todo>
+
+                <example xml:id="se-gplanets">
+                        <statement>
+                                <p>In conversation with a visiting alien, \studentX<idx><h sortby="\studentX">\studentX</h></idx>, you find that \studentX\ has been to the moon and several planets both within and outside of our solar system.  In addition to the Earth, \studentX\ has visited our moon, Mars, Pluto, and Planet X.  Using <xref ref="t-gplanets" text="type-hybrid" />, compute \studentX's weight are each location, assuming \hisX\ mass is \massX.</p>
+                        </statement>
+                        <solution>
+                                <p><ol>
+                                <li><p>[Earth] <m>F_g = (\massX)\left[ \frac{ G M_E}{R_E^2} \right] = (\massX)(9.825\unitfrac{m}{s^2}) \ = \ \sig{933}{.4}{N}</m></p></li>
+                                <li><p>[moon] <m>F_g = (\massX)\left[ \frac{ G M_m}{R_m^2} \right] = (\massX)(9.782\unitfrac{m}{s^2}) \ = \ \sig{929}{.3}{N}</m></p></li>
+                                <li><p>[Mars] <m>F_g = (\massX)\left[ \frac{ G M_M}{R_M^2} \right] = (\massX)(9.763\unitfrac{m}{s^2}) \ = \ \sig{927}{.5}{N}</m></p></li>
+                                <li><p>[Pluto] <m>F_g = (\massX)\left[ \frac{ G M_P}{R_P^2} \right] = (\massX)(9.763\unitfrac{m}{s^2}) \ = \ \sig{927}{.5}{N}</m></p></li>
+                                <li><p>[Planet X] <m>F_g = (\massX)\left[ \frac{ G M_X}{R_X^2} \right] = (\massX)(9.763\unitfrac{m}{s^2}) \ = \ \sig{927}{.5}{N}</m></p></li>
+                                </ol>
+                                </p>
+                        </solution>
+                </example>
+                
+                <table xml:id="t-gplanets">
+                        <caption>
+                                <p>Properties of various celestial bodies.</p>
+                                <aside><p>Referenced by <xref provisional="se-gplanets" text="type-hybrid" /></p></aside>
+                        </caption>
+                        <tabular>
+                                <col /><col /><col /><col />
+                                <row><cell>Planet</cell><cell>Mass (kg)</cell><cell>Mean Radius (m) </cell> <cell><m>g (\unitfrac{m}{s^2})</m></cell></row>
+                        </tabular>
+                </table>
+                </introduction>
+                
+                <subsection xml:id="ss-equivmm"><title>Inertial Mass versus Gravitational Mass</title>
+                <aside><title>Referenced by</title> <p><xref provisional="ss-weightmass" text="type-hybrid" /></p></aside>
+                </subsection>
+
+        </section>
+        
+        <section xml:id="s-PEG"><title>Gravitational Potential Energy</title>
+        <aside><title>Referenced by</title> <p><xref provisional="ss-PEg" text="type-hybrid" /></p></aside>
+
+        <p>Recall <xref ref="ss-PEg" text="type-global" /></p>
+
+        </section>
+        
+        <section xml:id="s-Gconnection"><title>Making Connections</title>
+        <aside><title>Referenced by</title> <p><xref provisional="s-Econnection" text="type-hybrid" /></p></aside>
+
+        <p>
+        <md> 
+        <mrow> \amp \amp \vec F = m \vec g \amp \amp </mrow>
+        <mrow> \amp \deq F = G \frac{m_1 m_2}{R^2} \amp \leftrightarrow \amp \deq g = G \frac{m}{R^2} \amp </mrow>
+        <mrow> \Delta \PE = -\vec F \cdot \Delta\vec x \amp \updownarrow \amp \amp \updownarrow \amp \mbox{\scriptsize [for later]} </mrow>
+        <mrow> \amp \deq \PE = G \frac{m_1 m_2}{R} \amp \leftrightarrow \amp \mbox{[for later]} \amp </mrow>
+        <mrow> \amp \amp \mbox{\scriptsize [for later]} \amp \amp </mrow>
+        </md>
+        (Look ahead to the parallel with the electrical interaction in <xref provisional="s-Econnection" text="type-global"/>.)</p>
+
+        </section>
+        
+        <section><title>Orbits</title>
+        </section>
+
+</chapter>
+
+
 <!-- ********************************************************************************************** -->
 
 <part xml:id="P-oscillations"><title>Making Waves</title>
@@ -5115,7 +5617,7 @@ Earth feels a force by \studentZ\ to the left.
         <list-of elements="table" divisions="chapter" empty="no" />
         </section>
         <section xml:id="list-figures"><title>List of Figures</title>
-        <list-of elements="figures" divisions="chapter" empty="no" />
+        <list-of elements="figure" divisions="chapter" empty="no" />
         </section>
         <section xml:id="list-aside"><title>List of Asides</title>
         <list-of elements="aside historical biographical" divisions="chapter section subsection " empty="no" />
