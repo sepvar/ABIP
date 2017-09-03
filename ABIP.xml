@@ -4447,7 +4447,7 @@ Earth feels a force by \studentZ\ to the left.
                                         </paragraphs>
                                         <figure xml:id="f-atwood-acc-and-ten">
                                                 <caption>The free-body diagrams for the Atwood's machine system</caption>
-<!--                                                <image xml:id="i-atwood-acc-and-ten" source="images/i-atwood-acc-and-ten.svg">
+                                                <image xml:id="i-atwood-acc-and-ten" source="images/i-atwood-acc-and-ten.svg">
                                                 <description>The free-body diagrams for the Atwood's machine system</description>
                                                 <latex-image-code>
 \begin{picture}(100,150)(0,-50)
@@ -4479,7 +4479,7 @@ Earth feels a force by \studentZ\ to the left.
 \end{picture}
                                                 </latex-image-code>
                                                 </image>
--->                                        </figure>
+                                        </figure>
                                         </sidebyside>
 
                                         <p>These equations can be combined as two-equations-with-two-unknowns and solved in the familiar ways.  It is useful to be aware that you can do these independently of each other.  So, if you need the acceleration, you can solve <xref ref="item-atwood-acc" text="type-local" /> and if you need the tension, you can solve <xref ref="item-atwood-ten" text="type-local" />.
@@ -4613,23 +4613,30 @@ Earth feels a force by \studentZ\ to the left.
                                 </caption>
                         <sidebyside widths="19% 19% 19% 19% 19%">
                                 <image xml:id="i-se-throw-up-a" source="images/i-se-throw-up-a.svg">
+                                <description>Throwing a ball up.  Stage (a) throwing</description>
                                 <latex-image-code>
+                                        <![CDATA[
+                                        %>
+\setlength{\unitlength}{1pt}
 \begin{picture}(50,100)(0,0)
 \put(25,25){\color{green}\circle{10}}
 \put(25,26){\color{green}\vector(0,1){25}}
 \put(25,24){\color{green}\vector(0,-1){15}}
 \put(28,35){\color{green}<m>F_\mathrm{throw}</m>}
 \put(28,10){\color{green}<m>F_g</m>}
-\put(0,0){\centering{\color{green} (a) throwing}}
+\put(0,0){\color{green} (a) throwing}
 \put(0,0){\color{green}\line(0,1){100}}
 \put(0,0){\color{green}\line(1,0){50}}
 \put(50,100){\color{green}\line(0,-1){100}}
 \put(50,100){\color{green}\line(-1,0){50}}
 \end{picture}
+]]>
                                 </latex-image-code>
                                 </image>
                                 <image xml:id="i-se-throw-up-b" source="images/i-se-throw-up-b.svg">
                                 <latex-image-code>
+                                        <![CDATA[
+                                        %>
 \color{lightgray}
 \fbox{\begin{minipage}[b]{55pt}
 \begin{picture}(50,100)(0,0)
@@ -4640,10 +4647,13 @@ Earth feels a force by \studentZ\ to the left.
 \centering{(b) falling up}
 \end{minipage}}
 \color{rgb:red,0;green,2;blue,1}
+]]>
                                 </latex-image-code>
                                 </image>
                                 <image xml:id="i-se-throw-up-c" source="images/i-se-throw-up-c.svg">
                                 <latex-image-code>
+                                        <![CDATA[
+                                        %>
 \color{lightgray}
 \fbox{\begin{minipage}[b]{55pt}
 \begin{picture}(50,100)(0,0)
@@ -4656,10 +4666,13 @@ Earth feels a force by \studentZ\ to the left.
 \centering{(c) \\ hitting}
 \end{minipage}}
 \color{rgb:red,0;green,2;blue,1}
+]]>
                                 </latex-image-code>
                                 </image>
                                 <image xml:id="i-se-throw-up-d" source="images/i-se-throw-up-d.svg">
                                 <latex-image-code>
+                                        <![CDATA[
+                                        %>
 \color{lightgray}
 \fbox{\begin{minipage}[b]{55pt}
 \begin{picture}(50,100)(0,0)
@@ -4670,10 +4683,13 @@ Earth feels a force by \studentZ\ to the left.
 \centering{(d) falling down}
 \end{minipage}}
 \color{rgb:red,0;green,2;blue,1}
+]]>
                                 </latex-image-code>
                                 </image>
                                 <image xml:id="i-se-throw-up-e" source="images/i-se-throw-up-e.svg">
                                 <latex-image-code>
+                                        <![CDATA[
+                                        %>
 \color{rgb:red,0;green,2;blue,1}
 \fbox{\begin{minipage}[b]{55pt}
 \begin{picture}(50,100)(0,0)
@@ -4686,6 +4702,7 @@ Earth feels a force by \studentZ\ to the left.
 \centering{(e) catching}
 \end{minipage}}
 \color{rgb:red,0;green,2;blue,1}
+]]>
                                 </latex-image-code>
                                 </image>
                         </sidebyside>
@@ -5705,7 +5722,9 @@ Earth feels a force by \studentZ\ to the left.
 
         <subsection xml:id="sss-sun2"><title>The Sun</title>
 
-        <p>The bright, shiny sun, which keeps us all alive, is a nice example of a rather complex system that allows us to verify our various theories of the world around us.  We can consider the existence of a star in three phases: the birth of a star, the life of the star, and the death of the star.</p>
+                <introduction>
+                <p>The bright, shiny sun, which keeps us all alive, is a nice example of a rather complex system that allows us to verify our various theories of the world around us.  We can consider the existence of a star in three phases: the birth of a star, the life of the star, and the death of the star.</p>
+                </introduction>
 
                 <subsubsection><title>The Birth of a Star</title>
                 </subsubsection>

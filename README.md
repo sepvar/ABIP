@@ -36,3 +36,6 @@ To remove the \student latex commands:
 	(compile it)
 	mv ABIP.xml.bak ABIP.xml
 	(git status, etc)
+
+To list the images in the xml and print a line that will check to see if that image exists and (if not) try to create the image...
+cat ABIP.xml | sed 's/^ *<image/<image/g' | grep '<image' | sed 's+^.*images/\(.*\)\.svg.*+ls images/\1.svg || $BEE/script/mbx \-v \-c latex-image \-r \1 \-f svg \-d images $AIY/ABIP.xml+g'
