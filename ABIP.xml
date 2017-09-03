@@ -565,7 +565,7 @@
                 <subsection><title>Things in the Sky</title>
                 <!-- \new{v2.3}{Rearranged sections}  -->
 
-                        <example xml:id="sss-sun"><title>The Sun</title>
+                        <example xml:id="sss-sun1"><title>The Sun</title>
                         <!-- \new{v2.1}{This point of this will be to connect gravity-thermo-nuclear and to do it in 1-2 paragraphs (a la the flame challenge).} -->
                         <p>The bright, shiny sun, which keeps us all alive, is a nice example of a rather complex system that allows us to verify our various theories of the world around us.  As an over-simplification of the process, we can consider the existence of a star in three phases: the ignition (some have said <q>birth</q>) of a star, the shining (some would say <q>life</q>) of the star, and the snuffing (<q>death</q>?) of the star.</p>
 
@@ -5447,10 +5447,10 @@ Earth feels a force by \studentZ\ to the left.
         <section xml:id="s-specificheat"><title>Specific Heat Capacity</title>
 
         <p xml:id="d-heatwarm">Heating (positive <m>Q</m>) can warm (positive <m>\Delta T</m>) a material.
-        <men xml:id="eq-Q=mcDT">
+        <men xml:id="eq-Q-mcDT">
         Q = m c \, \Delta T
         </men>
-        but <xref ref="eq-Q=mL" text="type-hybrid" /> (as one example) shows that it is possible to heat (positive <m>Q</m>) a material without warming it (constant <m>T</m>). When we get to <xref ref="s-PV" text="type-hybrid" /> we will see other examples of <q>isothermal processes</q> that have a non-zero <m>Q</m> (heat the system or heat the surroundings) without warming or cooling the system.</p>
+        but <xref ref="eq-Q-mL" text="type-hybrid" /> (as one example) shows that it is possible to heat (positive <m>Q</m>) a material without warming it (constant <m>T</m>). When we get to <xref ref="s-PV" text="type-hybrid" /> we will see other examples of <q>isothermal processes</q> that have a non-zero <m>Q</m> (heat the system or heat the surroundings) without warming or cooling the system.</p>
 
         </section>
 
@@ -5458,7 +5458,7 @@ Earth feels a force by \studentZ\ to the left.
 
         <p>Heating might also change the phase of a material.
         <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-heatwarm" text="type-hybrid"></xref>heating versus warming</p></aside>
-        <men xml:id="eq-Q=mL">
+        <men xml:id="eq-Q-mL">
         Q = \pm mL
         </men>
         </p>
@@ -5540,11 +5540,13 @@ Earth feels a force by \studentZ\ to the left.
                         </p>
                 </aside>
 
-                <p>pst-electricfield</p>
+                        <introduction>
+                        <p>pst-electricfield</p>
+                        </introduction>
 
-                </subsubsection>
+                        <subsubsection><title>Examples</title>
+                        </subsubsection>
 
-                <subsubsection><title>Examples</title>
                 </subsection>
 
                 <subsection><title>Electric Forces, Fields, and Potential Energy</title>
@@ -5566,7 +5568,7 @@ Earth feels a force by \studentZ\ to the left.
         <mrow> \amp \deq \PE = k \frac{q_1 q_2}{r} \amp \leftrightarrow \amp \deq V = k \frac{q}{r} \amp </mrow>
         <mrow> \amp \amp \Delta \PE = q \Delta V \amp \amp </mrow>
         </md>
-        (Recall the parallel with the gravitational interaction in <xref ref=""s-Gconnection /text="type-hybrid">.)</p>
+        (Recall the parallel with the gravitational interaction in <xref ref="s-Gconnection" text="type-hybrid" />.)</p>
 
         </section>
 </chapter>
@@ -5697,9 +5699,11 @@ Earth feels a force by \studentZ\ to the left.
 
         <section><title>[Need title]</title>
 
+        <introduction>
         <p>This is where I will put the fuller explanations.</p>
+        </introduction>
 
-        <subsection xml:id="sss-sun"><title>The Sun</title>
+        <subsection xml:id="sss-sun2"><title>The Sun</title>
 
         <p>The bright, shiny sun, which keeps us all alive, is a nice example of a rather complex system that allows us to verify our various theories of the world around us.  We can consider the existence of a star in three phases: the birth of a star, the life of the star, and the death of the star.</p>
 
@@ -5774,7 +5778,7 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-podcasts"><title>Podcasts</title>
 
-        <p><url href="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99">Spacepod with Carrie Nugent</xref></p>
+        <p><url href="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99">Spacepod with Carrie Nugent</url></p>
         <p><url href="http://www.sciencefriday.com/">Science Friday with Ira Flatow</url></p>
 
         </section>

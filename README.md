@@ -21,15 +21,15 @@ CEE = lab manual
 
 To compile the XML to HTML 
 	(Use aiy to get to the correct directory)
-	xsltproc ../mathbook/user/mathbook-abip-html.xsl ABIP.xml
+	xsltproc $BEE/user/mathbook-abip-html.xsl ABIP.xml
 
 To complie the XML to LaTeX
-	xsltproc ../mathbook/user/mathbook-abip-latex.xsl ABIP.xml
+	xsltproc $BEE/user/mathbook-abip-latex.xsl ABIP.xml
 	(Use WindEdt to pdflatex)
 
 To render the images in SVG (useful for HTML)
-	~/Desktop/Book/mathbook/script/mbx -v -c latex-image -f svg -d images ~/Desktop/Book/Itself/ABIP.xml
-	~/Desktop/Book/mathbook/script/mbx -v -c latex-image -r [specific image reference] -f svg -d images ~/Desktop/Book/Itself/ABIP.xml
+	$BEE/script/mbx -v -c latex-image -f svg -d images $AIY/ABIP.xml
+	$BEE/script/mbx -v -c latex-image -r [specific image reference] -f svg -d images $AIY/ABIP.xml
 
 To remove the \student latex commands:
 	sed -i.bak -f ABIP.sed ABIP.xml
