@@ -299,18 +299,23 @@
 
         <author>
             <personname>Joe Christensen</personname>
-            <email>ChristJ@ThomasMore.edu</email>
             <department>Department of Physics and Mathematics</department>
-            <institution>Thomas More College</institution>
+            <institution>
+                <line>Thomas More College</line>
+                <line>Crestview Hills, KY</line>
+            </institution>
+            <email>ChristJ@ThomasMore.edu</email>
         </author>
 
         <credit>
             <title>PreTeXt Format</title>
             <author>
                 <personname>Robert A. Beezer</personname>
+<!--
                 <department>Department of Mathematics and Computer Science</department>
                 <institution>University of Puget Sound</institution>
                 <email>beezer@pugetsound.edu</email>
+-->
             </author>
         </credit>
 
@@ -347,15 +352,13 @@
     <!-- I've done this as a single section, but we can have a <biography> for each person -->
         <title>About the Authors</title>
 
-            <tabular>
-            <col width="1%" />
-            <col width="90%" />
-                <row><cell colspan="2">Joe Christensen: </cell></row>
-                <row><cell />
-                    <cell><line>B.S. Mathematics and Physics, Bradley University, IL (1990)</line>
-                          <line>Ph.D. Physics, University of Kentucky, KY (1997)</line>
-                          <line>first came to Thomas More College in 2007</line></cell></row>
-            </tabular>
+        <blockquote>
+                <p><alert>Joe Christensen</alert>
+                <ul label="circle"><li><p>B.S. Mathematics and Physics, Bradley University, IL (1990)</p></li>
+                        <li><p>Ph.D. Physics, University of Kentucky, KY (1997)</p></li>
+                        <li><p>first came to Thomas More College in 2007</p></li>
+                </ul></p>
+        </blockquote>
 
     </biography>
 
@@ -376,7 +379,6 @@
 
     <preface>
 
-        <introduction>
         <p>This text is intended for a one or two-semester undergraduate course in introductory algebra-based physics. </p>
 
         <p>The purpose of creating this book is to make better use of the technology that electronic texts allow for without losing the
@@ -401,23 +403,24 @@
             <li><p> <q>In the <lsq/>Real World<rsq/></q> where students see how the concept lives in the messy real world and why
             physicists simplify or ignore complicating aspects. </p></li>
 
-            <li><p> <q>Connections</q>, which might take one of three forms:</p>
+            <li><p> <q>Connections</q>, which might take one of three forms:
             <ol>
                 <li><p> <q>Where have I seen this before?</q> (linking back to earlier material) </p></li>
 
                 <li><p> <q>When will I ever use this?</q> (linking ahead to later material) </p></li>
 
                 <li><p> <q>Why is this interesting?</q> (linking to popular or complex topics)</p></li>
-            </ol></li>
+            </ol></p></li>
         </ol>
         </p>
 
+        <todo>storyboard the characters and how they develop</todo>
         <p>The goal of the book is to encourage curiosity in the reader. Since there is an expectation that students will explore the
         material on their own, advanced topics will explicitly note where the reader can look for supporting material and basic topics will
         be motivated with links to more advanced topics.  To help maintain the interest of the reader, recurring characters will be
-        featured in the examples.  These characters will live a storyline<todo>storyboard the characters and how they develop</todo> and
-        interact with each other.  It is possible to read the examples as a separate storyline for the N<todo>Decide how many
-        characters</todo> interacting characters. </p>
+        featured in the examples.  These characters will live a storyline and
+        interact with each other.  It is possible to read the examples as a separate storyline for the N interacting characters. </p>
+        <todo>Decide how many characters</todo>
 
         <p>I am choosing the approach described above based on the assumption that students will prefer to develop their knowledge by
         building a world-view that connects to their current understanding, their interests, and their world-view. Providing the
@@ -426,8 +429,8 @@
         encourage them to explore <q>what happens when I do this</q> in their real life. Fostering this spirit of exploration will enable
         the instructors to bring their own active-learning techniques into the classroom. </p>
 
-        <p>This textbook is in several Parts<todo><em>Book Layout:</em> Here we should add information about Adventures, Examples,
-        Equation-Stories, and IRLs.</todo>:  <em><xref ref="P-prerequisites"  text="type-global" /></em> is for the preliminaries, including descriptions of science in general, physics in
+        <todo><em>Book Layout:</em> Here we should add information about Adventures, Examples, Equation-Stories, and IRLs.</todo>
+        <p>This textbook is in several Parts:  <em><xref ref="P-prerequisites"  text="type-global" /></em> is for the preliminaries, including descriptions of science in general, physics in
         particular, and the use of math.  <em><xref ref="P-IntroMFE"  text="type-global" /></em> is intended to introduce three fundamental and powerful concepts.  These
         concepts are motion, force, and energy.  I have found that if a student can understand these ideas sufficiently well, then they can
         quickly pick up any other idea that we introduce, even if the idea seems initially unfamiliar.  <em><xref ref="P-UsingMFE"  text="type-global" /></em> develops the
@@ -442,10 +445,9 @@
         of the adventures the reader can investigate in order to test their understanding of the material, and the story lines of each of
         the characters in the text. </p>
 
-        </introduction>
-
-        <paragraphs xml:id="ss-PDF-view"><title>A note about viewing the PDF online</title>
-            <p>If you are viewing this as a PDF set to view <q>single page,</q> then the links will take you to the top of the relevant
+        <blockquote xml:id="ss-PDF-view">
+            <p><alert>A note about viewing the PDF online:</alert>
+            If you are viewing this as a PDF set to view <q>single page,</q> then the links will take you to the top of the relevant
             page, rather than to the specific topic.  If, on the other hand, you are viewing this in <q>continuous view</q> then you should
             go directly to the location of interest. If you are viewing this in <q>two-page</q> mode (whether continuous or not), it might
             not be immediately obvious to which page (left or right) you have jumped.  Most of the PDF viewers I have encountered allow you
@@ -453,8 +455,7 @@
             holding the <c>ctrl</c> key and pressing the <m>[\leftarrow]</m> (<c>Left-Arrow</c>) button.  There are a few PDF viewers that do not
             allow you to <q>go back</q> to the location you linked from.  Whether or not you have that capability, I have placed <q>return
             links</q> in the margins so that you can get back to the place from which you linked. </p>
-        </paragraphs>
-
+        </blockquote>
 
     </preface>
 
@@ -481,14 +482,16 @@
         <p>Physicists, in particular, consider the patterns in the physical world around us.</p>
         <todo>Add description of physics</todo>
 
-        <p xml:id="d-physicspatterns">Some patterns that you might experience help us take very different experiences and group them together.  For example, there are ways in which <xref ref="d-freefall">dropping your keys</xref> and <xref ref="d-ballistic">throwing a dog toy</xref> are very similar.  They both fall, even thought the fall along rather different paths.  There are also patterns that you experience that might look very similar but can be treated very differently.  For example, the path of baseball pitch (See <xref ref="irl-nonparabolic"  text="type-global" />.) is very different for a fast ball compared to a slider, a curve ball, or a knuckleball.</p>
+        <paragraphs xml:id="d-physicspatterns"><p>Some patterns that you might experience help us take very different experiences and group them together.  For example, there are ways in which <xref ref="d-freefall">dropping your keys</xref> and <xref ref="d-ballistic">throwing a dog toy</xref> are very similar.  They both fall, even thought the fall along rather different paths.  There are also patterns that you experience that might look very similar but can be treated very differently.  For example, the path of baseball pitch (See <xref ref="irl-nonparabolic"  text="type-global" />.) is very different for a fast ball compared to a slider, a curve ball, or a knuckleball.</p></paragraphs>
 
                 <assemblage>
-                <figure>
+                <figure xml:id="f-BoonePark">
+                        <caption>Life is full of examples of physics all around us. </caption>
+                        <image xml:id="i-BoonePark" source="images/i-BoonePark.jpg">
                         <description>
-                                <p>Photograph a park with tennis courts and basketball hoops in the background and falling car keys and a dog in the foreground. I think we could do that at Boone County park.</p>
+                                Photograph a park with tennis courts and basketball hoops in the background and falling car keys and a dog in the foreground. I think we could do that at Boone County park.
                         </description>
-                        <caption xml:id="f-BoonePark">Life is full of examples of physics all around us. </caption>
+                        </image>
                 </figure>
                 </assemblage>
 
@@ -496,8 +499,10 @@
 
         <section><title>Careful, Detailed Observation</title>
 
-        <p  xml:id="d-casual">[Discussion of <q>casual observer</q><todo>Consider the <q>casual to the obvious observer</q> joke</todo>
-         as intuition versus <q>scientific observing</q> and mathematical modelling]</p>
+        <todo>Consider the ''casual to the obvious observer'' joke</todo>
+        <paragraphs  xml:id="d-casual">
+                <p>[Discussion of <q>casual observer</q> as intuition versus <q>scientific observing</q> and mathematical modelling]</p>
+        </paragraphs>
         <aside><title>Referenced by</title> <p><xref ref="ss-NI"  text="type-global" /></p></aside>
 
         <p>[Discussion of common student comment: <q>in physics class it is this way, but in <em>real life</em> it is that way.</q>]</p>
@@ -518,12 +523,12 @@
 
 <chapter xml:id="c-physics"><title>Seeing Physics</title>
         <!-- \new{v2.1}{Filled in the details a little.} -->
-        <todo>This chapter should mirror <xref provisional="c-revisted"  text="type-global" /></todo>
+        <todo>This chapter should mirror <xref ref="c-revisted"  text="type-global" /></todo>
 
         <introduction>
         <p>What you will find in this book is a series of chapters that, on the surface, feel like a list of isolated topics.  Each chapter will have examples that focus your attention on examples of that specific concept.  However, the really interesting aspect of physics is that these descriptions of the world around us come together in different ways to explain complex systems that might feel unrelated.  For example, the thermodynamics of making your refrigerator work on Earth comes from the same theories of thermodynamics that help us understand the heat flow of the sun.  Furthermore, in order to understand the sun, we also need to understand the gravitational interaction, which also describes how baseballs fly through the air.</p>
 
-        <p>This chapter will introduce a set of quick-overview explanations of phenomena to indicate how different ideas tie together in some complex systems.  The point  is specifically to over-simplify complex ideas in order to <q>get the idea</q>.  You will also be pointed to the various chapters that go into the details of the relevant physics where you can learn more.  Then, at the end of the book in <xref provisional="c-revisted"  text="type-global" />, we will revisit each of these ideas and go into the description in more depth assuming you have understood each of the relevant chapters, with reference back to the sections that provide the basis of our understanding.</p>
+        <p>This chapter will introduce a set of quick-overview explanations of phenomena to indicate how different ideas tie together in some complex systems.  The point  is specifically to over-simplify complex ideas in order to <q>get the idea</q>.  You will also be pointed to the various chapters that go into the details of the relevant physics where you can learn more.  Then, at the end of the book in <xref ref="c-revisted"  text="type-global" />, we will revisit each of these ideas and go into the description in more depth assuming you have understood each of the relevant chapters, with reference back to the sections that provide the basis of our understanding.</p>
 
                 <warning> <p>Since this particular chapter is intended to be background introduction, rather than a place to study details, none of the links to other sections here will have return links in the rest of the text.  So, if you intend to use this as a jumping off point, you might want to create a bookmark here so that you can return after you read the details in other sections.</p></warning>
 
@@ -541,7 +546,7 @@
                 <p>
                 <ul>
                         <li><p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge">The Flame Challenge</url></p></li>
-                        <li><p>Useful?  <url href="https://newsstand.google.com/articles/CAIiEBF_HbPTdq-9q-hjA0W51WYqFggEKg4IACoGCAow9vBNMK3UCDDq0Rc">How Alan Alda Makes Science Understandable</url></p>
+                        <li><p>Useful?  <url href="https://newsstand.google.com/articles/CAIiEBF_HbPTdq-9q-hjA0W51WYqFggEKg4IACoGCAow9vBNMK3UCDDq0Rc">How Alan Alda Makes Science Understandable</url>
                         <ul>
                                 <li><p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge/what-is-a-flame">2012: What is a flame?</url></p></li>
                                 <li><p><url href="http://www.aldakavlilearningcenter.org/flame-challenge/past-challenges/what-time">2013: What is time?</url></p></li>
@@ -549,7 +554,7 @@
                                 <li><p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge/past-challenges/what-is-sleep">2015: What is sleep?</url></p></li>
                                 <li><p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge/past-challenges/what-is-sound">2016: What is sound?</url></p></li>
                                 <li><p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge/past-challenges/energy">2017: What is energy?</url></p></li>
-                        </ul></li>
+                        </ul></p></li>
                 </ul>
                 </p>
                 </subsection>
@@ -557,7 +562,7 @@
                 <subsection xml:id="ss-matter"><title>The Forming of Matter in the Universe</title>
                 <!--\new{v2.1}{Started this section to give a sense<ellipsis />}  -->
 
-                <p>In the early ages of the universe, which is an entirely different story that could be told, there were a ridiculously large number of particles created and drifting around.  There were a variety of types (<xref provisional="ss-StandardModel"  text="type-global" />), some being positively charged (<xref provisional="s-Echarge"  text="type-global" />), some negatively charged, and some were neutral; but the larger ones tended to gradually decay (<xref provisional="ss-particledecay"  text="type-global" />) into smaller ones.  The smaller of the positively-charged baryons (<xref provisional="s-particle"  text="type-global" />), which we call protons, and the smallest of the negatively-charged leptons (<xref provisional="s-particle"  text="type-global" />), which we call electrons, also tended to stick together because of their electrical charges (<xref provisional="s-Echarge"  text="type-global" />), forming hydrogen atoms.  You may note that as this happens, sometimes the more ambitious of the particles form larger clumps of two protons and two neutrons, making helium atoms that are held together by the strong nuclear force ([need ref])</p>
+                <p>In the early ages of the universe, which is an entirely different story that could be told, there were a ridiculously large number of particles created and drifting around.  There were a variety of types (<xref ref="ss-StandardModel"  text="type-global" />), some being positively charged (<xref ref="s-Echarge"  text="type-global" />), some negatively charged, and some were neutral; but the larger ones tended to gradually decay (<xref ref="ss-particledecay"  text="type-global" />) into smaller ones.  The smaller of the positively-charged baryons (<xref ref="s-particle"  text="type-global" />), which we call protons, and the smallest of the negatively-charged leptons (<xref ref="s-particle"  text="type-global" />), which we call electrons, also tended to stick together because of their electrical charges (<xref ref="s-Echarge"  text="type-global" />), forming hydrogen atoms.  You may note that as this happens, sometimes the more ambitious of the particles form larger clumps of two protons and two neutrons, making helium atoms that are held together by the strong nuclear force ([need ref])</p>
                 <todo>Stopped mid-stream.  This is a good place to jump back in when I am stuck someplace else.</todo>
 
                 </subsection>
@@ -575,7 +580,7 @@
                 <subsection><title>Things on the ground</title>
 
                         <example xml:id="sss-tea"><title>Hot Tea and Iced Tea</title>
-                        <aside><title>Referenced by</title> <p><xref provisional="s-surface-tension"  text="type-global" /></p></aside>
+                        <aside><title>Referenced by</title> <p><xref ref="s-surface-tension"  text="type-global" /></p></aside>
 
                         <p>On 28 April, 2017,<!--\new{v2.3}{New source of info} -->
                         <url href="http://www.cbc.ca/podcasting">CBC Broadcasting</url> published a
@@ -642,7 +647,7 @@
 
         <section xml:id="s-story"><title>Every equation tells a story</title>
 
-        <p>Equations allow us to connect physical reality to very specific predictions.  For example, the equation for thermal conductivity, <xref provisional="eq-thermalconductivity"  text="type-global" /> in <xref provisional="ss-thermalconductivity"  text="type-global" />, allows \studentA<idx><h sortby="\studentA">\studentA</h></idx> to predict the time it takes for \hisA\ oven to warm up to a specific temperature because <m>\displaystyle \frac{Q}{\Delta t} = \kappa A \, \frac{\Delta T}{\Delta x}</m> says that {the rate at which energy flows} {depends on} {how well air allows energy to flow,} {the size of the oven,} and {the amount the temperature needs to change} {across the height of the oven} as follows:</p>
+        <p>Equations allow us to connect physical reality to very specific predictions.  For example, the equation for thermal conductivity, <xref ref="eq-thermalconductivity"  text="type-global" /> in <xref ref="ss-thermalconductivity"  text="type-global" />, allows \studentA<idx><h sortby="\studentA">\studentA</h></idx> to predict the time it takes for \hisA\ oven to warm up to a specific temperature because <m>\displaystyle \frac{Q}{\Delta t} = \kappa A \, \frac{\Delta T}{\Delta x}</m> says that {the rate at which energy flows} {depends on} {how well air allows energy to flow,} {the size of the oven,} and {the amount the temperature needs to change} {across the height of the oven} as follows:</p>
         <todo>I would love for this to be a mouse-over in the equation</todo>
         <todo>Consider <q>chunking</q> the <q>story</q> with colors to indicate the pieces.</todo>
 
@@ -676,10 +681,9 @@
                 <caption>An example of how the math describes the <q>story-of</q> a physical situation.</caption>
                 </table>
 
-        <p>We will see this particular story in more detail with <xref provisional="ex-baking"  text="type-global" /> when \studentA<idx><h sortby="\studentA">\studentA</h></idx> prepares to bake some bread for \hisA\ friends.  Some of the more important equations are listed below.  By jumping between these narratives, you can get a better sense of how to think about physics in general.
+        <p>We will see this particular story in more detail with <xref ref="ex-baking"  text="type-global" /> when \studentA<idx><h sortby="\studentA">\studentA</h></idx> prepares to bake some bread for \hisA\ friends.  Some of the more important equations are listed below.  By jumping between these narratives, you can get a better sense of how to think about physics in general.        </p>
         <todo><p>Is there a way to include something in the <latex /> version but not in the <init>HTML</init> version?</p>
                 <p>(pg.~\pageref{ex:baking}) </p></todo>
-        </p>
 
                 <table>
                 <tabular>
@@ -798,21 +802,21 @@
                 <ul>
                         <li><p> Discussion of the choice of origin (possible reference to zero-value of the potential energy)</p></li>
                         <li><p> Discussion of the choice of the positive-direction (possible reference to falling objects and using positive-up versus positive-down)</p></li>
-                        <li><p xml:id="d-referenceframe">Definition of a reference frame</p>
+                        <li><p xml:id="d-referenceframe">Definition of a reference frame
                         <ul>
                                 <li><p> (different locations) The view from the roof versus from the ground</p></li>
                                 <li><p> (different speeds) The view from the sidewalk versus from a moving car
                                         (See also <xref ref="ss-noninertial"  text="type-global" />.)</p></li>
                                 <li><p> (different types of motion) The view from a park bench versus from a merry-go-round.
-                                        (See also <xref provisional="s-noninertial"  text="type-global" />.)</p></li>
-                        </ul></li>
+                                        (See also <xref ref="s-noninertial"  text="type-global" />.)</p></li>
+                        </ul></p></li>
                 </ul>
                 </p>
                         <aside><title>Referenced by</title>
                         <p>
                         <xref ref="ss-addvel"  text="type-global" />
                         <xref ref="ss-noninertial"  text="type-global" />
-                        <xref provisional="d-NewtonInertial">Newton's Laws</xref>
+                        <xref ref="d-NewtonInertial">Newton's Laws</xref>
                         </p>
                         </aside>
 
@@ -850,7 +854,7 @@
                 <subsection xml:id="ss-vectors"><title>Vectors</title>
                         <aside><title>Referenced by</title>
                         <p>
-                        <xref provisional="d-pushvector">the direction of force</xref>
+                        <xref ref="d-pushvector">the direction of force</xref>
                         <xref ref="sss-netforce"  text="type-global" />
                         </p>
                         </aside>
@@ -911,7 +915,7 @@
 
                         <subsubsection xml:id="sss-scalarvector"><title>Scalar Quantities versus Vector Quantities</title>
                                 <aside><title>Referenced by</title>
-                                <p>Discussion of <xref provisional="d-pushvector">the direction of forces</xref>
+                                <p>Discussion of <xref ref="d-pushvector">the direction of forces</xref>
                                 </p>
                                 </aside>
 
@@ -935,7 +939,7 @@
                         </p>
 
                                 <aside><title>Foreshadow</title>
-                                <p>This will be useful when we are discussing (See <xref ref="ss-ballistic"  text="type-global">ballistics</xref>.) (2-dimensional motion), (See <xref ref="ss-NII"  text="type-global">Newton's second law</xref>.) (combining multiple forces pushing on an object), (See <xref provisional="s-2Dcollisions"  text="type-global">2-dimensional collisions</xref>.), and the calculation of (See <xref provisional="ss-Efield"  text="type-global">electrical fields</xref>.).</p>
+                                <p>This will be useful when we are discussing (See <xref ref="ss-ballistic"  text="type-global">ballistics</xref>.) (2-dimensional motion), (See <xref ref="ss-NII"  text="type-global">Newton's second law</xref>.) (combining multiple forces pushing on an object), (See <xref ref="s-2Dcollisions"  text="type-global">2-dimensional collisions</xref>.), and the calculation of (See <xref ref="ss-Efield"  text="type-global">electrical fields</xref>.).</p>
                                 </aside>
 
                         </subsubsection>
@@ -976,7 +980,7 @@
 
         <p>Since physics has its roots in the natural philosophy of the ancient Greeks and developed mathematically with Galileo and Newton, it has been around long enough for the technical language to both evolve (Newton used the word <q>action</q> for what we refer to as <q>force</q>) and to be absorbed into everyday (colloquial) language. Words like force and energy have taken on broader meanings in English.  In this text, we will try to be precise with the language.  Hopefully we can avoid using the dismissive phrase, <q>Oh, you <em>know</em> what I <em>mean</em>.</q></p>
 
-        <p xml:id="p-massive">One example of not being careful with the language comes when people use the term <q>massive</q> to mean <q>big.</q>  The word massive actually means <q>has a large amount of material</q> whereas big means <q>takes up a large amount of space</q> (which might be replaced by the word <q>voluminous</q> rather than <q>massive</q>). These are related by <xref provisional="s-density">the density</xref><idx>Density</idx> but it is possible to be massive and not voluminous (see, for example, the discussion of <xref provisional="s-blakhole2">black holes</xref>).  While it is <em></em>technically} inaccurate to use massive to mean big, <q>we</q> know what <q>we</q> mean.</p>
+        <p xml:id="p-massive">One example of not being careful with the language comes when people use the term <q>massive</q> to mean <q>big.</q>  The word massive actually means <q>has a large amount of material</q> whereas big means <q>takes up a large amount of space</q> (which might be replaced by the word <q>voluminous</q> rather than <q>massive</q>). These are related by <xref ref="s-density">the density</xref><idx>Density</idx> but it is possible to be massive and not voluminous (see, for example, the discussion of <xref ref="sss-blackhole2">black holes</xref>).  While it is <em></em>technically} inaccurate to use massive to mean big, <q>we</q> know what <q>we</q> mean.</p>
         <aside><title>Referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
 
         </section>
@@ -989,15 +993,16 @@
                 </p>
                 </aside>
 
-        <p>Note the comments in <xref ref="ss-weightmass" text="type-global" /> regarding an internet search on the <q><xref ref="ss-convertunits" text="title">conversion</xref></q> of kilograms-to-pounds.<idx>Significant Digits</idx>
         <todo><p>Remove this sentence and make the next paragraph sensible.  It makes more sense here than in <xref ref="ss-weightmass" text="type-global" />.</p></todo>
-        </p>
+        <p>Note the comments in <xref ref="ss-weightmass" text="type-global" /> regarding an internet search on the
+        <q><xref ref="ss-convertunits" text="title">conversion</xref></q> of kilograms-to-pounds.<idx>Significant Digits</idx></p>
 
+        <todo><p>Refocus this paragraph as an <em>example</em> about significant digits.</p></todo>
         <p>A short Google<trademark /> search by the author found that the conversation rate between pounds and kilograms was
         <m>1 \unit{kg} = 2.2046226218 \unit{lbs}</m>.  Several sites go on to list about 10 decimal places for all of the conversions.  First, you should recall our discussion about <xref ref="s-sigfig" text="title">significant digits</xref><idx>Significant Digits</idx>.
-        <todo><p>Refocus this paragraph as an <em>example</em> about significant digits.</p></todo>
         <!-- \new{v2.2}{moved this conversation here.} -->
-        Second you should note that the unit of pounds is a measure of force (how much the Earth pulls on you)<idx>Weight</idx>, whereas the unit of kilogram is a measure of mass (how much <q>stuff</q> there is)<idx>Mass</idx>.  These are related in proportion to the strength of the gravitational field, which varies in the third digit (on the order of about 1<percent /><todo>Add link: variation in <m>g</m></todo>) around the globe.  Some sites indicate that they are shortening their conversion factor to 3 digits for convenience, but this is not an issue of convenience, it is an issue of precision<idx>Precision</idx>.</p>
+        Second you should note that the unit of pounds is a measure of force (how much the Earth pulls on you)<idx>Weight</idx>, whereas the unit of kilogram is a measure of mass (how much <q>stuff</q> there is)<idx>Mass</idx>.  These are related in proportion to the strength of the gravitational field, which varies in the third digit (on the order of about 1<percent />) around the globe.  Some sites indicate that they are shortening their conversion factor to 3 digits for convenience, but this is not an issue of convenience, it is an issue of precision<idx>Precision</idx>.</p>
+        <todo>Add link: variation in <m>g</m></todo>
 
         </section>
 
@@ -1014,7 +1019,7 @@
                 <xref ref="ss-NII">Newton's second law</xref>,
                 <xref ref="s-Fg" text="type-global" />,
                 <xref ref="d-fundamental">fundamental forces</xref>,
-                <xref provisional="s-FT" text="type-global" />.
+                <xref ref="s-FT" text="type-global" />.
                 </p>
                 </aside>
         <!-- \new{v2.2}{Added section to indicate approximate truth} -->
@@ -1028,8 +1033,8 @@
 
         <p>Another technical example is that Einstein's special theory of relativity is a special case of the general theory of relativity.  The aspect that makes it a special case is that the special theory only considers motion without acceleration.</p>
 
-        <p>One final case that should be mentioned up front is to notice that humans experience the Earth <em>as if</em> it were stationary.
-        <todo><p>Decide if this should be filled out more or if it should reference the variety of places where the text fills out these kinds of details.</p></todo></p>
+        <p>One final case that should be mentioned up front is to notice that humans experience the Earth <em>as if</em> it were stationary.</p>
+        <todo><p>Decide if this should be filled out more or if it should reference the variety of places where the text fills out these kinds of details.</p></todo>
 
         <p>Sometimes we imagine objects to be <q>massless</q> or <q>frictionless</q>.  In these instances we <em>usually</em> mean that the mass (or amount of friction) is small enough to not impact the significant digits of our calculation.  In those cases, if we consider a more-precise measurement/computation, then the mass (or amount of friction) would impact the significant digits.  (See comments in <xref ref="ex-atwood-tension" text="type-global" />.)</p>
 
@@ -1060,6 +1065,8 @@
 
         <section><title>How Physicists Use the Words (Notation)</title>
 
+        <todo><p>Decide if the <c>notation</c> goes here (<xref ref="intro-acc" text="type-global" />) or in <xref ref="d-acc" text="type-global"/></p></todo>
+        <p>
         <ul>
                 <li><p> Position = where is it?  Also discuss location as a vector and giving directions as defining a coordinate system (locate a common origin and unit-vector, then give a series of magnitudes and directions).
                 <ul>
@@ -1073,7 +1080,7 @@
                 </ul></p></li>
                 <li><p> Acceleration = Is its velocity changing?
                 <ul>
-                        <li><p xml:id="intro-acc"><todo><p>Decide if the <c>notation</c> goes here or in <xref ref="d-acc" text="type-global"/></p></todo>
+                        <li><p xml:id="intro-acc">
                                 This chapter will clarify acceleration, deceleration, and changing direction.
                                         <notation>
                                                 <usage><q>acceleration</q></usage>
@@ -1082,6 +1089,7 @@
                         <li><p> This chapter will distinguish distance traveled versus displacement.</p></li>
                 </ul></p></li>
         </ul>
+        </p>
 
         </section>
 
@@ -1100,9 +1108,11 @@
                 <p xml:id="d-atrest">When you are not moving, physicists will describe you as being <q>at rest</q>.  When you drive to the store, your car <q>starts from rest</q> and then travels some distance in some time.  When you arrive at the store, your car <q>ends at rest</q> when you arrive at your destination.</p>
                 <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-atrestinmotion">Newton's First Law</xref></p></aside>
 
-                <p>When you are moving<ellipsis /><todo>Discussion of speed as <m>\txtfrac{\Delta x}{\Delta t}</m></todo></p>
+                <p>When you are moving<ellipsis /></p>
+                <todo>Discussion of speed as <m>\txtfrac{\Delta x}{\Delta t}</m></todo>
 
-                <p>To be moving, you must be moving in a particular direction.<todo>Discussion of velocity as a vector</todo></p>
+                <p>To be moving, you must be moving in a particular direction.</p>
+                <todo>Discussion of velocity as a vector</todo>
 
                 </subsection>
 
@@ -1116,7 +1126,7 @@
         <section xml:id="s-acceleration"><title>Extending the Concepts: Changing How You Move</title>
                 <aside><title>Referenced by</title>
                 <p>
-                <xref provisional="d-NewtonInertial">non-inertial reference frames</xref>,
+                <xref ref="d-NewtonInertial">non-inertial reference frames</xref>,
                 <xref ref="d-fma"><m>F=ma</m></xref>
                 </p>
                 </aside>
@@ -1129,11 +1139,12 @@
                         </p>
                         </aside>
 
+                <todo><p>Decide if the <c>notation</c> goes (<xref ref="d-acc" text="type-global" />) or in <xref ref="intro-acc" text="type-global" /></p></todo>
                 <p>
                 <ul>
                         <li><p xml:id="d-motion"> Description of <q>moving</q> as <em>moving at constant velocity</em>.</p></li>
                         <li><p xml:id="d-acc"> Description of <em>accelerating</em> as either <q>accelerating</q>, <q>decelerating</q>, or <q>turning.</q>
-                                        <todo><p>Decide if the <c>notation</c> goes here or in <xref ref="intro-acc" text="type-global" /></p></todo>
+
                                         <notation>
                                                 <usage><q>acceleration</q></usage>
                                                 <description>refers to the general idea of changing your motion (velocity), meaning <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>)</description>
@@ -1142,11 +1153,11 @@
                 </ul></p>
                         <aside><title>Referenced by</title> <p><xref ref="s-forcewords" text="type-global" /> points to accelerating item.</p></aside>
 
-                <p>Discussion of <xref ref="ex-slowcar" text="type-global" /> and <xref ref="ex-coasting" text="type-global" />.
+                <p>Discussion of <xref ref="ex-slowcar" text="type-global" /> and <xref ref="ex-coasting" text="type-global" />.</p>
                 <todo><p>Is there a way to include something in the <latex /> version but not in the <init>HTML</init> version?</p>
                         <p>(pg.~\pageref{ex-slowcar})</p>
                         <p>(pg.~\pageref{ex-coasting})</p>
-                </todo></p>
+                </todo>
 
                         <exercise xml:id="ex-slowcar">
                                 <title>How far will you go?</title>
@@ -1324,7 +1335,7 @@
 
                 <p>It turns out that, ignoring the effect of <xref ref="ss-airresistance" text="title">air resistance</xref>, all objects fall with the same acceleration (due to the gravity), <m>a_g = 9.81\unitfrac{m}{s^2}</m> downwards. In this book,<idx>Freefall</idx>
                         <assemblage><p><q>being in freefall</q> will mean moving only under the influence of gravity and having an acceleration of <m>a_g = 9.81\unitfrac{m}{s^2}</m> downwards.</p></assemblage>
-                We will start to discuss the reason for this in <xref ref="s-Fg" text="type-global" /> and then get into more detail in <xref provisional="c-gravity" text="type-global" />. For now, <xref ref="ex-freefall" text="type-global" /> shows the type of experiment that can allow you to calculate the acceleration due to gravity.</p>
+                We will start to discuss the reason for this in <xref ref="s-Fg" text="type-global" /> and then get into more detail in <xref ref="c-gravity" text="type-global" />. For now, <xref ref="ex-freefall" text="type-global" /> shows the type of experiment that can allow you to calculate the acceleration due to gravity.</p>
 
                         <exercise xml:id="ex-freefall">
                                 <title>How quickly does it fall?</title>
@@ -1349,13 +1360,13 @@
                                                 <mrow> a_11 &amp; = \frac{(8.11\unitfrac ms)^2 - (0 \unitfrac ms)^2}{2(\sig{3.35}{3}{m})}
                                                         \ = \ \sigfrac{9.80}{8}{m}{s^2} </mrow>
                                         </md>
-                                        Notice that these have some variation due to the rounding.  It turns out that the variation in the value of acceleration depends on the composition of the earth in your location as well as your altitude above sea-level.  That will be discussed in detail in <xref provisional="c-gravity" text="type-global" />, for simplicity we will assume that all objects accelerate at the rate of <m>9.81\unitfrac{m}{s^2}</m> when they are solely under the influence of gravity.</p>
+                                        Notice that these have some variation due to the rounding.  It turns out that the variation in the value of acceleration depends on the composition of the earth in your location as well as your altitude above sea-level.  That will be discussed in detail in <xref ref="c-gravity" text="type-global" />, for simplicity we will assume that all objects accelerate at the rate of <m>9.81\unitfrac{m}{s^2}</m> when they are solely under the influence of gravity.</p>
                                 </solution>
                                 <postlude>
                                         <sidebyside widths="50% 50%" haligns="center right">
                                                 <p></p>
                                                 <tabular halign="right"><row><cell halign="right">
-                                                        Return to:<xref ref="d-accgrav">freefall</xref>, <xref provisional="d-Fgbal" text="type-global" />.
+                                                        Return to:<xref ref="d-accgrav">freefall</xref>, <xref ref="d-Fgball" text="type-global" />.
                                                 </cell></row></tabular>
                                         </sidebyside>
                                 </postlude>
@@ -1378,7 +1389,7 @@
                 <idx><h>Reference Frames</h><h>Inertial</h></idx>
                 <idx><h>Reference Frames</h><h>Non-inertial</h></idx>
 
-                <p>[Discuss non-rotating linearly accelerating <xref ref="d-referenceframe">reference frames</xref>. See also <xref provisional="s-noninertial" text="type-global" /> for a discussion on rotating reference frames.]</p>
+                <p>[Discuss non-rotating linearly accelerating <xref ref="d-referenceframe">reference frames</xref>. See also <xref ref="s-noninertial" text="type-global" /> for a discussion on rotating reference frames.]</p>
 
                 <p>[Comment on the Earth as essentially stationary?  See <xref ref="s-effective2" text="type-global" /> on effective theories.]</p>
                 <!-- \new{v2.2}{Effective theories}{} -->
@@ -1478,7 +1489,7 @@
                                 <sidebyside widths="50% 50%" haligns="center right">
                                         <p></p>
                                         <tabular halign="right"><row><cell halign="right">
-                                                Return to: <xref ref="se-ceiling" text="type-global" />, <xref provisional="se-throw-up" text="type-global" />
+                                                Return to: <xref ref="se-ceiling" text="type-global" />, <xref ref="se-throw-up" text="type-global" />
                                         </cell></row></tabular>
                                 </sidebyside>
                                 </postlude>
@@ -1534,7 +1545,7 @@
                                         <introduction><p>Go to a baseball game on a calm day.  Sit near third base.</p></introduction>
                                         <task>
                                                 <statement xml:id="Q-fly-balls"><p>Watch the path of fly balls to left field.  Are they parabolic?</p></statement>
-                                                <solution xml:id="A-fly-balls"><p>If you watch them carefully, you will notice that long fly balls are not parabolic.  It turns out that the air resistance is fairly complicated, but in the case of baseballs, the part that is relevant is that air resistance is strong when the ball is moving faster and weak when the ball is moving slower.  (This is different than the surface friction you will see in <xref provisional="s-Ff" text="type-global"/>.)  The effect of this is that the ball (usually) looks like it travels up into the air on a fairly straight path with a slight bend, which would produce a very wide parabola.  As it slows, the horizontal motion decreases, which tightens the parabola.  By the time the ball gets to its highest point, it is often travelling fairly slowly and has mostly all vertical motion by the time it drops into the outfielder's glove.</p></solution>
+                                                <solution xml:id="A-fly-balls"><p>If you watch them carefully, you will notice that long fly balls are not parabolic.  It turns out that the air resistance is fairly complicated, but in the case of baseballs, the part that is relevant is that air resistance is strong when the ball is moving faster and weak when the ball is moving slower.  (This is different than the surface friction you will see in <xref ref="s-Ff" text="type-global"/>.)  The effect of this is that the ball (usually) looks like it travels up into the air on a fairly straight path with a slight bend, which would produce a very wide parabola.  As it slows, the horizontal motion decreases, which tightens the parabola.  By the time the ball gets to its highest point, it is often travelling fairly slowly and has mostly all vertical motion by the time it drops into the outfielder's glove.</p></solution>
                                         </task>
                                         <task>
                                                 <statement xml:id="Q-pitches-side"><p>The path of pitch towards home plate.  Are they parabolic?</p></statement>
@@ -1584,8 +1595,10 @@
                         <usage><q>force</q></usage>
                         <description>refers to the general idea of pushing or pulling; every force is enacted <term>by</term> one person or object and is acted <term>on</term> another.</description>
                 </notation>
-                <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-heatverb" text="global">heat as a verb</xref></p></aside>
-                <p xml:id="d-forcenoun">The technical term <term>force</term><idx><h>Force</h><h>description</h></idx> refers to the general idea of pushing or pulling.  In the same way<todo><p>Change this to move most of the description of accelerating into a pull up box by moving the language to that other location (paragraph, not section)</p></todo> that physicists use the word <xref ref="d-acc" text="title">acceleration</xref> (technically <em>changing the velocity</em>) to mean <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>), we will use <em>force as a noun</em><idx><h>Force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling.</p>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatverb" text="global">heat as a verb</xref></p></aside>
+
+                <todo><p>Change this to move most of the description of accelerating into a pull up box by moving the language to that other location (paragraph, not section)</p></todo>
+                <p xml:id="d-forcenoun">The technical term <term>force</term><idx><h>Force</h><h>description</h></idx> refers to the general idea of pushing or pulling.  In the same way that physicists use the word <xref ref="d-acc" text="title">acceleration</xref> (technically <em>changing the velocity</em>) to mean <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>), we will use <em>force as a noun</em><idx><h>Force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling.</p>
 
                 <p>You should note that you can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.</p>
                         <remark><title>Push or Pull</title>
@@ -1612,7 +1625,7 @@
                 </notation>
                 The notation for this will be <m>F_{A,B}</m> where the first subscript is the person who felt the force (who the force is <q>on</q>) and the second subscript is who exerted the force (who the force is <q>by</q>).  In those instances when we only care about who is feeling the force and not who is exerting the force, we might just use one subscript <m>F_A</m>.  In some cases, there may be two forces acting on one person (or object).  In that case, it will be obvious who is feeling the force and we will use the subscript to distinguish which force it is, such as <m>F_1</m> or <m>F_2</m>, rather than who feels the force.</p>
                 </convention>
-        This will be more relevant when we discuss in <xref provisional="c-forcetype" text="type-global"/> the types of forces that might be applied.</p>
+        This will be more relevant when we discuss in <xref ref="c-forcetype" text="type-global"/> the types of forces that might be applied.</p>
 
         <paragraphs><title>Looking ahead</title><todo>Reconsider titling these paragraphs (page too busy)</todo>
                 <p xml:id="d-Newtonahead">Looking ahead to <xref ref="s-Newton" text="title">Newton's Laws</xref><idx><h>Laws</h><h>Newton</h></idx>, you should be ready to notice that the <xref ref="ss-NI" text="title">first law</xref> is about objects that are not feeling a force, the <xref ref="ss-NII" text="title">second law</xref> is about a specific object that is feeling a force, and the <xref ref="ss-NIII" text="title">third law</xref> is about the interaction between the two objects.  In all three of these, we care about the object feeling the force.   It is only in the third law that we care about the object exerting the force.
@@ -1622,7 +1635,7 @@
         <paragraphs><title>Looking back</title>
                 <p xml:id="d-pushvector">Looking back, forces are <xref ref="sss-scalarvector" text="title">vectors</xref>:
                         <assemblage><p>Pushing on something intrinsically involves a direction.</p></assemblage>
-                You will use this property to show that multiple people pushing in the same direction increases the effect, whereas multiple people pushing in opposite directions reduces the effect.  One might say that people who push an object in opposite directions work<fn>After you study <xref provisional="s-work" text="type-global" />, this play on words will be hilarious!</fn> against each other.  Because the force is a vector, whenever you are answering a question about a force, you should always expect to give the strength of the force (the <xref ref="ss-vectors" text="title">magnitude</xref>) and <xref ref="ss-vectors" text="title">the direction</xref> of the force (relative to some specific axis, usually the positive <m>x</m>-axis).</p>
+                You will use this property to show that multiple people pushing in the same direction increases the effect, whereas multiple people pushing in opposite directions reduces the effect.  One might say that people who push an object in opposite directions work<fn>After you study <xref ref="s-work" text="type-global" />, this play on words will be hilarious!</fn> against each other.  Because the force is a vector, whenever you are answering a question about a force, you should always expect to give the strength of the force (the <xref ref="ss-vectors" text="title">magnitude</xref>) and <xref ref="ss-vectors" text="title">the direction</xref> of the force (relative to some specific axis, usually the positive <m>x</m>-axis).</p>
         </paragraphs>
         </section>
 
@@ -1643,9 +1656,10 @@
                 <li><p> For every force acting (the <q>action</q>) on one object by an other object, there is an equal-in-magnitude reaction-force acting on the other object in the opposite direction.</p></li>
         </ol></p>
 
-        <p xml:id="d-NewtonInertial">There are a few terms that should be clarified in these laws.  Being in an inertial <xref ref="d-referenceframe" text="title">reference frame</xref><idx><h>Reference Frames</h><h>Inertial</h></idx> essentially means being in a place in which you do not have to hold on in order to maintain your position.  If you are <xref ref="s-acceleration" text="title">accelerating</xref> (recall<todo>Make this <q>recall</q> a pop-up, not a parenthetical, by linking to paragraph, not a section</todo> that this means <em>speeding up</em>, <em>slowing down</em>, or <em>changing direction</em>) then you are not in an inertial reference frame, but rather are in a non-inertial reference frame.  In this case, you will misinterpret the forces acting.  This will be discussed in more detail in <xref provisional="s-noninertial" text="type-global" /> when we discuss centripetal force and in <xref provisional="ss-coriolis" text="type-global" /> when we discuss the Coriolis effect.</p>
+        <todo>Make this <q>recall</q> a pop-up, not a parenthetical, by linking to paragraph, not a section</todo>
+        <p xml:id="d-NewtonInertial">There are a few terms that should be clarified in these laws.  Being in an inertial <xref ref="d-referenceframe" text="title">reference frame</xref><idx><h>Reference Frames</h><h>Inertial</h></idx> essentially means being in a place in which you do not have to hold on in order to maintain your position.  If you are <xref ref="s-acceleration" text="title">accelerating</xref> (recall that this means <em>speeding up</em>, <em>slowing down</em>, or <em>changing direction</em>) then you are not in an inertial reference frame, but rather are in a non-inertial reference frame.  In this case, you will misinterpret the forces acting.  This will be discussed in more detail in <xref ref="s-noninertial" text="type-global" /> when we discuss centripetal force and in <xref ref="ss-coriolis" text="type-global" /> when we discuss the Coriolis effect.</p>
 
-        <p xml:id="d-objectinmotion">Sometimes Newton's first law is written to include the phrase <q>an object in motion</q>, which I will be careful to link directly to <xref ref="d-motion" text="title">velocity</xref>, as was done above.  However, it technically should reference the momentum, which is discussed in <xref provisional="c-momentum" text="type-global" />.</p>
+        <p xml:id="d-objectinmotion">Sometimes Newton's first law is written to include the phrase <q>an object in motion</q>, which I will be careful to link directly to <xref ref="d-motion" text="title">velocity</xref>, as was done above.  However, it technically should reference the momentum, which is discussed in <xref ref="c-momentum" text="type-global" />.</p>
 
         <p>The way Newton's third law is often written and referred to includes the words <q>action</q> and <q>reaction</q>.  Newton was referring to forces with these words and to keep it clear in our discussion, we will use the word force, with the occasional clarification of the action-force or the reaction-force.</p>
 
@@ -1658,13 +1672,14 @@
                 <assemblage xml:id="as-NI"><title>Newton's First Law</title><idx><h>Newton</h><h>First Law</h></idx>
                         <p>When viewed from an inertial reference frame, an object with no forces acting on it will maintain its velocity, which may be zero.</p>
                 </assemblage>
-                <aside><title>Touchstone</title><p>You might also recall the discussion in <xref provisional="ss-noninertial" text="type-global" />.</p></aside>
-                <p>Let's take this apart and connect it to your daily experiences.  Looking ahead, we will discuss the surface of the Earth as a <xref provisional="d-noninertial">non-inertial rotating reference frame</xref>; however, the effect is small enough that for most of what we <xref ref="d-casual" text="title">casually observe</xref>, we can safely pretend that the Earth is stationary and that we are actually at rest while sitting on the curb watching the world go by.  This is so true that our human brains already interpret everything around us as though it were an inertial reference frame.  This psychological perspective is exactly the feature that both allows us to make fairly reliable predictions about the world around us <em>and</em> causes us to make incorrect judgements when we encounter non-inertial reference frames.  That is to say, as long as we don't measure our world too closely, we are viewing it from an essentially inertial reference frame.  This point is so implicit, that many books do not even include
-                        <todo>Consider adding comment about Newton not including <q>inertial reference frame</q> to his laws.</todo>
+                <aside><title>Touchstone</title><p>You might also recall the discussion in <xref ref="ss-noninertial" text="type-global" />.</p></aside>
+
+                <todo>Consider adding comment about Newton not including <q>inertial reference frame</q> to his laws.</todo>
+                <p>Let's take this apart and connect it to your daily experiences.  Looking ahead, we will discuss the surface of the Earth as a <xref ref="d-noninertial">non-inertial rotating reference frame</xref>; however, the effect is small enough that for most of what we <xref ref="d-casual" text="title">casually observe</xref>, we can safely pretend that the Earth is stationary and that we are actually at rest while sitting on the curb watching the world go by.  This is so true that our human brains already interpret everything around us as though it were an inertial reference frame.  This psychological perspective is exactly the feature that both allows us to make fairly reliable predictions about the world around us <em>and</em> causes us to make incorrect judgements when we encounter non-inertial reference frames.  That is to say, as long as we don't measure our world too closely, we are viewing it from an essentially inertial reference frame.  This point is so implicit, that many books do not even include
                         <fn xml:id="f-newtoninclude">Newton himself did not include it in his original statement.</fn>
-                        <todo>check the implications of this footnote.</todo>
                 the portion of the statement referring to the reference frame.</p>
                 <aside><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></aside>
+                <todo>check the implications of this footnote.</todo>
 
                 <p xml:id="d-atrestinmotion">The rest of this statement is often written a little differently (and less concisely) as <q>an object at rest remains at rest unless acted on by an external force and an object in motion remains in motion unless acted on by an external force.</q>  Since being <xref ref="d-atrest" text="title"><q>at rest</q></xref> is a statement about the velocity<m>(\vec v=0)</m> and being <xref ref="d-motion"><q>in motion</q></xref> is also a statement about the velocity, each of these statements can be understood as saying that
                 <assemblage><p>Forces are those things that cause a change in the velocity.</p></assemblage>
@@ -1674,9 +1689,9 @@
 
                         <subsubsection xml:id="sss-inertia"><title>Inertia</title><idx>Inertia</idx>
 
-                        This law is often called the <q>law of inertia</q>.  The concept of inertia can be described as <em>the tendency of an object to maintain its velocity</em>.  This is describing how the object behaves when you don't do anything to it.  The inertia is not a quantity that physicists calculate, but physicists do refer to objects as having a lot of inertia, usually to indicate that it will take a large force to change the object's motion, or as having a small amount of inertia, usually to indicate that it should be relatively easy to change the object's motion.  However, the inertia does not actually refer to the force needed.  Instead, the inertia most often refers to the <q>inertial mass</q> of an object, which shows up in the second law.
+                        <p>This law is often called the <q>law of inertia</q>.  The concept of inertia can be described as <em>the tendency of an object to maintain its velocity</em>.  This is describing how the object behaves when you don't do anything to it.  The inertia is not a quantity that physicists calculate, but physicists do refer to objects as having a lot of inertia, usually to indicate that it will take a large force to change the object's motion, or as having a small amount of inertia, usually to indicate that it should be relatively easy to change the object's motion.  However, the inertia does not actually refer to the force needed.  Instead, the inertia most often refers to the <q>inertial mass</q> of an object, which shows up in the second law.
                                 <assemblage><p>Inertia is not a force.</p></assemblage>
-                        Sometimes when physicists are not being careful with their language, they will appear to use the word inertia interchangeably with the term <xref provisional="c-momentum" text="title">momentum</xref>, which we will discuss in more detail in <xref provisional="ss-inertia" text="type-global" />}.
+                        Sometimes when physicists are not being careful with their language, they will appear to use the word inertia interchangeably with the term <xref ref="c-momentum" text="title">momentum</xref>, which we will discuss in more detail in <xref ref="ss-inertia" text="type-global" />.</p>
 
                         </subsubsection>
                         <subsubsection xml:id="sss-NItogether"><title>How the Laws Work Together</title>
@@ -1684,9 +1699,9 @@
                         <p>You should notice that Newton's First Law is about what happens when you are <em>not pushing</em> on the object, which is to say, the tendency of an object to maintain its own motion without a force acting on it; this is the inertia of the object.  On the other hand, Newton's Second Law is about what happens <em>to the object</em> when you <em>do push</em> on an it.  This is what we will consider next.  After that, Newton's third law will describe what happens <em>to the thing pushing</em> rather than just to the thing being pushed.
 <!-- Redundant -->
                         <xref ref="sss-NIItogether" text="title">The section</xref> at the end of <xref ref="ss-NII" text="type-global" /> will explore these ideas further.
-                        <todo>Choose between these sentences once they are not provisional.</todo>
                         <xref ref="sss-NIItogether" text="phrase-global" /> will explore these ideas further.
                         </p>
+                        <todo>Choose between these sentences once they are not provisional.</todo>
 
                         </subsubsection>
 
@@ -1705,7 +1720,7 @@
                 <introduction>
                 <assemblage xml:id="as-NII"><title>Newton's Second Law</title><idx><h>Newton</h><h>Second Law</h></idx> <p>When viewed from an inertial reference frame, the vector-sum of all forces acting on an object will cause that object to accelerate in proportion to its mass: <m>\vec F_\mathrm{net} = m \vec a</m>.</p>
                 </assemblage>
-                <p>Let's take this apart and connect it to your daily experiences.  As with Newton's First Law, the <xref provisional="d-noninertial" text="title">non-inertial rotating reference frame</xref> of the surface of the Earth is a small enough effect that, as long as we don't measure our world too closely, we can pretend that we are viewing it essentially from an inertial reference frame.</p>
+                <p>Let's take this apart and connect it to your daily experiences.  As with Newton's First Law, the <xref ref="d-noninertial" text="title">non-inertial rotating reference frame</xref> of the surface of the Earth is a small enough effect that, as long as we don't measure our world too closely, we can pretend that we are viewing it essentially from an inertial reference frame.</p>
                 <aside><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></aside>
 
                 <p xml:id="d-fma">For this law, it is often sufficient to write down the equation and know that the words are there for back-up.  While most people have no trouble remembering <m>F=ma</m>, it is important to pay attention to two aspects:
@@ -1749,13 +1764,14 @@
                 </heuristic>
 
                 <biographical><title>Touchstone</title><p><xref ref="s-acceleration" text="title">Recall</xref> the direction of the acceleration does not determine the direction <em>of the motion</em>, but rather determines the direction <em>of the change</em> in motion.</p></biographical>
-                <p><alert>Looking Back:</alert> You should <xref ref="s-acceleration" text="title">recall</xref>, that the direction of the acceleration does not determine the direction <em>of the motion</em>, but rather determines the direction <em>of the change</em> in motion.  <alert>Looking ahead:</alert> That idea will be important when we discuss how a <xref provisional="s-FT" text="title">tension</xref> acts as a <xref provisional="s-centripetal" text="title">centripetal force</xref>, the relationship between velocity and acceleration in a <xref provisional="s-springs" text="title">spring</xref> that <xref provisional="c-SHMspring" text="title">oscillates</xref>, and objects that are propelled through either a <xref provisional="s-Gfield" text="title">gravitational</xref> or an <xref provisional="ss-Efield" text="title">electrical</xref> field.</p>
+                <p><alert>Looking Back:</alert> You should <xref ref="s-acceleration" text="title">recall</xref>, that the direction of the acceleration does not determine the direction <em>of the motion</em>, but rather determines the direction <em>of the change</em> in motion.  <alert>Looking ahead:</alert> That idea will be important when we discuss how a <xref ref="s-FT" text="title">tension</xref> acts as a <xref ref="s-centripetal" text="title">centripetal force</xref>, the relationship between velocity and acceleration in a <xref ref="s-springs" text="title">spring</xref> that <xref ref="c-SHMspring" text="title">oscillates</xref>, and objects that are propelled through either a <xref ref="s-Gfield" text="title">gravitational</xref> or an <xref ref="ss-Efield" text="title">electrical</xref> field.</p>
 
                 </introduction>
                 <subsubsection xml:id="sss-unit-N"><title>Units of Force</title>
                 <aside><title>Referenced by</title> <p><xref ref="ss-units" /></p></aside><idx><h>Force</h><h>Units of</h></idx>
 
-                        <p>Recall that the fundamental units of the <xref ref="ss-units" text="title">SI-system</xref> are meters, kilograms, and seconds (MKS)<todo>maybe note the MKS-to-SI transition. maybe leave that in <xref ref="ss-units" text="type-global" />.</todo>.  With our relationship connecting force to mass <m>\unit{(kg)}</m> and acceleration <m>\left(\unitfrac{m}{s^2}\right)</m>, we can see that the units of force are <m>{}\unitfrac{kg \cdot m}{s^2}</m>.  This quantity is so common that we would like to have a shorthand for it.  Furthermore, Sir Isaac Newton did such ground-breaking work on the concept, that it was decided in 1948<fn xml:id="fn-defineN">According to: International Bureau of Weights and Measures (1977), The international system of units (330-331) (3rd ed.), U.S. Dept. of Commerce, National Bureau of Standards,
+                        <todo>maybe note the MKS-to-SI transition. maybe leave that in <xref ref="ss-units" text="type-global" />.</todo>
+                        <p>Recall that the fundamental units of the <xref ref="ss-units" text="title">SI-system</xref> are meters, kilograms, and seconds (MKS).  With our relationship connecting force to mass <m>\unit{(kg)}</m> and acceleration <m>\left(\unitfrac{m}{s^2}\right)</m>, we can see that the units of force are <m>{}\unitfrac{kg \cdot m}{s^2}</m>.  This quantity is so common that we would like to have a shorthand for it.  Furthermore, Sir Isaac Newton did such ground-breaking work on the concept, that it was decided in 1948<fn xml:id="fn-defineN">According to: International Bureau of Weights and Measures (1977), The international system of units (330-331) (3rd ed.), U.S. Dept. of Commerce, National Bureau of Standards,
                         <url href="https://books.google.com/books?id=YvZNdSdeCnEC&amp;pg=PA17\#v=onepage&amp;q&amp;f=false">p. 17</url>,
                         <!-- ISBN 0745649742, Found at https://en.wikipedia.org/wiki/Newton_(unit) -->
                         which refers to
@@ -2093,20 +2109,23 @@
                                 <xref ref="f-firstFBD" text="type-global" />,
                                 <xref ref="d-FBD-AB" text="title">discussion about \ref*{se-FBD-AB}</xref>,
                                 <xref ref="se-weightA" text="type-global" />,
-                                <xref provisional="A-netF-a" text="type-global" />,
+                                <xref ref="A-netF-a" text="type-global" />,
                                 <xref ref="f-firstFBDupdate" text="type-global" />
                                 </p>
                         </aside>
                         <statement>
-                                <p>If the forces in <xref ref="se-netFadd" text="type-global" /><todo>As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!)</todo> are applied to an object with mass <m>2.0\unit{kg}</m>, then it will accelerate at the rate of
+                                <todo>As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!)</todo>
+                                <p>If the forces in <xref ref="se-netFadd" text="type-global" /> are applied to an object with mass <m>2.0\unit{kg}</m>, then it will accelerate at the rate of
                                 <me> \vec a =\frac{\vec F_\mathrm{net}}{m} = \frac{+(9.0\unit N)\ihat}{2.0 \unit{kg}} = 4.5\unitfrac{N}{kg} \ihat = 4.5\unitfrac{kg \cdot m}{s^2 \cdot kg} \ihat \ = \ 4.5 \unitfrac{m}{s^2} \ihat </me>
                                 which (recall <xref ref="s-EOM" text="type-global" />), after acting for <m>1.6\unit{s}</m> on an object originally at rest, would result in a final speed of
                                 <me> v_f = (0\unitfrac{m}{s}) + (+4.5\unitfrac{m}{s^2})(1.6\unit{s}) = 7.2 \unitfrac{m}{s} </me>
                                 </p>
                         </statement>
                         </example>
-                        <p>We can do this same kind of procedure for the case when forces are in two dimensions.<todo>Merge <xref ref="ex-2Dfa" text="type-global" /> and <xref ref="ex-2Dfa2" text="type-global" />.  Also reference the example here.</todo>
-                        </p>
+
+                        <todo>Merge <xref ref="ex-2Dfa" text="type-global" /> and <xref ref="ex-2Dfa2" text="type-global" />.  Also reference the example here.</todo>
+                        <p>We can do this same kind of procedure for the case when forces are in two dimensions.</p>
+
                         <exercise xml:id="ex-2Dfa"><title>Accelerating a box from <m>\vec F_\mathrm{net}</m></title>
                         <statement>
                                 <p>A <m>2.0\unit{kg}</m> mass is being pushed north with <m>5.0\unit{N}</m> and east with <m>4.0 \unit{N}</m>.  What is the acceleration?</p>
@@ -2203,7 +2222,7 @@
                         </solution>
                         </example>
 
-                        <p xml:id="d-usesofFma"><alert>Looking ahead</alert>: Yet another example of using this equation can be seen in many bathrooms.  The scale that people stand on uses a spring (introduced in <xref provisional="ss-scales" text="type-global" /> and discussed in detail in <xref provisional="s-springs" text="type-global" />) to adjust the force provided until your acceleration is zero (placing you in equilibrium) and then tells you the force it needed to balance your weight.</p>
+                        <p xml:id="d-usesofFma"><alert>Looking ahead</alert>: Yet another example of using this equation can be seen in many bathrooms.  The scale that people stand on uses a spring (introduced in <xref ref="ss-scales" text="type-global" /> and discussed in detail in <xref ref="s-springs" text="type-global" />) to adjust the force provided until your acceleration is zero (placing you in equilibrium) and then tells you the force it needed to balance your weight.</p>
 
                         <p>It will be easier to visualize these ideas when we introduce the tool of a free-body diagram in <xref ref="sss-FBD" tesxt="type-global" />.</p>
 
@@ -2230,8 +2249,8 @@
 
                         <exploration xml:id="cyoa-NI"><title>Out of gas</title>
                                 <statement>
-                                        <p>On a long road trip with your friend \studentB<idx><h sortby="\studentB">\studentB</h></idx>, your car starts to sputter as it runs out of gas shortly before arriving in a new town.  You see a sign for a gas station in the distance and have to decide what to do.  You and \studentB\ can think of three options.
                                         <todo>I like <q>answer</q> better, but it doesn't fit.  <q>hint</q> fits, but I don't like it.  I can't figure out how to extend that line.  sidebyside hides the answers.</todo>
+                                        <p>On a long road trip with your friend \studentB<idx><h sortby="\studentB">\studentB</h></idx>, your car starts to sputter as it runs out of gas shortly before arriving in a new town.  You see a sign for a gas station in the distance and have to decide what to do.  You and \studentB\ can think of three options.
                                         <dl>
                                                 <li xml:id="c-parkandwalk"><title>Plan A</title>
                                                         <p>Pull over, park the car, walk to the gas station, buy a gas can, fill it up, carry it back to the car, and drive on!   If you follow this plan, then read <xref ref="a-parkandwalk" text="type-local" />.</p></li>
@@ -2309,7 +2328,7 @@
                 Another way to say this is that all forces come in action/reaction pairs that necessarily have equal magnitude and opposite direction and necessarily act on different objects.
                 </p>
                 <aside><title>Foreshadow</title>
-                        <p>This law is the force-version of the statement of the <xref provisional="s-conservemom" text="title">conservation of momentum</xref>.</p>
+                        <p>This law is the force-version of the statement of the <xref ref="s-conservemom" text="title">conservation of momentum</xref>.</p>
                 </aside>
 
                 <p xml:id="d-NIIIbracing">Let's take this apart and connect it to your daily experiences.  Students of physics will often see the terms action and reaction and connect it to the way humans react to the actions of their friends.  However, this implies a causal<fn xml:id="causual">Please note that <q>causal</q> and <q>casual</q> are different words.</fn> response that is not true for Newton's forces.  That is to say, this is not a <q>revenge law</q> whereby if you push on me, then I will choose to push you back.  Instead, it is expressing that forces are intrinsically interactions between a pair of objects.  When you push on me, I am -- independent of my choosing to do so -- necessarily pushing back on you.  But, you might say, <q>if that were true, then why am I able to sneak up on you and push you over without falling over myself?</q>  Well, you can think about how that works by reading <xref ref="cyoa-NIII" text="type-global" />. After we introduce the tool of a free-body diagram in the next subsection, you can also explore this idea by comparing <xref ref="ex-braced" text="type-global" /> to <xref ref="ex-unbraced" text="type-global" />.</p>
@@ -2331,10 +2350,10 @@
 
                         <example xml:id="f-firstFBD">
                                 <title>The reaction forces on people pushing a box<idx><h>Free-Body Diagrams</h><h>Images</h></idx></title>
-                                <p>Let's reconsider <xref ref="se-netFadd" text="type-global" />
                                 <todo>
                                         <p>As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!  But, it is still nice to be moving a small mass so that it has a large acc, and the people have small acc.)</p>
                                 </todo>
+                                <p>Let's reconsider <xref ref="se-netFadd" text="type-global" />
                                 and imagine that \studentA<idx><h sortby="\studentA">\studentA</h></idx> stands to the left of the object and exerts a force to the right (pushes) with magnitude <m>\vec F_1 = +5.0\unit{N}\ihat</m> and that \studentB<idx><h sortby="\studentB">\studentB</h></idx> stands to the right of the object and exerts a force to the right (pulls) with magnitude <m>\vec F_2 = +4.0\unit{N}\ihat</m>, as drawn in <xref ref="f1-firstFBD" text="type-global" />.  Both of these forces are <em>on</em> the object and, by <xref ref="as-NII" text="title">Newton's second law</xref> cause it to accelerate (as described in <xref ref="se-netF-a" text="type-global" />).  <xref ref="as-NIII" text="title">Newton's third law</xref> tells us about the interaction <em>between</em> objects and, from this, we can deduce the force on \studentA\ and \studentB.<fn>It is then separately possible to use <xref ref="as-NII" text="title">the second law</xref> to learn about the motion of the people, as will be shown in <xref ref="se-FBD-AB" text="type-global" />.</fn>
                                 </p>
 
@@ -2505,7 +2524,8 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                 </sidebyside>
                         </example>
 
-                        <p>As indicated above, the free-body diagram also helps us visualize the third-law (action/reaction) force pairs.  By evaluating the colored forces in <xref ref="f2-firstFBD" text="type-global" /><idx><h>Free-Body Diagrams</h><h>Images</h></idx>, we can see that the <m>\mathrm{\color{green}{green\ forces}}</m> form an action-reaction pair and separately the <m>\mathrm{\color{blue}{blue\ forces}}</m> form<todo>Figure out how to color text.</todo>                         an action-reaction pair.  Notice the following:
+                        <todo>Figure out how to color text.</todo>
+                        <p>As indicated above, the free-body diagram also helps us visualize the third-law (action/reaction) force pairs.  By evaluating the colored forces in <xref ref="f2-firstFBD" text="type-global" /><idx><h>Free-Body Diagrams</h><h>Images</h></idx>, we can see that the <m>\mathrm{\color{green}{green\ forces}}</m> form an action-reaction pair and separately the <m>\mathrm{\color{blue}{blue\ forces}}</m> form an action-reaction pair.  Notice the following:
                         <ol>
                           <li>The <xref ref="as-NIII" text="title">third law</xref> action-reaction pairs are located of different objects and cannot be added. (You cannot add blue to blue nor green to green.)</li>
                           <li>The <xref ref="as-NII" text="title">second law</xref> forces on the object should be added to find that specific object's acceleration.  (You <em>should</em> add the blue force to the green force on the middle object.)</li>
@@ -2536,8 +2556,9 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                         <example xml:id="se-FBD-AB">
                                 <title>The acceleration of people pushing a box</title>
                                 <aside><title>Referenced by</title> <p><xref ref="f-firstFBD" /></p></aside>
+
+                                <todo><p>As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!  But, it is still nice to be moving a small mass so that it has a large acc, and the people have small acc.)</p></todo>
                                 <p>In the same way that <xref ref="se-netF-a" text="type-global" /> was able to use <xref ref="as-NII" text="title">Newton's second law</xref> to compute the acceleration of an object after <xref ref="se-netFadd" text="type-global" /> found the net force, we can use the forces found in <xref ref="f-firstFBD" text="type-global" /> to compute the acceleration of the people pushing the box.
-                                        <todo><p>As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!  But, it is still nice to be moving a small mass so that it has a large acc, and the people have small acc.)</p></todo>
                                 Recall that <xref ref="f1-firstFBD" text="type-global" /> shows how \studentA<idx><h sortby="\studentA">\studentA</h></idx> and \studentB<idx><h sortby="\studentB">\studentB</h></idx> exert forces on the box (and, from <xref ref="as-NIII" text="title">Newton's third law</xref>, how the box exerts force on the people).
                                 <ol>
                                 <li><p> Since \studentA\ exerts a force of <m>5.0\unit{N}</m> to the right <m>(+\ihat)</m> on the object, the <em>third law</em> reminds us that the object exerts a force of <m>5.0\unit{N}</m> to the left  <m>(-\ihat)</m> on \studentA.  Since \studentA\ has a mass of \massA, the <em>second law</em> reminds us that \heA\ is accelerated at the rate of
@@ -2557,7 +2578,8 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                 </p>
                         </example>
 
-                        <p xml:id="d-equi">If we now do the same thing<idx><h>Free-Body Diagrams</h><h>Images</h></idx> with the <xref ref="se-equi" text="type-global" />, but let \studentC<idx><h sortby="\studentC">\studentC</h></idx> be the person on the left {\color{green} pushing to the right} and \studentD<idx><h sortby="\studentD">\studentD</h></idx> be the person on the right {\color{blue} pushing to the left}, then we see that while the {\color{green} green forces} form an action-reaction pair showing the third-law interaction between \studentC\ and the object and while the {\color{blue} blue forces} form an action-reaction pair showing the third-law interaction between \studentD\ and the object, it is the combination of the {\color{blue} blue} and the {\color{green} green} forces, which only act on the object itself, that coincidentally cancel to leave the object in (second law) equilibrium.  In these images, \studentC\ and \studentD\ are <em>not</em> in equilibrium.<todo>Make an exercise that calculates the acceleration of \studentC\ and \studentD.</todo></p>
+                        <p xml:id="d-equi">If we now do the same thing<idx><h>Free-Body Diagrams</h><h>Images</h></idx> with the <xref ref="se-equi" text="type-global" />, but let \studentC<idx><h sortby="\studentC">\studentC</h></idx> be the person on the left {\color{green} pushing to the right} and \studentD<idx><h sortby="\studentD">\studentD</h></idx> be the person on the right {\color{blue} pushing to the left}, then we see that while the {\color{green} green forces} form an action-reaction pair showing the third-law interaction between \studentC\ and the object and while the {\color{blue} blue forces} form an action-reaction pair showing the third-law interaction between \studentD\ and the object, it is the combination of the {\color{blue} blue} and the {\color{green} green} forces, which only act on the object itself, that coincidentally cancel to leave the object in (second law) equilibrium.  In these images, \studentC\ and \studentD\ are <em>not</em> in equilibrium.</p>
+                        <todo>Make an exercise that calculates the acceleration of \studentC\ and \studentD.</todo>
 
 <!-- \newline
 \begin{minipage}{\textwidth}
@@ -2643,7 +2665,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                 </task>
                 <task xml:id="A-chair2">
                         <statement><p>Push a chair across a tile floor. Notice that when you stop pushing, it probably<fn>This depends on <em>how fast</em> you were pushing, but it will stop moving pretty quickly after you stop pushing.</fn> stops moving.  Based on this, do you think force causes motion?</p></statement>
-                        <solution><p>This is essentially the same as <xref ref="A-chair1" text="type-local" />, but the carpet exerts more force than the tile.  In either case, force causes a <em>change in</em> velocity. You are trying to speed the chair up and the floor is trying to slow the chair down.  (Both are trying to change the velocity, but cancel to result in a constant velocity.)  When you stop pushing, the chair stops moving because there is a force from the tile acting to oppose the force you apply while you push the chair; when you let go, this force slows the chair until the chair stops and then the force stops acting. (See <xref provisional="s-Ff" text="type-global"/> for more details.)</p></solution>
+                        <solution><p>This is essentially the same as <xref ref="A-chair1" text="type-local" />, but the carpet exerts more force than the tile.  In either case, force causes a <em>change in</em> velocity. You are trying to speed the chair up and the floor is trying to slow the chair down.  (Both are trying to change the velocity, but cancel to result in a constant velocity.)  When you stop pushing, the chair stops moving because there is a force from the tile acting to oppose the force you apply while you push the chair; when you let go, this force slows the chair until the chair stops and then the force stops acting. (See <xref ref="s-Ff" text="type-global"/> for more details.)</p></solution>
                 </task>
                 <task>
                         <introduction><p>Push a chair <em>with wheels</em> across a tile floor, with some strength, then let it go.</p></introduction>
@@ -2667,14 +2689,14 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                         </task>
                         <task xml:id="A-chair6">
                                 <statement><p>Is it possible that there is a <q>residual effect</q> that you have on the chair after letting it go?</p></statement>
-                                <solution><p>No.  When you throw a ball very high into the air, you can dance a jig or do any manner of things and it will obviously not affect the ball.  The force you exerted on the chair goes away the instant you stop touching the chair.  It is, however, true that your force gave the chair some velocity (actually <xref provisional="c-momentum" text="title">momentum</xref>) and Newton's first law (inertia) says that the chair would prefer to keep that velocity.  Unfortunately, the friction with the ground slows it down.  The careful way to describe the situation is that your force gave the chair some velocity (actually <xref provisional="c-momentum" text="title">momentum</xref>) and its characteristic inertia made it difficult for the <xref provisional="s-Ff" text="title">frictional force</xref> to slow it down rapidly.</p></solution>
+                                <solution><p>No.  When you throw a ball very high into the air, you can dance a jig or do any manner of things and it will obviously not affect the ball.  The force you exerted on the chair goes away the instant you stop touching the chair.  It is, however, true that your force gave the chair some velocity (actually <xref ref="c-momentum" text="title">momentum</xref>) and Newton's first law (inertia) says that the chair would prefer to keep that velocity.  Unfortunately, the friction with the ground slows it down.  The careful way to describe the situation is that your force gave the chair some velocity (actually <xref ref="c-momentum" text="title">momentum</xref>) and its characteristic inertia made it difficult for the <xref ref="s-Ff" text="title">frictional force</xref> to slow it down rapidly.</p></solution>
                         </task>
                 </task>
                 <task xml:id="A-chair7">
                         <statement><p>Newton's First Law says that if you give the chair a velocity, it should keep that velocity.
                         Repeat the first three suggestions and correlate the interaction-with-the-ground to the motion-after-you-push-and-release.
                         Is there a force that the chair feels after you release it?</p></statement>
-                        <solution><p>The force that the chair feels after you release it is <xref provisional="s-Ff" text="title">friction</xref>.  For the carpet, there is a lot of friction and the chair slows down very quickly (essentially instantaneously).  For the wheel-less chair on the tile floor, the chair slows rapidly although it may leave your hand.  The wheels provide the least amount of friction and that chair goes the furthest.  You may note that the friction slowing the chair-with-wheels is primarily between the rolling wheel and its axel (where it connects to the non-rolling chair leg) rather than between the wheel and the floor (although the friction between the wheel and the floor also plays a role).  This is discussed in more detail in <xref provisional="s-Ff" text="type-global"/>.</p></solution>
+                        <solution><p>The force that the chair feels after you release it is <xref ref="s-Ff" text="title">friction</xref>.  For the carpet, there is a lot of friction and the chair slows down very quickly (essentially instantaneously).  For the wheel-less chair on the tile floor, the chair slows rapidly although it may leave your hand.  The wheels provide the least amount of friction and that chair goes the furthest.  You may note that the friction slowing the chair-with-wheels is primarily between the rolling wheel and its axel (where it connects to the non-rolling chair leg) rather than between the wheel and the floor (although the friction between the wheel and the floor also plays a role).  This is discussed in more detail in <xref ref="s-Ff" text="type-global"/>.</p></solution>
                 </task>
                 <task xml:id="A-chair8">
                         <statement><p>Newton's Second Law says that a net force will change the velocity. Push a chair <em>gently</em> across the floor. A constant force (balanced by the force of friction) will move at a constant speed. What if there were no friction?</p></statement>
@@ -2687,7 +2709,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                         <hint><p>You should also think about how smooth or rough the surfaces you list are.</p></hint>
                 </task>
                 <conclusion>
-                <p>Notice in each case that you are not the only thing interacting with the chair.  The floor is also interacting with the chair.  The floor exerts a <xref provisional="s-Ff" text="title">force of friction</xref> on the chair.  So, when you interpret how your force causes the chair to move, you <em>must</em> also account for the interaction with the floor in your expectations.  We can minimize the effect of friction, by modifying the floor surface.  If you have ever driven on ice and felt out of control, you might have begun to develop your Newtonian intuition.</p>
+                <p>Notice in each case that you are not the only thing interacting with the chair.  The floor is also interacting with the chair.  The floor exerts a <xref ref="s-Ff" text="title">force of friction</xref> on the chair.  So, when you interpret how your force causes the chair to move, you <em>must</em> also account for the interaction with the floor in your expectations.  We can minimize the effect of friction, by modifying the floor surface.  If you have ever driven on ice and felt out of control, you might have begun to develop your Newtonian intuition.</p>
 
                 <sidebyside widths="50% 50%" haligns="center right">
                         <p></p>
@@ -2716,7 +2738,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                         <answer xml:id="a-NIIIaction">
                                 <p>As \studentC<idx><h sortby="\studentC">\studentC</h></idx> gets pushed, you notice that \heC\ was not aware of the pending doom.  \HeC\ is standing casually with \hisC\ feet set to support \hisC\ own weight, but not to brace \himC\ against the sideways force.  When \heC\ gets pushed from the side, \hisC\ feet stay in place and \hisC\ torso topples, rotating \himC\ about \hisC\ center of mass as \heC\ falls to the ground.
                                 <aside><title>Foreshadow</title>
-                                        <p>The physics of why an object (or person) rotates when they fall over is discussed with <xref provisional="c-torque" text="title">torque</xref>.</p>
+                                        <p>The physics of why an object (or person) rotates when they fall over is discussed with <xref ref="c-torque" text="title">torque</xref>.</p>
                                 </aside>
                                 \studentD\ points to \hisD\ phone and says, <q>I recorded the whole thing!</q>  If you respond, <q>Awesome! Can I watch the part about how \studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> acts?</q>, please read <xref ref="a-NIIIreaction" text="type-local" />.  If you respond, <q>Awesome! Let's show the psychology and physics faculty our cool video!</q>, please read <xref ref="a-NIIIfaculty" text="type-local" />. If you respond, <q>Yeah, we probably should have intervened before this happened instead of just watching.  Let's go talk to Campus Security.</q>, please read <xref ref="a-NIIIsecurity" text="type-local" />.</p>
                         </answer>
@@ -2796,7 +2818,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                 <!-- We can also list the information that we know. -->
                                 We know <m>m_Z</m>, which is useful for relating <m>F_{Z,\mathrm{net}}</m> to <m>a_Z</m>.
                                 We know <m>m_C</m>, which is useful for relating <m>F_{C,\mathrm{net}}</m> to <m>a_C</m>.
-                                (This is not asked for, but is asked in homework problem <xref provisional="hmwk-pushbrace" text="type-global" />.)
+                                (This is not asked for, but is asked in homework problem <xref ref="hmwk-pushbrace" text="type-global" />.)
                                 We know <m>F_{C,Z}</m>, how hard \studentZ\ pushes on \studentC.
                                 We also know that \studentC\ is not bracing \himselfC\ (because \heC\ <q>has \hisC\ back turned</q>) so \heC\ only feels one force, and that \studentZ\ is bracing \himselfZ\ (because the problem states that \heZ\ <q>leans in</q>) so \heC\ exerts multiple forces.</p>
 
@@ -2922,7 +2944,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <!-- We can also list the information that we know. -->
                                 We know <m>m_D</m>, which is useful for relating <m>F_{D,\mathrm{net}}</m> to <m>a_D</m>.
                                 We know <m>m_C</m>, which is useful for relating <m>F_{C,\mathrm{net}}</m> to <m>a_C</m>.
-                                (This is not asked for, but is asked in homework problem <xref provisional="hmwk-pushbrace" text="type-global" />.)
+                                (This is not asked for, but is asked in homework problem <xref ref="hmwk-pushbrace" text="type-global" />.)
                                 We know <m>F_{C,D}</m>, how hard \studentD\ pushes on \studentC.
                                 We also know that neither person is bracing for the push. So, both \studentC\ and \studentD\ each only feel one force.</p>
 
@@ -3092,9 +3114,10 @@ Earth feels a force by \studentZ\ to the left.
 <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-interaction" text="title">subscript notation of forces</xref></p></aside>
 
         <introduction>
-        <p>There are many mechanisms for imparting force on an object.  Perhaps the most obvious is that objects fall towards the Earth.  We call this force <q>gravity</q> and we will discuss it first.  It turns out to be somewhat more complicated because it turns out that the force that helps us fall when we trip is the same force that holds the planets in their orbits.  The complicated general theory will be discussed later<todo>add reference</todo>, but for now <xref ref="s-Fg" text="type-local" /> will describe the phenomenon at the surface of the Earth where we usually experience it.</p>
+        <todo>add reference to the general theory</todo>
+        <p>There are many mechanisms for imparting force on an object.  Perhaps the most obvious is that objects fall towards the Earth.  We call this force <q>gravity</q> and we will discuss it first.  It turns out to be somewhat more complicated because it turns out that the force that helps us fall when we trip is the same force that holds the planets in their orbits.  The complicated general theory will be discussed later, but for now <xref ref="s-Fg" text="type-local" /> will describe the phenomenon at the surface of the Earth where we usually experience it.</p>
 
-        <p>After a brief introduction to the four fundamental forces in <xref ref="s-fundamental" text="type-local" />, we will consider the <xref ref="s-FN" text="title">normal force</xref>, <xref provisional="s-FT" text="title">tension</xref> (such as in ropes), <xref provisional="s-Ff" text="title">friction</xref>, <xref provisional="s-springs" text="title">springs</xref>, and end with the catch-all additional category of <xref provisional="s-FA" text="title">applied forces</xref>.  <xref provisional="s-Fnet" text="type-local" /> will wrap it up by using examples including multiple types of force to compute the net force, which connects back to Newton's Laws in the previous chapter.</p>
+        <p>After a brief introduction to the four fundamental forces in <xref ref="s-fundamental" text="type-local" />, we will consider the <xref ref="s-FN" text="title">normal force</xref>, <xref ref="s-FT" text="title">tension</xref> (such as in ropes), <xref ref="s-Ff" text="title">friction</xref>, <xref ref="s-springs" text="title">springs</xref>, and end with the catch-all additional category of <xref ref="s-FA" text="title">applied forces</xref>.  <xref ref="s-Fnet" text="type-local" /> will wrap it up by using examples including multiple types of force to compute the net force, which connects back to Newton's Laws in the previous chapter.</p>
 
         </introduction>
 
@@ -3107,14 +3130,14 @@ Earth feels a force by \studentZ\ to the left.
         </aside>
 
                 <introduction>
-                <p>Perhaps the force that is the most obvious to humanity is the one that helps us fall when we stumble: the gravitational force<idx><h>Gravity</h><h>Surface of Earth</h></idx>.  This is one of the fundamental forces discussed in <xref ref="s-fundamental" text="type-global" />.  In addition, the details about how the planets, moon, and the sun experience this force will be discussed in <xref provisional="c-gravity" text="type-global" />.  For now, we can consider how this interaction manifests itself on our daily lives.  In this section, we will start with how objects move when the gravitational force is the only force acting.  Subsections <xref ref="ss-weightmass" text="local" /> and <xref provisional="ss-equivmm" text="local" /> will clarify some subtleties and then we'll jump into the examples in <xref ref="ss-local-mg" text="type-local" />.</p>
+                <p>Perhaps the force that is the most obvious to humanity is the one that helps us fall when we stumble: the gravitational force<idx><h>Gravity</h><h>Surface of Earth</h></idx>.  This is one of the fundamental forces discussed in <xref ref="s-fundamental" text="type-global" />.  In addition, the details about how the planets, moon, and the sun experience this force will be discussed in <xref ref="c-gravity" text="type-global" />.  For now, we can consider how this interaction manifests itself on our daily lives.  In this section, we will start with how objects move when the gravitational force is the only force acting.  Subsections <xref ref="ss-weightmass" text="local" /> and <xref ref="ss-equivmm" text="local" /> will clarify some subtleties and then we'll jump into the examples in <xref ref="ss-local-mg" text="type-local" />.</p>
 
                 <p>We can investigate what happens when the gravitational force is the only force acting on an object by holding it in the air and dropping it<idx>Freefall</idx>.  One of the complications during such an experiment was discussed in <xref ref="ss-airresistance" text="type-hybrid" />.  If we drop a sheet of paper, there is air resistance in addition to the gravitational force.  For this section, I will assume that the mass-to-surface-area ratio is large enough that we can effectively ignore the air resistance.
                 <biographical><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></biographical></p>
 
                 <p xml:id="d-Fgrav">Since objects fall faster than humans are used to paying attention to, the patterns are difficult to see.  The green box of <xref ref="irl-freefall" text="type-hybrid" /> shows you how you can pay close attention to the patterns that result from observing falling objects.  You should go do those experiments before reading further.  Go ahead.  I'll wait.</p>
 
-                <p xml:id="d-Fgball">You did do them, right?  You're not just reading ahead?  Really?  OK.  Doing that experiment will help you see (1) that everything falls at the same rate and (2) that objects accelerate as they fall.  This first point is a bit less intuitive and will be discussed further in <xref provisional="ss-equivmm" text="type-hybrid" />.  This second point should be exactly what you expect, when you consider <xref ref="as-NII" text="title">Newton's second Law</xref>: If there is only one force (the gravitational force), then the object cannot be in <xref ref="sss-equilibrium" text="title">equilibrium</xref> and it must be accelerating.  (You should notice that this is the language of <xref ref="st-Fma" text="title">the story of Newton's second law</xref>.)</p>
+                <p xml:id="d-Fgball">You did do them, right?  You're not just reading ahead?  Really?  OK.  Doing that experiment will help you see (1) that everything falls at the same rate and (2) that objects accelerate as they fall.  This first point is a bit less intuitive and will be discussed further in <xref ref="ss-equivmm" text="type-hybrid" />.  This second point should be exactly what you expect, when you consider <xref ref="as-NII" text="title">Newton's second Law</xref>: If there is only one force (the gravitational force), then the object cannot be in <xref ref="sss-equilibrium" text="title">equilibrium</xref> and it must be accelerating.  (You should notice that this is the language of <xref ref="st-Fma" text="title">the story of Newton's second law</xref>.)</p>
 
                 <p>In order to evaluate this further, let's consider a specific object, like a baseball.  Our baseball has a mass of <m>m_b = 0.145\unit{kg}</m>.  If the only force acting <em>on</em> the ball is the gravitational force <em>by</em> the Earth, then the net force is the gravitational force: <m>\vec F_\mathrm{net} = \vec F_{bEg}</m>.
                 <biographical><title>Touchstone</title><p><xref ref="d-interaction" text="title">the on-by notation</xref></p></biographical>
@@ -3131,7 +3154,7 @@ Earth feels a force by \studentZ\ to the left.
                         </statement>
                 </example>
 
-                <p>This is the force of the gravitational force on the baseball.  Although we computed the force while the ball was falling, the gravitational force does not magically vanish when the ball is sitting on the floor.  So, we can say that (as long as the ball is close to the surface of the Earth, as noted in <xref provisional="c-gravity" text="type-hybrid" />) the force always has this value.  Rather than continuing to say <q>the force of gravity</q> we call this force the weight<idx>Weight</idx>.</p>
+                <p>This is the force of the gravitational force on the baseball.  Although we computed the force while the ball was falling, the gravitational force does not magically vanish when the ball is sitting on the floor.  So, we can say that (as long as the ball is close to the surface of the Earth, as noted in <xref ref="c-gravity" text="type-hybrid" />) the force always has this value.  Rather than continuing to say <q>the force of gravity</q> we call this force the weight<idx>Weight</idx>.</p>
 
                 <assemblage><p>The weight of an object is computed as its mass times the acceleration due to gravity, even when the object is not actually accelerating at that rate:  <m>\mathbf{F_g \equiv mg}</m>.</p></assemblage>
 
@@ -3151,7 +3174,8 @@ Earth feels a force by \studentZ\ to the left.
                 <url href="https://www.nist.gov/sites/default/files/documents/2017/04/28/AppC-12-hb44-final.pdf">Handbook 44</url>, page C-19, as exactly <m>453.592 37\unit{g}</m>.</fn>
                 and the other is a unit of force.  Since the pound-force<fn xml:id="fn-kg-pound">There is also a unit of force called the kilogram-force.</fn>
                 <!-- https://en.wikipedia.org/wiki/Pound_(force) -->
-                is defined as the standard unit of mass times the standard unit for the acceleration due to gravity, as discussed in <xref ref="s-SI-MKS" text="type-hybrid" /><todo>Update <xref ref="s-SI-MKS" text="type-hybrid" /> with this information.</todo>, the conversion directly from pound-force to Newtons will <em>not</em> match the longer, but more appropriate, conversion from pound-mass to kilogram that gets multiplied by the local acceleration due to gravity (as opposed to the standard <m>g</m>) into Newtons.  It may also be useful to review the comments about unit-conversion in the section on <xref ref="s-sigfig" text="title">significant digits</xref><idx>Significant Digits</idx>.</p>
+                is defined as the standard unit of mass times the standard unit for the acceleration due to gravity, as discussed in <xref ref="s-SI-MKS" text="type-hybrid" />, the conversion directly from pound-force to Newtons will <em>not</em> match the longer, but more appropriate, conversion from pound-mass to kilogram that gets multiplied by the local acceleration due to gravity (as opposed to the standard <m>g</m>) into Newtons.  It may also be useful to review the comments about unit-conversion in the section on <xref ref="s-sigfig" text="title">significant digits</xref><idx>Significant Digits</idx>.</p>
+                <todo>Update <xref ref="s-SI-MKS" text="type-hybrid" /> with this information.</todo>
 
                 <p xml:id="p-weightmass">In the discussion about <xref ref="p-massive" text="title">being precise</xref>, we distinguished <q>massive</q> (the amount) from <q>voluminous</q> (the size).  Now that we understand <xref ref="as-NII" text="title">Newton's second law</xref>, we can distinguish <q>massive</q>
                 (an amount of material causing a difficulty in making accelerate)
@@ -3163,17 +3187,17 @@ Earth feels a force by \studentZ\ to the left.
                 Having mass affects both the inertia (ease of moving) and the weight (force of gravity).
                 Having weight expresses the gravitational force due to whichever large object (moon, planet, sun, etc.) you happen to be on or near.  Noticing that the SI-unit (<xref ref="s-SI-MKS" text="type-global" />) is different for different types of quantities, such as a kilogram (a <xref ref="p-fundamental" text="title">fundamental unit</xref>) for mass and a Newton (a <xref ref="p-derived" text="title">derived unit</xref>) for weight, may help you remember that these are different kinds of quantities.</p>
 
-                <p>The interesting aspect of this relationship is that while having more mass makes an object harder to move (the same force produces less acceleration for more massive objects), when objects fall under the influence of the gravitational force, they accelerate at the <em>same</em> rate.  This reveals that the gravitational force must be stronger for more massive objects <em>by the exact amount</em> needed to compensate for that larger mass.  This is called the equivalence principle and is discussed in <xref provisional="ss-equivmm" text="type-hybrid" />.</p>
+                <p>The interesting aspect of this relationship is that while having more mass makes an object harder to move (the same force produces less acceleration for more massive objects), when objects fall under the influence of the gravitational force, they accelerate at the <em>same</em> rate.  This reveals that the gravitational force must be stronger for more massive objects <em>by the exact amount</em> needed to compensate for that larger mass.  This is called the equivalence principle and is discussed in <xref ref="ss-equivmm" text="type-hybrid" />.</p>
 
 
                 </subsection>
 
                 <subsection xml:id="ss-local-mg"><title>Calculating the weight</title>
 
-                <p>When calculating the forces acting on a person or an object, we will often need to account for the force of gravity, while other forces may also be at work.  As mentioned above, the weight is found by multiplying the mass times the local acceleration due to gravity, even if the object is not actually accelerating at that rate.  <xref provisional="c-gravity" text="type-global" /> will clarify why it is true<fn xml:id="fn-accgrav-nuance">The short answer is that the altitude (distance from the surface of the Earth) and local geology affect the strength of the gravitational field.  Since the Earth is slightly oblate (bulges at the equator), the altitude at different latitudes corresponds to a different distance from the center of the Earth.  In addition, while the spin of the Earth does not affect the strength of the gravitational field, it does affect how objects accelerate. The <url href="http://www2.csr.utexas.edu/grace/gallery/animations/ggm01/ggm01_gif-200.html">GRACE project</url> has measured the variations across the globe.</fn>, but for now please note that the acceleration due to gravity is (1) different according to where we are and also (2) the same for all objects at that location.<idx><h>Acceleration</h><h>Gravity</h></idx><idx><h>Gravity</h><h>Acceleration</h></idx>
+                <p>When calculating the forces acting on a person or an object, we will often need to account for the force of gravity, while other forces may also be at work.  As mentioned above, the weight is found by multiplying the mass times the local acceleration due to gravity, even if the object is not actually accelerating at that rate.  <xref ref="c-gravity" text="type-global" /> will clarify why it is true<fn xml:id="fn-accgrav-nuance">The short answer is that the altitude (distance from the surface of the Earth) and local geology affect the strength of the gravitational field.  Since the Earth is slightly oblate (bulges at the equator), the altitude at different latitudes corresponds to a different distance from the center of the Earth.  In addition, while the spin of the Earth does not affect the strength of the gravitational field, it does affect how objects accelerate. The <url href="http://www2.csr.utexas.edu/grace/gallery/animations/ggm01/ggm01_gif-200.html">GRACE project</url> has measured the variations across the globe.</fn>, but for now please note that the acceleration due to gravity is (1) different according to where we are and also (2) the same for all objects at that location.<idx><h>Acceleration</h><h>Gravity</h></idx><idx><h>Gravity</h><h>Acceleration</h></idx>
                 </p>
 
-                <p xml:id="d-weightmass">Because of the peculiarities in the <xref ref="p-defpound" text="title">definition of pound</xref> it will be useful to build some intuition about masses in terms of kilograms and Newtons.  <xref ref="t-weightmass" text="type-hybrid" /> lists the mass of some common objects and, using the standard value for <m>g</m>, their corresponding weights. <xref provisional="c-weightmass" text="type-hybrid" /> asks you to estimate the mass of some other common objects.  <xref provisional="c-massweight" text="type-hybrid" /> asks you to think of common objects with a specified mass.</p>
+                <p xml:id="d-weightmass">Because of the peculiarities in the <xref ref="p-defpound" text="title">definition of pound</xref> it will be useful to build some intuition about masses in terms of kilograms and Newtons.  <xref ref="t-weightmass" text="type-hybrid" /> lists the mass of some common objects and, using the standard value for <m>g</m>, their corresponding weights. <xref ref="c-weightmass" text="type-hybrid" /> asks you to estimate the mass of some other common objects.  <xref ref="c-massweight" text="type-hybrid" /> asks you to think of common objects with a specified mass.</p>
 
                 <table xml:id="t-weightmass"> <!-- -->
                 <caption>The list of objects is intended to give a sense of scale so that the reader can better estimate the value of the mass of an object.  You might notice that (except for the apple) each of these is between 4 and 4.5 times heavier than the previous object.  Note that these are rough estimates; for example, while the author weighs about <m>200\unit{lbs}</m> this is not typical, nor average.
@@ -3209,7 +3233,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <aside><title>Referenced by</title>
                                         <p>
                                         <xref ref="f-firstFBDupdate" text="type-global" />,
-                                        <xref provisional="f-firstFBDangle" text="type-global" />
+                                        <xref ref="f-firstFBDangle" text="type-global" />
                                         </p>
                                 </aside>
                         dropping \himselfA\ (!) from a (small) height.  While \heA\ falls, \heA\ recognizes the gravitational force on \himA, which is computed to be
@@ -3218,7 +3242,7 @@ Earth feels a force by \studentZ\ to the left.
                         However, if you know the mass something, you can compute the weight even if that object is not in freefall.
                         You should repeat this calculation for the mass in <xref ref="se-netF-a" text="type-global" />.</p>
                         </statement>
-                        <answer>Since the object in <xref ref="se-netF-a" text="type-global" /> has a mass of <m>2.0\unit{kg}</m>, we can find the weight by
+                        <answer xml:id="A-netF-a">Since the object in <xref ref="se-netF-a" text="type-global" /> has a mass of <m>2.0\unit{kg}</m>, we can find the weight by
                                 <me> \vec F_g = m \vec g = (2.0\unit{kg}) [-(9.81\unitfrac{m}{s^2})\,\jhat] = -\sig{19}{.62}{N} \jhat = -20 \unit N \jhat </me>.
                         </answer>
                 </example>
@@ -3237,7 +3261,7 @@ Earth feels a force by \studentZ\ to the left.
                         <title>Deducing the existence of forces using Newton's second law</title>
                         <statement>
                         <p>If \studentB<idx><h sortby="\studentB">\studentB</h></idx> is not falling, but rather standing safely on the floor, then the gravitational force is still acting.  It can be computed as
-                        <aside><title>Referenced by</title> <p><xref ref="f-firstFBDupdate" text="type-global" />, <xref provisional="f-firstFBDangle" text="type-global" /></p></aside>
+                        <aside><title>Referenced by</title> <p><xref ref="f-firstFBDupdate" text="type-global" />, <xref ref="f-firstFBDangle" text="type-global" /></p></aside>
                                 <me> \vec F_g = m \vec g = (\massB) [-(9.81\unitfrac{m}{s^2})\,\jhat] = -\sig{735}{.75}{N} \jhat = -736 \unit N \jhat </me>
                         However, since we can see that \hisB\ acceleration is zero, the <m>\vec F_\mathrm{net}</m> <em>must be zero</em>.  The only way that can happen, though is if there is another force acting upwards on \studentB.  What could possibly be pushing up on \himB?  <xref ref="A-floor" text="type-local" />.  Whatever it is pushing up on \himB, it is supplying a support force, which can be calculated since
                                 <m>\vec F_\mathrm{net} = \vec F_g + \vec F_\mathrm{support}</m>
@@ -3332,7 +3356,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <cell><m>9.826\unitfrac{m}{s^2}</m></cell></row>
                 </tabular>
                 </table>
-                <p><todo><p>Gather values of <m>g</m> at various locations.  Wiki has a list, but need to find the source.  Wolfram has numbers, but they seem to be calculated off a formula, not measurements.  <url href="http://www.physics.montana.edu/demonstrations/video/1_mechanics/demos/localgravitychart.html">U Montana</url> has values but no reference.  <url href="http://www.calpoly.edu/~gthorncr/ME302/documents/AccuracyofGravity.pdf">Glen Thorncroft at Cal Poly</url> has a formula and lists the level of each effect.</p></todo></p>
+                <todo><p>Gather values of <m>g</m> at various locations.  Wiki has a list, but need to find the source.  Wolfram has numbers, but they seem to be calculated off a formula, not measurements.  <url href="http://www.physics.montana.edu/demonstrations/video/1_mechanics/demos/localgravitychart.html">U Montana</url> has values but no reference.  <url href="http://www.calpoly.edu/~gthorncr/ME302/documents/AccuracyofGravity.pdf">Glen Thorncroft at Cal Poly</url> has a formula and lists the level of each effect.</p></todo>
 
 
                 </subsection>
@@ -3344,7 +3368,7 @@ Earth feels a force by \studentZ\ to the left.
 
         <p>The previous section describes our (macroscopic) experience of the gravitational interaction when standing on the surface of the Earth.  This is essentially the same across the surface, but does change with altitude and the difference can be measured on mountain tops and in caves.  In fact, one can use the differences from one location to another to predict where we might find a a pocket of oil.</p>
 
-        <p xml:id="d-fundamental">In later sections, we will consider this and other interactions that depend on the physical properties, such as mass and charge.  All particles with the property of mass (which we will start to call gravitational charge) will interact according to the gravitational force; however, this description is better described by the mathematics in <xref provisional="c-gravity" text="type-global"/>.  All particles with the property of electrical charge will interact according to the electrical force.  The basic theory will be discussed in <xref provisional="c-electric" text="type-global"/>.  A more complicated version that incorporates quantum mechanics is called quantum electrodynamics (QED) and this will be touched on in <xref provisional="ss-QED" text="type-global" />.  Particles like protons and neutrons (hadrons) are actually made up of other particles (quarks) that are held together by an interaction that is sometimes called the strong nuclear force (<xref provisional="ss-strong" text="type-global" />) and is described by the theory of quantum chromodynamics (QCD); this will be touched on in <xref provisional="ss-QCD" text="type-global" />.  Finally, in <xref provisional="ss-weak" text="type-global"/> another fundamental force, called the weak nuclear force, will be discussed.</p>
+        <p xml:id="d-fundamental">In later sections, we will consider this and other interactions that depend on the physical properties, such as mass and charge.  All particles with the property of mass (which we will start to call gravitational charge) will interact according to the gravitational force; however, this description is better described by the mathematics in <xref ref="c-gravity" text="type-global"/>.  All particles with the property of electrical charge will interact according to the electrical force.  The basic theory will be discussed in <xref ref="c-electric" text="type-global"/>.  A more complicated version that incorporates quantum mechanics is called quantum electrodynamics (QED) and this will be touched on in <xref ref="ss-QED" text="type-global" />.  Particles like protons and neutrons (hadrons) are actually made up of other particles (quarks) that are held together by an interaction that is sometimes called the strong nuclear force (<xref ref="ss-strong" text="type-global" />) and is described by the theory of quantum chromodynamics (QCD); this will be touched on in <xref ref="ss-QCD" text="type-global" />.  Finally, in <xref ref="ss-weak" text="type-global"/> another fundamental force, called the weak nuclear force, will be discussed.</p>
 
         <p>For the most part, these theories describe the interaction between microscopic particles, so we will not discuss them in detail here.  However, the gravitational interaction is exception in a variety of ways.  In particular, the gravitational interaction does affect macroscopic objects.  These fundamental forces have a particular description that allows us to pretend (recall <xref ref="s-effective2" text="title">effective theories</xref>) that they are action-at-a-distance interactions.  All other forces (introduced next) will require physical contact in order to exert the force.</p>
 
@@ -3355,7 +3379,7 @@ Earth feels a force by \studentZ\ to the left.
                 <p>
                 <xref ref="f-firstFBD" />,
                 <xref ref="A-floor" text="type-global" />,
-                <xref provisional="s-FT" />
+                <xref ref="s-FT" />
                 </p>
         </aside>
         <idx><h>Force</h><h>Normal</h></idx>
@@ -3366,7 +3390,8 @@ Earth feels a force by \studentZ\ to the left.
                 <assemblage><p>the normal force is the force that a surface exerts to keep objects from passing through them.  The direction of this force is always in the outward direction, normal (perpendicular) to the surface.</p></assemblage>
                 </p>
 
-                <p>Let's consider some specific situations<ellipsis /> In <xref ref="se-FNB" text="type-global" /><todo>DO we need to repeat the example here? no?</todo>, \studentB\ felt the downwards gravitational force even while \heB\ was standing on the ground.  We noticed that \heB\ was not falling (and so not accelerating).  Colloquially, we say that the ground is supporting \studentB.  This support force is keeping \studentB\ from passing through the floor; this is a normal force.  The normal force from the floor is acting upwards, which is normal (perpendicular) to the surface of the floor.  <xref ref="f-firstFBDupdate" text="type-global" /> updates the free-body diagrams of <xref ref="f-firstFBD" text="type-global" /> to show how the gravitational and normal forces impact that calculation.</p>
+                <todo>DO we need to repeat the example here? no?</todo>
+                <p>Let's consider some specific situations<ellipsis /> In <xref ref="se-FNB" text="type-global" />, \studentB\ felt the downwards gravitational force even while \heB\ was standing on the ground.  We noticed that \heB\ was not falling (and so not accelerating).  Colloquially, we say that the ground is supporting \studentB.  This support force is keeping \studentB\ from passing through the floor; this is a normal force.  The normal force from the floor is acting upwards, which is normal (perpendicular) to the surface of the floor.  <xref ref="f-firstFBDupdate" text="type-global" /> updates the free-body diagrams of <xref ref="f-firstFBD" text="type-global" /> to show how the gravitational and normal forces impact that calculation.</p>
 
                 <example xml:id="f-firstFBDupdate">
                         <title>People pushing a box also feel the gravitational and the normal forces</title>
@@ -3511,7 +3536,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <p></p>
                                 <tabular halign="right"><row><cell halign="right">
                                         Return to: <xref ref="ex-braced" />, <xref ref="ex-unbraced" />, <xref ref="s-FN" />,
-                                                <xref ref="d-rope-net">rope-tension</xref>, <xref provisional="f-firstFBDangle" />
+                                                <xref ref="d-rope-net">rope-tension</xref>, <xref ref="f-firstFBDangle" />
                                 </cell></row></tabular>
                         </sidebyside>
                 </example>
@@ -3542,7 +3567,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <p>Since the full weight of the ladder, <m>F_g = \sig{222}{.69}{N}</m>, is still pressing downwards <m>(-\jhat)</m> into the floor (as a normal force), <xref ref="as-NIII" text="title">Newton's third law</xref> says that the floor pushes the ladder upwards <m>(+\jhat)</m> with a normal force of <m>\sig{222}{.69}{N}</m>.  <em>Notice that this is normal (perpendicular) to the surface of the floor.</em></p>
                         </answer>
 
-                        <conclusion><p><xref provisional="ex-ladder2" text="type-global"/> goes into the full details of how one calculates the necessary values.</p></conclusion>
+                        <conclusion><p><xref ref="ex-ladder2" text="type-global"/> goes into the full details of how one calculates the necessary values.</p></conclusion>
 
                 </example>
 
@@ -3700,7 +3725,7 @@ Earth feels a force by \studentZ\ to the left.
                                 </sidebyside>
                                 </figure>
 
-                                <p>In this particular problem, we are only concerned with step (c) when the ball hits the ceiling, because that is the only part where the normal force acts. <xref provisional="se-throw-up" text="type-global" /> will describe what happens during steps (a) and (e).</p>
+                                <p>In this particular problem, we are only concerned with step (c) when the ball hits the ceiling, because that is the only part where the normal force acts. <xref ref="se-throw-up" text="type-global" /> will describe what happens during steps (a) and (e).</p>
 
                                 <p>During step (c), we have the actual acceleration, which tells us about the net force.  We will also need to know the weight of the baseball, because gravity is still acting during the collision.
                                 <md>
@@ -3733,7 +3758,8 @@ Earth feels a force by \studentZ\ to the left.
                                 coefficient of friction ball-to-ball <m>\mu=0.06</m>; and
                                 ball-ball collision times as <m>250\unit{\mu s}</m>-<m>300\unit{\mu s}</m>.
                 </fn>
-                off the bumper, then the surface provides a normal force that is perpendicular to the surface, in this case redirecting the ball rather than stopping it.  Unfortunately, the actual mechanism is somewhat more complicated than we are ready for; these are considered a little bit in the <xref ref="irl-poolcushion" text="type-hybrid" />. <todo><xref ref="irl-poolcushion" text="type-hybrid" /> should be moved to a section that has more about friction and angular momentum.  It is too complex for this section.</todo></p>
+                off the bumper, then the surface provides a normal force that is perpendicular to the surface, in this case redirecting the ball rather than stopping it.  Unfortunately, the actual mechanism is somewhat more complicated than we are ready for; these are considered a little bit in the <xref ref="irl-poolcushion" text="type-hybrid" />. </p>
+                <todo><xref ref="irl-poolcushion" text="type-hybrid" /> should be moved to a section that has more about friction and angular momentum.  It is too complex for this section.</todo>
 
                 <investigation xml:id="irl-poolcushion"><title>Pool balls and bumpers / cushions</title>
                         <idx><h>Pool</h><h>Real Life</h></idx>
@@ -3752,7 +3778,7 @@ Earth feels a force by \studentZ\ to the left.
                                         <url href="http://billiards.colostate.edu/physics/Hierrezuelo_PhysEd_95_article.pdf">this PDF</url>).</p></answer>
                                 <answer xml:id="A-pool-bumper"><p>The cushion (sometimes called a bumper) is pretty still to the touch, but it is made of a springy rubber
                                         that allows the balls to bounce reasonably well.  The
-                                        <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">document</url> indicates that you should be able to firmly strike a ball at some angle to the far wall and have it bounce around the table four to four-and-a-half times.  If the bumpers were perfectly <xref provisional="s-elastic" text="title">elastic</xref>, then the normal force would be normal to the restign surface; but since the bumper has some flexibility, when the ball hits the bumper with a glancing blow, then bumper bends inwards and the normal force is directed in a way that depends on the shape of the dent. </p></answer>
+                                        <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">document</url> indicates that you should be able to firmly strike a ball at some angle to the far wall and have it bounce around the table four to four-and-a-half times.  If the bumpers were perfectly <xref ref="p-elastic" text="title">elastic</xref>, then the normal force would be normal to the resting surface; but since the bumper has some flexibility, when the ball hits the bumper with a glancing blow, then bumper bends inwards and the normal force is directed in a way that depends on the shape of the dent. </p></answer>
                         </task>
                         <task>
                                 <statement><p>Find a set of pool balls. Compare the solid-colored balls, the striped balls, and the cue ball.
@@ -3777,10 +3803,10 @@ Earth feels a force by \studentZ\ to the left.
                         </task>
                         <conclusion>
                                 <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
-                                        <xref provisional="irl-poolfriction" text="title">friction</xref>,
-                                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
-                                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
-                                        <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.
+                                        <xref ref="irl-poolfriction" text="title">friction</xref>,
+                                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
+                                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.
                                 </p>
                                 <sidebyside widths="50% 50%" haligns="center right">
                                         <p></p>
@@ -3796,7 +3822,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-scales"><title>Bathroom Scales Measure the Normal Force</title>
                 <aside><title>Referenced by</title>
-                        <p>Discussion of <xref provisional="d-usesofFma">uses of <m>F=ma</m></xref></p>
+                        <p>Discussion of <xref ref="d-usesofFma">uses of <m>F=ma</m></xref></p>
                 </aside>
 
                 <p>To get a good sense of what how the normal force works, it helps to consider the way a bathroom scale works.  Consider the concepts presented in the <xref ref="irl-scale" text="type-global"/>.
@@ -3811,11 +3837,17 @@ Earth feels a force by \studentZ\ to the left.
                         </task>
                         <task xml:id="Q-weight-gain">
                                 <statement><p>Place your toe on the scale while \studentB\ weighs \himselfB. This increases the value the scale reads. Does \studentB\ weigh more? </p></statement>
-                                <solution xml:id="A-weight-gain"><p>When one person stands on the scale, the scale provides just enough of an upwards normal force to keep that person in equilibrium<todo>link equilibrium?</todo>.  In that case, the upwards force is balancing the weight of the person.  This gives the impression that the scale is telling you your weight; however, when you press down or help support whomever is standing on the scale, the scale adjusts the amount it must provide.  The scale is not trying to tell you your weight.  Rather the scale is trying to create equilibrium by balancing whatever force(s) are pressing into it.  Your weight is determined by the gravitational force<todo>link the gravitational force?</todo> and does not change when you press harder or lighter onto the scale.  </p></solution>
+                                <solution xml:id="A-weight-gain">
+                                <todo>link equilibrium?</todo>
+                                <p>When one person stands on the scale, the scale provides just enough of an upwards normal force to keep that person in equilibrium.  In that case, the upwards force is balancing the weight of the person.  This gives the impression that the scale is telling you your weight; however, when you press down or help support whomever is standing on the scale, the scale adjusts the amount it must provide.  The scale is not trying to tell you your weight.  Rather the scale is trying to create equilibrium by balancing whatever force(s) are pressing into it.  Your weight is determined by the gravitational force and does not change when you press harder or lighter onto the scale.  </p>
+                                <todo>link the gravitational force?</todo>
+                                </solution>
                         </task>
                         <task xml:id="Q-scale-increase">
                                 <statement><p>With your hands, press down on \studentB's shoulders while \heB\ stands on the scale. Control the value read by the scale (HINT: <xref ref="Q-weight-gain" text="type-local" />).  Increase the reading by <m>20\unit{N}</m>, <m>30\unit{N}</m>, etc. Does \studentB's weight change? (<xref ref="A-weight-gain" text="type-global" />) Are you adding weight to the scale? (<xref ref="A-scale-increase" text="type-global" />)</p></statement>
-                                <solution xml:id="A-scale-increase"><p>When you press down on \studentB's shoulders, you are not adding weight.  Weight has a specific definition: it is specifically the value that the gravitational force<todo>link the gravitational force</todo> pulls on any object.  Pushing the person does not change their weight; it does, however, change the amount that they press into the Earth.  That is to say, it increases their downwards normal force, but not their weight. </p></solution>
+                                <solution xml:id="A-scale-increase">
+                                <todo>link the gravitational force</todo>
+                                <p>When you press down on \studentB's shoulders, you are not adding weight.  Weight has a specific definition: it is specifically the value that the gravitational force pulls on any object.  Pushing the person does not change their weight; it does, however, change the amount that they press into the Earth.  That is to say, it increases their downwards normal force, but not their weight. </p></solution>
                         </task>
                         <task xml:id="Q-scale-decrease">
                                 <statement><p>Have \studentB\ lean on a nearby table or counter while \heB\ stands on the scale. Control the value read by the scale (HINT: <xref ref="Q-scale-increase" text="type-local" />).  Decrease the reading by <m>20\unit{N}</m>, <m>30\unit{N}</m>, etc. Does \studentB's weight change? (<xref ref="A-weight-gain" text="type-global" />) </p></statement>
@@ -3827,13 +3859,18 @@ Earth feels a force by \studentZ\ to the left.
                         </task>
                         <task>
                                 <statement><p>Imagine placing a scale on a ramp that can be laid flat or raised to any angle up to a vertical (making it a wall). Imagine standing on the scale on the ramp while it is lifted from horizontal (like a floor) to vertical (like a wall).  Does the scale always read the same value while it is raised to different angles?</p></statement>
-                                <solution xml:id="A-scale-ramp"><p>When the scale is on the flat, horizontal floor, it balances your full weight.  When the scale is on the vertical wall it does not carry any of your weight.  At any angle in between those values, it carries some fraction of your weight while friction keeps you from sliding down the ramp<todo>link to the section on friction and ramps</todo>.  It will turn out that since the cosine function<todo>link to the trig section</todo> behaves in just the right way, we can use<todo>link <q>can use</q> to the section on ramps</todo> the cosine to find the component of the weight that the normal force from the scale has to support.</p></solution>
+                                <solution xml:id="A-scale-ramp">
+                                <todo>link to the section on friction and ramps</todo>
+                                <p>When the scale is on the flat, horizontal floor, it balances your full weight.  When the scale is on the vertical wall it does not carry any of your weight.  At any angle in between those values, it carries some fraction of your weight while friction keeps you from sliding down the ramp.  It will turn out that since the cosine function behaves in just the right way, we can use the cosine to find the component of the weight that the normal force from the scale has to support.</p>
+                                <todo>link to the trig section</todo>
+                                <todo>link <q>can use</q> to the section on ramps</todo>
+                                </solution>
                         </task>
                         <conclusion>
                                 <sidebyside widths="50% 50%" haligns="center right">
                                         <p></p>
                                         <tabular halign="right"><row><cell halign="right">
-                                                Return to: <xref provisional="ss-scales" text="type-global"/>
+                                                Return to: <xref ref="ss-scales" text="type-global"/>
                                         </cell></row></tabular>
                                 </sidebyside>
                         </conclusion>
@@ -3843,7 +3880,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p>As you consider the values that you read on the scale, you should consider what happens if you jump off of or land upon a scale.  <em>Note that actually doing this can decalibrate your scale, if not break it entirely.  Scales are not meant to be handled this way.</em> While you are jumping from your scale, it must provide not only the force necessary to support your weight, but also the upwards force require to accelerate you upwards.  While you are landing on the scale, it musty provide not only the force necessary to support your weight, but also the upwards force necessary to decelerate you.</p>
 
-                <p>Bathroom scales use leverage (i.e., <xref provisional="s-leverarm" text="title">torque</xref>) and a <xref provisional="s-springs" text="title">spring</xref>-system to balance the force pressing into them.  The mechanism can be seen at <url href="http://home.howstuffworks.com/inside-scale-htm">How Stuff Works</url>.</p>
+                <p>Bathroom scales use leverage (i.e., <xref ref="s-leverarm" text="title">torque</xref>) and a <xref ref="s-springs" text="title">spring</xref>-system to balance the force pressing into them.  The mechanism can be seen at <url href="http://home.howstuffworks.com/inside-scale-htm">How Stuff Works</url>.</p>
 
                 </subsection>
 
@@ -3865,15 +3902,18 @@ Earth feels a force by \studentZ\ to the left.
         </section>
         <section xml:id="s-FT"><title>Tension</title>
         <aside><title>Referenced by</title>
-                <p>Discussion of <xref provisional="d-fma"><m>F=ma</m></xref></p>
+                <p>Discussion of <xref ref="d-fma"><m>F=ma</m></xref></p>
         </aside>
         <idx><h>Force</h><h>Tension</h></idx>
 
                 <introduction>
+                <todo>add a link to (and the section itself) to a section on the modulus and stress/strain.</todo>
+                <todo>Maybe add an IRL about a house settling and the compression forces.  Loading a pick-up truck and watching the bed sag as weight is added.  Hammock as an example of adding weight and increasing the tension force.</todo>
                 <p>Where the <xref ref="s-FN" text="title">normal force</xref> is appropriate for pushing against surfaces,
                 <assemblage><p>tension is the pulling force that is transmitted through materials such as cable, chain, or rope.</p></assemblage>
-                Tension is closely related to the compression force experienced by support beams.  One can simplistically think of tension as pulling<todo>add a link to (and the section itself) to a section on the modulus and stress/strain.</todo> and compression as pushing<todo>Maybe add an IRL about a house settling and the compression forces.  Loading a pick-up truck and watching the bed sag as weight is added.  Hammock as an example of adding weight and increasing the tension force.</todo> on the intermediate object that transmits force between the objects at either end.<fn xml:id="fn-rope-compression">It doesn't usually make sense to talk about the compression of a rope or chain.</fn>
-                When engineers design the skeleton of bridges and buildings, one of the primary considerations is the tension and compression of the steel beams.  You can build your intuition by considering the <xref ref="irl-tension" text="type-global"/>.<todo>Still need to update the <xref ref="irl-tension" text="type-global"/>.</todo></p>
+                Tension is closely related to the compression force experienced by support beams.  One can simplistically think of tension as pulling and compression as pushing on the intermediate object that transmits force between the objects at either end.<fn xml:id="fn-rope-compression">It doesn't usually make sense to talk about the compression of a rope or chain.</fn>
+                When engineers design the skeleton of bridges and buildings, one of the primary considerations is the tension and compression of the steel beams.  You can build your intuition by considering the <xref ref="irl-tension" text="type-global"/>.</p>
+                <todo>Still need to update the <xref ref="irl-tension" text="type-global"/>.</todo>
 
                 <investigation xml:id="irl-tension"><title>Pull my finger.</title>
                         <idx><h>Force</h><h>Tension</h></idx>
@@ -3892,13 +3932,15 @@ Earth feels a force by \studentZ\ to the left.
                                         When a small child is in the swing?
                                         When a full-sized adult is in the swing? </p></statement>
                                 <answer xml:id="A-swing-tension"><p>To make this comparison, let's consider a swing that is supported by chains.
-                                        If you are sitting in the swing and take hold of the chains at about shoulder height, you should be able to shake them in (towards your chest) and out (away from you, towards your neighbor swings).  You can do this same motion while standing next to the swing.  If you do this when the swing is empty, it is very easy to do this.  If you ask a series of successively larger people to sit in the swing, you will notice that it gets progressively more difficult to extend them very far.  The chains are increasing in tension; they are pulled more taut.  Your ability to move the chain in this way is exactly analogous to the way a bow draws across a violin or the way your fingers pluck a guitar, as described in <xref provisional="ss-stringed-instruments" text="type-global" />.</p></answer>
+                                        If you are sitting in the swing and take hold of the chains at about shoulder height, you should be able to shake them in (towards your chest) and out (away from you, towards your neighbor swings).  You can do this same motion while standing next to the swing.  If you do this when the swing is empty, it is very easy to do this.  If you ask a series of successively larger people to sit in the swing, you will notice that it gets progressively more difficult to extend them very far.  The chains are increasing in tension; they are pulled more taut.  Your ability to move the chain in this way is exactly analogous to the way a bow draws across a violin or the way your fingers pluck a guitar, as described in <xref ref="ss-stringed-instruments" text="type-global" />.</p></answer>
                         </task>
                         <task xml:id="Q-fan-tension">
                                 <statement><p>Install a fan or light fixture that hangs from the ceiling. You don't want the fan to be supported by the electrical wires,
                                         but rather by the metal shaft. How is the fan supported? </p></statement>
                                 <answer xml:id="A-fan-tension"><p>You might also consider <xref ref="A-chandelier-tension" text="type-local" />, which discusses the case of
-                                        hanging a light fixture from the ceiling. If you have ever installed a fan in your house, then you will notice that you have to support the fan while the wires are connected.  Usually the fan has a shaft that connects to the ceiling at one end and the fan at the other and provides a mechanism for supporting the fan while you manage the wires, which pass through the shaft.  Since the fan houses the motor, it is usually reasonably heavy.   The nice property of use a metal shaft to support the fan is that it doesn't stretch or wiggle like a chain might.  The difficulty in this example is that it is more difficulty to notice the tension in the shaft.  If you are the person hanging the fan, then one thing you might be able to notice is that if you flick the metal with a finger when it is not supporting anything, it will have a slightly different <q>ting</q> than when it is supporting the fan.<todo>Is this sufficiently noticeable?</todo></p></answer>
+                                        hanging a light fixture from the ceiling. If you have ever installed a fan in your house, then you will notice that you have to support the fan while the wires are connected.  Usually the fan has a shaft that connects to the ceiling at one end and the fan at the other and provides a mechanism for supporting the fan while you manage the wires, which pass through the shaft.  Since the fan houses the motor, it is usually reasonably heavy.   The nice property of use a metal shaft to support the fan is that it doesn't stretch or wiggle like a chain might.  The difficulty in this example is that it is more difficulty to notice the tension in the shaft.  If you are the person hanging the fan, then one thing you might be able to notice is that if you flick the metal with a finger when it is not supporting anything, it will have a slightly different <q>ting</q> than when it is supporting the fan.</p>
+                                        <todo>Is this sufficiently noticeable?</todo>
+                                        </answer>
                                 <answer xml:id="A-chandelier-tension"><p>If you have ever installed a chandelier in your house, then you will notice that the light has to be supported
                                         between the joists of the ceiling.  There will be an electrical box with a screw to which you will attach the support for the chain that holds the chandelier.  The wires will run through the support chain.  The heavier the chandelier, the tauter the chain, much as described in <xref ref="A-swing-tension" text="type-local" />. This tension is much easier to see than the tension in the shaft of the fan.</p></answer>
                         </task>
@@ -3922,8 +3964,10 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p>When considering the tension in the rope, the context is generally that the rope is connecting two objects that are trying to pull on each other.  It is convenient to recognize that each object only <q>sees</q> the rope, not the object at the far side.  This can be seen in a couple of contexts.</p>
 
-                <p>We will start with the <xref ref="s-effective2" text="title">simplistic approximation</xref> of ropes that only transmit the force.  As your understanding improves, we will add some examples where the tension in the rope also affects the rope itself.  In that more complicated situation, the tension will change across the rope<todo>maybe add links</todo> and the rope may stretch<todo>maybe add links</todo>.  Since ropes and cables are twisted strands while chains are links, ropes and cables can also introduce a <xref provisional="s-torsion" text="title">torsion</xref> that tends not to occur in chains.
+                <todo>maybe add links about the tension chaning in the rope</todo>
+                <p>We will start with the <xref ref="s-effective2" text="title">simplistic approximation</xref> of ropes that only transmit the force.  As your understanding improves, we will add some examples where the tension in the rope also affects the rope itself.  In that more complicated situation, the tension will change across the rope and the rope may stretch.  Since ropes and cables are twisted strands while chains are links, ropes and cables can also introduce a <xref ref="s-torsion" text="title">torsion</xref> that tends not to occur in chains.
                 <aside><title>Foreshadow</title></aside></p>
+                <todo>maybe add links to the stretch of the rope</todo>
 
                 </introduction>
 
@@ -3952,15 +3996,14 @@ Earth feels a force by \studentZ\ to the left.
                         <assemblage><p>the tension is conveying the force between the two objects.</p></assemblage>
                         In the same way that the <xref ref="s-FN" text="title">normal force</xref> on a scale does not measure your weight, but rather the amount you press into the scale, the tension passes force on to the attached object.  The hook doesn't feel the weight of the purse, but does feel the tension required to support the purse.</p>
 
-                        <p>In <xref provisional="sss-multiple-mass" text="title">an upcoming section</xref>, we will consider what happens when multiple masses are hung from the rope.</p>
+                        <p>In <xref ref="sss-multiple-mass" text="title">an upcoming section</xref>, we will consider what happens when multiple masses are hung from the rope.</p>
 
                         </introduction>
 
                         <subsubsection><title>How Physicists Use the Words (Vocabulary)</title>
 
-                        <p>You can probably think of several examples of objects dangling: a purse on a hook, a flag on a pole, a shop sign attached to a post, a pendulum,a swing set, etc.  Since these are all similar in some ways (although different in other ways), <em>we can treat all of them as a mass at the end of a rope</em>.  Typically, because we do not want to deal with the complications that come from sagging supports, we will use the <xref ref="s-effective2" text="title">approximation</xref> of an <q><em>immovable support</em>.</q>  This will be indicated by hashing the surface.
+                        <p>You can probably think of several examples of objects dangling: a purse on a hook, a flag on a pole, a shop sign attached to a post, a pendulum,a swing set, etc.  Since these are all similar in some ways (although different in other ways), <em>we can treat all of them as a mass at the end of a rope</em>.  Typically, because we do not want to deal with the complications that come from sagging supports, we will use the <xref ref="s-effective2" text="title">approximation</xref> of an <q><em>immovable support</em>.</q>  This will be indicated by hashing the surface.</p>
                         <todo>Add <insert>a description of the</insert> <stale>an</stale> image of an immovable surface to that section</todo>
-                        </p>
 
                         <figure xml:id="f-immovable-surface">
                                 <caption>[Add caption]</caption>
@@ -4206,7 +4249,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p>While the flexibility of ropes makes them inconvenient for pushing, their flexibility makes them <em>very useful</em> for changing the direction of the pull.  The mechanism for changing the direction is the pulley.  Furthermore, by allowing us to change the direction of the pull, we are also able to double, triple, or further improve the strength of the pull.  The term for this is <q>the mechanical advantage</q> of a pulley-system.</p>
 
-                <p>First we will consider three simple cases of redirecting the force.  In each of these cases, I will <xref ref="s-effective2" text="title">assume</xref> that the pulley and rope have no mass and that there is no friction in the turning of the pulley (assume it is trivially easy to spin).  If we do not make this assumption, then the problem gets significantly more complicated.<todo>add a reference to the section (problem?) where this is considered.</todo></p>
+                <p>First we will consider three simple cases of redirecting the force.  In each of these cases, I will <xref ref="s-effective2" text="title">assume</xref> that the pulley and rope have no mass and that there is no friction in the turning of the pulley (assume it is trivially easy to spin).  If we do not make this assumption, then the problem gets significantly more complicated.</p><todo>add a reference to the section (problem?) where this is considered.</todo>
 
                 <example><title>The tension in a rope over a pulley</title>
                         <statement>
@@ -4272,14 +4315,14 @@ Earth feels a force by \studentZ\ to the left.
                         </subsubsection>
 
                         <subsubsection xml:id="sss-multiple-mass"><title>Multiple Masses</title>
-                        <aside><title>Referenced by</title> <p><xref provisional="ss-tension-support" text="type-global"/></p></aside>
+                        <aside><title>Referenced by</title> <p><xref ref="ss-tension-support" text="type-global"/></p></aside>
 
                         <p>Now that we have a few examples of tension under our belts, we can consider some more interesting examples.</p>
 
                         <p><xref ref="ex-multiweight-tension" text="type-hybrid" /> considers the case of hanging multiple masses, which extends the ideas of <xref ref="ss-tension-support" text="type-hybrid"/>.</p>
 
                         <example xml:id="ex-multiweight-tension"><title>Tension between masses hung in a chain</title>
-                        <aside><title>Referenced by</title> <p><xref provisional="sss-multiple-mass"  text="type-global" /></p></aside>
+                        <aside><title>Referenced by</title> <p><xref ref="sss-multiple-mass"  text="type-global" /></p></aside>
 
                                 <statement>
                                         <p>While preparing to hang some ornament on a tree, you chain them from a hook on the wall.  You hang ornament 1 from ornament 2 from ornament 3.  What is the tension in each subsequent string?</p>
@@ -4292,7 +4335,7 @@ Earth feels a force by \studentZ\ to the left.
                         <p><xref ref="ex-multidrag-tension" text="type-global" /> considers the case of dragging multiple masses, which extends the ideas of <xref ref="ss-tension-drag" text="type-hybrid"/>.</p>
 
                         <example xml:id="ex-multidrag-tension"><title>Tension in a caravan</title>
-                        <aside><title>Referenced by</title> <p><xref provisional="sss-multiple-mass"  text="type-global" /></p></aside>
+                        <aside><title>Referenced by</title> <p><xref ref="sss-multiple-mass"  text="type-global" /></p></aside>
 
                                 <statement>
                                         <p>While pulling a sled on which your son sits, your son's sled is tied to a sled on which your dog sits.  Your dog's sled is then connected to a sled with provisions for the day.  What is the tension in each subsequent string?</p>
@@ -4310,8 +4353,9 @@ Earth feels a force by \studentZ\ to the left.
 
                         <example xml:id="ex-atwood-acc"><title>The acceleration of masses on Atwood's Machine</title>
                                 <statement>
+                                        <todo>imported a homework problem from Giordano.  Need to modify it to fit my purposes.</todo>
                                         <sidebyside widths="70% 30%">
-                                                <p>The<todo>imported a homework problem from Giordano.  Need to modify it to fit my purposes.</todo> two crates in the figure (p. 114) hang over a pulley (in what is called an <q>Atwood's machine</q>).  I will select <m>m_1=35\unit{kg}</m> (because it looks smaller) and <m>m_2=85\unit{kg}</m> (because it looks bigger).  We will assume that the pulley is massless and frictionless (so that the tension is the same throughout the rope).  Find the acceleration and the time it takes <m>m_2</m> to accelerate down for the <m>12\unit m</m> to the floor.</p>
+                                                <p>The two crates in the figure (p. 114) hang over a pulley (in what is called an <q>Atwood's machine</q>).  I will select <m>m_1=35\unit{kg}</m> (because it looks smaller) and <m>m_2=85\unit{kg}</m> (because it looks bigger).  We will assume that the pulley is massless and frictionless (so that the tension is the same throughout the rope).  Find the acceleration and the time it takes <m>m_2</m> to accelerate down for the <m>12\unit m</m> to the floor.</p>
 
                                                 <figure xml:id="f-atwood-acc">
                                                         <caption>Masses hung over Atwood's Machine</caption>
@@ -4406,12 +4450,12 @@ Earth feels a force by \studentZ\ to the left.
                                         <ol>
                                         <li><p>the tension is larger than the weight of the lighter mass and therefore pulls it upwards,</p></li>
                                         <li><p>the tension is smaller than the weight of the heavier mass and therefore keeps it from falling as fast as it would in freefall.</p></li>
-                                        <li><p>The tension is the same on both sides of the pulley specifically because we assumed that it did not take any effort to turn the pulley.  This is usually expressed with three specific (and independent) assumptions:</p>
+                                        <li><p>The tension is the same on both sides of the pulley specifically because we assumed that it did not take any effort to turn the pulley.  This is usually expressed with three specific (and independent) assumptions:
                                                 <ol>
                                                   <li><p>The rope has an insignificant amount of mass -- the rope is <q>massless</q>. (This means that its mass is too small to impact the significant digits.)</p></li>
-                                                  <li><p>The pulley has an insignificant amount of mass -- the pulley is <q>massless</q>. (This means that its inertial mass<fn>See <xref provisional="ss-equivmm" text="type-hybrid" /> for the distinction between <q>mass</q> and <q>inertial mass</q>.</fn> is too small to impact the significant digits.)</p></li>
+                                                  <li><p>The pulley has an insignificant amount of mass -- the pulley is <q>massless</q>. (This means that its inertial mass<fn>See <xref ref="ss-equivmm" text="type-hybrid" /> for the distinction between <q>mass</q> and <q>inertial mass</q>.</fn> is too small to impact the significant digits.)</p></li>
                                                   <li><p>The pulley has an insignificant amount of friction -- the pulley is <q>frictionless</q>. (This means that any force that might resist turning the pulley is too small to impact the significant digits.)</p></li>
-                                                </ol>
+                                                </ol></p>
                                                 </li>
                                         </ol>
                                         </p>
@@ -4512,7 +4556,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection><title>Surface Tension</title>
 
-                        <p xml:id="d-surf-tension">As a final note, <xref provisional="s-surface-tension" text="title">surface tension</xref> is something else entirely.  It is mentioned here only because it has the word <q>tension</q> in the name.</p>
+                        <p xml:id="d-surf-tension">As a final note, <xref ref="s-surface-tension" text="title">surface tension</xref> is something else entirely.  It is mentioned here only because it has the word <q>tension</q> in the name.</p>
 
                         <p>See <xref ref="sss-tea" text="type-global"/> for a comment on the contribution to hot versus cold spoon noises.</p>
 
@@ -4565,16 +4609,16 @@ Earth feels a force by \studentZ\ to the left.
                 </task>
                 <conclusion>
                         <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
-                        <xref provisional="irl-poolnormal" text="title">normal force</xref>,
-                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
-                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
-                        <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.
+                        <xref ref="irl-poolcushion" text="title">normal force</xref>,
+                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
+                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.
                         </p>
 
                         <sidebyside widths="50% 50%" haligns="center right">
                                 <p></p>
                                 <tabular halign="right"><row><cell halign="right">
-                                        Return to: <xref provisional="d-bank-shot">pool</xref>
+                                        Return to: <xref ref="d-bank-shot">pool</xref>
                                 </cell></row></tabular>
                         </sidebyside>
                 </conclusion>
@@ -4594,6 +4638,8 @@ Earth feels a force by \studentZ\ to the left.
                 <xref ref="ss-scales" text="type-hybrid"/>
                 </p>
         </aside>
+
+        <p xml:id="p-elastic">Initial definition of elastic (reference <xref ref="p-elastic-collision" text="type-global" /></p>
 
         </section>
 
@@ -4810,18 +4856,18 @@ Earth feels a force by \studentZ\ to the left.
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Energy and the Transfer of Energy</title>
-        <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-heatverb" text="type-global">heat as a verb</xref></p></aside>
+        <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatverb" text="type-global">heat as a verb</xref></p></aside>
 
         <introduction>
         <p xml:id="d-energynoun">Energy is a noun<idx><h>Energy</h><h>noun</h></idx>; objects can <em>have</em> energy.  </p>
         <p xml:id="d-workverb">Work is a verb<idx><h>Work</h><h>verb</h></idx>; doing work is the process of <em>exchanging</em> energy.</p>
         </introduction>
 
-        <section><title>Objects Can Have Energy</title>
+        <section xml:id="s-KE"><title>Objects Can Have Energy</title>
         </section>
 
-        <section><title>A Force Can Transfer Energy</title>
-                <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-pushvector">the direction of forces</xref></p></aside>
+        <section xml:id="s-work"><title>A Force Can Transfer Energy</title>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-pushvector">the direction of forces</xref></p></aside>
         </section>
 
         <section xml:id="s-Wfr"><title>Dissipating Energy</title>
@@ -4849,15 +4895,15 @@ Earth feels a force by \studentZ\ to the left.
 
                         <conclusion>
                                 <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
-                                <xref provisional="irl-poolnormal" text="title">normal force</xref>,
-                                <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
-                                <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
-                                <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.</p>
+                                <xref ref="irl-poolcushion" text="title">normal force</xref>,
+                                <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                                <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
+                                <xref ref="irl-poolangmom" text="title">angular momentum</xref>.</p>
 
                                 <sidebyside widths="50% 50%" haligns="center right">
                                         <p></p>
                                         <tabular halign="right"><row><cell halign="right">
-                                                Return to: <xref provisional="d-bank-shot">pool</xref>
+                                                Return to: <xref ref="d-bank-shot">pool</xref>
                                         </cell></row></tabular>
                                 </sidebyside>
                         </conclusion>
@@ -4865,8 +4911,8 @@ Earth feels a force by \studentZ\ to the left.
         </introduction>
 
                 <subsection xml:id="ss-PEg"><title>Gravitational Potential Energy</title>
-                        <aside><title>Referenced by</title> <p><xref provisional="s-PEG" text="type-global"/></p></aside>
-                <p>See also <xref provisional="s-PEG" text="type-global" />.</p>
+                        <aside><title>Referenced by</title> <p><xref ref="s-PEG" text="type-global"/></p></aside>
+                <p>See also <xref ref="s-PEG" text="type-global" />.</p>
                 </subsection>
 
                 <subsection xml:id="ss-PEs"><title>Spring Potential Energy</title>
@@ -4908,19 +4954,20 @@ Earth feels a force by \studentZ\ to the left.
         <section><title>Revising Newton's First and Second Laws</title>
 
                 <subsection xml:id="ss-inertia"><title>Inertia and Momentum</title>
-                        <aside><title>Referenced by</title> <p><xref provisional="sss-inertia" text="type-global" /></p></aside>
+                        <aside><title>Referenced by</title> <p><xref ref="sss-inertia" text="type-global" /></p></aside>
                         <p>Recall <xref ref="sss-inertia" text="type-global" /></p>.
+                        <p xml:id="p-elastic-collision">Probably define elastic (<xref ref="p-elastic" text="type-global" />) and inelastic collisions</p>
                 </subsection>
 
         </section>
 
         <section xml:id="s-conservemom"><title>Revising Newton's Third Law: Conservation of Momentum</title>
-        <aside><title>Referenced by</title> <p><xref provisional="ss-NIII" text="type-global" /></p></aside>
+        <aside><title>Referenced by</title> <p><xref ref="ss-NIII" text="type-global" /></p></aside>
         </section>
 
 
         <section xml:id="s-2Dcollisions"><title>Two-Dimensional Collisions</title>
-        <aside><title>Referenced by</title> <p><xref provisional="sss-vectorequations" text="type-global"/></p></aside>
+        <aside><title>Referenced by</title> <p><xref ref="sss-vectorequations" text="type-global"/></p></aside>
 
         <p>pool balls?  What about rolling?</p>
 
@@ -4939,15 +4986,15 @@ Earth feels a force by \studentZ\ to the left.
 
                 <conclusion>
                         <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
-                        <xref provisional="irl-poolnormal" text="title">normal force</xref>,
-                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
-                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
-                        <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.</p>
+                        <xref ref="irl-poolcushion" text="title">normal force</xref>,
+                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
+                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.</p>
 
                         <sidebyside widths="50% 50%" haligns="center right">
                                 <p></p>
                                 <tabular halign="right"><row><cell halign="right">
-                                        Return to: <xref provisional="d-bank-shot">pool</xref>
+                                        Return to: <xref ref="d-bank-shot">pool</xref>
                                 </cell></row></tabular>
                         </sidebyside>
                 </conclusion>
@@ -4986,15 +5033,15 @@ Earth feels a force by \studentZ\ to the left.
 
                 <conclusion>
                         <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
-                        <xref provisional="irl-poolnormal" text="title">normal force</xref>,
-                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
-                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
-                        <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.</p>
+                        <xref ref="irl-poolcushion" text="title">normal force</xref>,
+                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
+                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.</p>
 
                         <sidebyside widths="50% 50%" haligns="center right">
                                 <p></p>
                                 <tabular halign="right"><row><cell halign="right">
-                                        Return to: <xref provisional="d-bank-shot">pool</xref>
+                                        Return to: <xref ref="d-bank-shot">pool</xref>
                                 </cell></row></tabular>
                         </sidebyside>
                 </conclusion>
@@ -5020,15 +5067,15 @@ Earth feels a force by \studentZ\ to the left.
 
                 <conclusion>
                         <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
-                        <xref provisional="irl-poolnormal" text="title">normal force</xref>,
-                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
-                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
-                        <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.</p>
+                        <xref ref="irl-poolcushion" text="title">normal force</xref>,
+                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
+                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.</p>
 
                         <sidebyside widths="50% 50%" haligns="center right">
                                 <p></p>
                                 <tabular halign="right"><row><cell halign="right">
-                                        Return to: <xref provisional="d-bank-shot">pool</xref>
+                                        Return to: <xref ref="d-bank-shot">pool</xref>
                                 </cell></row></tabular>
                         </sidebyside>
                 </conclusion>
@@ -5047,7 +5094,7 @@ Earth feels a force by \studentZ\ to the left.
         <idx><h>Reference Frames</h><h>Inertial</h></idx>
         <idx><h>Reference Frames</h><h>Non-inertial</h></idx>
 
-                <introduction><aside><title>Referenced by</title> <p><xref provisional="ss-NII" text="type-global" /></p></aside>
+                <introduction><aside><title>Referenced by</title> <p><xref ref="ss-NII" text="type-global" /></p></aside>
                         <p xml:id="d-noninertial">Because the Earth rotates, we are actually in a non-inertial reference frame.  In fact, we can prove that the Earth rotates by observing the effects, such as the <xref ref="d-coriolis" text="type-global">Coriolis effect</xref>, that in our non-inertial frame seem to require unexplainable forces but which, in a non-rotating frame, follow the expected laws of physics.</p>
                 </introduction>
 
@@ -5086,7 +5133,7 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-centripetal"><title>Centripetal Force</title>
         <aside><title>Referenced by</title>
-                <p>Discussion of <xref provisional="d-fma" text="title"><m>F=ma</m></xref>
+                <p>Discussion of <xref ref="d-fma" text="title"><m>F=ma</m></xref>
                 </p>
         </aside>
 
@@ -5097,10 +5144,10 @@ Earth feels a force by \studentZ\ to the left.
 
 
 <chapter xml:id="c-torque"><title>Torque and the <m>F=ma</m> of Rotations</title>
-<aside><title>Referenced by</title> <p><xref provisional="a-NIIIaction" text="type-global" /></p></aside>
+<aside><title>Referenced by</title> <p><xref ref="a-NIIIaction" text="type-global" /></p></aside>
 
         <section xml:id="s-leverarm"><title>Leverage</title>
-        <aside><title>Referenced by</title> <p><xref provisional="ss-scales" text="type-global" /></p></aside>
+        <aside><title>Referenced by</title> <p><xref ref="ss-scales" text="type-global" /></p></aside>
         </section>
 
         <section><title>Putting it all together, <m>\tau_\mathrm{net}</m></title>
@@ -5225,7 +5272,7 @@ Earth feels a force by \studentZ\ to the left.
         </section>
 
         <section xml:id="s-torsion"><title>Torsion</title>
-        <aside><title>Referenced by</title> <p><xref provisional="s-FT" text="type-global"/></p></aside>
+        <aside><title>Referenced by</title> <p><xref ref="s-FT" text="type-global"/></p></aside>
         </section>
 
         <section><title>Summary and Homework</title>
@@ -5252,10 +5299,10 @@ Earth feels a force by \studentZ\ to the left.
                                 The coefficient of friction between the ladder and the wall is <m>\mu_w=0.19</m>.
                                 Use the rotational and translational equilibrium to determine if the ladder slides when \studentC\ <m>(\massC)</m> climbs to <ellipsis />
                                 <ol>
-                                  <li><p>the third-rung from the top of the ladder, so that he is <m>1.53\unit m</m> from the bottom of the ladder.  (<xref ref="A-ladderC-a" text="type-local" />) </p>
+                                  <li><p>the third-rung from the top of the ladder, so that he is <m>1.53\unit m</m> from the bottom of the ladder.  (<xref ref="A-ladderC-a" text="type-local" />)
                                       <ul>
                                         <li><p>(You might also consider <xref ref="A-nowallC" text="type-global" /> for the case of <m>\mu_w = 0</m>.)</p></li>
-                                      </ul></li>
+                                      </ul></p></li>
                                   <li><p>the third-rung from the bottom of the ladder, so that he is <m>0.914\unit m</m> from the bottom of the ladder. (<xref ref="A-ladderC-b" text="type-local" />) </p></li>
                                 </ol>
                                 </p>
@@ -5285,7 +5332,8 @@ Earth feels a force by \studentZ\ to the left.
                                 <m>\mu_\mathrm{min} = 0.\sig{100}{45}{}</m>
                                 </p>
 
-                                <p>If, hypothetically, <m>\mu_w = 0</m>, then<todo>Make this a different homework problem.</todo>
+                                <todo>Make this a different homework problem.</todo>
+                                <p>If, hypothetically, <m>\mu_w = 0</m>, then
                                 <md>
                                 <mrow> F_{Nw} \amp = \sig{114}{.3}{N} </mrow>
                                 <mrow> F_{fw,\mathrm{max}} \amp = 0 \unit N </mrow>
@@ -5322,7 +5370,7 @@ Earth feels a force by \studentZ\ to the left.
 </aside>
 
 <section xml:id="s-Gfield"><title>Gravitational Force and Field</title>
-<aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-fma" text="title"><m>F=ma</m></xref></p></aside>
+<aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fma" text="title"><m>F=ma</m></xref></p></aside>
 
         <introduction>
                 <p>The value of the acceleration due to gravity  varies according to the mass and size of any celestial body.
@@ -5348,7 +5396,7 @@ Earth feels a force by \studentZ\ to the left.
                 <table xml:id="t-gplanets">
                         <caption>
                                 <p>Properties of various celestial bodies.</p>
-                                <aside><p>Referenced by <xref provisional="se-gplanets" text="type-hybrid" /></p></aside>
+                                <aside><p>Referenced by <xref ref="se-gplanets" text="type-hybrid" /></p></aside>
                         </caption>
                         <tabular>
                                 <col /><col /><col /><col />
@@ -5358,20 +5406,20 @@ Earth feels a force by \studentZ\ to the left.
                 </introduction>
 
                 <subsection xml:id="ss-equivmm"><title>Inertial Mass versus Gravitational Mass</title>
-                <aside><title>Referenced by</title> <p><xref provisional="ss-weightmass" text="type-hybrid" /></p></aside>
+                <aside><title>Referenced by</title> <p><xref ref="ss-weightmass" text="type-hybrid" /></p></aside>
                 </subsection>
 
         </section>
 
         <section xml:id="s-PEG"><title>Gravitational Potential Energy</title>
-        <aside><title>Referenced by</title> <p><xref provisional="ss-PEg" text="type-hybrid" /></p></aside>
+        <aside><title>Referenced by</title> <p><xref ref="ss-PEg" text="type-hybrid" /></p></aside>
 
         <p>Recall <xref ref="ss-PEg" text="type-global" /></p>
 
         </section>
 
         <section xml:id="s-Gconnection"><title>Making Connections</title>
-        <aside><title>Referenced by</title> <p><xref provisional="s-Econnection" text="type-hybrid" /></p></aside>
+        <aside><title>Referenced by</title> <p><xref ref="s-Econnection" text="type-hybrid" /></p></aside>
 
         <p>
         <md>
@@ -5381,7 +5429,7 @@ Earth feels a force by \studentZ\ to the left.
         <mrow> \amp \deq \PE = G \frac{m_1 m_2}{R} \amp \leftrightarrow \amp \mbox{[for later]} \amp </mrow>
         <mrow> \amp \amp \mbox{\scriptsize [for later]} \amp \amp </mrow>
         </md>
-        (Look ahead to the parallel with the electrical interaction in <xref provisional="s-Econnection" text="type-global"/>.)</p>
+        (Look ahead to the parallel with the electrical interaction in <xref ref="s-Econnection" text="type-global"/>.)</p>
 
         </section>
 
@@ -5405,11 +5453,11 @@ Earth feels a force by \studentZ\ to the left.
 <chapter><title>Fluids</title>
         <section xml:id="s-density"><title>Density</title>
         <idx>Density</idx>
-        <aside><title>Referenced by</title> <p><xref provisional="ss-weightmass" text="type-global" /></p></aside>
+        <aside><title>Referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
         </section>
 
         <section xml:id="s-surface-tension"><title>Surface Tension</title>
-        <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-surf-tension" text="title" >surface tension</xref></p></aside>
+        <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-surf-tension" text="title" >surface tension</xref></p></aside>
         </section>
 
 </chapter>
@@ -5418,7 +5466,7 @@ Earth feels a force by \studentZ\ to the left.
 
 <chapter xml:id="c-SHM"><title>Oscillations</title>
         <section xml:id="c-SHMspring"><title>Oscillating Springs</title>
-                <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-fma" text="title"><m>F=ma</m></xref></p></aside>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fma" text="title"><m>F=ma</m></xref></p></aside>
         </section>
 
         <section xml:id="c-SHMpend"><title>Oscillating Pendulums</title>
@@ -5437,7 +5485,7 @@ Earth feels a force by \studentZ\ to the left.
 
 <chapter><title>Sound</title>
                 <subsection xml:id="ss-stringed-instruments" text="title"><title>Musical Instruments</title>
-                <aside><title>Referenced by</title> <p><xref provisional="A-swing-tension" text="type-global"/></p></aside>
+                <aside><title>Referenced by</title> <p><xref ref="A-swing-tension" text="type-global"/></p></aside>
                 </subsection>
 </chapter>
 
@@ -5474,7 +5522,7 @@ Earth feels a force by \studentZ\ to the left.
         <section><title>Latent Heat</title>
 
         <p>Heating might also change the phase of a material.
-        <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-heatwarm" text="type-hybrid"></xref>heating versus warming</p></aside>
+        <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatwarm" text="type-hybrid"></xref>heating versus warming</p></aside>
         <men xml:id="eq-Q-mL">
         Q = \pm mL
         </men>
@@ -5485,7 +5533,7 @@ Earth feels a force by \studentZ\ to the left.
         <section><title>The Flow of Thermal Energy</title>
 
                 <subsection xml:id="ss-thermalconductivity"><title>Thermal Conductivity</title>
-                <aside><title>Referenced by</title> <p><xref provisional="s-story" text="type-hybrid"/></p></aside>
+                <aside><title>Referenced by</title> <p><xref ref="s-story" text="type-hybrid"/></p></aside>
 
                 <p>
                 <men xml:id="eq-thermalconductivity">
@@ -5524,7 +5572,7 @@ Earth feels a force by \studentZ\ to the left.
 
 <chapter><title>Ideal Gas Law</title>
         <section xml:id="s-PV"><title><m>P</m>-<m>V</m> Diagrams</title>
-        <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-heatwarm" text="type-global">heating versus warming</xref></p></aside>
+        <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatwarm" text="type-global">heating versus warming</xref></p></aside>
         </section>
 </chapter>
 
@@ -5542,7 +5590,7 @@ Earth feels a force by \studentZ\ to the left.
 
 
 <chapter xml:id="c-electric"><title>The Electrical Interaction</title>
-<aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-fundamental" text="title">fundamental forces</xref></p></aside>
+<aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
 
         <section xml:id="s-Echarge"><title>Electrical Charge</title>
         </section>
@@ -5575,7 +5623,7 @@ Earth feels a force by \studentZ\ to the left.
         </section>
 
         <section xml:id="s-Econnection"><title>Making Connections</title>
-        <aside><title>Referenced by</title> <p><xref provisional="s-Gconnection" text="type-hybrid"/></p></aside>
+        <aside><title>Referenced by</title> <p><xref ref="s-Gconnection" text="type-hybrid"/></p></aside>
 
         <p>
         <md>
@@ -5650,11 +5698,11 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
                 <subsection xml:id="ss-strong"><title>The Strong Nuclear Force</title>
-                <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-fundamental" text="title">fundamental forces</xref></p></aside>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
                 </subsection>
 
                 <subsection xml:id="ss-weak"><title>The Weak Nuclear Force</title>
-                <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-fundamental" text="title">fundamental forces</xref></p></aside>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
                 </subsection>
 
         </section>
@@ -5665,11 +5713,11 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
                 <subsection xml:id="ss-QED"><title>Quantum Electrodynamics</title>
-                <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-fundamental" text="title">fundamental forces</xref></p></aside>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
                 </subsection>
 
                 <subsection xml:id="ss-QCD"><title>Quantum Chromodynamics</title>
-                <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-fundamental" text="title">fundamental forces</xref></p></aside>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
                 </subsection>
 
                 <subsection xml:id="ss-StandardModel"><title>The Standard Model</title>
@@ -5768,7 +5816,7 @@ Earth feels a force by \studentZ\ to the left.
         <subsection><title>Cool Ideas</title>
 
                 <subsubsection xml:id="sss-blackhole2"><title>Black Holes</title>
-                <aside><title>Referenced by</title> <p><xref provisional="ss-weightmass" text="type-global" /></p></aside>
+                <aside><title>Referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
 
                 <p>On 7 April, 2017,
                 <url href="http://www.cbc.ca/podcasting">CBC Broadcasting</url> published a
@@ -5837,17 +5885,17 @@ Earth feels a force by \studentZ\ to the left.
 
 <!--        <idx></idx>{\studentA|(} % Begin page-range
 -->
-        <ul>
+        <p><ul>
         <li><p> In <xref ref="s-forcewords" text="type-global" />, \studentB{} gives \studentA{} a good-natured shove in the arm in order to get the language clarified and begin the conversation about the on-by notation.</p></li>
-        <li><p> In <xref ref="se-FBD-AB" text="type-global" /> \studentA{} helps \studentB{}<ellipsis /></p></li>
+        <li><p> In <xref ref="se-FBD-AB" text="type-global" /> \studentA{} helps \studentB{}<ellipsis />
             <ul>
             <li><p> (in the current version) push an object to make it accelerate and feel a reaction force causing \himA{} to accelerate backwards.</p></li>
             <li><p> (in the future version) will help the reader move into or out of their residence hall by pushing on heavier furniture.</p></li>
             <li><p>[NOTE:] This is all drawn in <xref ref="f-firstFBD" text="type-global" />, which is updated in <xref ref="f-firstFBDupdate" text="type-global" />.</p></li>
-            </ul>
+            </ul></p></li>
         <li><p> In <xref ref="se-weightA" text="type-global" />, \studentA{} falls from a small height.  (maybe he is jumping off a short ledge while taking a short-cut to class?)</p></li>
         <li><p> In <xref ref="ex-baking" text="type-global" />, \studentA{} decides to bake some bread for a party at \studentB's house, measuring the time it takes to warm his oven.</p></li>
-        </ul>
+        </ul></p>
 
 <!--        <idx></idx>{\studentA|)} % end page-range
 -->
@@ -5857,27 +5905,27 @@ Earth feels a force by \studentZ\ to the left.
 
 <!--        <idx></idx>{\studentB|(} % Begin page-range
 -->
-
-<ul>
-<li><p> \studentB{} is a passenger in the reader's car in <xref ref="ex-slowcar" text="type-global" /> when the reader runs out of gas and coasts to a stop.</p></li>
-<li><p> \studentB{} is a passenger in the reader's car in <xref ref="ex-coasting" text="type-global" /> and speculates about how fast to go before putting the car in neutral to coast to a stop.</p></li>
-<li><p> \studentB{} joins the reader on a road trip in <xref ref="cyoa-NI" text="type-global" /> and runs out of gas.  This results in multiple possible adventures:</p></li>
-<ul>
-    <li><p> <xref ref="a-parkandwalk" text="type-global" />, which leads to either an end at <xref ref="a-nogas" text="type-global" /> or an end at <xref ref="a-intosunset" text="type-global" />.</p></li>
-    <li><p> <xref ref="a-coastindrive" text="type-global" />, which leads to either <xref ref="a-NIdrive" text="type-global" /> (choose <xref ref="a-coastinneutral" text="type-global" /> or end with <xref ref="a-intosunset2" text="type-global" />) or <xref ref="a-parkandwalk2" text="type-global" /> (choose <xref ref="a-intosunset" text="type-global" /> or end at <xref ref="a-nogas2" text="type-global" />)</p></li>
-    <li><p> <xref ref="a-coastinneutral" text="type-global" />, which leads to an end at <xref ref="a-NIresult" text="type-global" />.</p></li>
-</ul>
-<li><p> In <xref ref="s-forcewords" text="type-global" />, \studentB{} gives \studentA{} a good-natured shove in the arm in order to get the language clarified and begin the conversation about the on-by notation.</p></li>
-<li><p> In <xref ref="se-FBD-AB" text="type-global" />, \studentB{} helps \studentA{}<ellipsis /></p></li>
-    <ul>
-    <li><p> (in the current version) pull an object to make it accelerate and feel a reaction force causing \himB{} to accelerate backwards.</p></li>
-    <li><p> (in the future version) will help the reader move into or out of their residence hall by pushing on heavier furniture.</p></li>
-    <li><p>[NOTE:] This is all drawn in <xref ref="f-firstFBD" text="type-global" />, which is updated in <xref ref="f-firstFBDupdate" text="type-global" />.</p></li>
-    </ul>
-<li><p> In <xref ref="se-FNB" text="type-global" />, \studentB{} has a normal force supporting \himB.  (This touches <xref ref="A-floor" text="type-global" />, <xref ref="A-second" text="type-global" />, and <xref ref="A-third" text="type-global" />.)</p></li>
-<li><p> At some point, \studentB{} has a party, because in <xref ref="ex-baking" text="type-global" />, \studentA{} decides to bake some bread for a party at \studentB's house.</p></li>
-</ul>
-
+        <p>
+        <ul>
+                <li><p> \studentB{} is a passenger in the reader's car in <xref ref="ex-slowcar" text="type-global" /> when the reader runs out of gas and coasts to a stop.</p></li>
+                <li><p> \studentB{} is a passenger in the reader's car in <xref ref="ex-coasting" text="type-global" /> and speculates about how fast to go before putting the car in neutral to coast to a stop.</p></li>
+                <li><p> \studentB{} joins the reader on a road trip in <xref ref="cyoa-NI" text="type-global" /> and runs out of gas.  This results in multiple possible adventures:
+                <ul>
+                        <li><p> <xref ref="a-parkandwalk" text="type-global" />, which leads to either an end at <xref ref="a-nogas" text="type-global" /> or an end at <xref ref="a-intosunset" text="type-global" />.</p></li>
+                        <li><p> <xref ref="a-coastindrive" text="type-global" />, which leads to either <xref ref="a-NIdrive" text="type-global" /> (choose <xref ref="a-coastinneutral" text="type-global" /> or end with <xref ref="a-intosunset2" text="type-global" />) or <xref ref="a-parkandwalk2" text="type-global" /> (choose <xref ref="a-intosunset" text="type-global" /> or end at <xref ref="a-nogas2" text="type-global" />)</p></li>
+                        <li><p> <xref ref="a-coastinneutral" text="type-global" />, which leads to an end at <xref ref="a-NIresult" text="type-global" />.</p></li>
+                </ul></p></li>
+                <li><p> In <xref ref="s-forcewords" text="type-global" />, \studentB{} gives \studentA{} a good-natured shove in the arm in order to get the language clarified and begin the conversation about the on-by notation.</p></li>
+                <li><p> In <xref ref="se-FBD-AB" text="type-global" />, \studentB{} helps \studentA{}<ellipsis />
+                <ul>
+                        <li><p> (in the current version) pull an object to make it accelerate and feel a reaction force causing \himB{} to accelerate backwards.</p></li>
+                        <li><p> (in the future version) will help the reader move into or out of their residence hall by pushing on heavier furniture.</p></li>
+                        <li><p>[NOTE:] This is all drawn in <xref ref="f-firstFBD" text="type-global" />, which is updated in <xref ref="f-firstFBDupdate" text="type-global" />.</p></li>
+                </ul></p></li>
+                <li><p> In <xref ref="se-FNB" text="type-global" />, \studentB{} has a normal force supporting \himB.  (This touches <xref ref="A-floor" text="type-global" />, <xref ref="A-second" text="type-global" />, and <xref ref="A-third" text="type-global" />.)</p></li>
+                <li><p> At some point, \studentB{} has a party, because in <xref ref="ex-baking" text="type-global" />, \studentA{} decides to bake some bread for a party at \studentB's house.</p></li>
+        </ul>
+        </p>
 <!--        <idx></idx>{\studentB|)} % end page-range
 -->
 
@@ -5983,7 +6031,7 @@ Earth feels a force by \studentZ\ to the left.
                                         <sidebyside widths="50% 50%" haligns="center right">
                                                 <p></p>
                                                 <tabular halign="right"><row><cell halign="right">
-                                                        Return to: <xref ref="d-accgrav">freefall</xref>, <xref provisional="d-Fgrav">the force of gravity</xref>
+                                                        Return to: <xref ref="d-accgrav">freefall</xref>, <xref ref="d-Fgrav">the force of gravity</xref>
                                                 </cell></row></tabular>
                                         </sidebyside>
                                 </conclusion>
@@ -5993,8 +6041,8 @@ Earth feels a force by \studentZ\ to the left.
                                 </postlude>
                         </investigation>
 
-        <p>This is filler to space the margin notes.
         <todo xml:id="todo-1">Consider adding comment about Newton not including <q>inertial reference frame</q> to his laws.</todo>
+        <p>This is filler to space the margin notes.
         This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.
         <aside xml:id="as-touchstone"><title>Touchstone</title><p>Aside with title.</p></aside>
         This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.

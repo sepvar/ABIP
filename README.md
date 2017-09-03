@@ -39,3 +39,11 @@ To remove the \student latex commands:
 
 To list the images in the xml and print a line that will check to see if that image exists and (if not) try to create the image...
 cat ABIP.xml | sed 's/^ *<image/<image/g' | grep '<image' | sed 's+^.*images/\(.*\)\.svg.*+ls images/\1.svg || $BEE/script/mbx \-v \-c latex-image \-r \1 \-f svg \-d images $AIY/ABIP.xml+g'
+
+To VERIFY the code  (top 5)
+	java -jar $BEE/../jing-trang/build/jing.jar $BEE/schema/pretext.rng ABIP.xml | wc -l
+	java -jar $BEE/../jing-trang/build/jing.jar $BEE/schema/pretext.rng ABIP.xml | head -5
+	java -jar $BEE/../jing-trang/build/jing.jar $BEE/schema/pretext.rng ABIP.xml | sort -k4 | head -15
+To find the errors on "todo"  (must change in two places)                                              vvvv                                                 vvvv
+	java -jar $BEE/../jing-trang/build/jing.jar $BEE/schema/pretext.rng ABIP.xml | grep "element \"todo" | sed 's/.*:\([0-9][0-9]*\):\([0-9][0-9]*\):.*/todo line \1:\2/g'
+                                                                                                       ^^^^                                                 ^^^^
