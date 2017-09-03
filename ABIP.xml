@@ -4201,13 +4201,13 @@ Earth feels a force by \studentZ\ to the left.
                 </example>
 
                 </subsection>
-                
+
                 <subsection><title>Pulleys</title>
 
                 <p>While the flexibility of ropes makes them inconvenient for pushing, their flexibility makes them <em>very useful</em> for changing the direction of the pull.  The mechanism for changing the direction is the pulley.  Furthermore, by allowing us to change the direction of the pull, we are also able to double, triple, or further improve the strength of the pull.  The term for this is <q>the mechanical advantage</q> of a pulley-system.</p>
 
                 <p>First we will consider three simple cases of redirecting the force.  In each of these cases, I will <xref ref="s-effective2" text="title">assume</xref> that the pulley and rope have no mass and that there is no friction in the turning of the pulley (assume it is trivially easy to spin).  If we do not make this assumption, then the problem gets significantly more complicated.<todo>add a reference to the section (problem?) where this is considered.</todo></p>
-                
+
                 <example><title>The tension in a rope over a pulley</title>
                         <statement>
                         <sidebyside widths="74% 24%">
@@ -4270,14 +4270,14 @@ Earth feels a force by \studentZ\ to the left.
                         </p>
 
                         </subsubsection>
-                        
+
                         <subsubsection xml:id="sss-multiple-mass"><title>Multiple Masses</title>
                         <aside><title>Referenced by</title> <p><xref provisional="ss-tension-support" text="type-global"/></p></aside>
 
                         <p>Now that we have a few examples of tension under our belts, we can consider some more interesting examples.</p>
 
                         <p><xref ref="ex-multiweight-tension" text="type-hybrid" /> considers the case of hanging multiple masses, which extends the ideas of <xref ref="ss-tension-support" text="type-hybrid"/>.</p>
-                        
+
                         <example xml:id="ex-multiweight-tension"><title>Tension between masses hung in a chain</title>
                         <aside><title>Referenced by</title> <p><xref provisional="sss-multiple-mass"  text="type-global" /></p></aside>
 
@@ -4288,9 +4288,9 @@ Earth feels a force by \studentZ\ to the left.
                                         <p>The first thing we should do is notice what information is given to us and make sure that everything is in consistent units.  I will convert everything to <xref ref="ss-convertunits" text="title">SI units</xref>.</p>
                                 </solution>
                         </example>
-                        
+
                         <p><xref ref="ex-multidrag-tension" text="type-global" /> considers the case of dragging multiple masses, which extends the ideas of <xref ref="ss-tension-drag" text="type-hybrid"/>.</p>
-                        
+
                         <example xml:id="ex-multidrag-tension"><title>Tension in a caravan</title>
                         <aside><title>Referenced by</title> <p><xref provisional="sss-multiple-mass"  text="type-global" /></p></aside>
 
@@ -4301,18 +4301,18 @@ Earth feels a force by \studentZ\ to the left.
                                         <p>The first thing we should do is notice what information is given to us and make sure that everything is in consistent units.  I will convert everything to <xref ref="ss-convertunits" text="title">SI units</xref>.</p>
                                 </solution>
                         </example>
-                        
+
                         <p>You should note that these examples are essentially expressing the same idea in two different contexts.</p>
 
                         </subsubsection>
-                        
+
                         <subsubsection xml:id="sss-Atwood"><title>Atwood's Machine</title>
 
                         <example xml:id="ex-atwood-acc"><title>The acceleration of masses on Atwood's Machine</title>
                                 <statement>
                                         <sidebyside widths="70% 30%">
                                                 <p>The<todo>imported a homework problem from Giordano.  Need to modify it to fit my purposes.</todo> two crates in the figure (p. 114) hang over a pulley (in what is called an <q>Atwood's machine</q>).  I will select <m>m_1=35\unit{kg}</m> (because it looks smaller) and <m>m_2=85\unit{kg}</m> (because it looks bigger).  We will assume that the pulley is massless and frictionless (so that the tension is the same throughout the rope).  Find the acceleration and the time it takes <m>m_2</m> to accelerate down for the <m>12\unit m</m> to the floor.</p>
-                                                
+
                                                 <figure xml:id="f-atwood-acc">
                                                         <caption>Masses hung over Atwood's Machine</caption>
                                                         <image xml:id="i-atwood-acc" source="image/i-atwood-acc">
@@ -4347,13 +4347,13 @@ Earth feels a force by \studentZ\ to the left.
                                         </sidebyside>
                                 </statement>
                                 <solution>
-                                        <p>The easy way to do this is to say that <m>m_1</m> pulls down on the left with 
+                                        <p>The easy way to do this is to say that <m>m_1</m> pulls down on the left with
                                         <m>F_{g1} = (35\unit{kg})(9.81\unitfrac{m}{s^2})=\sig{34}{3.4}{N}</m> and <m>m_2</m> pulls down on the right with
                                         <m>F_{g2}=(85\unit{kg})(9.81\unitfrac{m}{s^2})=\sig{83}{3.5}{N}</m> for a difference of <m>F_{net} = \sig{49}{0}{N}</m> down to the right.  Since this has to move both <m>m_1</m> and <m>m_2</m>, the acceleration is
-                                                <me> a = \frac{F_{\rm net}}{m_1+m_2} = \frac{\sig{49}{0}{N}}{(35\unit{kg})+(85\unit{kg})} 
+                                                <me> a = \frac{F_{\rm net}}{m_1+m_2} = \frac{\sig{49}{0}{N}}{(35\unit{kg})+(85\unit{kg})}
                                                         = \frac{\sig{49}{0}{N}}{\sig{120}{}{kg}} = \sigfrac{4.0}{87}{m}{s^2} </me>
-                                        This acceleration then causes <m>m_2</m> to drop and the time it takes is found from the equation that include distance and time, 
-                                        <md> 
+                                        This acceleration then causes <m>m_2</m> to drop and the time it takes is found from the equation that include distance and time,
+                                        <md>
                                                 <mrow> y_f \amp =  y_i + v_i \, t + \frac{1}{2} a \,  t^2 </mrow>
                                                 <mrow> (0\unit m) \amp = (12\unit m) + (0\unitfrac ms) \, t + \frac{1}{2} (-\sigfrac{4.0}{9}{m}{s^2}) \,  t^2 </mrow>
                                         </md>
@@ -4362,16 +4362,16 @@ Earth feels a force by \studentZ\ to the left.
                                         </p>
                                 </solution>
                         </example>
-                        
+
                         <p><xref ref="ex-atwood-acc" text="type-hybrid" /> computes the acceleration, but does so in a way that avoids the question of the tension in the rope.  Based on that example, it is possible to then deduce the tension by considering the net force on either of the masses.</p>
-                        
+
                         <example xml:id="ex-atwood-tension"><title>Atwood's tension from the acceleration</title>
                                 <statement>
                                         <p>Given the acceleration from <xref ref="ex-atwood-acc" text="type-hybrid" />, find the tension in the rope.</p>
                                 </statement>
                                 <solution>
                                         <p>Since that example used the two masses as a single system, it did not reference the <q>internal force</q> of tension.  By considering the two masses as separate objects, the tension is no longer <q>internal</q> to the system.  This allows us to compute the tension with Newton's second law using one or the other mass.  Here we do both to verifyt hat the result is the same.</p>
-                                        
+
                                         <sidebyside widths="49% 49%">
                                                 <p>For the lighter mass (on the left),
                                                 <md>
@@ -4402,7 +4402,7 @@ Earth feels a force by \studentZ\ to the left.
                                                 </md>
                                                 </p>
                                         </sidebyside>
-                                        <p>These are consistent to within the precision of our calculation.  You should notice that 
+                                        <p>These are consistent to within the precision of our calculation.  You should notice that
                                         <ol>
                                         <li><p>the tension is larger than the weight of the lighter mass and therefore pulls it upwards,</p></li>
                                         <li><p>the tension is smaller than the weight of the heavier mass and therefore keeps it from falling as fast as it would in freefall.</p></li>
@@ -4415,18 +4415,18 @@ Earth feels a force by \studentZ\ to the left.
                                                 </li>
                                         </ol>
                                         </p>
-                                </solution> 
+                                </solution>
                         </example>
-                        
+
                         <p>The examples above are straightforward mathematically, but seem to cause some conceptual problems with students.  Because of this, we can consider the same problem in a way that seems to be easier conceptually, although it is a little more involved mathematically.</p>
-                        
+
                         <example xml:id="ex-atwood-acc-and-ten"><title>Computing the acceleration and tension for Atwood's machine</title>
                                 <statement>
                                         <p>Given the description from <xref ref="ex-atwood-acc" text="type-hybrid" />, we can calculate the tension and acceleration.  </p>
                                 </statement>
                                 <solution>
                                         <p><xref ref="f-atwood-acc" text="type-hybrid" /> allows us to draw the free-body-diagrams from which we can write down Newton's second law for each individual object.</p>
-                                        
+
                                         <sidebyside widths="70% 30%">
                                         <paragraphs>
                                                 <p>For these equations, I am explicitly putting the sign in by hand to indicate the direction (positive is up and negative is down).  Doing this, the value of <m>F_T</m>, <m>F_g</m>, and <m>a</m> will be positive because they are the magnitudes.</p>
@@ -4481,7 +4481,7 @@ Earth feels a force by \studentZ\ to the left.
                                                 </image>
 -->                                        </figure>
                                         </sidebyside>
-                                                                                        
+
                                         <p>These equations can be combined as two-equations-with-two-unknowns and solved in the familiar ways.  It is useful to be aware that you can do these independently of each other.  So, if you need the acceleration, you can solve <xref ref="item-atwood-acc" text="type-local" /> and if you need the tension, you can solve <xref ref="item-atwood-ten" text="type-local" />.
                                         <ol>
                                           <li xml:id="item-atwood-acc"><p>If we solve one equation for <m>F_T</m> and plug it into the other, then we get the following equation.
@@ -4497,7 +4497,7 @@ Earth feels a force by \studentZ\ to the left.
                                                 </p></li>
                                         </ol>
                                         </p>
-                                        
+
                                         <p>It is useful to verify the following: The tension is not enough to support <m>m_2</m>, so it falls:
                                         <me>\vec a_2 = \frac{\vec F_\mathrm{net}}{m_2} =
                                                 \frac{(+\sig{48}{6}{N})+(-\sig{83}{3}{N})}{(85\unit{kg})}=-\sigfrac{4.0}{9}{m}{s^2}</me>.
@@ -4507,13 +4507,13 @@ Earth feels a force by \studentZ\ to the left.
                                         </p>
                                 </solution>
                         </example>
-                        
+
                         </subsubsection>
-                        
+
                         <subsubsection><title>Surface Tension</title>
 
                         <p xml:id="d-surf-tension">As a final note, <xref provisional="s-surface-tension" text="title">surface tension</xref> is something else entirely.  It is mentioned here only because it has the word <q>tension</q> in the name.</p>
-                        
+
                         <p>See <xref ref="sss-tea" text="type-global"/> for a comment on the contribution to hot versus cold spoon noises.</p>
 
                         </subsubsection>
@@ -4521,7 +4521,7 @@ Earth feels a force by \studentZ\ to the left.
 
         </section>
         <section xml:id="s-Ff"><title>Frictional Force</title>
-        <aside><title>Referenced by</title> 
+        <aside><title>Referenced by</title>
                 <p>
                 <xref ref="A-chair2" text="type-global" />,
                 <xref ref="A-chair6" text="type-global" />,
@@ -4529,7 +4529,7 @@ Earth feels a force by \studentZ\ to the left.
                 <xref ref="A-fly-balls" text="type-global" />
                 </p>
         </aside>
-        
+
                 <subsection><title>sliding friction</title>
                         <subsubsection><title>static friction</title>
                         </subsubsection>
@@ -4537,7 +4537,7 @@ Earth feels a force by \studentZ\ to the left.
                         </subsubsection>
                 </subsection>
                 <subsection><title>rolling friction</title>
-                        
+
         <investigation xml:id="irl-poolfriction"><title>Rolling pool balls and friction</title>
                 <idx><h>Pool</h><h>Real Life</h></idx>
                 <introduction>
@@ -4565,12 +4565,12 @@ Earth feels a force by \studentZ\ to the left.
                 </task>
                 <conclusion>
                         <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
-                        <xref provisional="irl-poolnormal" text="title">normal force</xref>, 
-                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>, 
-                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and 
+                        <xref provisional="irl-poolnormal" text="title">normal force</xref>,
+                        <xref provisional="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref provisional="irl-poolrotmot" text="title">rotational motion</xref>, and
                         <xref provisional="irl-poolangmom" text="title">angular momentum</xref>.
                         </p>
-                        
+
                         <sidebyside widths="50% 50%" haligns="center right">
                                 <p></p>
                                 <tabular halign="right"><row><cell halign="right">
@@ -4582,12 +4582,12 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
                 <subsection><title>Air Resistance</title>
                 </subsection>
-                
+
         </section>
-        
-        
+
+
         <section xml:id="s-springs"><title>Spring Force</title>
-        <aside><title>Referenced by</title> 
+        <aside><title>Referenced by</title>
                 <p>
                 <xref ref="d-fma" text="title"><m>F=ma</m></xref>,
                 <xref ref="d-usesofFma" text="title">uses of <m>F=ma</m></xref>,
@@ -4596,12 +4596,12 @@ Earth feels a force by \studentZ\ to the left.
         </aside>
 
         </section>
-        
-        
+
+
         <section xml:id="s-FA"><title>Applied Force</title>
 
         <p>The term <q>an applied force</q> is used to describe any force applied by any object when there isn't really a formula to find it.  So this is kind of a <q>any other force</q> category.  I will use this type of force to describe forces exerted by people.  We have seen some examples where a person throws an object.  We can now revisit those examples and consider the force exerted (applied) by the person who threw the object.</p>
-        
+
         <example xml:id="se-throw-up"><title>Applying a force to throw a ball</title>
                 <statement>
                         <p>\studentC<idx><h sortby="\studentC">\studentC</h></idx> recalls that one time \heC\ got bored one day in physics class (what?!?) and tossed a baseball <m>(m_b = 0.145\unit{kg})</m> at the ceiling<ellipsis /> a little too hard <ellipsis /> as recounted in <xref ref="ex-ceiling" text="type-global"/>.  Recall that <xref ref="se-ceiling" text="type-global" /> found the normal force by the ceiling on the ball.  Please now find the force \studentC\ applied while throwing and catching the ball assuming that the throw took <m>0.200\unit{s}</m> to gain the speed of <m>5.00\unitfrac ms</m> and the catch took <m>0.250\unit s</m> to slow the ball from <m>4.73\unitfrac ms</m> to rest.</p>
@@ -4723,9 +4723,9 @@ Earth feels a force by \studentZ\ to the left.
                         You can see that the upward applied force <m>(\sig{4.16}{5}{N})</m> has to be large enough so that when it is combined with the downward gravitational force <m>(\sig{1.42}{2}{N})</m> they can together result in the necessary upward net force <m>(\sig{2.74}{3}{N})</m> to stop it from continuing downwards.</p>
                 </solution>
         </example>
-        
+
         </section>
-        
+
         <section xml:id="s-Fnet"><title>Putting it Together, <m>F_\mathrm{net}</m></title>
 
                 <subsection><title>Translational Equilibrium</title>
@@ -4733,16 +4733,16 @@ Earth feels a force by \studentZ\ to the left.
                 <p xml:id="ss-transeq">blah blah blah Translational equilibrium: <m>F_\mathrm{net} = m \cancel{0}{a}</m>.  blah blah blah</p>
 
                 </subsection>
-                
+
                 <subsection><title>Static Equilibrium</title>
                 </subsection>
-                
+
                 <subsection><title>Dynamic Equilibrium</title>
                 </subsection>
 
         </section>
-        
-        
+
+
         <section><title>Summary and Homework</title>
 
                 <subsection><title>Summary of Concepts and Equations</title>
@@ -4750,29 +4750,29 @@ Earth feels a force by \studentZ\ to the left.
                         <p><ellipsis /></p>
 
                 </subsection>
-                
+
                 <subsection><title>Conceptual Questions</title>
 
                         <exercises>
-                        
-                        <exercise xml:id="c-weightmass"> 
+
+                        <exercise xml:id="c-weightmass">
                                 <statement>
                                         <p>Estimate, preferably without using the internet, the mass of the following: (a) a four-door sedan, (b) dishwasher, (c) a pair of glasses, (d) a cell phone.  You should be able to estimate to within one significant digit.</p>
                                 </statement>
                         </exercise>
                         <exercise xml:id="c-massweight">
                                 <statement>
-                                        <p>List at least one object, preferably without using the internet, that has the following mass: 
-                                        (a) <m>2500\unit{kg}</m> 
-                                        (b) <m>41\unit{kg}</m>, 
-                                        (c) <m>3\unit{kg}</m>, 
+                                        <p>List at least one object, preferably without using the internet, that has the following mass:
+                                        (a) <m>2500\unit{kg}</m>
+                                        (b) <m>41\unit{kg}</m>,
+                                        (c) <m>3\unit{kg}</m>,
                                         (d) <m>50\unit{g}</m>.</p>
                                 </statement>
                         </exercise>
-                        
+
                         </exercises>
                 </subsection>
-                
+
                 <subsection><title>Problems</title>
                         <todo>Add more problems.</todo>
 
@@ -4802,17 +4802,17 @@ Earth feels a force by \studentZ\ to the left.
 
         <section><title>Objects Can Have Energy</title>
         </section>
-        
+
         <section><title>A Force Can Transfer Energy</title>
                 <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-pushvector">the direction of forces</xref></p></aside>
         </section>
-        
+
         <section xml:id="s-Wfr"><title>Dissipating Energy</title>
 
         <p>pool balls on cushion/bumper</p>
 
         </section>
-        
+
         <section xml:id="s-PE"><title>Conserving Energy</title>
 
         <introduction>
@@ -4851,10 +4851,10 @@ Earth feels a force by \studentZ\ to the left.
                         <aside><title>Referenced by</title> <p><xref provisional="s-PEG" text="type-global"/></p></aside>
                 <p>See also <xref provisional="s-PEG" text="type-global" />.</p>
                 </subsection>
-                
+
                 <subsection xml:id="ss-PEs"><title>Spring Potential Energy</title>
                 </subsection>
-                
+
                 <subsection><title>Conservative Forces in General</title>
                 </subsection>
         </section>
@@ -4873,7 +4873,7 @@ Earth feels a force by \studentZ\ to the left.
 <!-- ********************************************************************************************** -->
 
 <chapter xml:id="c-momentum"><title>Momentum: A Better Way to Describe Force</title>
-        <aside><title>Referenced by</title> 
+        <aside><title>Referenced by</title>
                 <p>
                 <xref ref="d-objectinmotion">objects in motion</xref>,
                 <xref ref="sss-inertia" text="type-global" />,
@@ -4896,12 +4896,12 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
         </section>
-        
+
         <section xml:id="s-conservemom"><title>Revising Newton's Third Law: Conservation of Momentum</title>
         <aside><title>Referenced by</title> <p><xref provisional="ss-NIII" text="type-global" /></p></aside>
         </section>
-        
-        
+
+
         <section xml:id="s-2Dcollisions"><title>Two-Dimensional Collisions</title>
         <aside><title>Referenced by</title> <p><xref provisional="sss-vectorequations" text="type-global"/></p></aside>
 
@@ -4959,7 +4959,7 @@ Earth feels a force by \studentZ\ to the left.
                 </task>
                 <task>
                         <statement>
-                                <p>Roll a striped ball along the table.  Notice the distance the ball travels.  
+                                <p>Roll a striped ball along the table.  Notice the distance the ball travels.
                                 Why does friction slow the ball down instead of just make it turn <m>v=\omega r</m> (no slip)</p>
                         </statement>
                         <answer>
@@ -4984,8 +4984,8 @@ Earth feels a force by \studentZ\ to the left.
         </investigation>
 
         </section>
-        
-        
+
+
         <section><title>Angular Momentum</title>
 
         <investigation xml:id="irl-poolangmom"><title>Rolling pool balls</title><idx><h>Pool</h><h>Real Life</h></idx>
@@ -5018,9 +5018,9 @@ Earth feels a force by \studentZ\ to the left.
         </investigation>
 
         </section>
-        
+
         <section xml:id="s-noninertial"><title>Non-inertial Rotational Reference Frames</title>
-        <aside><title>Referenced by</title> 
+        <aside><title>Referenced by</title>
                 <p>
                 <xref ref="ss-noninertial" text="type-global" />,
                 <xref ref="d-NewtonInertial" text="title">non-inertial reference frames</xref>,
@@ -5043,13 +5043,13 @@ Earth feels a force by \studentZ\ to the left.
                 </aside>
 
                 <p xml:id="d-coriolis">weather <ellipsis /> AND <ellipsis />
-                In her podcast, <em>Spacepod</em><fn xml:id="fn-spacepod-ocean">Nugent, Carrie (Producer, Host). <em>Spacepod</em> [Audio podcast], episode 89 (19 May, 2017).  Retrieved from 
+                In her podcast, <em>Spacepod</em><fn xml:id="fn-spacepod-ocean">Nugent, Carrie (Producer, Host). <em>Spacepod</em> [Audio podcast], episode 89 (19 May, 2017).  Retrieved from
                 <!-- <xref ref="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99" text="title">\nolinkurl{http://spacepod.libsyn.com/}</xref> -->
                 <url href="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99">http://spacepod.libsyn.com/</url> on 9 Apr. 2017.</fn>
                 Dr. Carrie Nugent interviews Dr. Andy Thompson about <q>underwater flying objects</q> that investigate the ocean.  He notes that ocean waters, because they are such a large-scale system, can see the effect of the rotation of the Earth.</p>
 
                 </subsection>
-                
+
                 <subsection xml:id="ss-Foucault"><title>The Foucault Pendulum</title>
 
                 <p>See <url href="https://www.youtube.com/watch?v=sWDi-Xk3rgw">youtube video</url> by <url href="http://sixtysymbols.com/">Sixty Symbols</url>.</p>
@@ -5066,9 +5066,9 @@ Earth feels a force by \studentZ\ to the left.
 
         <section><title>Circular Motion</title>
         </section>
-        
+
         <section xml:id="s-centripetal"><title>Centripetal Force</title>
-        <aside><title>Referenced by</title> 
+        <aside><title>Referenced by</title>
                 <p>Discussion of <xref provisional="d-fma" text="title"><m>F=ma</m></xref>
                 </p>
         </aside>
@@ -5085,25 +5085,25 @@ Earth feels a force by \studentZ\ to the left.
         <section xml:id="s-leverarm"><title>Leverage</title>
         <aside><title>Referenced by</title> <p><xref provisional="ss-scales" text="type-global" /></p></aside>
         </section>
-        
+
         <section><title>Putting it all together, <m>\tau_\mathrm{net}</m></title>
 
                 <subsection><title>Rotational Equilibrium</title>
 
                 <p xml:id="ss-roteq">blah blah blah. Rotational equilibrium: <m>\tau_\mathrm{net} = I \cancelto{0}{\alpha}</m>.  blah blah blah</p>
-                
+
 
                 </subsection>
-                
+
                 <subsection><title>Static (Rotational) Equilibrium</title>
                 </subsection>
-                
+
                 <subsection><title>Dynamic (Rotational) Equilibrium</title>
 
                 <example xml:id="ex-ladder2"><title>\studentC<idx><h sortby="\studentC">\studentC</h></idx> uses a ladder</title>
                         <statement>
-                                <p>\studentC\ leans a <m>22.7\unit{kg}</m> ladder against a wall at an angle of <m>75.5^\circ</m>, consistent with 
-                                <url href="https://www.osha.gov/">OSHA</url> standard 
+                                <p>\studentC\ leans a <m>22.7\unit{kg}</m> ladder against a wall at an angle of <m>75.5^\circ</m>, consistent with
+                                <url href="https://www.osha.gov/">OSHA</url> standard
                                 <url href="https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=standards&amp;p_id=10839">1926.1053(a)(1)(ii)</url>.
                                 The coefficient of friction between the ladder and the floor is <m>\mu_f=0.31</m>.
                                 The coefficient of friction between the ladder and the wall is <m>\mu_w=0.19</m>.
@@ -5137,13 +5137,13 @@ Earth feels a force by \studentZ\ to the left.
                                         </latex-image-code>
                                         </image>
                                 </figure>
-                                
+
                                 <p xml:id="ex-ladder2-want"><alert>What do we want to know?</alert>  We want to know about the the magnitudes of both normal forces and both frictional forces.  Can we easily deduce the magnitude of <m>F_{Nf}</m>? <xref ref="A-ladderNf" text="type-global" />.</p>
 
 
                                 <p xml:id="ex-ladder2-infer"><alert>How are what-we-know and what-we-want related?</alert> The forces acting on any body are related by static <xref ref="ss-transeq" text="title">translational equilibrium</xref>
                                 <md>
-                                <mrow> x: \hspace{.5cm} 0 \amp = \cancel{0}{F_{gx}} + \zero{F_{Nfx}}{0} + F_{ffx} + F_{Nwx} + \cancelto{0}{F_{fwx}} </mrow>
+                                <mrow> x: \hspace{.5cm} 0 \amp = \cancel{0}{F_{gx}} + \cancelto{0}{F_{Nfx}}{0} + F_{ffx} + F_{Nwx} + \cancelto{0}{F_{fwx}} </mrow>
                                 <mrow> y: \hspace{.5cm} 0 \amp = F_{gy} + F_{Nfy} + \cancelto{0}{F_{ffy}} + \cancelto{0}{F_{Nwy}} + F_{fwy} </mrow>
                                 </md>
                                 and static <xref ref="ss-roteq" text="title">rotational equilibrium</xref>, assuming the pivot point is at the ground, and using the relationship <m>F_f=\mu F_N</m>, we find
@@ -5153,7 +5153,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <mrow> F_{Nw} \amp = \left[ F_g \frac{l}{2} \sin 14.5^\circ \right] / \left[  l \sin(75.5^\circ) + \mu_w l \sin(14.5^\circ) \right] </mrow>
                                 </md>
                                 </p>
-                                
+
                                 <!-- <p><alert>Free-Body Diagrams:</alert> Since the picture is so simple, we will not draw the free-body diagram.</p> -->
 
                                 <p xml:id="ex-ladder2-concepts"><alert>Concepts to consider:</alert> First, the length of the ladder cancels from the expression; what matters is the angle at which it is propped.</p>
@@ -5193,7 +5193,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <p><alert>Aside:</alert> Since <m>F_{ff}</m> only needs to be <m>\sig{27.4}{4}{N}</m> to hold the ladder in place, it is possible for the ladder to not slide on a floor that only has <m>\mu_\mathrm{min} = (\sig{27.4}{4}{N})/(\sig{217}{.5}{N}) = 0.\sig{126}{2}{}</m>; but that would not allow a person to climb the ladder.</p>
 
                                 <p><alert>Homework:</alert> Homework problem <xref ref="h-ladderC" text="type-global" /> asks you to determine if the ladder slides when \studentC\ climbs to different locations on the ladder.</p>
-                                
+
                                 <sidebyside widths="50% 50%" haligns="center right">
                                         <p></p>
                                         <tabular halign="right"><col width="50%" /><row><cell halign="right">
@@ -5204,13 +5204,13 @@ Earth feels a force by \studentZ\ to the left.
                 </example>
 
                 </subsection>
-                
+
         </section>
-        
+
         <section xml:id="s-torsion"><title>Torsion</title>
         <aside><title>Referenced by</title> <p><xref provisional="s-FT" text="type-global"/></p></aside>
         </section>
-        
+
         <section><title>Summary and Homework</title>
 
                 <subsection><title>Summary of Concepts and Equations</title>
@@ -5218,18 +5218,18 @@ Earth feels a force by \studentZ\ to the left.
                 <p><ellipsis /></p>
 
                 </subsection>
-                
+
                 <subsection><title>Conceptual Questions</title>
                 <todo>Add conceptual problems.</todo>
                 </subsection>
-                
+
                 <exercises><title>Problems</title>
                 <todo>Add more problems.</todo>
 
-                <exercise xml:id="h-ladderC">    
+                <exercise xml:id="h-ladderC">
                         <statement>
-                                <p>\studentC\ leans a <m>22.7\unit{kg}</m> ladder against a wall at an angle of <m>75.5^\circ</m>, consistent with 
-                                <url href="https://www.osha.gov/">OSHA</url> standard 
+                                <p>\studentC\ leans a <m>22.7\unit{kg}</m> ladder against a wall at an angle of <m>75.5^\circ</m>, consistent with
+                                <url href="https://www.osha.gov/">OSHA</url> standard
                                 <url href="https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=standards&amp;p_id=10839">1926.1053(a)(1)(ii)</url>.
                                 The coefficient of friction between the ladder and the floor is <m>\mu_f=0.31</m>.
                                 The coefficient of friction between the ladder and the wall is <m>\mu_w=0.19</m>.
@@ -5244,7 +5244,7 @@ Earth feels a force by \studentZ\ to the left.
                                 </p>
                         </statement>
                         <solution xml:id="A-ladderC-a">
-                                <p>The normal force from the wall is the only force to the right.  The frictional force from the floor is the only force to the left.  Using the calculations in <xref ref="ex-ladder2" text="type-global" />, we notice that 
+                                <p>The normal force from the wall is the only force to the right.  The frictional force from the floor is the only force to the left.  Using the calculations in <xref ref="ex-ladder2" text="type-global" />, we notice that
                                 <md>
                                 <mrow> F_{Nw} \amp = \sig{163}{.9}{N} </mrow>
                                 <mrow> F_{fw,\mathrm{max}} \amp = (0.19)(\sig{163}{.9}{N}) \ = \ \sig{31}{.14}{N} </mrow>
@@ -5255,7 +5255,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <m>\mu_\mathrm{min} = 0.\sig{152}{56}{}</m>.
                                 </p>
                         </solution>
-                        
+
                         <solution xml:id="A-ladderC-b">
                                 <p>The normal force from the wall is the only force to the right.  The frictional force from the floor is the only force to the left.  Using the calculations in <xref ref="ex-ladder2" text="type-global" />, we notice that
                                 <md>
@@ -5297,7 +5297,7 @@ Earth feels a force by \studentZ\ to the left.
 
 
 <chapter xml:id="c-gravity"><title>The Gravitational Force on a Large Scale</title>
-<aside><title>Referenced by</title> 
+<aside><title>Referenced by</title>
         <p>
         <xref ref="d-accgrav" text="title">freefall</xref>,
         <xref ref="d-fundamental" text="title">fundamental forces</xref>
@@ -5327,7 +5327,7 @@ Earth feels a force by \studentZ\ to the left.
                                 </p>
                         </solution>
                 </example>
-                
+
                 <table xml:id="t-gplanets">
                         <caption>
                                 <p>Properties of various celestial bodies.</p>
@@ -5339,25 +5339,25 @@ Earth feels a force by \studentZ\ to the left.
                         </tabular>
                 </table>
                 </introduction>
-                
+
                 <subsection xml:id="ss-equivmm"><title>Inertial Mass versus Gravitational Mass</title>
                 <aside><title>Referenced by</title> <p><xref provisional="ss-weightmass" text="type-hybrid" /></p></aside>
                 </subsection>
 
         </section>
-        
+
         <section xml:id="s-PEG"><title>Gravitational Potential Energy</title>
         <aside><title>Referenced by</title> <p><xref provisional="ss-PEg" text="type-hybrid" /></p></aside>
 
         <p>Recall <xref ref="ss-PEg" text="type-global" /></p>
 
         </section>
-        
+
         <section xml:id="s-Gconnection"><title>Making Connections</title>
         <aside><title>Referenced by</title> <p><xref provisional="s-Econnection" text="type-hybrid" /></p></aside>
 
         <p>
-        <md> 
+        <md>
         <mrow> \amp \amp \vec F = m \vec g \amp \amp </mrow>
         <mrow> \amp \deq F = G \frac{m_1 m_2}{R^2} \amp \leftrightarrow \amp \deq g = G \frac{m}{R^2} \amp </mrow>
         <mrow> \Delta \PE = -\vec F \cdot \Delta\vec x \amp \updownarrow \amp \amp \updownarrow \amp \mbox{\scriptsize [for later]} </mrow>
@@ -5367,7 +5367,7 @@ Earth feels a force by \studentZ\ to the left.
         (Look ahead to the parallel with the electrical interaction in <xref provisional="s-Econnection" text="type-global"/>.)</p>
 
         </section>
-        
+
         <section><title>Orbits</title>
         </section>
 
@@ -5384,8 +5384,46 @@ Earth feels a force by \studentZ\ to the left.
 </part>
 
 <!-- ********************************************************************************************** -->
+
+<chapter><title>Fluids</title>
+        <section xml:id="s-density"><title>Density</title>
+        <idx>Density</idx>
+        <aside><title>Referenced by</title> <p><xref provisional="ss-weightmass" text="type-global" /></p></aside>
+        </section>
+        
+        <section xml:id="s-surface-tension"><title>Surface Tension</title>
+        <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-surf-tension" text="title" >surface tension</xref></p></aside>
+        </section>
+        
+</chapter>
+
 <!-- ********************************************************************************************** -->
+
+<chapter xml:id="c-SHM"><title>Oscillations</title>}\label{}
+        <section xml:id="c-SHMspring"><title>Oscillating Springs</title>
+                <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-fma" text="title"><m>F=ma</m></xref></p></aside>
+        </section>
+        
+        <section xml:id="c-SHMpend"><title>Oscillating Pendulums</title>
+        </section>
+        
+        <section xml:id="s-SHMother"><title>Other Examples of Oscillations</title>
+
+                <p>On 13 April, 2017,
+                <url href="http://www.cbc.ca/podcasting">CBC Broadcasting</url> published a
+                <url href="http://www.cbc.ca/podcasting/includes/quirks.xml"><em>Quirks and Quarks</em></url> episode discussing how we can find
+                <url href="https://podcast-a.akamaihd.net/mp3/podcasts/quirks_20170415_12100.mp3">solutions to health issues caused by swaying office towers and vibrating floors</url>.</p>
+        </section>
+</chapter>
+
 <!-- ********************************************************************************************** -->
+
+<chapter><title>Sound</title>
+                <subsection xml:id="ss-stringed-instruments" text="title"><title>Musical Instruments</title>
+                <aside><title>Referenced by</title> <p><xref provisional="A-swing-tension" text="type-global"/></p></aside>
+                </subsection>
+</chapter>
+
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
 
@@ -5397,7 +5435,82 @@ Earth feels a force by \studentZ\ to the left.
 </part>
 
 <!-- ********************************************************************************************** -->
+
+<chapter><title></title>The flow of thermal energy}
+
+        <introduction>
+                <p xml:id="find-heatwarm">Energy is a noun<idx><h>Energy</h><h>noun</h></idx>; objects can <em>have</em> energy.</p>
+
+                <p xml:id="d-heatverb">Heat is a verb<idx><h>Heat</h><h>verb</h></idx>; heating is a process of <em>exchanging</em> energy.  Recall our <xref ref="d-forcenoun" text="title">discussions of force</xref><idx><h>Force</h><h>noun</h></idx> and <xref ref="d-workverb">work</xref><idx><h>Work</h><h>verb</h></idx>.</p>
+        </introduction>
+
+        <section xml:id="s-specificheat"><title>Specific Heat Capacity</title>
+
+        <p xml:id="d-heatwarm">Heating (positive <m>Q</m>) can warm (positive <m>\Delta T</m>) a material.
+        <men xml:id="eq-Q=mcDT">
+        Q = m c \, \Delta T
+        </men>
+        but <xref ref="eq-Q=mL" text="type-hybrid" /> (as one example) shows that it is possible to heat (positive <m>Q</m>) a material without warming it (constant <m>T</m>). When we get to <xref ref="s-PV" text="type-hybrid" /> we will see other examples of <q>isothermal processes</q> that have a non-zero <m>Q</m> (heat the system or heat the surroundings) without warming or cooling the system.</p>
+
+        </section>
+        
+        <section><title>Latent Heat</title>
+
+        <p>Heating might also change the phase of a material.
+        <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-heatwarm" text="type-hybrid"></xref>heating versus warming</p></aside>
+        <men xml:id="eq-Q=mL">
+        Q = \pm mL
+        </men>
+        </p>
+
+        </section>
+        
+        <section><title>The Flow of Thermal Energy</title>
+
+                <subsection XML:ID="ss-thermalconductivity"><title>Thermal Conductivity</title>
+                <aside><title>Referenced by</title> <p><xref provisional="s-story" text="type-hybrid"/></p></aside>
+
+                <p>
+                <men xml:id="eq-thermalconductivity">
+                \frac{Q}{\Delta t} = \kappa A \, \frac{\Delta T}{\Delta x}
+                </men>
+                </p>
+
+                <example xml:id="ex-baking"><title>\studentA<idx><h sortby="\studentA">\studentA</h></idx> warms \hisA\ oven</title>
+                        <statement>
+                                <p>\studentA<idx><h sortby="\studentA">\studentA</h></idx> decides to bake some bread for the dinner party at \studentB's house, 
+                                <idx><h sortby="\studentB">\studentB</h></idx>
+                                but \heA\ is on a tight schedule.  In order to set \hisA\ schedule, \heA\ needs to know how long it will take \hisA\ oven to <xref ref="find-heatwarm" text="title">warm up</xref>.</p>
+                        </statement>
+                        <solution>
+                                <p>
+                                </p>
+                        </solution>
+                </example>
+                <aside><title>Referenced by</title>
+                        <p>
+                        <xref ref="s-story" text="type-global" />
+                        </p>
+                </aside>
+
+                </subsection>
+                
+                <subsection><title>Convection</title>
+                </subsection>
+                
+                <subsection><title>Radiation</title>
+                </subsection>
+        </section>
+</chapter>
+
 <!-- ********************************************************************************************** -->
+
+<chapter><title>Ideal Gas Law</title>
+        <section xml:id="s-PV"><title><m>P</m>-<m>V</m> Diagrams</title>
+        <aside><title>Referenced by</title> <p>Discussion of <xref provisional="d-heatwarm" text="type-global">heating versus warming</xref></p></aside>
+        </section>
+</chapter>
+
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
@@ -5409,6 +5522,45 @@ Earth feels a force by \studentZ\ to the left.
 </part>
 
 <!-- ********************************************************************************************** -->
+
+</chapter><chapter><title></title>The Electrical Interaction}\label{c-electric}<aside><title>Referenced by</title> <p>Discussion of <xref provisional=""></xref></p></aside>[fundamental forces]{d-fundamental}
+</section><section><title></title>Electrical Charge}\label{s-Echarge}<!-- -->\new{v2.1}{Decide where this should go.}
+
+</section><section><title></title>The Big Picture}
+
+</subsection><subsection><title></title>Electric Forces and Fields}\label{ss-Efield}<aside><title>Referenced by</title> <p></p></aside>{\mmr{<xref ref="" />sss-vectorequations}}, \mmr{<xref ref=""></xref>{d-fma}{<m>F=ma</m>}}}
+
+pst-electricfield
+
+</subsubsection><subsubsection><title></title>Examples}
+
+</subsection><subsection><title></title>Electric Forces, Fields, and Potential Energy}
+
+</subsection><subsection><title></title>Electric Fields, Potential Energy, and Potential}
+
+</section><section><title></title>Making Connections}\label{s-Econnection}<aside><title>Referenced by</title> <p><xref provisional="" /></p></aside>{s-Gconnection}
+
+<me> \begin{array}{ccccc}
+& & \vec F = q \vec E & & \\
+& \deq F = k \frac{q_1 q_2}{r^2} & \leftrightarrow & \deq E = k \frac{q}{r^2} & \\
+\Delta \PE = -\vec F \cdot \Delta\vec x & \updownarrow & & \updownarrow & \Delta V = -\vec E \cdot \Delta\vec x  \\
+& \deq \PE = k \frac{q_1 q_2}{r} & \leftrightarrow & \deq V = k \frac{q}{r} & \\
+& & \Delta \PE = q \Delta V & &
+\end{array} </me>
+(Recall the parallel with the gravitational interaction in <xref ref="" />s-Gconnection}.)
+
+</chapter><chapter><title></title>Electricity}
+
+</chapter><chapter><title></title>The Magnetic Interaction}
+
+pst-magneticfield
+
+</chapter><chapter><title></title><q>Magnicity?</q>}
+
+</chapter><chapter><title></title>Light}
+
+</chapter><chapter><title></title>Optics}
+
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
@@ -5424,6 +5576,23 @@ Earth feels a force by \studentZ\ to the left.
 </part>
 
 <!-- ********************************************************************************************** -->
+
+</chapter><chapter><title></title>Relativity}
+</chapter><chapter><title></title>Quantum Mechanics}<!-- -->\new{v2.1}{Decide if these subsections should be chapters in and of themselves.  These are now labeled.}
+</section><section><title></title>Atomic Physics} </subsection><subsection><title></title>The Periodic Table and Quantum Numbers}
+</section><section><title></title>Nuclear Physics} </subsection><subsection><title></title>Nuclear Decay}\label{ss-nucleardecay}
+</subsection><subsection><title></title>The Strong Nuclear Force}\label{ss-strong}<aside><title>Referenced by</title> <p>Discussion of <xref provisional=""></xref></p></aside>[fundamental forces]{d-fundamental}
+</subsection><subsection><title></title>The Weak Nuclear Force}\label{ss-weak}<aside><title>Referenced by</title> <p>Discussion of <xref provisional=""></xref></p></aside>[fundamental forces]{d-fundamental}
+</section><section><title></title>Particle Physics}\label{s-particle}
+</subsection><subsection><title></title>Field Theory}
+</subsection><subsection><title></title>Quantum Electrodynamics}\label{ss-QED}<aside><title>Referenced by</title> <p>Discussion of <xref provisional=""></xref></p></aside>[fundamental forces]{d-fundamental}
+</subsection><subsection><title></title>Quantum Chromodynamics}\label{ss-QCD}<aside><title>Referenced by</title> <p>Discussion of <xref provisional=""></xref></p></aside>[fundamental forces]{d-fundamental}
+</subsection><subsection><title></title>The Standard Model}\label{ss-StandardModel}
+</subsection><subsection><title></title>Particle Decay}\label{ss-particledecay}
+</chapter><chapter><title></title>Condensed Matter}
+</chapter><chapter><title></title>Astronomy}
+</chapter><chapter><title></title>Cosmology}
+
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
@@ -5436,6 +5605,130 @@ Earth feels a force by \studentZ\ to the left.
         the characters in the text. </p>
         </introduction>
 </part>
+
+</chapter><chapter><title></title>Deeper Dive}\label{c-revisted}<!-- -->\new{v2.1}{This chapter should mirror \protect{<xref ref="" />c-physics}}.}
+
+This is where I will put the fuller explanations.
+
+</subsection><subsection><title></title>The Sun}\label{sss-sun}
+The bright, shiny sun, which keeps us all alive, is a nice example of a rather complex system that allows us to verify our various theories of the world around us.  We can consider the existence of a star in three phases: the birth of a star, the life of the star, and the death of the star.
+
+</subsubsection><subsubsection><title></title>The Birth of a Star}
+</subsubsection><subsubsection><title></title>The Life of a Star}
+</subsubsection><subsubsection><title></title>The Death of a Star}
+
+
+</subsection><subsection><title></title>Kitchen Appliances}
+</subsubsection><subsubsection><title></title>Oven}
+</subsubsection><subsubsection><title></title>Refrigerator}
+</subsubsection><subsubsection><title></title>Microwave}
+</subsubsection><subsubsection><title></title>Television}
+
+</subsection><subsection><title></title>Automobile}
+</subsubsection><subsubsection><title></title>Coolant and Antifreeze}
+</subsubsection><subsubsection><title></title>Tires}
+</subsubsection><subsubsection><title></title>Torque}
+
+</subsection><subsection><title></title>Cool Ideas}
+</subsubsection><subsubsection><title></title>Black Holes}\label{sss-blackhole2}<aside><title>Referenced by</title> <p><xref provisional="" /></p></aside>{ss-weightmass}
+
+On 7 April, 2017,<!-- -->\new{v2.3}{New source of info}
+<url href=""></url>{http://www.cbc.ca/podcasting}{CBC Broadcasting} published a
+<url href=""></url>{http://www.cbc.ca/podcasting/includes/quirks.xml}{<em></em>Quirks and Quarks}} episode discussing how we can
+<url href=""></url>{https://podcast-a.akamaihd.net/mp3/podcasts/quirks_20170408_51226.mp3}{turn our planet into a giant telescope to get a photo of a black hole}.
+The results should be available by the early 2018.<todo></todo>Follow-up in 2018 to find the results.}
+
+</subsubsection><subsubsection><title></title>Quantum Mechanics}
+</subsubsection><subsubsection><title></title>Relativity}
+</subsubsection><subsubsection><title></title>String Theory}
+
+
+
+</chapter><chapter><title></title>Podcasts and Videos}\label{c-videos}\label{c-podcasts}
+
+</section><section><title></title>Podcasts}\label{s-podcasts}
+<xref ref="" text="title"></xref>{http://spacepod.libsyn.com/}{T4LTFdOxHD5WWzdD}{99}{Spacepod with Carrie Nugent} \\
+<url href=""></url>{http://www.sciencefriday.com/}{Science Friday with Ira Flatow}
+
+</section><section><title></title>Videos}\label{s-videos}
+<url href=""></url>{http://physicsfootnotes.com/}{Physics Footnotes} \\
+<url href=""></url>{http://sixtysymbols.com/}{Sixty Symbols}
+
+</section><section><title></title>Websites}\label{s-websites}
+<url href=""></url>{http://www.aldakavlilearningcenter.org/practice/flame-challenge}{The Flame Challenge}
+
+
+</chapter><chapter><title></title>Characters}
+
+This textbook has five characters who follow you throughout the book.  They appear in the examples and some homework problems.  They also remember previous experiences.  I need to adjust the examples in <xref ref="" />c-force} such that the people pushing boxes are helping the reader rearrange furniture.
+
+The index lists<todo></todo>The index will recognize the people in two different formats.  One is by my name for them, which is <backslash />studentX (where X is A, B, C, D, <ellipsis /> Z).  The other is by the name assigned to that variable.  So these show up in different places in the Index.}{} the pages that the characters appear.  The point of this chapter is to highlight some of the primary adventures of the characters according to their own perspectives.  <em></em>None of the links in this chapter will be given a corresponding return link.}  This chapter is for me to track relationships and will likely go away when the book is ready for publication.
+%
+I can, at the header of the code, define the name, gender, mass, and dimensions of each individual.\dothis[inline]{<url href=""></url>{http://malveyauthor.com/}{Madeline Alvey}, the author of  \protect{<url href=""></url>{http://escapepod.org/2017/03/09/ep566-honey-and-bone-artemis-rising-3/}{<q>Honey and Bone</q> at EscapePod}} is a physics and English undergraduate student at UK in Lexington.  I might consider hiring(?) her to help storyboard the characters.}
+
+</section><section><title></title>\studentA<idx><h></h><h></h></idx>{\studentA!inside}}<idx><h></h><h></h></idx>{\studentA!outside}<todo></todo>The index-call that is <em></em>outside} of the section title registers as <backslash />studentA, which puts the name alphabetically under <backslash />studentA, rather than \studentA.  The index-call that is <em></em>inside} of the section title registers as \studentA, which puts the name alphabetically under \studentA, rather than <backslash />studentA.}
+<idx></idx>{\studentA|(} % Begin page-range
+<ul>
+</p></li><li><p> In <xref ref="" />s-forcewords}, \studentB{} gives \studentA{} a good-natured shove in the arm in order to get the language clarified and begin the conversation about the on-by notation.
+</p></li><li><p> In <xref ref="" text="type-global" />se-FBD-AB} \studentA{} helps \studentB{}<ellipsis />
+    <ul>
+    </p></li><li><p> (in the current version) push an object to make it accelerate and feel a reaction force causing \himA{} to accelerate backwards.
+    </p></li><li><p> (in the future version) will help the reader move into or out of their residence hall by pushing on heavier furniture.
+    </p></li><li><p>[NOTE:] This is all drawn in <xref ref="" />f-firstFBD}, which is updated in <xref ref="" />f-firstFBDupdate}.
+    </ul>
+</p></li><li><p> In <xref ref="" text="type-global" />se-weightA}, \studentA{} falls from a small height.  (maybe he is jumping off a short ledge while taking a short-cut to class?)
+</p></li><li><p> In <xref ref="" />ex-baking}, \studentA{} decides to bake some bread for a party at \studentB's house, measuring the time it takes to warm his oven.
+</ul>
+
+<idx></idx>{\studentA|)} % end page-range
+</section><section><title></title>\studentB<idx><h sortby="\studentB">\studentB</h></idx>}
+<idx></idx>{\studentB|(} % Begin page-range
+
+<ul>
+</p></li><li><p> \studentB{} is a passenger in the reader's car in <xref ref="" />ex-slowcar} when the reader runs out of gas and coasts to a stop.
+</p></li><li><p> \studentB{} is a passenger in the reader's car in <xref ref="" />ex-coasting} and speculates about how fast to go before putting the car in neutral to coast to a stop.
+</p></li><li><p> \studentB{} joins the reader on a road trip in <xref ref="" />cyoa-NI} and runs out of gas.  This results in multiple possible adventures:
+<ul>
+    </p></li><li><p> <xref ref="" text="type-global" />a-parkandwalk}, which leads to either an end at <xref ref="" text="type-global" />a-nogas} or an end at <xref ref="" text="type-global" />a-intosunset}.
+    </p></li><li><p> <xref ref="" text="type-global" />a-coastindrive}, which leads to either <xref ref="" text="type-global" />a-NIdrive} (choose <xref ref="" text="type-global" />a-coastinneutral} or end with <xref ref="" text="type-global" />a-intosunset2}) or <xref ref="" text="type-global" />a-parkandwalk2} (choose <xref ref="" text="type-global" />a-intosunset} or end at <xref ref="" text="type-global" />a-nogas2})
+    </p></li><li><p> <xref ref="" text="type-global" />a-coastinneutral}, which leads to an end at <xref ref="" text="type-global" />a-NIresult}.
+</ul>
+</p></li><li><p> In <xref ref="" />s-forcewords}, \studentB{} gives \studentA{} a good-natured shove in the arm in order to get the language clarified and begin the conversation about the on-by notation.
+</p></li><li><p> In <xref ref="" />se-FBD-AB}, \studentB{} helps \studentA{}<ellipsis />
+    <ul>
+    </p></li><li><p> (in the current version) pull an object to make it accelerate and feel a reaction force causing \himB{} to accelerate backwards.
+    </p></li><li><p> (in the future version) will help the reader move into or out of their residence hall by pushing on heavier furniture.
+    </p></li><li><p>[NOTE:] This is all drawn in <xref ref="" />f-firstFBD}, which is updated in <xref ref="" />f-firstFBDupdate}.
+    </ul>
+</p></li><li><p> In <xref ref="" text="type-global" />se-FNB}, \studentB{} has a normal force supporting \himB.  (This touches <xref ref="" text="type-global" />A-floor}, <xref ref="" text="type-global" />A-second}, and <xref ref="" text="type-global" />A-third}.)
+</p></li><li><p> At some point, \studentB{} has a party, because in <xref ref="" />ex-baking}, \studentA{} decides to bake some bread for a party at \studentB's house.
+</ul>
+
+<idx></idx>{\studentB|)} % end page-range
+</section><section><title></title>\studentC}
+<idx></idx>{\studentC|(} % Begin page-range
+
+<idx></idx>{\studentC|)} % end page-range
+</section><section><title></title>\studentD}
+<idx></idx>{\studentD|(} % Begin page-range
+
+<idx></idx>{\studentD|)} % end page-range
+</section><section><title></title>\studentE}
+<idx></idx>{\studentE|(} % Begin page-range
+
+<idx></idx>{\studentE|)} % end page-range
+</section><section><title></title>\studentF}
+<idx></idx>{\studentF|(} % Begin page-range
+
+<idx></idx>{\studentF|)} % end page-range
+</section><section><title></title>\studentZ}
+<idx></idx>{\studentZ|(} % Begin page-range
+
+<idx></idx>{\studentZ|)} % end page-range
+
+
+
+
 
 <chapter><title>Holder</title>
 
