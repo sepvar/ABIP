@@ -3343,7 +3343,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p xml:id="p-g-to-3-digits">Because the variation is small, throughout this text when we are considering situations <q>at the surface of the Earth</q>, we will assume that
                 <assemblage><p>the acceleration due to gravity is <m>9.81\unitfrac{m}{s^2}</m> to three significant figures.</p></assemblage>
-                This statement is making an approximation that allows us to compute values to a useful precision.  You should note from <xref ref="t-gworld" text="type-local" /> that the value of <m>g</m> does vary around the world, but that your distance from the center of the Earth has to change <em>significantly</em> for the value to change by a noticeable amount.  The consequence of this is that whenever we consider motion that stays within a vertical range of tens-of-meters, we can consider the acceleration due to gravity to be constant.  Sometimes this is referred to as being <q>locally constant</q>.  This is an example of a useful approximation that is essentially true, as discussed in <xref ref="s-effective2" text="type-global" />.
+                This statement is making an approximation that allows us to compute values to a useful precision.  You should note from <xref ref="t-gworld" text="type-local" />(<fn xml:id="fn-compute-g">While both the latitude-longitude and the local value of <m>g</m> were found using the <url href="https://www.wolframalpha.com/">WolframAlpha<registered /> computational knowledge engine</url>, these <m>g</m> values do not necessarily correspond to these coordinates.  The <m>g</m> values are based on a theoretical model of the Earth.</fn>) that the value of <m>g</m> does vary around the world, but that your distance from the center of the Earth has to change <em>significantly</em> for the value to change by a noticeable amount.  The consequence of this is that whenever we consider motion that stays within a vertical range of tens-of-meters, we can consider the acceleration due to gravity to be constant.  Sometimes this is referred to as being <q>locally constant</q>.  This is an example of a useful approximation that is essentially true, as discussed in <xref ref="s-effective2" text="type-global" />.
                 </p>
 
                 <example xml:id="se-t-gworld">
@@ -3359,7 +3359,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <table xml:id="t-gworld">
                 <caption>
-                        Comparison of <m>g</m> at a few places on Earth.<aside xml:id="fn-compute-g">While both the latitude-longitude and the local value of <m>g</m> were found using the <url href="https://www.wolframalpha.com/">WolframAlpha<registered /> computational knowledge engine</url>, these <m>g</m> values do not necessarily correspond to these coordinates.  The <m>g</m> values are based on a theoretical model of the Earth.</aside> <xref ref="se-t-gworld" text="type-hybrid" /> considers some patterns in this table.
+                        Comparison of <m>g</m> at a few places on Earth. (See <xref ref="fn-compute-g" text="type-global" />.) <xref ref="se-t-gworld" text="type-hybrid" /> considers some patterns in this table.
                 </caption>
 
                 <tabular>
