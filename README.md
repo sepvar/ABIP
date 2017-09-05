@@ -44,6 +44,7 @@ To VERIFY the code  (top 5)
 	java -jar $BEE/../jing-trang/build/jing.jar $BEE/schema/pretext.rng ABIP.xml | wc -l
 	java -jar $BEE/../jing-trang/build/jing.jar $BEE/schema/pretext.rng ABIP.xml | head -5
 	java -jar $BEE/../jing-trang/build/jing.jar $BEE/schema/pretext.rng ABIP.xml | sort -k4 | head -15
-To find the errors on "todo"  (must change in two places)                                              vvvv                                                 vvvv
-	java -jar $BEE/../jing-trang/build/jing.jar $BEE/schema/pretext.rng ABIP.xml | grep "element \"todo" | sed 's/.*:\([0-9][0-9]*\):\([0-9][0-9]*\):.*/todo line \1:\2/g'
-                                                                                                       ^^^^                                                 ^^^^
+To find the errors on "todo"  (must change in two places)                                                vvvv                                                 vvvv
+	java -jar $BEE/../jing-trang/build/jing.jar $BEE/schema/pretext.rng ABIP.xml | grep ": element \"todo" | sed 's/.*:\([0-9][0-9]*\):\([0-9][0-9]*\):.*/todo line \1:\2/g'
+                                                                                                         ^^^^                                                 ^^^^
+java -jar $BEE/../jing-trang/build/jing.jar $BEE/schema/pretext.rng ABIP.xml | sed 's/.*:\([0-9][0-9]*\):\([0-9][0-9]*\): error: element "\([a-zA-Z][a-zA-Z]*\)".*/\3 line \1:\2/g' | sort -k1
