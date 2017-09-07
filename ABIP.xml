@@ -1170,6 +1170,7 @@
                                                 <usage>\mathrm{acceleration}</usage>
                                                 <description>refers to the general idea of changing your motion (velocity), meaning <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>)</description>
                                         </notation>
+                                        The technical term <term>Acceleration</term> means <em>changing the velocity</em>, which refers to <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>).
                                 </p>
                                 </paragraphs></li>
                 </ul></p>
@@ -1626,15 +1627,14 @@
                 </p>
                 <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatverb" text="global">heat as a verb</xref></p></aside>
 
-                <todo>Change this to move most of the description of accelerating into a pull up box by moving the language to that other location (paragraph, not section)</todo>
-                <p>The technical term <term>force</term><idx><h>force</h><h>description</h></idx> refers to the general idea of pushing or pulling.  In the same way that physicists use the word <xref ref="d-acc" text="title">acceleration</xref> (technically <em>changing the velocity</em>) to mean <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>), we will use <em>force as a noun</em><idx><h>force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling.</p>
+                <p>The technical term <term>force</term><idx><h>force</h><h>description</h></idx> refers to the general idea of pushing or pulling.  In the same way that physicists use the technical word <xref ref="d-acc" text="title">acceleration</xref> differently than the general population uses the colloquial word, force has a specific meaning.  We will use <em>force as a noun</em><idx><h>force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling; it is necessarily a vector (having a specific direction) and has specific relationships that will be outlined in this chapter.</p>
 
                 <p>You should note that you can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.</p>
+                <aside><title>Referenced by</title> <p><xref ref="ex-braced" text="type-global" />, <xref ref="d-Fgball" text="title">the falling ball</xref></p></aside>
+                <assemblage><p>Forces are <em>necessarily</em> an interaction<idx>interaction</idx><idx><h>force</h><h>interaction</h></idx> between two objects.</p></assemblage>
                         <remark><title>Push or Pull</title>
                         <p>By now you may have noticed that it is tedious to keep saying <q>pushed or pulled,</q> so I will only say <q>push</q> even when I am including the possibility of <q>pushing or pulling</q>.</p>
                         </remark>
-                <aside><title>Referenced by</title> <p><xref ref="ex-braced" text="type-global" />, <xref ref="d-Fgball" text="title">the falling ball</xref></p></aside>
-                <assemblage><p>Forces are <em>necessarily</em> an interaction<idx>interaction</idx><idx><h>force</h><h>interaction</h></idx> between two objects.</p></assemblage>
         </paragraphs>
 
         <p>Sometimes we care about the thing doing the pushing or pulling, sometimes we don't.  We always care about the thing being pushed or pulled.  We will <em>distinguish these objects</em> by referring to the object that is pushing as the object <q>causing the force</q> or <q>exerting the force</q> and by referring to the object that is being pushed as the object <q>feeling the force</q>.  We will <em>distinguish these forces</em> as follows:</p>
@@ -5000,6 +5000,12 @@ Earth feels a force by \studentZ\ to the left.
 
         <paragraphs xml:id="d-workverb">
         <p>Work is a verb<idx><h>work</h><h>verb</h></idx>; doing work is the process of <em>exchanging</em> energy.</p>
+                <aside><title>Referenced by</title>
+                        <p>Discussions of
+                        <xref ref="d-forcenoun" text="global">force as a noun</xref> and
+                        <xref ref="d-heatverb" text="global">heat as a verb</xref>
+                        </p>
+                </aside>
         </paragraphs>
         </introduction>
 
@@ -5674,7 +5680,15 @@ Earth feels a force by \studentZ\ to the left.
                 <p>[Since &lt;paragraphs&gt; are not allowed, the &lt;introduction&gt; needs at least one &lt;p&gt;.]</p>
 
                 <paragraphs xml:id="d-heatverb">
-                <p>Heat is a verb<idx><h>heat</h><h>verb</h></idx>; heating is a process of <em>exchanging</em> energy.  Recall our <xref ref="d-forcenoun" text="title">discussions of force</xref><idx><h>force</h><h>noun</h></idx> and <xref ref="d-workverb" text="title">work</xref><idx><h>work</h><h>verb</h></idx>.</p>
+                <p>Heat is a verb<idx><h>heat</h><h>verb</h></idx>; heating is a process of <em>exchanging</em> energy.  Recall our
+                        <xref ref="d-forcenoun" text="title">discussions of force</xref><idx><h>force</h><h>noun</h></idx> and
+                        <xref ref="d-workverb" text="title">work</xref><idx><h>work</h><h>verb</h></idx>.</p>
+                <aside><title>Referenced by</title>
+                        <p>Discussions of
+                        <xref ref="d-forcenoun" text="global">force as a noun</xref> and
+                        <xref ref="d-workverb" text="global">work as a verb</xref>
+                        </p>
+                </aside>
                 </paragraphs>
         </introduction>
 
