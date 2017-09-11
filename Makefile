@@ -16,10 +16,10 @@ ABIP.xml.peep: ABIP.sed ABIP.xml
 	sed -i.peep -f ABIP.sed ABIP.xml
 
 html: ABIP.xml.peep ${BEE}/user/mathbook-abip-html.xsl ABIP.xml
-	xsltproc ${BEE}/user/mathbook-abip-html.xsl ABIP.xml && mv ABIP.xml.peep ABIP.xml || mv ABIP.xml.peep ABIP.xml 
+	xsltproc -stringparam html.css.file mathbook-5.css ${BEE}/user/mathbook-abip-html.xsl ABIP.xml && cp ABIP.xml.peep ABIP.xml || cp ABIP.xml.peep ABIP.xml 
 
 latex: ABIP.xml.peep ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml
-	xsltproc ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml && mv ABIP.xml.peep ABIP.xml || mv ABIP.xml.peep ABIP.xml
+	xsltproc ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml && cp ABIP.xml.peep ABIP.xml || cp ABIP.xml.peep ABIP.xml
 	echo "Use WindEdt to pdflatex"
 
 images: ABIP.xml
