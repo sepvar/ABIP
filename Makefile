@@ -1,5 +1,17 @@
 # ABIP
 
+default: 
+	@echo "make -n ... to display commands with running"
+	@echo "make -s ... to not display commands when running them"
+	@echo "Choices: html, latex, images, list (prints copy-paste select image creation), counterr, toperr, typeerr, allerr"
+	@echo "make all will make html, latex, and images"
+
+${BEE}/user/mathbook-abip-latex.xsl: mathbook-abip-latex.xsl
+	cp mathbook-abip-latex.xsl ${BEE}/user/
+
+${BEE}/user/mathbook-abip-html.xsl: mathbook-abip-html.xsl
+	cp mathbook-abip-html.xsl ${BEE}/user/
+
 ABIP.xml.peep: ABIP.sed ABIP.xml
 	sed -i.peep -f ABIP.sed ABIP.xml
 
@@ -51,11 +63,5 @@ allerr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml
 		grep -v ": element \"conclusion" | \
 		grep -v ": element \"paragraphs" | \
 		sort -k4  
-
-default: 
-	@echo "make -n ... to display commands with running"
-	@echo "make -s ... to not display commands when running them"
-	@echo "Choices: html, latex, images, list (prints copy-paste select image creation), counterr, toperr, typeerr, allerr"
-	@echo "make all will make html, latex, and images"
 
 all: html latex images

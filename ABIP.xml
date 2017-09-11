@@ -309,7 +309,7 @@
         </author>
 
         <credit>
-            <title>PreTeXt Format</title>
+            <title>Credit for MathBookXML / <pretext /> format:</title>
             <author>
                 <personname>Robert A. Beezer</personname>
 <!--
@@ -802,29 +802,26 @@
 
                 <subsection><title>Coordinate Systems</title>
 
-                <p>
-                <ul>
-                        <li><p> Discussion of the choice of origin (possible reference to zero-value of the potential energy)</p></li>
-                        <li><p> Discussion of the choice of the positive-direction (possible reference to falling objects and using positive-up versus positive-down)</p></li>
-                        <li><paragraphs xml:id="d-referenceframe">
-                                <p>Definition of a reference frame
+                <p> Discussion of the choice of origin (possible reference to zero-value of the potential energy)</p>
+
+                <p> Discussion of the choice of the positive-direction (possible reference to falling objects and using positive-up versus positive-down)</p>
+
+                <aside><title>Paragraph referenced by</title>
+                        <p>
+                        <xref ref="ss-addvel"  text="type-global" />
+                        <xref ref="ss-noninertial"  text="type-global" />
+                        <xref ref="d-NewtonInertial">Newton's Laws</xref>
+                        </p>
+                </aside>
+                <p xml:id="def-referenceframe">Definition of a reference frame
                                 <ul>
                                         <li><p> (different locations) The view from the roof versus from the ground</p></li>
                                         <li><p> (different speeds) The view from the sidewalk versus from a moving car
                                                 (See also <xref ref="ss-noninertial"  text="type-global" />.)</p></li>
                                         <li><p> (different types of motion) The view from a park bench versus from a merry-go-round.
                                                 (See also <xref ref="s-noninertial"  text="type-global" />.)</p></li>
-                                </ul></p>
-                                </paragraphs></li>
-                </ul>
+                                </ul>
                 </p>
-                        <aside><title>Referenced by</title>
-                        <p>
-                        <xref ref="ss-addvel"  text="type-global" />
-                        <xref ref="ss-noninertial"  text="type-global" />
-                        <xref ref="d-NewtonInertial">Newton's Laws</xref>
-                        </p>
-                        </aside>
 
                 </subsection>
 
@@ -863,7 +860,6 @@
                         <introduction>
                         <aside><title>Subsection referenced by</title>
                         <p>
-                        <xref ref="d-pushvector">the direction of force</xref>
                         <xref ref="sss-netforce"  text="type-global" />
                         </p>
                         </aside>
@@ -922,10 +918,16 @@
                         </introduction>
 
                         <subsubsection xml:id="sss-scalarvector"><title>Scalar Quantities versus Vector Quantities</title>
-                                <aside><title>Referenced by</title>
-                                <p>Discussion of <xref ref="d-pushvector">the direction of forces</xref>
-                                </p>
-                                </aside>
+
+                        <p xml:id="def-scalar">definition of scalar</p>
+
+			<aside><title>Paragraph referenced by</title><p>Discussion of <xref ref="d-pushvector">the direction of forces</xref></p></aside>
+                        <p xml:id="def-magnitude">definition of magnitude</p>
+			<aside><title>Paragraph referenced by</title><p>Discussion of <xref ref="d-pushvector">the direction of forces</xref></p></aside>
+                        <p xml:id="def-direction">definition of direction (of a vector); how it gets expressed as an angle measured from a given reference point (usually the <m>+x</m>-axis).</p>
+
+			<aside><title>Paragraph referenced by</title><p>Discussion of <xref ref="d-pushvector">the direction of forces</xref></p></aside>
+                        <p xml:id="def-vector">definition of vector</p>
 
                         </subsubsection>
 
@@ -1120,10 +1122,8 @@
 
                 <subsection><title>Speed versus Velocity</title>
 
-                <paragraphs xml:id="d-atrest">
-                <p>When you are not moving, physicists will describe you as being <q>at rest</q>.  When you drive to the store, your car <q>starts from rest</q> and then travels some distance in some time.  When you arrive at the store, your car <q>ends at rest</q> when you arrive at your destination.</p>
-                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-atrestinmotion">Newton's First Law</xref></p></aside>
-                </paragraphs>
+                <p xml:id="d-atrest">When you are not moving, physicists will describe you as being <q>at rest</q>.  When you drive to the store, your car <q>starts from rest</q> and then travels some distance in some time.  When you arrive at the store, your car <q>ends at rest</q> when you arrive at your destination.</p>
+                <aside><title>Paragraph referenced by</title> <p>Discussion of <xref ref="d-atrestinmotion">Newton's First Law</xref></p></aside>
 
                 <p>When you are moving<ellipsis /></p>
                 <todo>Discussion of speed as $\txtfrac{\Delta x}{\Delta t}$</todo>
@@ -1135,7 +1135,7 @@
 
                 <subsection xml:id="ss-addvel"><title>Adding Velocities</title>
 
-                <p>Comment on inertial <xref ref="d-referenceframe">reference frames</xref>.<idx><h>reference frames</h><h>inertial</h></idx></p>
+                <p>Comment on inertial <xref ref="def-referenceframe">reference frames</xref>.<idx><h>reference frames</h><h>inertial</h></idx></p>
 
                 </subsection>
         </section>
@@ -1159,22 +1159,21 @@
                         </aside>
 
                 <todo>Decide if the [notation] goes (xref ref="d-acc" text="type-global" /) or in (xref ref="intro-acc" text="type-global" /)</todo>
-                <p>
-                <ul>
-                        <li><paragraphs xml:id="d-motion">
-                                <p>Description of <q>moving</q> as <em>moving at constant velocity</em>.</p>
-                                </paragraphs></li>
-                        <li><paragraphs xml:id="d-acc">
-                                <p>Description of <em>accelerating</em> as either <q>accelerating</q>, <q>decelerating</q>, or <q>turning.</q>
-                                        <notation>
-                                                <usage>\mathrm{acceleration}</usage>
-                                                <description>refers to the general idea of changing your motion (velocity), meaning <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>)</description>
-                                        </notation>
-                                        The technical term <term>Acceleration</term> means <em>changing the velocity</em>, which refers to <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>).
-                                </p>
-                                </paragraphs></li>
-                </ul></p>
-                        <aside><title>Referenced by</title> <p><xref ref="s-forcewords" text="type-global" /> points to accelerating item.</p></aside>
+                <aside><title>Paragraph referenced by</title>
+                        <p>
+                        <xref ref="d-objectinmotion">objects in motion</xref>
+                        </p>
+                </aside>
+                <p xml:id="d-motion">Description of <q>moving</q> as <em>moving at constant velocity</em>. </p>
+
+                <aside><title>Referenced by</title> <p><xref ref="s-forcewords" text="type-global" /> points to accelerating item.</p></aside>
+                <p xml:id="d-acc">The technical term <term>acceleration</term> means <em>changing the velocity</em>, which refers to <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>).
+			<notation>
+				<usage>\mathrm{acceleration}</usage>
+				<description>refers to the general idea of changing your motion (velocity), meaning <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>)</description>
+			</notation>
+
+                </p>
 
                 <p>Discussion of <xref ref="ex-slowcar" text="type-global" /> and <xref ref="ex-coasting" text="type-global" />.</p>
                 <todo>Is there a way to include something in the \LaTeX version but not in the HTML version? (such as \pageref{ex-slowcar} and \pageref{ex-coasting})</todo>
@@ -1408,12 +1407,12 @@
                 <idx><h>reference frames</h><h>non-inertial</h></idx>
                         <aside><title>Referenced by</title>
                         <p>
-                        <xref ref="d-referenceframe">Reference Frames</xref>,
+                        <xref ref="def-referenceframe">Reference Frames</xref>,
                         <xref ref="ss-NI" text="type-global" />.
                         </p>
                         </aside>
 
-                <p>[Discuss non-rotating linearly accelerating <xref ref="d-referenceframe">reference frames</xref>. See also <xref ref="s-noninertial" text="type-global" /> for a discussion on rotating reference frames.]</p>
+                <p>[Discuss non-rotating linearly accelerating <xref ref="def-referenceframe">reference frames</xref>. See also <xref ref="s-noninertial" text="type-global" /> for a discussion on rotating reference frames.]</p>
 
                 <p>[Comment on the Earth as essentially stationary?  See <xref ref="s-effective2" text="type-global" /> on effective theories.]</p>
                 <!-- \new{v2.2}{Effective theories}{} -->
@@ -1627,7 +1626,7 @@
                 </p>
                 <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatverb" text="global">heat as a verb</xref></p></aside>
 
-                <p>The technical term <term>force</term><idx><h>force</h><h>description</h></idx> refers to the general idea of pushing or pulling.  In the same way that physicists use the technical word <xref ref="d-acc" text="title">acceleration</xref> differently than the general population uses the colloquial word, force has a specific meaning.  We will use <em>force as a noun</em><idx><h>force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling; it is necessarily a vector (having a specific direction) and has specific relationships that will be outlined in this chapter.</p>
+                <p>The technical term <term>force</term><idx><h>force</h><h>description</h></idx> refers to the general idea of pushing or pulling.  In the same way that physicists use the technical word <xref ref="d-acc" text="title">acceleration</xref> differently than the general population uses the colloquial word, force has a specific meaning.  We will use <em>force as a noun</em><idx><h>force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling; it is necessarily a vector (having a specific direction and a specific magnitude or strength) and has specific relationships that will be outlined in this chapter.</p>
 
                 <p>You should note that you can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.</p>
                 <aside><title>Referenced by</title> <p><xref ref="ex-braced" text="type-global" />, <xref ref="d-Fgball" text="title">the falling ball</xref></p></aside>
@@ -1656,31 +1655,31 @@
                 </convention>
         <p>This will be more relevant when we discuss in <xref ref="c-forcetype" text="type-global"/> the types of forces that might be applied.</p>
 
-        <todo>Reconsider titling these paragraphs (page too busy)</todo>
+	<biographical><title>Touchstone</title><p>Recall the distinction between <xref ref="s-law" text="title">theories and laws</xref>.</p></biographical>
         <paragraphs xml:id="d-Newtonahead"><title>Looking ahead</title>
-                <p>Looking ahead to <xref ref="s-Newton" text="title">Newton's Laws</xref><idx><h>laws</h><h>Newton</h></idx>, you should be ready to notice that the <xref ref="ss-NI" text="title">first law</xref> is about objects that are not feeling a force, the <xref ref="ss-NII" text="title">second law</xref> is about a specific object that is feeling a force, and the <xref ref="ss-NIII" text="title">third law</xref> is about the interaction between the two objects.  In all three of these, we care about the object feeling the force.   It is only in the third law that we care about the object exerting the force.</p>
-                <biographical><title>Touchstone</title><p>Recall the distinction between <xref ref="s-law" text="title">theories and laws</xref>.</p></biographical>
+                <p>Looking ahead to Newton's Laws<idx><h>laws</h><h>Newton</h></idx> (<xref ref="s-Newton" text="type-hybrid" />), you should be ready to notice that the first law (<xref ref="ss-NI" text="type-hybrid" />) is about objects that are not feeling a force, the second law (<xref ref="ss-NII" text="type-hybrid" />) is about a specific object that is feeling a force, and the third law (<xref ref="ss-NIII" text="type-hybrid" />) is about the interaction between the two objects.  In all three of these, we care about the object feeling the force.   It is only in the third law that we care about the object exerting the force.</p>
                 </paragraphs>
 
         <paragraphs xml:id="d-pushvector"><title>Looking back</title>
-                <p>Looking back, forces are <xref ref="sss-scalarvector" text="title">vectors</xref>:</p>
+                <p>Looking back, forces are <xref ref="def-vector" text="title">vectors</xref>:</p>
                         <assemblage><p>Pushing on something intrinsically involves a direction.</p></assemblage>
-                <p>You will use this property to show that multiple people pushing in the same direction increases the effect, whereas multiple people pushing in opposite directions reduces the effect.  One might say that people who push an object in opposite directions work<fn>After you study <xref ref="s-work" text="type-global" />, this play on words will be hilarious!</fn> against each other.  Because the force is a vector, whenever you are answering a question about a force, you should always expect to give the strength of the force (the <xref ref="ss-vectors" text="title">magnitude</xref>) and <xref ref="ss-vectors" text="title">the direction</xref> of the force (relative to some specific axis, usually the positive <m>x</m>-axis).</p>
+                <p>You will use this property to show that multiple people pushing in the same direction increases the effect, whereas multiple people pushing in opposite directions reduces the effect.  One might say that people who push an object in opposite directions work<fn>After you study <xref ref="s-work" text="type-global" />, this play on words will be hilarious!</fn> against each other.  Because the force is a vector, whenever you are answering a question about a force, you should always expect to give the strength of the force (the <xref ref="def-magnitude" text="title">magnitude</xref>) and <xref ref="def-direction" text="title">the direction</xref> of the force (relative to some specific axis, usually the positive <m>x</m>-axis).</p>
         </paragraphs>
         </section>
 
         <section xml:id="s-Newton"><title>Connecting the Concepts: Newton's Laws</title>
 
         <introduction>
-<aside><title>Section referenced by</title> <p>Discussion of <xref ref="d-Newtonahead" text="title">how to describe forces</xref></p></aside>
-        <paragraphs xml:id="sum-NewtonsLaws">
-        <p>Newton's Laws (recall <xref ref="s-law" text="title">Theory versus Law</xref>) describe our observations about three questions:
+	<aside><title>Section referenced by</title> <p>Discussion of <xref ref="d-Newtonahead" text="title">how to describe forces</xref></p></aside>
+	<biographical><title>Touchstone</title><p>Recall the distinction between <xref ref="s-law" text="title" />.</p></biographical>
+        <paragraphs xml:id="sum-NewtonsLaws"><title>Statement of Newton's Laws</title>
+        <p>Newton's Laws describe our observations about three questions:
         <ol>
                 <li><p> What happens to an object when I <em>don't</em> push on it?</p></li>
                 <li><p> What happens <em>to an object</em> when I do push on it?</p></li>
                 <li><p> What happens <em>to me</em> when I push on an object?</p></li>
         </ol>
-        The answer to these questions have a precise, concise, technical language and the point of the next three subsections are to translate that into (modern) English, into math, and into intuition.  The statement of these laws has slightly different versions in different texts to emphasize different points.  We will state them as follows<idx><h>Newton</h><h>laws</h></idx><idx><h>laws</h><h>Newton</h></idx>:
+        The answer to these questions have a precise, concise, technical language and the point of the next three subsections is to translate that into (modern) English, into math, and into intuition.  The statement of these laws has slightly different versions in different texts to emphasize different points.  We will state them as follows<idx><h>Newton</h><h>laws</h></idx><idx><h>laws</h><h>Newton</h></idx>:
         <ol>
                 <li><p>When viewed from an inertial reference frame, an object with no forces acting on it will maintain its velocity, which may be zero.</p></li>
                 <li><p> When viewed from an inertial reference frame, the vector-sum of all forces acting on an object will cause that object to accelerate in proportion to its mass: <m>\vec F_\mathrm{net} = m \vec a</m>.</p></li>
@@ -1688,16 +1687,11 @@
         </ol></p>
         </paragraphs>
 
-        <todo>Make this "recall" a pop-up, not a parenthetical, by linking to paragraph, not a section</todo>
-        <paragraphs xml:id="d-NewtonInertial">
-        <p>There are a few terms that should be clarified in these laws.  Being in an inertial <xref ref="d-referenceframe" text="title">reference frame</xref><idx><h>reference frames</h><h>inertial</h></idx> essentially means being in a place in which you do not have to hold on in order to maintain your position.  If you are <xref ref="s-acceleration" text="title">accelerating</xref> (recall that this means <em>speeding up</em>, <em>slowing down</em>, or <em>changing direction</em>) then you are not in an inertial reference frame, but rather are in a non-inertial reference frame.  In this case, you will misinterpret the forces acting.  This will be discussed in more detail in <xref ref="s-noninertial" text="type-global" /> when we discuss centripetal force and in <xref ref="ss-coriolis" text="type-global" /> when we discuss the Coriolis effect.</p>
-        </paragraphs>
+        <p xml:id="d-NewtonInertial">There are a few terms that should be clarified in these laws.  Being in an inertial <xref ref="def-referenceframe" text="title">reference frame</xref><idx><h>reference frames</h><h>inertial</h></idx> essentially means being in a place in which you do not have to hold on in order to maintain your position.  If you are <xref ref="d-acc" text="title">accelerating</xref> then you are not in an inertial reference frame, but rather are in a non-inertial reference frame.  In this case, you will misinterpret the forces acting.  This will be discussed in more detail in <xref ref="s-noninertial" text="type-global" /> when we discuss centripetal force and in <xref ref="ss-coriolis" text="type-global" /> when we discuss the Coriolis effect.</p>
 
-        <paragraphs xml:id="d-objectinmotion">
-        <p>Sometimes Newton's first law is written to include the phrase <q>an object in motion</q>, which I will be careful to link directly to <xref ref="d-motion" text="title">velocity</xref>, as was done above.  However, it technically should reference the momentum, which is discussed in <xref ref="c-momentum" text="type-global" />.</p>
-        </paragraphs>
+        <p xml:id="d-objectinmotion">Sometimes Newton's first law is written<fn xml:id="fn-NI">A common statement of this is: An object in motion remains in motion and an object at rest remains at rest unless an external force is applied.  This <em>feels clumsy</em> and the statement used in this text is meant to emphasize that <q>in uniform motion</q> and <q>at rest</q> are both inertial-states.</fn> to include the phrase <q>an object in motion</q>, which I will be careful to link directly to <xref ref="d-motion" text="title">velocity</xref>, as was done above.  However, it technically should reference the momentum, which is discussed in <xref ref="c-momentum" text="type-global" />.</p>
 
-        <p>The way Newton's third law is often written and referred to includes the words <q>action</q> and <q>reaction</q>.  Newton was referring to forces with these words and to keep it clear in our discussion, we will use the word force, with the occasional clarification of the action-force or the reaction-force.</p>
+        <p>The way Newton's third law is often written<fn xml:id="fn-NIII">A common statement of this is: For every action there is an equal and opposite reaction.  This leaves open some interpretation that tends to cause confusion among some students. The statement used in this text is meant to emphasize that the <q>action</q> and <q>reaction</q> are specifically forces and that the reaction-force is specifically not on the same object as the action-force.</fn> (and referred to) includes the words <q>action</q> and <q>reaction</q>.  Newton was referring to forces with these words and to keep it clear in our discussion, we will use the word force, with the occasional clarification of the action-force or the reaction-force.</p>
 
         </introduction>
 
@@ -1710,18 +1704,14 @@
                 </assemblage>
                 <aside><title>Touchstone</title><p>You might also recall the discussion in <xref ref="ss-noninertial" text="type-global" />.</p></aside>
 
-                <todo>Consider adding comment about Newton not including "inertial reference frame" to his laws.</todo>
-                <p>Let's take this apart and connect it to your daily experiences.  Looking ahead, we will discuss the surface of the Earth as a <xref ref="d-noninertial">non-inertial rotating reference frame</xref>; however, the effect is small enough that for most of what we <xref ref="d-casual" text="title">casually observe</xref>, we can safely pretend that the Earth is stationary and that we are actually at rest while sitting on the curb watching the world go by.  This is so true that our human brains already interpret everything around us as though it were an inertial reference frame.  This psychological perspective is exactly the feature that both allows us to make fairly reliable predictions about the world around us <em>and</em> causes us to make incorrect judgements when we encounter non-inertial reference frames.  That is to say, as long as we don't measure our world too closely, we are viewing it from an essentially inertial reference frame.  This point is so implicit, that many books do not even include
-                        <fn xml:id="f-Newtoninclude">Newton himself did not include it in his original statement.</fn>
+                <p>Let's take this apart and connect it to your daily experiences.  Looking ahead, we will discuss the surface of the Earth as a <xref ref="d-noninertial" text="title">non-inertial rotating reference frame</xref>; however, the effect is small enough that for most of what we <xref ref="d-casual" text="title">casually observe</xref>, we can safely pretend that the Earth is stationary and that we are actually at rest while sitting on the curb watching the world go by.  This is so true that our human brains already interpret everything around us as though it were an inertial reference frame.  This psychological perspective is exactly the feature that both allows us to make fairly reliable predictions about the world around us <em>and</em> causes us to make incorrect judgements when we encounter non-inertial reference frames.  That is to say, as long as we don't measure our world too closely, we are viewing it from an essentially inertial reference frame.  This point is so implicit, that many books do not even include<fn xml:id="f-Newtoninclude">Newton himself did not include it in his original statement.</fn>
                 the portion of the statement referring to the reference frame.</p>
                 <aside><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></aside>
                 <todo>check the implications of this footnote.</todo>
 
-                <paragraphs xml:id="d-atrestinmotion">
-                <p>The rest of this statement is often written a little differently (and less concisely) as <q>an object at rest remains at rest unless acted on by an external force and an object in motion remains in motion unless acted on by an external force.</q>  Since being <xref ref="d-atrest" text="title"><q>at rest</q></xref> is a statement about the velocity<m>(\vec v=0)</m> and being <xref ref="d-motion"><q>in motion</q></xref> is also a statement about the velocity, each of these statements can be understood as saying that </p>
+                <p xml:id="d-atrestinmotion">The rest of this statement is often written a little differently (and less concisely) as <q>an object at rest remains at rest unless acted on by an external force and an object in motion remains in motion unless acted on by an external force.</q>  Since being <xref ref="d-atrest" text="title"><q>at rest</q></xref> is a statement about the velocity<m>(\vec v=0)</m> and being <xref ref="d-motion" text="title"><q>in motion</q></xref> is also a statement about the velocity, each of these statements can be understood as saying that </p>
                 <assemblage><p>Forces are those things that cause a change in the velocity.</p></assemblage>
-                <p>In other words, Newton's first law says that without a force, the velocity will not change.  In the discussion of <xref ref="sss-equilibrium" text="title">equilibrium</xref>, we will note that this is often extended to say that without a <xref ref="sss-netforce" text="title">net force</xref> the velocity will not change, but that is a special case of <xref ref="ss-NII" text="title">Newton's second law</xref>.</p>
-                </paragraphs>
+                <p>In other words, Newton's first law says that without a force, the velocity will not change.  In the discussion of equilibrium (<xref ref="sss-equilibrium" text="phrase-hybrid" />), we will note that this is often extended to say that without a net force (explained in <xref ref="sss-netforce" text="phrase-hybrid" />) the velocity will not change, but that is a special case of Newton's second law (<xref ref="ss-NII" text="phrase-hybrid" />).</p>
 
                 </introduction>
 
@@ -1831,7 +1821,7 @@
 
                 </subsubsection>
                 <subsubsection xml:id="sss-netforce"><title>Calculating the Net Force</title>
-                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-atrestinmotion">Newton's first law</xref></p></aside>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-atrestinmotion" text="title">Newton's first law</xref></p></aside>
 
                         <p>The word <q>net</q> that goes with force is here to indicate the total, which is useful to think of as <q>everything collected with the net.</q><fn xml:id="fn-net">Although according to <url href="http://www.etymonline.com/index.php?term=net&amp;allowed_in_frame=0">etymonline.com</url> (Mar, 2017), it is actually from the Old French <em>net</em> for <q>neat</q> or <q>clean</q>, having the sense of trim and elegant.</fn> The intention here is that wherever there are multiple forces acting on a single object, we must combine them as <xref ref="ss-vectors" text="title">vectors</xref> as follows: </p>
                         <todo>Maybe these should be sidebyside with the figure above the example?</todo>
@@ -2280,7 +2270,7 @@
                 <aside><title>Referenced by</title>
                         <p>
                         <xref ref="se-equi" text="type-global" />,
-                        <xref ref="d-atrestinmotion" text="type-global" >Newton's first law</xref>,
+                        <xref ref="d-atrestinmotion" text="title">Newton's first law</xref>,
                         <xref ref="d-Fgball" text="type-global" />
                         </p>
                 </aside>
@@ -5246,27 +5236,27 @@ Earth feels a force by \studentZ\ to the left.
                 <xref ref="ss-NI" text="type-global" />
                 </p>
         </aside>
-                        <paragraphs xml:id="d-noninertial">
                         <aside><title>Paragraph referenced by</title> <p><xref ref="ss-NII" text="type-global" /></p></aside>
-                        <p>Because the Earth rotates, we are actually in a non-inertial reference frame.  In fact, we can prove that the Earth rotates by observing the effects, such as the <xref ref="d-coriolis" text="type-global">Coriolis effect</xref>, that in our non-inertial frame seem to require unexplainable forces but which, in a non-rotating frame, follow the expected laws of physics.</p>
-                        </paragraphs>
+                        <p xml:id="d-noninertial">Because the Earth rotates, we are actually in a non-inertial reference frame.  In fact, we can prove that the Earth rotates by observing the effects, such as the <xref ref="d-coriolis" text="title">Coriolis effect</xref>, that in our non-inertial frame seem to require unexplainable forces but which, in a non-rotating frame, follow the expected laws of physics.</p>
                 </introduction>
 
                 <subsection xml:id="ss-coriolis"><title>The Coriolis Effect</title>
-                <aside><title>Referenced by</title>
+                <aside><title>Subsection referenced by</title>
                         <p>
-                        <xref ref="d-NewtonInertial" text="title">non-inertial reference frames</xref>,
-                        <xref ref="d-noninertial" text="title">Non-inertial Rotational Reference Frames</xref>
+                        <xref ref="d-NewtonInertial" text="title">non-inertial reference frames</xref>
                         </p>
                 </aside>
 
-                <paragraphs xml:id="d-coriolis">
-                <p>weather <ellipsis /> AND <ellipsis />
+                <aside><title>Paragraph referenced by</title>
+                        <p>
+                        <xref ref="d-noninertial" text="title">Non-inertial Rotational Reference Frames</xref>
+                        </p>
+                </aside>
+                <p xml:id="d-coriolis">weather <ellipsis /> AND <ellipsis />
                 In her podcast, <em>Spacepod</em><fn xml:id="fn-spacepod-ocean">Nugent, Carrie (Producer, Host). <em>Spacepod</em> [Audio podcast], episode 89 (19 May, 2017).  Retrieved from
                 <!-- <xref ref="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99" text="title">\nolinkurl{http://spacepod.libsyn.com/}</xref> -->
                 <url href="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99">http://spacepod.libsyn.com/</url> on 9 Apr. 2017.</fn>
                 Dr. Carrie Nugent interviews Dr. Andy Thompson about <q>underwater flying objects</q> that investigate the ocean.  He notes that ocean waters, because they are such a large-scale system, can see the effect of the rotation of the Earth.</p>
-                </paragraphs>
 
                 </subsection>
 
