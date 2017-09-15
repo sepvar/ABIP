@@ -503,7 +503,7 @@
 
         <todo>Consider the ''casual to the obvious observer'' joke</todo>
         <p  xml:id="d-casual">[Discussion of <q>casual observer</q> as intuition versus <q>scientific observing</q> and mathematical modelling]</p>
-        <aside><title>Paragraph referenced by</title> <p><xref ref="ss-NI"  text="type-global" /></p></aside>
+        <aside><title>Paragraph referenced by</title> <p><xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref></p></aside>
 
         <p>[Discussion of common student comment: <q>in physics class it is this way, but in <em>real life</em> it is that way.</q>]</p>
 
@@ -810,7 +810,7 @@
                         <p>
                         <xref ref="ss-addvel"  text="type-global" />
                         <xref ref="ss-noninertial"  text="type-global" />
-                        <xref ref="d-NewtonInertial" text="title">Newton's Laws</xref>
+                        <xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>
                         </p>
                 </aside>
                 <p xml:id="def-referenceframe">Definition of a reference frame
@@ -866,32 +866,41 @@
                         </p>
                         </aside>
 
-                        <assemblage>
                         <figure xml:id="f-lines">
                                 <caption><latex /> lines and vectors.  This will be deleted, but is here for reference.</caption>
-                                <image xml:id="i-lines" width="75%">
+                                <image xml:id="i-lines" width="100%">
                                 <description>This shows the possible angles <latex /> can draw.</description>
                                 <latex-image-code>
                                         <![CDATA[
                                         %>
+\definecolor{jclightred}{RGB}{239,0,0}
+\definecolor{jcdarkred}{RGB}{182,0,0}
+\definecolor{jcruby}{RGB}{182,44,171}
+\definecolor{jcorange}{RGB}{182,96,0}
+\definecolor{jcpurple}{RGB}{144,0,255}
+\definecolor{jcnotteal}{RGB}{18,135,168}
+\definecolor{jcteal}{RGB}{0,128,128}
+\definecolor{jcindigo}{RGB}{13,61,86}
+\definecolor{jclightblue}{RGB}{0,80,255}
+\definecolor{jcdarkblue}{RGB}{0,0,255}
                                         \begin{tikzpicture}
                                                 \draw [<->, rounded corners, thick, gray] (10,0) -- (0,0) --(0,10);
                                                 \draw [lightgray] (0,6) arc [radius=6, start angle=90, end angle=0];
                                                 \draw [lightgray] (9,1) arc [radius=17, start angle=-10, end angle=52];
-                                                \draw [->] (0,0) -- (5.92,0.99); \draw (0,0) -- (9.08,1.51);  \node [right] at (9.08,1.51) {(6,1) $9.46^\circ$};
-                                                \draw [->] (0,0) -- (5.88,1.18); \draw (0,0) -- (9.12,1.82);  \node [right] at (9.12,1.82) {(5,1) $11.31^\circ$};
-                                                \draw [->] (0,0) -- (5.82,1.46); \draw (0,0) -- (9.18,2.29);  \node [right] at (9.18,2.29) {(4,1) $14.04^\circ$};
-                                                \draw [->] (0,0) -- (5.69,1.9); \draw (0,0) -- (9.24,3.08);  \node [right] at (9.24,3.08) {(3,1) $18.43^\circ$};
+                                                \draw [jclightred,->] (0,0) -- (5.92,0.99); \draw (5.92,0.99) -- (9.08,1.51);  \node [jclightred,right] at (9.08,1.51) {(6,1) $9.46^\circ$, jclightred};
+                                                \draw [jcdarkred,->] (0,0) -- (5.88,1.18); \draw (5.88,1.18) -- (9.12,1.82);  \node [jcdarkred,right] at (9.12,1.82) {(5,1) $11.31^\circ$, jcdarkred};
+                                                \draw [jcorange,->] (0,0) -- (5.82,1.46); \draw (5.82,1.46) -- (9.18,2.29);  \node [jcorange,right] at (9.18,2.29) {(4,1) $14.04^\circ$, jcorange};
+                                                \draw [jcpurple,->] (0,0) -- (5.69,1.9); \draw (5.69,1.9) -- (9.24,3.08);  \node [jcpurple,right] at (9.24,3.08) {(3,1) $18.43^\circ$, jcpurple};
                                                 % \draw [->] (0,0) -- (5.69,1.9); \draw (0,0) -- (9.24,3.08);  \node [right] at (9.24,3.08) {(6,2) $18.43^\circ$};
-                                                \draw [->] (0,0) -- (5.57,2.23); \draw (0,0) -- (9.26,3.7);  \node [right] at (9.26,3.7) {(5,2) $21.8^\circ$};
-                                                \draw [->] (0,0) -- (5.37,2.68); \draw (0,0) -- (9.25,4.62);  \node [right] at (9.25,4.62) {(2,1) $26.57^\circ$};
+                                                \draw [jcnotteal,->] (0,0) -- (5.57,2.23); \draw (5.57,2.23) -- (9.26,3.7);  \node [jcnotteal,right] at (9.26,3.7) {(5,2) $21.8^\circ$, jcnotteal};
+                                                \draw [jcteal,->] (0,0) -- (5.37,2.68); \draw (5.37,2.68) -- (9.25,4.62);  \node [jcteal,right] at (9.25,4.62) {(2,1) $26.57^\circ$, jcteal};
                                                 % \draw [->] (0,0) -- (5.37,2.68); \draw (0,0) -- (9.25,4.62);  \node [right] at (9.25,4.62) {(4,2) $26.57^\circ$};
                                                 % \draw [->] (0,0) -- (5.37,2.68); \draw (0,0) -- (9.25,4.62);  \node [right] at (9.25,4.62) {(6,3) $26.57^\circ$};
-                                                \draw [->] (0,0) -- (5.14,3.09); \draw (0,0) -- (9.19,5.51);  \node [right] at (9.19,5.51) {(5,3) $30.96^\circ$};
-                                                \draw [->] (0,0) -- (4.99,3.33); \draw (0,0) -- (9.12,6.08);  \node [right] at (9.12,6.08) {(3,2) $33.69^\circ$};
+                                                \draw [jcindigo,->] (0,0) -- (5.14,3.09); \draw (5.14,3.09) -- (9.19,5.51);  \node [jcindigo,right] at (9.19,5.51) {(5,3) $30.96^\circ$, jcindigo};
+                                                \draw [jclightblue,->] (0,0) -- (4.99,3.33); \draw (4.99,3.33) -- (9.12,6.08);  \node [jclightblue,right] at (9.12,6.08) {(3,2) $33.69^\circ$, jclightblue};
                                                 % \draw [->] (0,0) -- (4.99,3.33); \draw (0,0) -- (9.12,6.08);  \node [right] at (9.12,6.08) {(6,4) $33.69^\circ$};
-                                                \draw [->] (0,0) -- (4.8,3.6); \draw (0,0) -- (9.02,6.77);  \node [right] at (9.02,6.77) {(4,3) $36.87^\circ$};
-                                                \draw [->] (0,0) -- (4.69,3.75); \draw (0,0) -- (8.95,7.16);  \node [right] at (8.95,7.16) {(5,4) $38.66^\circ$};
+                                                \draw [jcdarkblue,->] (0,0) -- (4.8,3.6); \draw (4.8,3.6) -- (9.02,6.77);  \node [jcdarkblue,right] at (9.02,6.77) {(4,3) $36.87^\circ$, jcdarkblue};
+                                                \draw [blue,->] (0,0) -- (4.69,3.75); \draw (4.69,3.75) -- (8.95,7.16);  \node [blue,right] at (8.95,7.16) {(5,4) $38.66^\circ$,TikZ-blue};
                                                 \draw [->] (0,0) -- (4.61,3.84); \draw (0,0) -- (8.9,7.42);  \node [right] at (8.9,7.42) {(6,5) $39.81^\circ$};
                                                 \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(1,1) $45^\circ$};
                                                 % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(2,2) $45^\circ$};
@@ -899,26 +908,25 @@
                                                 % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(4,4) $45^\circ$};
                                                 % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(5,5) $45^\circ$};
                                                 % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(6,6) $45^\circ$};
-                                                \draw [->] (0,0) -- (3.84,4.61); \draw (0,0) -- (8.2,9.85);  \node [right] at (8.2,9.85) {(5,6) $50.19^\circ$};
-                                                \draw [->] (0,0) -- (3.75,4.69); \draw (0,0) -- (8.1,10.12);  \node [right] at (8.1,10.12) {(4,5) $51.34^\circ$};
-                                                \draw [->] (0,0) -- (3.6,4.8); \draw (0,0) -- (7.92,10.56);  \node [right] at (7.92,10.56) {(3,4) $53.13^\circ$};
-                                                \draw [->] (0,0) -- (3.33,4.99); \draw (0,0) -- (7.57,11.35);  \node [right] at (7.57,11.35) {(2,3) $56.31^\circ$};
+                                                \draw [red,->] (0,0) -- (3.84,4.61); \draw (3.84,4.61) -- (8.2,9.85);  \node [red,right] at (8.2,9.85) {(5,6) $50.19^\circ$, TikZ-red};
+                                                \draw [orange,->] (0,0) -- (3.75,4.69); \draw (3.75,4.69) -- (8.1,10.12);  \node [orange,right] at (8.1,10.12) {(4,5) $51.34^\circ$, TikZ-orange};
+                                                \draw [yellow,->] (0,0) -- (3.6,4.8); \draw (3.6,4.8) -- (7.92,10.56);  \node [yellow,right] at (7.92,10.56) {(3,4) $53.13^\circ$, TikZ-yellow};
+                                                \draw [green,->] (0,0) -- (3.33,4.99); \draw (3.33,4.99) -- (7.57,11.35);  \node [green,right] at (7.57,11.35) {(2,3) $56.31^\circ$, TikZ-green};
                                                 % \draw [->] (0,0) -- (3.33,4.99); \draw (0,0) -- (7.57,11.35);  \node [right] at (7.57,11.35) {(4,6) $56.31^\circ$};
-                                                \draw [->] (0,0) -- (3.09,5.14); \draw (0,0) -- (7.22,12.03);  \node [right] at (7.22,12.03) {(3,5) $59.04^\circ$};
-                                                \draw [->] (0,0) -- (2.68,5.37); \draw (0,0) -- (6.57,13.13);  \node [right] at (6.57,13.13) {(1,2) $63.43^\circ$};
+                                                \draw [blue,->] (0,0) -- (3.09,5.14); \draw (3.09,5.14) -- (7.22,12.03);  \node [blue,right] at (7.22,12.03) {(3,5) $59.04^\circ$, TikZ-blue};
+                                                \draw [violet,->] (0,0) -- (2.68,5.37); \draw (2.68,5.37) -- (6.57,13.13);  \node [violet,right] at (6.57,13.13) {(1,2) $63.43^\circ$, TikZ-violet};
                                                 % \draw [->] (0,0) -- (2.68,5.37); \draw (0,0) -- (6.57,13.13);  \node [right] at (6.57,13.13) {(2,4) $63.43^\circ$};
                                                 % \draw [->] (0,0) -- (2.68,5.37); \draw (0,0) -- (6.57,13.13);  \node [right] at (6.57,13.13) {(3,6) $63.43^\circ$};
-                                                \draw [->] (0,0) -- (2.23,5.57); \draw (0,0) -- (5.73,14.32);  \node [right] at (5.73,14.32) {(2,5) $68.2^\circ$};
-                                                \draw [->] (0,0) -- (1.9,5.69); \draw (0,0) -- (5.05,15.15);  \node [right] at (5.05,15.15) {(1,3) $71.57^\circ$};
+                                                \draw [magenta,->] (0,0) -- (2.23,5.57); \draw (2.23,5.57) -- (5.73,14.32);  \node [magenta,right] at (5.73,14.32) {(2,5) $68.2^\circ$, TikZ-magenta};
+                                                \draw [cyan,->] (0,0) -- (1.9,5.69); \draw (1.9,5.69) -- (5.05,15.15);  \node [cyan,right] at (5.05,15.15) {(1,3) $71.57^\circ$, TikZ-cyan};
                                                 % \draw [->] (0,0) -- (1.9,5.69); \draw (0,0) -- (5.05,15.15);  \node [right] at (5.05,15.15) {(2,6) $71.57^\circ$};
-                                                \draw [->] (0,0) -- (1.46,5.82); \draw (0,0) -- (4.05,16.2);  \node [right] at (4.05,16.2) {(1,4) $75.96^\circ$};
+                                                \draw [teal,->] (0,0) -- (1.46,5.82); \draw (1.46,5.82) -- (4.05,16.2);  \node [teal,right] at (4.05,16.2) {(1,4) $75.96^\circ$, TikZ-teal};
                                                 \draw [->] (0,0) -- (1.18,5.88); \draw (0,0) -- (3.36,16.82);  \node [right] at (3.36,16.82) {(1,5) $78.69^\circ$};
                                                 \draw [->] (0,0) -- (0.99,5.92); \draw (0,0) -- (2.87,17.23);  \node [right] at (2.87,17.23) {(1,6) $80.54^\circ$};
                                         \end{tikzpicture}]]>
                                 </latex-image-code>
                                 </image>
                         </figure>
-                        </assemblage>
 
                         </introduction>
 
@@ -1144,7 +1152,7 @@
                 <introduction>
                 <aside><title>Section referenced by</title>
                 <p>
-                <xref ref="d-NewtonInertial" text="title">non-inertial reference frames</xref>,
+                <xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>
                 <xref ref="connect-Fma" text="title"><m>F=ma</m></xref>
                 </p>
                 </aside>
@@ -1156,13 +1164,18 @@
                 <todo>Decide if the [notation] goes (xref ref="d-acc" text="type-global" /) or in (xref ref="intro-acc" text="type-global" /)</todo>
                 <aside><title>Paragraph referenced by</title>
                         <p>
-                        <xref ref="d-objectinmotion" text="title">objects in motion</xref>,
+                        <xref ref="d-objectinmotion" text="global">Clarification of Newton's laws</xref>
                         <xref ref="d-atrestinmotion" text="title">Newton's First Law</xref>
                         </p>
                 </aside>
                 <p xml:id="d-motion">Description of <q>moving</q> as <em>moving at constant velocity</em>. </p>
 
-                <aside><title>Paragraph referenced by</title> <p><xref ref="s-forcewords" text="type-global" /></p></aside>
+                <aside><title>Paragraph referenced by</title>
+                        <p>
+                        <xref ref="s-forcewords" text="type-global" />,
+                        <xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>
+                        </p>
+                </aside>
                 <p xml:id="d-acc">The technical term <term>acceleration</term> means <em>changing the velocity</em>, which refers to <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>).
 			<notation>
 				<usage>\mathrm{acceleration}</usage>
@@ -1590,17 +1603,23 @@
                         <usage>\mathrm{force}</usage>
                         <description>refers to the general idea of pushing or pulling; every force is enacted <term>by</term> one person or object and is acted <term>on</term> another.</description>
                 </notation>
-                refers to the general idea of pushing or pulling.  In the same way that physicists use the technical word <xref ref="d-acc" text="title">acceleration</xref> differently than the general population uses the colloquial word, force has a specific meaning.  We will use <em>force as a noun</em><idx><h>force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling; it is necessarily a vector (having a specific direction and a specific magnitude or strength) and has specific relationships that will be outlined in this chapter.</p>
+                refers to the general idea of pushing or pulling.  In the same way that physicists use the technical word <xref ref="d-acc" text="title">acceleration</xref> differently than the general population uses the colloquial word, force has a specific meaning.  We will use <em>force as a noun</em><idx><h>force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling and having specific relationships that will be outlined in this chapter.</p>
+                <paragraphs  xml:id="d-pushvector"><title></title>
+                <proposition><title>Looking Back</title>
+                        <p>Forces are necessarily <xref ref="def-vector" text="title">vectors</xref>, because pushing on something intrinsically involves both an amount and a direction.</p>
+                </proposition>
+                <p>You will use this property to show that multiple people pushing in the same direction increases the effect, whereas multiple people pushing in opposite directions reduces the effect.  One might say that people who push an object in opposite directions work<fn>After you study <xref ref="s-work" text="type-global" />, this play on words will be hilarious!</fn> against each other.  Because the force is a vector, whenever you are answering a question about a force, you should always expect to give the strength of the force (the <xref ref="def-magnitude" text="title">magnitude</xref>) and <xref ref="def-direction" text="title">the direction</xref> of the force (relative to some specific axis, usually the positive <m>x</m>-axis).</p>
+                </paragraphs>
 
                 <insight>
-                <p>You can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.
-                Forces are <em>necessarily</em> an interaction<idx>interaction</idx><idx><h>force</h><h>interaction</h></idx> between two objects.</p>
+                        <p>You can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.
+                        Forces are <em>necessarily</em> an interaction<idx>interaction</idx><idx><h>force</h><h>interaction</h></idx> between two objects.</p>
                 </insight>
-                        <remark><title>Push or Pull</title>
-                        <p>By now you may have noticed that it is tedious to keep saying <q>pushed or pulled,</q> so I will only say <q>push</q> even when I am including the possibility of <q>pushing or pulling</q>.</p>
-                        </remark>
+                <remark><title>Push or Pull</title>
+                        <p>By now you may have noticed that it is tedious to keep saying <q>pushed or pulled,</q> so we will only say <q>push</q> even when we are including the possibility of <q>pushing or pulling</q>.</p>
+                </remark>
 
-        <p>Sometimes we care about the thing doing the pushing or pulling, sometimes we don't.  We always care about the thing being pushed or pulled.  We will <em>distinguish these objects</em> by referring to the object that is pushing as the object <q>causing the force</q> or <q>exerting the force</q> and by referring to the object that is being pushed as the object <q>feeling the force</q>.  We will <em>distinguish these forces</em> as follows:</p>
+                <p>Sometimes we care about the thing doing the pushing or pulling, sometimes we don't.  We always care about the thing being pushed or pulled.  We will <em>distinguish these objects</em> by referring to the object that is pushing as the object <q>causing the force</q> or <q>exerting the force</q> and by referring to the object that is being pushed as the object <q>feeling the force</q>.  We will <em>distinguish these forces</em> as follows:</p>
                 <aside><title>Convention referenced by</title> <p><xref ref="ex-braced" text="type-global" /></p></aside>
                 <convention xml:id="d-interaction">
                 <p>Let's imagine that \studentB<idx><h sortby="\studentB">\studentB</h></idx> gives \studentA<idx><h sortby="\studentA">\studentA</h></idx> a good-natured shove in the arm.  The following are useful descriptions and are different ways of describing the same action.
@@ -1617,19 +1636,15 @@
                         </description>
                 </notation>
                 The notation for this will be <m>F_{A,B}</m> where the first subscript is the person who felt the force (who the force is <q>on</q>) and the second subscript is who exerted the force (who the force is <q>by</q>).  In those instances when we only care about who is feeling the force and not who is exerting the force, we might just use one subscript <m>F_A</m>.  </p>
-        <p>In some cases, there may be two forces acting on one person (or object).  In that case, it will be obvious who is feeling the force and we will use the subscript to distinguish which force it is, such as <m>F_1</m> or <m>F_2</m>, rather than who feels the force.
-        This will be more relevant when we discuss in <xref ref="c-forcetype" text="type-global"/> the types of forces that might be applied.</p>
+                <p>In some cases, there may be two forces acting on one person (or object).  In that case, it will be obvious who is feeling the force and we will use the subscript to distinguish which force it is <em>in addition to</em> who feels the force, such as <m>F_{A1}</m> and <m>F_{A2}</m>, or <em>rather than</em> who feels the force, such as <m>F_1</m> and <m>F_2</m>.
+                This will be more relevant when we discuss in <xref ref="c-forcetype" text="type-global"/> the types of forces that might be applied.</p>
                 </convention>
 
-	<biographical><title>Touchstone</title><p>Recall the distinction between <xref ref="s-law" text="title">theories and laws</xref>.</p></biographical>
-        <proposition xml:id="d-Newtonahead"><title>Looking Ahead</title>
-                <p>Looking ahead to Newton's Laws<idx><h>laws</h><h>Newton</h></idx> (<xref ref="s-Newton" text="type-hybrid" />), you should be ready to notice that the first law (<xref ref="ss-NI" text="type-hybrid" />) is about objects that are not feeling a force, the second law (<xref ref="ss-NII" text="type-hybrid" />) is about a specific object that is feeling a force, and the third law (<xref ref="ss-NIII" text="type-hybrid" />) is about the interaction between the two objects.  In all three of these, we care about the object feeling the force.   It is only in the third law that we care about the object exerting the force.</p>
+                <biographical><title>Touchstone</title><p>Recall the distinction between <xref ref="s-law" text="title">theories and laws</xref>.</p></biographical>
+                <proposition xml:id="d-Newtonahead"><title>Looking Ahead</title>
+                        <p>Looking ahead to Newton's Laws<idx><h>laws</h><h>Newton</h></idx> (<xref ref="s-Newton" text="type-hybrid" />), you should be ready to notice that the first law (<xref ref="ss-NI" text="type-hybrid" />) is about objects that are not feeling a force, the second law (<xref ref="ss-NII" text="type-hybrid" />) is about a specific object that is feeling a force, and the third law (<xref ref="ss-NIII" text="type-hybrid" />) is about the interaction between the two objects.  In all three of these, we care about the object feeling the force.   It is only in the third law that we care about the object exerting the force.</p>
                 </proposition>
 
-        <proposition xml:id="d-pushvector"><title>Looking Back</title>
-                <p>Forces are <xref ref="def-vector" text="title">vectors</xref>: Pushing on something intrinsically involves a direction.</p>
-        </proposition>
-                <p>You will use this property to show that multiple people pushing in the same direction increases the effect, whereas multiple people pushing in opposite directions reduces the effect.  One might say that people who push an object in opposite directions work<fn>After you study <xref ref="s-work" text="type-global" />, this play on words will be hilarious!</fn> against each other.  Because the force is a vector, whenever you are answering a question about a force, you should always expect to give the strength of the force (the <xref ref="def-magnitude" text="title">magnitude</xref>) and <xref ref="def-direction" text="title">the direction</xref> of the force (relative to some specific axis, usually the positive <m>x</m>-axis).</p>
         </section>
 
         <section xml:id="s-Newton"><title>Connecting the Concepts: Newton's Laws</title>
@@ -1644,18 +1659,30 @@
                 <li><p> What happens <em>to an object</em> when I do push on it?</p></li>
                 <li><p> What happens <em>to me</em> when I push on an object?</p></li>
         </ol>
-        The answer to these questions have a precise, concise, technical language and the point of the next three subsections is to translate that into (modern) English, into math, and into intuition.  The statement of these laws has slightly different versions in different texts to emphasize different points.  We will state them as follows<idx><h>Newton</h><h>laws</h></idx><idx><h>laws</h><h>Newton</h></idx>:
+        The answers to these questions have precise, concise, technical language and the point of the next three subsections is to translate that into (modern) English, into math, and into intuition.  The statement of these laws has slightly different versions in different texts to emphasize different points.  We will state them as follows<idx><h>Newton</h><h>laws</h></idx><idx><h>laws</h><h>Newton</h></idx>:
         <ol>
                 <li><p>When viewed from an inertial reference frame, an object with no forces acting on it will maintain its velocity, which may be zero.</p></li>
                 <li><p> When viewed from an inertial reference frame, the vector-sum of all forces acting on an object will cause that object to accelerate in proportion to its mass: <m>\vec F_\mathrm{net} = m \vec a</m>.</p></li>
                 <li><p> For every force acting (the <q>action</q>) on one object by an other object, there is an equal-in-magnitude reaction-force acting on the other object in the opposite direction.</p></li>
         </ol></p>
 
-        <p xml:id="d-NewtonInertial">There are a few terms that should be clarified in these laws.  Being in an inertial <xref ref="def-referenceframe" text="title">reference frame</xref><idx><h>reference frames</h><h>inertial</h></idx> essentially means being in a place in which you do not have to hold on in order to maintain your position.  If you are <xref ref="d-acc" text="title">accelerating</xref> then you are not in an inertial reference frame, but rather are in a non-inertial reference frame.  In this case, you will misinterpret the forces acting.  This will be discussed in more detail in <xref ref="s-noninertial" text="type-global" /> when we discuss centripetal force and in <xref ref="ss-coriolis" text="type-global" /> when we discuss the Coriolis effect.</p>
+        <p>There are a few terms that should be clarified in these laws.</p>
+        <remark xml:id="d-NewtonInertial"><title>Inertial Reference Frame</title>
+                <p>Being in an inertial <xref ref="def-referenceframe" text="title">reference frame</xref><idx><h>reference frames</h><h>inertial</h></idx> essentially means being in a place in which you do not have to hold on in order to maintain your position.</p>
+                <p>If you are <xref ref="d-acc" text="title">accelerating</xref> then you are not in an inertial reference frame, but rather are in a non-inertial reference frame.  In this case, you will misinterpret the forces acting.  This will be discussed in more detail in <xref ref="s-noninertial" text="type-global" /> when we discuss the surface of the Earth as a non-inertial rotating reference frame.  The fact that the Earth spins will be relevant for global-sized systems, such as the atmosphere and the ocean (discussed in <xref ref="ss-coriolis" text="type-global" /> with the Coriolis effect).</p>
+                <p>For human-sized interactions, the effect of the Earth spinning is small enough that for most of what we <xref ref="d-casual" text="title">casually observe</xref>, we can safely pretend that the Earth is stationary and that we are actually at rest while sitting on the curb watching the world go by.  This is so true that our human brains already interpret everything around us as though it were an inertial reference frame.  This psychological perspective is exactly the feature that both allows us to make fairly reliable predictions about the world around us <em>and</em> causes us to make incorrect judgements when we encounter human-sized non-inertial reference frames.  That is to say, as long as we don't measure our world too closely, we are viewing it from an essentially inertial reference frame.  This point is so implicit, that many books do not even include<fn xml:id="f-Newtoninclude">Newton himself did not include it in his original statement.</fn>
+                the portion of the statement referring to the reference frame.</p>
+                <aside><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></aside>
+                <todo>check the implications of this footnote.</todo>
+        </remark>
 
-        <p xml:id="d-objectinmotion">Sometimes Newton's first law is written<fn xml:id="fn-NI">A common statement of this is: An object in motion remains in motion and an object at rest remains at rest unless an external force is applied.  This <em>feels clumsy</em> and the statement used in this text is meant to emphasize that <q>in uniform motion</q> and <q>at rest</q> are both inertial-states.</fn> to include the phrase <q>an object in motion</q>, which I will be careful to link directly to <xref ref="d-motion" text="title">velocity</xref>, as was done above.  However, it technically should reference the momentum, which is discussed in <xref ref="c-momentum" text="type-global" />.</p>
+        <remark xml:id="d-objectinmotion"><title>Objects in motion</title>
+                <p>Sometimes Newton's first law is written<fn xml:id="fn-NI">A common statement of this is: An object in motion remains in motion and an object at rest remains at rest unless an external force is applied.  This <em>feels clumsy</em> and the statement used in this text is meant to emphasize that <q>in uniform motion</q> and <q>at rest</q> are both inertial-states.</fn> to include the phrase <q>an object in motion</q>, which I will be careful to link directly to <xref ref="d-motion" text="title">velocity</xref>, as was done above.  However, it technically should reference the momentum, which is discussed in <xref ref="c-momentum" text="type-global" />.</p>
+        </remark>
 
-        <p>The way Newton's third law is often written<fn xml:id="fn-NIII">A common statement of this is: For every action there is an equal and opposite reaction.  This leaves open some interpretation that tends to cause confusion among some students. The statement used in this text is meant to emphasize that the <q>action</q> and <q>reaction</q> are specifically forces and that the reaction-force is specifically not on the same object as the action-force.</fn> (and referred to) includes the words <q>action</q> and <q>reaction</q>.  Newton was referring to forces with these words and to keep it clear in our discussion, we will use the word force, with the occasional clarification of the action-force or the reaction-force.</p>
+        <remark xml:id="d-action-reaction"><title>Action<backslash />Reaction</title>
+                <p>The way Newton's third law is often written<fn xml:id="fn-NIII">A common statement of this is: For every action there is an equal and opposite reaction.  This leaves open some interpretation that tends to cause confusion among some students. The statement used in this text is meant to emphasize that the <q>action</q> and <q>reaction</q> are specifically forces and that the reaction-force is specifically not on the same object as the action-force.</fn> (and referred to) includes the words <q>action</q> and <q>reaction</q>.  Newton was referring to forces with these words and to keep it clear in our discussion, we will use the word force, with the occasional clarification of the action-force or the reaction-force.</p>
+        </remark>
 
         </introduction>
 
@@ -1669,12 +1696,10 @@
                 <aside><title>Touchstone</title><p>You might also recall the discussion in <xref ref="ss-noninertial" text="type-global" />.</p></aside>
 
                 <p>Let's take this apart and connect it to your daily experiences.</p>
-                <proposition><title>Looking Ahead</title>
-                <p>Looking ahead, we will discuss the surface of the Earth as a <xref ref="d-noninertial" text="title">non-inertial rotating reference frame</xref>; however, the effect is small enough that for most of what we <xref ref="d-casual" text="title">casually observe</xref>, we can safely pretend that the Earth is stationary and that we are actually at rest while sitting on the curb watching the world go by.  This is so true that our human brains already interpret everything around us as though it were an inertial reference frame.  This psychological perspective is exactly the feature that both allows us to make fairly reliable predictions about the world around us <em>and</em> causes us to make incorrect judgements when we encounter non-inertial reference frames.  That is to say, as long as we don't measure our world too closely, we are viewing it from an essentially inertial reference frame.  This point is so implicit, that many books do not even include<fn xml:id="f-Newtoninclude">Newton himself did not include it in his original statement.</fn>
-                the portion of the statement referring to the reference frame.</p>
-                <aside><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></aside>
-                <todo>check the implications of this footnote.</todo>
-                </proposition>
+
+                <p>As indicated in <xref ref="d-NewtonInertial" text="type-global" />, it is usually safe to assume you are in an inertial reference frame for your daily experience.  So, at this point we won't worry about the words before the comma.</p>
+
+                <p>DISCUSS at rest no force.  and the intuition that goes with force not causing motion.</p>
 
                 <p xml:id="d-atrestinmotion">The rest of this statement is often written a little differently (and less concisely) as <q>an object at rest remains at rest unless acted on by an external force and an object in motion remains in motion unless acted on by an external force.</q>  Since being <xref ref="d-atrest" text="title"><q>at rest</q></xref> is a statement about the velocity<m>(\vec v=0)</m> and being <xref ref="d-motion" text="title"><q>in motion</q></xref> is also a statement about the velocity, each of these statements can be understood as saying that </p>
                 <insight><p>Forces are those things that cause a change in the velocity.</p></insight>
@@ -4976,7 +5001,7 @@ Earth feels a force by \studentZ\ to the left.
         <introduction>
 <aside><title>Chapter referenced by</title>
         <p>
-        <xref ref="d-objectinmotion" text="title">objects in motion</xref>,
+        <xref ref="d-objectinmotion" text="global">Clarification of Newton's laws</xref>
         <xref ref="ss-NIII" text="type-global" />,
         <xref ref="A-chair6" text="type-global" />
         </p>
@@ -5088,6 +5113,12 @@ Earth feels a force by \studentZ\ to the left.
 
         </section>
 
+        <section><title>Moment of Inertia</title>
+
+        <p>In this <url href="https://www.sciencefriday.com/videos/spinning-eggs-in-space/">video of eggs in space</url> from 14 Oct, 2011 created by
+        <url href="https://www.sciencefriday.com/">Science Friday</url>, we can watch how the momentum of inertia affects the way fresh eggs spin differently than hard-boiled eggs.</p>
+
+        </section>
 
         <section><title>Angular Momentum</title>
 
@@ -5130,8 +5161,7 @@ Earth feels a force by \studentZ\ to the left.
         <aside><title>Section referenced by</title>
                 <p>
                 <xref ref="ss-noninertial" text="type-global" />,
-                <xref ref="d-NewtonInertial" text="title">non-inertial reference frames</xref>,
-                <xref ref="ss-NI" text="type-global" />
+                <xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>
                 </p>
         </aside>
                         <aside><title>Paragraph referenced by</title> <p><xref ref="ss-NII" text="type-global" /></p></aside>
@@ -5141,7 +5171,7 @@ Earth feels a force by \studentZ\ to the left.
                 <subsection xml:id="ss-coriolis"><title>The Coriolis Effect</title>
                 <aside><title>Subsection referenced by</title>
                         <p>
-                        <xref ref="d-NewtonInertial" text="title">non-inertial reference frames</xref>
+                        <xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>
                         </p>
                 </aside>
 
