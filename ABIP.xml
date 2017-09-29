@@ -3947,6 +3947,81 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
         </section>
+
+
+        <section xml:id="s-Ff"><title>Frictional Force</title>
+        <introduction>
+        <aside><title>Section referenced by</title>
+                <p>
+                <xref ref="A-chair2" text="type-global" />,
+                <xref ref="A-chair6" text="type-global" />,
+                <xref ref="A-chair7" text="type-global" />,
+                <xref ref="A-fly-balls" text="type-global" />
+                </p>
+        </aside>
+        </introduction>
+
+                <subsection><title>sliding friction</title>
+                        <subsubsection><title>static friction</title>
+<p>.</p>
+                        </subsubsection>
+                        <subsubsection><title>kinetic friction</title>
+<p>.</p>
+                        </subsubsection>
+                </subsection>
+                <subsection><title>rolling friction</title>
+
+        <investigation xml:id="irl-poolfriction"><title>Rolling pool balls and friction</title>
+                <idx><h>pool</h><h>real life</h></idx>
+                <introduction>
+                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>Hit the cue-ball off of a bumper in the manner intended for
+                                <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">testing cushions</url>.
+                                Compare the strength of the hit to the distance travelled.</p>
+                                <p>How much is the total distance affected by the number of bumpers hit?  (<xref ref="A-N-bump" text="type-local"/>)
+                                Does it matter if you shoot along the length of the table versus the width of the table?   (<xref ref="A-len-wid" text="type-local"/>)
+                                Why does friction slow the ball down instead of just make it turn <m>v=\omega r</m> (no slip)   (<xref ref="A-slow" text="type-local"/>)
+                                </p>
+                        </statement>
+                        <answer xml:id="A-N-bump">
+                                <p>[Answer]</p>
+                        </answer>
+                        <answer xml:id="A-len-wid">
+                                <p>[Answer]</p>
+                        </answer>
+                        <answer xml:id="A-slow">
+                                <p>[Answer]</p>
+                        </answer>
+                </task>
+                <conclusion>
+                        <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
+                        <xref ref="irl-poolcushion" text="title">normal force</xref>,
+                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
+                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.
+                        </p>
+
+                        <sidebyside widths="50% 50%">
+                                <p></p>
+                                <tabular halign="right"><col width="100%" /><row><cell halign="right">
+                                        <p>Return to: <xref ref="d-bank-shot" text="title">pool</xref></p>
+                                </cell></row></tabular>
+                        </sidebyside>
+                </conclusion>
+        </investigation>
+                </subsection>
+
+                <subsection><title>Air Resistance</title>
+<p>.</p>
+                </subsection>
+
+        </section>
+
+
+
         <section xml:id="s-FT"><title>Tension</title>
         <idx><h>force</h><h>tension</h></idx>
 
@@ -3956,8 +4031,7 @@ Earth feels a force by \studentZ\ to the left.
         </aside>
                 <todo>add a link to (and the section itself) to a section on the modulus and stress/strain.</todo>
                 <todo>Maybe add an IRL about a house settling and the compression forces.  Loading a pick-up truck and watching the bed sag as weight is added.  Hammock as an example of adding weight and increasing the tension force.</todo>
-                <p>Where the <xref ref="s-FN" text="title">normal force</xref> is appropriate for pushing against surfaces,</p>
-                <insight><p>tension is the pulling force that is transmitted through materials such as cable, chain, or rope.</p></insight>
+                <insight><p>Where the <xref ref="s-FN" text="title">normal force</xref> is appropriate for pushing against surfaces, <term>tension</term> is the pulling force that is transmitted through materials such as cable, chain, or rope.</p></insight>
                 <p>Tension is closely related to the compression force experienced by support beams.  One can simplistically think of tension as pulling and compression as pushing on the intermediate object that transmits force between the objects at either end.<fn xml:id="fn-rope-compression">It doesn't usually make sense to talk about the compression of a rope or chain.</fn>
                 When engineers design the skeleton of bridges and buildings, one of the primary considerations is the tension and compression of the steel beams.  You can build your intuition by considering the <xref ref="irl-tension" text="type-global"/>.</p>
                 <todo>Still need to update the (xref ref="irl-tension" text="type-global"/).</todo>
@@ -4028,14 +4102,18 @@ Earth feels a force by \studentZ\ to the left.
                                 <statement>
                                         <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> hangs \hisD\ purse <m>(m=1.36\unit{kg})</m> on a hook.  How much tension is in the shoulder strap to keep it from falling?</p>
                                 </statement>
+                                <hint><p>Since the strap supports the purse, what does the strap support against?</p></hint>
+                                <hint><p>If we assume the purse is hanging peacefully, then it is not accelerating.  Is there an equation that relates forces to accelerations?</p></hint>
                                 <solution>
-                                        <p>The strap connects the hook to the purse.  We can consider the interaction between the hook and the strap or between the purse and the strap.  We will consider the latter since we don't know anything about the hook.  Considering the forces on the purse, we know that there is a downwards gravitational force of <m>\deq F_g = (1.36\unit{kg})(9.81\unitfrac{m}{s^2}) = \sig{13.3}{4}{N}</m> and that the net force must zero (because the purse is not accelerating). So, the strap must provide an upwards (tension) force.
+                                        <p>The strap connects the hook to the purse.  We can consider the interaction between the hook and the strap or between the purse and the strap.  We will consider the latter since we don't know anything about the hook.</p>
+                                        <p>Considering the forces on the purse, we know that there is a downwards gravitational force of <m>\deq F_g = (1.36\unit{kg})(9.81\unitfrac{m}{s^2}) = \sig{13.3}{4}{N}</m> and that the net force must zero (because the purse is not accelerating). So, the strap must provide an upwards (tension) force.
                                         <md>
                                         <mrow> \vec F_T + \vec F_g \amp = m \cancelto{0}{\vec a} </mrow>
                                         <mrow>\vec F_T + (-\sig{13.3}{4}{N} \jhat) \amp = 0\unit N </mrow>
                                         <mrow>\vec F_T \amp = +\sig{13.3}{4}{N} \jhat </mrow>
                                         </md>
-                                        This is the upwards force that the strap applies to the purse; however, the tension strap is doing two jobs: It is pulling up on the purse (as indicated above) <em>and</em> it is pulling down on the hook.</p>
+                                        This is the upwards force that the strap applies to the purse.</p>
+                                        <p><alert>Note:</alert> The tension strap is doing two jobs: It is pulling up on the purse (as indicated above) <em>and</em> it is pulling down on the hook.</p>
                                 </solution>
                         </example>
 
@@ -4056,7 +4134,7 @@ Earth feels a force by \studentZ\ to the left.
                         <assemblage>
                         <figure xml:id="f-immovable-surface">
                                 <caption>[Add caption]</caption>
-                                <image xml:id="i-immovable-surface">
+                                <image xml:id="i-immovable-surface" width="30%">
                                 <latex-image-code>
 \begin{picture}(35,80)
 \put(0,70){\line(1,0){25}}
@@ -4079,10 +4157,10 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p xml:id="d-rope-net">We can also consider the tension in a rope used to drag an object across the floor.  You may recall that in <xref ref="f-firstFBD" text="type-global" /> (and the updated version, <xref ref="f-firstFBDupdate" text="type-global" />) \studentB<idx><h sortby="\studentB">\studentB</h></idx> pulled a box across a sheet of ice.  It is possible that  \studentB\ was grabbing the object itself, but it is more likely that \heB\ was pulling on a rope that was attached to the object.  In that case, the tension in the rope was <m>4.0 \unit N</m>.  This tension is what pulled \studentB\ leftwards <em>and</em> what pulled the object rightwards.</p>
 
-                <p>We can further update this by considering the case where \studentB\ pulls the rope up at an angle.  In that case, some of the tension is used to drag the box and some is used to reduce the normal force.  In <xref ref="f-firstFBDangle" text="type-global" />, we will have \studentA\ continue to push with <m>5.0\unit{N}</m> horizontally and have \studentB\ pull with <m>4.0\unit{N}</m> at a <m>14^\circ</m> angle above the horizontal.  You should note that since the tension on the object is pulling up, helping the normal force, this allows the normal force (what a scale would read) to be a little smaller. You should also note that since the tension on \studentB\ is pulling down, counter-acting the normal force, this requires the normal force (what a scale would read) to be a little larger.</p>
+                <p>We can further update this by considering the case where \studentB\ pulls the rope up at an angle.  In that case, some of the tension is used to drag the box and some is used to reduce the normal force.  In <xref ref="f-firstFBDangle" text="type-global" />, we will have \studentA\ continue to push with <m>5.0\unit{N}</m> horizontally and have \studentB\ pull with <m>4.0\unit{N}</m> at a <m>14^\circ</m> angle above the horizontal.  You should note that since the tension on the object is pulling up, helping the normal force, this allows the normal force on the object (what a scale would read) to be a little smaller. You should also note that since the tension on \studentB\ is pulling down, counter-acting the normal force, this requires the normal force on \studentB\ (what a scale would read) to be a little larger.</p>
 
                 <example xml:id="f-firstFBDangle">
-                        <title>Pushing a box at an angle; A modification of (xref ref="f-firstFBDupdate" text="title" /).</title>
+                        <title>People pushing a box at an angle</title>
                         <idx><h>free-body diagrams</h><h>images</h></idx>
                         <p>Again, we can start by drawing a picture of the situation.  The description is the same as it was for <xref ref="f-firstFBDupdate" text="title" /> except that \studentB\ pulls at a slight angle upwards.  We will again need the gravitational force for \studentA<idx><h sortby="\studentA">\studentA</h></idx> (<xref ref="se-weightA" text="type-global" />) and \studentB<idx><h sortby="\studentB">\studentB</h></idx> (<xref ref="se-FNB" text="type-global" />).  As before, since nothing is accelerating up or down together, there must also be a normal force on each body.</p>
                         <figure xml:id="f1-firstFBDangle">
@@ -4296,7 +4374,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection><title>Pulleys</title>
 
-                <p>While the flexibility of ropes makes them inconvenient for pushing, their flexibility makes them <em>very useful</em> for changing the direction of the pull.  The mechanism for changing the direction is the pulley.  Furthermore, by allowing us to change the direction of the pull, we are also able to double, triple, or further improve the strength of the pull.  The term for this is <q>the mechanical advantage</q> of a pulley-system.</p>
+                <p>While the flexibility of ropes makes them inconvenient for pushing, their flexibility makes them <em>very useful</em> for changing the direction of the pull.  The mechanism for changing the direction is the pulley.  Furthermore, by allowing us to change the direction of the pull, we are also able to double, triple, or further improve the strength of the pull.  The term for this is <term>the mechanical advantage</term> of a pulley-system.</p>
 
                 <p>First we will consider three simple cases of redirecting the force.  In each of these cases, I will <xref ref="s-effective2" text="title">assume</xref> that the pulley and rope have no mass and that there is no friction in the turning of the pulley (assume it is trivially easy to spin).  If we do not make this assumption, then the problem gets significantly more complicated.</p><todo>add a reference to the section (problem?) where this is considered.</todo>
 
@@ -4341,7 +4419,7 @@ Earth feels a force by \studentZ\ to the left.
                         <solution>
                                 <p>Since the mass is in equilibrium, the net force is zero and the tension must balance the weight.  This tells us that the tension in the rope is <m>20 \unit N</m>.</p>
 
-                                <p>If the pulley were difficult to turn (had friction) that stickiness could help support the mass and the tension on \studentA's side might be less than <m>20\unit N</m>; but since we assumed the pulley to be frictionless, \studentA\ must provide the full <m>20\unit N</m> of tension to the rope.</p>
+                                <p>If the pulley were difficult to turn (had friction) that stickiness could help support the mass and the tension on \studentA's side might be less than <m>20\unit N</m>;<fn xml:id="fn-pulley-friction">There is no way (at this point in the conversation) to determine how much the stickiness of a pulley with friction would support.  This would be related to both the coefficient of friction between the pulley and its axis and the coefficient of friction between the rope and the pulley.</fn> but since we assumed the pulley to be frictionless, \studentA\ must provide the full <m>20\unit N</m> of tension to the rope.</p>
                         </solution>
                 </example>
 
@@ -4356,9 +4434,11 @@ Earth feels a force by \studentZ\ to the left.
 
                         <p>The answer to this depends on how complicated you want the answer to be (recall the discussion about effective theories in <xref ref="s-effective2" text="type-global" />).  Some reasonable answers are:
                         <ul>
-                        <li><p> If the rope (and the attachments) are static, then the net force on the rope must be zero even while it maintains the tension.  It is also possible that the rope is accelerating, in which case the net force on the rope while it transfers the forces between the objects at each end is whatever is necessary to produce the acceleration <m>\vec F_\mathrm{net} = m_\mathrm{rope} \vec a_\mathrm{rope}</m>.</p></li>
-                        <li><p> A different answer is to assume that the mass of the rope is small enough that whether it is in equilibrium or accelerating, it does not require a net force and it merely passes its tension through to the object at the other end.</p></li>
+                        <li><p> If the rope is static (whether massive or massless), then the net force on the rope must be zero even while it maintains the tension.  </p></li>
+                        <li><p> If the rope is accelerating (and massive), the net force on the rope while it transfers the forces between the objects at each end is whatever is necessary to produce the acceleration <m>\vec F_\mathrm{net} = m_\mathrm{rope} \vec a_\mathrm{rope}</m>. In English, you have to drag the rope as well as the sled to which it is attached.</p></li>
+                        <li><p> If we assume that the mass of the rope is small enough (<term>insignificant</term>) then whether it is in equilibrium or accelerating, it does not require a net force and it merely passes its tension through to the object at the other end.</p></li>
                         </ul>
+                        On the other hand, if the rope has mass, then the answer is a different interesting complication, which you can read about in <xref ref="sss-massive-rope" text="type-global" />.  In this case, the tension through the rope changes from one end to the other unless it is not supporting its own weight against gravity (which, unlike other forces, pulls on each portion of the rope) and is static (has no net force).
                         </p>
 
                         </subsubsection>
@@ -4372,19 +4452,186 @@ Earth feels a force by \studentZ\ to the left.
 
                         <example xml:id="ex-multiweight-tension"><title>Tension between masses hung in a chain</title>
                                 <statement>
-                                <aside><title>Referenced by</title> <p><xref ref="sss-multiple-mass"  text="type-global" /></p></aside>
-                                        <p>While preparing to hang some ornament on a tree, you chain them from a hook on the wall.  You hang ornament 1 from ornament 2 from ornament 3.  What is the tension in each subsequent string?</p>
+                                        <sidebyside widths="70% 30%">
+                                        <p>While preparing to hang some ornament on a tree, you chain them from a hook on the wall.  You hang ornament 3 <m>(m_3=30\unit g)</m> below ornament 2 <m>(m_2=20\unit g)</m>, which is below ornament 1 <m>(m_1=10\unit g)</m>.  What is the tension in each subsequent string?</p>
+                                        <image xml:id="i-chain-of-masses">
+                                                <latex-image-code>
+                                                \begin{tikzpicture}
+                                                        \draw [thick, gray] (0,45) -- (25,45);
+                                                        \draw [thick, gray] (5,45) -- (9,49);
+                                                        \draw [thick, gray] (10,45) -- (14,49);
+                                                        \draw [thick, gray] (15,45) -- (19,49);
+                                                        \draw [thick, gray] (20,45) -- (24,49);
+                                                        \draw (12.5,40) -- (12.5,45);     \node [right] at (15,42.5) {$F_{T1}$};
+                                                        \draw (12.5,25) -- (12.5,30);     \node [right] at (15,27.5) {$F_{T2}$};
+                                                        \draw (12.5,10) -- (12.5,15);     \node [right] at (15,12.5) {$F_{T3}$};
+                                                        % Is there an easier way to draw a box???
+                                                        \draw (7.5,30) -- (17.5,30) -- (17.5,40) -- (7.5,40) -- (7.5,30);     \node [above] at (12.5,30) {$m_1$};
+                                                        \draw (7.5,15) -- (17.5,15) -- (17.5,25) -- (7.5,25) -- (7.5,15);     \node [above] at (12.5,15) {$m_2$};
+                                                        \draw (7.5,0) -- (17.5,0) -- (17.5,10) -- (7.5,10) -- (7.5,0);          \node [above] at (12.5,0) {$m_3$};
+                                                \end{tikzpicture}
+                                                </latex-image-code>
+                                        </image>
+                                        </sidebyside>
                                 </statement>
+                                <hint><p>The tension in the bottom rope only supports the mass beneath it.</p></hint>
+                                <hint><p>The tension in the upper ropes supports the mass beneath it <em>and</em> whatever it has to carry.</p></hint>
                                 <solution>
-                                        <p>The first thing we should do is notice what information is given to us and make sure that everything is in consistent units.  I will convert everything to <xref ref="ss-convertunits" text="title">SI units</xref>.</p>
+                                        <p>The first thing we should do is notice what information is given to us and make sure that everything is in consistent units.  I will convert everything to <xref ref="ss-convertunits" text="title">SI units</xref> and find the weight of each mass:
+                                        <md>
+                                        <mrow> F_{g1} &amp; = m_1 g &amp; = (0.010 \unit{kg})(9.81\unitfrac{m}{s^2}) &amp; = 0.0\sig{98}{1}{N}</mrow>
+                                        <mrow> F_{g2} &amp; = m_2 g &amp; = (0.020 \unit{kg})(9.81\unitfrac{m}{s^2}) &amp; = 0.\sig{19}{6}{N}</mrow>
+                                        <mrow> F_{g3} &amp; = m_3 g &amp; = (0.030 \unit{kg})(9.81\unitfrac{m}{s^2}) &amp; = 0.\sig{29}{4}{N}</mrow>
+                                        </md>
+                                        The free-body diagrams show that the bottom mass is the easiest to manage.  We should begin there.
+                                        </p>
+                                        <sidebyside widths="70% 30%">
+                                        <image xml:id="i-chain-of-masses-FBD">
+                                                <latex-image-code>
+                                                \begin{tikzpicture}
+                                                        \draw (7.5,30) -- (17.5,30) -- (17.5,40) -- (7.5,40) -- (7.5,30);          \node [above] at (12.5,30) {$m_3$};
+                                                        \draw [->] (12.5,30) -- (12.5,0);       \node [left] at (12.5,15) {$F_{g3}$};
+                                                        \draw [->] (12.5,40) -- (12.5,70);     \node [right] at (12.5,55) {$F_{T3}$};
+                                                        \draw (7.5,110) -- (17.5,110) -- (17.5,120) -- (7.5,120) -- (7.5,110);     \node [above] at (12.5,110) {$m_2$};
+                                                        \draw [->] (10,110) -- (10,90);   \node [left] at (10,100) {$F_{g2}$};
+                                                        \draw [->] (15,110) -- (15,80);   \node [right] at (15,95) {$F_{T3}$};
+                                                        \draw [->] (12.5,120) -- (12.5,170);   \node [right] at (12.5,1450) {$F_{T2}$};
+                                                        \draw (7.5,230) -- (17.5,230) -- (17.5,240) -- (7.5,240) -- (7.5,230);     \node [above] at (12.5,230) {$m_1$};
+                                                        \draw [->] (10,230) -- (10,220);   \node [left] at (10,225) {$F_{g1}$};
+                                                        \draw [->] (15,230) -- (15,180);   \node [right] at (15,205) {$F_{T2}$};
+                                                        \draw [->] (12.5,240) -- (12.5,300);   \node [right] at (12.5,270) {$F_{T1}$};
+                                                \end{tikzpicture}
+                                                </latex-image-code>
+                                        </image>
+                                        <paragraphs>
+                                                <p>Starting at the <em>bottom</em> of the picture, we can use Newton's second law to find the tension <m>F_{T3}</m>.
+                                                <md>
+                                                <mrow> \vec F_{T3} &amp; + \vec F_{g3} = m_3 \cancelto{0}{\vec a_3} </mrow>
+                                                <mrow> \vec F_{T3} &amp; = -\vec F_{g3} </mrow>
+                                                <mrow> \vec F_{T3} &amp; = -(-0.\sig{29}{4}{N} \, \jhat) </mrow>
+                                                <mrow> \vec F_{T3} &amp; = 0.\sig{29}{4}{N} (+\jhat) </mrow>
+                                                </md>
+                                                Since <m>\vec F_{g3}</m> is down, we find that <m>F_{T3}</m> is upwards (as expected).
+                                                </p>
+                                                <p>When we then jump to <m>m_2</m>, we note that the tension <m>F_{T3}</m> pulls <m>m_2</m> downwards (even though it pulls <m>m_3</m> upwards), so we have to change the sign.  Once we do this, though, we can find <m>F_{T2}</m>.
+                                                <md>
+                                                <mrow> \vec F_{T2} &amp; + \vec F_{T3} + \vec F_{g2} = m_2 \cancelto{0}{\vec a_2} </mrow>
+                                                <mrow> \vec F_{T2} &amp; = - \vec F_{T3} - \vec F_{g2} </mrow>
+                                                <mrow> \vec F_{T2} &amp; = -(-0.\sig{29}{4}{N} \, \jhat) -(-0.\sig{19}{6}{N} \, \jhat) </mrow>
+                                                <mrow> \vec F_{T2} &amp; = 0.\sig{49}{0}{N} (+\jhat) </mrow>
+                                                </md>
+                                                Since both <m>\vec F_{g2}</m> and <m>\vec F_{T3}</m> are down, we find that <m>F_{T2}</m> is upwards (as expected). You should also note that <m>m_2</m> does not experience the <em>weight</em> of <m>m_3</m>, but rather the <em>tension</em> supporting that weight.  This is more obvious when we consider <m>m_1</m>.
+                                                </p>
+                                                <p>Now we jump to the <em>top</em> of the picture with <m>m_1</m> and note that the tension <m>F_{T2}</m> pulls <m>m_1</m> downwards (even though it pulls <m>m_2</m> upwards), so we have to change the sign.  Once we do this, though, we can find <m>F_{T1}</m>.
+                                                <md>
+                                                <mrow> \vec F_{T1} &amp; + \vec F_{T2} + \vec F_{g1} = m_1 \cancelto{0}{\vec a_1} </mrow>
+                                                <mrow> \vec F_{T1} &amp; = - \vec F_{T2} - \vec F_{g1} </mrow>
+                                                <mrow> \vec F_{T1} &amp; = -(-0.\sig{49}{0}{N} \, \jhat) -(-0.0\sig{98}{1}{N} \, \jhat) </mrow>
+                                                <mrow> \vec F_{T1} &amp; = 0.\sig{58}{8}{N} (+\jhat) </mrow>
+                                                </md>
+                                                Since both <m>\vec F_{g1}</m> and <m>\vec F_{T2}</m> are down, we find that <m>F_{T1}</m> is upwards (as expected). You should also note that <m>m_1</m> does not experience the <em>weight</em> of the other masses, but rather experiences the <em>tension</em> supporting that weight.
+                                                </p>
+                                                <p>You might also note that <m>F_{T1}</m> pulls the ceiling downwards with a force of <m>0.\sig{58}{8}{N} (-\jhat)</m>.</p>
+                                        </paragraphs>
+                                        </sidebyside>
                                 </solution>
                         </example>
 
-                        <p><xref ref="ex-multidrag-tension" text="type-global" /> considers the case of dragging multiple masses, which extends the ideas of <xref ref="ss-tension-drag" text="type-hybrid"/>.</p>
+                        <p><xref ref="ex-multidrag-tension" text="type-global" /> considers the case of dragging multiple masses, which extends the ideas of <xref ref="ss-tension-drag" text="type-hybrid"/>.  Since we have not yet introduced friction, we will assume this is a frictionless surface.  We will update this example in <xref ref="s-Ff" text="type-global" /> with <xref ref="ex-multidrag-friction" text="type-global" />.</p>
 
                         <example xml:id="ex-multidrag-tension"><title>Tension in a caravan</title>
                                 <statement>
-                                <aside><title>Referenced by</title> <p><xref ref="sss-multiple-mass"  text="type-global" /></p></aside>
+                                        <todo>YOU ARE HERE. Finish this example</todo>
+                                        <p>When \studentB\ was a child in Norway, \heB\ was pulled through the woods in a sled by \hisB\ parent, \studentF.  \studentB's sled <m>(m_B=50.0\unit{kg})</m> was also tied to a sled on which \hisB\ dog sat.  The dog's sled <m>(m_d=30.0\unit{kg})</m> was then connected to a sled with provisions for the day <m>(m_p=10.0\unit{kg})</m>.  As they start their journey, the entire system is accelerated at <m>a=0.215\unitfrac{m}{s^2}</m>.</p>
+                                        <p>Draw the free-body diagram (check against <xref ref="A-multidrag-tension-FBD" text="type-local" />) and find the tension in each string?</p>
+                                        <image xml:id="i-caravan-of-masses">
+                                                <latex-image-code>
+                                                \begin{tikzpicture}
+                                                        \draw [thick, gray] (0,0) -- (150,0);
+                                                        \draw [thick, gray] (8,0) -- (12,-4);
+                                                        \draw [thick, gray] (18,0) -- (22,-4);
+                                                        \draw [thick, gray] (28,0) -- (32,-4);
+                                                        \draw [thick, gray] (38,0) -- (42,-4);
+                                                        \draw [thick, gray] (48,0) -- (52,-4);
+                                                        \draw [thick, gray] (58,0) -- (62,-4);
+                                                        \draw [thick, gray] (68,0) -- (72,-4);
+                                                        \draw [thick, gray] (78,0) -- (82,-4);
+                                                        \draw [thick, gray] (88,0) -- (92,-4);
+                                                        \draw [thick, gray] (98,0) -- (102,-4);
+                                                        \draw [thick, gray] (108,0) -- (112,-4);
+                                                        \draw [thick, gray] (118,0) -- (122,-4);
+                                                        \draw [thick, gray] (128,0) -- (132,-4);
+                                                        \draw [thick, gray] (138,0) -- (142,-4);
+                                                        % Is there an easier way to draw a box???
+                                                        % \studentF
+                                                        \draw (130,1) -- (145,1) -- (145,41) -- (130,41) -- (130,1);     \node [above] at (137.5,14) {$m_F$};
+                                                        % \studentB with sled
+                                                        \draw (90,3) -- (100,3) -- (100,23) -- (90,23) -- (90,3);       \node [above] at (95,10) {$m_B$};
+                                                        \draw (85,3) arc [radius=2, start angle=-90, end angle=90];
+                                                        \draw (85,1) -- (105,1) ;
+                                                        \draw (105,3) arc [radius=2, start angle=90, end angle=270];
+                                                        % dog and sled
+                                                        \draw (55,3) -- (65,3) -- (65,18) -- (55,18) -- (55,3);          \node [above] at (60,8) {$m_d$};
+                                                        \draw (50,3) arc [radius=2, start angle=-90, end angle=90];
+                                                        \draw (50,1) -- (70,1) ;
+                                                        \draw (70,3) arc [radius=2, start angle=90, end angle=270];
+                                                        % provisions and sled
+                                                        \draw (15,3) -- (25,3) -- (25,13) -- (15,13) -- (15,3);          \node [above] at (20,6) {$m_p$};
+                                                        \draw (10,3) arc [radius=2, start angle=-90, end angle=90];
+                                                        \draw (10,1) -- (30,1) ;
+                                                        \draw (30,3) arc [radius=2, start angle=90, end angle=270];
+                                                        % ropes
+                                                        \draw (32,3) -- (48,3);     \node [above] at (40,3) {$F_{T3}$};
+                                                        \draw (72,3) -- (83,3);     \node [above] at (77.5,3) {$F_{T2}$};
+                                                        \draw (107,3) -- (130,21.5);     \node [above left] at (118.5,12.25) {$F_{T1}$};
+                                                \end{tikzpicture}
+                                                </latex-image-code>
+                                        </image>
+                                </statement>
+                                <hint><p>If friction were pulling against the motion, then the vertical normal and gravitational forces would be necessary.  </p></hint>
+                                <answer xml:id="A-multidrag-tension-FBD">
+                                        <p>The free-body diagrams for this example are:</p>
+                                        <image xml:id="i-caravan-of-masses-FBD">
+                                                <latex-image-code>
+                                                \begin{tikzpicture}
+                                                        % Is there an easier way to draw a box???
+                                                        % \studentF
+                                                        % \draw (130,1) -- (145,1) -- (145,41) -- (130,41) -- (130,1);     \node [above] at (137.5,14) {$m_F$};
+                                                        % \draw [->, -latex] (136.5,21) -- (116.5,6);     \node [above] at (116.5,6) {$F_{T1}$};
+                                                        % \draw [->, -latex] (138.5,21) -- (178.5,21);     \node [above] at (178.5,21) {$F_{f}$};
+                                                        % \draw [->, -latex] (137.5,22) -- (137.5,72);     \node [right] at (178.5,21) {$F_{NF}$};
+                                                        % \draw [->, -latex] (137.5,20) -- (137.5,-30);     \node [right] at (178.5,21) {$F_{gF}$};
+                                                        % \studentB with sled
+                                                        \draw (90,3) -- (100,3) -- (100,23) -- (90,23) -- (90,3);       \node [above] at (95,10) {$m_B$};
+                                                        \draw [->, -latex] (94,13) -- (85,13);     \node [right above] at (85,13) {$F_{T2}$};
+                                                        \draw [->, -latex] (96,13) -- (116,13);     \node [left above] at (116,13) {$F_{T1}$};
+                                                        \draw [->, -latex] (95,14) -- (95,59);     \node [right] at (95,59) {$F_{NB}$};
+                                                        \draw [->, -latex] (95,12) -- (95,-33);     \node [right] at (95,-33) {$F_{gB}$};
+                                                        % dog and sled
+                                                        \draw (55,3) -- (65,3) -- (65,18) -- (55,18) -- (55,3);          \node [above] at (60,8) {$m_d$};
+                                                        \draw [->, -latex] (59,10.5) -- (54,10.5);     \node [right above] at (85,13) {$F_{T3}$};
+                                                        \draw [->, -latex] (61,10.5) -- (71,10.5);     \node [left above] at (116,13) {$F_{T2}$};
+                                                        \draw [->, -latex] (60,11.5) -- (60,51.5);     \node [right] at (95,59) {$F_{Nd}$};
+                                                        \draw [->, -latex] (60,9.5) -- (60,-30.5);     \node [right] at (95,-33) {$F_{gd}$};
+                                                        % provisions and sled
+                                                        \draw (15,3) -- (25,3) -- (25,13) -- (15,13) -- (15,3);          \node [above] at (20,6) {$m_p$};
+                                                        \draw [->, -latex] (21,8) -- (26,8);     \node [left above] at (26,8) {$F_{T3}$};
+                                                        \draw [->, -latex] (20,9) -- (20,44);     \node [right] at (20,44) {$F_{Np}$};
+                                                        \draw [->, -latex] (20,7) -- (20,-28);     \node [right] at (20,-28) {$F_{gp}$};
+                                                \end{tikzpicture}
+                                                </latex-image-code>
+                                        </image>
+                                </answer>
+                                <solution>
+                                        <p>The first thing we should do is draw the free-body diagrams.  These are given in <xref ref="A-multidrag-tension-FBD" text="type-local" />.  If there were friction, then we would </p>
+                                </solution>
+                        </example>
+
+                        <p>You should note that these examples are essentially expressing the same idea in two different contexts.</p>
+
+                        <p>We can now update <xref ref="ex-multidrag-tension" text="type-global" />.</p>
+                        <example xml:id="ex-multidrag-friction"><title>Tension in a caravan with friction</title>
+                                <statement>
                                         <p>While pulling a sled on which your son sits, your son's sled is tied to a sled on which your dog sits.  Your dog's sled is then connected to a sled with provisions for the day.  What is the tension in each subsequent string?</p>
                                 </statement>
                                 <solution>
@@ -4392,11 +4639,17 @@ Earth feels a force by \studentZ\ to the left.
                                 </solution>
                         </example>
 
-                        <p>You should note that these examples are essentially expressing the same idea in two different contexts.</p>
+                        </subsubsection>
+
+                        <subsubsection xml:id="sss-massive-rope"><title>Ropes with Mass</title>
+
+                        <p>If a rope has mass, then it can be thought of as a series of tiny pieces of mass hung by tiny massless strings.</p>
 
                         </subsubsection>
 
                         <subsubsection xml:id="sss-Atwood"><title>Atwood's Machine</title>
+
+                        <p>Note <url href="https://en.wikipedia.org/wiki/Atwood_machine" />. <q> invented in 1784 by the English mathematician George Atwood as a laboratory experiment to verify the mechanical laws of motion with constant acceleration. Atwood's machine is a common classroom demonstration used to illustrate principles of classical mechanics.</q></p>
 
                         <example xml:id="ex-atwood-acc"><title>The acceleration of masses on Atwood's Machine</title>
                                 <statement>
@@ -4405,9 +4658,9 @@ Earth feels a force by \studentZ\ to the left.
                                                 <p>The two crates in the figure (p. 114) hang over a pulley (in what is called an <q>Atwood's machine</q>).  I will select <m>m_1=35\unit{kg}</m> (because it looks smaller) and <m>m_2=85\unit{kg}</m> (because it looks bigger).  We will assume that the pulley is massless and frictionless (so that the tension is the same throughout the rope).  Find the acceleration and the time it takes <m>m_2</m> to accelerate down for the <m>12\unit m</m> to the floor.</p>
 
                                                 <figure xml:id="f-atwood-acc">
-                                                        <caption>Masses hung over Atwood's Machine</caption>
+                                                        <caption>Masses hung from a rope draped over Atwood's Machine</caption>
                                                         <image xml:id="i-atwood-acc">
-                                                        <description>Masses hung over Atwood's Machine</description>
+                                                        <description>Masses hung from a rope draped over Atwood's Machine</description>
                                                         <latex-image-code>
 \begin{picture}(100,150)(0,-50)
 \put(31,80){\oval(36,36)[t]}
@@ -4608,76 +4861,6 @@ Earth feels a force by \studentZ\ to the left.
                         <p>See <xref ref="sss-tea" text="type-global"/> for a comment on the contribution to hot versus cold spoon noises.</p>
 
                         </subsubsection>
-                </subsection>
-
-        </section>
-        <section xml:id="s-Ff"><title>Frictional Force</title>
-        <introduction>
-        <aside><title>Section referenced by</title>
-                <p>
-                <xref ref="A-chair2" text="type-global" />,
-                <xref ref="A-chair6" text="type-global" />,
-                <xref ref="A-chair7" text="type-global" />,
-                <xref ref="A-fly-balls" text="type-global" />
-                </p>
-        </aside>
-        </introduction>
-
-                <subsection><title>sliding friction</title>
-                        <subsubsection><title>static friction</title>
-<p>.</p>
-                        </subsubsection>
-                        <subsubsection><title>kinetic friction</title>
-<p>.</p>
-                        </subsubsection>
-                </subsection>
-                <subsection><title>rolling friction</title>
-
-        <investigation xml:id="irl-poolfriction"><title>Rolling pool balls and friction</title>
-                <idx><h>pool</h><h>real life</h></idx>
-                <introduction>
-                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
-                </introduction>
-                <task>
-                        <statement>
-                                <p>Hit the cue-ball off of a bumper in the manner intended for
-                                <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">testing cushions</url>.
-                                Compare the strength of the hit to the distance travelled.</p>
-                                <p>How much is the total distance affected by the number of bumpers hit?  (<xref ref="A-N-bump" text="type-local"/>)
-                                Does it matter if you shoot along the length of the table versus the width of the table?   (<xref ref="A-len-wid" text="type-local"/>)
-                                Why does friction slow the ball down instead of just make it turn <m>v=\omega r</m> (no slip)   (<xref ref="A-slow" text="type-local"/>)
-                                </p>
-                        </statement>
-                        <answer xml:id="A-N-bump">
-                                <p>[Answer]</p>
-                        </answer>
-                        <answer xml:id="A-len-wid">
-                                <p>[Answer]</p>
-                        </answer>
-                        <answer xml:id="A-slow">
-                                <p>[Answer]</p>
-                        </answer>
-                </task>
-                <conclusion>
-                        <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
-                        <xref ref="irl-poolcushion" text="title">normal force</xref>,
-                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
-                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
-                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.
-                        </p>
-
-                        <sidebyside widths="50% 50%">
-                                <p></p>
-                                <tabular halign="right"><col width="100%" /><row><cell halign="right">
-                                        <p>Return to: <xref ref="d-bank-shot" text="title">pool</xref></p>
-                                </cell></row></tabular>
-                        </sidebyside>
-                </conclusion>
-        </investigation>
-                </subsection>
-
-                <subsection><title>Air Resistance</title>
-<p>.</p>
                 </subsection>
 
         </section>
@@ -6052,6 +6235,7 @@ Earth feels a force by \studentZ\ to the left.
                 </ul></p></li>
                 <li><p> In <xref ref="se-FNB" text="type-global" />, \studentB\ has a normal force supporting \himB.  (This touches <xref ref="A-floor" text="type-global" />, <xref ref="A-second" text="type-global" />, and <xref ref="A-third" text="type-global" />.)</p></li>
                 <li><p> At some point, \studentB\ has a party, because in <xref ref="ex-baking" text="type-global" />, \studentA\ decides to bake some bread for a party at \studentB's house.</p></li>
+                <li><p>According to <xref ref="se-gworld" text="type-global" />, \studentB's parents are \sudentE\ and \studentF.  They have lived in Norway, where \studentB\ grew up, and visited both Puerto Rico and Mount Everest.</p></li>
         </ul>
         </p>
 <!--        <idx></idx>{\studentB|)} % end page-range
@@ -6084,7 +6268,7 @@ Earth feels a force by \studentZ\ to the left.
 
 <!--        <idx></idx>{\studentE|(} % Begin page-range
 -->
-<p>.</p>
+        <p>According to <xref ref="se-gworld" text="type-global" />, \studentE\ is the father of \studentB.  They have lived in Norway, where \studentB\ grew up, and visited both Puerto Rico and Mount Everest.</p>
 <!--        <idx></idx>{\studentE|)} % end page-range
 -->
         </section>
@@ -6095,7 +6279,7 @@ Earth feels a force by \studentZ\ to the left.
 
 <!--        <idx></idx>{\studentF|(} % Begin page-range
 -->
-<p>.</p>
+        <p>According to <xref ref="se-gworld" text="type-global" />, \studentF\ is the mother of \studentB.  They have lived in Norway, where \studentB\ grew up, and visited both Puerto Rico and Mount Everest.</p>
 <!--        <idx></idx>{\studentF|)} % end page-range
 -->
         </section>

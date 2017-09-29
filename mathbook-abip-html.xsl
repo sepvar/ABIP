@@ -21,5 +21,6 @@
 <xsl:param name="numbering.equations.level" select="''" />
 <xsl:param name="numbering.maximum.level" select="''" />
 -->
+<xsl:param name="html.css.file"   select="'mathbook-5.css'" />
 
 </xsl:stylesheet>
