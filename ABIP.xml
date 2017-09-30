@@ -1080,7 +1080,7 @@
         concepts are motion, force, and energy.  I have found that if a student can understand these ideas sufficiently well, then they can
         quickly pick up any other idea that we introduce, even if the idea seems initially unfamiliar. </p>
 
-        <p>The trio of topics in this part of the book are fundamental and powerful concepts<fn xml:id="f-FPC">The idea of Fundamental and Powerful Concepts (F&amp;PC) is taken from Dr. Gerald Nosich, <em>Learning to Think Things Through</em>, Prentice Hall, 2012.</fn>.  These are fundamental in that most other topics in physics are built upon them.  They are powerful in that if they are well-understood, then one is empowered to use them to understand and develop an intuition for nearly any other topic that is experienced.  It has been my experience that with these topics, students can jump into a surprisingly wide variety of other, significantly more esoteric, topics and develop a reasonable grasp of the key concepts.  Furthermore, the development of understanding of these ideas introduce the language and thought processes of being a professional physicist such that it nicely bridges the language barrier that might otherwise exist due to the jargon of physics.</p>
+        <p>The trio of topics in this part of the book are fundamental and powerful concepts<fn xml:id="f-FPC">The idea of Fundamental and Powerful Concepts (F<ampersand />PC) is taken from Dr. Gerald Nosich, <em>Learning to Think Things Through</em>, Prentice Hall, 2012.</fn>.  These are fundamental in that most other topics in physics are built upon them.  They are powerful in that if they are well-understood, then one is empowered to use them to understand and develop an intuition for nearly any other topic that is experienced.  It has been my experience that with these topics, students can jump into a surprisingly wide variety of other, significantly more esoteric, topics and develop a reasonable grasp of the key concepts.  Furthermore, the development of understanding of these ideas introduce the language and thought processes of being a professional physicist such that it nicely bridges the language barrier that might otherwise exist due to the jargon of physics.</p>
         </introduction>
 </part>
 
@@ -1804,7 +1804,7 @@
                         <url href="http://www.bipm.org/jsp/en/ListCGPMResolution.jsp?CGPM=9">the 9th CGPM</url> (Mar, 2017).</fn>
                         to name the unit the Newton, such that</p>
                         <definition>
-                                <statement><p>The unit of Newton is defined to be the amount of force necessary to accelerate one kilogram by 1 meter-per-second-squared:
+                                <statement><p>The <term>unit of Newton</term> is defined to be the amount of force necessary to accelerate one kilogram by 1 meter-per-second-squared:
                                         <m>1 \unit{N} = 1 \unitfrac{kg \cdot m}{s^2}</m>
                                 <notation>
                                         <usage>1 \unit{N} = 1 \unitfrac{kg \cdot m}{s^2}</usage>
@@ -2266,7 +2266,7 @@
                         	<usage>\text{equilibrium}</usage>
                         	<description>An object in equilibrium has <m>\vec F_\mathrm{net} = 0\unit N</m> and <m>\vec a =0</m>.</description>
                         </notation>
-                        <statement><p>An object in equilibrium has <m>\vec F_\mathrm{net} = 0\unit N</m> and <m>\vec a =0</m>.</p></statement>
+                        <statement><p>An object in <term>equilibrium</term> has <m>\vec F_\mathrm{net} = 0\unit N</m> and <m>\vec a =0</m>.</p></statement>
                         </definition>
 
                 </subsubsection>
@@ -3193,7 +3193,7 @@ Earth feels a force by \studentZ\ to the left.
                 	<usage>\text{weight}</usage>
                 	<description><m>\mathbf{F_g \equiv mg}</m></description>
                 </notation>
-                <statement><p>The weight of an object is computed as its mass times the acceleration due to gravity, even when the object is not actually accelerating at that rate:  <m>\mathbf{F_g \equiv mg}</m>.</p></statement>
+                <statement><p>The <term>weight</term> of an object is computed as its mass times the acceleration due to gravity, even when the object is not actually accelerating at that rate:  <m>\mathbf{F_g \equiv mg}</m>.</p></statement>
                 </definition>
 
                 </introduction>
@@ -3459,7 +3459,7 @@ Earth feels a force by \studentZ\ to the left.
                                         This figure modifies <xref ref="f-firstFBD" text="type-global" /> by allowing for the gravitational and the normal forces.
                                 </caption>
                                 <sbsgroup widths="30% 30% 30%">
-                                <sidebyside>
+                                <sidebyside valigns="middle middle middle">
                                         <image xml:id="i-firstFBDupdate-FBD1">
                                         <description>\studentA</description>
                                         <latex-image-code>

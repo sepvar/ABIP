@@ -18,8 +18,9 @@ ABIP.xml.peep: ABIP.sed ABIP.xml
 html: ABIP.xml.peep ${BEE}/user/mathbook-abip-html.xsl ABIP.xml
 	xsltproc -stringparam html.css.file mathbook-5.css ${BEE}/user/mathbook-abip-html.xsl ABIP.xml && cp ABIP.xml.peep ABIP.xml || cp ABIP.xml.peep ABIP.xml 
 
-latex: ABIP.xml.peep ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml
-	xsltproc ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml && cp ABIP.xml.peep ABIP.xml || cp ABIP.xml.peep ABIP.xml
+latex: ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml
+	xsltproc ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml 
+	sed -i.chap -f Connected.sed Connected.tex
 	echo "Use WindEdt to pdflatex"
 
 images: ABIP.xml
