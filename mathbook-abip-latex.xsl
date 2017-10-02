@@ -10,17 +10,17 @@
 <xsl:import href="../xsl/mathbook-latex.xsl" />
 
 <xsl:param name="latex.preamble.late">
-    <xsl:text>\setlength{\evensidemargin}{0in}</xsl:text>
-    <xsl:text>\setlength{\oddsidemargin}{-.15in}</xsl:text>
-    <xsl:text>\setlength{\textwidth}{6.6in}</xsl:text>
-    <xsl:text>\setlength{\marginparwidth}{.6in}</xsl:text>
-    <xsl:text>\setlength{\marginparsep}{.15in}</xsl:text>
+    <xsl:text>\setlength{\evensidemargin}{0in}&#xa;</xsl:text>
+    <xsl:text>\setlength{\oddsidemargin}{-.15in}&#xa;</xsl:text>
+    <xsl:text>\setlength{\textwidth}{6.6in}&#xa;</xsl:text>
+    <xsl:text>\setlength{\marginparwidth}{.6in}&#xa;</xsl:text>
+    <xsl:text>\setlength{\marginparsep}{.15in}&#xa;</xsl:text>
     
-    <xsl:text>\setlength{\topmargin}{-0.75in}</xsl:text>
-    <xsl:text>\setlength{\headheight}{0.1in}</xsl:text>
-    <xsl:text>\setlength{\headsep}{0.25in}</xsl:text>
-    <xsl:text>\setlength{\textheight}{9.2in}</xsl:text>
-    <xsl:text>\setlength{\footskip}{0.5in}</xsl:text>
+    <xsl:text>\setlength{\topmargin}{-0.75in}&#xa;</xsl:text>
+    <xsl:text>\setlength{\headheight}{0.1in}&#xa;</xsl:text>
+    <xsl:text>\setlength{\headsep}{0.25in}&#xa;</xsl:text>
+    <xsl:text>\setlength{\textheight}{9.2in}&#xa;</xsl:text>
+    <xsl:text>\setlength{\footskip}{0.5in}&#xa;</xsl:text>
 </xsl:param>
 
 </xsl:stylesheet>

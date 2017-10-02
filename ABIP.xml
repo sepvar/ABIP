@@ -23,6 +23,17 @@
         \newcommand{\KE}{\mbox{KE}}
         \newcommand{\PE}{\mbox{PE}}
         \newcommand{\E}{\mbox{E}}
+    
+        % make use of thmbox package
+        \newtheorem[S]{proposition}[theorem]{Connection}
+        \newtheorem[S]{insight}[theorem]{Insight}
+        \newtheorem[M]{remark}[theorem]{Clarification}
+        \newtheorem[M]{convention}[theorem]{Convention}
+        \newtheorem[L]{example}[theorem]{Example}
+        \newtheorem[L]{exercise}[theorem]{Exercise}
+        \newtheorem[L]{heuristic}[theorem]{Translation}
+        \newtheorem[L]{investigation}[theorem]{Investigation}
+        \newtheorem[L]{exploration}[theorem]{Exploration}
 
         \newcommand{\magdir}[7]{\begin{array}{lccl}
                 % x-comp, y-comp, mag label, mag, angle name, angle, angle-descriptor (North of East)
@@ -30,6 +41,16 @@
                 \text{Direction:} \amp \displaystyle #5 = \amp \displaystyle \tan^{-1}\left( \frac{#2}{#1} \right) \amp = \displaystyle #6 \mbox{#7}
                 \end{array}}
 
+\newcounter{piclen}
+\newcounter{picwid}
+\newcounter{boxlen}
+\newcounter{boxwid}
+\newcounter{FBDlen}
+\newcounter{FBDwid}
+\newcounter{centx}
+\newcounter{centy}
+\newcounter{lblx}
+\newcounter{lbly}
 \newcommand{\drawbox}[4]{% 1=x-location of box, 2=y-location of box, 3=x-size of box, 4=y-size of box
     \setcounter{boxlen}{#1}\addtocounter{boxlen}{#3}
     \setcounter{boxwid}{#2}\addtocounter{boxwid}{#4}
@@ -269,6 +290,7 @@
                 <package>xcolor</package>
                 <package>coordsys</package>
                 <package>cancel</package>
+                <package>thmbox</package>
         </latex-preamble>
 
         <cross-references text="global" />
@@ -939,7 +961,7 @@
 			<aside><title>Paragraph referenced by</title><p>Discussion of <xref ref="d-pushvector" text="title">the direction of forces</xref></p></aside>
                         <p xml:id="def-direction">definition of direction (of a vector); how it gets expressed as an angle measured from a given reference point (usually the <m>+x</m>-axis).</p>
 
-			<aside><title>Paragraph referenced by</title><p>Discussion of <xref ref="d-pushvector" text="title">the direction of forces</xref></p></aside>
+			<aside><title>Paragraph referenced by</title><p>Discussion of <xref ref="p-pushvector" text="title">the direction of forces</xref></p></aside>
                         <p xml:id="def-vector">definition of vector</p>
 
                         </subsubsection>
@@ -1604,12 +1626,10 @@
                         <description>refers to the general idea of pushing or pulling; every force is enacted <term>by</term> one person or object and is acted <term>on</term> another.</description>
                 </notation>
                 refers to the general idea of pushing or pulling.  In the same way that physicists use the technical word <xref ref="d-acc" text="title">acceleration</xref> differently than the general population uses the colloquial word, force has a specific meaning.  We will use <em>force as a noun</em><idx><h>force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling and having specific relationships that will be outlined in this chapter.</p>
-                <paragraphs  xml:id="d-pushvector"><title></title>
-                <proposition><title>Looking Back</title>
+                <proposition xml:id="p-pushvector"><title>Looking Back</title>
                         <p>Forces are necessarily <xref ref="def-vector" text="title">vectors</xref>, because pushing on something intrinsically involves both an amount and a direction.</p>
                 </proposition>
-                <p>You will use this property to show that multiple people pushing in the same direction increases the effect, whereas multiple people pushing in opposite directions reduces the effect.  One might say that people who push an object in opposite directions work<fn>After you study <xref ref="s-work" text="type-global" />, this play on words will be hilarious!</fn> against each other.  Because the force is a vector, whenever you are answering a question about a force, you should always expect to give the strength of the force (the <xref ref="def-magnitude" text="title">magnitude</xref>) and <xref ref="def-direction" text="title">the direction</xref> of the force (relative to some specific axis, usually the positive <m>x</m>-axis).</p>
-                </paragraphs>
+                <p  xml:id="d-pushvector">You will use this property to show that multiple people pushing in the same direction increases the effect, whereas multiple people pushing in opposite directions reduces the effect.  One might say that people who push an object in opposite directions work<fn>After you study <xref ref="s-work" text="type-global" />, this play on words will be hilarious!</fn> against each other.  Because the force is a vector, whenever you are answering a question about a force, you should always expect to give the strength of the force (the <xref ref="def-magnitude" text="title">magnitude</xref>) and the <xref ref="def-direction" text="title">direction</xref> of the force (relative to some specific axis, usually the positive <m>x</m>-axis).</p>
 
                 <insight>
                         <p>You can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.
@@ -5633,7 +5653,7 @@ Earth feels a force by \studentZ\ to the left.
                 This means that, as was seen in <xref ref="se-gworld" text="type-global" />, your weight can change even when your mass remains the same.</p>
                 <todo>Reference a table of $g$ on other planets and compute the weight of a space craft at each planet.</todo>
 
-                <example xml:id="se-gplanets">
+                <example xml:id="se-gplanets"><title>Weight is not mass</title>
                         <statement>
                                 <p>In conversation with a visiting alien, \studentX<idx><h sortby="\studentX">\studentX</h></idx>, you find that \studentX\ has been to the moon and several planets both within and outside of our solar system.  In addition to the Earth, \studentX\ has visited our moon, Mars, Pluto, and Planet X.  Using <xref ref="t-gplanets" text="type-hybrid" />, compute \studentX's weight are each location, assuming \hisX\ mass is \massX.</p>
                         </statement>
