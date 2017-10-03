@@ -23,4 +23,22 @@
     <xsl:text>\setlength{\footskip}{0.5in}&#xa;</xsl:text>
 </xsl:param>
 
+
+<!--  -->
+<!-- PDF Watermarking                    -->
+<!-- Non-empty string makes it happen    -->
+<!-- Scale works well for "CONFIDENTIAL" -->
+<!-- or  for "DRAFT YYYY/MM/DD"          -->
+<!-- <xsl:param name="latex.watermark" select="''"/>
+    <xsl:param name="latex.watermark.scale" select="2.0"/>
+    -->
+
+<!--  -->
+<!-- Print Option                                         -->
+<!-- For a non-electronic copy, inactive links in black   -->
+<!-- Any color options go to black and white, as possible -->
+<!-- <xsl:param name="latex.print" select="'no'"/>
+    -->
+
+
 </xsl:stylesheet>

@@ -23,7 +23,7 @@
         \newcommand{\KE}{\mbox{KE}}
         \newcommand{\PE}{\mbox{PE}}
         \newcommand{\E}{\mbox{E}}
-    
+
         % make use of thmbox package
         \newtheorem[S]{proposition}[theorem]{Connection}
         \newtheorem[S]{insight}[theorem]{Insight}
@@ -1631,7 +1631,7 @@
                 </proposition>
                 <p  xml:id="d-pushvector">You will use this property to show that multiple people pushing in the same direction increases the effect, whereas multiple people pushing in opposite directions reduces the effect.  One might say that people who push an object in opposite directions work<fn>After you study <xref ref="s-work" text="type-global" />, this play on words will be hilarious!</fn> against each other.  Because the force is a vector, whenever you are answering a question about a force, you should always expect to give the strength of the force (the <xref ref="def-magnitude" text="title">magnitude</xref>) and the <xref ref="def-direction" text="title">direction</xref> of the force (relative to some specific axis, usually the positive <m>x</m>-axis).</p>
 
-                <insight>
+                <insight xml:id="insight-force-interaction">
                         <p>You can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.
                         Forces are <em>necessarily</em> an interaction<idx>interaction</idx><idx><h>force</h><h>interaction</h></idx> between two objects.</p>
                 </insight>
@@ -1672,6 +1672,7 @@
         <introduction>
 	<aside><title>Section referenced by</title> <p>Discussion of <xref ref="d-Newtonahead" text="title">how to describe forces</xref></p></aside>
 	<biographical><title>Touchstone</title><p>Recall the distinction between <xref ref="s-law" text="title" />.</p></biographical>
+	<aside><title>Paragraph referenced by</title> <p><xref ref="ss-N-NIII" text="type-global" /></p></aside>
         <p xml:id="sum-NewtonsLaws">
         Newton's Laws describe our observations about three questions:
         <ol>
@@ -1679,13 +1680,14 @@
                 <li><p> What happens <em>to an object</em> when I do push on it?</p></li>
                 <li><p> What happens <em>to me</em> when I push on an object?</p></li>
         </ol>
-        The answers to these questions have precise, concise, technical language and the point of the next three subsections is to translate that into (modern) English, into math, and into intuition.  The statement of these laws has slightly different versions in different texts to emphasize different points.  We will state them as follows<idx><h>Newton</h><h>laws</h></idx><idx><h>laws</h><h>Newton</h></idx>:
-        <ol>
-                <li><p>When viewed from an inertial reference frame, an object with no forces acting on it will maintain its velocity, which may be zero.</p></li>
-                <li><p> When viewed from an inertial reference frame, the vector-sum of all forces acting on an object will cause that object to accelerate in proportion to its mass: <m>\vec F_\mathrm{net} = m \vec a</m>.</p></li>
-                <li><p> For every force acting (the <q>action</q>) on one object by an other object, there is an equal-in-magnitude reaction-force acting on the other object in the opposite direction.</p></li>
+        The answers to these questions have precise, concise, technical language and the point of the next three subsections is to translate that into (modern) English, into math, and into intuition.  The statement of these laws has slightly different versions in different texts to emphasize different points.  We will state them as follows<idx><h>Newton</h><h>laws</h></idx><idx><h>laws</h><h>Newton</h></idx>:</p>
+        <assemblage xml:id="as-Newton"><title>Newton's Laws</title>
+        <p><ol>
+                <li><p>When viewed from an inertial reference frame, an object with no forces acting on it will maintain its velocity, which may be zero.</p> <p>(Detailed in <xref ref="ss-NI" text="type-local" />.)</p></li>
+                <li><p> When viewed from an inertial reference frame, the vector-sum of all forces acting on an object will cause that object to accelerate in proportion to its mass: <m>\vec F_\mathrm{net} = m \vec a</m>.</p> <p>(Detailed in <xref ref="ss-NII" text="type-local" />.)</p></li>
+                <li><p> For every force acting (the <q>action</q>) on one object by an other object, there is an equal-in-magnitude reaction-force acting on the other object in the opposite direction.</p> <p>(Detailed in <xref ref="ss-NIII" text="type-local" />.)</p></li>
         </ol></p>
-
+        </assemblage>
         <p>There are a few terms that should be clarified in these laws.</p>
         <remark xml:id="d-NewtonInertial"><title>Inertial Reference Frame</title>
                 <p>Being in an inertial <xref ref="def-referenceframe" text="title">reference frame</xref><idx><h>reference frames</h><h>inertial</h></idx> essentially means being in a place in which you do not have to hold on in order to maintain your position.</p>
@@ -1700,7 +1702,7 @@
                 <p>Sometimes Newton's first law is written<fn xml:id="fn-NI">A common statement of this is: An object in motion remains in motion and an object at rest remains at rest unless an external force is applied.  This <em>feels clumsy</em> and the statement used in this text is meant to emphasize that <q>in uniform motion</q> and <q>at rest</q> are both inertial-states.</fn> to include the phrase <q>an object in motion</q>, which I will be careful to link directly to <xref ref="d-motion" text="title">velocity</xref>, as was done above.  However, it technically should reference the momentum, which is discussed in <xref ref="c-momentum" text="type-global" />.</p>
         </remark>
 
-        <remark xml:id="d-action-reaction"><title>Action<backslash />Reaction</title>
+        <remark xml:id="d-action-reaction"><title>Action / Reaction</title>
                 <p>The way Newton's third law is often written<fn xml:id="fn-NIII">A common statement of this is: For every action there is an equal and opposite reaction.  This leaves open some interpretation that tends to cause confusion among some students. The statement used in this text is meant to emphasize that the <q>action</q> and <q>reaction</q> are specifically forces and that the reaction-force is specifically not on the same object as the action-force.</fn> (and referred to) includes the words <q>action</q> and <q>reaction</q>.  Newton was referring to forces with these words and to keep it clear in our discussion, we will use the word force, with the occasional clarification of the action-force or the reaction-force.</p>
         </remark>
 
@@ -1715,11 +1717,9 @@
                 </assemblage>
                 <aside><title>Touchstone</title><p>You might also recall the discussion in <xref ref="ss-noninertial" text="type-global" />.</p></aside>
 
-                <p>Let's take this apart and connect it to your daily experiences.</p>
+                <p>Let's take this language apart and connect it to your daily experiences.</p>
 
                 <p>As indicated in <xref ref="d-NewtonInertial" text="type-global" />, it is usually safe to assume you are in an inertial reference frame for your daily experience.  So, at this point we won't worry about the words before the comma.</p>
-
-                <p>DISCUSS at rest no force.  and the intuition that goes with force not causing motion.</p>
 
                 <p xml:id="d-atrestinmotion">The rest of this statement is often written a little differently (and less concisely) as <q>an object at rest remains at rest unless acted on by an external force and an object in motion remains in motion unless acted on by an external force.</q>  Since being <xref ref="d-atrest" text="title"><q>at rest</q></xref> is a statement about the velocity<m>(\vec v=0)</m> and being <xref ref="d-motion" text="title"><q>in motion</q></xref> is also a statement about the velocity, each of these statements can be understood as saying that </p>
                 <insight><p>Forces are those things that cause a change in the velocity.</p></insight>
@@ -1727,6 +1727,19 @@
                 <proposition xml:id="fs-equilibrium"><title>Looking Ahead</title>
                 <p>In the discussion of equilibrium (<xref ref="sss-equilibrium" text="type-global" />), we will note that this is often extended to say that without a net force (as opposed to <q>without a force</q> as explained in <xref ref="sss-netforce" text="type-global" />) the velocity will not change, but that is a special case of Newton's second law (<xref ref="ss-NII" text="type-global" />).</p>
                 </proposition>
+
+                <p>Now that we have taken apart the language, let's connect it to our daily experience.  Our intuition screams at us that if an object is at rest, then we do not need to do anything to keep it from moving: Objects just do not spontaneously move.  This seems to be acceptable to most students of physics.  The interesting piece of the first law is that it says that this is also true of objects that are moving.  This seems to contradict many people's common sense.  Most of the objects that we set in motion do not maintain that motion, but instead slow down.  A clue to interesting physics is to think about when objects slow down and when they speed up without your help.  In order to connect the first law with your intuition, we need to carefully observe what actually happens.</p>
+                <investigation><title>Find a pattern</title>
+                        <task><statement><p>Make a list of situations in which a moving object slows down without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement>
+                                <hint><p><xref ref="irl-NI" text="type-global" /> might with this consideration.</p></hint>
+                        </task>
+                        <task><statement><p>Make a list of situations in which a moving object speeds up without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement>
+                                <hint><p><xref ref="IQ-holdbook" text="type-global" /> might with this consideration.</p></hint>
+                        </task>
+                        <task><statement><p>Make a list of situations in which a moving object maintains its motion without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement></task>
+                        <task><statement><p>Is there a pattern?</p></statement></task>
+                </investigation>
+                <p>If you slide a brick across an icy pond and compare that to sliding the same brick across a flat parking lot, to sliding that same brick across a gravel driveway, to sliding that brick across a grassy lawn, you will quickly see that the brick does not behave the same way.  The brick is <em>interacting</em> with the surface is moves along.  This is telling us (<xref ref="insight-force-interaction" text="type-local" />) that there is a force acting on the brick, changing the way it moves.  Newton's first law does not apply to the situation where there are forces acting on the object.  When forces act, we need to consider Newton's second law, which we will do in <xref ref="ss-NII" text="type-global" />.</p>
 
                 </introduction>
 
@@ -2453,7 +2466,7 @@
                                                 These are the free fbody diagrams for <xref ref="f1-firstFBD" text="type-local" />.
                                         </caption>
                                         <sbsgroup widths="30% 30% 30%">
-                                        <sidebyside>
+                                        <sidebyside valigns="middle middle middle">
                                                 <image xml:id="i-firstFBD-FBD1">
                                                 <description>\studentA</description>
                                                 <latex-image-code>
@@ -2664,7 +2677,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
         <aside><title>Referenced by</title> <p><xref ref="sss-NIItogether" text="type-global"/></p></aside>
 
         <p>Next, we can consider a simple interactive example that is intended to help you think about how you know a force is acting.</p>
-        <exploration xml:id="IQ-holdbook"><title>Drop a Book</title>
+        <investigation xml:id="IQ-holdbook"><title>Drop a Book</title>
                 <statement>
                 <p>You hold a book a little above your desk.  When you let go, it falls and then hits your desk.
                 <ol>
@@ -2699,7 +2712,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                 <answer xml:id="A-zero"><p>Recall the situation when you were holding the book.  Gravity is still pulling the book down and the desk is holding the book up.  There are two forces acting on the book while it is at rest on the desk. </p></answer>
                 <answer xml:id="A-one"><p>If there were only one force on the book, it could not be a balanced force, so the book could not be in equilibrium and the book would be accelerating.  The book is not accelerating, so there are either two forces (<xref ref="A-two" text="type-local" />) or no forces (<xref ref="A-zero" text="type-local" />). </p></answer>
                 <answer xml:id="A-two"><p>There are two forces acting on the book while it is at rest on the desk. Similar to the situation when you were holding the book, gravity is pulling the book down and the desk is holding the book up. </p></answer>
-        </exploration>
+        </investigation>
 
         <p xml:id="d-irlNI">Next, we can consider pushing an object across the floor in <xref ref="irl-NI" text="type-global" /> to get a different sense of observations we can make that help us recognize patterns that are due to forces we might not have thought to look for.</p>
 
@@ -2847,7 +2860,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                         \put(65,48){\scriptsize \studentC}
                                         \put(40,-15){\scriptsize Earth}
                                         \put(-40,24){\begin{minipage}{58pt}
-                                        \color{blue} \scriptsize \studentZ\ braces \himselfZ. \hfill <m>\searrow</m>
+                                        \color{blue} \scriptsize \studentZ\ braces \himselfZ. \hfill $\searrow$
                                         \end{minipage}}
                                         \end{picture}]]>
                                 </latex-image-code>
@@ -2974,7 +2987,7 @@ Earth feels a force by \studentZ\ to the left.
                                         \put(65,48){\scriptsize \studentC}
                                         \put(40,-15){\scriptsize Earth}
                                         \put(-40,24){\begin{minipage}{58pt}
-                                        \color{blue} \raggedright \scriptsize \studentD\ does not brace \himselfD. \\\hfill <m>\searrow</m>
+                                        \color{blue} \raggedright \scriptsize \studentD\ does not brace \himselfD. \\\hfill $\searrow$
                                         \end{minipage}}
                                         \end{picture}]]>
                                 </latex-image-code>
@@ -3453,7 +3466,7 @@ Earth feels a force by \studentZ\ to the left.
                 </p>
         </aside>
 
-                <p>The word <q>normal</q> <url href="http://etymonline.com/index.php?term=normal">originates</url><idx>normal</idx> with the idea of conformity to the pattern.  While in everyday life this the typical state of being, the origins actually refer to a carpenter's square, which put corners into a right angle.  In math and physics, the word is used to mean perpendicular.  </p>
+                <p>The word <q>normal</q> <url href="http://etymonline.com/index.php?term=normal">originates</url><idx>normal</idx> with the idea of conformity to the pattern.  While in everyday life this pattern is the typical state of being, the origins actually refer to a carpenter's square, which put corners into a right angle.  In math and physics, the word is used to mean perpendicular.  </p>
                 <insight><p>In the context of forces, the normal force is the force that a surface exerts to keep objects from passing through them.  The direction of this force is always in the outward direction, normal (perpendicular) to the surface.</p></insight>
 
                 <todo>Do we need to repeat the example here? no?</todo>
@@ -3914,17 +3927,25 @@ Earth feels a force by \studentZ\ to the left.
                                 <statement><p>With your hands, press down on \studentB's shoulders while \heB\ stands on the scale. Control the value read by the scale (HINT: <xref ref="Q-weight-gain" text="type-local" />).  Increase the reading by <m>20\unit{N}</m>, <m>30\unit{N}</m>, etc. Does \studentB's weight change? (<xref ref="A-weight-gain" text="type-global" />) Are you adding weight to the scale? (<xref ref="A-scale-increase" text="type-global" />)</p></statement>
                                 <solution xml:id="A-scale-increase">
                                 <todo>link the gravitational force</todo>
-                                <p>When you press down on \studentB's shoulders, you are not adding weight.  Weight has a specific definition: it is specifically the value that the gravitational force pulls on any object.  Pushing the person does not change their weight; it does, however, change the amount that they press into the Earth.  That is to say, it increases their downwards normal force, but not their weight. </p></solution>
+                                <p>When you press down on \studentB's shoulders, you are not adding weight.  Weight has a specific definition: it is specifically the value that the gravitational force pulls on any object.  Pushing the person does not change their weight; it does, however, change the amount that they press into the Earth.  That is to say, it increases their downwards normal force on the scale, but not their weight. </p></solution>
                         </task>
                         <task xml:id="Q-scale-decrease">
                                 <statement><p>Have \studentB\ lean on a nearby table or counter while \heB\ stands on the scale. Control the value read by the scale (HINT: <xref ref="Q-scale-increase" text="type-local" />).  Decrease the reading by <m>20\unit{N}</m>, <m>30\unit{N}</m>, etc. Does \studentB's weight change? (<xref ref="A-weight-gain" text="type-global" />) </p></statement>
+                                <solution xml:id="A-scale-decrease">
+                                <todo>link the gravitational force</todo>
+                                <p>When \studentB\ supports \himselfB\ on something other than the scale, \heB\ is not removing weight.  Weight has a specific definition: it is specifically the value that the gravitational force pulls on any object.  Supporting oneself elsewhere does not change ones weight; it does, however, change the amount that they press into the Earth.  That is to say, it decreases the downwards normal force on the scale, but not the weight. </p></solution>
+                        </task>
+                        <task xml:id="Q-scale-support">
+                                <statement><p>Find two bathroom scales and stand with one foot on each.  Lean one way and then another.  Explain what happens to the readings on the scale as you lean one way or the other.  Do you notice a pattern in the values that the scales read?</p></statement>
+                                <solution xml:id="A-scale-support">
+                                <p>The sum of the readings from the two scales should always add up to the total normal force needed to support your weight.</p></solution>
                         </task>
                         <task>
                                 <statement><p>Hold the scale against the wall and press into it. Control the value read by the scale (HINT: <xref ref="Q-scale-decrease" text="type-local" />).  Increase the reading by <m>20\unit{N}</m>, <m>30\unit{N}</m>, etc. What is the scale measuring? </p></statement>
                                 <solution xml:id="A-scale-measure"><p>Since your weight is a force pulling downwards, having the scale on the wall shows that the scale cannot be balancing weight.  Since you are pushing into the wall, you are exerting a normal force into the scale and the scale is exerting a normal force back at you.  Both of these forces are horizontal (assuming the wall is plumb).</p>
                                 <p> Another way to think about this is: If you can control the value read by the scale (such as against the wall) while at the same time not changing your actual mass, the scale cannot literally be measuring the weight of the object on the scale.</p></solution>
                         </task>
-                        <task>
+                        <task xml:id="task-scale-ramp">
                                 <statement><p>Imagine placing a scale on a ramp that can be laid flat or raised to any angle up to a vertical (making it a wall). Imagine standing on the scale on the ramp while it is lifted from horizontal (like a floor) to vertical (like a wall).  Does the scale always read the same value while it is raised to different angles?</p></statement>
                                 <solution xml:id="A-scale-ramp">
                                 <todo>link to the section on friction and ramps</todo>
@@ -3937,7 +3958,10 @@ Earth feels a force by \studentZ\ to the left.
                                 <sidebyside widths="50% 50%">
                                         <p></p>
                                         <tabular halign="right"><col width="100%" /><row><cell halign="right">
-                                                <p>Return to: <xref ref="ss-scales" text="type-global"/></p>
+                                                <p>Return to:
+                                                        <xref ref="ss-scales" text="type-global"/>,
+                                                        <xref ref="clarification-Ng-nopair" text="type-global" />
+                                                </p>
                                         </cell></row></tabular>
                                 </sidebyside>
                         </conclusion>
@@ -3952,10 +3976,18 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
 
-                <subsection>
+                <subsection xml:id="ss-N-NIII">
                         <title>The normal force and the third law</title>
 
-                <p>the third law</p>
+                <p><xref ref="sum-NewtonsLaws" text="title">Recall</xref> that the third law tells us about what happens to the object that is doing the pushing.  In <xref ref="f-firstFBDupdate" text="type-global" />, the gravitational and normal forces were included.  In the same way that <xref ref="f-firstFBD" text="type-global" /> explained the way the third law describes the sources of the horizontal forces on the object (by adding the people to <xref ref="se-netFadd" text="type-global" />), we can now consider the source of the vertical forces.  The gravitational forces pulling down on the people and the object are caused by the gravitational interaction with the Earth.  Since the Earth is pulling them down, the <xref ref="as-NIII" text="title">third law</xref> indicates that they must pull the Earth up <em>with a gravitational force</em>.</p>
+                <insight xml:id="insight-force-type"><title>Third-law pairs</title>
+                        <p>The action/reaction force pairs relevant to Newton's third law <em>must</em> be of the same type because it is the same interaction.</p>
+                </insight>
+                <p>Similarly, the normal forces that support the people and the object (against the gravitational force) are caused by the Earth's surface, which is keeping the people and objects from moving through that surface.  Since the Earth's surface is pushing them up, the third law indicates that they must push the Earth down <em>with a normal force</em> (keeping the Earth from moving through their feet).</p>
+                <remark xml:id="clarification-Ng-nopair"><title>Third-law pairs</title>
+                        <p>You should notice the language in the paragraph above.  While the normal force does act against the gravitational force (in this case), the normal force is not the third-law pair to the gravitational force.  If you keep <xref ref="task-scale-ramp" text="type-global" /> in mind, it should be obvious that the normal force does not necessarily balance the gravitational force.</p>
+                </remark>
+                <p>Since the source of both the gravitational and normal forces is the Earth, <xref ref="f-firstFBD-third" text="type-local" /> adds the free-body diagram of the Earth to this set of examples.</p>
 
                 <example xml:id="f-firstFBD-third">
                         <title>Using the second and third laws to find all forces acting</title>
@@ -4234,7 +4266,7 @@ Earth feels a force by \studentZ\ to the left.
                                         <ellipsis /> The forces on the object <em>have</em> changed.
                                         <ellipsis /> The forces on \studentB\ <em>have</em> changed.
                                 </caption>
-                                <sidebyside widths="30% 30% 30%">
+                                <sidebyside widths="30% 30% 30%" valigns="middle middle middle">
                                         <image xml:id="i-firstFBDangle-FBD1">
                                         <description>\studentA</description>
                                         <latex-image-code>

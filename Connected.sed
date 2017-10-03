@@ -20,3 +20,5 @@ s/part\[\(.*\)label{c/chapter\[\1label{c/g
 s/\\begin{insight}\[\]/\\begin{insight}/g
 s/\\begin{convention}\[\]/\\begin{convention}/g
 s/\\begin{remark}\[\]/\\begin{remark}/g
+#
+s/\\\@addtoreset{chapter}{part}/%\\\@addtoreset{chapter}{part}/g
