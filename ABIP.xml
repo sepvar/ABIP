@@ -1617,6 +1617,9 @@
 
 <chapter xml:id="c-force"><title>Force</title>
 
+        <introduction>
+                <p>Having learned <xref ref="c-motion" text="title">how to describe the way objects move</xref>, we now turn our attention to that which causes motion, although technically it causes motion to change.  In this chapter we will consider the concept of force and frame your attention.  In the <xref ref="c-forcetype" text="title">next chapter</xref> we will consider the specific types of force and how to solve specific problems.
+
         <section xml:id="s-forcewords"><title>How Physicists Use the Words (Notation)</title>
 
                 <aside><title>Section referenced by</title> <p>Discussion of <xref ref="d-heatverb" text="title">heat as a verb</xref></p></aside>
@@ -1626,6 +1629,9 @@
                         <description>refers to the general idea of pushing or pulling; every force is enacted <term>by</term> one person or object and is acted <term>on</term> another.</description>
                 </notation>
                 refers to the general idea of pushing or pulling.  In the same way that physicists use the technical word <xref ref="d-acc" text="title">acceleration</xref> differently than the general population uses the colloquial word, force has a specific meaning.  We will use <em>force as a noun</em><idx><h>force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling and having specific relationships that will be outlined in this chapter.</p>
+                <aside><title>Etymology</title>
+                        <p>We are using <url href="http://www.etymonline.com/word/force">force</url> in the sense of <url href="http://www.etymonline.com/word/compulsion">compulsion</url>, although perhaps you might connect it more closely with a <url href="http://www.etymonline.com/word/motive">motive</url>.</p>
+                </aside>
                 <proposition xml:id="p-pushvector"><title>Looking Back</title>
                         <p>Forces are necessarily <xref ref="def-vector" text="title">vectors</xref>, because pushing on something intrinsically involves both an amount and a direction.</p>
                 </proposition>
@@ -1850,7 +1856,10 @@
                 <subsubsection xml:id="sss-netforce"><title>Calculating the Net Force</title>
                 <aside><title>Subsubsection referenced by</title> <p>Discussion of <xref ref="fs-equilibrium" text="title">Newton's first law</xref></p></aside>
 
-                        <p>The word <q>net</q> that goes with force is here to indicate the total, which is useful to think of as <q>everything collected with the net.</q><fn xml:id="fn-net">Although according to <url href="http://www.etymonline.com/index.php?term=net&amp;allowed_in_frame=0">etymonline.com</url> (Mar, 2017), it is actually from the Old French <em>net</em> for <q>neat</q> or <q>clean</q>, having the sense of trim and elegant.</fn> The intention here is that wherever there are multiple forces acting on a single object, we must combine them as <xref ref="ss-vectors" text="title">vectors</xref> as follows: </p>
+                        <p>The word <q>net</q> that goes with force is here to indicate the total, which is useful to think of as <q>everything collected with the net.</q> The intention here is that wherever there are multiple forces acting on a single object, we must combine them as <xref ref="ss-vectors" text="title">vectors</xref> as follows: </p>
+                        <aside><title>Etymology</title>
+                                <p>Although thinking of net as <q>everything collected with the net</q> is useful, according to <url href="http://www.etymonline.com/word/net">etymonline.com</url> (Mar, 2017), it is actually from the Old French <em>net</em> for <q>neat</q> or <q>clean</q>, having the sense of trim and elegant.</p>
+                        </aside>
                         <todo>Maybe these should be sidebyside with the figure above the example?</todo>
                         <example xml:id="se-netFadd"><title>Net Force, Vector-Add Forces in the Same-Direction</title>
                                 <statement>
@@ -3466,7 +3475,10 @@ Earth feels a force by \studentZ\ to the left.
                 </p>
         </aside>
 
-                <p>The word <q>normal</q> <url href="http://etymonline.com/index.php?term=normal">originates</url><idx>normal</idx> with the idea of conformity to the pattern.  While in everyday life this pattern is the typical state of being, the origins actually refer to a carpenter's square, which put corners into a right angle.  In math and physics, the word is used to mean perpendicular.  </p>
+                <p>The word <q>normal</q> <url href="http://www.etymonline.com/word/normal">originates</url><idx>normal</idx> with the idea of conformity to the pattern.  While in everyday life this pattern is the typical state of being, the origins actually refer to a carpenter's square, which put corners into a right angle.  In math and physics, the word is used to mean perpendicular.</p>
+                <aside><title>Etymology</title>
+                        <p>See text.</p>
+                </aside>
                 <insight><p>In the context of forces, the normal force is the force that a surface exerts to keep objects from passing through them.  The direction of this force is always in the outward direction, normal (perpendicular) to the surface.</p></insight>
 
                 <todo>Do we need to repeat the example here? no?</todo>
@@ -4094,10 +4106,11 @@ Earth feels a force by \studentZ\ to the left.
                                 <p>We talk about tension and stress in our daily lives.  This is an analogy to the physical version of tension, stress, and strain.  While
                                 <url href="http://etymonline.com/index.php?allowed_in_frame=0&amp;search=stress">stress</url> and
                                 <url href="http://etymonline.com/index.php?search=strain&amp;searchmode=&amp;p=0&amp;allowed_in_frame=0">strain</url>
-                                come from the the concept of tightening,
+                                come from the concept of tightening,
                                 <url href="http://etymonline.com/index.php?allowed_in_frame=0&amp;search=tension">tension</url>
                                 comes from the concept of stretching.
                                 </p>
+                                <aside><title>Etymology</title><p>(See text.)</p></aside>
                         </introduction>
                         <task xml:id="Q-swing-tension">
                                 <statement><p>Sit on a swing. Notice the tightness of the support ropes/chains.

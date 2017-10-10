@@ -21,7 +21,10 @@ html: ABIP.xml.peep ${BEE}/user/mathbook-abip-html.xsl ABIP.xml
 latex: ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml
 	xsltproc ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml 
 	sed -i.chap -f Connected.sed Connected.tex
-	echo "Use WindEdt to pdflatex"
+	echo "'make pdf' or use WindEdt to pdflatex"
+
+pdf: latex
+	pdflatex Connected.tex
 
 images: ABIP.xml
 	${BEE}/script/mbx -v -c latex-image -f svg -d images ${AIY}/ABIP.xml
@@ -35,7 +38,7 @@ list: ABIP.xml
 		sed 's/^ *<image/<image/g' | \
 		grep '<image' | grep -v "images" | \
 		sed 's/ width=.*>/>/g' | \
-		sed 's+^.*xml:id=\"\(.*\)\">+ls images/\1.svg || C:/Users/tensen/Desktop/Book/mathbook/script/mbx \-v \-c latex-image \-r \1 \-f svg \-d images ${AIY}/ABIP.xml+g'
+		sed 's+^.*xml:id=\"\(.*\)\">+ls images/\1.svg || ${BEE}/script/mbx \-v \-c latex-image \-r \1 \-f svg \-d images ${AIY}/ABIP.xml+g'
 
 checkref: ABIP.xml
 	grep "</xref>" ABIP.xml | sed 's@.*\(\<xref .*\/xref\>\).*@\1@g' | grep -v "text=" | sort -k2
