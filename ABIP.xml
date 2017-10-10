@@ -1618,7 +1618,8 @@
 <chapter xml:id="c-force"><title>Force</title>
 
         <introduction>
-                <p>Having learned <xref ref="c-motion" text="title">how to describe the way objects move</xref>, we now turn our attention to that which causes motion, although technically it causes motion to change.  In this chapter we will consider the concept of force and frame your attention.  In the <xref ref="c-forcetype" text="title">next chapter</xref> we will consider the specific types of force and how to solve specific problems.
+                <p>Having learned <xref ref="c-motion" text="title">how to describe the way objects move</xref>, we now turn our attention to that which causes motion, although technically it causes motion to change.  In this chapter we will consider the concept of force and frame your attention.  In the <xref ref="c-forcetype" text="title">next chapter</xref> we will consider the specific types of force and how to solve specific problems.</p>
+        </introduction>
 
         <section xml:id="s-forcewords"><title>How Physicists Use the Words (Notation)</title>
 
@@ -1700,10 +1701,10 @@
                 <p>If you are <xref ref="d-acc" text="title">accelerating</xref> then you are not in an inertial reference frame, but rather are in a non-inertial reference frame.  In this case, you will misinterpret the forces acting.  This will be discussed in more detail in <xref ref="s-noninertial" text="type-global" /> when we discuss the surface of the Earth as a non-inertial rotating reference frame.  The fact that the Earth spins will be relevant for global-sized systems, such as the atmosphere and the ocean (discussed in <xref ref="ss-coriolis" text="type-global" /> with the Coriolis effect).</p>
                 <p>For human-sized interactions, the effect of the Earth spinning is small enough that for most of what we <xref ref="d-casual" text="title">casually observe</xref>, we can safely pretend that the Earth is stationary and that we are actually at rest while sitting on the curb watching the world go by.  This is so true that our human brains already interpret everything around us as though it were an inertial reference frame.  This psychological perspective is exactly the feature that both allows us to make fairly reliable predictions about the world around us <em>and</em> causes us to make incorrect judgements when we encounter human-sized non-inertial reference frames.  That is to say, as long as we don't measure our world too closely, we are viewing it from an essentially inertial reference frame.  This point is so implicit, that many books do not even include<fn xml:id="f-Newtoninclude">Newton himself did not include it in his original statement.</fn>
                 the portion of the statement referring to the reference frame.</p>
-                <aside><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></aside>
                 <todo>check the implications of this footnote.</todo>
         </remark>
-
+                <aside><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></aside>
+                
         <remark xml:id="d-objectinmotion"><title>Objects in motion</title>
                 <p>Sometimes Newton's first law is written<fn xml:id="fn-NI">A common statement of this is: An object in motion remains in motion and an object at rest remains at rest unless an external force is applied.  This <em>feels clumsy</em> and the statement used in this text is meant to emphasize that <q>in uniform motion</q> and <q>at rest</q> are both inertial-states.</fn> to include the phrase <q>an object in motion</q>, which I will be careful to link directly to <xref ref="d-motion" text="title">velocity</xref>, as was done above.  However, it technically should reference the momentum, which is discussed in <xref ref="c-momentum" text="type-global" />.</p>
         </remark>
@@ -4609,6 +4610,7 @@ Earth feels a force by \studentZ\ to the left.
                                         <todo>YOU ARE HERE. Finish this example</todo>
                                         <p>When \studentB\ was a child in Norway, \heB\ was pulled through the woods in a sled by \hisB\ parent, \studentF.  \studentB's sled <m>(m_B=50.0\unit{kg})</m> was also tied to a sled on which \hisB\ dog sat.  The dog's sled <m>(m_d=30.0\unit{kg})</m> was then connected to a sled with provisions for the day <m>(m_p=10.0\unit{kg})</m>.  As they start their journey, the entire system is accelerated at <m>a=0.215\unitfrac{m}{s^2}</m>.</p>
                                         <p>Draw the free-body diagram (check against <xref ref="A-multidrag-tension-FBD" text="type-local" />) and find the tension in each string?</p>
+                                        <sidebyside>
                                         <image xml:id="i-caravan-of-masses">
                                                 <latex-image-code>
                                                 \begin{tikzpicture}
@@ -4652,10 +4654,12 @@ Earth feels a force by \studentZ\ to the left.
                                                 \end{tikzpicture}
                                                 </latex-image-code>
                                         </image>
+                                        </sidebyside>
                                 </statement>
                                 <hint><p>If friction were pulling against the motion, then the vertical normal and gravitational forces would be necessary.  </p></hint>
                                 <answer xml:id="A-multidrag-tension-FBD">
                                         <p>The free-body diagrams for this example are:</p>
+                                        <sidebyside>
                                         <image xml:id="i-caravan-of-masses-FBD">
                                                 <latex-image-code>
                                                 \begin{tikzpicture}
@@ -4686,6 +4690,7 @@ Earth feels a force by \studentZ\ to the left.
                                                 \end{tikzpicture}
                                                 </latex-image-code>
                                         </image>
+                                        </sidebyside>
                                 </answer>
                                 <solution>
                                         <p>The first thing we should do is draw the free-body diagrams.  These are given in <xref ref="A-multidrag-tension-FBD" text="type-local" />.  If there were friction, then we would </p>
