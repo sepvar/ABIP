@@ -525,7 +525,7 @@
 
         <todo>Consider the ''casual to the obvious observer'' joke</todo>
         <p  xml:id="d-casual">[Discussion of <q>casual observer</q> as intuition versus <q>scientific observing</q> and mathematical modelling]</p>
-        <aside><title>Paragraph referenced by</title> <p><xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref></p></aside>
+        <aside><title>Paragraph referenced by</title> <p><xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>, discussion of <xref ref="p-multistep" text="title">simple piece of a complicated situation</xref></p></aside>
 
         <p>[Discussion of common student comment: <q>in physics class it is this way, but in <em>real life</em> it is that way.</q>]</p>
 
@@ -1288,7 +1288,7 @@
                 <mrow> v_f &amp; = v_i + a t                                        </mrow>
                 <mrow> v_f^2 &amp; = v_i^2 + 2 a \, \Delta x               </mrow>
         </md></p>
-        <aside><title>Paragraph referenced by</title> <p><xref ref="ex-ceiling" text="type-global" /></p></aside>
+        <aside><title>Paragraph referenced by</title> <p><xref ref="ex-ceiling" text="type-global" />, discussion of <xref ref="p-friction-herky-jerky" text="title">herky-jerky motion</xref></p></aside>
 
         </section>
 
@@ -1448,13 +1448,16 @@
 
                 </subsection>
 
-                <subsection><title>Multi-Step Solutions</title>
+                <subsection xml:id="ss-multistep"><title>Multi-Step Solutions</title>
                 <!--\new{v2.3}{new section, new example} -->
+                <aside><title>Section referenced by</title> <p>discussion of <xref ref="p-friction-herky-jerky" text="title">herky-jerky motion</xref></p></aside>
+
+                        <p xml:id="p-multistep">In physics we like to consider the simplest case that describes the relevant situation; however, these are often embedded in a more complicated situation and it is not always obvious to the <xref ref="d-casual" text="title">casual observer</xref>.  For example, if I throw a ball into the air, such as in <xref ref="ex-ceiling" text="type-local" />, then we need to consider the motion of the throw separately from the motion of the ball moving through the air and separately from the motion of catching the ball.  The general rule is that whenever the acceleration changes, we have to consider the motion separately.  We will learn later (<xref ref="ss-NII" text="type-global" />) that forces are related to acceleration, so for now, whenever you notice that different forces are acting on an object, then you should expect the acceleration to be different and, therefore, you should expect to break the problem into steps <em>during which</em> the forces (and acceleration) are constant and <em>between which</em> the forces (and acceleration) may change.</p>
 
                         <exercise xml:id="ex-ceiling">
                                 <title>\studentC\ hits the ceiling!</title>
                                 <statement>
-                                <aside><title>Exercise referenced by</title><p><xref ref="se-ceiling" text="type-global" />, <xref ref="se-throw-up" text="type-global" /></p></aside>
+                                <aside><title>Exercise referenced by</title><p><xref ref="se-ceiling" text="type-global" />, <xref ref="se-throw-up" text="type-global" />, discussion of <xref ref="p-friction-herky-jerky" text="title">herky-jerky motion</xref></p></aside>
                                         <p>\studentC<idx><h sortby="\studentC">\studentC</h></idx> gets bored one day in physics class<fn><ellipsis />as unlikely as that may seem to you<ellipsis /></fn> and tossed a baseball<m>(m_b = 0.145\unit{kg})</m> at the ceiling<ellipsis /> a little too hard.  The initial velocity is <m>v_i = +5.00\unitfrac ms \jhat</m> and it leaves \hisC\ hand <m>1.00\unit{m}</m> below the ceiling.  The ball hits the ceiling and when it returns to \hisC\ hand, it is travelling <m>\vec v_f=-4.73\unitfrac ms \jhat</m>, slower than \heC\ expected.
                                         <ol label="(a)">
                                                 <li xml:id="ex-ceiling-Qa"><p>Assuming that the ball is in contact with the ceiling for <m>\Delta t = 0.142\unit{s}</m>, find the acceleration of the ball during the collision.  <xref ref="ex-ceiling-Aa" text="type-global" /> </p></li>
@@ -1618,6 +1621,7 @@
 <chapter xml:id="c-force"><title>Force</title>
 
         <introduction>
+        <aside><title>Chapter referenced by</title> <p><xref ref="c-forcetype" text="type-global" /></p></aside>
                 <p>Having learned <xref ref="c-motion" text="title">how to describe the way objects move</xref>, we now turn our attention to that which causes motion, although technically it causes motion to change.  In this chapter we will consider the concept of force and frame your attention.  In the <xref ref="c-forcetype" text="title">next chapter</xref> we will consider the specific types of force and how to solve specific problems.</p>
         </introduction>
 
@@ -1704,7 +1708,7 @@
                 <todo>check the implications of this footnote.</todo>
         </remark>
                 <aside><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></aside>
-                
+
         <remark xml:id="d-objectinmotion"><title>Objects in motion</title>
                 <p>Sometimes Newton's first law is written<fn xml:id="fn-NI">A common statement of this is: An object in motion remains in motion and an object at rest remains at rest unless an external force is applied.  This <em>feels clumsy</em> and the statement used in this text is meant to emphasize that <q>in uniform motion</q> and <q>at rest</q> are both inertial-states.</fn> to include the phrase <q>an object in motion</q>, which I will be careful to link directly to <xref ref="d-motion" text="title">velocity</xref>, as was done above.  However, it technically should reference the momentum, which is discussed in <xref ref="c-momentum" text="type-global" />.</p>
         </remark>
@@ -1729,24 +1733,32 @@
                 <p>As indicated in <xref ref="d-NewtonInertial" text="type-global" />, it is usually safe to assume you are in an inertial reference frame for your daily experience.  So, at this point we won't worry about the words before the comma.</p>
 
                 <p xml:id="d-atrestinmotion">The rest of this statement is often written a little differently (and less concisely) as <q>an object at rest remains at rest unless acted on by an external force and an object in motion remains in motion unless acted on by an external force.</q>  Since being <xref ref="d-atrest" text="title"><q>at rest</q></xref> is a statement about the velocity<m>(\vec v=0)</m> and being <xref ref="d-motion" text="title"><q>in motion</q></xref> is also a statement about the velocity, each of these statements can be understood as saying that </p>
-                <insight><p>Forces are those things that cause a change in the velocity.</p></insight>
+                <insight>
+                        <p>Forces are those things that cause a change in the velocity.</p>
+                </insight>
                 <p>In other words, Newton's first law says that without a force, the velocity will not change.</p>
                 <proposition xml:id="fs-equilibrium"><title>Looking Ahead</title>
-                <p>In the discussion of equilibrium (<xref ref="sss-equilibrium" text="type-global" />), we will note that this is often extended to say that without a net force (as opposed to <q>without a force</q> as explained in <xref ref="sss-netforce" text="type-global" />) the velocity will not change, but that is a special case of Newton's second law (<xref ref="ss-NII" text="type-global" />).</p>
+                        <p>In the discussion of equilibrium (<xref ref="sss-equilibrium" text="type-global" />), we will note that this is often extended to say that without a net force (as opposed to <q>without a force</q> as explained in <xref ref="sss-netforce" text="type-global" />) the velocity will not change, but that is a special case of Newton's second law (<xref ref="ss-NII" text="type-global" />).</p>
                 </proposition>
 
+                <paragraphs xml:id="p-intuition-motion"><title>Building intuition</title>
+                <aside><title>Paragraph referenced by</title> <p><xref ref="s-Ff" text="type-global" /></p></aside>
                 <p>Now that we have taken apart the language, let's connect it to our daily experience.  Our intuition screams at us that if an object is at rest, then we do not need to do anything to keep it from moving: Objects just do not spontaneously move.  This seems to be acceptable to most students of physics.  The interesting piece of the first law is that it says that this is also true of objects that are moving.  This seems to contradict many people's common sense.  Most of the objects that we set in motion do not maintain that motion, but instead slow down.  A clue to interesting physics is to think about when objects slow down and when they speed up without your help.  In order to connect the first law with your intuition, we need to carefully observe what actually happens.</p>
-                <investigation><title>Find a pattern</title>
-                        <task><statement><p>Make a list of situations in which a moving object slows down without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement>
+                <investigation xml:id="investigating-motion"><title>Find a pattern</title>
+                        <task xml:id="task-slowing-down"><statement>
+                                        <aside><title>Task referenced by</title><p><xref ref="task-friction-slowing" text="type-global" /></p></aside>
+                                        <p>Make a list of situations in which a moving object slows down without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement>
                                 <hint><p><xref ref="irl-NI" text="type-global" /> might with this consideration.</p></hint>
+                                <answer><p>There are many reasonable answers to this.  It is likely that your answers will be relevant when we discuss friction in <xref ref="s-Ff" text="type-global" />, and especially in <xref ref="task-friction-slowing" text="type-global" />.</p></answer>
                         </task>
-                        <task><statement><p>Make a list of situations in which a moving object speeds up without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement>
+                        <task xml:id="task-speeding-up"><statement><p>Make a list of situations in which a moving object speeds up without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement>
                                 <hint><p><xref ref="IQ-holdbook" text="type-global" /> might with this consideration.</p></hint>
                         </task>
-                        <task><statement><p>Make a list of situations in which a moving object maintains its motion without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement></task>
+                        <task xml:id="task-uniform-motion"><statement><p>Make a list of situations in which a moving object maintains its motion without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement></task>
                         <task><statement><p>Is there a pattern?</p></statement></task>
                 </investigation>
                 <p>If you slide a brick across an icy pond and compare that to sliding the same brick across a flat parking lot, to sliding that same brick across a gravel driveway, to sliding that brick across a grassy lawn, you will quickly see that the brick does not behave the same way.  The brick is <em>interacting</em> with the surface is moves along.  This is telling us (<xref ref="insight-force-interaction" text="type-local" />) that there is a force acting on the brick, changing the way it moves.  Newton's first law does not apply to the situation where there are forces acting on the object.  When forces act, we need to consider Newton's second law, which we will do in <xref ref="ss-NII" text="type-global" />.</p>
+                </paragraphs>
 
                 </introduction>
 
@@ -1759,7 +1771,7 @@
                         </subsubsection>
                         <subsubsection xml:id="sss-NItogether"><title>How the Laws Work Together</title>
 
-                        <p>You should notice that Newton's First Law is about what happens when you are <em>not pushing</em> on the object, which is to say, the tendency of an object to maintain its own motion without a force acting on it; this is the inertia of the object.  On the other hand, Newton's Second Law is about what happens <em>to the object</em> when you <em>do push</em> on an it.  This is what we will consider next.  After that, Newton's third law will describe what happens <em>to the thing pushing</em> rather than just to the thing being pushed.
+                        <p>You should notice that Newton's first law is about what happens when you are <em>not pushing</em> on the object, which is to say, the tendency of an object to maintain its own motion without a force acting on it; this is the inertia of the object.  On the other hand, Newton's second law is about what happens <em>to the object</em> when you <em>do push</em> on an it.  This is what we will consider next.  After that, Newton's third law will describe what happens <em>to the thing pushing</em> rather than just to the thing being pushed.
                         <xref ref="sss-NIItogether" text="phrase-global" /> will explore these ideas further.
                         </p>
 
@@ -1775,7 +1787,8 @@
                                 <xref ref="sss-vectorequations" text="type-global" />,
                                 <xref ref="d-Newtonahead" text="title">how to describe forces</xref>,
                                 <xref ref="fs-equilibrium" text="title">Newton's first law</xref>,
-                                <xref ref="d-Fgball" text="title">discussion of falling objects</xref>
+                                <xref ref="d-Fgball" text="title">discussion of falling objects</xref>,
+                                discussion of <xref ref="p-multistep" text="title">simple piece of a complicated situation</xref>
                                 </p>
                         </aside>
                 <assemblage xml:id="as-NII"><title>Newton's Second Law</title><idx><h>Newton</h><h>second law</h></idx> <p>When viewed from an inertial reference frame, the vector-sum of all forces acting on an object will cause that object to accelerate in proportion to its mass: <m>\vec F_\mathrm{net} = m \vec a</m>.</p>
@@ -3188,11 +3201,11 @@ Earth feels a force by \studentZ\ to the left.
 <chapter xml:id="c-forcetype"><title>The Many Types of Force</title>
 
         <introduction>
-<aside><title>Chapter referenced by</title> <p>Discussion of <xref ref="d-interaction" text="title">subscript notation of forces</xref></p></aside>
-        <p>There are many mechanisms for imparting force on an object.  Perhaps the most obvious is that objects fall towards the Earth.  We call this force <q>gravity</q> and we will discuss it first.  It turns out to be somewhat more complicated because it turns out that the force that helps us fall when we trip is the same force that holds the planets in their orbits.  The complicated general theory will be discussed later, but for now <xref ref="s-Fg" text="type-local" /> will describe the phenomenon at the surface of the Earth where we usually experience it.</p>
+<aside><title>Chapter referenced by</title> <p><xref ref="c-force" text="type-global" />, Discussion of <xref ref="d-interaction" text="title">subscript notation of forces</xref></p></aside>
+        <p>Having <xref ref="c-force" text="title">discussed the concept of forces</xref> and how they affect the motion, we can turn to the specific mechanisms for the introduction of forces on objects.  Perhaps the most obvious mechanisms for imparting force is that objects fall towards the Earth.  We call this force <q>gravity</q> and we will discuss it first.  It turns out to be somewhat more complicated because it turns out that the force that helps us fall when we trip is the same force that holds the planets in their orbits.  The complicated general theory will be discussed later, but for now <xref ref="s-Fg" text="type-local" /> will describe the phenomenon at the surface of the Earth where we usually experience it.</p>
 <todo>add reference to the general theory</todo>
 
-        <p>After a brief introduction to the four fundamental forces in <xref ref="s-fundamental" text="type-local" />, we will consider the <xref ref="s-FN" text="title">normal force</xref>, <xref ref="s-FT" text="title">tension</xref> (such as in ropes), <xref ref="s-Ff" text="title">friction</xref>, <xref ref="s-springs" text="title">springs</xref>, and end with the catch-all additional category of <xref ref="s-FA" text="title">applied forces</xref>.  <xref ref="s-Fnet" text="type-local" /> will wrap it up by using examples including multiple types of force to compute the net force, which connects back to Newton's Laws in the previous chapter.</p>
+        <p>After a brief introduction to the four fundamental forces in <xref ref="s-fundamental" text="type-local" />, we will consider the <xref ref="s-FN" text="title">normal force</xref>, <xref ref="s-Ff" text="title">friction</xref>, <xref ref="s-FT" text="title">tension</xref> (such as in ropes), <xref ref="s-springs" text="title">springs</xref>, and end with the catch-all additional category of <xref ref="s-FA" text="title">applied forces</xref>.  <xref ref="s-Fnet" text="type-local" /> will wrap it up by using examples including multiple types of force to compute the net force, which connects back to Newton's Laws in the previous chapter.</p>
 
         </introduction>
 
@@ -4024,17 +4037,136 @@ Earth feels a force by \studentZ\ to the left.
                 <xref ref="A-fly-balls" text="type-global" />
                 </p>
         </aside>
+        <p>Recalling the <xref ref="p-intuition-motion" text="title">discussion about Newton's first law</xref>, friction is the force that affects our intuition about how objects move.  Friction is the force that is usually thought of as the reason that objects slow down, but it is also the reason we are able to move forward when we walk and to turn corners when we drive (for example).  Whenever objects move, the motion is measured by what they move past.  The four situations we (as humans living on Earth) are most familiar with are
+        <ul>
+                <li><p>sliding across the ground,</p></li>
+                <li><p>rolling along the ground,</p></li>
+                <li><p>soaring through the air, and </p></li>
+                <li><p>gliding through the water.</p></li>
+        </ul>
+        Each of these experiences friction in a different way.  If we start with sliding, then we can establish the concepts with some fairly simple mathematics and address the cases of trying to walk and turn a car.  The concepts we will want to pay attention to in that case are the roughness of the surfaces that are in contact and the amount they are pressed together.  Rolling friction will use these same ideas, but will apply them in a different way.  The discussion of air (and water) resistance will modify these ideas a bit, considering the thickness of the gas (or fluid) through which the object moves and the shape of the object.  The shape of the object affects the aerodynamics (or hydrodynamics), which informs us about the amount of impact the gas (or fluid) has on the front of the object and is similar (conceptually) to the amount the surfaces are pressed together.</p>
         </introduction>
 
-                <subsection><title>sliding friction</title>
-                        <subsubsection><title>static friction</title>
-<p>.</p>
+                <subsection xml:id="ss-friction-sliding"><title>Dry Sliding Friction</title>
+
+                <introduction>
+                <p>Sliding friction is relevant to any problem in which one object is <q>trying to</q> move across another.  You should note that the objects do not actually have to be moving across each other for this to be relevant.  If they are moving across each other, then we will need to consider the kinetic friction (<xref ref="sss-kinetic" text="type-local" />).  If, on the other hand, you imagine pushing a heavy couch across a carpeted floor, then you can picture a case where the horizontal force is not sufficient to overcome the frictional force.  In this case, we will consider the static friction (<xref ref="sss-static" text="type-local" />).  </p>
+                <aside><title>Etymology</title>
+                        <p><url href="http://www.etymonline.com/word/kinetic">Kinetic</url> is related to the Greek <em>kinetikos</em> and <em>kinesis</em>, which indicate motion.</p>
+                </aside>
+                <aside><title>Etymology</title>
+                        <p><url href="http://www.etymonline.com/word/static">Static</url> is related to <url href="http://www.etymonline.com/word/stasis">stasis</url> and the Greek <em>statikos</em> (which indicates standing) and <em>stasis</em> (which indicates standing still).  It may also call to mind <url href="http://www.etymonline.com/word/stationary">stationary</url>.  The connection to <q>radio static</q> seems to be that it is unchanging.</p>
+                </aside>
+
+                <p xml:id="p-friction-herky-jerky">For both static and kinetic friction, we will consider the case of pushing on an object to get it to slide across the floor or a table or some other surface.  For example, you can place your show on the floor and push it gently so that it doesn't move (static) or harder so that it does move (kinetic).  If you are using a rubber-soled shoe, then you might notice that the shoe moves in a herky-jerky fashion.  We will not be considering motion that comes in fits-and-starts because that indicates that the acceleration is changing, which (as discussed in <xref ref="ss-multistep" text="type-global" />, and especially <xref ref="ex-ceiling" text="type-global" />) means that we cannot use the <xref ref="d-EOM" text="title">basic equations of motion for constant-acceleration</xref>. </p>
+                <remark xml:id="clarify-dry"><title>Dry Sliding Friction</title>
+                        <p>This section is describing <q>dry sliding friction</q>.  When lubrication is introduced, the relationship changes significantly.</p>
+                </remark>
+
+                <p>We will begin with the kinetic friction because static friction has a <xref ref="p-friction-static-variable" text="title">small extra complication</xref>.</p>
+                </introduction>
+
+                        <subsubsection xml:id="sss-kinetic"><title>Kinetic Friction</title>
+                        <p>Here we will discuss the situation of two surfaces rubbing against each other as they slide past each other.  This is not the case with walking (unless your feet slip out from under you!) or turning a car (even though the car <em>is</em> moving). Before introducing the relevant equation, please investigate who objects slide across different surfaces to build your intuition.</p>
+                        <investigation xml:id="inv-friction">
+                                <task xml:id="task-friction-slowing"><statement>
+                                        <aside><title>Task referenced by</title><p><xref ref="task-slowing-down" text="type-global" /></p></aside>
+                                        <p>Consider some instances of objects sliding across a surface and slowing down. List instances of objects that are heavier and lighter.  List instances of objects sliding across smooth surfaces and rough surfaces.</p>
+                                        </statement>
+                                        <hint><p>Do you recall your answers to <xref ref="task-slowing-down" text="type-global" />?</p></hint>
+                                        <answer><p>While you may have different examples, for specificity, I will discuss the following cases:
+                                                <ol>
+                                                <li><p>A mug full of cold root beer sliding across a counter. (Note that in the movies, you are probably seeing a counter that is slightly wet, contradicting <xref ref="clarify-dry" text="type-local" />.)</p></li>
+                                                <li><p>An empty mug sliding across a counter.</p></li>
+                                                <li><p>A cinder block sliding across a paved road.</p></li>
+                                                <li><p>A cinder block sliding across a gravel road that is covered in fine-cut (small) gravel that is packed moderately tightly.</p></li>
+                                                <li><p>Dragging a heavy chair across a hard-wood floor.</p></li>
+                                                <li><p>Dragging a heavy chair across a carpeted floor.</p></li>
+                                                </ol></p>
+                                        </answer>
+                                </task>
+                                <task>
+                                        <statement>
+                                                <p>Considering each of the cases listed in <xref ref="task-friction-slowing" text="type-local" />, rank them according to which has the most friction and which has the least.</p>
+                                        </statement>
+                                        <hint><p>You should be able to imagine which is the hardest (easiest) for you to keep moving (to overcome the friction).</p></hint>
+                                        <hint>
+                                                <p>You can also gauge this by how far they move because friction is the only force causing them to slow down.  So, you can list them according to which one slows down the fastest (corresponding to the order of having the most friction).</p>
+                                        </hint>
+                                        <hint>
+                                                <p>The comparison asked for here is not really fair because multiple aspects are changing from example to example.  For a fair comparison, you should also consider a cinder block and a chair being slid across a slightly wet counter (!), a cinder block being dragged across a hardwood floor (do not try that at home) and a carpet, and a heavy chair being slid across paved and gravel roads.</p>
+                                                <p>You may also note that if the object you are dragging across a carpet is heavy enough, then the carpet might bunch-up in front of the object.  This does not make for a good comparison.  Similarly, the gravel is not really comparable because you will likely be digging ruts in the gravel, which takes more effort and is not equivalent to the friction seen in the other cases.</p>
+                                        </hint>
+                                        <answer>
+                                                <p>The chair will experience more friction than the cinder block, which experiences more friction than the mug.  To produce a fair comparison, you should consider dragging objects with various weights across the same surface.  Furthermore, you should not use a surface (such as a gravel road) in which the object being dragged can pull the material of the surface along with it, creating ruts in the surface because that involves moving the material rather than simply sliding across it.</p>
+                                        </answer>
+                                        <answer>
+                                                <p>The slightly wet counter will provide less friction than the hardwood floor (or a dry counter), which provides less than the paved road.  Assuming the carpet is a flat carpet (as opposed to a shaggy carpet), it is likely that this will be somewhere between the hardwood floor and the gravel road, but there is enough variation in these types of surface that this is not necessarily obvious without an experiment.  To produce a fair comparison, you should drag the same object across each of the different surfaces.</p>
+                                        </answer>
+                                </task>
+                                <task>
+                                        <statement>
+                                                <p>Try to determine (by creating an experiment) if it is the weight itself that matters.</p>
+                                        </statement>
+                                        <hint><p>You might try pushing a book across a floor and comparing the force necessary to overcome friction while simulating a heavier or lighter book without actually changing the book.</p></hint>
+                                        <hint><p>Recall <xref ref="ss-scales" text="type-global" /> for ways to make something <em>seem</em> heavier or lighter without actually changing the weight.</p></hint>
+                                        <answer><p>The aspect that matters is the amount that the surfaces are pressed together.  (See comments in the text for more information.</p></answer>
+                                </task>
+                        </investigation>
+
+                        <p>There are two observations that you should notice from <xref ref="inv-friction" text="type-global" />: friction is increased when two surfaces are pressed harder together and the types of surfaces rubbing together matters. If one object is above the other, then the weight contributes to the amount they are pressed together, but since objects can have friction when they rub their sides across each other (like a truck squeezing through a narrow alleyway), the weight cannot be the explicit quantity.  It turns out that the <xref ref="s-FN" text="title">normal force</xref> is the quantity that expresses how strongly objects are being pressed together because it reflects the force needed to keep one object from passing through the other.  These can be written as the three laws of friction:
+                        <ol>
+                        <li><p>The force of friction is directly proportional to the applied load. (Amontons 1st Law)</p></li>
+                        <li><p>The force of friction is independent of the apparent area of contact. (Amontons 2nd Law)</p></li>
+                        <li><p>Kinetic friction is independent of the sliding velocity. (Coulomb's Law)</p></li>
+                        </ol>
+                        These two ideas are expressed in the relationship
+                        <men xml:id="eq-friction">F_f=\mu F_N</men>
+                        when <m>F_f</m> is the frictional force, <m>F_N</m> is the normal force, and <m>\mu</m> is called the <q>coefficient of friction</q> and is the Greek letter equivalent to the English letter <q>m</q>.  In most of America, it is pronounced <q>mew</q>.
+                        </p>
+                        <heuristic xml:id="st-Ff-muFN"><title>The Story of <m>F_f =\mu F_N</m></title>
+                                <statement>
+                                <p>This equation is all about those aspects that impact the strength of the frictional force between two surfaces.  Connecting the English and the math:</p>
+                                <sidebyside>
+                                <tabular>
+                                        <col width="19%" />
+                                        <col width="19%" />
+                                        <col width="19%" />
+                                        <col width="4%" />
+                                        <col width="19%" />
+                                    <row halign="center">
+                                        <cell><m>\deq F_f            </m></cell>
+                                        <cell><m> =                                 </m></cell>
+                                        <cell><m> \deq \mu                       </m></cell>
+                                        <cell></cell>
+                                        <cell><m> \deq F_N                            </m></cell>
+                                    </row>
+                                    <row halign="center">
+                                        <cell><line>the strength</line><line>of the</line><line>frictional</line><line>force</line></cell>
+                                        <cell><line>depends</line><line>on</line></cell>
+                                        <cell><line>the</line><line>roughness</line><line>of the</line><line>surface</line></cell>
+                                        <cell>and</cell>
+                                        <cell><line>the amount</line><line>the surfaces</line><line>are pressed</line><line>together</line></cell>
+                                    </row>
+                                </tabular>
+                                </sidebyside>
+                                </statement>
+                        </heuristic>
+                        <p>One important aspect to this equation is that:</p>
+                        <remark><title><m>F_f=\mu F_N</m></title>
+                                <p><m>F_f=\mu F_N</m> is not a vector equation. That is to say, the direction of the frictional force is <em>necessarily</em> along the plane of the surface, whereas the normal force is <em>necessarily</em> normal (perpendicular) to the plane of the surface.  This is a <q>magnitude</q> relationship.</p>
+                        </remark>
+                        <p>A second consideration is the literal interpretation of the meaning of <m>\mu</m>.  As long as one of the surfaces is not too smooth, it is reasonable to think of <m>\mu</m> as being correlated to the roughness of the surfaces.  That is, the rougher the surfaces, the more friction they will have, although <m>\mu</m> does not literally measure that.  The coefficient of friction is empirically determined as a measure of the ratio of the frictional force to the normal force for the relevant surfaces.</p>
+
                         </subsubsection>
-                        <subsubsection><title>kinetic friction</title>
-<p>.</p>
+
+                        <subsubsection xml:id="sss-static"><title>static friction</title>
+                        <p>static friction:</p>
+                        <p xml:id="p-friction-static-variable">Since you have to overcome static friction in order to get the object to move, the static friction is able to vary its magnitude in such a way as to balance the applied force so long as the applied force is smaller than the maximum static force.</p>
                         </subsubsection>
+
                 </subsection>
-                <subsection><title>rolling friction</title>
+                <subsection xml:id="ss-friction-rolling"><title>rolling friction</title>
 
         <investigation xml:id="irl-poolfriction"><title>Rolling pool balls and friction</title>
                 <idx><h>pool</h><h>real life</h></idx>
@@ -4077,6 +4209,38 @@ Earth feels a force by \studentZ\ to the left.
                         </sidebyside>
                 </conclusion>
         </investigation>
+                </subsection>
+
+                <subsection xml:id="ss-tribology"><title>Additional Detail: The field of Tribology</title>
+                <aside><title>Etymology</title><p>See <url href="http://www.etymonline.com/word/tribology">tribology</url>.</p></aside>
+                        <p>Tribology, the study of friction from rubbing, is a field of engineering.  There was a recent article
+                        <ul>
+                        <li><url href="http://www.sciencedirect.com/science/article/pii/S0043164816300588">Original</url></li>
+                        <li><url href="http://www.cam.ac.uk/research/news/study-reveals-leonardo-da-vincis-irrelevant-scribbles-mark-the-spot-where-he-first-recorded-the-laws">Cambridge, likely best to use</url>
+                                <ul>
+                                <li><url href="http://www.ifm.eng.cam.ac.uk/uploads/Hutchings_Leonardo_Friction_2016_v2.pdf">Cambridge PDF</url></li>
+                                <li><url href="http://www.ingenia.org.uk/Content/ingenia/issues/issue66/hutchings.pdf">PDF general article on relevance to modern tribology</url></li>
+                                </ul></li>
+                        <li><url href="http://www.tribology-abc.com/abc/history.htm">Useful reference</url></li>
+                        <li><url href="https://phys.org/news/2016-05-leonardo-da-vincithe-systematic-friction.html">phys.org</url></li>
+                        </ul>
+                        that discusses the recent (Aug 2016) discovery of the notebook of Leonardo da Vinci which show a detailed study of friction.  While it was known that he studied friction, this shows sketches of experiments that we might do today.</p>
+
+                        <p><url href="http://depts.washington.edu/nanolab/ChemE554/Summaries%20ChemE%20554/Introduction%20Tribology.htm">This article</url> indicates historical figures, including <url href="https://en.wikipedia.org/wiki/Guillaume_Amontons">Guillaume Amontons</url> and <url href="https://en.wikipedia.org/wiki/Charles-Augustin_de_Coulomb">Charles-Augustin de Coulomb</url> (The Coulomb), as well as the three laws of friction:
+                        <ol>
+                        <li><p>The force of friction is directly proportional to the applied load. (Amontons 1st Law)</p></li>
+                        <li><p>The force of friction is independent of the apparent area of contact. (Amontons 2nd Law)</p></li>
+                        <li><p>Kinetic friction is independent of the sliding velocity. (Coulomb's Law)</p></li>
+                        </ol>
+                        Although, <url href="https://me-mechanicalengineering.com/laws-of-friction/">other sources</url> indicate that there are five laws.
+                        <ol>
+                        <li><p>When a body is moving, the friction is directly proportional to normal force and frictional force direction is perpendicular to the normal force.</p></li>
+                        <li><p>Friction doesn’t depend on the area of contact so long as there is an area of contact.</p></li>
+                        <li><p>The coefficient of static friction is slightly higher the value than the coefficient of kinetic friction.</p></li>
+                        <li><p>Kinetic friction is independent of the velocity of the body.</p></li>
+                        <li><p>Friction depends on the type of the surfaces in contact.</p></li>
+                        </ol>
+                        </p>
                 </subsection>
 
                 <subsection><title>Air Resistance</title>

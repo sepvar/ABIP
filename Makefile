@@ -12,11 +12,10 @@ ${BEE}/user/mathbook-abip-latex.xsl: mathbook-abip-latex.xsl
 ${BEE}/user/mathbook-abip-html.xsl: mathbook-abip-html.xsl
 	cp mathbook-abip-html.xsl ${BEE}/user/
 
-ABIP.xml.peep: ABIP.sed ABIP.xml
+html: ABIP.sed ${BEE}/user/mathbook-abip-html.xsl ABIP.xml
 	sed -i.peep -f ABIP.sed ABIP.xml
-
-html: ABIP.xml.peep ${BEE}/user/mathbook-abip-html.xsl ABIP.xml
-	xsltproc -stringparam html.css.file mathbook-5.css ${BEE}/user/mathbook-abip-html.xsl ABIP.xml && cp ABIP.xml.peep ABIP.xml || cp ABIP.xml.peep ABIP.xml 
+	xsltproc ${BEE}/user/mathbook-abip-html.xsl ABIP.xml && cp ABIP.xml.peep ABIP.xml || cp ABIP.xml.peep ABIP.xml 
+	@echo ""
 
 latex: ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml
 	xsltproc ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml 
