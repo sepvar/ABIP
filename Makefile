@@ -12,18 +12,24 @@ ${BEE}/user/mathbook-abip-latex.xsl: mathbook-abip-latex.xsl
 ${BEE}/user/mathbook-abip-html.xsl: mathbook-abip-html.xsl
 	cp mathbook-abip-html.xsl ${BEE}/user/
 
-html: ABIP.sed ${BEE}/user/mathbook-abip-html.xsl ABIP.xml
+Connected.html: ABIP.sed ${BEE}/user/mathbook-abip-html.xsl ABIP.xml
 	sed -i.peep -f ABIP.sed ABIP.xml
-	xsltproc ${BEE}/user/mathbook-abip-html.xsl ABIP.xml && cp ABIP.xml.peep ABIP.xml || cp ABIP.xml.peep ABIP.xml 
+	xsltproc ${BEE}/user/mathbook-abip-html.xsl ABIP.xml && mv ABIP.xml.peep ABIP.xml || mv ABIP.xml.peep ABIP.xml 
 	@echo ""
 
-latex: ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml
+html: Connected.html
+
+Connected.tex: ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml
 	xsltproc ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml 
 	sed -i.chap -f Connected.sed Connected.tex
 	echo "'make pdf' or use WindEdt to pdflatex"
 
-pdf: latex
+latex: Connected.tex
+
+Connected.pdf: Connected.tex
 	pdflatex Connected.tex
+
+pdf: Connected.pdf
 
 images: ABIP.xml
 	${BEE}/script/mbx -v -c latex-image -f svg -d images ${AIY}/ABIP.xml
@@ -40,17 +46,18 @@ list: ABIP.xml
 		sed 's+^.*xml:id=\"\(.*\)\">+ls images/\1.svg || ${BEE}/script/mbx \-v \-c latex-image \-r \1 \-f svg \-d images ${AIY}/ABIP.xml+g'
 
 checkref: ABIP.xml
-	grep "</xref>" ABIP.xml | sed 's@.*\(\<xref .*\/xref\>\).*@\1@g' | grep -v "text=" | sort -k2
-	grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\1@g' | grep "</xref>" | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\2@g' | grep -v "text=" | sort -k2
-	grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\1@g' | grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\1@g' | grep "</xref>" | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\2@g' | grep -v "text=" | sort -k2
-	grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\3@g' | grep "</xref>" | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\2@g' | grep -v "text=" | sort -k2
-	grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\3@g' | grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\1@g' | grep "</xref>" | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\2@g' | grep -v "text=" | sort -k2
+	@echo "The following checks for common mistakes I have made in the past (bad xrefs)"
+	@grep "</xref>" ABIP.xml | sed 's@.*\(\<xref .*\/xref\>\).*@\1@g' | grep -v "text=" | sort -k2
+	@grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\1@g' | grep "</xref>" | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\2@g' | grep -v "text=" | sort -k2
+	@grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\1@g' | grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\1@g' | grep "</xref>" | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\2@g' | grep -v "text=" | sort -k2
+	@grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\3@g' | grep "</xref>" | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\2@g' | grep -v "text=" | sort -k2
+	@grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\3@g' | grep "</xref>" ABIP.xml | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\1@g' | grep "</xref>" | sed 's@\(.*\)\(\<xref .*\/xref\>\)\(.*\)@\2@g' | grep -v "text=" | sort -k2
 
 
 counterr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml 
+	@echo "Counting lines from checking for specific types of errors"
 	@echo `java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | wc -l`" errors"
 	@echo "part: "`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"part" | wc -l`
-	@echo ">6000: "`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ":6[0-9][0-9][0-9]:" | wc -l`
 	@echo "font: "`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"font" | wc -l`
 
 toperr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml 
@@ -59,7 +66,6 @@ toperr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml
 typeerr: counterr ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml 
 	java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | \
 		grep -v ": element \"part" | \
-		grep -v ":6[0-9][0-9][0-9]:" | \
 		grep -v ": element \"font" | \
 		sed 's/.*:\([0-9][0-9]*\):\([0-9][0-9]*\): error: element "\([a-zA-Z][a-zA-Z]*\)".*/\3 line \1:\2/g' | \
 		sort -k1
@@ -71,7 +77,6 @@ typeerr: counterr ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng 
 allerr: checkref counterr ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml 
 	java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | \
 		grep -v ": element \"part" | \
-		grep -v ":6[0-9][0-9][0-9]:" | \
 		grep -v ": element \"font" | \
 		sort -k4  
 

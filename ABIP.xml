@@ -717,6 +717,9 @@
                         <row>
                                 <cell><m>\deq \vec F_\mathrm{net} = m \vec a</m></cell>
                                 <cell /><cell><xref ref="st-Fma"  text="type-global" /></cell></row>
+                        <row>
+                                <cell><m>\deq F_f = \mu F_N</m></cell>
+                                <cell /><cell><xref ref="st-Ff-muFN"  text="type-global" /></cell></row>
                 </tabular>
                 </table>
         <todo>Decide if should use the "public version" or the "me version" (which uses \listofstorys).</todo>
@@ -775,7 +778,43 @@
                 </introduction>
 
                 <subsection><title>Units Quantify Dimensions</title>
-<p>.</p>
+
+                        <p>In order to understand how big something is, we need to know what scale we are using.  For example, Your thumb is about an inch across, but your foot is about a foot long.  Both have the <q>amount</q> <m>1</m>. but the unit is different.  In this sense, <m>1+1</m> might not equal <m>2</m>.
+                        <md>
+                        <mrow> 1 \unit{ft} + 1 \unit{ft} \amp = 2 \unit{ft} </mrow>
+                        <mrow> 1 \unit{in} + 1 \unit{ft} \amp \ne 2 \unit{??} </mrow>
+                        </md>
+                        For the second line, you need to convert the units:
+                        <me> 1 \unit{in} + 1 \unit{ft} = 1 \unit{in} + 1 \unit{ft}\convert{12\unit{in}}1\unit{ft}} = 1 \unit{in} + 12 \unit{in} = 13\unit{in} </me>
+                        because we need to be speaking about the same thing.  You have all had the experience of a miscommunication when you thought you were speaking about the same thing, but later found out you each meant something different.
+                        </p>
+                        <warning><title>Clarify your intent</title><p>You should always include every unit on every number throughout your entire math solution.  This will help you ensure that the units are self-consistent and will occasionally help you either recognize which algebraic step to take next or even which equation to use in the first place.</p></warning>
+                        <p>After introducing some of the essential metric units here, we will build some intuition by considering how to convert from your likely more familiar English units in <xref ref="ss-convertunits" text="type-local" /> and then build these fundamental units into the broader derived units that help express the relationships between interesting quantities in <xref ref="ss-units" text="type-local" />.</p>
+
+                        <investigation><title>Identify familiar dimensions</title>
+                                <task><statement><p>What can be measured?</p></statement></task>
+                        </investigation>
+
+                        <paragraphs><title>Length</title>
+                        <p>feet, inches, (BASE 12?); mm, cm, m, miles (What's that number again?), kilometers, AU</p>
+                        </paragraphs>
+
+                        <paragraphs><title>time</title>
+                        <p>seconds (metric prefixes), minutes<fn>minute = (mine-oot = small); second = the second-order mine-oot = a mine-oot mine-oot</fn>, hours (base 60? REALLY?)<fn>Egyptians!  Hooray!  <m>60 = 2\times 30 = 3\times 20 = 4 \times 15 = 5 \times 12 = 6 \times 10</m> versatile and broadly applicable.  Practical.</fn></p>
+                        </paragraphs>
+
+                        <paragraphs><title>mass</title>
+                        <p>kilogram, slug (see stone!)</p>
+                        </paragraphs>
+
+                        <paragraphs><title>charge</title>
+                        <p>Coulomb</p>
+                        </paragraphs>
+
+                        <paragraphs><title>temperature?</title>
+                        <p>too soon?</p>
+                        </paragraphs>
+
                 </subsection>
 
                 <subsection xml:id="ss-convertunits"><title>Conversion from English Units</title>
@@ -788,6 +827,13 @@
 
                 <p>Note internet search comments in <xref ref="ss-weightmass"  text="type-global" /> regarding the <q>conversion</q> of kilograms-to-pounds, with special attention to (See <xref ref="s-sigfig"  text="type-global">significant digits</xref>.).<idx>significant digits</idx></p>
                 <todo>rephrase this.  I moved that discussion to (xref ref="s-sigfig"  text="type-global" /).</todo>
+
+                <example xml:id="ex-F-and-C"><title>Fahrenheit and Centigrade</title>
+                        <statement>
+                                <aside><title>Example referenced by:</title><p></p></aside>
+                                <p>The <m>\frac{9}{5}</m> is actually <m>\frac{180\unit{^\circ F}}{100\unit{^\circ C}} = \frac{212\unit{^\circ F} - 32\unit{^\circ F}}{100\unit{^\circ C}-0\unit{^\circ C}}</m> as in slope is rise over run.</p>
+                        </statement>
+                </example>
 
                 </subsection>
 
@@ -813,9 +859,29 @@
                         </p>
                         </aside>
 
+                <paragraphs><title>Fundamental units</title>
                 <p xml:id="p-fundamental">This paragraph should describe a fundamental unit (as opposed to a derived unit).</p>
+                </paragraphs>
 
+                <paragraphs><title>Derived Units</title>
                 <p xml:id="p-derived">This paragraph should describe a derived unit (as opposed to a fundamental unit).</p>
+                <p>Length to area to volume</p>
+                <p>velocity as length-per-time</p>
+                <p>force intuition, visceral <m>\ldots</m> as a combination of several other units.  (maybe note momentum is as yet unnamed)</p>
+                <aside><title>Paragraph referenced by</title>
+                        <p>
+                                <!-- <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>, units -->
+                                <xref ref="fn-friction-area" text="type-global" />, <!-- friction and surface area  perhaps also <xref ref="d-friction-area" text="type-global" /> -->
+                                <xref ref="s-pressure" text="type-global" />, <!-- fluids -->
+                                <xref ref="ss-barometrics" text="type-global" /> <!-- thermodynamics -->
+                        </p>
+                </aside>
+                <p xml:id="p-pressure">Having defined the Newton, we can also define the Pascal.  Describe force as a straightforward intuitive, visceral quantity.  Example of pressure (same force tip of pencil versus erasure of pencil) and define unit.
+                <men xml:id="eq-pressure">P = F/A \hspace{1cm} F = PA</men>
+                This will be used in <xref ref="d-friction-area" text="title">friction</xref>, <xref ref="s-pressure" text="title">fluids</xref>, and <xref ref="ss-barometrics" text="title">thermodynamics</xref>.
+                </p>
+                <todo>Do a Story Of for pressure, force, and area.  Maybe reference an example of calculating the weight of the car or using the weight of the car to find the area of the tires... Note a flat tire covers more area.</todo>
+                </paragraphs>
 
                 </subsection>
 
@@ -1108,7 +1174,7 @@
 
 <!-- ********************************************************************************************** -->
 
-<chapter xml:id="c-motion"><title>One-Dimensional Motion</title>
+<chapter xml:id="c-motion"><title>1-D Motion, Relating position, Velocity, and Acceleration</title>
 
         <section><title>How Physicists Use the Words (Notation)</title>
 
@@ -1537,7 +1603,7 @@
 <!-- ********************************************************************************************** -->
 
 
-<chapter><title>Two-Dimensional Motion</title>
+<chapter><title>2-D Motion, The Vector Nature of Motion</title>
 
         <section><title>Components of Motion</title>
 
@@ -1671,7 +1737,7 @@
                 This will be more relevant when we discuss in <xref ref="c-forcetype" text="type-global"/> the types of forces that might be applied.</p>
                 </convention>
 
-                <biographical><title>Touchstone</title><p>Recall the distinction between <xref ref="s-law" text="title">theories and laws</xref>.</p></biographical>
+                <biographical><title>Touchstone</title><p>Recall the distinction between <xref ref="s-law" text="title" />.</p></biographical>
                 <proposition xml:id="d-Newtonahead"><title>Looking Ahead</title>
                         <p>Looking ahead to Newton's Laws<idx><h>laws</h><h>Newton</h></idx> (<xref ref="s-Newton" text="type-hybrid" />), you should be ready to notice that the first law (<xref ref="ss-NI" text="type-hybrid" />) is about objects that are not feeling a force, the second law (<xref ref="ss-NII" text="type-hybrid" />) is about a specific object that is feeling a force, and the third law (<xref ref="ss-NIII" text="type-hybrid" />) is about the interaction between the two objects.  In all three of these, we care about the object feeling the force.   It is only in the third law that we care about the object exerting the force.</p>
                 </proposition>
@@ -1741,17 +1807,20 @@
                         <p>In the discussion of equilibrium (<xref ref="sss-equilibrium" text="type-global" />), we will note that this is often extended to say that without a net force (as opposed to <q>without a force</q> as explained in <xref ref="sss-netforce" text="type-global" />) the velocity will not change, but that is a special case of Newton's second law (<xref ref="ss-NII" text="type-global" />).</p>
                 </proposition>
 
-                <paragraphs xml:id="p-intuition-motion"><title>Building intuition</title>
                 <aside><title>Paragraph referenced by</title> <p><xref ref="s-Ff" text="type-global" /></p></aside>
+                <paragraphs xml:id="p-intuition-motion"><title>Building intuition</title>
                 <p>Now that we have taken apart the language, let's connect it to our daily experience.  Our intuition screams at us that if an object is at rest, then we do not need to do anything to keep it from moving: Objects just do not spontaneously move.  This seems to be acceptable to most students of physics.  The interesting piece of the first law is that it says that this is also true of objects that are moving.  This seems to contradict many people's common sense.  Most of the objects that we set in motion do not maintain that motion, but instead slow down.  A clue to interesting physics is to think about when objects slow down and when they speed up without your help.  In order to connect the first law with your intuition, we need to carefully observe what actually happens.</p>
+                <todo>s-Ff.html references this section, poorly.  Suggestion from forum was to make the preceding "p" a "prelude" and the subsequent "p" as a "postlude"; but currently the pre/post-ludes don't appear in the referenced knowl, which was The Point.  I actually only want the pre/post and am less concerned about the actual investigation in the s-Ff knowl.</todo>
                 <investigation xml:id="investigating-motion"><title>Find a pattern</title>
                         <task xml:id="task-slowing-down"><statement>
+                                        <p>Make a list of situations in which a moving object slows down without your interference in its motion.  Indicate if it is interacting with anything else.</p>
                                         <aside><title>Task referenced by</title><p><xref ref="task-friction-slowing" text="type-global" /></p></aside>
-                                        <p>Make a list of situations in which a moving object slows down without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement>
+                                        </statement>
                                 <hint><p><xref ref="irl-NI" text="type-global" /> might with this consideration.</p></hint>
                                 <answer><p>There are many reasonable answers to this.  It is likely that your answers will be relevant when we discuss friction in <xref ref="s-Ff" text="type-global" />, and especially in <xref ref="task-friction-slowing" text="type-global" />.</p></answer>
                         </task>
-                        <task xml:id="task-speeding-up"><statement><p>Make a list of situations in which a moving object speeds up without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement>
+                        <task xml:id="task-speeding-up">
+                                <statement><p>Make a list of situations in which a moving object speeds up without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement>
                                 <hint><p><xref ref="IQ-holdbook" text="type-global" /> might with this consideration.</p></hint>
                         </task>
                         <task xml:id="task-uniform-motion"><statement><p>Make a list of situations in which a moving object maintains its motion without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement></task>
@@ -1824,6 +1893,13 @@
                         <cell><m> =                                 </m></cell>
                         <cell><m> \deq m                       </m></cell>
                         <cell><m> \deq \vec a                            </m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>\overbrace{\hspace{5em}}</m></cell>
+                        <cell><m>\overbrace{\hspace{4em}}</m></cell>
+                        <cell><m>\overbrace{\hspace{5em}}</m></cell>
+                        <cell></cell>
+                        <cell><m>\overbrace{\hspace{5em}}</m></cell>
                     </row>
                     <row halign="center">
                         <cell><line>the</line><line>combination</line><line>of all forces</line><line>acting on <m>m</m></line></cell>
@@ -3933,7 +4009,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p>To get a good sense of what how the normal force works, it helps to consider the way a bathroom scale works.  Consider the concepts presented in the <xref ref="irl-scale" text="type-global"/>.</p>
 
-                <investigation xml:id="irl-scale"><title>Playing with a scale.</title><idx><h>force</h><h>normal</h></idx>
+                <investigation xml:id="irl-scale"><title>Playing with a scale</title><idx><h>force</h><h>normal</h></idx>
                         <introduction>
                                 <p>While speaking to your friend, \studentB<idx><h sortby="\studentB">\studentB</h></idx> about \hisB\ recent accomplishment of losing <m>45\unit{N}</m>, you mention that your scale always gives a different number than the one in the doctor's office.  You suggest \heB\ gets on your scale to verify the calibration.  \studentB\ currently has a mass of <m>\massB</m>.</p>
                         </introduction>
@@ -4044,7 +4120,7 @@ Earth feels a force by \studentZ\ to the left.
                 <li><p>soaring through the air, and </p></li>
                 <li><p>gliding through the water.</p></li>
         </ul>
-        Each of these experiences friction in a different way.  If we start with sliding, then we can establish the concepts with some fairly simple mathematics and address the cases of trying to walk and turn a car.  The concepts we will want to pay attention to in that case are the roughness of the surfaces that are in contact and the amount they are pressed together.  Rolling friction will use these same ideas, but will apply them in a different way.  The discussion of air (and water) resistance will modify these ideas a bit, considering the thickness of the gas (or fluid) through which the object moves and the shape of the object.  The shape of the object affects the aerodynamics (or hydrodynamics), which informs us about the amount of impact the gas (or fluid) has on the front of the object and is similar (conceptually) to the amount the surfaces are pressed together.</p>
+        Each of these actions allow us to experience friction in a different way.  If we start with sliding, then we can establish the concepts with some fairly simple mathematics and address the cases of trying to walk and turn a car.  The concepts we will want to pay attention to in that case are the roughness of the surfaces that are in contact and the amount they are pressed together.  Rolling friction will use these same ideas, but will apply them in a different way.  The discussion of air resistance (and water resistance) will modify these ideas a bit, considering the thickness of the gas (or fluid) through which the object moves and the shape of the object.  The shape of the object affects the aerodynamics (or hydrodynamics), which informs us about the amount of impact the gas (or fluid) has on the front of the object and is similar (conceptually) to the amount the surfaces are pressed together.</p>
         </introduction>
 
                 <subsection xml:id="ss-friction-sliding"><title>Dry Sliding Friction</title>
@@ -4058,36 +4134,36 @@ Earth feels a force by \studentZ\ to the left.
                         <p><url href="http://www.etymonline.com/word/static">Static</url> is related to <url href="http://www.etymonline.com/word/stasis">stasis</url> and the Greek <em>statikos</em> (which indicates standing) and <em>stasis</em> (which indicates standing still).  It may also call to mind <url href="http://www.etymonline.com/word/stationary">stationary</url>.  The connection to <q>radio static</q> seems to be that it is unchanging.</p>
                 </aside>
 
-                <p xml:id="p-friction-herky-jerky">For both static and kinetic friction, we will consider the case of pushing on an object to get it to slide across the floor or a table or some other surface.  For example, you can place your show on the floor and push it gently so that it doesn't move (static) or harder so that it does move (kinetic).  If you are using a rubber-soled shoe, then you might notice that the shoe moves in a herky-jerky fashion.  We will not be considering motion that comes in fits-and-starts because that indicates that the acceleration is changing, which (as discussed in <xref ref="ss-multistep" text="type-global" />, and especially <xref ref="ex-ceiling" text="type-global" />) means that we cannot use the <xref ref="d-EOM" text="title">basic equations of motion for constant-acceleration</xref>. </p>
+                <p xml:id="p-friction-herky-jerky">For both static and kinetic friction, we will consider the case of pushing on an object to get it to slide across the floor or a table or some other surface.  For example, you can place your shoe on the floor and push it gently with your foot so that it doesn't move (static) or harder so that it does move (kinetic).  If you are using a rubber-soled shoe, then you might notice that the shoe moves in a herky-jerky fashion.  We will not be considering motion that comes in fits-and-starts because that indicates that the acceleration is changing, which (as discussed in <xref ref="ss-multistep" text="type-global" />, and especially <xref ref="ex-ceiling" text="type-global" />) means that we cannot use the <xref ref="d-EOM" text="title">basic equations of motion for constant acceleration</xref>. </p>
                 <remark xml:id="clarify-dry"><title>Dry Sliding Friction</title>
-                        <p>This section is describing <q>dry sliding friction</q>.  When lubrication is introduced, the relationship changes significantly.</p>
+                        <p>This section is describing <q>dry sliding friction</q>.  When lubrication is introduced, the relationship changes significantly.  If you are interested in this, then you can find a nice summary at <url href="http://www.explainthatstuff.com/lubricants.html">Explain that Stuff (Oct, 2017)</url>.</p>
                 </remark>
 
                 <p>We will begin with the kinetic friction because static friction has a <xref ref="p-friction-static-variable" text="title">small extra complication</xref>.</p>
                 </introduction>
 
                         <subsubsection xml:id="sss-kinetic"><title>Kinetic Friction</title>
-                        <p>Here we will discuss the situation of two surfaces rubbing against each other as they slide past each other.  This is not the case with walking (unless your feet slip out from under you!) or turning a car (even though the car <em>is</em> moving). Before introducing the relevant equation, please investigate who objects slide across different surfaces to build your intuition.</p>
-                        <investigation xml:id="inv-friction">
+                        <p>Here we will discuss the situation of two surfaces rubbing against each other as they slide past each other.  This is not the case with walking (unless your feet slip out from under you!) or turning a car (even though the car <em>is</em> moving). Before introducing the relevant equation, please investigate how objects slide across different surfaces to build your intuition.</p>
+                        <investigation xml:id="inv-friction"><title>Notice where friction is larger or smaller</title>
                                 <task xml:id="task-friction-slowing"><statement>
-                                        <aside><title>Task referenced by</title><p><xref ref="task-slowing-down" text="type-global" /></p></aside>
                                         <p>Consider some instances of objects sliding across a surface and slowing down. List instances of objects that are heavier and lighter.  List instances of objects sliding across smooth surfaces and rough surfaces.</p>
+                                        <aside><title>Task referenced by</title><p><xref ref="task-slowing-down" text="type-global" /></p></aside>
                                         </statement>
                                         <hint><p>Do you recall your answers to <xref ref="task-slowing-down" text="type-global" />?</p></hint>
-                                        <answer><p>While you may have different examples, for specificity, I will discuss the following cases:
+                                        <answer xml:id="A-friction-slowing"><p>While you may have different examples, for specificity, I will discuss the following cases:
                                                 <ol>
-                                                <li><p>A mug full of cold root beer sliding across a counter. (Note that in the movies, you are probably seeing a counter that is slightly wet, contradicting <xref ref="clarify-dry" text="type-local" />.)</p></li>
-                                                <li><p>An empty mug sliding across a counter.</p></li>
-                                                <li><p>A cinder block sliding across a paved road.</p></li>
-                                                <li><p>A cinder block sliding across a gravel road that is covered in fine-cut (small) gravel that is packed moderately tightly.</p></li>
-                                                <li><p>Dragging a heavy chair across a hard-wood floor.</p></li>
-                                                <li><p>Dragging a heavy chair across a carpeted floor.</p></li>
+                                                <li>A mug full of cold root beer sliding across a counter. (Note that in the movies, you are probably seeing a counter that is slightly wet, contradicting <xref ref="clarify-dry" text="type-local" />.)</li>
+                                                <li>An empty mug sliding across a counter.</li>
+                                                <li>A cinder block sliding across a paved road.</li>
+                                                <li>A cinder block sliding across a gravel road that is covered in fine-cut (small) gravel that is packed moderately tightly.</li>
+                                                <li>Dragging a heavy chair across a hard-wood floor.</li>
+                                                <li>Dragging a heavy chair across a carpeted floor.</li>
                                                 </ol></p>
                                         </answer>
                                 </task>
                                 <task>
                                         <statement>
-                                                <p>Considering each of the cases listed in <xref ref="task-friction-slowing" text="type-local" />, rank them according to which has the most friction and which has the least.</p>
+                                                <p>Considering each of the cases listed in <xref ref="A-friction-slowing" text="type-local" />, rank them according to which has the most friction and which has the least.</p>
                                         </statement>
                                         <hint><p>You should be able to imagine which is the hardest (easiest) for you to keep moving (to overcome the friction).</p></hint>
                                         <hint>
@@ -4114,16 +4190,55 @@ Earth feels a force by \studentZ\ to the left.
                                 </task>
                         </investigation>
 
-                        <p>There are two observations that you should notice from <xref ref="inv-friction" text="type-global" />: friction is increased when two surfaces are pressed harder together and the types of surfaces rubbing together matters. If one object is above the other, then the weight contributes to the amount they are pressed together, but since objects can have friction when they rub their sides across each other (like a truck squeezing through a narrow alleyway), the weight cannot be the explicit quantity.  It turns out that the <xref ref="s-FN" text="title">normal force</xref> is the quantity that expresses how strongly objects are being pressed together because it reflects the force needed to keep one object from passing through the other.  These can be written as the three laws of friction:
-                        <ol>
-                        <li><p>The force of friction is directly proportional to the applied load. (Amontons 1st Law)</p></li>
-                        <li><p>The force of friction is independent of the apparent area of contact. (Amontons 2nd Law)</p></li>
-                        <li><p>Kinetic friction is independent of the sliding velocity. (Coulomb's Law)</p></li>
-                        </ol>
-                        These two ideas are expressed in the relationship
+                        <p>There are several observations that you should notice from <xref ref="inv-friction" text="type-global" />.  The first observation is as follows:</p>
+                        <observation xml:id="obs-friction-normal"><title>Friction is increased when two surfaces are pressed harder together</title>
+                                <p>If one object is above the other, then the weight contributes to the amount they are pressed together, but since objects can have friction when they rub their sides across each other (like a <url href="http://bitsandpieces.us/2013/11/tight-squeeze/">truck squeezing through a narrow alleyway</url>), the weight cannot be the explicit quantity.  It turns out that the <xref ref="s-FN" text="title">normal force</xref> is the quantity that expresses how strongly objects are being pressed together because it reflects the force needed to keep one object from passing through the other.</p>
+                                <todo>Use this link?</todo>
+                        </observation>
+                        <biographical><title>Touchstone</title><p>Recall <xref ref="ss-scales" text="title" />.</p></biographical>
+                        <p>This observation was made by Leonardo da Vinci in 1493 and, while still undiscovered in his notebooks, was rediscovered by Guillaume Amontons in 1699 (<xref ref="bib-friction-hutchings" text="type-local" />, <xref ref="bib-friction-tribology" text="type-local" />, <xref ref="bib-friction-armstrong" text="type-local" />) who wrote it as his first law of friction.</p>
+                        <biographical><title>Touchstone</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
+                        <assemblage xml:id="law-friction-amontons-1"><title>Amontons' first law of friction</title>
+                                <p>The force of friction is directly proportional to the applied load.</p>
+                        </assemblage>
+                        <p>Since directly proportional indicates a linear relationship, you are probably thinking of the equation of a line, <m>y=mx+b</m>.  Experiment shows that, consistent with your intution, if the normal force is zero, then there is not friction, so the intercept is zero.  The proportionality constant we use is called the <term>coefficient of friction</term><idx><h>friction</h><h>coefficient of</h></idx> and the symbol is <m>\mu</m>, which is the Greek letter equivalent to the English letter <q>m</q>.  In most of America, it is pronounced <q>mew</q>.  This relationship os is expressed in the relationship
                         <men xml:id="eq-friction">F_f=\mu F_N</men>
-                        when <m>F_f</m> is the frictional force, <m>F_N</m> is the normal force, and <m>\mu</m> is called the <q>coefficient of friction</q> and is the Greek letter equivalent to the English letter <q>m</q>.  In most of America, it is pronounced <q>mew</q>.
-                        </p>
+                        where <m>F_f</m> is the <term>frictional force</term><idx><h>force</h><h>friction</h></idx><idx>friction</idx>, <m>F_N</m> is the normal force<idx><h>force</h><h>normal</h></idx>. One important aspect to this equation is that:</p>
+                        <remark><title><m>F_f=\mu F_N</m> is not a vector equation</title>
+                                <p>The direction of the frictional force is <em>necessarily</em> along the plane of the surface, whereas the normal force is <em>necessarily</em> normal (perpendicular) to the plane of the surface.<fn>Some sources include this in the statement of <xref ref="law-friction-amontons-1" text="title" />.</fn>  This is a <q>magnitude</q> relationship.</p>
+                        </remark>
+
+                        
+                        <p>The second observation you might make from <xref ref="inv-friction" text="type-global" /> might be as follows:</p>
+                        <observation xml:id="obs-friction-mu"><title>Friction depends on the types of <em>both</em> surfaces rubbing together</title>
+                                <p>A chair on a hard-wood floor is different from a rubber-soled shoe on hard wood and both of these are different from that same chair (or shoe) on ceramic tile.  It is not useful to talk about the friction caused by the floor independently of what is moving across the floor.  Furthermore, it depends on how those surfaces interact.  On the one hand, it is safe to conceptualize this as the rougher the surfaces, the more places they have to grab each other.  On the other hand, there is also the effect of very flat, smooth surfaces:  If two very flat, smooth surfaces are in contact, they have a <q>stickiness</q> that interferes with the easy of sliding past each other.  For example, when you get an oil change in your car, they will often provide a small plastic reminder tag that sticks to your windshield with significant friction, but without stickiness.  The information about how these surfaces interact is encoded in the coefficient of friction<idx><h>friction</h><h>coefficient of</h></idx>.  (See also <xref ref="p-gecko-grip" text="title">the development of <q>gecko-grip</q></xref>.)</p>
+                        </observation>
+
+                        <p><xref ref="eq-friction" text="title">Equation</xref> is also interesting for what it does not include.</p>
+                        <aside><title>Observation referenced by</title>
+                                <p>
+                                        <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>, <!-- units -->
+                                        <!-- <xref ref="d-friction-area" text="type-global">discussion of friction independent of surface area</xref> friction -->
+                                        <xref ref="s-pressure" text="type-global" />, <!-- fluids -->
+                                        <xref ref="ss-barometrics" text="type-global" /> <!-- thermodynamics -->
+                                </p>
+                        </aside>
+                        <observation xml:id="d-friction-area"><title>Friction does not depend on the area of contact</title>
+                                <p>One would not be wrong to imagine that the broader something is, the more it interacts with the surface it is dragged along, much like how a picnic blanket (or superhero cape!) collects many more twigs and leaves when it is dragged through the park. On the other hand, you might also notice that when you stand on the bed, you sing in further than when you lay on the bed.  It turns out that while more surface does tend to increase the opportunity for friction, this is balanced by the reduced pressure due to having the weight spread out<fn xml:id="fn-friction-area">Recall <xref ref="p-pressure" text="title">discussion of the units of pressure</xref>.</fn>, thereby maintaining the same normal force regardless<fn>You might be relieved to learn that this is only mostly true.  The microscopic area of contact does matter, but that gets back to the roughness of surface discussion in <xref ref="obs-friction-mu" text="type-local" />.</fn> of the amount of area in contact.   Speaking of pressure, you might be interested to note that Amontons is also known for his work on barometers (see <xref ref="ss-barometrics" text="title" />).</p>
+                        </observation>
+                        <p>As with <xref ref="obs-friction-normal" text="type-local" />, this observation was also made by Leonardo da Vinci in 1493 and, while still undiscovered in his notebooks, was rediscovered by Guillaume Amontons in 1699 <xref ref="bib-friction-hutchings" text="type-local" />, who wrote it as his second law of friction.</p>
+                        <biographical><title>Touchstone</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
+                        <assemblage xml:id="law-friction-amontons-2"><title>Amontons' second law of friction</title>
+                                <p>The force of friction is independent of the apparent<fn xml:id="fn-friction-mu">This indicates the <q>apparent</q> area because there is no relation to the macroscopic surface area.  On the other hand, the microscopic contact does matter and this is accounted for through the coefficient of friction which describes the specifics of the surfaces that are interacting.  Modern texts list an additional law of friction as: <q>Friction depends on the type of the surfaces in contact.</q>  <xref ref="bib-friction-tribology" text="type-local" /> references F. Philip Bowden and David Tabor (1950) for the explanation of how the surface area affects friction.</fn> area of contact.</p>
+                        </assemblage>
+                        
+                        <p><xref ref="eq-friction" text="title">Equation</xref> also does not include the relative velocity between the surfaces, as observed by Charles Coulomb in 1785, <xref ref="bib-friction-armstrong" text="type-local" />. </p>
+                        <biographical><title>Touchstone</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
+                        <assemblage xml:id="law-friction-coulomb"><title>Coulomb's law of friction</title>
+                                <p>Kinetic friction is independent of the sliding velocity. (Coulomb's Law)</p>
+                        </assemblage>
+
+                        <p>Friction turns out to be quite interestingly complicated.  Most of our understanding comes from experimental patterns, although the field of <xref ref="ss-tribology" text="title">tribology</xref> is continuing to improve our theoretical descriptions of friction all the time.  For our purpoises, we can encapsulate all of these ideas into a single equation.</p>
                         <heuristic xml:id="st-Ff-muFN"><title>The Story of <m>F_f =\mu F_N</m></title>
                                 <statement>
                                 <p>This equation is all about those aspects that impact the strength of the frictional force between two surfaces.  Connecting the English and the math:</p>
@@ -4142,27 +4257,33 @@ Earth feels a force by \studentZ\ to the left.
                                         <cell><m> \deq F_N                            </m></cell>
                                     </row>
                                     <row halign="center">
+                                        <cell><m>\overbrace{\hspace{6em}}</m></cell>
+                                        <cell><m>\overbrace{\hspace{4em}}</m></cell>
+                                        <cell><m>\overbrace{\hspace{6em}}</m></cell>
+                                        <cell></cell>
+                                        <cell><m>\overbrace{\hspace{6em}}</m></cell>
+                                    </row>
+                                    <row halign="center">
                                         <cell><line>the strength</line><line>of the</line><line>frictional</line><line>force</line></cell>
                                         <cell><line>depends</line><line>on</line></cell>
-                                        <cell><line>the</line><line>roughness</line><line>of the</line><line>surface</line></cell>
+                                        <cell><line>the</line><line><q>grippy-ness</q></line><line>of the</line><line>surface</line></cell>
                                         <cell>and</cell>
                                         <cell><line>the amount</line><line>the surfaces</line><line>are pressed</line><line>together</line></cell>
                                     </row>
                                 </tabular>
                                 </sidebyside>
+                                <p>Implicit in this story is that <m>\mu</m> does not depend on the apparent surface area nor the relative speed between the surfaces.</p>
                                 </statement>
                         </heuristic>
-                        <p>One important aspect to this equation is that:</p>
-                        <remark><title><m>F_f=\mu F_N</m></title>
-                                <p><m>F_f=\mu F_N</m> is not a vector equation. That is to say, the direction of the frictional force is <em>necessarily</em> along the plane of the surface, whereas the normal force is <em>necessarily</em> normal (perpendicular) to the plane of the surface.  This is a <q>magnitude</q> relationship.</p>
-                        </remark>
-                        <p>A second consideration is the literal interpretation of the meaning of <m>\mu</m>.  As long as one of the surfaces is not too smooth, it is reasonable to think of <m>\mu</m> as being correlated to the roughness of the surfaces.  That is, the rougher the surfaces, the more friction they will have, although <m>\mu</m> does not literally measure that.  The coefficient of friction is empirically determined as a measure of the ratio of the frictional force to the normal force for the relevant surfaces.</p>
 
                         </subsubsection>
 
                         <subsubsection xml:id="sss-static"><title>static friction</title>
                         <p>static friction:</p>
-                        <p xml:id="p-friction-static-variable">Since you have to overcome static friction in order to get the object to move, the static friction is able to vary its magnitude in such a way as to balance the applied force so long as the applied force is smaller than the maximum static force.</p>
+                        <p xml:id="p-friction-static-variable">Since you have to overcome static friction in order to get the object to move, the static friction is able to vary its magnitude in such a way as to balance the applied force so long as the applied force is smaller than the maximum static force. </p>
+                        <p>You may notice that it is more difficult to get things moving than to keep things moving.  Since this is also an empirically-determined statement, it becomes the fourth<fn>Although if you count <xref ref="fn-friction-mu" text="type-local" /> as the fourth, this would be the fifth law of friction.</fn> of the laws of friction:</p>
+                        <assemblage><title>Another law of friction</title><p>The coefficient of static friction is slightly higher the value than the coefficient of kinetic friction.</p></assemblage>
+                        <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that Arthur Morin introduced static friction in 1833.</p>
                         </subsubsection>
 
                 </subsection>
@@ -4219,7 +4340,7 @@ Earth feels a force by \studentZ\ to the left.
                         <li><url href="http://www.cam.ac.uk/research/news/study-reveals-leonardo-da-vincis-irrelevant-scribbles-mark-the-spot-where-he-first-recorded-the-laws">Cambridge, likely best to use</url>
                                 <ul>
                                 <li><url href="http://www.ifm.eng.cam.ac.uk/uploads/Hutchings_Leonardo_Friction_2016_v2.pdf">Cambridge PDF</url></li>
-                                <li><url href="http://www.ingenia.org.uk/Content/ingenia/issues/issue66/hutchings.pdf">PDF general article on relevance to modern tribology</url></li>
+                                <li><url href="http://www.ingenia.org.uk/Content/ingenia/issues/issue66/hutchings.pdf">PDF general article on relevance of modern tribology</url></li>
                                 </ul></li>
                         <li><url href="http://www.tribology-abc.com/abc/history.htm">Useful reference</url></li>
                         <li><url href="https://phys.org/news/2016-05-leonardo-da-vincithe-systematic-friction.html">phys.org</url></li>
@@ -4235,17 +4356,52 @@ Earth feels a force by \studentZ\ to the left.
                         Although, <url href="https://me-mechanicalengineering.com/laws-of-friction/">other sources</url> indicate that there are five laws.
                         <ol>
                         <li><p>When a body is moving, the friction is directly proportional to normal force and frictional force direction is perpendicular to the normal force.</p></li>
-                        <li><p>Friction doesn’t depend on the area of contact so long as there is an area of contact.</p></li>
+                        <li><p>Friction doesn't depend on the area of contact so long as there is an area of contact.</p></li>
                         <li><p>The coefficient of static friction is slightly higher the value than the coefficient of kinetic friction.</p></li>
                         <li><p>Kinetic friction is independent of the velocity of the body.</p></li>
                         <li><p>Friction depends on the type of the surfaces in contact.</p></li>
                         </ol>
                         </p>
+
+                        <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that tribology was born in 1933.</p>
+
+                        <paragraphs xml:id="p-gecko-grip"><title>Gecko-like grip</title>
+                        <p>News from May 2015: <url href="https://news.stanford.edu/2015/05/27/grabber-robot-gecko-052715/" /> about a development at Stanford University.</p>
+                        </paragraphs>
+
                 </subsection>
 
                 <subsection><title>Air Resistance</title>
-<p>.</p>
+                        <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that Reynolds introduced the equation of viscous fluid flow in 1866 (but referenced Reynolds 1886).</p>
                 </subsection>
+
+                <references>
+                        <biblio type="raw" xml:id="bib-friction-hutchings">
+                                Hutchings, Ian M., <title>Leonardo da Vinci׳s studies of friction</title>, <year>15 August 2016</year>. <journal>Wear</journal> <volume>Volumes 360-361</volume>, pp. 51-66.
+                                (<url href="https://doi.org/10.1016/j.wear.2016.04.019" />)
+                        </biblio>
+                        <biblio type="raw" xml:id="bib-friction-tribology">
+                                <!-- As of Oct, 2017 -->
+                                <url href="http://www.tribology-abc.com/" /> (Oct, 2017).  <url href="http://www.tribology-abc.com/abc/history.htm">Pg. <q>history</q></url>.
+                        </biblio>
+                        <biblio type="raw" xml:id="bib-friction-armstrong">
+                                <!-- As of Oct, 2017 -->
+                                Armstrong-Hélouvry, Brian (1991). Control of machines with friction. USA: Springer.  [ISBN 0-7923-9133-0]
+                                <url href="https://books.google.com/books?id=0zk_zI3xACgC&amp;pg=PA10&amp;hl=en#v=onepage&amp;q&amp;f=false">pg 10</url>.
+                        </biblio>
+<!-- other interesting references:
+http://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/amontons-guillaume
+https://www.britannica.com/biography/Guillaume-Amontons
+http://www.madehow.com/inventorbios/8/Guillaume-Amontons.html
+https://en.wikipedia.org/wiki/Guillaume_Amontons
+
+https://www.biography.com/people/charles-de-coulomb-9259075
+
+Also check these folks out on Wikipedia.... of course
+
+-->
+                </references>
+
 
         </section>
 
@@ -5300,6 +5456,30 @@ Earth feels a force by \studentZ\ to the left.
                                         (d) <m>50\unit{g}</m>.</p>
                                 </statement>
                         </exercise>
+                        <exercise>
+                                <statement>
+                                        <p>How long has it been since Amontons discovered his <xref ref="law-friction-amontons-1" text="title">first</xref> and <xref ref="law-friction-amontons-2" text="title">second</xref> laws of friction? Since Coulomb discovered his <xref ref="law-friction-coulomb" text="title">law of friction</xref>?  Since da Vinci, his?</p>
+                                </statement>
+                        </exercise>
+                        <exercise>
+                                <statement>
+                                        <p>Do a web search to see what else Amontons is known for.  Reference the sites and indicate which information can be corroborated with multiple unique references.  (Note wikipedia is not a <q>primary</q> source.)</p>
+                                </statement>
+                                <answer>
+                                        <p><url href="https://en.wikipedia.org/wiki/Guillaume_Amontons">Wikipedia</url>: barometer, hygrometer, thermometer, clepsydra, thermodynamics, friction; references the
+                                                <url href="http://galileo.rice.edu/Catalog/NewFiles/amontons.html">Galileo Project at Rice University</url>.</p>
+                                        <p><url href="https://www.britannica.com/biography/Guillaume-Amontons">Britannica</url>: friction, thermometer</p>
+                                        <p><url href="http://www.madehow.com/inventorbios/8/Guillaume-Amontons.html">How Things Work</url>: hygrometer, barometer, thermometer, [no references]</p>
+                                        <p><url href="http://chemed.chem.purdue.edu/genchem/history/barometer.html">Purdue</url>: Barometer</p>
+                                        <p><url href="http://www.oxfordreference.com/view/10.1093/oi/authority.20110803095409219">Oxford Reference</url>: All of these and suggests it was an early indication of absolute zero (temperature)</p>
+                                        <p><url href="https://www.twu.edu/dsc/AmontonsI.htm">Texas Women's University</url>: cites the <url href="http://deafscientistcorner.pbworks.com/w/page/17045243/Guillame%20Amontons">Deaf Scientists Corner</url>, who lists all of these and suggests some work on earth quarks.</p>
+                                </answer>
+                        </exercise>
+                        <exercise>
+                                <statement>
+                                        <p>Do a web search to see what else Coulomb is known for.  Reference the sites and indicate which information can be corroborated with multiple unique references.  (Note wikipedia is not a <q>primary</q> source.)</p>
+                                </statement>
+                        </exercise>
 
                 </exercises>
 
@@ -5857,6 +6037,8 @@ Earth feels a force by \studentZ\ to the left.
         <xref ref="d-fundamental" text="title">fundamental forces</xref>
         </p>
 </aside>
+
+        <p>This might be useful.  <url href="http://www.physicsoftheuniverse.com/dates.html" />.</p>
 </introduction>
 
 <section xml:id="s-Gfield"><title>Gravitational Force and Field</title>
@@ -5945,10 +6127,22 @@ Earth feels a force by \studentZ\ to the left.
 
 <!-- ********************************************************************************************** -->
 
-<chapter><title>Fluids</title>
+<chapter xml:id="c-fluids"><title>Fluids</title>
         <section xml:id="s-density"><title>Density</title>
         <idx>density</idx>
-        <aside><title>Referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
+        <aside><title>Section referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
+        </section>
+
+        <section xml:id="s-pressure"><title>Pressure</title>
+        <aside><title>Section referenced by</title>
+                <p>
+                        <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>, <!-- units -->
+                        <!-- <xref ref="fn-friction-area" text="type-global" /> NOT REFERENCED by friction -->
+                        <!-- <xref ref="s-pressure" text="type-global" />, fluids -->
+                        <!-- <xref ref="ss-barometrics" text="type-global" /> NOT REFERENCED BY thermodynamics -->
+                </p>
+        </aside>
+                <p>context of hydrostatic (and small reference to hydrodynamic) pressure, as opposed to pressure in the context of <xref ref="law-friction-amontons-2" text="title">Amontons' second law of friction</xref> or pressure in <xref ref="ss-barometrics" text="title">gases</xref> (might connect nicely to kinetic theory of gases?).</p>
         </section>
 
         <section xml:id="s-surface-tension"><title>Surface Tension</title>
@@ -6000,8 +6194,62 @@ Earth feels a force by \studentZ\ to the left.
 
 <!-- ********************************************************************************************** -->
 
-<chapter><title>The flow of thermal energy</title>
+<chapter><title>Perspectives of Gases: Physics and Chemistry</title>
 
+        <section><title>Measuring the properties of a gas</title>
+                <subsection><title>Thermometrics</title>
+                        <p>Thermometers, Fahrenheit, Celcius and centrigrade, Kelvin, Rankin</p>
+                        <p>Reference unit conversion <xref ref="ex-F-and-C" text="type-global" />.</p>
+                </subsection>
+
+                <subsection xml:id="ss-barometrics"><title>Barometrics</title>
+                <aside><title>Section referenced by</title>
+                        <p>
+                                <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>, <!-- units -->
+                                <xref ref="d-friction-area" text="type-global">discussion of friction independent of surface area</xref> <!-- friction -->
+                                <xref ref="s-pressure" text="type-global" />, <!-- fluids -->
+                                <!-- <xref ref="ss-barometrics" text="type-global" /> thermodynamics -->
+                        </p>
+                </aside>
+                        <p>barometers</p>
+                        <p>Reference derived units <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>.</p>
+                        <p>Connection to Amontons (of <xref ref="law-friction-amontons-2" text="title" /> and <xref ref="d-friction-area" text="type-global" />) who also built barometers?</p>
+                </subsection>
+        </section>
+
+        <section><title>Kinetic Theory of Gases</title>
+                <subsection><title>Pressure as a statistical quantity</title>
+                        <p>words
+                        <me>P=\frac{F}{A} = \frac{1}{A} \frac{dp}{dt} = \frac{l}{V} \frac{dp}{dt}</me>
+                        more words
+                        (might connect hydro-pressure to gaseous pressure?)
+                        </p>
+                </subsection>
+
+                <subsection><title>Temperature as a statistical quantity</title>
+                        <p><m>K = \frac{3}{2} kT</m></p>
+                </subsection>
+        </section>
+
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Building the Ideal Gas Law</title>
+
+        <introduction>
+                <p>This should be: Boyle's, Charles', and Gay-Lussac's; each introducing the relevant VT, PT, and PV diagrams as subsections; then the last section is Ideal Gas Law.</p>
+                <p>Subsequent chapter is the Laws of Thermodynamics and flow of thermal energy, and P-V diagrams grow into their own there.</p>
+        </introduction>
+
+        <section xml:id="s-PV"><title><m>P</m>-<m>V</m> Diagrams</title>
+        <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatwarm" text="type-global">heating versus warming</xref></p></aside>
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>The flow of thermal energy</title>
         <introduction>
                 <p xml:id="find-heatwarm">Energy is a noun<idx><h>energy</h><h>noun</h></idx>; objects can <em>have</em> energy.</p>
 
@@ -6074,16 +6322,8 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
                 <subsection><title>Radiation</title>
-<p>.</p>
+<p>Links to light below.  Distinguish from nuclear radiation alpha, beta. Note thermal radiation versus gamma radiation?</p>
                 </subsection>
-        </section>
-</chapter>
-
-<!-- ********************************************************************************************** -->
-
-<chapter><title>Ideal Gas Law</title>
-        <section xml:id="s-PV"><title><m>P</m>-<m>V</m> Diagrams</title>
-        <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatwarm" text="type-global">heating versus warming</xref></p></aside>
         </section>
 </chapter>
 
@@ -6207,6 +6447,8 @@ Earth feels a force by \studentZ\ to the left.
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Quantum Mechanics</title>
+
+<introduction><p>This might be useful <url href="http://timeline.aps.org/APS/Timeline/" />.</p></introduction>
 
         <section><title>Atomic Physics</title>
 
@@ -6540,116 +6782,6 @@ Earth feels a force by \studentZ\ to the left.
 </chapter>
 
 
-
-<chapter><title>Holder</title>
-
-        <introduction>
-        <p>This chapter holds a few empty-format structures that I have used once and expect to use again.</p>
-
-        <todo>Consider adding comment about Newton not including "inertial reference frame" to his laws.</todo>
-        <p>This is filler to space the margin notes.
-        This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.</p>
-        <aside xml:id="as-touchstone"><title>Touchstone</title><p>Aside with title.</p></aside>
-        <p>This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.</p>
-        <biographical xml:id="bio-eff"><p>This is a biographical, title should be automatically changed to <q>Touchstone</q>.</p></biographical>
-        <p>This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.</p>
-        <historical xml:id="his-eff"><p>This is a historical, title should NOT be automatically changed. Perhaps use this for <q>Foreshadow</q>?</p></historical>
-        <p>This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.  This is filler to space the margin notes.
-        </p>
-
-
-
-        </introduction>
-        <section><title>Centering Assemblages (Important)</title>
-                                <assemblage><p align="justify">To solve <xref ref="ex-ceiling-Qb" text="global">Question</xref>, we can just consider from after-thrown to before-caught (both given in the question).  During this motion, assuming there is no ceiling, the entire motion is in freefall, so we can use
-                                                <m>v_f^2 = v_i^2 + 2 a \, \Delta x</m>
-                                        and solve for <m>\Delta x</m>.  However, we only want to consider from the lowest point to the highest point, not all the way back to \studentC's hand.</p></assemblage>
-                                <assemblage><p align="center">THIS NEEDS TO BE FINISHED</p></assemblage>
-                                <assemblage><sidebyside><tabular align="center"><row><cell>THIS NEEDS TO BE FINISHED</cell></row></tabular></sidebyside></assemblage>
-                                <assemblage><sidebyside widths="0% 100% 0%" haligns="left center right">
-                                        <p>1</p>
-                                        <p>THIS NEEDS TO BE FINISHED</p>
-                                        <p>2</p>
-                                        </sidebyside></assemblage>
-                                <assemblage><sidebyside widths="1% 98% 1%" haligns="left center right">
-                                        <p>1</p>
-                                        <p>THIS NEEDS TO BE FINISHED</p>
-                                        <p>2</p>
-                                        </sidebyside></assemblage>
-                                <assemblage><sidebyside widths="33% 33% 33%" haligns="left center right">
-                                        <p>1</p>
-                                        <p>THIS NEEDS TO BE FINISHED</p>
-                                        <p>2</p>
-                                        </sidebyside></assemblage>
-                                <assemblage><sidebyside widths="0% 75% 0%" margins="10%" haligns="left center right">
-                                        <p>1</p>
-                                        <p>THIS NEEDS TO BE FINISHED</p>
-                                        <p>2</p>
-                                        </sidebyside></assemblage>
-                                <assemblage><sidebyside widths="100%" margins="40%" haligns="center">
-                                        <p>THIS NEEDS TO BE FINISHED</p>
-                                        </sidebyside></assemblage>
-                                <assemblage><sidebyside widths="100%" margins="30%" haligns="center">
-                                        <p>THIS NEEDS TO BE FINISHED</p>
-                                        </sidebyside></assemblage>
-                                <assemblage><sidebyside widths="100%" margins="20%" haligns="center">
-                                        <p>THIS NEEDS TO BE FINISHED</p>
-                                        </sidebyside></assemblage>
-                                <assemblage><p><me>\mathrm{THIS NEEDS TO BE FINISHED}</me></p></assemblage>
-                                <assemblage><sidebyside><tabular><row><cell>THIS NEEDS TO BE FINISHED</cell></row></tabular></sidebyside></assemblage>
-                <p>More attempts</p>
-                                        <assemblage><p>\studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time. (Using <c>p</c> seems to make extra blank space above.)</p></assemblage>
-                                        <assemblage><sidebyside><p>\studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time. (Using <c>sidebyside</c><c>p</c> seems to make <em>even more</em> blank space above.)</p></sidebyside></assemblage>
-<!--
-                                        <assemblage>\studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time. (Apparently you <em>must</em> have at least a <c>p</c>.)</assemblage>
--->
-                                        <assemblage><sidebyside><tabular><col width="100%" /><row><cell>
-                                                        <p>\studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time. (Using <c>sidebyside</c> <c>tabular</c> <c>col width="100%"</c> forces a smaller <q>tabular-sized</q> font.)</p>
-                                                </cell></row></tabular>
-                                        </sidebyside></assemblage>
-                                        <assemblage><p><tabular><col width="100%" /><row><cell>
-                                                        <p>\studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time. (Using <c>tabular</c> <c>col width="100%"</c> forces a smaller <q>tabular-sized</q> font; apparently we <em>must</em> use either <c>p</c> or <c>sidebyside</c> but both still give the awkward additional space above.)</p>
-                                                </cell></row></tabular></p>
-                                        </assemblage>
-                                        <assemblage><sidebyside><tabular><row><cell>
-                                                        \studentC\ notices that it is important to have the objects line up at the bottom so that if they travel at the same speed, then they hit at the same time.  (Using <c>sidebyside</c> <c>tabular</c> without <c>col</c> not only forces a smaller <q>tabular-sized</q> font but also is a single line.)
-                                                </cell></row></tabular>
-                                        </sidebyside></assemblage>
-
-
-        </section>
-        <section><title>Stolen from sample-article</title>
-                        <p>An ampersand is used, in two ways, to describe positioning several equations per line, organized in columns.  We suggest in <xref provisional="subsection-reserved-characters" text="type-global" /> that the pre-defined <latex /> macro <c>\amp</c> is the safest way to specify these.  The second, fourth, sixth, <ellipsis /> ampersands separate columns, and the spacing between columns will be provided automatically.  The first, third, fifth, <ellipsis /> ampersands are alignment points for the equations in each column.  Typically this is placed just prior to a binary operator, such as an equal sign (<c>\amp = </c>), or for a column of explanations or commentary, just prior to the <c>\text{}</c> macro.  Note that this scenario suggests always having an odd number of amersands in each <c>mrow</c>.  In the example below, alignment is on the equals sign in the first two columns, and provides left-justification to the explanations in the third column.  N.B.: the use below of the <c>\text{}</c> macro does not include mathematics within its argument.  Doing so may yield unpredictable results depending on your choice of delimiters for the mathematics (and using an <c>m</c> tag will be ineffective).<md>
-                    <mrow>\frac{dx}{dt} \amp = x^2 - 4x - y + 4 \amp \frac{dy}{dt} \amp = x^3 - y          \amp\amp x, y\text{ version}</mrow>
-                    <mrow>\frac{dw}{dt} \amp = z^3 - w          \amp \frac{dz}{dt} \amp = z^2 - 4z - w + 4 \amp\amp z, w\text{ version}</mrow>
-                </md></p>
-
-                <p><pretext /> will automatically detect the presence or absence of ampersands, but by defining macros for entire aligned equations, you can effectively hide the ampersands.  So the <c>@alignment</c> attribute can override automatic detection.  We use a simple <latex /> macro to demonstrate setting <c>alignment='align'</c> to override the use of a <c>gather</c> environment and use a <c>align</c> environment instead.  (example deleted, has macro)</p>
-
-                <p>The AMSmath <latex /> package's <c>alignat</c> environment is a third variant of alignment.  It never happens automatically, you need to ask for it with <c>alignment="alignat"</c>.  It is very similar to <c>align</c> but adds no space between the equation columns.  So you can leave it that way, or you can add your own <q>extra</q> space to suit.  Here is a previous example with no inter-column space:<md alignment="alignat">
-                    <mrow>\frac{dx}{dt} \amp = x^2 - 4x - y + 4 \amp \frac{dy}{dt} \amp = x^3 - y          \amp\amp x, y\text{ version}</mrow>
-                    <mrow>\frac{dw}{dt} \amp = z^3 - w          \amp \frac{dz}{dt} \amp = z^2 - 4z - w + 4 \amp\amp z, w\text{ version}</mrow>
-                </md>.  This modified example has a middle row with three columns, while the other rows have just one column, as a test of our routines for determining the <c>mrow</c> with the greatest number of ampersands (and how many there are),<md alignment="alignat">
-                    <mrow>\frac{dw}{dt} &amp;= z^3 - w</mrow>
-                    <mrow>\frac{dx}{dt} &amp;= x^2 - 4x - y + 4 &amp; \frac{dy}{dt} &amp;= x^3 - y&amp;&amp; x, y\text{ third column}</mrow>
-                    <mrow>\frac{dw}{dt} &amp; = z^3 - w</mrow>
-                </md>.  Final example demonstrates that ampersands in other objects (matrices here) can wreak havoc with computing the number of columns.  So we provide yet another attribute to override automatic detection, <c>alignat-columns</c>.  This is the number of <em>columns</em> not the number of <em>ampersands</em>.  Generally, for <m>c</m> columns, there will be <m>2c-1</m> ampersands.<md alignment="alignat" alignat-columns="2">
-                    <mrow>A &amp;= \begin{bmatrix}1 &amp; 2 \\ 3 &amp; 4\end{bmatrix}
-                    &amp;
-                    I &amp;= \begin{bmatrix}1 &amp; 0 \\ 0 &amp; 1\end{bmatrix}</mrow>
-                </md>.  One caveat: if your number of ampersands is even (see advice above about using an odd number) behavior should still be correct, as in next example.</p>
-
-                <p>If you want super-precise control over alignment of the terms of a system of equations (linear or not) you can use the <c>alignat</c> option to advantage by not including any extra space.  This example is modified slightly from a post by Alex Jordan:<md alignment="alignat">
-                    <mrow>2x \amp {}+{} \amp  y \amp {}+{} \amp 3z \amp {}={} \amp 10</mrow>
-                    <mrow>x  \amp       \amp    \amp {}+{} \amp  z \amp {}={} \amp 6</mrow>
-                    <mrow>x  \amp {}+{} \amp 3y \amp {}+{} \amp 2z \amp {}={} \amp 13.</mrow>
-                </md>Beautiful.</p>
-        </section>
-        <conclusion>
-        <p>Check for references to biographical <xref ref="bio-eff" text="type-global" />, historical <xref ref="his-eff" text="type-global" />, [cannot use reference in &lt;todo&gt;], and touchstone-aside <xref ref="as-touchstone" text="type-global" /> twice <xref ref="as-touchstone" text="title" />.
-        </p>
-        </conclusion>
-</chapter>
 
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
