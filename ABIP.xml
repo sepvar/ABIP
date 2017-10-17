@@ -1191,20 +1191,39 @@
                 <li><p> Velocity = which way did it go?  Is its position changing?
                 <ul>
                         <li><p> This chapter will distinguish speed and velocity.</p></li>
-                        <li><p> Introduce the language of <q>at rest</q>.</p></li>
+                        <li><p xml:id="d-at-rest"> Introduce the language of <q>at rest</q>.</p></li>
                 </ul></p></li>
                 <li><p> Acceleration = Is its velocity changing?
                 <ul>
                         <li><p xml:id="intro-acc">
                                 This chapter will clarify acceleration, deceleration, and changing direction.
                                         <notation>
-                                                <usage>\mathrm{acceleration}</usage>
+                                                <usage>\text{acceleration}</usage>
                                                 <description>refers to the general idea of changing your motion (velocity), meaning <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>)</description>
                                         </notation></p></li>
                         <li><p> This chapter will distinguish distance traveled versus displacement.</p></li>
                 </ul></p></li>
         </ul>
         </p>
+
+                <p xml:id="d-quick-fast">To help keep these concepts (velocity versus acceleration) separate, this text will use the following conventions:</p>
+                <convention xml:id="convention-fast">
+                	<p>This text will use <term>fast</term><idx><h>fast</h><seealso>quick</seealso></idx> to indicate <em>moving with a large speed</em> (to be distinguished from <xref ref="convention-quick" text="title">quick</xref>).
+                	<notation>
+				<usage>\text{fast}</usage>
+				<description>refers to moving with a large speed (to be distinguished from <term>quick</term>)</description>
+			</notation>
+                        </p>
+                </convention>
+                <convention xml:id="convention-quick">
+                	<p>This text will use <term>quick</term><idx><h>quick</h><seealso>fast</seealso></idx> to indicate <em>moving with a large acceleration</em> (to be distinguished from <xref ref="convention-fast" text="title">fast</xref>).
+			<notation>
+				<usage>\text{quick}</usage>
+				<description>refers to moving with a large acceleration (to be distinguished from <term>fast</term>)</description>
+			</notation>
+                        </p>
+                </convention>
+                <p>With this notation, a drag-racer is <q>quick</q> but any car might eventually become <q>fast</q>.  Similarly, a cheetah is initially <q>quick</q> until it becomes <q>fast</q>.</p>
 
         </section>
 
@@ -1268,21 +1287,12 @@
                 </aside>
                 <p xml:id="d-acc">The technical term <term>acceleration</term> means <em>changing the velocity</em>, which refers to <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>).
 			<notation>
-				<usage>\mathrm{acceleration}</usage>
+				<usage>\text{acceleration}</usage>
 				<description>refers to the general idea of changing your motion (velocity), meaning <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>)</description>
 			</notation>
                 </p>
                 
-                <p xml:id="d-quick-fast">To help keep these concepts (velocity versus acceleration) separate, this text will use <term>fast</term><idx><h>fast</h><seealso>quick</seealso></idx> to indicate <em>moving with a large speed</em> in contrast to <term>quick</term><idx><h>quick</h><seealso>fast</seealso></idx> which will indicate <em>moving with a large acceleration</em>.  With this notation, a drag-racer is <q>quick</q> but any car might eventually become <q>fast</q>.  Similarly, a cheetah is initially <q>quick</q> until it becomes <q>fast</q>.
-			<notation>
-				<usage>\mathrm{fast}</usage>
-				<description>refers to moving with a large velocity (to be distinguished from <term>quick</term>)</description>
-			</notation>
-			<notation>
-				<usage>\mathrm{quick}</usage>
-				<description>refers to moving with a large acceleration (to be distinguished from <term>fast</term>)</description>
-			</notation>
-                </p>
+                <p>Recall the <xref ref="d-quick-fast" text="title">use of fast versus quick</xref>.</p>
 
                 <p>Discussion of <xref ref="ex-slowcar" text="type-global" /> and <xref ref="ex-coasting" text="type-global" />.</p>
                 <todo>Is there a way to include something in the \LaTeX version but not in the HTML version? (such as \pageref{ex-slowcar} and \pageref{ex-coasting})</todo>
@@ -1361,11 +1371,16 @@
 
         <p xml:id="d-EOM">The equations of constant acceleration can be summarized as
         <!--\new{v2.3}{referenced.   Need the story of these equations}-->
-        <md>
-                <mrow> x_f &amp; = x_i + v_i t + \frac{1}{2} a t^2      </mrow>
-                <mrow> v_f &amp; = v_i + a t                                        </mrow>
-                <mrow> v_f^2 &amp; = v_i^2 + 2 a \, \Delta x               </mrow>
-        </md></p>
+        <!-- There is discussion about providing sub-equations in XML: 
+                https://groups.google.com/forum/?utm_source=digest&utm_medium=email#!topic/pretext-support/igK29R8klkM
+                (same as:  https://groups.google.com/forum/#!topic/pretext-support/igK29R8klkM/discussion  )
+                https://github.com/rbeezer/mathbook/issues/748
+                 -->
+        <mdn>
+                <mrow> x_f \amp = x_i + v_i t + \frac{1}{2} a t^2      </mrow>
+                <mrow> v_f \amp = v_i + a t                                        </mrow>
+                <mrow> v_f^2 \amp = v_i^2 + 2 a \, \Delta x               </mrow>
+        </mdn></p>
         <aside><title>Paragraph referenced by</title> <p><xref ref="ex-ceiling" text="type-global" />, discussion of <xref ref="p-friction-herky-jerky" text="title">herky-jerky motion</xref></p></aside>
 
         </section>
@@ -1708,7 +1723,7 @@
                 <aside><title>Section referenced by</title> <p>Discussion of <xref ref="d-heatverb" text="title">heat as a verb</xref></p></aside>
                 <p xml:id="d-forcenoun">The technical term <term>force</term><idx><h>force</h><h>description</h></idx>
                 <notation>
-                        <usage>\mathrm{force}</usage>
+                        <usage>\text{force}</usage>
                         <description>refers to the general idea of pushing or pulling; every force is enacted <term>by</term> one person or object and is acted <term>on</term> another.</description>
                 </notation>
                 refers to the general idea of pushing or pulling.  In the same way that physicists use the technical word <xref ref="d-acc" text="title">acceleration</xref> differently than the general population uses the colloquial word, force has a specific meaning.  We will use <em>force as a noun</em><idx><h>force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling and having specific relationships that will be outlined in this chapter.</p>
@@ -2276,7 +2291,8 @@
                                         <xref ref="d-FBD-AB" text="title">discussion about \ref*{se-FBD-AB}</xref>,
                                         <xref ref="se-weightA" text="type-global" />,
                                         <xref ref="A-netF-a" text="type-global" />,
-                                        <xref ref="f-firstFBDupdate" text="type-global" />
+                                        <xref ref="f-firstFBDupdate" text="type-global" />,
+                                        <xref ref="ex-friction-mug" text="type-global" />
                                         </p>
                                 </aside>
                                 <p>If the forces in <xref ref="se-netFadd" text="type-global" /> are applied to an object with mass <m>2.0\unit{kg}</m>, then it will accelerate at the rate of
@@ -2405,7 +2421,7 @@
                 </aside>
 
                         <p>This word can be traced back to Latin and Old English with the prefix <em>equi-</em> for <em>equal</em> and the root <em>libra</em> referring to a <em>pair of scales, as in a balance</em>, such as those depicted in images of the astronomical constellation Libra.  When the scales are equal, they are in equilibrium.  Since the second law asks us to calculate the sum of the forces acting on an object, one of the primary questions is to determine if those forces balance each other.  In <xref ref="se-netFadd" text="type-global" /> and <xref ref="se-netFsub" text="type-global" />, the forces are not balanced, the object <q>is not in equilibrium</q>, and it will be accelerated in a particular direction.  In the <xref ref="se-equi" text="type-global" />, the forces are balanced, the object <q>is in equilibrium</q>, and it will <em>not change</em> its velocity (in accord with the first law).</p>
-                        <definition><idx>equilibrium</idx>
+                        <definition xml:id="def-equilibrium"><idx>equilibrium</idx>
                         <notation>
                         	<usage>\text{equilibrium}</usage>
                         	<description>An object in equilibrium has <m>\vec F_\mathrm{net} = 0\unit N</m> and <m>\vec a =0</m>.</description>
@@ -2481,7 +2497,8 @@
                         <p>
                         <xref ref="d-Newtonahead" text="title">how to describe forces</xref>,
                         <xref ref="ex-braced" text="type-global"/>,
-                        <xref ref="ex-unbraced" text="type-global"/>
+                        <xref ref="ex-unbraced" text="type-global"/>,
+                        <xref ref="task-friction-past" text="type-global" />
                         </p>
                 </aside>
                 <assemblage xml:id="as-NIII"><title>Newton's Third Law</title><idx><h>Newton</h><h>third law</h></idx>
@@ -2944,8 +2961,11 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                         <title>\studentZ\ intentionally braces when pushing \studentC</title>
                         <statement>
                                 <aside><title>Example referenced by</title>
-                                        <p><xref ref="d-NIIIbracing" text="title">action-reaction</xref>,
-                                        <xref ref="ex-braced" text="type-global" /></p>
+                                        <p>
+                                        <xref ref="d-NIIIbracing" text="title">action-reaction</xref>,
+                                        <xref ref="ex-braced" text="type-global" />,
+                                        <xref ref="task-friction-past" text="type-global" />
+                                </p>
                                 </aside>
                                 <p>\studentZ<idx><h sortby="\studentZ">\studentZ</h></idx>, the <xref ref="cyoa-NIII" text="title">town bully</xref> (with <m>m_Z=\massZ</m>), decides to vent \hisZ\ frustration on \studentC<idx><h sortby="\studentC">\studentC</h></idx>\ for all the times that \studentC\ makes \studentZ\ look bad in class.  While \studentC\ (<m>m_C=\massC</m>) has \hisC\ back turned, \studentZ\ walks up, leans in, and shoves \studentC\ with a force of <m>\vec F_{C,Z} = 215\unit{N}\ihat</m>.  How does <em>\studentZ</em> accelerate during this exchange?</p>
                                 <figure xml:id="f-braced">
@@ -3076,8 +3096,11 @@ Earth feels a force by \studentZ\ to the left.
                         <title>\studentD\ does not brace \himselfD\ when pushing \studentC.</title>
                         <statement>
                                 <aside><title>Example referenced by</title>
-                                        <p><xref ref="d-NIIIbracing" text="title">the discussion of action-reaction forces</xref>,
-                                        <xref ref="ex-braced" text="type-global" /></p>
+                                        <p>
+                                        <xref ref="d-NIIIbracing" text="title">the discussion of action-reaction forces</xref>,
+                                        <xref ref="ex-braced" text="type-global" />,
+                                        <xref ref="task-friction-past" text="type-global" />
+                                        </p>
                                 </aside>
                                 <p>In the lab room one day, while waiting for the instructor, \studentD<idx><h sortby="\studentD">\studentD</h></idx> (who has a mass of <m>m_D=\massD</m>) decides to try a physics experiment to test Newton's third law.  \HeD\ politely asks \hisD\ lab partner, \studentC<idx><h sortby="\studentC">\studentC</h></idx> (<m>m_C=\massC</m>), to turn \hisC\ back while \heD\ squares \hisD\ feet underneath \himselfD\ and pushes with a force of <m>\vec F_{C,D} = 215\unit{N}\ihat</m>.  Despite the experience of <xref ref="ex-braced" text="type-global" /> (as told in <xref ref="cyoa-NIII" text="type-global"/>), \studentC\ reluctantly agrees.  How does <em>\studentD</em> accelerate during this exchange?</p>
                                 <figure xml:id="f-unbraced">
@@ -4155,8 +4178,8 @@ Earth feels a force by \studentZ\ to the left.
                 </introduction>
 
                         <subsubsection xml:id="sss-kinetic"><title>Kinetic Friction</title>
-                        <p>Here we will discuss the situation of two surfaces rubbing against each other as they slide past each other.  This is not the case with walking (unless your feet slip out from under you!) or turning a car (even though the car <em>is</em> moving). Before introducing the relevant equation, please investigate how objects slide across different surfaces to build your intuition.</p>
-                        <investigation xml:id="inv-friction"><title>Notice where friction is larger or smaller</title>
+                        <p xml:id="d-friction-kinetic">Here we will discuss the situation of two surfaces rubbing against each other as they slide past each other.  This is not the case with walking (unless your feet slip out from under you!) or turning a car (even though the car <em>is</em> moving). Before introducing the relevant equation, please investigate how objects slide across different surfaces to build your intuition.</p>
+                        <investigation xml:id="inv-friction-kinetic"><title>Notice where friction is larger or smaller</title>
                                 <task xml:id="task-friction-slowing"><statement>
                                         <p>Consider some instances of objects sliding across a surface and slowing down. List instances of objects that are heavier and lighter.  List instances of objects sliding across smooth surfaces and rough surfaces.</p>
                                         <aside><title>Task referenced by</title><p><xref ref="task-slowing-down" text="type-global" /></p></aside>
@@ -4202,7 +4225,7 @@ Earth feels a force by \studentZ\ to the left.
                                 </task>
                         </investigation>
 
-                        <p>There are several observations that you should notice from <xref ref="inv-friction" text="type-global" />.  The first observation is as follows:</p>
+                        <p>There are several observations that you should notice from <xref ref="inv-friction-kinetic" text="type-global" />.  The first observation is as follows:</p>
                         <observation xml:id="obs-friction-normal"><title>Friction is increased when two surfaces are pressed harder together</title>
                                 <p>If one object is above the other, then the weight contributes to the amount they are pressed together, but since objects can have friction when they rub their sides across each other (like a <url href="http://bitsandpieces.us/2013/11/tight-squeeze/">truck squeezing through a narrow alleyway</url>), the weight cannot be the explicit quantity.  It turns out that the <xref ref="s-FN" text="title">normal force</xref> is the quantity that expresses how strongly objects are being pressed together because it reflects the force needed to keep one object from passing through the other.</p>
                                 <todo>Use this link?</todo>
@@ -4213,15 +4236,69 @@ Earth feels a force by \studentZ\ to the left.
                         <assemblage xml:id="law-friction-amontons-1"><title>Amontons' first law of friction</title>
                                 <p>The force of friction is directly proportional to the applied load.</p>
                         </assemblage>
-                        <p>Since directly proportional indicates a linear relationship, you are probably thinking of the equation of a line, <m>y=mx+b</m>.  Experiment shows that, consistent with your intuition, if the normal force is zero, then there is no friction, so the intercept is zero.  The proportionality constant we use is called the <term>coefficient of friction</term><idx><h>friction</h><h>coefficient of</h></idx> and the symbol is <m>\mu</m>, which is the Greek letter equivalent to the English letter <q>m</q>.  In most of America, it is pronounced <q>mew</q>.  This relationship is expressed in the relationship
+                        <example xml:id="ex-friction-mugs"><title>Does full or empty stop sooner?</title>
+                                <statement>
+                                        <p>Considering the mugs in <xref ref="A-friction-slowing" text="type-global" />, one full and one empty, let's assume that the mass of the full mug is double the mass of the empty mug.  If both are slid at the same initial speed across the same counter, select the answer that indicates which mug will come to rest sooner:
+                                        <ol>
+                                                <li><p>The full mug stops before the empty mug.  (<xref ref="A-friction-full" text="type-local" />)</p></li>
+                                                <li><p>The empty mug stops before the full mug.  (<xref ref="A-friction-empty" text="type-local" />)</p></li>
+                                                <li><p>Neither; they stop after the same distance. (<xref ref="A-friction-both" text="type-local" />)</p></li>
+                                        </ol>
+                                        </p>
+                                </statement>
+                                <hint><p>The mug with twice the mass has twice the weight.</p></hint>
+                                <hint><p>Because they are on a (presumably) flat surface with no other forces pushing up or down, the normal force must be balanced with the weight of each mug.</p></hint>
+                                <hint><p>Recall <xref ref="law-friction-amontons-1" text="title" />.</p></hint>
+                                <answer xml:id="A-friction-full">
+                                        <p>Since the full mug has a larger normal force, it does have a larger frictional force than the empty mug.  However, the relevant equation is Newton's second law in the horizontal direction with friction as the only horizontal force: <m>F_f = ma</m>.  Since both the frictional force and the mass are double that of the empty mug, the acceleration is the same for both mugs.  The full mug does not stop before the empty mug.</p></answer>
+                                <answer xml:id="A-friction-empty">
+                                        <p>Since the empty mug has a smaller mass, you might expect it to have a larger acceleration (according to Newton's second law), but that conclusion assumes that the force is the same, which is not true.  The empty mug has a smaller mass and a smaller frictional force (because it has a smaller normal force).  The relevant equation is Newton's second law in the horizontal direction with friction as the only horizontal force: <m>F_f = ma</m>.  Since both the frictional force and the mass are half of that for the full mug, the acceleration is the same for both mugs.  The empty mug does not stop before the full mug.</p></answer>
+                                <answer xml:id="A-friction-both">
+                                        <p>The relevant equation is Newton's second law in the horizontal direction with friction as the only horizontal force: <m>F_f = ma</m>.  The question requires an understanding of the acceleration, 
+                                        <me>a=\frac{F_f}{m} = \frac{2F_f}{2m} = \frac{\frac{1}{2}F_f}{\frac{1}{2}m}</me>
+                                        If the numerator and denominator are increased or decreased by the same amount, then the result is the same.  The full and empty mugs should reach the same distance.</p></answer>
+                        </example>
+                        <p>Since directly proportional indicates a linear relationship, you are probably thinking of the equation of a line, <m>y=mx+b</m>.  Experiment shows that, consistent with your intuition, if the normal force is zero, then there is no friction, so the intercept is zero.  The proportionality constant we use is called the <term>coefficient of friction</term><idx><h>friction</h><h>coefficient of</h></idx> and the symbol is <m>\mu</m>, which is the Greek letter equivalent to the English letter <q>m</q>.  In most of America, it is pronounced <q>mew</q>.  This relationship is expressed in the equation
                         <men xml:id="eq-friction">F_f=\mu F_N</men>
-                        where <m>F_f</m> is the <term>frictional force</term><idx><h>force</h><h>friction</h></idx><idx>friction</idx>, <m>F_N</m> is the normal force<idx><h>force</h><h>normal</h></idx>. One important aspect to this equation is that:</p>
+                        where <m>F_f</m> is the <term>frictional force</term><idx><h>force</h><h>friction</h></idx><idx>friction</idx>, <m>F_N</m> is the normal force<idx><h>force</h><h>normal</h></idx>. </p>
+                        <p>One important aspect to <xref ref="eq-friction" text="type-local">Equation</xref> is that:</p>
                         <remark><title><m>F_f=\mu F_N</m> is not a vector equation</title>
                                 <p>The direction of the frictional force is <em>necessarily</em> along the plane of the surface, whereas the normal force is <em>necessarily</em> normal (perpendicular) to the plane of the surface.<fn>Some sources include this in the statement of <xref ref="law-friction-amontons-1" text="title" />, stating <q>When a body is moving, the friction is directly proportional to normal force and frictional force direction is perpendicular to the normal force.</q></fn>  This is a <q>magnitude</q> relationship.</p>
                         </remark>
+                        <example><title>The direction of the frictional force</title>
+                                <statement><p>Do an example indicating the direction of the frictional force.</p></statement>
+                        </example>
+                        <example xml:id="ex-friction-mug"><title>How far does the mug slide?</title>
+                                <statement><p>Given a <m>0.75\unit{kg}</m> mug pushed at <m>2.00\unitfrac{m}{s}</m> across a counter with a coefficient of friction <m>\mu_k = 0.13</m>, how far will it go before stopping?</p></statement>
+                                <hint><p>There are two steps to this problem: Find the acceleration (see also <xref ref="h-friction-mug-acceleration" text="type-local" />), then the distance (see also <xref ref="h-friction-mug-distance" text="type-local" />).</p></hint>
+                                <hint xml:id="h-friction-mug-acceleration"><p>To find the acceleration, use Newton's second law for the horizontal direction.  (See <xref ref="h-friction-mug-net" text="type-local" /> for help with the net force.)</p></hint>
+                                <hint xml:id="h-friction-mug-distance"><p>There are <xref ref="d-EOM" text="title">two equations</xref> that involve the displacement.  One of them requires the time of motion, which is difficult (but not impossible) to find.  I suggest using the other equation.</p></hint>
+                                <hint xml:id="h-friction-mug-net">
+                                        <p>In the horizontal direction, the net force is the sum of the <m>x</m>-component of the gravitational force (which has no <m>x</m>-component), of the normal force (which also has no <m>x</m>-component),  and of the frictional force (which has no <m>y</m>-component); so you need the value of the frictional force. (See <xref ref="h-friction-mug-friction" text="type-local" /> for help with the frictional force.)</p>
+                                        <p>In the vertical direction, the net force is the sum of the <m>y</m>-component of the gravitational force (which has no <m>x</m>-component), of the normal force (which also has no <m>x</m>-component),  and of the frictional force (which has no <m>y</m>-component); so you need to relate the vertical acceleration to the gravitational and normal forces. (See <xref ref="h-friction-mug-normal" text="type-local" /> for help with the normal force.)</p></hint>
+                                <hint xml:id="h-friction-mug-friction">
+                                        <p>You can find the frictional force from the normal force with <xref ref="eq-friction" text="type-local">Equation</xref>.  (See <xref ref="h-friction-mug-normal" text="type-local" /> for help with the normal force.)</p></hint>
+                                <hint xml:id="h-friction-mug-normal">
+                                        <p>You can find the normal force from Newton's second law in the vertical direction since the vertical-component of the acceleration is zero.
+                                        <me> \vec F_N + \vec F_g = m \cancelto{0}{a_y} </me>
+                                        In this case <m>\vec F_N = - \vec F_g</m>.</p></hint>
+                                <answer>
+                                        <p>The mug travels <m>1.6\unit{m}</m> across the counter.</p>
+                                </answer>
+                                <solution>
+                                        <p>In order to find the distance traveled by the mug, we should use the equation 
+                                        <me> v_f^2 = v_i^2 + 2 \, a \, \Delta x </me>
+                                        and solve for the displacement <m>(\Delta x)</m>.  In order to do this, we need the initial and final velocities and the acceleration.  We are given the initial velocity and, since the mug comes <xref ref="d-at-rest" text="title">to rest</xref>, we can easily deduce the final velocity <m>(0\unitfrac{m}{s})</m>.  As usual (recall <xref ref="se-netF-a" text="type-global" />), we can find the acceleration from Newton's second law (the hints give the justification for the steps)
+                                        <me> a = \frac{F_f}{m} = \frac{\mu F_N}{m} = \frac{\mu (mg)}{m} = \mu g = (0.13)(9.81\unitfrac{m}{s^2}) = \sigfrac{1.2}{8}{m}{s^2}</me>
+                                        <alert>(Adjust this to indicate direction)</alert>
+                                        where you might notice that the mass cancels (consistent with <xref ref="ex-friction-mugs" text="type-local" />) and that you do not literally need to find the value of the normal or frictional forces.</p>
+                                        <p>Given the acceleration, we can find the displacement:
+                                        <me> \Delta x = \frac{(\cancelto{0}{v_f})^2 - v_i^2}{2 \, a} = \frac{(0\unitfrac{m^2}{s^2})-(2.00\unitfrac{m}{s})^2}{2(-\sigfrac{1.2}{8}{m}{s^2})} = \sig{1.5}{7}{m} </me>
+                                        </p>
+                                </solution>
+                        </example>
 
-
-                        <p>The second observation you might make from <xref ref="inv-friction" text="type-global" /> might be as follows:</p>
+                        <p>The second observation you might make from <xref ref="inv-friction-kinetic" text="type-global" /> might be as follows:</p>
                         <observation xml:id="obs-friction-mu"><title>Friction depends on the types of <em>both</em> surfaces rubbing together</title>
                                 <p>A chair on a hard-wood floor is different from a rubber-soled shoe on hard wood and both of these are different from that same chair (or shoe) on ceramic tile.  It is not useful to talk about the friction caused by the floor independently of what is moving across the floor.  Furthermore, it depends on how those surfaces interact.  On the one hand, it is safe to conceptualize this as the rougher the surfaces, the more places they have to grab each other.  On the other hand, there is also the effect of very flat, smooth surfaces:  If two very flat, smooth surfaces are in contact, they have a <q>stickiness</q> that interferes with the easy of sliding past each other.  For example, when you get an oil change in your car, they will often provide a small plastic reminder tag that sticks to your windshield with significant friction, but without stickiness.  <em>The information about how these surfaces interact is encoded in the coefficient of friction.</em><idx><h>friction</h><h>coefficient of</h></idx>  (See also <xref ref="fn-friction-mu" text="type-local" /> in <xref ref="law-friction-amontons-2" text="title" /> below, which indicates that some engineering texts indicate this as another law of friction.)</p>
                                 <p>An interesting example of a recent development in friction is <xref ref="p-gecko-grip" text="title">the development of <q>gecko-grip</q></xref>.</p>
@@ -4251,6 +4328,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <p>Kinetic friction is independent of the sliding velocity.</p>
                         </assemblage>
                         <biographical xml:id="ts-friction"><title>Touchstone</title><p><xref ref="law-friction-coulomb" text="title" /> is <xref ref="s-effective2" text="title">mostly true</xref>.  If the object is moving extremely slowly then it gets into the fits-and-starts motion; the motion is not smooth and puts us back into that described <xref ref="p-friction-herky-jerky" text="title">above</xref>.  If the object is moving very <xref ref="d-quick-fast" text="title">fast</xref>, then it can start to skip (imagine a speedboat skimming across a lake with a staccato thrumming and a choppy wake) and the nature of the surface-interaction becomes different enough that the description must also change.  However, the range of speeds for which this <em>is</em> true is reasonably large.</p></biographical>
+                        <p><xref ref="law-friction-coulomb" text="title" /> turns out to be extremely convenient.  Because of this law, we can do <xref ref="ex-friction-mug" text="type-local" />.  If it were not true, then the magnitude of the frictional force would change as the object slowed down and the acceleration would not be constant!  This requires mathematics called <q>differential equations</q>, which most students take after completing three years of calculus.  Unfortunately, this is what happens with <xref ref="ss-air-resistance" text="title" />.</p>
 
                         <p>Friction turns out to be quite interestingly complicated.  Most of our understanding comes from experimental patterns, although the field of <xref ref="ss-tribology" text="title">tribology</xref> is continuing to improve our theoretical descriptions of friction all the time.  For our purposes, we can encapsulate all of these ideas into a single equation.</p>
                         <heuristic xml:id="st-Ff-muFN"><title>The Story of <m>F_f =\mu F_N</m></title>
@@ -4293,14 +4371,134 @@ Earth feels a force by \studentZ\ to the left.
                         </subsubsection>
 
                         <subsubsection xml:id="sss-static"><title>Static Friction</title>
-                        <p>static friction:</p>
-                        <p> </p>
-                        <observation xml:id="p-friction-static-variable"><title>It is more difficult to get things moving than to keep things moving</title>
-                                <p>Since you have to overcome static friction in order to get the object to move, the static friction is able to vary its magnitude in such a way as to balance the applied force so long as the applied force is smaller than the maximum static force.</p>  
+
+                        <p xml:id="d-friction-static">Whereas <xref ref="d-friction-kinetic" text="title">kinetic friction</xref> describes the situation of two surfaces rubbing against each other as they slide past each other, static friction describes the case of two surfaces that <em>would slide</em> across each other <em>if</em> they weren't stuck.  Unlike kinetic friction, this <em>is</em> what you intend to happen when you are walking.  Your feet should not slip out from under you!  Before developing this further, please investigate how objects can be <q>stuck</q> to build your intuition.</p>
+                        <investigation xml:id="inv-friction-static"><title>Push without moving</title>
+                                <introduction><p>Consider moving some heavy objects around your home.  (A refrigerator, bed, or couch make good examples to try on your own.)</p></introduction>
+                                <task xml:id="task-friction-start">
+                                        <statement>
+                                                <p>Push gently on the object.  Notice that it is possible to be pushing on it while it continues to be <xref ref="def-equilibrium" text="title">in equilibrium</xref>.  Identify all forces acting on the object and the size of each relative to the amount you are pushing.</p>
+                                        </statement>
+                                        <hint><p>Are you on the surface of the Earth?  Is the object falling through the floor?  Are you pushing on it?  Why isn't it moving?</p></hint>
+                                        <solution xml:id="solution-friction-start"><p>There is necessarily a gravitational force.  You should be able to deduce the direction of that force.</p>
+                                                <p>Since it is not falling through the floor, there is undoubtedly a normal force.  The normal force will balance all downward forces minus any upward forces, which in this case happens to only be the gravitational force.  You should be able to deduce the direction of the normal force.</p>
+                                                <p>Since you are pushing on it (however gently), there must be an applied force in the direction you are pushing.  I will assume it is parallel to the floor.</p>
+                                                <p>Since it is not moving, there must be some force opposing the force you are applying.  The only other thing in contact with the heavy object you are pushing is the floor, which exerts a frictional force on anything that tries to slide along it.</p>
+                                                <p>Since there is no vertical acceleration, the vertical components of the forces have to all balance.  Since the applied and frictional forces do not have vertical components, the normal and gravitational forces must balance. Since I assume you are pushing lightly enough that the weight (and hence the normal force) are noticeably larger than your applied force.</p>
+                                                <p xml:id="solution-friction-start-last">Since the object is not accelerating in the horizontal direction, the horizontal components of the forces must also balance.  Since the normal and gravitational forces do not have a horizontal component, the applied and frictional forces must balance.  This says that the magnitude of the frictional force is the same as the magnitude of your applied force. </p>
+                                        </solution>
+                                </task>
+                                <task xml:id="task-friction-harder">
+                                        <statement>
+                                                <p>Continue to push gently on the object.  Notice that it is possible to gradually increase the magnitude of your applied force while it continues to be <xref ref="def-equilibrium" text="title">in equilibrium</xref>.  Recalling the <xref ref="solution-friction-start-last" text="title">last paragraph</xref> of the <xref ref="solution-friction-start">solution</xref> of <xref ref="task-friction-start" text="type-local" />, comment on the value of the frictional force while you adjust the magnitude of your applied force (still keeping to gentle enough not to move the object).</p>
+                                        </statement>
+                                        <solution>
+                                                <p>Since the object is not accelerating in the horizontal direction, the horizontal components of the forces must also balance.  Since the normal and gravitational forces do not have a horizontal component, the applied and frictional forces must balance regardless of the value of the applied force (so long as it remains static).  This says that as you change the magnitude of the applied force, the magnitude of the frictional force <alert>must</alert> also be changing.</p>
+                                        </solution>
+                                </task>
+                                <task xml:id="task-friction-past">
+                                        <statement>
+                                                <p>Assuming (1) this is something that you can lean into when you push, that (2) it is on tile or linoleum, and that (3) you have slippery socks on, when you push without moving it, what happens <em>to you</em>?  Why?</p>
+                                        </statement>
+                                        <hint><p><xref ref="as-NIII" text="title" />.</p></hint>
+                                        <hint><p>Recall <xref ref="ex-braced" text="title" /> and <xref ref="ex-unbraced" text="title" />.</p></hint>
+                                </task>
+                                <task xml:id="task-friction-future">
+                                        <statement>
+                                                <p>By experimenting, determine the largest force you can apply without having the object move.  Does it matter if you push near the top of the object or near the bottom of the object?</p>
+                                        </statement>
+                                        <solution>
+                                                <p>In this chapter, we will assume that it does not matter where you push on the object.  However, when you do the experiment, you will likely see that it does matter; you might notice that if you push near the top, the object is likely to tip rather than slide whereas if you push near the bottom it is more likely to slide than to tip.  This is likely more noticeable with a heavy object that is very difficult to move.  When you do this, you are forming a <xref ref="def-force-couple" text="title">force couple</xref>, which produces a <xref ref="s-leverarm" text="title">torque</xref>. </p>
+                                        </solution>
+                                </task>
+                        </investigation>
+                        <p>notice the following</p>
+                        <observation xml:id="p-friction-static-variable"><title>Can push with any value gentle force</title>
+                                <p>Since you can gradually increase the applied force without moving the object, the static friction is able to vary its magnitude in such a way as to balance the applied force so long as the applied force is smaller than the maximum static force.</p>
+                        </observation>
+                        <p>This observation means that <xref ref="eq-friction" text="global">Equation</xref> cannot literally be true for the situations involving static friction.  Instead, the frictional force can have any smaller value up to some maximum where the object moves and we can describe it with kinetic friction.  Therefore we need to distinguish between the kinetic friction and the static friction.  <xref ref="eq-friction" text="global">Equation</xref> still holds for kinetic friction, but we have to use 
+                        <men xml:id="eq-friction-static">F_{f,\text{static}} \le F_{f,\text{max}} = \mu_s F_N</men>
+                        to describe static friction.  This describes the maximum value that the force of static friction can take before the object begins to move, while allowing the force of static friction to take any smaller value when the object is pushed more gently than this maximum value.</p>
+                        <example><title>Value of gentle static friction</title>
+                                <p>Make an example.</p>
+                        </example>
+                        
+                        <investigation xml:id="inv-friction-max"><title>Get it moving</title>
+                                <introduction>
+                                        <p>Consider moving some heavy objects around your home.  A refrigerator, bed, or couch make good examples to try on your own.  Unlike <xref ref="inv-friction-static" text="type-local" />, we now want to investigate the boundary between not moving and moving.  Where you were previously asked to push gently enough to not move the object, now you should investigate pushing just barely enough to make it move. </p>
+                                </introduction>
+                                <task xml:id="task-friction-moving">
+                                        <statement>
+                                                <p>Push gently on the object and increase your pushing until the object moves. (Be careful about where you push as discussed in <xref ref="task-friction-future" text="type-global" />.)  The tricky part that you should pay attention to is the amount of force you are pushing with before it starts moving as compared to the amount of force you are pushing with after it is already moving.  (This is difficult because most people have spent their life paying attention to how the thing being pushed is moving <em>rather than</em> how hard they are actually pushing.)</p>
+                                                <p>Try to distinguish how much force it takes to <em>get it moving</em> compared to how much force it takes to <em>keep it moving</em> at a constant velocity.</p>
+                                        </statement>
+                                        <hint><p>If you are having trouble gauging the force you exert, you might find a small bathroom scale and place it between you and the object you are pushing so that you push against the scale while reading the value that it displays.</p>
+                                                <p>Some electronic scales wait for you to settle into equilibrium while standing on them and then they read that value.  This type of scale will not be useful for this experiment.  If you can find one, use a mechanical scale ratehr than a digital one.</p>
+                                        </hint>
+                                        <answer>
+                                                <p>Regardless of your ability to feel the difference, if you do the experiment carefully with a force-transducer (or a precision scale), it is possible to measure the difference between the larger force that it take to break static friction (get it moving) and the smaller force needed to counter kinetic friction (keep it moving).</p>
+                                        </answer>
+                                </task>
+                        </investigation>
+
+                        
+                        <observation xml:id="p-friction-static-larger"><title>It is more difficult to get things moving than to keep things moving</title>
+                                <p>Although the amount of static friction will change depending on how hard you push so long as the object remains in static equilibrium, if you maintain the force used to initiate motion, then the object will move with acceleration rather than moving with a constant speed after it is moving. The maximum value of static friction is larger than the kinetic friction.  Another way to say this is that <m>\mu_\text{static} \gt \mu_\text{kinetic}</m>.  This difference is usually small and is often hard to notice.</p>
                         </observation>
                         <p>Since this is also an empirically-determined statement, it becomes the fourth<fn>Although if you count <xref ref="fn-friction-mu" text="type-local" /> as the fourth, this would be the fifth law of friction.</fn> of the laws of friction:</p>
                         <assemblage><title>Another law of friction</title><p>The coefficient of static friction is slightly higher the value than the coefficient of kinetic friction.</p></assemblage>
 
+                        <example><title>Get it moving</title>
+                                <p>Make an example.</p>
+                        </example>
+
+                        <paragraphs xml:id="p-friction-walking"><title>How we walk</title>
+                        <p>using static friction to walk forwards</p>
+                        </paragraphs>
+                        
+                        <paragraphs xml:id="p-friction-repose"><title>Angle of repose</title>
+                        <p>One practical application of this idea is that if you have a stack of books and you want the one that is second or third from the top, you can lift the book you want at some angle until the books above it slide off and then you can take your book.  The angle at which you have to tilt the book in order to get the other to slide off is called the angle of repose:</p>
+                        <definition xml:id="def-angle-repose"><idx><h>angle of repose</h></idx>
+                                <notation>
+                                        <usage>\term{angle of repose}</usage>
+                                        <description>The angle at which an object slide off a tilted ramp.</description>
+                                </notation>
+                                <statement><p>The <term>angle of repose</term> is the angle at which an object, which has been placed on a surface that can be tilted ever higher, just breaks the static friction and begins to slide down the surface.</p></statement>
+                        </definition>
+                        <p>Because of <xref ref="p-friction-static-larger" text="type-global" />, after the object begins to slide, it will accelerate down the ramp, rather than sliding at a constant speed.  On the other hand, since the surface (especially if it is unpolished wood) will likely have variable roughness along its length, it is possible that the coefficient of friction is different in different sections of the surface and the object might get stuck at some lower location.</p>                        
+                        <example><title>Finding the angle of repose</title>
+                                <p>Make an example.</p>
+                        </example>
+                        <p>If you have ridden in a pick-up truck with heavy objects in the truck-bed, then you might notice when they shift. Driving up a steep incline or suddenly accelerating pulls objects to the back, driving downhill or stopping suddenly pulls objects to the front.</p>
+                        <exploration xml:id="cyoa-repose"><title>\studentA\ and \studentC\ use a pick-up truck to move a couch</title><idx><h sortby="\studentA">\studentA</h></idx><idx><h sortby="\studentC">\studentC</h></idx>
+                                <statement>
+                                        <p>One drives the pick-up with a couch, truck door down.  No straps. The other watches from behind.  Choose to measure the friction of the truck-bed.  Choose to measure <m>\mu_s</m> and or <m>\mu_k</m> <em>with the couch</em>. Choose to use straps? and they break?  Choose to measure the mass of the couch?  When you load it, maybe?</p>
+                                </statement>
+                                <answer>
+                                        <p>Accelerates slowly from the parking lot.  friction and inertia (2nd law then 1st law) keeps the couch in place.</p>
+                                </answer>
+                                <answer>
+                                        <p>Accelerates quickly from the parking lot.  Couch slides backwards. Choose honk or wait.  choose traffic or no traffic. DO OVER: go back to the first choice.</p>
+                                </answer>
+                                <answer>
+                                        <p>Stops suddenly; couch slide back in.</p>
+                                </answer>
+                                <answer>
+                                        <p>Up hill, angle of repose</p>
+                                </answer>
+                        </exploration>
+                        </paragraphs>
+
+                        <paragraphs xml:id="p-friction-inclined"><title>Inclined Planes</title><idx>inclined planes</idx><idx><h>plane</h><h>inclined</h></idx>
+                        <p>Now we can define inclined planes!  Woo Hoo!</p>
+                        <example><title>Below the angle of repose</title>
+                                <p>Make an example.</p>
+                        </example>
+                        <example><title>Above the angle of repose</title>
+                                <p>Make an example.</p>
+                        </example>
+                        </paragraphs>
+                        
                         </subsubsection>
 
                 <conclusion>
@@ -4395,7 +4593,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 </subsection>
 
-                <subsection><title>Air Resistance</title>
+                <subsection xml:id="ss-air-resistance"><title>Air Resistance</title>
                         <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that Reynolds introduced the equation of viscous fluid flow in 1866 (but referenced Reynolds 1886).</p>
                 </subsection>
 
@@ -5845,8 +6043,26 @@ Also check these folks out on Wikipedia.... of course
         </introduction>
 
         <section xml:id="s-leverarm"><title>Leverage</title>
-        <p>.</p>
-        <aside><title>Referenced by</title> <p><xref ref="ss-scales" text="type-global" /></p></aside>
+        <aside><title>Section referenced by</title> 
+                <p>
+                <xref ref="ss-scales" text="type-global" />,
+                <xref ref="task-friction-future" text="type-global" />
+                </p>
+        </aside>
+        <p>discussion of <term>torque</term><idx>torque</idx>: <m>\tau = F l \sin\theta</m>.</p>
+        
+        <definition xml:id="def-force-couple">
+                <notation>
+                        <usage>\text{force couple}</usage>
+                        <description>This is a pair of forces that act on an object at different locations in opposite directions, but with equal magnitudes.  Force couples produce a torque on the object.</description>
+                </notation>
+                <statement>
+                        <p>A <term>force couple</term> is a pair of forces that act on an object at different locations in opposite directions, but with equal magnitudes.  Force couples produce a torque on the object.</p>
+                        <aside><title>Definition referenced by</title><p><xref ref="task-friction-future" text="type-global" /></p></aside>
+                </statement>
+        </definition>
+        
+        
         </section>
 
         <section><title>Putting it all together, <m>\tau_\mathrm{net}</m></title>
@@ -6686,10 +6902,22 @@ Also check these folks out on Wikipedia.... of course
         <todo>The index will recognize the people in two different formats.  One is by my name for them, which is \studentX (where X is A, B, C, D, ... Z).  The other is by the name assigned to that variable.  So these show up in different places in the Index.</todo>
 
         <p>I can, at the header of the code, define the name, gender, mass, and dimensions of each individual.</p>
+<!--
         <todo>(url href="http://malveyauthor.com/")Madeline Alvey(/url), the author of
-        (url href="http://escapepod.org/2017/03/09/ep566-honey-and-bone-artemis-rising-3/")"Honey and Bone" at EscapePod(/url) is a physics and English undergraduate student at UK in Lexington.  I might consider hiring(?) her to help storyboard the characters.</todo>
+        (url href="http://escapepod.org/2017/03/09/ep566-honey-and-bone-artemis-rising-3/")"Honey and Bone" at EscapePod(/url) is a physics and English undergraduate student at UK in Lexington.  
+        I might consider hiring(?) her to help storyboard the characters.</todo>
+I have emailed her.  NO REPLY.
+        -->
+        <todo>Check archivos.digital for storyboarding.  $60/year</todo>
 
         </introduction>
+
+        <section><title>The Story</title>
+                <p>This will be a dramatic story of college students in and out of relationships, stress about their major, and interacting with parents.  Maybe some travel; certainly some growth.  During their adventure, they casually interact with the reader in unimportant ways that produce the examples and explorations.</p>
+                
+                <p>The next set of sections are there to help me storyboard the interactions.</p>
+                
+        </section>
 
         <section><title>\studentA</title>
         <idx><h>\studentA</h><h>outside</h></idx>
