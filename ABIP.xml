@@ -648,7 +648,7 @@
 
         <p>All of our explanations are approximations.  This section will describe some physics in the world around us in one or two paragraphs with links to the sections in the book that provide the detailed understanding of that piece which connects to the mathematics and the underlying foundation.  Each topic will also link to a more detailed discussion at the end of the book with a longer conversation that gets into more nitty-gritty details which assume you have learned the details from the book.  In short, this section looks forward to what is possible to understand and that chapter looks back at how you do understand.  Each of these topics will also be accompanied by a five-minute podcast describing the topic.</p>
 
-        <p>The term <q>effective theory</q> is used in physics to describe a wide-reaching phenomenon which can be approximated by a simpler theory in a smaller circumstance.  So, for example, Einstein's theory of general relativity as a complex description of the gravitational interaction.  It would be unwieldy and impractical to use that to describe our day-to-day interactions with the gravitational interaction.  On the other hand, Newton's theory of the gravitational interaction is a special case of Einstein's general theory of relativity that works perfectly well so long as you behave yourself and do not try to travel at a significant fraction of the speed of light.  We can say that Newton's theory of gravity is an effective theory for Einstein's theory of gravity that accounts for acceleration at low speeds.  Likewise, Einstein's special theory of relativity is an effective theory of the general theory of relativity.  The special theory is relevant when you do not allow for acceleration, but do allow for faster speeds.  Once you reach beyond the limitations of the effective theory, the description <q>breaks down</q>.</p>
+        <p>The term <term>effective theory</term> is used in physics to describe a wide-reaching phenomenon which can be approximated by a simpler theory in a smaller circumstance.  So, for example, Einstein's theory of general relativity as a complex description of the gravitational interaction.  It would be unwieldy and impractical to use that to describe our day-to-day interactions with the gravitational interaction.  On the other hand, Newton's theory of the gravitational interaction is a special case of Einstein's general theory of relativity that works perfectly well so long as you behave yourself and do not try to travel at a significant fraction of the speed of light.  We can say that Newton's theory of gravity is an effective theory for Einstein's theory of gravity that accounts for acceleration at low speeds.  Likewise, Einstein's special theory of relativity is an effective theory of the general theory of relativity.  The special theory is relevant when you do not allow for acceleration, but do allow for faster speeds.  Once you reach beyond the limitations of the effective theory, the description <q>breaks down</q>.</p>
 
         <p>For example, see <xref ref="p-g-to-3-digits" text="title">the discussion on the acceleration due to gravity being <q>locally constant</q></xref>.</p>
 
@@ -1151,6 +1151,8 @@
 
         <p>Sometimes we imagine objects to be <q>massless</q> or <q>frictionless</q>.  In these instances we <em>usually</em> mean that the mass (or amount of friction) is small enough to not impact the significant digits of our calculation.  In those cases, if we consider a more-precise measurement/computation, then the mass (or amount of friction) would impact the significant digits.  (See comments in <xref ref="ex-atwood-tension" text="type-global" />.)</p>
 
+        <p>I should define a term <term>mostly true</term> that is used in concert with <term>effective theory</term> to indicate the topic has some caveats.  Then maybe list those in the <term>Touchstone</term> margin note?  See, for example, <xref ref="ts-friction" text="title">the Touchstone on friction</xref>.</p>
+
         </section>
         <conclusion><title>List of examples</title>
                 <list-of elements="example" scope="chapter" />
@@ -1269,7 +1271,17 @@
 				<usage>\mathrm{acceleration}</usage>
 				<description>refers to the general idea of changing your motion (velocity), meaning <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>)</description>
 			</notation>
-
+                </p>
+                
+                <p xml:id="d-quick-fast">To help keep these concepts (velocity versus acceleration) separate, this text will use <term>fast</term><idx><h>fast</h><seealso>quick</seealso></idx> to indicate <em>moving with a large speed</em> in contrast to <term>quick</term><idx><h>quick</h><seealso>fast</seealso></idx> which will indicate <em>moving with a large acceleration</em>.  With this notation, a drag-racer is <q>quick</q> but any car might eventually become <q>fast</q>.  Similarly, a cheetah is initially <q>quick</q> until it becomes <q>fast</q>.
+			<notation>
+				<usage>\mathrm{fast}</usage>
+				<description>refers to moving with a large velocity (to be distinguished from <term>quick</term>)</description>
+			</notation>
+			<notation>
+				<usage>\mathrm{quick}</usage>
+				<description>refers to moving with a large acceleration (to be distinguished from <term>fast</term>)</description>
+			</notation>
                 </p>
 
                 <p>Discussion of <xref ref="ex-slowcar" text="type-global" /> and <xref ref="ex-coasting" text="type-global" />.</p>
@@ -4201,17 +4213,18 @@ Earth feels a force by \studentZ\ to the left.
                         <assemblage xml:id="law-friction-amontons-1"><title>Amontons' first law of friction</title>
                                 <p>The force of friction is directly proportional to the applied load.</p>
                         </assemblage>
-                        <p>Since directly proportional indicates a linear relationship, you are probably thinking of the equation of a line, <m>y=mx+b</m>.  Experiment shows that, consistent with your intution, if the normal force is zero, then there is not friction, so the intercept is zero.  The proportionality constant we use is called the <term>coefficient of friction</term><idx><h>friction</h><h>coefficient of</h></idx> and the symbol is <m>\mu</m>, which is the Greek letter equivalent to the English letter <q>m</q>.  In most of America, it is pronounced <q>mew</q>.  This relationship os is expressed in the relationship
+                        <p>Since directly proportional indicates a linear relationship, you are probably thinking of the equation of a line, <m>y=mx+b</m>.  Experiment shows that, consistent with your intuition, if the normal force is zero, then there is no friction, so the intercept is zero.  The proportionality constant we use is called the <term>coefficient of friction</term><idx><h>friction</h><h>coefficient of</h></idx> and the symbol is <m>\mu</m>, which is the Greek letter equivalent to the English letter <q>m</q>.  In most of America, it is pronounced <q>mew</q>.  This relationship is expressed in the relationship
                         <men xml:id="eq-friction">F_f=\mu F_N</men>
                         where <m>F_f</m> is the <term>frictional force</term><idx><h>force</h><h>friction</h></idx><idx>friction</idx>, <m>F_N</m> is the normal force<idx><h>force</h><h>normal</h></idx>. One important aspect to this equation is that:</p>
                         <remark><title><m>F_f=\mu F_N</m> is not a vector equation</title>
-                                <p>The direction of the frictional force is <em>necessarily</em> along the plane of the surface, whereas the normal force is <em>necessarily</em> normal (perpendicular) to the plane of the surface.<fn>Some sources include this in the statement of <xref ref="law-friction-amontons-1" text="title" />.</fn>  This is a <q>magnitude</q> relationship.</p>
+                                <p>The direction of the frictional force is <em>necessarily</em> along the plane of the surface, whereas the normal force is <em>necessarily</em> normal (perpendicular) to the plane of the surface.<fn>Some sources include this in the statement of <xref ref="law-friction-amontons-1" text="title" />, stating <q>When a body is moving, the friction is directly proportional to normal force and frictional force direction is perpendicular to the normal force.</q></fn>  This is a <q>magnitude</q> relationship.</p>
                         </remark>
 
-                        
+
                         <p>The second observation you might make from <xref ref="inv-friction" text="type-global" /> might be as follows:</p>
                         <observation xml:id="obs-friction-mu"><title>Friction depends on the types of <em>both</em> surfaces rubbing together</title>
-                                <p>A chair on a hard-wood floor is different from a rubber-soled shoe on hard wood and both of these are different from that same chair (or shoe) on ceramic tile.  It is not useful to talk about the friction caused by the floor independently of what is moving across the floor.  Furthermore, it depends on how those surfaces interact.  On the one hand, it is safe to conceptualize this as the rougher the surfaces, the more places they have to grab each other.  On the other hand, there is also the effect of very flat, smooth surfaces:  If two very flat, smooth surfaces are in contact, they have a <q>stickiness</q> that interferes with the easy of sliding past each other.  For example, when you get an oil change in your car, they will often provide a small plastic reminder tag that sticks to your windshield with significant friction, but without stickiness.  The information about how these surfaces interact is encoded in the coefficient of friction<idx><h>friction</h><h>coefficient of</h></idx>.  (See also <xref ref="p-gecko-grip" text="title">the development of <q>gecko-grip</q></xref>.)</p>
+                                <p>A chair on a hard-wood floor is different from a rubber-soled shoe on hard wood and both of these are different from that same chair (or shoe) on ceramic tile.  It is not useful to talk about the friction caused by the floor independently of what is moving across the floor.  Furthermore, it depends on how those surfaces interact.  On the one hand, it is safe to conceptualize this as the rougher the surfaces, the more places they have to grab each other.  On the other hand, there is also the effect of very flat, smooth surfaces:  If two very flat, smooth surfaces are in contact, they have a <q>stickiness</q> that interferes with the easy of sliding past each other.  For example, when you get an oil change in your car, they will often provide a small plastic reminder tag that sticks to your windshield with significant friction, but without stickiness.  <em>The information about how these surfaces interact is encoded in the coefficient of friction.</em><idx><h>friction</h><h>coefficient of</h></idx>  (See also <xref ref="fn-friction-mu" text="type-local" /> in <xref ref="law-friction-amontons-2" text="title" /> below, which indicates that some engineering texts indicate this as another law of friction.)</p>
+                                <p>An interesting example of a recent development in friction is <xref ref="p-gecko-grip" text="title">the development of <q>gecko-grip</q></xref>.</p>
                         </observation>
 
                         <p><xref ref="eq-friction" text="title">Equation</xref> is also interesting for what it does not include.</p>
@@ -4229,16 +4242,17 @@ Earth feels a force by \studentZ\ to the left.
                         <p>As with <xref ref="obs-friction-normal" text="type-local" />, this observation was also made by Leonardo da Vinci in 1493 and, while still undiscovered in his notebooks, was rediscovered by Guillaume Amontons in 1699 <xref ref="bib-friction-hutchings" text="type-local" />, who wrote it as his second law of friction.</p>
                         <biographical><title>Touchstone</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
                         <assemblage xml:id="law-friction-amontons-2"><title>Amontons' second law of friction</title>
-                                <p>The force of friction is independent of the apparent<fn xml:id="fn-friction-mu">This indicates the <q>apparent</q> area because there is no relation to the macroscopic surface area.  On the other hand, the microscopic contact does matter and this is accounted for through the coefficient of friction which describes the specifics of the surfaces that are interacting.  Modern texts list an additional law of friction as: <q>Friction depends on the type of the surfaces in contact.</q>  <xref ref="bib-friction-tribology" text="type-local" /> references F. Philip Bowden and David Tabor (1950) for the explanation of how the surface area affects friction.</fn> area of contact.</p>
+                                <p>The force of friction is independent of the apparent<fn xml:id="fn-friction-mu">This indicates the <q>apparent</q> area because there is no relation to the macroscopic surface area.  On the other hand, the microscopic contact does matter and this is <xref ref="obs-friction-mu" text="title">accounted for through the coefficient of friction</xref> which describes the specifics of the surfaces that are interacting.  Modern texts list an additional law of friction as: <q>Friction depends on the type of the surfaces in contact.</q>  In 1950, Frank Philip Bowden and David Tabor described how the microscopic surface area affects friction <xref ref="bib-friction-tribology" text="type-local" />.</fn> area of contact.</p>
                         </assemblage>
-                        
+
                         <p><xref ref="eq-friction" text="title">Equation</xref> also does not include the relative velocity between the surfaces, as observed by Charles Coulomb in 1785, <xref ref="bib-friction-armstrong" text="type-local" />. </p>
                         <biographical><title>Touchstone</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
                         <assemblage xml:id="law-friction-coulomb"><title>Coulomb's law of friction</title>
-                                <p>Kinetic friction is independent of the sliding velocity. (Coulomb's Law)</p>
+                                <p>Kinetic friction is independent of the sliding velocity.</p>
                         </assemblage>
+                        <biographical xml:id="ts-friction"><title>Touchstone</title><p><xref ref="law-friction-coulomb" text="title" /> is <xref ref="s-effective2" text="title">mostly true</xref>.  If the object is moving extremely slowly then it gets into the fits-and-starts motion; the motion is not smooth and puts us back into that described <xref ref="p-friction-herky-jerky" text="title">above</xref>.  If the object is moving very <xref ref="d-quick-fast" text="title">fast</xref>, then it can start to skip (imagine a speedboat skimming across a lake with a staccato thrumming and a choppy wake) and the nature of the surface-interaction becomes different enough that the description must also change.  However, the range of speeds for which this <em>is</em> true is reasonably large.</p></biographical>
 
-                        <p>Friction turns out to be quite interestingly complicated.  Most of our understanding comes from experimental patterns, although the field of <xref ref="ss-tribology" text="title">tribology</xref> is continuing to improve our theoretical descriptions of friction all the time.  For our purpoises, we can encapsulate all of these ideas into a single equation.</p>
+                        <p>Friction turns out to be quite interestingly complicated.  Most of our understanding comes from experimental patterns, although the field of <xref ref="ss-tribology" text="title">tribology</xref> is continuing to improve our theoretical descriptions of friction all the time.  For our purposes, we can encapsulate all of these ideas into a single equation.</p>
                         <heuristic xml:id="st-Ff-muFN"><title>The Story of <m>F_f =\mu F_N</m></title>
                                 <statement>
                                 <p>This equation is all about those aspects that impact the strength of the frictional force between two surfaces.  Connecting the English and the math:</p>
@@ -4278,16 +4292,26 @@ Earth feels a force by \studentZ\ to the left.
 
                         </subsubsection>
 
-                        <subsubsection xml:id="sss-static"><title>static friction</title>
+                        <subsubsection xml:id="sss-static"><title>Static Friction</title>
                         <p>static friction:</p>
-                        <p xml:id="p-friction-static-variable">Since you have to overcome static friction in order to get the object to move, the static friction is able to vary its magnitude in such a way as to balance the applied force so long as the applied force is smaller than the maximum static force. </p>
-                        <p>You may notice that it is more difficult to get things moving than to keep things moving.  Since this is also an empirically-determined statement, it becomes the fourth<fn>Although if you count <xref ref="fn-friction-mu" text="type-local" /> as the fourth, this would be the fifth law of friction.</fn> of the laws of friction:</p>
+                        <p> </p>
+                        <observation xml:id="p-friction-static-variable"><title>It is more difficult to get things moving than to keep things moving</title>
+                                <p>Since you have to overcome static friction in order to get the object to move, the static friction is able to vary its magnitude in such a way as to balance the applied force so long as the applied force is smaller than the maximum static force.</p>  
+                        </observation>
+                        <p>Since this is also an empirically-determined statement, it becomes the fourth<fn>Although if you count <xref ref="fn-friction-mu" text="type-local" /> as the fourth, this would be the fifth law of friction.</fn> of the laws of friction:</p>
                         <assemblage><title>Another law of friction</title><p>The coefficient of static friction is slightly higher the value than the coefficient of kinetic friction.</p></assemblage>
-                        <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that Arthur Morin introduced static friction in 1833.</p>
+
                         </subsubsection>
+
+                <conclusion>
+                        <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that Arthur Morin distinguished static friction from rolling friction in 1833.</p>
+                </conclusion>
 
                 </subsection>
                 <subsection xml:id="ss-friction-rolling"><title>rolling friction</title>
+
+                        <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that Arthur Morin distinguished static friction from rolling friction in 1833.</p>
+
 
         <investigation xml:id="irl-poolfriction"><title>Rolling pool balls and friction</title>
                 <idx><h>pool</h><h>real life</h></idx>
@@ -4382,7 +4406,7 @@ Earth feels a force by \studentZ\ to the left.
                         </biblio>
                         <biblio type="raw" xml:id="bib-friction-tribology">
                                 <!-- As of Oct, 2017 -->
-                                <url href="http://www.tribology-abc.com/" /> (Oct, 2017).  <url href="http://www.tribology-abc.com/abc/history.htm">Pg. <q>history</q></url>.
+                                van Beek, Anton. "History of Science Friction". tribology-abc.com. Retrieved Oct, 2017. <url href="http://www.tribology-abc.com/abc/history.htm" />.
                         </biblio>
                         <biblio type="raw" xml:id="bib-friction-armstrong">
                                 <!-- As of Oct, 2017 -->
@@ -5494,7 +5518,7 @@ Also check these folks out on Wikipedia.... of course
                 <list-of elements="example" scope="chapter" />
 
         <p>---</p>
-        <p>(Revised September 1, 2017)</p>
+        <p>(Revised October 16, 2018)</p>
         </conclusion>
 
 </chapter>
