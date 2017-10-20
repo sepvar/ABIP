@@ -6,6 +6,9 @@ default:
 	@echo "Choices: html, latex, images, list (prints copy-paste select image creation), counterr, toperr, typeerr, allerr"
 	@echo "make all will make html, latex, and images"
 
+git: 
+	git diff-index --stat master
+
 ${BEE}/user/mathbook-abip-latex.xsl: mathbook-abip-latex.xsl
 	cp mathbook-abip-latex.xsl ${BEE}/user/
 
@@ -19,15 +22,19 @@ Connected.html: ABIP.sed ${BEE}/user/mathbook-abip-html.xsl ABIP.xml
 
 html: Connected.html
 
-Connected.tex: ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml
+Connected.tex: ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml Connected.sed
 	xsltproc ${BEE}/user/mathbook-abip-latex.xsl ABIP.xml 
 	sed -i.chap -f Connected.sed Connected.tex
-	echo "'make pdf' or use WindEdt to pdflatex"
+
+Connected.ind: Connected.idx Connected.tex
+	makeindex Connected.idx
+
+Connected.pdf: Connected.ind Connected.tex
+	pdflatex Connected.tex
 
 latex: Connected.tex
 
-Connected.pdf: Connected.tex
-	pdflatex Connected.tex
+index: Connected.idx
 
 pdf: Connected.pdf
 
@@ -59,8 +66,8 @@ counterr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml
 	@echo `java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | wc -l`" errors (30 known errors)"
 	@echo -e "part: \t\t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"part" | wc -l`" \t(24 known, hidden)"
 	@echo -e "font: \t\t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"font" | wc -l`" \t(4 known, hidden)"
-	@echo -e "paragraph: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"paragraph" | wc -l`" \t(1 known, listed below)"
-	@echo -e "tabular: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"tabular" | wc -l`" \t(1 known, listed below)"
+	@echo -e "paragraph: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"paragraph" | wc -l`" \t(1 known, hidden)"
+	@echo -e "tabular: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"tabular" | wc -l`" \t(1 known, hidden)"
 
 toperr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml 
 	java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | head -5
@@ -69,6 +76,8 @@ typeerr: counterr ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng 
 	java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | \
 		grep -v ": element \"part" | \
 		grep -v ": element \"font" | \
+		grep -v `grep -n "xml:id=\"p-intuition-motion" ABIP.xml | sed s/:.*//g` | \
+		grep -v `grep -n "Known tag abuse" ABIP.xml | sed s/:.*//g` | \
 		sed 's/.*:\([0-9][0-9]*\):\([0-9][0-9]*\): error: element "\([a-zA-Z][a-zA-Z]*\)".*/\3 line \1:\2/g' | \
 		sort -k1
 
@@ -80,6 +89,8 @@ allerr: checkref counterr ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pret
 	java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | \
 		grep -v ": element \"part" | \
 		grep -v ": element \"font" | \
+		grep -v `grep -n "xml:id=\"p-intuition-motion" ABIP.xml | sed s/:.*//g` | \
+		grep -v `grep -n "Known tag abuse" ABIP.xml | sed s/:.*//g` | \
 		sort -k4  
 
 all: html latex images

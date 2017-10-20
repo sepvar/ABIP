@@ -695,7 +695,7 @@
                         <cell><line>how well</line><line>air allows</line><line>energy to</line><line>flow,</line></cell>
                         <cell><line>the size</line><line>of the</line><line>oven,</line></cell>
                         <cell>
-                                <tabular>
+                                <tabular>  <!-- Known tag abuse -->
                                         <col />
                                         <row bottom="minor"><cell><line>and the</line><line>amount the</line><line>temperature</line><line>needs to</line><line>change</line></cell></row>
                                         <row><cell><line>across the</line><line>height of the</line><line>oven</line></cell></row></tabular>
@@ -1207,16 +1207,16 @@
         </p>
 
                 <p xml:id="d-quick-fast">To help keep these concepts (velocity versus acceleration) separate, this text will use the following conventions:</p>
-                <convention xml:id="convention-fast">
-                	<p>This text will use <term>fast</term><idx><h>fast</h><seealso>quick</seealso></idx> to indicate <em>moving with a large speed</em> (to be distinguished from <xref ref="convention-quick" text="title">quick</xref>).
+                <convention xml:id="convention-fast"><title>Fast</title><idx><h>fast</h><seealso>quick</seealso></idx>
+                	<p>This text will use <term>fast</term> to indicate <em>moving with a large speed</em> (to be distinguished from <xref ref="convention-quick" text="title">quick</xref>).
                 	<notation>
 				<usage>\text{fast}</usage>
 				<description>refers to moving with a large speed (to be distinguished from <term>quick</term>)</description>
 			</notation>
                         </p>
                 </convention>
-                <convention xml:id="convention-quick">
-                	<p>This text will use <term>quick</term><idx><h>quick</h><seealso>fast</seealso></idx> to indicate <em>moving with a large acceleration</em> (to be distinguished from <xref ref="convention-fast" text="title">fast</xref>).
+                <convention xml:id="convention-quick"><title>Quick</title><idx><h>quick</h><seealso>fast</seealso></idx>
+                	<p>This text will use <term>quick</term> to indicate <em>moving with a large acceleration</em> (to be distinguished from <xref ref="convention-fast" text="title">fast</xref>).
 			<notation>
 				<usage>\text{quick}</usage>
 				<description>refers to moving with a large acceleration (to be distinguished from <term>fast</term>)</description>
@@ -1291,7 +1291,7 @@
 				<description>refers to the general idea of changing your motion (velocity), meaning <em>either</em> <term>speeding up</term> (colloquially <q>acceleration</q>) <em>or</em> <term>slowing down</term> (colloquially <q>deceleration</q>) <em>or</em> <term>changing the direction</term> (colloquially <q>turning</q>)</description>
 			</notation>
                 </p>
-                
+
                 <p>Recall the <xref ref="d-quick-fast" text="title">use of fast versus quick</xref>.</p>
 
                 <p>Discussion of <xref ref="ex-slowcar" text="type-global" /> and <xref ref="ex-coasting" text="type-global" />.</p>
@@ -1371,7 +1371,7 @@
 
         <p xml:id="d-EOM">The equations of constant acceleration can be summarized as
         <!--\new{v2.3}{referenced.   Need the story of these equations}-->
-        <!-- There is discussion about providing sub-equations in XML: 
+        <!-- There is discussion about providing sub-equations in XML:
                 https://groups.google.com/forum/?utm_source=digest&utm_medium=email#!topic/pretext-support/igK29R8klkM
                 (same as:  https://groups.google.com/forum/#!topic/pretext-support/igK29R8klkM/discussion  )
                 https://github.com/rbeezer/mathbook/issues/748
@@ -1727,7 +1727,7 @@
                         <description>refers to the general idea of pushing or pulling; every force is enacted <term>by</term> one person or object and is acted <term>on</term> another.</description>
                 </notation>
                 refers to the general idea of pushing or pulling.  In the same way that physicists use the technical word <xref ref="d-acc" text="title">acceleration</xref> differently than the general population uses the colloquial word, force has a specific meaning.  We will use <em>force as a noun</em><idx><h>force</h><h>noun</h></idx> (not as a verb) referring to the act of pushing or pulling and having specific relationships that will be outlined in this chapter.</p>
-                <aside><title>Etymology</title>
+                <aside><title>Etymology (force)</title><idx><h>etymology</h><h>force</h></idx>
                         <p>We are using <url href="http://www.etymonline.com/word/force">force</url> in the sense of <url href="http://www.etymonline.com/word/compulsion">compulsion</url>, although perhaps you might connect it more closely with a <url href="http://www.etymonline.com/word/motive">motive</url>.</p>
                 </aside>
                 <proposition xml:id="p-pushvector"><title>Looking Back</title>
@@ -1764,7 +1764,7 @@
                 This will be more relevant when we discuss in <xref ref="c-forcetype" text="type-global"/> the types of forces that might be applied.</p>
                 </convention>
 
-                <biographical><title>Touchstone</title><p>Recall the distinction between <xref ref="s-law" text="title" />.</p></biographical>
+                <biographical><title>Touchstone (law)</title><p>Recall the distinction between <xref ref="s-law" text="title" />.</p></biographical>
                 <proposition xml:id="d-Newtonahead"><title>Looking Ahead</title>
                         <p>Looking ahead to Newton's Laws<idx><h>laws</h><h>Newton</h></idx> (<xref ref="s-Newton" text="type-hybrid" />), you should be ready to notice that the first law (<xref ref="ss-NI" text="type-hybrid" />) is about objects that are not feeling a force, the second law (<xref ref="ss-NII" text="type-hybrid" />) is about a specific object that is feeling a force, and the third law (<xref ref="ss-NIII" text="type-hybrid" />) is about the interaction between the two objects.  In all three of these, we care about the object feeling the force.   It is only in the third law that we care about the object exerting the force.</p>
                 </proposition>
@@ -1775,7 +1775,7 @@
 
         <introduction>
 	<aside><title>Section referenced by</title> <p>Discussion of <xref ref="d-Newtonahead" text="title">how to describe forces</xref></p></aside>
-	<biographical><title>Touchstone</title><p>Recall the distinction between <xref ref="s-law" text="title" />.</p></biographical>
+	<biographical><title>Touchstone (law)</title><p>Recall the distinction between <xref ref="s-law" text="title" />.</p></biographical>
 	<aside><title>Paragraph referenced by</title> <p><xref ref="ss-N-NIII" text="type-global" /></p></aside>
         <p xml:id="sum-NewtonsLaws">
         Newton's Laws describe our observations about three questions:
@@ -1800,7 +1800,7 @@
                 the portion of the statement referring to the reference frame.</p>
                 <todo>check the implications of this footnote.</todo>
         </remark>
-                <aside><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></aside>
+                <biographical><title>Touchstone (mostly true)</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.  Standing on the surface of the Earth provides an essentially-inertial reference frame.</p></biographical>
 
         <remark xml:id="d-objectinmotion"><title>Objects in motion</title>
                 <p>Sometimes Newton's first law is written<fn xml:id="fn-NI">A common statement of this is: An object in motion remains in motion and an object at rest remains at rest unless an external force is applied.  This <em>feels clumsy</em> and the statement used in this text is meant to emphasize that <q>in uniform motion</q> and <q>at rest</q> are both inertial-states.</fn> to include the phrase <q>an object in motion</q>, which I will be careful to link directly to <xref ref="d-motion" text="title">velocity</xref>, as was done above.  However, it technically should reference the momentum, which is discussed in <xref ref="c-momentum" text="type-global" />.</p>
@@ -1819,7 +1819,7 @@
                 <assemblage xml:id="as-NI"><title>Newton's First Law</title><idx><h>Newton</h><h>first law</h></idx>
                         <p>When viewed from an inertial reference frame, an object with no forces acting on it will maintain its velocity, which may be zero.</p>
                 </assemblage>
-                <aside><title>Touchstone</title><p>You might also recall the discussion in <xref ref="ss-noninertial" text="type-global" />.</p></aside>
+                <biographical><title>Touchstone (inertial frames)</title><p>You might also recall the discussion in <xref ref="ss-noninertial" text="type-global" />.</p></biographical>
 
                 <p>Let's take this language apart and connect it to your daily experiences.</p>
 
@@ -1889,10 +1889,11 @@
                         </aside>
                 <assemblage xml:id="as-NII"><title>Newton's Second Law</title><idx><h>Newton</h><h>second law</h></idx> <p>When viewed from an inertial reference frame, the vector-sum of all forces acting on an object will cause that object to accelerate in proportion to its mass: <m>\vec F_\mathrm{net} = m \vec a</m>.</p>
                 </assemblage>
-                <aside><title>Touchstone</title><p>Effective theories</p></aside>
+                <biographical><title>Touchstone (inertial frames)</title><p>You might also recall the discussion in <xref ref="ss-noninertial" text="type-global" />.</p></biographical>
                 <p>Let's take this apart and connect it to your daily experiences.  As with Newton's First Law, the <xref ref="d-noninertial" text="title">non-inertial rotating reference frame</xref> of the surface of the Earth is a small enough effect that, as long as we don't measure our world too closely, we can <xref ref="s-effective2" text="title">pretend</xref> that we are viewing it essentially from an inertial reference frame.</p>
+                <biographical><title>Touchstone (mostly true)</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.  Standing on the surface of the Earth provides an essentially-inertial reference frame.</p></biographical>
 
-                <aside><title>Touchstone</title><p>Vector equations</p></aside>
+                <biographical><title>Touchstone (vector equation)</title><p>Recall <xref ref="sss-vectorequations" text="type-global" />.</p></biographical>
                 <insight xml:id="d-Fma"><title><m>F=ma</m></title>
                 <p>For this law, it is often sufficient to write down the equation and know that the words are there for back-up.  While most people have no trouble remembering <m>F=ma</m>, it is important to pay attention to two aspects:
                 <ul>
@@ -1974,7 +1975,7 @@
                 <aside><title>Subsubsection referenced by</title> <p>Discussion of <xref ref="fs-equilibrium" text="title">Newton's first law</xref></p></aside>
 
                         <p>The word <q>net</q> that goes with force is here to indicate the total, which is useful to think of as <q>everything collected with the net.</q> The intention here is that wherever there are multiple forces acting on a single object, we must combine them as <xref ref="ss-vectors" text="title">vectors</xref> as follows: </p>
-                        <aside><title>Etymology</title>
+                        <aside><title>Etymology (net)</title><idx><h>etymology</h><h>net force</h></idx>
                                 <p>Although thinking of net as <q>everything collected with the net</q> is useful, according to <url href="http://www.etymonline.com/word/net">etymonline.com</url> (Mar, 2017), it is actually from the Old French <em>net</em> for <q>neat</q> or <q>clean</q>, having the sense of trim and elegant.</p>
                         </aside>
                         <todo>Maybe these should be sidebyside with the figure above the example?</todo>
@@ -3331,14 +3332,14 @@ Earth feels a force by \studentZ\ to the left.
         </aside>
                 <p>Perhaps the force that is the most obvious to humanity is the one that helps us fall when we stumble: the gravitational force<idx><h>gravity</h><h>surface of Earth</h></idx>.  This is one of the fundamental forces discussed in <xref ref="s-fundamental" text="type-global" />.  In addition, the details about how the planets, moon, and the sun experience this force will be discussed in <xref ref="c-gravity" text="type-global" />.  For now, we can consider how this interaction manifests itself on our daily lives.  In this section, we will start with how objects move when the gravitational force is the only force acting.  Subsections <xref ref="ss-weightmass" text="global" /> and <xref ref="ss-equivmm" text="global" /> will clarify some subtleties and then we'll jump into the examples in <xref ref="ss-local-mg" text="type-local" />.</p>
 
-                <p>We can investigate what happens when the gravitational force is the only force acting on an object by holding it in the air and dropping it<idx>freefall</idx>.  One of the complications during such an experiment was discussed in <xref ref="ss-airresistance" text="type-hybrid" />.  If we drop a sheet of paper, there is air resistance in addition to the gravitational force.  For this section, I will assume that the mass-to-surface-area ratio is large enough that we can effectively ignore the air resistance.</p>
-                <biographical><title>Touchstone</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.</p></biographical>
+                <p>We can investigate what happens when the gravitational force is the only force acting on an object by holding it in the air and dropping it<idx>freefall</idx>.  One of the complications during such an experiment was discussed in <xref ref="ss-airresistance" text="type-hybrid" />.  If we drop a sheet of paper, there is air resistance in addition to the gravitational force.  For this section, I will assume that the mass-to-surface-area ratio is large enough that we can effectively ignore the air resistance.  A second consideration that allows this approximation is that (as discussed in <xref ref="ss-air-resistance" text="type-global" />) the air resistance depends on the speed of the object, so as long as the objects fall for a short distance or do not get a significant speed, then we can ignore air resistance.  You should note that when you are deciding is a speed is significant, consider that baseballs hit (fly balls) by college athletes do not follow a parabolic path because of air resistance.</p>
+                <biographical><title>Touchstone (mostly true)</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>. For the vast majority of objects we drop (through the atmosphere) we don't have to worry about air resistance.</p></biographical>
 
                 <p  xml:id="d-Fgrav">Since objects fall faster than humans are used to paying attention to, the patterns are difficult to see.  <xref ref="irl-freefall" text="type-hybrid" /> shows you how you can pay close attention to the patterns that result from observing falling objects.  You should go do those experiments before reading further.  Go ahead.  I'll wait.</p>
 
                 <p xml:id="d-Fgball">You did do them, right?  You're not just reading ahead?  Really?  OK.  Doing that experiment will help you see (1) that everything falls at the same rate and (2) that objects accelerate as they fall.  This first point is a bit less intuitive and will be discussed further in <xref ref="ss-equivmm" text="type-hybrid" />.  This second point should be exactly what you expect, when you consider <xref ref="as-NII" text="title">Newton's second Law</xref>: If there is only one force (the gravitational force), then the object cannot be in <xref ref="sss-equilibrium" text="title">equilibrium</xref> and it must be accelerating.  (You should notice that this is the language of <xref ref="st-Fma" text="title">the story of Newton's second law</xref>.)</p>
 
-                <biographical><title>Touchstone</title><p><xref ref="d-interaction" text="title">the on-by notation</xref></p></biographical>
+                <biographical><title>Touchstone (on-by)</title><p><xref ref="d-interaction" text="title">the on-by notation</xref></p></biographical>
                 <p>In order to evaluate this further, let's consider a specific object, like a baseball.  Our baseball has a mass of <m>m_b = 0.145\unit{kg}</m>.  If the only force acting <em>on</em> the ball is the gravitational force <em>by</em> the Earth, then the net force is the gravitational force: <m>\vec F_\mathrm{net} = \vec F_{bEg}</m>.
                 Here the subscripts are <m>b</m> (because the force is on the <em>b</em>all), <m>E</m> (because the force is exerted by the <em>E</em>arth), and <m>g</m> (because it is a <em>g</em>ravitational force).  Since the acceleration is due to the gravitational force, I will use either <m>a_g</m> (usually when the object is in <xref ref="ss-freefall" text="title">freefall</xref> and therefore accelerating at this rate) or <m>g</m> (usually when the object is not actually accelerating at that rate).  With this notation, Newton's second law becomes:
                 <me> \vec F_{bEg} = m_b \vec a_g </me>
@@ -3360,7 +3361,7 @@ Earth feels a force by \studentZ\ to the left.
                 	<usage>\text{weight}</usage>
                 	<description><m>\mathbf{F_g \equiv mg}</m></description>
                 </notation>
-                <statement><p>The <term>weight</term> of an object is computed as its mass times the acceleration due to gravity, even when the object is not actually accelerating at that rate:  <m>\mathbf{F_g \equiv mg}</m>.</p></statement>
+                <statement><p>The <term>weight</term> of an object is literally the strength of the gravitational force acting on an object.  Weight is computed by multiplying the mass times the <xref ref="s-Gfield" text="title">gravitational field</xref> (which is functionally equal to the acceleration due to gravity, even when the object is not actually accelerating at that rate):  <m>\mathbf{F_g \equiv mg}</m>.</p></statement>
                 </definition>
 
                 </introduction>
@@ -3388,7 +3389,7 @@ Earth feels a force by \studentZ\ to the left.
                 The concept that goes with</p>
                 <remark><idx><h>mass</h><seealso>weight</seealso></idx><p>mass is the amount of material,</p></remark>
                 <p>whereas, the concept that goes with</p>
-		<biographical><title>Touchstone</title><p>Recall <xref ref="def-weight" text="type-hybrid" /></p></biographical>
+		<biographical><title>Touchstone (weight)</title><p>Recall <xref ref="def-weight" text="type-hybrid" /></p></biographical>
                 <remark><idx><h>weight</h><seealso>mass</seealso></idx><p>weight is how strongly the gravitational force pulls on the object.</p></remark>
                 <p>Having mass affects both the inertia (ease of moving) and the weight (force of gravity).
                 Having weight expresses the gravitational force due to whichever large object (moon, planet, sun, etc.) you happen to be on or near.  Noticing that the SI-unit (<xref ref="s-SI-MKS" text="type-global" />) is different for different types of quantities, such as a kilogram (a <xref ref="p-fundamental" text="title">fundamental unit</xref>) for mass and a Newton (a <xref ref="p-derived" text="title">derived unit</xref>) for weight, may help you remember that these are different kinds of quantities.</p>
@@ -3601,7 +3602,7 @@ Earth feels a force by \studentZ\ to the left.
         </aside>
 
                 <p>The word <q>normal</q> <url href="http://www.etymonline.com/word/normal">originates</url><idx>normal</idx> with the idea of conformity to the pattern.  While in everyday life this pattern is the typical state of being, the origins actually refer to a carpenter's square, which put corners into a right angle.  In math and physics, the word is used to mean perpendicular.</p>
-                <aside><title>Etymology</title>
+                <aside><title>Etymology (normal)</title><idx><h>etymology</h><h>normal force</h></idx>
                         <p>See text.</p>
                 </aside>
                 <insight><p>In the context of forces, the normal force is the force that a surface exerts to keep objects from passing through them.  The direction of this force is always in the outward direction, normal (perpendicular) to the surface.</p></insight>
@@ -4162,10 +4163,10 @@ Earth feels a force by \studentZ\ to the left.
 
                 <introduction>
                 <p>Sliding friction is relevant to any problem in which one object is <q>trying to</q> move across another.  You should note that the objects do not actually have to be moving across each other for this to be relevant.  If they are moving across each other, then we will need to consider the kinetic friction (<xref ref="sss-kinetic" text="type-local" />).  If, on the other hand, you imagine pushing a heavy couch across a carpeted floor, then you can picture a case where the horizontal force is not sufficient to overcome the frictional force.  In this case, we will consider the static friction (<xref ref="sss-static" text="type-local" />).  </p>
-                <aside><title>Etymology</title>
+                <aside><title>Etymology (kinetic)</title><idx><h>etymology</h><h>kinetic friction</h></idx>
                         <p><url href="http://www.etymonline.com/word/kinetic">Kinetic</url> is related to the Greek <em>kinetikos</em> and <em>kinesis</em>, which indicate motion.</p>
                 </aside>
-                <aside><title>Etymology</title>
+                <aside><title>Etymology (static)</title><idx><h>etymology</h><h>static friction</h></idx>
                         <p><url href="http://www.etymonline.com/word/static">Static</url> is related to <url href="http://www.etymonline.com/word/stasis">stasis</url> and the Greek <em>statikos</em> (which indicates standing) and <em>stasis</em> (which indicates standing still).  It may also call to mind <url href="http://www.etymonline.com/word/stationary">stationary</url>.  The connection to <q>radio static</q> seems to be that it is unchanging.</p>
                 </aside>
 
@@ -4230,9 +4231,9 @@ Earth feels a force by \studentZ\ to the left.
                                 <p>If one object is above the other, then the weight contributes to the amount they are pressed together, but since objects can have friction when they rub their sides across each other (like a <url href="http://bitsandpieces.us/2013/11/tight-squeeze/">truck squeezing through a narrow alleyway</url>), the weight cannot be the explicit quantity.  It turns out that the <xref ref="s-FN" text="title">normal force</xref> is the quantity that expresses how strongly objects are being pressed together because it reflects the force needed to keep one object from passing through the other.</p>
                                 <todo>Use this link?</todo>
                         </observation>
-                        <biographical><title>Touchstone</title><p>Recall <xref ref="ss-scales" text="title" />.</p></biographical>
+                        <biographical><title>Touchstone (normal force)</title><p>Recall <xref ref="ss-scales" text="title" />.</p></biographical>
                         <p>This observation was made by Leonardo da Vinci in 1493 and, while still undiscovered in his notebooks, was rediscovered by Guillaume Amontons in 1699 (<xref ref="bib-friction-hutchings" text="type-local" />, <xref ref="bib-friction-tribology" text="type-local" />, <xref ref="bib-friction-armstrong" text="type-local" />) who wrote it as his first law of friction.</p>
-                        <biographical><title>Touchstone</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
+                        <biographical><title>Touchstone (law)</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
                         <assemblage xml:id="law-friction-amontons-1"><title>Amontons' first law of friction</title>
                                 <p>The force of friction is directly proportional to the applied load.</p>
                         </assemblage>
@@ -4254,7 +4255,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <answer xml:id="A-friction-empty">
                                         <p>Since the empty mug has a smaller mass, you might expect it to have a larger acceleration (according to Newton's second law), but that conclusion assumes that the force is the same, which is not true.  The empty mug has a smaller mass and a smaller frictional force (because it has a smaller normal force).  The relevant equation is Newton's second law in the horizontal direction with friction as the only horizontal force: <m>F_f = ma</m>.  Since both the frictional force and the mass are half of that for the full mug, the acceleration is the same for both mugs.  The empty mug does not stop before the full mug.</p></answer>
                                 <answer xml:id="A-friction-both">
-                                        <p>The relevant equation is Newton's second law in the horizontal direction with friction as the only horizontal force: <m>F_f = ma</m>.  The question requires an understanding of the acceleration, 
+                                        <p>The relevant equation is Newton's second law in the horizontal direction with friction as the only horizontal force: <m>F_f = ma</m>.  The question requires an understanding of the acceleration,
                                         <me>a=\frac{F_f}{m} = \frac{2F_f}{2m} = \frac{\frac{1}{2}F_f}{\frac{1}{2}m}</me>
                                         If the numerator and denominator are increased or decreased by the same amount, then the result is the same.  The full and empty mugs should reach the same distance.</p></answer>
                         </example>
@@ -4286,7 +4287,7 @@ Earth feels a force by \studentZ\ to the left.
                                         <p>The mug travels <m>1.6\unit{m}</m> across the counter.</p>
                                 </answer>
                                 <solution>
-                                        <p>In order to find the distance traveled by the mug, we should use the equation 
+                                        <p>In order to find the distance traveled by the mug, we should use the equation
                                         <me> v_f^2 = v_i^2 + 2 \, a \, \Delta x </me>
                                         and solve for the displacement <m>(\Delta x)</m>.  In order to do this, we need the initial and final velocities and the acceleration.  We are given the initial velocity and, since the mug comes <xref ref="d-at-rest" text="title">to rest</xref>, we can easily deduce the final velocity <m>(0\unitfrac{m}{s})</m>.  As usual (recall <xref ref="se-netF-a" text="type-global" />), we can find the acceleration from Newton's second law (the hints give the justification for the steps)
                                         <me> a = \frac{F_f}{m} = \frac{\mu F_N}{m} = \frac{\mu (mg)}{m} = \mu g = (0.13)(9.81\unitfrac{m}{s^2}) = \sigfrac{1.2}{8}{m}{s^2}</me>
@@ -4317,17 +4318,17 @@ Earth feels a force by \studentZ\ to the left.
                                 <p>One would not be wrong to imagine that the broader something is, the more it interacts with the surface it is dragged along, much like how a picnic blanket (or superhero cape!) collects many more twigs and leaves when it is dragged through the park. On the other hand, you might also notice that when you stand on the bed, you sing in further than when you lay on the bed.  It turns out that while more surface does tend to increase the opportunity for friction, this is balanced by the reduced pressure due to having the weight spread out<fn xml:id="fn-friction-area">Recall <xref ref="p-pressure" text="title">discussion of the units of pressure</xref>.</fn>, thereby maintaining the same normal force regardless<fn>You might be relieved to learn that this is only mostly true.  The microscopic area of contact does matter, but that gets back to the roughness of surface discussion in <xref ref="obs-friction-mu" text="type-local" />.</fn> of the amount of area in contact.   Speaking of pressure, you might be interested to note that Amontons is also known for his work on barometers (see <xref ref="ss-barometrics" text="title" />).</p>
                         </observation>
                         <p>As with <xref ref="obs-friction-normal" text="type-local" />, this observation was also made by Leonardo da Vinci in 1493 and, while still undiscovered in his notebooks, was rediscovered by Guillaume Amontons in 1699 <xref ref="bib-friction-hutchings" text="type-local" />, who wrote it as his second law of friction.</p>
-                        <biographical><title>Touchstone</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
+                        <biographical><title>Touchstone (law)</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
                         <assemblage xml:id="law-friction-amontons-2"><title>Amontons' second law of friction</title>
                                 <p>The force of friction is independent of the apparent<fn xml:id="fn-friction-mu">This indicates the <q>apparent</q> area because there is no relation to the macroscopic surface area.  On the other hand, the microscopic contact does matter and this is <xref ref="obs-friction-mu" text="title">accounted for through the coefficient of friction</xref> which describes the specifics of the surfaces that are interacting.  Modern texts list an additional law of friction as: <q>Friction depends on the type of the surfaces in contact.</q>  In 1950, Frank Philip Bowden and David Tabor described how the microscopic surface area affects friction <xref ref="bib-friction-tribology" text="type-local" />.</fn> area of contact.</p>
                         </assemblage>
 
                         <p><xref ref="eq-friction" text="title">Equation</xref> also does not include the relative velocity between the surfaces, as observed by Charles Coulomb in 1785, <xref ref="bib-friction-armstrong" text="type-local" />. </p>
-                        <biographical><title>Touchstone</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
+                        <biographical><title>Touchstone (law)</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
                         <assemblage xml:id="law-friction-coulomb"><title>Coulomb's law of friction</title>
                                 <p>Kinetic friction is independent of the sliding velocity.</p>
                         </assemblage>
-                        <biographical xml:id="ts-friction"><title>Touchstone</title><p><xref ref="law-friction-coulomb" text="title" /> is <xref ref="s-effective2" text="title">mostly true</xref>.  If the object is moving extremely slowly then it gets into the fits-and-starts motion; the motion is not smooth and puts us back into that described <xref ref="p-friction-herky-jerky" text="title">above</xref>.  If the object is moving very <xref ref="d-quick-fast" text="title">fast</xref>, then it can start to skip (imagine a speedboat skimming across a lake with a staccato thrumming and a choppy wake) and the nature of the surface-interaction becomes different enough that the description must also change.  However, the range of speeds for which this <em>is</em> true is reasonably large.</p></biographical>
+                        <biographical xml:id="ts-friction"><title>Touchstone (mostly true)</title><p><xref ref="law-friction-coulomb" text="title" /> is <xref ref="s-effective2" text="title">mostly true</xref>.  If the object is moving extremely slowly then it gets into the fits-and-starts motion; the motion is not smooth and puts us back into that described <xref ref="p-friction-herky-jerky" text="title">above</xref>.  If the object is moving very <xref ref="d-quick-fast" text="title">fast</xref>, then it can start to skip (imagine a speedboat skimming across a lake with a staccato thrumming and a choppy wake) and the nature of the surface-interaction becomes different enough that the description must also change.  However, the range of speeds for which this <em>is</em> true is reasonably large.</p></biographical>
                         <p><xref ref="law-friction-coulomb" text="title" /> turns out to be extremely convenient.  Because of this law, we can do <xref ref="ex-friction-mug" text="type-local" />.  If it were not true, then the magnitude of the frictional force would change as the object slowed down and the acceleration would not be constant!  This requires mathematics called <q>differential equations</q>, which most students take after completing three years of calculus.  Unfortunately, this is what happens with <xref ref="ss-air-resistance" text="title" />.</p>
 
                         <p>Friction turns out to be quite interestingly complicated.  Most of our understanding comes from experimental patterns, although the field of <xref ref="ss-tribology" text="title">tribology</xref> is continuing to improve our theoretical descriptions of friction all the time.  For our purposes, we can encapsulate all of these ideas into a single equation.</p>
@@ -4390,7 +4391,7 @@ Earth feels a force by \studentZ\ to the left.
                                 </task>
                                 <task xml:id="task-friction-harder">
                                         <statement>
-                                                <p>Continue to push gently on the object.  Notice that it is possible to gradually increase the magnitude of your applied force while it continues to be <xref ref="def-equilibrium" text="title">in equilibrium</xref>.  Recalling the <xref ref="solution-friction-start-last" text="title">last paragraph</xref> of the <xref ref="solution-friction-start">solution</xref> of <xref ref="task-friction-start" text="type-local" />, comment on the value of the frictional force while you adjust the magnitude of your applied force (still keeping to gentle enough not to move the object).</p>
+                                                <p>Continue to push gently on the object.  Notice that it is possible to gradually increase the magnitude of your applied force while it continues to be <xref ref="def-equilibrium" text="title">in equilibrium</xref>.  Recalling the <xref ref="solution-friction-start-last" text="title">last paragraph</xref> of the <xref ref="solution-friction-start" text="title">solution</xref> of <xref ref="task-friction-start" text="type-local" />, comment on the value of the frictional force while you adjust the magnitude of your applied force (still keeping to gentle enough not to move the object).</p>
                                         </statement>
                                         <solution>
                                                 <p>Since the object is not accelerating in the horizontal direction, the horizontal components of the forces must also balance.  Since the normal and gravitational forces do not have a horizontal component, the applied and frictional forces must balance regardless of the value of the applied force (so long as it remains static).  This says that as you change the magnitude of the applied force, the magnitude of the frictional force <alert>must</alert> also be changing.</p>
@@ -4416,13 +4417,13 @@ Earth feels a force by \studentZ\ to the left.
                         <observation xml:id="p-friction-static-variable"><title>Can push with any value gentle force</title>
                                 <p>Since you can gradually increase the applied force without moving the object, the static friction is able to vary its magnitude in such a way as to balance the applied force so long as the applied force is smaller than the maximum static force.</p>
                         </observation>
-                        <p>This observation means that <xref ref="eq-friction" text="global">Equation</xref> cannot literally be true for the situations involving static friction.  Instead, the frictional force can have any smaller value up to some maximum where the object moves and we can describe it with kinetic friction.  Therefore we need to distinguish between the kinetic friction and the static friction.  <xref ref="eq-friction" text="global">Equation</xref> still holds for kinetic friction, but we have to use 
+                        <p>This observation means that <xref ref="eq-friction" text="global">Equation</xref> cannot literally be true for the situations involving static friction.  Instead, the frictional force can have any smaller value up to some maximum where the object moves and we can describe it with kinetic friction.  Therefore we need to distinguish between the kinetic friction and the static friction.  <xref ref="eq-friction" text="global">Equation</xref> still holds for kinetic friction, but we have to use
                         <men xml:id="eq-friction-static">F_{f,\text{static}} \le F_{f,\text{max}} = \mu_s F_N</men>
                         to describe static friction.  This describes the maximum value that the force of static friction can take before the object begins to move, while allowing the force of static friction to take any smaller value when the object is pushed more gently than this maximum value.</p>
                         <example><title>Value of gentle static friction</title>
                                 <p>Make an example.</p>
                         </example>
-                        
+
                         <investigation xml:id="inv-friction-max"><title>Get it moving</title>
                                 <introduction>
                                         <p>Consider moving some heavy objects around your home.  A refrigerator, bed, or couch make good examples to try on your own.  Unlike <xref ref="inv-friction-static" text="type-local" />, we now want to investigate the boundary between not moving and moving.  Where you were previously asked to push gently enough to not move the object, now you should investigate pushing just barely enough to make it move. </p>
@@ -4441,7 +4442,7 @@ Earth feels a force by \studentZ\ to the left.
                                 </task>
                         </investigation>
 
-                        
+
                         <observation xml:id="p-friction-static-larger"><title>It is more difficult to get things moving than to keep things moving</title>
                                 <p>Although the amount of static friction will change depending on how hard you push so long as the object remains in static equilibrium, if you maintain the force used to initiate motion, then the object will move with acceleration rather than moving with a constant speed after it is moving. The maximum value of static friction is larger than the kinetic friction.  Another way to say this is that <m>\mu_\text{static} \gt \mu_\text{kinetic}</m>.  This difference is usually small and is often hard to notice.</p>
                         </observation>
@@ -4455,7 +4456,7 @@ Earth feels a force by \studentZ\ to the left.
                         <paragraphs xml:id="p-friction-walking"><title>How we walk</title>
                         <p>using static friction to walk forwards</p>
                         </paragraphs>
-                        
+
                         <paragraphs xml:id="p-friction-repose"><title>Angle of repose</title>
                         <p>One practical application of this idea is that if you have a stack of books and you want the one that is second or third from the top, you can lift the book you want at some angle until the books above it slide off and then you can take your book.  The angle at which you have to tilt the book in order to get the other to slide off is called the angle of repose:</p>
                         <definition xml:id="def-angle-repose"><idx><h>angle of repose</h></idx>
@@ -4465,7 +4466,7 @@ Earth feels a force by \studentZ\ to the left.
                                 </notation>
                                 <statement><p>The <term>angle of repose</term> is the angle at which an object, which has been placed on a surface that can be tilted ever higher, just breaks the static friction and begins to slide down the surface.</p></statement>
                         </definition>
-                        <p>Because of <xref ref="p-friction-static-larger" text="type-global" />, after the object begins to slide, it will accelerate down the ramp, rather than sliding at a constant speed.  On the other hand, since the surface (especially if it is unpolished wood) will likely have variable roughness along its length, it is possible that the coefficient of friction is different in different sections of the surface and the object might get stuck at some lower location.</p>                        
+                        <p>Because of <xref ref="p-friction-static-larger" text="type-global" />, after the object begins to slide, it will accelerate down the ramp, rather than sliding at a constant speed.  On the other hand, since the surface (especially if it is unpolished wood) will likely have variable roughness along its length, it is possible that the coefficient of friction is different in different sections of the surface and the object might get stuck at some lower location.</p>
                         <example><title>Finding the angle of repose</title>
                                 <p>Make an example.</p>
                         </example>
@@ -4498,7 +4499,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <p>Make an example.</p>
                         </example>
                         </paragraphs>
-                        
+
                         </subsubsection>
 
                 <conclusion>
@@ -4555,7 +4556,7 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
                 <subsection xml:id="ss-tribology"><title>Additional Detail: The field of Tribology</title>
-                <aside><title>Etymology</title><p>See <url href="http://www.etymonline.com/word/tribology">tribology</url>.</p></aside>
+                <aside><title>Etymology (tribology)</title><idx><h>etymology</h><h>tribology</h></idx><p>See <url href="http://www.etymonline.com/word/tribology">tribology</url>.</p></aside>
                         <p>Tribology, the study of friction from rubbing, is a field of engineering.  There was a recent article
                         <ul>
                         <li><url href="http://www.sciencedirect.com/science/article/pii/S0043164816300588">Original</url></li>
@@ -4653,7 +4654,7 @@ Also check these folks out on Wikipedia.... of course
                                 <url href="http://etymonline.com/index.php?allowed_in_frame=0&amp;search=tension">tension</url>
                                 comes from the concept of stretching.
                                 </p>
-                                <aside><title>Etymology</title><p>(See text.)</p></aside>
+                                <aside><title>Etymology (tension, stress, strain)</title><idx><h>etymology</h><h>tension, stress &amp; strain</h></idx><p>(See text.)</p></aside>
                         </introduction>
                         <task xml:id="Q-swing-tension">
                                 <statement><p>Sit on a swing. Notice the tightness of the support ropes/chains.
@@ -6043,14 +6044,14 @@ Also check these folks out on Wikipedia.... of course
         </introduction>
 
         <section xml:id="s-leverarm"><title>Leverage</title>
-        <aside><title>Section referenced by</title> 
+        <aside><title>Section referenced by</title>
                 <p>
                 <xref ref="ss-scales" text="type-global" />,
                 <xref ref="task-friction-future" text="type-global" />
                 </p>
         </aside>
         <p>discussion of <term>torque</term><idx>torque</idx>: <m>\tau = F l \sin\theta</m>.</p>
-        
+
         <definition xml:id="def-force-couple">
                 <notation>
                         <usage>\text{force couple}</usage>
@@ -6061,8 +6062,8 @@ Also check these folks out on Wikipedia.... of course
                         <aside><title>Definition referenced by</title><p><xref ref="task-friction-future" text="type-global" /></p></aside>
                 </statement>
         </definition>
-        
-        
+
+
         </section>
 
         <section><title>Putting it all together, <m>\tau_\mathrm{net}</m></title>
@@ -6904,7 +6905,7 @@ Also check these folks out on Wikipedia.... of course
         <p>I can, at the header of the code, define the name, gender, mass, and dimensions of each individual.</p>
 <!--
         <todo>(url href="http://malveyauthor.com/")Madeline Alvey(/url), the author of
-        (url href="http://escapepod.org/2017/03/09/ep566-honey-and-bone-artemis-rising-3/")"Honey and Bone" at EscapePod(/url) is a physics and English undergraduate student at UK in Lexington.  
+        (url href="http://escapepod.org/2017/03/09/ep566-honey-and-bone-artemis-rising-3/")"Honey and Bone" at EscapePod(/url) is a physics and English undergraduate student at UK in Lexington.
         I might consider hiring(?) her to help storyboard the characters.</todo>
 I have emailed her.  NO REPLY.
         -->
@@ -6914,9 +6915,9 @@ I have emailed her.  NO REPLY.
 
         <section><title>The Story</title>
                 <p>This will be a dramatic story of college students in and out of relationships, stress about their major, and interacting with parents.  Maybe some travel; certainly some growth.  During their adventure, they casually interact with the reader in unimportant ways that produce the examples and explorations.</p>
-                
+
                 <p>The next set of sections are there to help me storyboard the interactions.</p>
-                
+
         </section>
 
         <section><title>\studentA</title>
