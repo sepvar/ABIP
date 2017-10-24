@@ -277,6 +277,8 @@
                      axis y line = middle}
         \usetikzlibrary{backgrounds}
         \usetikzlibrary{arrows,matrix}
+
+        \usepackage{thmbox}
         </latex-image-preamble>
 
         <latex-preamble>
@@ -286,11 +288,11 @@
                 <package>color</package>
                 <package>graphicx</package>
                 <package>xpicture</package>
+                <package>thmbox</package>
         -->
                 <package>xcolor</package>
                 <package>coordsys</package>
                 <package>cancel</package>
-                <package>thmbox</package>
         </latex-preamble>
 
         <cross-references text="global" />
@@ -2001,7 +2003,7 @@
                                                         <![CDATA[
                                                         %>
                                                         \begin{tikzpicture}
-                                                        \draw [rounded corner, thick, darkgray] (-1,-1.5) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5);
+                                                        \draw [rounded corners, thick, darkgray] (-1,0) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5) -- (-1,0);
                                                         \draw [->, -latex, black] (0.2,-0.2) -- (4.2,-0.2);  \node [below right] at (4.2,-0.2) {$5\unit N$};
                                                         \draw [->, -latex, black] (0.2,0.2) -- (3.2,0.2);  \node [above right] at (3.2,0.2) {$4\unit N$};
                                                         \node [left, white] at (-4.3,0) {.};
@@ -2043,7 +2045,7 @@
                                                         <![CDATA[
                                                         %>
                                                         \begin{tikzpicture}
-                                                        \draw [rounded corner, thick, darkgray] (-1,-1.5) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5);
+                                                        \draw [rounded corners, thick, darkgray] (-1,0) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5) -- (-1,0);
                                                         \draw [->, -latex, black] (-0.2,0) -- (-4.2,0);  \node [left] at (-4.2,0) {$5\unit N$};
                                                         \draw [->, -latex, black] (0.2,0) -- (3.2,0);  \node [right] at (3.2,0) {$4\unit N$};
                                                         \node [left, white] at (-4.3,0) {.};
@@ -2085,7 +2087,7 @@
                                                         <![CDATA[
                                                         %>
                                                         \begin{tikzpicture}
-                                                        \draw [rounded corner, thick, darkgray] (-1,-1.5) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5);
+                                                        \draw [rounded corners, thick, darkgray] (-1,0) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5) -- (-1,0);
                                                         \draw [->, -latex, black] (-0.2,0) -- (-2.2,0);  \node [left] at (-2.2,0) {$3\unit N$};
                                                         \draw [->, -latex, black] (0.2,0) -- (2.2,0);  \node [right] at (2.2,0) {$3\unit N$};
                                                         \node [left, white] at (-4.3,0) {.};
@@ -2132,7 +2134,7 @@
                                                         <![CDATA[
                                                         %>
                                                         \begin{tikzpicture}
-                                                        \draw [rounded corner, thick, darkgray] (-1,-1.5) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5);
+                                                        \draw [rounded corners, thick, darkgray] (-1,0) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5) -- (-1,0);
                                                         \draw [->, -latex, black] (0,0.2) -- (0,4.2);  \node [above] at (0,4.2) {$5\unit N$};
                                                         \draw [->, -latex, black] (0.2,0) -- (3.2,0);  \node [right] at (3.2,0) {$4\unit N$};
                                                         \node [left, white] at (-4.3,0) {.};
@@ -2206,7 +2208,7 @@
                                                         <![CDATA[
                                                         %>
                                                         \begin{tikzpicture}
-                                                        \draw [rounded corner, thick, darkgray] (-1,-1.5) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5);
+                                                        \draw [rounded corners, thick, darkgray] (-1,0) -- (-1,1.5) -- (1,1.5) -- (1,-1.5) -- (-1,-1.5) -- (-1,0);
                                                         \draw [->, -latex, black] (-0.1,0.1) -- (-1.9,3.7);  \node [above left] at (-1.9,3.7) {$5\unit N$};
                                                         \draw [->, -latex, black] (-0.1,-0.1) -- (-5.6,-2.2);  \node [below left] at (-5.6,-2.2) {$6\unit N$};
                                                         \draw [->, -latex, black] (0.2,0) -- (3.2,0);  \node [right] at (3.2,0) {$4\unit N$};
@@ -2552,7 +2554,7 @@
                                         <latex-image-code>
                                                 <![CDATA[
                                                 %>
-                                                \begin{tikzpicture}
+                                                \begin{tikzpicture}[scale=1.5]
                                                         \draw [thick, gray] (0,0) -- (7,0);
                                                         \draw [thick, darkblue] (2,.1) -- (4,.1);
                                                         \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
@@ -2603,7 +2605,7 @@
                                                 <latex-image-code>
                                                         <![CDATA[
                                                         %>
-                                                        \begin{tikzpicture}
+                                                        \begin{tikzpicture}[scale=1.5]
                                                                 %\draw [thick, gray] (0,0) -- (7,0);
                                                                 %\draw [thick, darkblue] (2,.1) -- (4,.1);
                                                                 \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
@@ -2635,7 +2637,7 @@ Because \studentA\ pushes on the object to the right, \studentA\ feels a force <
                                                 <latex-image-code>
                                                         <![CDATA[
                                                         %>
-                                                        \begin{tikzpicture}
+                                                        \begin{tikzpicture}[scale=1.5]
                                                                 %\draw [thick, gray] (0,0) -- (7,0);
                                                                 %\draw [thick, darkblue] (2,.1) -- (4,.1);
                                                                 %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
@@ -2668,7 +2670,7 @@ The object is in the middle.  Recall from <xref ref="se-netFadd" text="type-glob
                                                 <latex-image-code>
                                                         <![CDATA[
                                                         %>
-                                                        \begin{tikzpicture}
+                                                        \begin{tikzpicture}[scale=1.5]
                                                                 %\draw [thick, gray] (0,0) -- (7,0);
                                                                 %\draw [thick, darkblue] (2,.1) -- (4,.1);
                                                                 %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
@@ -3029,6 +3031,11 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                         <latex-image-code>
                                                 <![CDATA[
                                                 %>
+\begin{FBD}{10}{25}{15}{10}{\studentZ}
+\onele{50}{$F_{Z,C}=215\unit N$}{black}
+\oneri{50}{$F_{Z,E}=215\unit N$}{blue}
+\end{FBD}
+                                                ]]>
 <!---
 \fbox{\begin{minipage}{2.25in}
 \begin{FBD}{10}{25}{15}{10}{\studentZ}
@@ -3040,7 +3047,6 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
 \studentZ\ is pushed by \studentC\ to the left.  \studentZ\ is pushed to the right by the Earth.
 \end{minipage}}
 -->
-                                                ]]>
                                         </latex-image-code>
                                         </image>
                                         <image xml:id="i-braced-FBD-C">
@@ -3048,6 +3054,10 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                         <latex-image-code>
                                                 <![CDATA[
                                                 %>
+\begin{FBD}{10}{23}{15}{10}{\studentC}
+\oneri{50}{$F_{C,Z}=215\unit N$}{black}
+\end{FBD}
+                                                ]]>
 <!--
 \fbox{\begin{minipage}{2.25in}
 \begin{FBD}{10}{23}{15}{10}{\studentC}
@@ -3058,7 +3068,6 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
 \studentC\ feels \studentZ\ push to the right.
 \end{minipage}}
 -->
-                                                ]]>
                                         </latex-image-code>
                                         </image>
                                 </sidebyside>
@@ -3070,6 +3079,10 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                 <latex-image-code>
                                         <![CDATA[
                                         %>
+\begin{FBD}{60}{10}{15}{10}{Earth}
+\onele{50}{$F_{E,Z}=215\unit N$}{blue}
+\end{FBD}
+                                        ]]>
 <!--
 \fbox{\begin{minipage}{4.75in}
 \begin{FBD}{60}{10}{15}{10}{Earth}
@@ -3080,7 +3093,6 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
 Earth feels a force by \studentZ\ to the left.
 \end{minipage}}
 -->
-                                        ]]>
                                 </latex-image-code>
                                 </image>
                                 </figure>
@@ -3157,9 +3169,13 @@ Earth feels a force by \studentZ\ to the left.
                                         <image xml:id="i-unbraced-FBD-Z">
                                         <description>This image shows \studentZ\ pushing \studentC in order to see the reaction forces.</description>
                                         <latex-image-code>
-<!---
                                                 <![CDATA[
                                                 %>
+\begin{FBD}{10}{20}{15}{10}{\studentD}
+\onele{50}{$F_{D,C}=215\unit N$}{black}
+\end{FBD}
+                                                ]]>
+<!---
 \fbox{\begin{minipage}{2.25in}
 \begin{FBD}{10}{20}{15}{10}{\studentD}
 \onele{50}{<m>F_{D,C}=215\unit N</m>}{black}
@@ -3168,16 +3184,19 @@ Earth feels a force by \studentZ\ to the left.
 \raggedright
 \studentD\ is pushed by \studentC\ to the left.
 \end{minipage}}
-]]>
 -->
                                         </latex-image-code>
                                         </image>
                                         <image xml:id="i-unbraced-FBD-C">
                                         <description>This image shows \studentZ\ pushing \studentC in order to see the reaction forces.</description>
                                         <latex-image-code>
-<!--
                                                 <![CDATA[
                                                 %>
+\begin{FBD}{10}{23}{15}{10}{\studentC}
+\oneri{50}{$F_{C,D}=215\unit N$}{black}
+\end{FBD}
+                                                ]]>
+<!--
 \fbox{\begin{minipage}{2.25in}
 \begin{FBD}{10}{23}{15}{10}{\studentC}
 \oneri{50}{<m>F_{C,D}=215\unit N</m>}{black}
@@ -3186,7 +3205,6 @@ Earth feels a force by \studentZ\ to the left.
 \raggedright
 \studentC\ feels \studentD\ push to the right.
 \end{minipage}}
-]]>
 -->
                                         </latex-image-code>
                                         </image>
@@ -3638,7 +3656,7 @@ Earth feels a force by \studentZ\ to the left.
                                         <latex-image-code>
                                                 <![CDATA[
                                                 %>
-                                                \begin{tikzpicture}
+                                                \begin{tikzpicture}[scale=1.5]
                                                         %\draw [thick, gray] (0,0) -- (7,0);
                                                         %\draw [thick, darkblue] (2,.1) -- (4,.1);
                                                         \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
@@ -3674,7 +3692,7 @@ Earth feels a force by \studentZ\ to the left.
                                         <latex-image-code>
                                                 <![CDATA[
                                                 %>
-                                                \begin{tikzpicture}
+                                                \begin{tikzpicture}[scale=1.5]
                                                         %\draw [thick, gray] (0,0) -- (7,0);
                                                         %\draw [thick, darkblue] (2,.1) -- (4,.1);
                                                         %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
@@ -3711,7 +3729,7 @@ Earth feels a force by \studentZ\ to the left.
                                         <latex-image-code>
                                                 <![CDATA[
                                                 %>
-                                                \begin{tikzpicture}
+                                                \begin{tikzpicture}[scale=1.5]
                                                         %\draw [thick, gray] (0,0) -- (7,0);
                                                         %\draw [thick, darkblue] (2,.1) -- (4,.1);
                                                         %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
@@ -3831,13 +3849,13 @@ Earth feels a force by \studentZ\ to the left.
                                 <image xml:id="i-se-tree-FBD">
                                 <description>FBD for the car hitting the tree</description>
                                 <latex-image-code>
-        \fbox{\begin{minipage}[b]{100pt}
+%        \fbox{\begin{minipage}[b]{100pt}
         \begin{FBD}{15}{10}{15}{25}{car}
         \onele{40}{$F_{N,\mathrm{tree}}$}{rgb:red,0;green,2;blue,1}
         \onedo{30}{$F_g$}{rgb:red,0;green,2;blue,1}
         \oneup{30}{$F_{N,\mathrm{ground}}$}{rgb:red,0;green,2;blue,1}
         \end{FBD}
-        \end{minipage}}
+%        \end{minipage}}
                                 </latex-image-code>
                                 </image>
                                 </figure>
@@ -4268,7 +4286,92 @@ Earth feels a force by \studentZ\ to the left.
                         <remark><title><m>F_f=\mu F_N</m> is not a vector equation</title>
                                 <p>The direction of the frictional force is <em>necessarily</em> along the plane of the surface, whereas the normal force is <em>necessarily</em> normal (perpendicular) to the plane of the surface.<fn>Some sources include this in the statement of <xref ref="law-friction-amontons-1" text="title" />, stating <q>When a body is moving, the friction is directly proportional to normal force and frictional force direction is perpendicular to the normal force.</q></fn>  This is a <q>magnitude</q> relationship.</p>
                         </remark>
-                        <example><title>The direction of the frictional force</title>
+                        <example><title>Hey! Let's get lunch (Direction of friction 1/3)</title>
+                                <statement>
+                                        <p>You decide to go to lunch with \studentB<idx><h sortby="\studentB">\studentB</h></idx>.  When you get to the table and pull your chair out away from the table, it makes an embarrassingly loud squeal as it drags across the ground.  In your evaluation of the situation, draw a free-body diagram, clearly indicating the direction of all forces acting on the chair.  Assume the chair starts at rest, accelerates as you pull, then decelerates as you gradually stop pulling, and stops as you release it. Let's assume that the table is in the <m>+\ihat</m> direction and you are pulling the chair in the <m>-\ihat</m> direction. </p>
+                                </statement>
+                                <hint><p>There are four stages of motion: Before you pull, as you start to pull, while you reduce your pull, and after you release it.</p></hint>
+                                <hint><p>Friction is a reactive force; its magnitude depends on what is happening to the chair.</p></hint>
+                                <hint><p>Does the friction help you move the chair or interfere with your pulling?</p></hint>
+                                <hint><p>Is friction the same through out the problem?</p></hint>
+                                <answer><sidebyside widths="65% 25%">
+                                        <p>Before you begin pulling, the chair has its weight pulling it down and the normal force keeping it from falling through the ground.  Since it starts at rest, the acceleration is zero, so the net force is zero and the normal force must balance the weight.</p>
+                                        <image xml:id="i-friction-chair-rest" source="images/i-friction-chair-rest.svg">
+                                                <description>The chair has one force (gravity) directly downwards and one force (normal) directly upwards.</description>
+                                                <latex-image-code>
+                                                        <![CDATA[
+                                                        %>
+                                                        \begin{tikzpicture}
+                                                        \draw (5,5) -- (5,10) -- (10,10) -- (10,5) -- (5,5);
+                                                        \draw [->, -latex] (7.5,7) -- (7.5,0); \node [below right] at (7.5,0) {$F_g$);
+                                                        \draw [->, -latex] (7.5,8) -- (7.5,15); \node [above right] at (7.5,15) {$F_N$);
+                                                        \end{tikzpicture}]]>
+                                                </latex-image-code>
+                                        </image>
+                                        </sidebyside>
+                                </answer>
+                                <answer><sidebyside widths="65% 25%">
+                                        <p>As you start pulling, the chair still has its weight pulling it down and the normal force keeping it from falling through the ground.  However, assuming that you are pulling at a slight upwards angle, you are helping to support the weight and the normal force does not need to be as large.  (If we had numbers, you could use the vertical components to find the magnitude of the normal force.)  The friction, however, does not help lift the chair, nor weigh it down; friction only interferes with the backward pulling.  It is parallel to the ground in the direction opposite the motion.  If you are accelerating the chair backwards, then the applied force has a larger horizontal component than the frictional force.</p>
+                                        <image xml:id="i-friction-chair-pull" source="images/i-friction-chair-pull.svg">
+                                                <description>The chair has one force (gravity) directly downwards, one force (normal) directly upwards, one force (applied) up-and-back, and one force (friction) horizontally forwards.</description>
+                                                <latex-image-code>
+                                                        <![CDATA[
+                                                        %>
+                                                        \begin{tikzpicture}
+                                                        \draw (5,5) -- (5,10) -- (10,10) -- (10,5) -- (5,5);
+                                                        \draw [->, -latex] (7.5,7) -- (7.5,0); \node [below right] at (7.5,0) {$F_g$};
+                                                        \draw [->, -latex] (7.5,8) -- (7.5,13); \node [above right] at (7.5,13) {$F_N$};
+                                                        \draw [->, -latex] (7.5,7.5) -- (15,9);  \node [right] at (14,9) {$F_A$};
+                                                        \draw [->, -latex] (7.5,7.5) -- (2,7.5); \node [left] at (3,7.5) {$F_f$};
+                                                        \end{tikzpicture}]]>
+                                                </latex-image-code>
+                                        </image>
+                                        </sidebyside>
+                                </answer>
+                                <answer><sidebyside widths="65% 25%">
+                                        <p>As you start relaxing your pull, the chair still has its weight pulling it down and the normal force keeping it from falling through the ground.  However, assuming that you are still pulling at a slight upwards angle, you are helping to support the weight and the normal force does not need to be as large.  (If we had numbers, you could use the vertical components to find the magnitude of the normal force.)  The friction, however, does not help lift the chair, nor weigh it down; friction only interferes with the backward pulling.  It is parallel to the ground in the direction opposite the motion.  If you are decelerating the chair backwards, then the applied force has a smaller horizontal component than the frictional force.</p>
+                                        <image xml:id="i-friction-chair-release" source="images/i-friction-chair-release.svg">
+                                                <description>The chair has one force (gravity) directly downwards, one force (normal) directly upwards, one force (applied) up-and-back, and one force (friction) horizontally forwards.</description>
+                                                <latex-image-code>
+                                                        <![CDATA[
+                                                        %>
+                                                        \begin{tikzpicture}
+                                                        \draw (5,5) -- (5,10) -- (10,10) -- (10,5) -- (5,5);
+                                                        \draw [->, -latex] (7.5,7) -- (7.5,0); \node [below right] at (7.5,0) {$F_g$};
+                                                        \draw [->, -latex] (7.5,8) -- (7.5,13); \node [above right] at (7.5,13) {$F_N$};
+                                                        \draw [->, -latex] (7.5,7.5) -- (11.5,9);  \node [right] at (12,9) {$F_A$};
+                                                        \draw [->, -latex] (7.5,7.5) -- (2,7.5); \node [left] at (0,7.5) {$F_f$};
+                                                        \end{tikzpicture}]]>
+                                                </latex-image-code>
+                                        </image>
+                                        </sidebyside>
+                                </answer>
+                                <answer><sidebyside widths="65% 25%">
+                                        <p>As you release the chair, the chair still has its weight pulling it down and the normal force keeping it from falling through the ground.  However, we might assume that you have stopped pulling the chair and are no longer helping to support the weight so that the normal force again needs to balance the gravitational force.  The friction, however, does not help lift the chair, nor weigh it down; friction only interferes with the backward pulling.  It is parallel to the ground in the direction opposite the motion.  Since you have stopped pulling there is only the frictional force, in the direction opposite the motion, slowing the chair down.</p>
+                                        <image xml:id="i-friction-chair-stop" source="images/i-friction-chair-stop.svg">
+                                                <description>The chair has one force (gravity) directly downwards, one force (normal) directly upwards, and one force (friction) horizontally forwards.</description>
+                                                <latex-image-code>
+                                                        <![CDATA[
+                                                        %>
+                                                        \begin{tikzpicture}
+                                                        \draw (5,5) -- (5,10) -- (10,10) -- (10,5) -- (5,5);
+                                                        \draw [->, -latex] (7.5,7) -- (7.5,0); \node [below right] at (7.5,0) {$F_g$};
+                                                        \draw [->, -latex] (7.5,8) -- (7.5,13); \node [above right] at (7.5,13) {$F_N$};
+                                                        \draw [->, -latex] (7.5,7.5) -- (2,7.5); \node [left] at (0,7.5) {$F_f$};
+                                                        \end{tikzpicture}]]>
+                                                </latex-image-code>
+                                        </image>
+                                        </sidebyside>
+                                </answer>
+                        </example>
+                        <example><title>Click here! (Direction of friction 2/3)</title>
+                                <statement>
+                                        <p>You are moving the computer mouse to direct the arrow on the screen by resting your forearm on the desk and curling your fingers to move the mouse towards you on the desktop.  In how many places is friction acting and in what direction?</p>
+                                </statement>
+                                <hint><p>There is friction where each surface is in contact.</p></hint>
+                                <hint><p>If you had just finished running around the block and your arm were drenched in a coating of sweat, would anything be different about the interaction (ignoring the potentially disgusting nature of being drenched in sweat)?</p></hint>
+                        </example>
+                        <example><title>Gosh, I'm thirsty (Direction of friction 3/3)</title>
                                 <statement><p>Do an example indicating the direction of the frictional force.</p></statement>
                         </example>
                         <example xml:id="ex-friction-mug"><title>How far does the mug slide?</title>
@@ -4747,6 +4850,7 @@ Also check these folks out on Wikipedia.... of course
                                 <caption>[Add caption]</caption>
                                 <image xml:id="i-immovable-surface" width="30%">
                                 <latex-image-code>
+\setlength{\unitlength}{2pt}
 \begin{picture}(35,80)
 \put(0,70){\line(1,0){25}}
 \multiput(5,70)(5,0){4}{\line(1,1){5}}
@@ -4781,7 +4885,7 @@ Also check these folks out on Wikipedia.... of course
                                 <latex-image-code>
                                         <![CDATA[
                                         %>
-                                        \begin{tikzpicture}
+                                        \begin{tikzpicture}[scale=1.5]
                                                 \draw [thick, gray] (0,0) -- (7,0);
                                                 \draw [thick, darkblue] (2,.1) -- (4,.1);
                                                 \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
@@ -4831,7 +4935,7 @@ Also check these folks out on Wikipedia.... of course
                                         <latex-image-code>
                                                 <![CDATA[
                                                 %>
-                                                \begin{tikzpicture}
+                                                \begin{tikzpicture}[scale=1.5]
                                                         %\draw [thick, gray] (0,0) -- (7,0);
                                                         %\draw [thick, darkblue] (2,.1) -- (4,.1);
                                                         \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
@@ -4868,7 +4972,7 @@ Also check these folks out on Wikipedia.... of course
                                         <latex-image-code>
                                                 <![CDATA[
                                                 %>
-                                                \begin{tikzpicture}
+                                                \begin{tikzpicture}[scale=1.5]
                                                         %\draw [thick, gray] (0,0) -- (7,0);
                                                         %\draw [thick, darkblue] (2,.1) -- (4,.1);
                                                         %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
@@ -4929,7 +5033,7 @@ Also check these folks out on Wikipedia.... of course
                                         <latex-image-code>
                                                 <![CDATA[
                                                 %>
-                                                \begin{tikzpicture}
+                                                \begin{tikzpicture}[scale=1.5]
                                                         %\draw [thick, gray] (0,0) -- (7,0);
                                                         %\draw [thick, darkblue] (2,.1) -- (4,.1);
                                                         %\draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
@@ -5065,9 +5169,9 @@ Also check these folks out on Wikipedia.... of course
                                 <statement>
                                         <sidebyside widths="70% 30%">
                                         <p>While preparing to hang some ornament on a tree, you chain them from a hook on the wall.  You hang ornament 3 <m>(m_3=30\unit g)</m> below ornament 2 <m>(m_2=20\unit g)</m>, which is below ornament 1 <m>(m_1=10\unit g)</m>.  What is the tension in each subsequent string?</p>
-                                        <image xml:id="i-chain-of-masses">
+                                        <image xml:id="i-chain-of-masses" source="images/i-chain-of-masses.svg">
                                                 <latex-image-code>
-                                                \begin{tikzpicture}
+                                                \begin{tikzpicture}[scale=.2]
                                                         \draw [thick, gray] (0,45) -- (25,45);
                                                         \draw [thick, gray] (5,45) -- (9,49);
                                                         \draw [thick, gray] (10,45) -- (14,49);
@@ -5099,19 +5203,19 @@ Also check these folks out on Wikipedia.... of course
                                         <sidebyside widths="70% 30%">
                                         <image xml:id="i-chain-of-masses-FBD">
                                                 <latex-image-code>
-                                                \begin{tikzpicture}
-                                                        \draw (7.5,30) -- (17.5,30) -- (17.5,40) -- (7.5,40) -- (7.5,30);          \node [above] at (12.5,30) {$m_3$};
-                                                        \draw [->] (12.5,30) -- (12.5,0);       \node [left] at (12.5,15) {$F_{g3}$};
-                                                        \draw [->] (12.5,40) -- (12.5,70);     \node [right] at (12.5,55) {$F_{T3}$};
-                                                        \draw (7.5,110) -- (17.5,110) -- (17.5,120) -- (7.5,120) -- (7.5,110);     \node [above] at (12.5,110) {$m_2$};
-                                                        \draw [->] (10,110) -- (10,90);   \node [left] at (10,100) {$F_{g2}$};
-                                                        \draw [->] (15,110) -- (15,80);   \node [right] at (15,95) {$F_{T3}$};
-                                                        \draw [->] (12.5,120) -- (12.5,170);   \node [right] at (12.5,1450) {$F_{T2}$};
-                                                        \draw (7.5,230) -- (17.5,230) -- (17.5,240) -- (7.5,240) -- (7.5,230);     \node [above] at (12.5,230) {$m_1$};
-                                                        \draw [->] (10,230) -- (10,220);   \node [left] at (10,225) {$F_{g1}$};
-                                                        \draw [->] (15,230) -- (15,180);   \node [right] at (15,205) {$F_{T2}$};
-                                                        \draw [->] (12.5,240) -- (12.5,300);   \node [right] at (12.5,270) {$F_{T1}$};
-                                                \end{tikzpicture}
+                                                \begin{tikzpicture}[scale=0.07]
+                                                        \draw (67.5,70) -- (77.5,70) -- (77.5,80) -- (67.5,80) -- (67.5,70);          \node [above] at (72.5,70) {$m_3$};
+                                                        \draw [->] (72.5,70) -- (72.5,40);       \node [left] at (72.5,55) {$F_{g3}$};
+                                                        \draw [->] (72.5,80) -- (72.5,110);     \node [right] at (72.5,95) {$F_{T3}$};
+                                                        \draw (37.5,110) -- (47.5,110) -- (47.5,120) -- (37.5,120) -- (37.5,110);     \node [above] at (42.5,110) {$m_2$};
+                                                        \draw [->] (40,110) -- (40,90);   \node [left] at (40,100) {$F_{g2}$};
+                                                        \draw [->] (45,110) -- (45,80);   \node [right] at (45,95) {$F_{T3}$};
+                                                        \draw [->] (42.5,120) -- (42.5,170);   \node [right] at (42.5,145) {$F_{T2}$};
+                                                        \draw (7.5,170) -- (17.5,170) -- (17.5,180) -- (7.5,180) -- (7.5,170);     \node [above] at (12.5,170) {$m_1$};
+                                                        \draw [->] (10,170) -- (10,160);   \node [left] at (10,165) {$F_{g1}$};
+                                                        \draw [->] (15,170) -- (15,120);   \node [right] at (15,145) {$F_{T2}$};
+                                                        \draw [->] (12.5,180) -- (12.5,240);   \node [right] at (12.5,210) {$F_{T1}$};
+                                                \end{tikzpicture} 
                                                 </latex-image-code>
                                         </image>
                                         <paragraphs>
@@ -5158,7 +5262,7 @@ Also check these folks out on Wikipedia.... of course
                                         <sidebyside>
                                         <image xml:id="i-caravan-of-masses">
                                                 <latex-image-code>
-                                                \begin{tikzpicture}
+                                                \begin{tikzpicture}[scale=0.1]
                                                         \draw [thick, gray] (0,0) -- (150,0);
                                                         \draw [thick, gray] (8,0) -- (12,-4);
                                                         \draw [thick, gray] (18,0) -- (22,-4);
@@ -5178,20 +5282,20 @@ Also check these folks out on Wikipedia.... of course
                                                         % \studentF
                                                         \draw (130,1) -- (145,1) -- (145,41) -- (130,41) -- (130,1);     \node [above] at (137.5,14) {$m_F$};
                                                         % \studentB with sled
-                                                        \draw (90,3) -- (100,3) -- (100,23) -- (90,23) -- (90,3);       \node [above] at (95,10) {$m_B$};
-                                                        \draw (85,3) arc [radius=2, start angle=-90, end angle=90];
+                                                        \draw (90,2) -- (100,2) -- (100,22) -- (90,22) -- (90,2);       \node [above] at (95,10) {$m_B$};
+                                                        \draw (85,1) arc [radius=2, start angle=270, end angle=90];
                                                         \draw (85,1) -- (105,1) ;
-                                                        \draw (105,3) arc [radius=2, start angle=90, end angle=270];
+                                                        \draw (105,1) arc [radius=2, start angle=-90, end angle=90];
                                                         % dog and sled
-                                                        \draw (55,3) -- (65,3) -- (65,18) -- (55,18) -- (55,3);          \node [above] at (60,8) {$m_d$};
-                                                        \draw (50,3) arc [radius=2, start angle=-90, end angle=90];
+                                                        \draw (55,2) -- (65,2) -- (65,17) -- (55,17) -- (55,2);          \node [above] at (60,8) {$m_d$};
+                                                        \draw (50,1) arc [radius=2, start angle=270, end angle=90];
                                                         \draw (50,1) -- (70,1) ;
-                                                        \draw (70,3) arc [radius=2, start angle=90, end angle=270];
+                                                        \draw (70,1) arc [radius=2, start angle=-90, end angle=90];
                                                         % provisions and sled
-                                                        \draw (15,3) -- (25,3) -- (25,13) -- (15,13) -- (15,3);          \node [above] at (20,6) {$m_p$};
-                                                        \draw (10,3) arc [radius=2, start angle=-90, end angle=90];
+                                                        \draw (15,2) -- (25,2) -- (25,12) -- (15,12) -- (15,2);          \node [above] at (20,6) {$m_p$};
+                                                        \draw (10,1) arc [radius=2, start angle=270, end angle=90];
                                                         \draw (10,1) -- (30,1) ;
-                                                        \draw (30,3) arc [radius=2, start angle=90, end angle=270];
+                                                        \draw (30,1) arc [radius=2, start angle=-90, end angle=90];
                                                         % ropes
                                                         \draw (32,3) -- (48,3);     \node [above] at (40,3) {$F_{T3}$};
                                                         \draw (72,3) -- (83,3);     \node [above] at (77.5,3) {$F_{T2}$};
@@ -5207,7 +5311,7 @@ Also check these folks out on Wikipedia.... of course
                                         <sidebyside>
                                         <image xml:id="i-caravan-of-masses-FBD">
                                                 <latex-image-code>
-                                                \begin{tikzpicture}
+                                                \begin{tikzpicture}[scale=0.1]
                                                         % Is there an easier way to draw a box???
                                                         % \studentF
                                                         % \draw (130,1) -- (145,1) -- (145,41) -- (130,41) -- (130,1);     \node [above] at (137.5,14) {$m_F$};
@@ -5217,19 +5321,19 @@ Also check these folks out on Wikipedia.... of course
                                                         % \draw [->, -latex] (137.5,20) -- (137.5,-30);     \node [right] at (178.5,21) {$F_{gF}$};
                                                         % \studentB with sled
                                                         \draw (90,3) -- (100,3) -- (100,23) -- (90,23) -- (90,3);       \node [above] at (95,10) {$m_B$};
-                                                        \draw [->, -latex] (94,13) -- (85,13);     \node [right above] at (85,13) {$F_{T2}$};
-                                                        \draw [->, -latex] (96,13) -- (116,13);     \node [left above] at (116,13) {$F_{T1}$};
-                                                        \draw [->, -latex] (95,14) -- (95,59);     \node [right] at (95,59) {$F_{NB}$};
+                                                        \draw [->, -latex] (94,13) -- (85,13);     \node [above] at (85,13) {$F_{T2}$};
+                                                        \draw [->, -latex] (96,13) -- (116,29);     \node [above left] at (116,29) {$F_{T1}$};
+                                                        \draw [->, -latex] (95,14) -- (95,47);     \node [right] at (95,47) {$F_{NB}$};
                                                         \draw [->, -latex] (95,12) -- (95,-33);     \node [right] at (95,-33) {$F_{gB}$};
                                                         % dog and sled
                                                         \draw (55,3) -- (65,3) -- (65,18) -- (55,18) -- (55,3);          \node [above] at (60,8) {$m_d$};
-                                                        \draw [->, -latex] (59,10.5) -- (54,10.5);     \node [right above] at (85,13) {$F_{T3}$};
-                                                        \draw [->, -latex] (61,10.5) -- (71,10.5);     \node [left above] at (116,13) {$F_{T2}$};
-                                                        \draw [->, -latex] (60,11.5) -- (60,51.5);     \node [right] at (95,59) {$F_{Nd}$};
-                                                        \draw [->, -latex] (60,9.5) -- (60,-30.5);     \node [right] at (95,-33) {$F_{gd}$};
+                                                        \draw [->, -latex] (59,10.5) -- (54,10.5);     \node [left] at (54,10.5) {$F_{T3}$};
+                                                        \draw [->, -latex] (61,10.5) -- (71,10.5);     \node [below] at (71,10.5) {$F_{T2}$};
+                                                        \draw [->, -latex] (60,11.5) -- (60,51.5);     \node [right] at (60,51.5) {$F_{Nd}$};
+                                                        \draw [->, -latex] (60,9.5) -- (60,-30.5);     \node [right] at (60,-30.5) {$F_{gd}$};
                                                         % provisions and sled
                                                         \draw (15,3) -- (25,3) -- (25,13) -- (15,13) -- (15,3);          \node [above] at (20,6) {$m_p$};
-                                                        \draw [->, -latex] (21,8) -- (26,8);     \node [left above] at (26,8) {$F_{T3}$};
+                                                        \draw [->, -latex] (21,8) -- (26,8);     \node [right] at (26,8) {$F_{T3}$};
                                                         \draw [->, -latex] (20,9) -- (20,44);     \node [right] at (20,44) {$F_{Np}$};
                                                         \draw [->, -latex] (20,7) -- (20,-28);     \node [right] at (20,-28) {$F_{gp}$};
                                                 \end{tikzpicture}
@@ -5519,8 +5623,8 @@ Also check these folks out on Wikipedia.... of course
 \put(25,25){\color{green}\circle{10}}
 \put(25,26){\color{green}\vector(0,1){25}}
 \put(25,24){\color{green}\vector(0,-1){15}}
-\put(28,35){\color{green}<m>F_\mathrm{throw}</m>}
-\put(28,10){\color{green}<m>F_g</m>}
+\put(28,35){\color{green}$F_\mathrm{throw}$}
+\put(28,10){\color{green}$F_g$}
 \put(0,0){\color{green} (a) throwing}
 \put(0,0){\color{green}\line(0,1){100}}
 \put(0,0){\color{green}\line(1,0){50}}
@@ -5539,7 +5643,7 @@ Also check these folks out on Wikipedia.... of course
 \begin{picture}(50,100)(0,0)
 \put(25,50){\circle{10}}
 \put(25,50){\vector(0,-1){15}}
-\put(28,35){<m>F_g</m>}
+\put(28,35){$F_g$}
 \end{picture}
 \centering{(b) falling up}
 \end{minipage}}
@@ -5557,8 +5661,8 @@ Also check these folks out on Wikipedia.... of course
 \put(25,95){\circle{10}}
 \put(26,95){\vector(0,-1){25}}
 \put(24,95){\vector(0,-1){15}}
-\put(28,75){<m>F_N</m>}
-\put(10,75){<m>F_g</m>}
+\put(28,75){$F_N$}
+\put(10,75){$F_g$}
 \end{picture}
 \centering{(c) \\ hitting}
 \end{minipage}}
@@ -5575,7 +5679,7 @@ Also check these folks out on Wikipedia.... of course
 \begin{picture}(50,100)(0,0)
 \put(25,50){\circle{10}}
 \put(25,50){\vector(0,-1){15}}
-\put(28,35){<m>F_g</m>}
+\put(28,35){$F_g$}
 \end{picture}
 \centering{(d) falling down}
 \end{minipage}}
@@ -5593,8 +5697,8 @@ Also check these folks out on Wikipedia.... of course
 \put(25,25){\circle{10}}
 \put(25,26){\vector(0,1){25}}
 \put(25,24){\vector(0,-1){15}}
-\put(28,35){<m>F_\mathrm{catch}</m>}
-\put(28,10){<m>F_g</m>}
+\put(28,35){$F_\mathrm{catch}$}
+\put(28,10){$F_g$}
 \end{picture}
 \centering{(e) catching}
 \end{minipage}}
