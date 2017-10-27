@@ -52,8 +52,8 @@ list: ABIP.xml
 		sed 's/^ *<image/<image/g' | \
 		grep '<image' | grep -v "images" | \
 		sed 's/ width=.*>/>/g' | \
-		sed 's+^.*xml:id=\"\(.*\)\">+ls images/\1.svg || ${BEE}/script/mbx \-v \-c latex-image \-r \1 \-f svg \-d images ${AIY}/ABIP.xml+g' >> runlist
-	@echo "run the script   runlist   to create any images that do not currently exist."
+		sed 's+^.*xml:id=\"\(.*\)\">+ls images/\1.svg || ${BEE}/script/mbx \-v \-c latex-image \-r \1 \-f svg \-d images ${AIY}/ABIP.xml || ${BEE}/script/mbx \-v \-c latex-image \-r \1 \-f source \-d images ${AIY}/ABIP.xml+g' >> runlist
+	@echo "run the script   ./runlist   to create any images that do not currently exist."
 
 checkref: ABIP.xml
 	@echo "The following checks for common mistakes I have made in the past (bad xrefs)"

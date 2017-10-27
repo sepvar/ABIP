@@ -819,6 +819,9 @@
                         <p>too soon?</p>
                         </paragraphs>
 
+                <p>A cooking website that nicely distinguishes weight from volume (ounce!):
+                <url href="http://bowlofplenty.blogspot.com/2009/01/how-much-does-water-weigh.html" /></p>
+
                 </subsection>
 
                 <subsection xml:id="ss-convertunits"><title>Conversion from English Units</title>
@@ -831,6 +834,9 @@
 
                 <p>Note internet search comments in <xref ref="ss-weightmass"  text="type-global" /> regarding the <q>conversion</q> of kilograms-to-pounds, with special attention to (See <xref ref="s-sigfig"  text="type-global">significant digits</xref>.).<idx>significant digits</idx></p>
                 <todo>rephrase this.  I moved that discussion to (xref ref="s-sigfig"  text="type-global" /).</todo>
+
+                <p>A cooking website that nicely distinguishes weight from volume (ounce!):
+                <url href="http://bowlofplenty.blogspot.com/2009/01/how-much-does-water-weigh.html" /></p>
 
                 <example xml:id="ex-F-and-C"><title>Fahrenheit and Centigrade</title>
                         <statement>
@@ -927,7 +933,7 @@
                         <image xml:id="i-parabola" width="50%">
                         <description>This is presumably for text readers: This is a place-holder for an image of a parabola, mostly for me to indicate that I can create interesting figures with <latex />.</description>
                         <latex-image-code>
-                                \setlength{\unitlength}{1cm}
+                                \setlength{\unitlength}{1cm}\
                                 \begin{Picture}(-2.5,-5.5)(3.5,3.5)
                                 \cartesiangrid(-2,-5)(3,3)
                                 \pictcolor{blue}
@@ -1251,6 +1257,19 @@
 
                 <p>To be moving, you must be moving in a particular direction.</p>
                 <todo>Discussion of velocity as a vector</todo>
+
+                </subsection>
+
+                <subsection xml:id="ss-relvel"><title>Relative Velocity</title>
+                <aside><title>Subsection referenced by</title>
+                <p>
+                <xref ref="ex-friction-mouse" text="type-global" />
+                </p>
+                </aside>
+
+                <p>Describe the motion of a car on a tree-lined road.  From the typical observation location on the side of the road, the trees are stationary and the car is moving forwards (let's say east).  On the other hand, from the car's perspective everything is still mathematically consistent if you consider the car to be stationary and imagine that the wheels are turning the Earth below it (like a treadmill) so that instead of the car moving forwards, it is the trees that are moving backwards (which would be west in this case).</p>
+
+                <p>Comment on inertial <xref ref="def-referenceframe" text="title">reference frames</xref>.<idx><h>reference frames</h><h>inertial</h></idx></p>
 
                 </subsection>
 
@@ -1739,6 +1758,7 @@
                 </proposition>
                 <p  xml:id="d-pushvector">You will use this property to show that multiple people pushing in the same direction increases the effect, whereas multiple people pushing in opposite directions reduces the effect.  One might say that people who push an object in opposite directions work<fn>After you study <xref ref="s-work" text="type-global" />, this play on words will be hilarious!</fn> against each other.  Because the force is a vector, whenever you are answering a question about a force, you should always expect to give the strength of the force (the <xref ref="def-magnitude" text="title">magnitude</xref>) and the <xref ref="def-direction" text="title">direction</xref> of the force (relative to some specific axis, usually the positive <m>x</m>-axis).</p>
 
+                <aside><title>Insight referenced by</title> <p>The answers in <xref ref="ex-friction-mouse" text="type-global" />.</p></aside>
                 <insight xml:id="insight-force-interaction">
                         <p>You can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.
                         Forces are <em>necessarily</em> an interaction<idx>interaction</idx><idx><h>force</h><h>interaction</h></idx> between two objects.</p>
@@ -1749,23 +1769,16 @@
 
                 <p>Sometimes we care about the thing doing the pushing or pulling, sometimes we don't.  We always care about the thing being pushed or pulled.  We will <em>distinguish these objects</em> by referring to the object that is pushing as the object <q>causing the force</q> or <q>exerting the force</q> and by referring to the object that is being pushed as the object <q>feeling the force</q>.  We will <em>distinguish these forces</em> as follows:</p>
                 <aside><title>Convention referenced by</title> <p><xref ref="ex-braced" text="type-global" /></p></aside>
-                <convention xml:id="d-interaction">
+                <convention xml:id="conv-on-by"><title>The <q>on-by</q> notation</title>
                 <p>Let's imagine that \studentB<idx><h sortby="\studentB">\studentB</h></idx> gives \studentA<idx><h sortby="\studentA">\studentA</h></idx> a good-natured shove in the arm.  The following are useful descriptions and are different ways of describing the same action.
                 <ul>
                         <li><p> \studentB\ exerted a force <term>on</term> \studentA.</p></li>
                         <li><p> \studentA\ felt a force <term>from</term> \studentB.</p></li>
                         <li><p> There was a force <term>on</term> \studentA\ <term>by</term> \studentB.</p></li>
                 </ul>
-                <notation>
-                <usage>F_\mathrm{on, by, type}</usage>
-                <description>Use of subscripts on force labels: If it is obvious which object feels the force, the the subscript will only indicate <em>which force</em>.
-                        If it is not obvious which object feels the force, the the subscript will also indicate which object the force is acted <em>on</em>.
-                        Sometimes we need to clarify who exerts the force as well as who feels the force.  In this case, the subscripts indicate who the force is <em>on</em>, who the force is <em>by</em>, and which force we are referring to: <m>F_\mathrm{on, by, type}</m>.
-                        </description>
-                </notation>
                 The notation for this will be <m>F_{A,B}</m> where the first subscript is the person who felt the force (who the force is <q>on</q>) and the second subscript is who exerted the force (who the force is <q>by</q>).  In those instances when we only care about who is feeling the force and not who is exerting the force, we might just use one subscript <m>F_A</m>.  </p>
                 <p>In some cases, there may be two forces acting on one person (or object).  In that case, it will be obvious who is feeling the force and we will use the subscript to distinguish which force it is <em>in addition to</em> who feels the force, such as <m>F_{A1}</m> and <m>F_{A2}</m>, or <em>rather than</em> who feels the force, such as <m>F_1</m> and <m>F_2</m>.
-                This will be more relevant when we discuss in <xref ref="c-forcetype" text="type-global"/> the types of forces that might be applied.</p>
+                This will be more relevant when we discuss in <xref ref="c-forcetype" text="type-global"/> the types of forces that might be applied.  <xref ref="conv-on-by-type" text="type-global" /> will expand this notation.</p>
                 </convention>
 
                 <biographical><title>Touchstone (law)</title><p>Recall the distinction between <xref ref="s-law" text="title" />.</p></biographical>
@@ -1930,7 +1943,6 @@
                         <cell><m>\overbrace{\hspace{5em}}</m></cell>
                         <cell><m>\overbrace{\hspace{4em}}</m></cell>
                         <cell><m>\overbrace{\hspace{5em}}</m></cell>
-                        <cell></cell>
                         <cell><m>\overbrace{\hspace{5em}}</m></cell>
                     </row>
                     <row halign="center">
@@ -2507,18 +2519,28 @@
                         </p>
                 </aside>
                 <assemblage xml:id="as-NIII"><title>Newton's Third Law</title><idx><h>Newton</h><h>third law</h></idx>
-                <p>For every force acting <em>on</em> one object <em>by</em> an <em>other object</em>, there is an equal-in-magnitude reaction-force acting <em>on</em> the <em>other object</em> in the opposite direction.</p>
+                        <p>For every force acting <em>on</em> one object <em>by</em> an <em>other object</em>, there is an equal-in-magnitude reaction-force acting <em>on</em> the <em>other object</em> in the opposite direction.</p>
                 </assemblage>
-                <p>This law is often shortened to <q>For every action, there is an equal and opposite reaction.</q>  The statement given above is meant to emphasize several points:
+                <aside><title>Foreshadow</title>
+                        <p>This law is the force-version of the statement of the <xref ref="s-conservemom" text="title">conservation of momentum</xref>.</p>
+                </aside>
+                <p>This law is often shortened to <q>For every action, there is an equal and opposite reaction.</q>  The statement given above is meant to emphasize two points:
                 <ul>
                 <li><p> These <q>actions</q> are specifically forces.</p></li>
                 <li><p> Forces are an interaction in which the acting force is <em>on one object</em> by another and necessitates that there is a reaction force on the other object by the one.  That is to say, an object cannot feel a force without also exerting a force back on the other object.</p></li>
                 </ul>
                 Another way to say this is that all forces come in action/reaction pairs that necessarily have equal magnitude and opposite direction and necessarily act on different objects.
                 </p>
-                <aside><title>Foreshadow</title>
-                        <p>This law is the force-version of the statement of the <xref ref="s-conservemom" text="title">conservation of momentum</xref>.</p>
+                
+                <aside><title>Insight referenced by</title>
+                        <p>
+                        <xref ref="ss-N-NIII" text="type-global" />, 
+                        the answers in <xref ref="ex-friction-mouse" text="type-global" />
+                        </p>
                 </aside>
+                <insight xml:id="insight-force-type"><title>Third-law pairs</title>
+                        <p>The action/reaction force pairs relevant to Newton's third law <em>must</em> be of the same type because it is the same interaction.</p>
+                </insight>
 
                 <p xml:id="d-NIIIbracing">Let's take this apart and connect it to your daily experiences.  Students of physics will often see the terms action and reaction and connect it to the way humans react to the actions of their friends.  However, this implies a causal<fn xml:id="causual">Please note that <q>causal</q> and <q>casual</q> are different words.</fn> response that is not true for Newton's forces.  That is to say, this is not a <q>revenge law</q> whereby if you push on me, then I will choose to push you back.  Instead, it is expressing that forces are intrinsically interactions between a pair of objects.  When you push on me, I am -- independent of my choosing to do so -- necessarily pushing back on you.  But, you might say, <q>if that were true, then why am I able to sneak up on you and push you over without falling over myself?</q>  Well, you can think about how that works by reading <xref ref="cyoa-NIII" text="type-global" />. After we introduce the tool of a free-body diagram in the next subsection, you can also explore this idea by comparing <xref ref="ex-braced" text="type-global" /> to <xref ref="ex-unbraced" text="type-global" />.</p>
 
@@ -3023,7 +3045,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                 <p>Second, because \studentZ\ <em>knew</em> \heZ\ was going to feel this reaction force, \heZ\ compensates by bracing \himselfZ.  This means \heZ\ chooses to exert a force of <m>215\unit{N}</m> on the Earth in the <m>-\ihat</m> direction, probably by putting one leg behind \himselfZ\ and pushing the ground backwards with \hisZ\ foot.  Newton's third law then tells us that \studentZ\ feels a force of <m>F_{Z,C}=+215 \unit{N}\ihat</m> from the ground.</p>
 
                                 <p><alert>Free-Body Diagrams</alert>
-                                We are told of the force on \studentC.  We are told that \studentZ\ braces \himselfZ, which tells us the force on the Earth. Newton's third law then helps us recognize the forces on \studentZ.  (Recall the <xref ref="d-interaction" text="title"><q>on-by</q> notation</xref>.)</p>
+                                We are told of the force on \studentC.  We are told that \studentZ\ braces \himselfZ, which tells us the force on the Earth. Newton's third law then helps us recognize the forces on \studentZ.  (Recall the <xref ref="conv-on-by" text="title"><q>on-by</q> notation</xref>.)</p>
 
                                 <sidebyside widths="47% 47%">
                                         <image xml:id="i-braced-FBD-Z">
@@ -3333,11 +3355,33 @@ Earth feels a force by \studentZ\ to the left.
 <chapter xml:id="c-forcetype"><title>The Many Types of Force</title>
 
         <introduction>
-<aside><title>Chapter referenced by</title> <p><xref ref="c-force" text="type-global" />, Discussion of <xref ref="d-interaction" text="title">subscript notation of forces</xref></p></aside>
+<aside><title>Chapter referenced by</title> <p><xref ref="c-force" text="type-global" />, Discussion of <xref ref="conv-on-by" text="title">subscript notation of forces</xref></p></aside>
         <p>Having <xref ref="c-force" text="title">discussed the concept of forces</xref> and how they affect the motion, we can turn to the specific mechanisms for the introduction of forces on objects.  Perhaps the most obvious mechanisms for imparting force is that objects fall towards the Earth.  We call this force <q>gravity</q> and we will discuss it first.  It turns out to be somewhat more complicated because it turns out that the force that helps us fall when we trip is the same force that holds the planets in their orbits.  The complicated general theory will be discussed later, but for now <xref ref="s-Fg" text="type-local" /> will describe the phenomenon at the surface of the Earth where we usually experience it.</p>
 <todo>add reference to the general theory</todo>
 
         <p>After a brief introduction to the four fundamental forces in <xref ref="s-fundamental" text="type-local" />, we will consider the <xref ref="s-FN" text="title">normal force</xref>, <xref ref="s-Ff" text="title">friction</xref>, <xref ref="s-FT" text="title">tension</xref> (such as in ropes), <xref ref="s-springs" text="title">springs</xref>, and end with the catch-all additional category of <xref ref="s-FA" text="title">applied forces</xref>.  <xref ref="s-Fnet" text="type-local" /> will wrap it up by using examples including multiple types of force to compute the net force, which connects back to Newton's Laws in the previous chapter.</p>
+
+        <p>Before we start, let's consider extending the subscript notation for forces introduced in <xref ref="conv-on-by" text="type-global" />.</p>
+        <aside><title>Convention referenced by</title>
+                <p>
+                <xref ref="conv-on-by" text="type-global" />,
+                <xref ref="ex-friction-mouse" text="type-global" />
+                </p>
+        </aside>
+        <convention xml:id="conv-on-by-type"><title>The <q>on-by-type</q> notation</title>
+        <p>Recall <xref ref="conv-on-by" text="title" />.  Often we would like to indicate the type of force as well as which objects is it <q>on</q> or <q>by</q>.  In this chapter, we will add the type of force after the <q>on-by</q> notation.
+        <notation>
+        <usage>F_\mathrm{on, by, type}</usage>
+        <description>Use of subscripts on force labels: If it is obvious which object feels the force, the subscript will only indicate <em>which force</em>.
+                If it is not obvious which object feels the force, the subscript will also indicate which object the force is acted <em>on</em>.
+                Sometimes we need to clarify who exerts the force as well as who feels the force.  In this case, the subscripts indicate who the force is <em>on</em>, who the force is <em>by</em>, and which force we are referring to: <m>F_\mathrm{on, by, type}</m>.
+                </description>
+        </notation>
+        Considering the case where \studentA<idx><h sortby="\studentA">\studentA</h></idx> feels a gravitational force from the Earth, we say that there is a gravitational force on \studentA\ by the Earth and use the notation <m>F_{AEg}</m>, where the first subscript is the person who felt the force (who the force is <q>on</q>), the second subscript is who exerted the force (who the force is <q>by</q>), and the third subscript is the type of force.</p>
+        <p><alert>Caution 1:</alert> Sometimes it will be obvious who exerts the force and we might drop that subscript.  For example, the Earth is the most common source for the gravitational force, so we might write <m>F_{Ag}</m>, distinguishing this from the normal force that acts on \studentA, <m>F_{AN}</m> (which will also be exerted by an obvious source, the surface on which \studentA\ stands).</p>
+        <p><alert>Caution 2:</alert> Sometimes the interacting objects and type will have the same initial and the subscripts can be confusing, as in the case where \studentB<idx><h sortby="\studentB">\studentB</h></idx> <em>applies</em> a good-natured force to \studentA.  In that case, we would say that there is an applied force on \studentA\ by \studentB\ and use the notation <m>F_{ABa}</m> where the first subscript (A) is the person who felt the force and the last subscript is the type of force (applied).  The author of this book will endeavor to create examples which avoid this confusion, but if you create examples for yourself, just be aware of this possibility.</p>
+        </convention>
+
 
         </introduction>
 
@@ -3359,7 +3403,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p xml:id="d-Fgball">You did do them, right?  You're not just reading ahead?  Really?  OK.  Doing that experiment will help you see (1) that everything falls at the same rate and (2) that objects accelerate as they fall.  This first point is a bit less intuitive and will be discussed further in <xref ref="ss-equivmm" text="type-hybrid" />.  This second point should be exactly what you expect, when you consider <xref ref="as-NII" text="title">Newton's second Law</xref>: If there is only one force (the gravitational force), then the object cannot be in <xref ref="sss-equilibrium" text="title">equilibrium</xref> and it must be accelerating.  (You should notice that this is the language of <xref ref="st-Fma" text="title">the story of Newton's second law</xref>.)</p>
 
-                <biographical><title>Touchstone (on-by)</title><p><xref ref="d-interaction" text="title">the on-by notation</xref></p></biographical>
+                <biographical><title>Touchstone (on-by)</title><p><xref ref="conv-on-by" text="title">the on-by notation</xref></p></biographical>
                 <p>In order to evaluate this further, let's consider a specific object, like a baseball.  Our baseball has a mass of <m>m_b = 0.145\unit{kg}</m>.  If the only force acting <em>on</em> the ball is the gravitational force <em>by</em> the Earth, then the net force is the gravitational force: <m>\vec F_\mathrm{net} = \vec F_{bEg}</m>.
                 Here the subscripts are <m>b</m> (because the force is on the <em>b</em>all), <m>E</m> (because the force is exerted by the <em>E</em>arth), and <m>g</m> (because it is a <em>g</em>ravitational force).  Since the acceleration is due to the gravitational force, I will use either <m>a_g</m> (usually when the object is in <xref ref="ss-freefall" text="title">freefall</xref> and therefore accelerating at this rate) or <m>g</m> (usually when the object is not actually accelerating at that rate).  With this notation, Newton's second law becomes:
                 <me> \vec F_{bEg} = m_b \vec a_g </me>
@@ -3637,13 +3681,51 @@ Earth feels a force by \studentZ\ to the left.
                         <p>Let's start from a familiar example so that we focus our attention on the <em>new</em> aspect.  Starting from <xref ref="f-firstFBD" text="type-global" />, we can observe that each of the three bodies also has a downwards gravitational force.  This is analogous to the calculation in <xref ref="se-weightA" text="type-global" />, which was only for \studentA<idx><h sortby="\studentA">\studentA</h></idx>; but you can calculate the weight for the mass in <xref ref="se-netF-a" text="type-global" /> and \studentB<idx><h sortby="\studentB">\studentB</h></idx>'s weight was computed in <xref ref="se-FNB" text="type-global" />.  In addition to the downward gravitational force (the weight), Newton's second law and the fact that nothing is accelerating up or down together tells us that there must also be a normal force on each body.  This is analogous to the calculation in <xref ref="se-FNB" text="type-global" />, which was only for \studentB; but you can deduce it for the object and for \studentA.</p>
                         <figure xml:id="f1-firstFBDupdate">
                                 <caption>\studentA\ and \studentB\ push on a box</caption>
-                                <image xml:id="i-firstFBDupdate-drawing" source="images/i-firstFBD-drawing.svg" width="75%">
+                                <image xml:id="i-firstFBDupdate-drawing" width="75%">
                                 <!-- reuse the previous image - alternatively, we could reference it with a link.  -->
                                 <description>The same drawing of two people pushing on a box as was seen in the earlier example.</description>
+                                        <latex-image-code>
+                                                <![CDATA[
+                                                %>
+                                                \begin{tikzpicture}[scale=1.5]
+                                                        \draw [thick, gray] (0,0) -- (7,0);
+                                                        \draw [thick, darkblue] (2,.1) -- (4,.1);
+                                                        \draw (1,.1) -- (1.75,.1) -- (1.75,1) -- (2.2,1) -- (2.2,1.2) -- (1.75,1.2) -- (1.75,1.75) -- (1,1.75) -- (1,.1);
+                                                        \draw (2.25,.2) -- (3,.2) -- (3,1.2) -- (2.25,1.2) -- (2.25,.2);
+                                                        \draw (5,.1) -- (5.75,.1) -- (5.75,1.5) -- (5,1.5) -- (5, 1.2) -- (4.7,1.2) -- (4.7,1) -- (5,1) -- (5,.1);
+                                                        \draw (3,1) arc (-90:90:.1);
+                                                        \draw (3.1,1.1) -- (4.7,1.1);
+                                                        \node [above] at (1.375,1.75) {\studentA};
+                                                        \node [above] at (2.625,1.2) {object};
+                                                        \node [above] at (5.375,1.5) {\studentB};
+                                                        \node [below] at (3,0) {\scriptsize \begin{tabular}{c} The object \\ is on a \\ sheet of ice\end{tabular}};
+                                                \end{tikzpicture}]]>
+<!--
+\begin{picture}(200,100)(-30,-25)
+% Dimensions and offset: (width,height)(x offset,y offset)
+% Insert picture commands (\line,\circle, etc...) here:
+\put(0,0){\line(1,0){200}}
+\put(60,2){\line(1,0){60}}
+\drawbox{30}{1}{20}{50} %\studentA
+\drawbox{50}{25}{18}{5} %\studentA's arms
+\drawbox{70}{3}{20}{30} % object
+\drawbox{150}{1}{20}{40} %\studentB
+\drawbox{134}{25}{16}{5} %\studentB's arms
+\put(90,27.5){\oval(2,2)[r]}
+\put(91,27.5){\line(1,0){43}}
+\put(30,53){\scriptsize \studentA}
+\put(70,35){\scriptsize object}
+\put(150,43){\scriptsize \studentB}
+\put(60,-12){\begin{minipage}{60pt}
+\scriptsize The object is on a sheet of ice.
+\end{minipage}}
+\end{picture}
+-->
+                                        </latex-image-code>
                                 </image>
                         </figure>
 
-                        <p>Now, as in <xref ref="f2-firstFBD" text="type-global" />, we will draw a free-body diagram for each individual separately.  However, this time we will use the information calculated in <xref ref="se-weightA" text="type-global" /> and <xref ref="se-FNB" text="type-global" /> to include the gravitational force (the weight) and the normal force.  I will use the <xref ref="d-interaction" text="title"><q>on-by</q> notation</xref> to distinguish the forces.</p>
+                        <p>Now, as in <xref ref="f2-firstFBD" text="type-global" />, we will draw a free-body diagram for each individual separately.  However, this time we will use the information calculated in <xref ref="se-weightA" text="type-global" /> and <xref ref="se-FNB" text="type-global" /> to include the gravitational force (the weight) and the normal force.  I will use the <xref ref="conv-on-by" text="title"><q>on-by</q> notation</xref> to distinguish the forces.</p>
 
                         <figure xml:id="f2-firstFBDupdate">
                                 <caption>
@@ -4137,11 +4219,9 @@ Earth feels a force by \studentZ\ to the left.
                 <subsection xml:id="ss-N-NIII">
                         <title>The normal force and the third law</title>
 
-                <p><xref ref="sum-NewtonsLaws" text="title">Recall</xref> that the third law tells us about what happens to the object that is doing the pushing.  In <xref ref="f-firstFBDupdate" text="type-global" />, the gravitational and normal forces were included.  In the same way that <xref ref="f-firstFBD" text="type-global" /> explained the way the third law describes the sources of the horizontal forces on the object (by adding the people to <xref ref="se-netFadd" text="type-global" />), we can now consider the source of the vertical forces.  The gravitational forces pulling down on the people and the object are caused by the gravitational interaction with the Earth.  Since the Earth is pulling them down, the <xref ref="as-NIII" text="title">third law</xref> indicates that they must pull the Earth up <em>with a gravitational force</em>.</p>
-                <insight xml:id="insight-force-type"><title>Third-law pairs</title>
-                        <p>The action/reaction force pairs relevant to Newton's third law <em>must</em> be of the same type because it is the same interaction.</p>
-                </insight>
-                <p>Similarly, the normal forces that support the people and the object (against the gravitational force) are caused by the Earth's surface, which is keeping the people and objects from moving through that surface.  Since the Earth's surface is pushing them up, the third law indicates that they must push the Earth down <em>with a normal force</em> (keeping the Earth from moving through their feet).</p>
+                <p><xref ref="sum-NewtonsLaws" text="title">Recall</xref> that the third law tells us about what happens to the object that is doing the pushing.  In <xref ref="f-firstFBDupdate" text="type-global" />, the gravitational and normal forces were included.  In the same way that <xref ref="f-firstFBD" text="type-global" /> explained the way the third law describes the sources of the horizontal forces on the object (by adding the people to <xref ref="se-netFadd" text="type-global" />), we can now consider the source of the vertical forces.  The gravitational forces pulling down on the people and the object are caused by the gravitational interaction with the Earth.  Since the Earth is pulling them down, the <xref ref="as-NIII" text="title">third law</xref> indicates that they must pull the Earth up <em>with a gravitational force</em>.   These pairs of gravitational forces (Earth pulling down on the object and the object pulling up on the Earth, etc.) are <q>third-law pairs</q> (recall <xref ref="insight-force-type" text="type-global" />).</p>
+
+                <p>Similarly, the normal forces that support the people and the object (against the gravitational force) are caused by the Earth's surface, which is keeping the people and objects from moving through that surface.  Since the Earth's surface is pushing them up, the third law indicates that they must push the Earth down <em>with a normal force</em> (keeping the Earth from moving through their feet).   These pairs of normal forces (Earth pushing up on the object and the object pushing down on the Earth, etc.) are <q>third-law pairs</q> (recall <xref ref="insight-force-type" text="type-global" />).</p>
                 <remark xml:id="clarification-Ng-nopair"><title>Third-law pairs</title>
                         <p>You should notice the language in the paragraph above.  While the normal force does act against the gravitational force (in this case), the normal force is not the third-law pair to the gravitational force.  If you keep <xref ref="task-scale-ramp" text="type-global" /> in mind, it should be obvious that the normal force does not necessarily balance the gravitational force.</p>
                 </remark>
@@ -4286,33 +4366,35 @@ Earth feels a force by \studentZ\ to the left.
                         <remark><title><m>F_f=\mu F_N</m> is not a vector equation</title>
                                 <p>The direction of the frictional force is <em>necessarily</em> along the plane of the surface, whereas the normal force is <em>necessarily</em> normal (perpendicular) to the plane of the surface.<fn>Some sources include this in the statement of <xref ref="law-friction-amontons-1" text="title" />, stating <q>When a body is moving, the friction is directly proportional to normal force and frictional force direction is perpendicular to the normal force.</q></fn>  This is a <q>magnitude</q> relationship.</p>
                         </remark>
-                        <example><title>Hey! Let's get lunch (Direction of friction 1/3)</title>
+                        <example><title>Hey! Let's get lunch (Direction of friction 1/2)</title>
                                 <statement>
                                         <p>You decide to go to lunch with \studentB<idx><h sortby="\studentB">\studentB</h></idx>.  When you get to the table and pull your chair out away from the table, it makes an embarrassingly loud squeal as it drags across the ground.  In your evaluation of the situation, draw a free-body diagram, clearly indicating the direction of all forces acting on the chair.  Assume the chair starts at rest, accelerates as you pull, then decelerates as you gradually stop pulling, and stops as you release it. Let's assume that the table is in the <m>+\ihat</m> direction and you are pulling the chair in the <m>-\ihat</m> direction. </p>
                                 </statement>
                                 <hint><p>There are four stages of motion: Before you pull, as you start to pull, while you reduce your pull, and after you release it.</p></hint>
                                 <hint><p>Friction is a reactive force; its magnitude depends on what is happening to the chair.</p></hint>
-                                <hint><p>Does the friction help you move the chair or interfere with your pulling?</p></hint>
+                                <hint><p>Does the friction help you move the chair or interfere with your pulling?  What does this imply about the direction of the force?</p></hint>
                                 <hint><p>Is friction the same through out the problem?</p></hint>
-                                <answer><sidebyside widths="65% 25%">
-                                        <p>Before you begin pulling, the chair has its weight pulling it down and the normal force keeping it from falling through the ground.  Since it starts at rest, the acceleration is zero, so the net force is zero and the normal force must balance the weight.</p>
-                                        <image xml:id="i-friction-chair-rest" source="images/i-friction-chair-rest.svg">
+                                <answer>
+                                        <sidebyside widths="65% 35%">
+                                        <p>Before you begin pulling, the chair has its weight pulling it down and the normal force keeping it from falling through the ground. Since it starts at rest, the acceleration is zero, so the net force is zero and the normal force must balance the weight.</p>
+                                        <image xml:id="i-friction-chair-rest">
                                                 <description>The chair has one force (gravity) directly downwards and one force (normal) directly upwards.</description>
                                                 <latex-image-code>
                                                         <![CDATA[
                                                         %>
                                                         \begin{tikzpicture}
                                                         \draw (5,5) -- (5,10) -- (10,10) -- (10,5) -- (5,5);
-                                                        \draw [->, -latex] (7.5,7) -- (7.5,0); \node [below right] at (7.5,0) {$F_g$);
-                                                        \draw [->, -latex] (7.5,8) -- (7.5,15); \node [above right] at (7.5,15) {$F_N$);
+                                                        \draw [->, -latex] (7.5,7) -- (7.5,0); \node [below right] at (7.5,0) {$F_g$};
+                                                        \draw [->, -latex] (7.5,8) -- (7.5,15); \node [above right] at (7.5,15) {$F_N$};
                                                         \end{tikzpicture}]]>
                                                 </latex-image-code>
                                         </image>
                                         </sidebyside>
                                 </answer>
-                                <answer><sidebyside widths="65% 25%">
-                                        <p>As you start pulling, the chair still has its weight pulling it down and the normal force keeping it from falling through the ground.  However, assuming that you are pulling at a slight upwards angle, you are helping to support the weight and the normal force does not need to be as large.  (If we had numbers, you could use the vertical components to find the magnitude of the normal force.)  The friction, however, does not help lift the chair, nor weigh it down; friction only interferes with the backward pulling.  It is parallel to the ground in the direction opposite the motion.  If you are accelerating the chair backwards, then the applied force has a larger horizontal component than the frictional force.</p>
-                                        <image xml:id="i-friction-chair-pull" source="images/i-friction-chair-pull.svg">
+                                <answer>
+                                        <sidebyside widths="65% 35%">
+                                        <p>As you start pulling, the chair still has its weight pulling it down and the normal force keeping it from falling through the ground.  However, assuming that you are pulling at a slight upwards angle, you are helping to support the weight and the normal force does not need to be as large.  (If we had numbers, you could use the vertical components to find the magnitude of the normal force.)  The friction, however, does not help lift the chair, nor weigh it down; friction only interferes with the backward pulling.  It is parallel to the ground in the direction opposite the motion. If you are accelerating the chair backwards, then the applied force has a larger horizontal component than the frictional force.</p>
+                                        <image xml:id="i-friction-chair-pull">
                                                 <description>The chair has one force (gravity) directly downwards, one force (normal) directly upwards, one force (applied) up-and-back, and one force (friction) horizontally forwards.</description>
                                                 <latex-image-code>
                                                         <![CDATA[
@@ -4328,9 +4410,9 @@ Earth feels a force by \studentZ\ to the left.
                                         </image>
                                         </sidebyside>
                                 </answer>
-                                <answer><sidebyside widths="65% 25%">
+                                <answer><sidebyside widths="65% 35%">
                                         <p>As you start relaxing your pull, the chair still has its weight pulling it down and the normal force keeping it from falling through the ground.  However, assuming that you are still pulling at a slight upwards angle, you are helping to support the weight and the normal force does not need to be as large.  (If we had numbers, you could use the vertical components to find the magnitude of the normal force.)  The friction, however, does not help lift the chair, nor weigh it down; friction only interferes with the backward pulling.  It is parallel to the ground in the direction opposite the motion.  If you are decelerating the chair backwards, then the applied force has a smaller horizontal component than the frictional force.</p>
-                                        <image xml:id="i-friction-chair-release" source="images/i-friction-chair-release.svg">
+                                        <image xml:id="i-friction-chair-release">
                                                 <description>The chair has one force (gravity) directly downwards, one force (normal) directly upwards, one force (applied) up-and-back, and one force (friction) horizontally forwards.</description>
                                                 <latex-image-code>
                                                         <![CDATA[
@@ -4346,9 +4428,9 @@ Earth feels a force by \studentZ\ to the left.
                                         </image>
                                         </sidebyside>
                                 </answer>
-                                <answer><sidebyside widths="65% 25%">
+                                <answer><sidebyside widths="65% 35%">
                                         <p>As you release the chair, the chair still has its weight pulling it down and the normal force keeping it from falling through the ground.  However, we might assume that you have stopped pulling the chair and are no longer helping to support the weight so that the normal force again needs to balance the gravitational force.  The friction, however, does not help lift the chair, nor weigh it down; friction only interferes with the backward pulling.  It is parallel to the ground in the direction opposite the motion.  Since you have stopped pulling there is only the frictional force, in the direction opposite the motion, slowing the chair down.</p>
-                                        <image xml:id="i-friction-chair-stop" source="images/i-friction-chair-stop.svg">
+                                        <image xml:id="i-friction-chair-stop">
                                                 <description>The chair has one force (gravity) directly downwards, one force (normal) directly upwards, and one force (friction) horizontally forwards.</description>
                                                 <latex-image-code>
                                                         <![CDATA[
@@ -4364,17 +4446,20 @@ Earth feels a force by \studentZ\ to the left.
                                         </sidebyside>
                                 </answer>
                         </example>
-                        <example><title>Click here! (Direction of friction 2/3)</title>
+                        <example xml:id="ex-friction-mouse"><title>Click here! (Direction of friction 2/2)</title>
                                 <statement>
-                                        <p>You are moving the computer mouse to direct the arrow on the screen by resting your forearm on the desk and curling your fingers to move the mouse towards you on the desktop.  In how many places is friction acting and in what direction?</p>
+                                        <p>You are moving the computer mouse to direct the arrow downwards along the screen by dragging the mouse towards you along the desk.  What direction is each of the frictional forces acting between the mouse and the desk?</p>
                                 </statement>
-                                <hint><p>There is friction where each surface is in contact.</p></hint>
-                                <hint><p>If you had just finished running around the block and your arm were drenched in a coating of sweat, would anything be different about the interaction (ignoring the potentially disgusting nature of being drenched in sweat)?</p></hint>
+                                <hint xml:id="H-friction-mouse-desk"><p>If the mouse is moving towards you and friction hinders that motion, how will the acceleration be related to the velocity?  Which of these is related to the force?</p></hint>
+                                <answer xml:id="A-friction-mouse-desk">
+                                        <biographical><title>Touchstone (on-by)</title><p><xref ref="conv-on-by-type" text="title">the on-by notation</xref></p></biographical>
+                                        <p>Side note: there is a <em>normal</em> force <em>on</em> the mouse <em>by</em> the desk <m>(F_{mdN})</m> <em>upwards</em> that keeps the mouse from falling through the surface of the desk.  This normal force has two relevant relationships.  First, it has a <q>third-law pair</q> that implies there is a <em>downwards</em> <em>normal</em> force <em>on</em> the desk <em>by</em> the mouse, <m>F_{dmN}</m>. Second, have a normal force creates the potential for a frictional force, as seen by <xref ref="eq-friction" text="title">Equation</xref>.</p>
+                                        <biographical><title>Touchstone (third-law pair)</title><p><xref ref="insight-force-type" text="title">third-law pairs</xref> are the <em>same type</em> of force acting <em>on different</em> objects</p></biographical>
+                                        <p>As the mouse moves across the desk <em>towards</em> you, <xref ref="H-friction-mouse-desk" text="type-local" /> indicates that the frictional force on the mouse <m>(F_{mdf})</m> is <em>away</em> from you (and slows the mouse down).  It may be less obvious that there is also a <q>third-law pair</q> frictional force on the desk by the mouse <m>(F_{dmf})</m> which is <em>towards</em> you due to the <xref ref="ss-relvel" text="title">relative motion</xref> between the desk and the mouse.  You can see this if you imagine placing a tissue under the mouse and enacting the same motion.  The tissue will be pulled towards you by the mouse due to that frictional force pair.<fn><xref ref="as-NII" text="title" /> shows that given the same magnitude frictional force, the <em>massive</em> desk has <em>too small</em> of an acceleration to see, whereas the <em>very-slight mass</em> of the tissue allows us to see the <em>larger</em> acceleration of the tissue.</fn></p>
+                                </answer>
                         </example>
-                        <example><title>Gosh, I'm thirsty (Direction of friction 3/3)</title>
-                                <statement><p>Do an example indicating the direction of the frictional force.</p></statement>
-                        </example>
-                        <example xml:id="ex-friction-mug"><title>How far does the mug slide?</title>
+                        <p><xref ref="ex-friction-mouse" text="type-global" /> is extended in <xref ref="ex-friction-mouse-update" text="type-global" /> after we introduce <xref ref="sss-static" text="title" />.</p>
+                        <example xml:id="ex-friction-mug"><title>How far the mug slides</title>
                                 <statement><p>Given a <m>0.75\unit{kg}</m> mug pushed at <m>2.00\unitfrac{m}{s}</m> across a counter with a coefficient of friction <m>\mu_k = 0.13</m>, how far will it go before stopping?</p></statement>
                                 <hint><p>There are two steps to this problem: Find the acceleration (see also <xref ref="h-friction-mug-acceleration" text="type-local" />), then the distance (see also <xref ref="h-friction-mug-distance" text="type-local" />).</p></hint>
                                 <hint xml:id="h-friction-mug-acceleration"><p>To find the acceleration, use Newton's second law for the horizontal direction.  (See <xref ref="h-friction-mug-net" text="type-local" /> for help with the net force.)</p></hint>
@@ -4480,7 +4565,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <p xml:id="d-friction-static">Whereas <xref ref="d-friction-kinetic" text="title">kinetic friction</xref> describes the situation of two surfaces rubbing against each other as they slide past each other, static friction describes the case of two surfaces that <em>would slide</em> across each other <em>if</em> they weren't stuck.  Unlike kinetic friction, this <em>is</em> what you intend to happen when you are walking.  Your feet should not slip out from under you!  Before developing this further, please investigate how objects can be <q>stuck</q> to build your intuition.</p>
                         <investigation xml:id="inv-friction-static"><title>Push without moving</title>
-                                <introduction><p>Consider moving some heavy objects around your home.  (A refrigerator, bed, or couch make good examples to try on your own.)</p></introduction>
+                                <introduction><p>Consider moving some heavy objects around your home.  (A refrigerator, bed, or couch make good examples to try on your own.  Although you might also try to push a small car or a heavy desk.  If you push a bookshelf then you should careful not to spill the contents.)</p></introduction>
                                 <task xml:id="task-friction-start">
                                         <statement>
                                                 <p>Push gently on the object.  Notice that it is possible to be pushing on it while it continues to be <xref ref="def-equilibrium" text="title">in equilibrium</xref>.  Identify all forces acting on the object and the size of each relative to the amount you are pushing.</p>
@@ -4518,16 +4603,61 @@ Earth feels a force by \studentZ\ to the left.
                                         </solution>
                                 </task>
                         </investigation>
-                        <p>notice the following</p>
+                        <p>Based on <xref ref="inv-friction-static" text="type-global" />, you should notice the following:</p>
                         <observation xml:id="p-friction-static-variable"><title>Can push with any value gentle force</title>
-                                <p>Since you can gradually increase the applied force without moving the object, the static friction is able to vary its magnitude in such a way as to balance the applied force so long as the applied force is smaller than the maximum static force.</p>
+                                <p>Since you can gradually increase the applied force without moving the object, the static friction is able to vary its magnitude in such a way as to balance the applied force so long as the applied force is smaller than the maximum static force. (See also <xref ref="obs-friction-static-max" text="type-global" />.)</p>
                         </observation>
                         <p>This observation means that <xref ref="eq-friction" text="global">Equation</xref> cannot literally be true for the situations involving static friction.  Instead, the frictional force can have any smaller value up to some maximum where the object moves and we can describe it with kinetic friction.  Therefore we need to distinguish between the kinetic friction and the static friction.  <xref ref="eq-friction" text="global">Equation</xref> still holds for kinetic friction, but we have to use
                         <men xml:id="eq-friction-static">F_{f,\text{static}} \le F_{f,\text{max}} = \mu_s F_N</men>
                         to describe static friction.  This describes the maximum value that the force of static friction can take before the object begins to move, while allowing the force of static friction to take any smaller value when the object is pushed more gently than this maximum value.</p>
-                        <example><title>Value of gentle static friction</title>
-                                <p>Make an example.</p>
+                        <example xml:id="ex-friction-futile"><title>Futility (pushing an immovable object)</title>
+                                <statement>
+                                        <p>You decide to rearrange your bedroom.  Your bed weighs <m>F_g=1111\unit N</m>.  Your floor is hardwood and the coefficient of friction between the bed and the floor is <m>\mu_s=0.35</m>.
+                                        <ol>
+                                                <li><p>Find the maximum static friction that can be created by pushing on the bed.</p></li>
+                                                <li><p>How hard do you have to push the bed to get it to move?</p></li>
+                                                <li><p>If you push the bed horizontally with an applied force of <m>F_A=243\unit N</m> then how strong is the frictional force?</p></li>
+                                                <li><p>If you push the bed horizontally with an applied force of <m>F_A=157\unit N</m> then how strong is the frictional force?</p></li>
+                                        </ol></p>
+                                </statement>
+                                <answer xml:id="A-friction-futile-1">
+                                        <p>In order use <xref ref="eq-friction-static" text="title">Equation</xref> to find the maximum frictional force, we first need to comment on the value of the normal force.  Using Newton's second law in the vertical direction, we note that there is a downwards gravitational force of <m>F_g=1111\unit N</m> and an unknown upwards force <m>F_N</m>.  These have to add up to a net force that provides no acceleration because the bed is not accelerating in the vertical direction.  Since <m>\vec F_g + \vec F_N = m \cancelto{0}{\vec a}</m>, the magnitude of the normal force is <m>F_N=1111\unit N</m>.</p>
+                                        <p>We can now find the maximum static-frictional force:
+                                                <me>\mu_s F_N = (0.35)(1111\unit N) = \sig{38}{8.85}{N} = 3.9\ten{2}\unit{N} </me>
+                                        (If you push with more force than this, then the bed will begin to move, which we will begin to discuss in <xref ref="inv-friction-max" text="type-global" />.)</p></answer>
+                                <answer xml:id="A-friction-futile-2">
+                                        <p>Based on <xref ref="A-friction-futile-1" text="type-local" />, if you push with any value equal to or smaller than <m>3.9\ten{2}\unit{N} </m>, the bed will not move.  If you push harder than that, then the bed will accelerate across the floor.</p></answer>
+                                <answer xml:id="A-friction-futile-3">
+                                        <p>Since this number is smaller than <xref ref="A-friction-futile-1" text="type-local" />, the bed will not accelerate. Using Newton's second law in the horizontal direction (the horizontal components of <m>F_g</m> and <m>F_N</m> are zero and ignored), we note that there is a forwards applied force of <m>F_A=243\unit N</m> and an unknown backwards frictional force <m>F_f</m>.  These have to add up to a net force that provides no acceleration because the bed is not accelerating in the horizontal direction.  Since <m>\vec F_A + \vec F_f = m \cancelto{0}{\vec a}</m>, the magnitude of the frictional force is <m>F_f=243\unit N</m>.</p></answer>
+                                <answer xml:id="A-friction-futile-4">
+                                        <p>Since this number is smaller than <xref ref="A-friction-futile-1" text="type-local" />, the bed will not accelerate. Using Newton's second law in the horizontal direction (the horizontal components of <m>F_g</m> and <m>F_N</m> are zero and ignored), we note that there is a forwards applied force of <m>F_A=157\unit N</m> and an unknown backwards frictional force <m>F_f</m>.  These have to add up to a net force that provides no acceleration because the bed is not accelerating in the horizontal direction.  Since <m>\vec F_A + \vec F_f = m \cancelto{0}{\vec a}</m>, the magnitude of the frictional force is <m>F_f=157\unit N</m>.</p></answer>
                         </example>
+                        
+                        <observation xml:id="obs-friction-static-max"><title><m>F_{f,\text{max}}</m> is related to the value of <m>\mu_s</m></title>
+                                <p>The application of <xref ref="p-friction-static-variable" text="type-global" /> to the numbers in <xref ref="ex-friction-futile" text="type-global" /> indicates that neither <m>F_f=243\unit N</m> nor <m>F_f=157\unit N</m> come from using <xref ref="eq-friction-static" text="title">Equation</xref>, except insofar as to notice that these values are less than <m>F_{f,\text{max}}=\sig{39}{0}{N}</m>.  It is inappropriate to use the <m>243\unit N</m> or <m>157\unit N</m> to compute a value for the coefficient of static friction (or the normal force).</p>
+                        </observation>
+
+                        <example xml:id="ex-friction-lifting"><title>Gosh, I'm thirsty (lifting objects uses static friction)</title>
+                                <statement>
+                                        <p>You are provided a pint of water<fn>See <xref ref="qp-weight-of-a-pint" text="title">Problem</xref>.</fn> with a weight of <m>F_g=8.78\unit{N}</m>.  Assuming the glass is cylindrical (not conical) and the coefficient of friction between your fingers and the glass is <m>\mu_s=0.35</m>, compute the normal force needed to lift the glass.</p>
+                                </statement>
+                                <hint>
+                                        <p>Since lifting requires your fingers to not slide along the glass, this is a situation that requires static friction, not kinetic friction.  It does not matter that the glass will be accelerating upwards (with your hand); rather, what matters is that your fingers are not moving across the glass.</p>
+                                </hint>
+                                <hint>
+                                        <p>Recall <xref ref="obs-friction-static-max" text="type-global" />.  We can computer the normal force that corresponds to the maximum static friction.  If this is larger than the weight, then we have produced enough frictional force to lift the glass.  If the maximum frictional force is less than the weight, then this will not lift the glass.  So we are actually computing the minimal normal force necessary to just balance the weight, and then any amount of normal force larger than this will lift the glass with acceleration and any normal force smaller than this will allow the glass to slip out from between our fingers.</p>
+                                </hint>
+                                <hint>
+                                        <p>Usually the normal force is in opposition to the gravitational force, but this is not the case here.  The normal force is squeezing against the side of the glass.  The frictional force is opposing the downwards gravitational force.  So, the normal force is horizontal (into the surface, as normal forces always are) and the frictional force is vertical (along the surface, as frictional forces always are).  You should be able to draw the free-body diagram.</p>
+                                </hint>
+                                <answer>
+                                        <p>Since the glass weighs <m>F_g=8.78\unit{N}</m>, we need the frictional force to be at least this large.  Assuming you are holding the glass with your thumb and finger, each of them will provide half of the support.  So, there is <m>F_f=4.39\unit N</m> on either side.  Using <xref ref="eq-friction-static" text="title">Equation</xref>,
+                                        <me>F_N = \frac{F_f}{\mu} = \frac{4.39\unit N}{0.35} = \sig{12.5}{4}{N} </me>
+                                        is necessary by each your finger and your thumb to just barely produce enough friction to support the weight of the glass.  Fortunately, the human hand has evolved to have a very good <url href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3101655/">gripping strength</url> and this should not be a problem.
+                                        </p>
+                                </answer>
+                        </example>
+
 
                         <investigation xml:id="inv-friction-max"><title>Get it moving</title>
                                 <introduction>
@@ -4555,8 +4685,50 @@ Earth feels a force by \studentZ\ to the left.
                         <assemblage><title>Another law of friction</title><p>The coefficient of static friction is slightly higher the value than the coefficient of kinetic friction.</p></assemblage>
 
                         <example><title>Get it moving</title>
-                                <p>Make an example.</p>
+                                <p>Make an example of breaking through static to get to kinetic friction (note the difference with lifting, which continues as static even though the object is moving because there is no relative motion).</p>
                         </example>
+
+                        <example xml:id="ex-friction-mouse-update"><title>More mouse friction</title>
+                                <statement>
+                                        <p>You are moving the computer mouse to direct the arrow on the screen by resting your forearm on the desk and curling your fingers to move the mouse towards you on the desktop.  In how many places is friction acting and in what direction?</p>
+                                        <p>(This example extends <xref ref="ex-friction-mouse" text="type-global" /> beyond the kinetic friction between the desk and the mouse to consider the static friction in moving the mouse.   Connect moving the mouse to <xref ref="ex-friction-lifting" text="title">lifting an object</xref>.)</p>
+                                </statement>
+                                <hint><p>There is friction where each surface is in contact.</p></hint>
+                                <hint><p>If you had just finished running around the block and your arm were drenched in a coating of sweat, would anything be different about the interaction (ignoring the potentially disgusting nature of being drenched in sweat)?</p></hint>
+                                <hint xml:id="H-friction-mouse-forearm"><p>If your arm were not touching the desk, would it be moving?  If so, which way?</p></hint>
+                                <hint xml:id="H-friction-mouse-fingers"><p>If somebody played a prank on you and glued the mouse to the desk, which way would your fingers be moving across the mouse?</p></hint>
+                                <answer><p>The relevant points of contact are:
+                                        <ol><li><p>Your arm and the desktop (<xref ref="H-friction-mouse-forearm" text="type-local" />) (<xref ref="A-friction-mouse-forearm" text="type-local" />)</p></li>
+                                                <li><p>Your fingers and the mouse  (<xref ref="H-friction-mouse-fingers" text="type-local" />) (<xref ref="A-friction-mouse-fingers" text="type-local" />)</p></li>
+                                                <li><p>The pads/feet attached to the underside of the mouse and the desk (or the mousepad) (See <xref ref="ex-friction-mouse" text="type-global" />)  </p></li>
+                                                </ol>
+                                        </p>
+                                </answer>
+                                <answer xml:id="A-friction-mouse-forearm">
+                                        <p>If you are truly using your fingers to move the mouse and not your arm, then there is no friction between your arm and the desk.  It is only the normal force supporting the weight of your arm.</p>
+                                        <biographical><title>Touchstone (third-law pair)</title><p><xref ref="insight-force-type" text="title">third-law pairs</xref> are the <em>same type</em> of force acting <em>on different</em> objects</p></biographical>
+                                        <p>On the other hand<fn>Well, its the <em>same</em> hand and arm, but it <em>is a different hypothetical case</em>.</fn>, if you were to drag your arm towards you as you move the mouse, then the friction will oppose the motion.  Recall <xref ref="insight-force-interaction" text="type-global" /> and especially <xref ref="as-NIII" text="title" />, which indicate that there is a frictional force on your arm and another frictional force on the desk.  These are <q>third-law pairs</q> (recall <xref ref="insight-force-type" text="type-global" />).  With that in mind, the frictional force on your arm by the desk is forwards (opposing the backward motion of your arm) and the frictional force on the desk by your arm is backwards (opposing the forward relative-motion of the desk moving along your arm).  (It might help to recall the discussion of <xref ref="ss-relvel" text="title">relative motion</xref>.)</p>
+                                </answer>
+                                <answer xml:id="A-friction-mouse-fingers">
+                                        <p>Given <xref ref="H-friction-mouse-fingers" text="type-local" />, while your fingers do not actually move across the mouse, they are gripping (which is a <xref ref="s-FN" text="title">normal force</xref>) and dragging it (using static friction).  That is, if the mouse were glued to the desk, then your fingers would move towards you (kinetic friction).  Since the mouse stays with your fingers and there is no <xref ref="ss-relvel" text="title">relative motion</xref> (static friction), that frictional force is the force moving the mouse.</p>
+                                </answer>
+                        </example>
+
+                        </subsubsection>
+
+
+                        <subsubsection xml:id="sss-dry-sliding"><title>Applications of Dry Sliding Friction</title>
+                        
+                        <p>You can find some values of the coefficient of friction at the following websites:
+                        <ul>
+                                <li><url href="http://www.engineershandbook.com/Tables/frictioncoefficients.htm" /></li>
+                                <li><url href="http://www.physlink.com/Reference/FrictionCoefficients.cfm" /></li>
+                                <li><url href="https://www.engineersedge.com/coeffients_of_friction.htm" /></li>
+                                <li><url href="http://www.tribology-abc.com/abc/cof.htm" /></li>
+                        </ul>
+                        To indicate how complicated this is, this paper 
+                        (<url href="https://www.researchgate.net/publication/223651389_Friction_of_Human_Skin_against_Smooth_and_Rough_Glass_as_a_function_of_Contact_Pressure">Derler, Siegfried &amp; Gerhardt, Lutz-Christian &amp; Lenz, A &amp; Bertaux, E &amp; Hadad, Mousab. (2009). Friction of Human Skin against Smooth and Rough Glass as a function of Contact Pressure. Tribology International. 42. 1565-1574. 10.1016<backslash />j.triboint.2008.11.009.</url>, 
+                        <url href="http://www.mate.tue.nl/mate/pdfs/12354.pdf">pdf</url>) shows that the coefficient of friction between skin and glass vary with the actual pressure applied.  For a normal force of <m>5\unit N</m> produces a coefficient near <m>\mu_s=0.5</m>, but a normal force of <m>20\unit N</m> has a coefficient near <m>\mu=0.25</m>.  The relationship is not linear.</p>
 
                         <paragraphs xml:id="p-friction-walking"><title>How we walk</title>
                         <p>using static friction to walk forwards</p>
@@ -4566,7 +4738,7 @@ Earth feels a force by \studentZ\ to the left.
                         <p>One practical application of this idea is that if you have a stack of books and you want the one that is second or third from the top, you can lift the book you want at some angle until the books above it slide off and then you can take your book.  The angle at which you have to tilt the book in order to get the other to slide off is called the angle of repose:</p>
                         <definition xml:id="def-angle-repose"><idx><h>angle of repose</h></idx>
                                 <notation>
-                                        <usage>\term{angle of repose}</usage>
+                                        <usage>\mathrm{angle of repose}</usage>
                                         <description>The angle at which an object slide off a tilted ramp.</description>
                                 </notation>
                                 <statement><p>The <term>angle of repose</term> is the angle at which an object, which has been placed on a surface that can be tilted ever higher, just breaks the static friction and begins to slide down the surface.</p></statement>
@@ -4575,7 +4747,9 @@ Earth feels a force by \studentZ\ to the left.
                         <example><title>Finding the angle of repose</title>
                                 <p>Make an example.</p>
                         </example>
+                        
                         <p>If you have ridden in a pick-up truck with heavy objects in the truck-bed, then you might notice when they shift. Driving up a steep incline or suddenly accelerating pulls objects to the back, driving downhill or stopping suddenly pulls objects to the front.</p>
+                        
                         <exploration xml:id="cyoa-repose"><title>\studentA\ and \studentC\ use a pick-up truck to move a couch</title><idx><h sortby="\studentA">\studentA</h></idx><idx><h sortby="\studentC">\studentC</h></idx>
                                 <statement>
                                         <p>One drives the pick-up with a couch, truck door down.  No straps. The other watches from behind.  Choose to measure the friction of the truck-bed.  Choose to measure <m>\mu_s</m> and or <m>\mu_k</m> <em>with the couch</em>. Choose to use straps? and they break?  Choose to measure the mass of the couch?  When you load it, maybe?</p>
@@ -4615,6 +4789,7 @@ Earth feels a force by \studentZ\ to the left.
                 <subsection xml:id="ss-friction-rolling"><title>rolling friction</title>
 
                         <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that Arthur Morin distinguished static friction from rolling friction in 1833.</p>
+                        <p>Maybe introduce rocking chairs as an investigation?  Note that desk chairs that tilt are essentially rocking chairs where the rocking mechanism is hidden inside the piece that connects the seat of the chair to the support post.</p>
 
 
         <investigation xml:id="irl-poolfriction"><title>Rolling pool balls and friction</title>
@@ -5169,7 +5344,7 @@ Also check these folks out on Wikipedia.... of course
                                 <statement>
                                         <sidebyside widths="70% 30%">
                                         <p>While preparing to hang some ornament on a tree, you chain them from a hook on the wall.  You hang ornament 3 <m>(m_3=30\unit g)</m> below ornament 2 <m>(m_2=20\unit g)</m>, which is below ornament 1 <m>(m_1=10\unit g)</m>.  What is the tension in each subsequent string?</p>
-                                        <image xml:id="i-chain-of-masses" source="images/i-chain-of-masses.svg">
+                                        <image xml:id="i-chain-of-masses">
                                                 <latex-image-code>
                                                 \begin{tikzpicture}[scale=.2]
                                                         \draw [thick, gray] (0,45) -- (25,45);
@@ -5215,7 +5390,7 @@ Also check these folks out on Wikipedia.... of course
                                                         \draw [->] (10,170) -- (10,160);   \node [left] at (10,165) {$F_{g1}$};
                                                         \draw [->] (15,170) -- (15,120);   \node [right] at (15,145) {$F_{T2}$};
                                                         \draw [->] (12.5,180) -- (12.5,240);   \node [right] at (12.5,210) {$F_{T1}$};
-                                                \end{tikzpicture} 
+                                                \end{tikzpicture}
                                                 </latex-image-code>
                                         </image>
                                         <paragraphs>
@@ -5812,10 +5987,22 @@ Also check these folks out on Wikipedia.... of course
 
                 </exercises>
 
-                <subsection><title>Problems</title>
-                        <todo>Add more problems.</todo>
-
-                </subsection>
+                <exercises><title>Problems</title>
+                        <exercise xml:id="qp-weight-of-a-pint">
+                                <statement>
+                                        <p>They say <q>A pint's a pound, the world around</q>, but really a pint of water is <m>1.04375 \unit{lbs}</m>.  A pint glass, on the other hand, is <m>422\unit{g}</m>.  Compute the mass and weight of a full glass with a pint of water.</p>
+                                </statement>
+                                <answer>
+                                        <p>Recalling the discussion around <xref ref="fn-pound" text="type-global" />, the water has a mass of 
+                                        <me> (1.04375 \unit{lbs}) \convert{453.592 37\unit{g}}{1\unit{kg}} = \sig{473.437}{04}{g}</me>
+                                        Together the glass and water have a mass of 
+                                        <me> (422\unit{g})+(\sig{473.437}{04}{g}) = \sig{895}{.4}{g}</me>
+                                        The weight, then, is (after converting to kilograms)
+                                        <me> (0.\sig{895}{4}{kg})(9.81\unitfrac{m}{s^2}) = \sig{8.78}{4}{N}</me>
+                                        </p>
+                                </answer>
+                        </exercise>
+                </exercises>
 
         </section>
 
@@ -6976,7 +7163,7 @@ Also check these folks out on Wikipedia.... of course
 
 </chapter>
 
-<chapter xml:id="c-vid-pod"><title>Podcasts and Videos</title>
+<chapter xml:id="c-vid-pod"><title>Internet Resources</title>
 
         <section xml:id="s-podcasts"><title>Podcasts</title>
 
@@ -6994,6 +7181,8 @@ Also check these folks out on Wikipedia.... of course
         <section xml:id="s-websites"><title>Websites</title>
 
         <p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge">The Flame Challenge</url></p>
+        <p><url href="https://msis.jsc.nasa.gov/sections/section04.htm">NASA human performance capabilities</url></p>
+        
 
         </section>
 
