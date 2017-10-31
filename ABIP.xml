@@ -362,7 +362,7 @@
             <year>2017<ndash />2018</year>
             <holder>J. Christensen</holder>
             <shortlicense>
-                <p><url rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><image alt="Creative Commons License" style="border-width:0" source="images/creativecommons-by-nc-nd-4.0-88x31.png" width="15%" /></url>
+                <p><url rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><image alt="Creative Commons License" style="border-width:0" source="images/creativecommons-by-nc-nd-4-0-88x31.jpg" width="15%" /></url>
                 <em><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Physics Connected: Learn like you think</span></em>
                 by <url xmlns:cc="http://creativecommons.org/ns#" href="http://physics.thomasmore.edu/ConnectedPhysics/" property="cc:attributionName" rel="cc:attributionURL">Joe Christensen</url> is licensed under a
                 <url rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</url>.</p>
@@ -724,9 +724,12 @@
                         <row>
                                 <cell><m>\deq F_f = \mu F_N</m></cell>
                                 <cell /><cell><xref ref="st-Ff-muFN"  text="type-global" /></cell></row>
+                        <row>
+                                <cell><m>\deq \vec v = \vec \omega \times \vec r</m></cell>
+                                <cell /><cell><xref ref="st-vwr"  text="type-global" /></cell></row>
                 </tabular>
                 </table>
-        <todo>Decide if should use the "public version" or the "me version" (which uses \listofstorys).</todo>
+        <todo>Decide if should use the "public version" or the "me version" (which uses listofstorys).</todo>
 	</assemblage>
 
         </section>
@@ -789,7 +792,7 @@
                         <mrow> 1 \unit{in} + 1 \unit{ft} \amp \ne 2 \unit{??} </mrow>
                         </md>
                         For the second line, you need to convert the units:
-                        <me> 1 \unit{in} + 1 \unit{ft} = 1 \unit{in} + 1 \unit{ft}\convert{12\unit{in}}1\unit{ft}} = 1 \unit{in} + 12 \unit{in} = 13\unit{in} </me>
+                        <me> 1 \unit{in} + 1 \unit{ft} = 1 \unit{in} + 1 \unit{ft}\convert{12\unit{in}}{1\unit{ft}} = 1 \unit{in} + 12 \unit{in} = 13\unit{in} </me>
                         because we need to be speaking about the same thing.  You have all had the experience of a miscommunication when you thought you were speaking about the same thing, but later found out you each meant something different.
                         </p>
                         <warning><title>Clarify your intent</title><p>You should always include every unit on every number throughout your entire math solution.  This will help you ensure that the units are self-consistent and will occasionally help you either recognize which algebraic step to take next or even which equation to use in the first place.</p></warning>
@@ -882,6 +885,7 @@
                         <p>
                                 <!-- <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>, units -->
                                 <xref ref="fn-friction-area" text="type-global" />, <!-- friction and surface area  perhaps also <xref ref="d-friction-area" text="type-global" /> -->
+                                <xref ref="p-friction-walking" text="title" />
                                 <xref ref="s-pressure" text="type-global" />, <!-- fluids -->
                                 <xref ref="ss-barometrics" text="type-global" /> <!-- thermodynamics -->
                         </p>
@@ -890,7 +894,8 @@
                 <men xml:id="eq-pressure">P = F/A \hspace{1cm} F = PA</men>
                 This will be used in <xref ref="d-friction-area" text="title">friction</xref>, <xref ref="s-pressure" text="title">fluids</xref>, and <xref ref="ss-barometrics" text="title">thermodynamics</xref>.
                 </p>
-                <todo>Do a Story Of for pressure, force, and area.  Maybe reference an example of calculating the weight of the car or using the weight of the car to find the area of the tires... Note a flat tire covers more area.</todo>
+                <p>Do a Story Of for pressure, force, and area.  Maybe reference an example of calculating the weight of the car or using the weight of the car to find the area of the tires... Note a flat tire covers more area.</p>
+                <p>Also make note that when you are on crutches in soft dirt or mud, you sink in deeper than when you have your whole foot to support you.  This is relevant to the discussion of <xref ref="p-friction-walking" text="title">how we walk</xref>.</p>
                 </paragraphs>
 
                 </subsection>
@@ -1119,7 +1124,7 @@
         <p>Note the comments in <xref ref="ss-weightmass" text="type-global" /> regarding an internet search on the
         <q><xref ref="ss-convertunits" text="title">conversion</xref></q> of kilograms-to-pounds.<idx>significant digits</idx></p>
 
-        <todo>Refocus this paragraph as an \boldrm{example} about significant digits.</todo>
+        <todo>Refocus this paragraph as an \textbf{example} about significant digits.</todo>
         <p>A short Google<trademark /> search by the author found that the conversation rate between pounds and kilograms was
         <m>1 \unit{kg} = 2.2046226218 \unit{lbs}</m>.  Several sites go on to list about 10 decimal places for all of the conversions.  First, you should recall our discussion about <xref ref="s-sigfig" text="title">significant digits</xref><idx>Significant Digits</idx>.
         <!-- \new{v2.2}{moved this conversation here.} -->
@@ -1424,6 +1429,9 @@
                                         <p>The patterns that you see when you drop objects is that objects fall faster than humans are used to paying attention to.  This Investigation <!-- <xref ref="irl-freefall" text="type-global" /> --> shows you how you can pay close attention to the patterns that result from observing falling objects. You should go do those experiments before reading further.  Go ahead.  I'll wait.</p>
                                 </prelude>
                                 <introduction>
+                                        <aside><title>Investigation referenced by:</title>
+                                                <p><xref ref="inv-friction-max" text="type-global" /></p>
+                                        </aside>
                                         <p>Because \studentC<idx><h sortby="\studentC">\studentC</h></idx> is a pitcher on the local baseball team, \heC\ decides to drop a ball and watch what happens.  You and \studentD<idx><h sortby="\studentD">\studentD</h></idx> decide to join \himC.  \studentD\ provides a few other objects that can also be dropped: a tennis ball, a hammer, a small Wonder Woman toy, and a broken cell phone.  Some of these are dropped at the same time.</p>
 
                                         <p>\studentD\ notices that <alert>it is important to release the objects at exactly the same time.</alert></p>
@@ -1582,9 +1590,11 @@
                                 <aside><title>Exercise Not Done</title><p>part b</p></aside>
                                 </statement>
 
-                                <hint xml:id="ex-ceiling-h1" ><p>During <alert>the first stage</alert>, the ball is accelerating upwards and \studentC\ is interacting with the ball.  We are not going to consider this part of the motion at all because we are given the velocity that ends this stage (and begins the next stage).</p></hint>
+<!-- If the styling changes to include the title in the HINT, then I should remove the ALERTs -->
+                                <hint xml:id="ex-ceiling-h1" ><title>First stage</title><p>During <alert>the first stage</alert>, the ball is accelerating upwards and \studentC\ is interacting with the ball.  We are not going to consider this part of the motion at all because we are given the velocity that ends this stage (and begins the next stage).</p></hint>
 
-                                <hint xml:id="ex-ceiling-h2" ><p><alert>The second stage</alert> of the motion is while the ball moves from \studentC's hand up to the ceiling. During this stage only the gravitational force is acting on the ball.  Since it has left \studentC's hand, \heC\ is not interacting with it.  Since it has not yet hit the ceiling, the ceiling is not interacting with it.  We can therefore use <xref ref="d-EOM" text="title">the equations of constant acceleration</xref> to describe the motion.  During this portion of the motion we know that the velocity at the bottom is
+<!-- If the styling changes to include the title in the HINT, then I should remove the ALERTs -->
+                                <hint xml:id="ex-ceiling-h2" ><title>Second stage</title><p><alert>The second stage</alert> of the motion is while the ball moves from \studentC's hand up to the ceiling. During this stage only the gravitational force is acting on the ball.  Since it has left \studentC's hand, \heC\ is not interacting with it.  Since it has not yet hit the ceiling, the ceiling is not interacting with it.  We can therefore use <xref ref="d-EOM" text="title">the equations of constant acceleration</xref> to describe the motion.  During this portion of the motion we know that the velocity at the bottom is
                                         <m>\vec v_\mathrm{bot} = +5.00\unitfrac ms \jhat</m>,
                                 that it travels
                                         <m>\Delta \vec x = +1.00\unit{m} \jhat</m>,
@@ -1599,9 +1609,11 @@
                                 </md>
                                 Note: When you take the square root, you have to decide if you should take the positive sign or the negative sign.  In this case, the ball is still moving upwards, so we <em>choose</em> the positive sign.</p></hint>
 
-                                <hint xml:id="ex-ceiling-h3" ><p><alert>The third stage</alert> is while it is interacting with the ceiling.  In order to find the acceleration during this motion, we need to know the velocity immediately before hitting the ceiling (which we just found) and the velocity just after it finishes hitting the ceiling (which we have not yet found).  We will come back to this step.</p></hint>
+<!-- If the styling changes to include the title in the HINT, then I should remove the ALERTs -->
+                                <hint xml:id="ex-ceiling-h3" ><title>Third stage</title><p><alert>The third stage</alert> is while it is interacting with the ceiling.  In order to find the acceleration during this motion, we need to know the velocity immediately before hitting the ceiling (which we just found) and the velocity just after it finishes hitting the ceiling (which we have not yet found).  We will come back to this step.</p></hint>
 
-                                <hint xml:id="ex-ceiling-h4" ><p><alert>The fourth stage</alert>, like the second, is while the ball moves from the ceiling down to \studentC's hand.  During this portion of the motion we know that the velocity at the bottom (final) is
+<!-- If the styling changes to include the title in the HINT, then I should remove the ALERTs -->
+                                <hint xml:id="ex-ceiling-h4" ><title>Fourth stage</title><p><alert>The fourth stage</alert>, like the second, is while the ball moves from the ceiling down to \studentC's hand.  During this portion of the motion we know that the velocity at the bottom (final) is
                                         <m>\vec v_\mathrm{bot} = -1.67\unitfrac ms \jhat</m>,
                                 that it travels
                                         <m>\Delta \vec x = -1.00\unit{m} \jhat</m>,
@@ -1616,9 +1628,10 @@
                                 </md>
                                 Note: When you take the square root, you have to decide if you should take the positive sign or the negative sign.  In this case, the ball is now moving downwards, so we <em>choose</em> the negative sign.</p></hint>
 
-                                <hint xml:id="ex-ceiling-h5" ><p>During <alert>the fifth stage</alert>, the ball is accelerating upwards while moving downwards and so \studentC\ is stopping the ball.  We are not going to consider this part of the motion at all.</p></hint>
+<!-- If the styling changes to include the title in the HINT, then I should remove the ALERTs -->
+                                <hint xml:id="ex-ceiling-h5" ><title>Fifth stage</title><p>During <alert>the fifth stage</alert>, the ball is accelerating upwards while moving downwards and so \studentC\ is stopping the ball.  We are not going to consider this part of the motion at all.</p></hint>
 
-                                <hint xml:id="ex-ceiling-h6" ><p>The acceleration is only constant <em>during</em> each stage.  The acceleration is different from one stage to another.  <alert>This</alert> is the observation that tells us that we <em>must</em> consider the stages separately.</p></hint>
+                                <hint xml:id="ex-ceiling-h6" ><title>Which stage?</title><p>The acceleration is only constant <em>during</em> each stage.  The acceleration is different from one stage to another.  <alert>This</alert> is the observation that tells us that we <em>must</em> consider the stages separately.</p></hint>
 
                                 <solution xml:id="ex-ceiling-Aa">
                                         <p>In order to solve <xref ref="ex-ceiling-Qa" text="global">Question</xref> for the acceleration, we need to recognize that
@@ -1925,35 +1938,35 @@
                 </insight>
                 <heuristic xml:id="st-Fma"><title>The Story of <m>\vec F_\mathrm{net} =m \vec a</m></title>
                 <statement>
-                <aside><title>Referenced by</title> <p><xref ref="ex-2Dforce" text="type-global"/></p></aside>
-                <p>This equation is all about what happens to a specific object, <m>m</m>.  If the object, <m>m</m>, is accelerating in a particular direction, <m>\vec a</m>, then it is because the combination of forces, <m>\vec F_\mathrm{net}</m>, do not entirely cancel each other out.  This also can be expressed as: if the combination of forces, <m>\vec F_\mathrm{net}</m>, do not entirely cancel each other out, then our friend <m>m</m> must be accelerating, <m>\vec a</m>, in a particular direction.  Furthermore the resulting direction of the net force determines the direction of the acceleration.  Connecting the English and the math:</p>
-                <sidebyside>
-                <tabular>
-                        <col width="20%" />
-                        <col width="20%" />
-                        <col width="20%" />
-                        <col width="20%" />
-                    <row halign="center">
-                        <cell><m>\deq \vec F_\mathrm{net}            </m></cell>
-                        <cell><m> =                                 </m></cell>
-                        <cell><m> \deq m                       </m></cell>
-                        <cell><m> \deq \vec a                            </m></cell>
-                    </row>
-                    <row halign="center">
-                        <cell><m>\overbrace{\hspace{5em}}</m></cell>
-                        <cell><m>\overbrace{\hspace{4em}}</m></cell>
-                        <cell><m>\overbrace{\hspace{5em}}</m></cell>
-                        <cell><m>\overbrace{\hspace{5em}}</m></cell>
-                    </row>
-                    <row halign="center">
-                        <cell><line>the</line><line>combination</line><line>of all forces</line><line>acting on <m>m</m></line></cell>
-                        <cell>causes</cell>
-                        <cell><line>that</line><line>object</line></cell>
-                        <cell><line>to</line><line>change</line><line>its</line><line>velocity</line></cell>
-                    </row>
-                </tabular>
-                </sidebyside>
-</statement>
+                        <aside><title>Referenced by</title> <p><xref ref="ex-2Dforce" text="type-global"/></p></aside>
+                        <p>This equation is all about what happens to a specific object, <m>m</m>.  If the object, <m>m</m>, is accelerating in a particular direction, <m>\vec a</m>, then it is because the combination of forces, <m>\vec F_\mathrm{net}</m>, do not entirely cancel each other out.  This also can be expressed as: if the combination of forces, <m>\vec F_\mathrm{net}</m>, do not entirely cancel each other out, then our friend <m>m</m> must be accelerating, <m>\vec a</m>, in a particular direction.  Furthermore the resulting direction of the net force determines the direction of the acceleration.  Connecting the English and the math:</p>
+                        <sidebyside>
+                        <tabular>
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                            <row halign="center">
+                                <cell><m>\deq \vec F_\mathrm{net}            </m></cell>
+                                <cell><m> =                                 </m></cell>
+                                <cell><m> \deq m                       </m></cell>
+                                <cell><m> \deq \vec a                            </m></cell>
+                            </row>
+                            <row halign="center">
+                                <cell><m>\overbrace{\hspace{5em}}</m></cell>
+                                <cell><m>\overbrace{\hspace{4em}}</m></cell>
+                                <cell><m>\overbrace{\hspace{5em}}</m></cell>
+                                <cell><m>\overbrace{\hspace{5em}}</m></cell>
+                            </row>
+                            <row halign="center">
+                                <cell><line>the</line><line>combination</line><line>of all forces</line><line>acting on <m>m</m></line></cell>
+                                <cell>causes</cell>
+                                <cell><line>that</line><line>object</line></cell>
+                                <cell><line>to</line><line>change</line><line>its</line><line>velocity</line></cell>
+                            </row>
+                        </tabular>
+                        </sidebyside>
+                </statement>
                 </heuristic>
 
                 <proposition xml:id="connect-Fma"><title>Looking Back</title>
@@ -2531,10 +2544,10 @@
                 </ul>
                 Another way to say this is that all forces come in action/reaction pairs that necessarily have equal magnitude and opposite direction and necessarily act on different objects.
                 </p>
-                
+
                 <aside><title>Insight referenced by</title>
                         <p>
-                        <xref ref="ss-N-NIII" text="type-global" />, 
+                        <xref ref="ss-N-NIII" text="type-global" />,
                         the answers in <xref ref="ex-friction-mouse" text="type-global" />
                         </p>
                 </aside>
@@ -3449,12 +3462,12 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p xml:id="p-weightmass">In the discussion about <xref ref="p-massive" text="title">being precise</xref>, we distinguished <q>massive</q> (the amount) from <q>voluminous</q> (the size).  Now that we understand <xref ref="as-NII" text="title">Newton's second law</xref>, we can distinguish <q>massive</q>
                 (an amount of material causing a difficulty in making accelerate)
-                from <q>weighty</q> (a strength needed to lift).
-                The concept that goes with</p>
-                <remark><idx><h>mass</h><seealso>weight</seealso></idx><p>mass is the amount of material,</p></remark>
-                <p>whereas, the concept that goes with</p>
+                from <q>weighty</q> (a strength needed to lift).</p>
 		<biographical><title>Touchstone (weight)</title><p>Recall <xref ref="def-weight" text="type-hybrid" /></p></biographical>
-                <remark><idx><h>weight</h><seealso>mass</seealso></idx><p>weight is how strongly the gravitational force pulls on the object.</p></remark>
+                <remark><title>mass versus weight</title>
+                        <idx><h>mass</h><seealso>weight</seealso></idx>         <idx><h>mass</h></idx>
+                        <idx><h>weight</h><seealso>mass</seealso></idx>         <idx><h>weight</h></idx>
+                        <p>The mass describes the amount of material, whereas weight describes how strongly the gravitational force pulls on the object.</p></remark>
                 <p>Having mass affects both the inertia (ease of moving) and the weight (force of gravity).
                 Having weight expresses the gravitational force due to whichever large object (moon, planet, sun, etc.) you happen to be on or near.  Noticing that the SI-unit (<xref ref="s-SI-MKS" text="type-global" />) is different for different types of quantities, such as a kilogram (a <xref ref="p-fundamental" text="title">fundamental unit</xref>) for mass and a Newton (a <xref ref="p-derived" text="title">derived unit</xref>) for weight, may help you remember that these are different kinds of quantities.</p>
 
@@ -3634,11 +3647,12 @@ Earth feels a force by \studentZ\ to the left.
                                 <cell><m>9.826\unitfrac{m}{s^2}</m></cell></row>
                 </tabular>
                 </table>
-                <todo>Gather values of $g$ at various locations.  Wiki has a list, but need to find the source.  Wolfram has numbers, but they seem to be calculated off a formula, not measurements.  (url href="http://www.physics.montana.edu/demonstrations/video/1_mechanics/demos/localgravitychart.html")U Montana(/url) has values but no reference.  (url href="http://www.calpoly.edu/~gthorncr/ME302/documents/AccuracyofGravity.pdf")Glen Thorncroft at Cal Poly(/url) has a formula and lists the level of each effect.</todo>
+                <todo>Gather values of $g$ at various locations.  Wiki has a list, but need to find the source.  Wolfram has numbers, but they seem to be calculated off a formula, not measurements.  (url href="http://www.physics.montana.edu/demonstrations/video/1\underline{\ }mechanics/demos/localgravitychart.html")U Montana(/url) has values but no reference.  (url href="http://www.calpoly.edu/$\tilde{\ }$gthorncr/ME302/documents/AccuracyofGravity.pdf")Glen Thorncroft at Cal Poly(/url) has a formula and lists the level of each effect.</todo>
                 </assemblage>
 
 
                 </subsection>
+
 
 
         </section>
@@ -4216,6 +4230,14 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
 
+                <subsection xml:id="ss-N-inclined-planes">
+                        <title>The normal force and inclined planes</title>
+
+                <p>Explain inclined planes here with gravity pointing straight down and the normal force at an angle.  This leaves a component of the gravitational force to accelerate the object down the incline. Reference this from friction (two places marked with a todo).</p>
+
+                </subsection>
+
+
                 <subsection xml:id="ss-N-NIII">
                         <title>The normal force and the third law</title>
 
@@ -4461,15 +4483,15 @@ Earth feels a force by \studentZ\ to the left.
                         <p><xref ref="ex-friction-mouse" text="type-global" /> is extended in <xref ref="ex-friction-mouse-update" text="type-global" /> after we introduce <xref ref="sss-static" text="title" />.</p>
                         <example xml:id="ex-friction-mug"><title>How far the mug slides</title>
                                 <statement><p>Given a <m>0.75\unit{kg}</m> mug pushed at <m>2.00\unitfrac{m}{s}</m> across a counter with a coefficient of friction <m>\mu_k = 0.13</m>, how far will it go before stopping?</p></statement>
-                                <hint><p>There are two steps to this problem: Find the acceleration (see also <xref ref="h-friction-mug-acceleration" text="type-local" />), then the distance (see also <xref ref="h-friction-mug-distance" text="type-local" />).</p></hint>
-                                <hint xml:id="h-friction-mug-acceleration"><p>To find the acceleration, use Newton's second law for the horizontal direction.  (See <xref ref="h-friction-mug-net" text="type-local" /> for help with the net force.)</p></hint>
-                                <hint xml:id="h-friction-mug-distance"><p>There are <xref ref="d-EOM" text="title">two equations</xref> that involve the displacement.  One of them requires the time of motion, which is difficult (but not impossible) to find.  I suggest using the other equation.</p></hint>
-                                <hint xml:id="h-friction-mug-net">
-                                        <p>In the horizontal direction, the net force is the sum of the <m>x</m>-component of the gravitational force (which has no <m>x</m>-component), of the normal force (which also has no <m>x</m>-component),  and of the frictional force (which has no <m>y</m>-component); so you need the value of the frictional force. (See <xref ref="h-friction-mug-friction" text="type-local" /> for help with the frictional force.)</p>
-                                        <p>In the vertical direction, the net force is the sum of the <m>y</m>-component of the gravitational force (which has no <m>x</m>-component), of the normal force (which also has no <m>x</m>-component),  and of the frictional force (which has no <m>y</m>-component); so you need to relate the vertical acceleration to the gravitational and normal forces. (See <xref ref="h-friction-mug-normal" text="type-local" /> for help with the normal force.)</p></hint>
-                                <hint xml:id="h-friction-mug-friction">
-                                        <p>You can find the frictional force from the normal force with <xref ref="eq-friction" text="type-local">Equation</xref>.  (See <xref ref="h-friction-mug-normal" text="type-local" /> for help with the normal force.)</p></hint>
-                                <hint xml:id="h-friction-mug-normal">
+                                <hint><p>There are two steps to this problem: Find the acceleration (see <xref ref="h-friction-mug-acceleration" text="type-local" />), then the distance (see <xref ref="h-friction-mug-distance" text="type-local" />).</p></hint>
+                                <hint xml:id="h-friction-mug-acceleration"><title>Acceleration</title><p>To find the acceleration, use Newton's second law for the horizontal direction.  (See <xref ref="h-friction-mug-net" text="type-local" />.)</p></hint>
+                                <hint xml:id="h-friction-mug-distance"><title>Distance</title><p>There are <xref ref="d-EOM" text="title">two equations</xref> that involve the displacement.  One of them requires the time of motion, which is difficult (but not impossible) to find.  I suggest using the other equation.</p></hint>
+                                <hint xml:id="h-friction-mug-net"><title>net force</title>
+                                        <p>In the horizontal direction, the net force is the sum of the <m>x</m>-component of the gravitational force (which has no <m>x</m>-component), of the normal force (which also has no <m>x</m>-component),  and of the frictional force (which has no <m>y</m>-component); so you need the value of the frictional force. (See <xref ref="h-friction-mug-friction" text="type-local" />.)</p>
+                                        <p>In the vertical direction, the net force is the sum of the <m>y</m>-component of the gravitational force (which has no <m>x</m>-component), of the normal force (which also has no <m>x</m>-component),  and of the frictional force (which has no <m>y</m>-component); so you need to relate the vertical acceleration to the gravitational and normal forces. (See <xref ref="h-friction-mug-normal" text="type-local" />.)</p></hint>
+                                <hint xml:id="h-friction-mug-friction"><title>Frictional force</title>
+                                        <p>You can find the frictional force from the normal force with <xref ref="eq-friction" text="title">Equation</xref>.  (See <xref ref="h-friction-mug-normal" text="type-local" />.)</p></hint>
+                                <hint xml:id="h-friction-mug-normal"><title>Normal force</title>
                                         <p>You can find the normal force from Newton's second law in the vertical direction since the vertical-component of the acceleration is zero.
                                         <me> \vec F_N + \vec F_g = m \cancelto{0}{a_y} </me>
                                         In this case <m>\vec F_N = - \vec F_g</m>.</p></hint>
@@ -4559,6 +4581,10 @@ Earth feels a force by \studentZ\ to the left.
                                 </statement>
                         </heuristic>
 
+                        <proposition xml:id="connect-friction-work"><title>Looking Ahead</title>
+                                <p>The obvious question, if you have heard the phrase <q>energy is never created nor destroyed, only changed or transferred</q>, is: Where does the lost energy go?  Clearly this discussion will have to wait until we learn the language of energy (in <xref ref="c-energy" text="type-global" />), but we can start that conversation. Consider smoothing a piece of wood with sandpaper.  There is a significant amount of friction.  In this process, you are breaking off rough edges of the wood and detaching the sand from the sand paper.  Those actions take effort. You are also moving the small particles that are broken off, which carries energy and momentum from the motion of the sandpaper.  If you do this long enough, you will notice that the sandpaper and wood also get warmer.  Friction is both <xref ref="d-workverb" text="title">doing work</xref> and <xref ref="d-heatverb" text="title">heating</xref>.  The friction when you vigorously rub your hands together involves much less <q>breaking off particles</q> but a similar amount of heating.  Dragging an object across gravel or dirt involves rearranging small particles, but less heating.</p>
+                        </proposition>
+
                         </subsubsection>
 
                         <subsubsection xml:id="sss-static"><title>Static Friction</title>
@@ -4632,7 +4658,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <answer xml:id="A-friction-futile-4">
                                         <p>Since this number is smaller than <xref ref="A-friction-futile-1" text="type-local" />, the bed will not accelerate. Using Newton's second law in the horizontal direction (the horizontal components of <m>F_g</m> and <m>F_N</m> are zero and ignored), we note that there is a forwards applied force of <m>F_A=157\unit N</m> and an unknown backwards frictional force <m>F_f</m>.  These have to add up to a net force that provides no acceleration because the bed is not accelerating in the horizontal direction.  Since <m>\vec F_A + \vec F_f = m \cancelto{0}{\vec a}</m>, the magnitude of the frictional force is <m>F_f=157\unit N</m>.</p></answer>
                         </example>
-                        
+
                         <observation xml:id="obs-friction-static-max"><title><m>F_{f,\text{max}}</m> is related to the value of <m>\mu_s</m></title>
                                 <p>The application of <xref ref="p-friction-static-variable" text="type-global" /> to the numbers in <xref ref="ex-friction-futile" text="type-global" /> indicates that neither <m>F_f=243\unit N</m> nor <m>F_f=157\unit N</m> come from using <xref ref="eq-friction-static" text="title">Equation</xref>, except insofar as to notice that these values are less than <m>F_{f,\text{max}}=\sig{39}{0}{N}</m>.  It is inappropriate to use the <m>243\unit N</m> or <m>157\unit N</m> to compute a value for the coefficient of static friction (or the normal force).</p>
                         </observation>
@@ -4653,11 +4679,13 @@ Earth feels a force by \studentZ\ to the left.
                                 <answer>
                                         <p>Since the glass weighs <m>F_g=8.78\unit{N}</m>, we need the frictional force to be at least this large.  Assuming you are holding the glass with your thumb and finger, each of them will provide half of the support.  So, there is <m>F_f=4.39\unit N</m> on either side.  Using <xref ref="eq-friction-static" text="title">Equation</xref>,
                                         <me>F_N = \frac{F_f}{\mu} = \frac{4.39\unit N}{0.35} = \sig{12.5}{4}{N} </me>
-                                        is necessary by each your finger and your thumb to just barely produce enough friction to support the weight of the glass.  Fortunately, the human hand has evolved to have a very good <url href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3101655/">gripping strength</url> and this should not be a problem.
+                                        is necessary by each your finger and your thumb to just barely produce enough friction to support the weight of the glass.  Fortunately, the human hand has evolved to have a very good gripping strength<fn>There is a table in the
+                                        <url href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3101655/">open journal article</url> (retrieved Oct, 2017) and
+                                        <url href="http://www.topendsports.com/testing/tests/handgrip.htm">this website</url> (retrieved Oct, 2017) summarizes data, referencing
+                                        <url href="https://academic.oup.com/ageing/article/40/4/423/46964/A-review-of-the-measurement-of-grip-strength-in">this open article</url> (retrieved Oct, 2017).</fn> and this should not be a problem.
                                         </p>
                                 </answer>
                         </example>
-
 
                         <investigation xml:id="inv-friction-max"><title>Get it moving</title>
                                 <introduction>
@@ -4665,15 +4693,35 @@ Earth feels a force by \studentZ\ to the left.
                                 </introduction>
                                 <task xml:id="task-friction-moving">
                                         <statement>
-                                                <p>Push gently on the object and increase your pushing until the object moves. (Be careful about where you push as discussed in <xref ref="task-friction-future" text="type-global" />.)  The tricky part that you should pay attention to is the amount of force you are pushing with before it starts moving as compared to the amount of force you are pushing with after it is already moving.  (This is difficult because most people have spent their life paying attention to how the thing being pushed is moving <em>rather than</em> how hard they are actually pushing.)</p>
-                                                <p>Try to distinguish how much force it takes to <em>get it moving</em> compared to how much force it takes to <em>keep it moving</em> at a constant velocity.</p>
+                                                <p>Push gently on the object and increase your pushing until the object moves. (Be careful about where you push as discussed in <xref ref="task-friction-future" text="type-global" />.) </p>
+                                                <p>Try to pay attention to and to distinguish how much force it takes to <em>get it moving</em> compared to how much force it takes to <em>keep it moving</em> at a constant velocity.</p>
+                                                <p>This is difficult for two reasons: firstly, most people have spent their life paying attention to how the thing being pushed is moving <em>rather than</em> how hard they are actually pushing and, second, when there is a large static friction, then the object being pushed tends to lurch forward as it starts moving.</p>
                                         </statement>
                                         <hint><p>If you are having trouble gauging the force you exert, you might find a small bathroom scale and place it between you and the object you are pushing so that you push against the scale while reading the value that it displays.</p>
                                                 <p>Some electronic scales wait for you to settle into equilibrium while standing on them and then they read that value.  This type of scale will not be useful for this experiment.  If you can find one, use a mechanical scale ratehr than a digital one.</p>
                                         </hint>
                                         <answer>
-                                                <p>Regardless of your ability to feel the difference, if you do the experiment carefully with a force-transducer (or a precision scale), it is possible to measure the difference between the larger force that it take to break static friction (get it moving) and the smaller force needed to counter kinetic friction (keep it moving).</p>
+                                                <p>Regardless of your ability to feel the difference, if you do the experiment carefully with a force-transducer (or a precision scale), it is possible to measure the difference between the larger force that it takes to break static friction (get it moving) and the smaller force needed to counter kinetic friction (keep it moving).</p>
                                         </answer>
+                                </task>
+                                <task>
+                                        <statement>
+                                                <p>Another situation where you can see the switch from static friction to kinetic friction as with a textbook<fn>Actually any wide, hardcover book (with a glossy cover) will do.  Science textbooks usually fit the bill.  A D<ampersand />D book or a nice coffee table picture book would also work.</fn> and something small like a coin<fn>Other small objects will do: a wireless computer mouse (wireless so the cord doesn't interfere), a calculator, an electronic reading device, or your cell phone (although some phone cases might interfere with the motion).</fn>.  If you don't have such a book, you can probably go to a local bookstore with your phone and try this -- it should only take a flat surface and about 45 seconds of calm observation.</p>
+                                                <p>Find a flat surface to rest the book on.  Close the book.  Place the small object near the edge away from the spine of the book.  Slowly open the book cover until the object slides across the cover towards the spine.</p>
+                                                <p>Try to gauge the motion of the object.  Is it moving at constant speed or is it accelerating?  It might be difficult to tell, but try to compare the motion when it starts moving (from rest) to the motion at the spine.</p>
+                                        </statement>
+                                        <hint>
+                                                <p>Note that it starts <em>from rest</em>.  Recall what happens when you drop something in freefall from rest (<xref ref="irl-freefall" text="type-global" />).  This object is not in freefall, but the observations you tried previously might help you distinguish if this is accelerating.</p>
+                                        </hint>
+                                        <answer>
+                                                <p>The object sliding across the cover is accelerating. </p>
+                                        </answer>
+                                        <solution>
+                                                <todo>Should maybe put an inclined plane in the normal force section to indicate that normal force does not always point oppose the gravitational force and reference the friction example of lifting the glass, and then point to it from here instead pointing ahead to friction on inclined planes.</todo>
+                                                <p>The object sliding across the cover is accelerating.  The explanation for this is that there is some amount of force that breaks the static friction (gets it to move).  Since amount of force is the component of the gravitational force that is directed along the incline; this will be explained <xref ref="p-friction-inclined" text="title">below</xref>.  This component of gravity is the same all the way down.  This is just barely larger than friction as it escapes static friction and starts to move, but must be more than <em>barely larger</em> than kinetic friction in order to accelerate enough to notice.</p>
+                                                <p>At this angle (called the <xref ref="p-friction-repose" text="title" />), the component of the gravitational force along the cover is very similar to the force of static friction, but is larger than the kinetic friction.  Since the gravitational force is not different, then we can conclude that the size of the kinetic friction is smaller than the magnitude of the static friction.</p>
+                                                <p>In fact, after you find the angle of repose, you should be able to get the object to slide and then lower the angle slightly and still have the object slide across the cover.  This is another indication that you need less force to keep it moving than you do to get it moving.</p>
+                                        </solution>
                                 </task>
                         </investigation>
 
@@ -4684,6 +4732,11 @@ Earth feels a force by \studentZ\ to the left.
                         <p>Since this is also an empirically-determined statement, it becomes the fourth<fn>Although if you count <xref ref="fn-friction-mu" text="type-local" /> as the fourth, this would be the fifth law of friction.</fn> of the laws of friction:</p>
                         <assemblage><title>Another law of friction</title><p>The coefficient of static friction is slightly higher the value than the coefficient of kinetic friction.</p></assemblage>
 
+                        <remark><title>getting versus keeping something moving relative to Newton's first law</title>
+                                <p><xref ref="as-NI" text="title" /> indicates that objects <q>want to</q> maintain their current velocity (stay at rest or maintain their motion) and require a force to change this motion.  You should not conflate Newton's first law about changing the state of motion with the need to overcome friction.  Friction is a force that describes the way surfaces interact with each other.  The inertia is a property that is independent of friction and is true regardless of contact with other surfaces.  According to Newton's laws, without friction, it takes the same effort to change the velocity of an object from <m>0\unitfrac{m}{s}</m> to <m>2\unitfrac{m}{s}</m> as it does to change from <m>5\unitfrac{m}{s}</m> to <m>7\unitfrac{m}{s}</m>.  Furthermore, friction is only relevant where there are surfaces in contact and we can change the inertia with any force.</p>
+                        </remark>
+
+<todo>Create this example</todo>
                         <example><title>Get it moving</title>
                                 <p>Make an example of breaking through static to get to kinetic friction (note the difference with lifting, which continues as static even though the object is moving because there is no relative motion).</p>
                         </example>
@@ -4718,22 +4771,54 @@ Earth feels a force by \studentZ\ to the left.
 
 
                         <subsubsection xml:id="sss-dry-sliding"><title>Applications of Dry Sliding Friction</title>
-                        
-                        <p>You can find some values of the coefficient of friction at the following websites:
+
+<todo>Collect these in a references section?  Esp. the Derler paper</todo>
+                        <p>If you are interested in investigating how widely the coefficient of friction can vary between different surfaces or between static and kinetic friction, then you can find some values of the coefficient of friction at the following websites:
                         <ul>
-                                <li><url href="http://www.engineershandbook.com/Tables/frictioncoefficients.htm" /></li>
-                                <li><url href="http://www.physlink.com/Reference/FrictionCoefficients.cfm" /></li>
-                                <li><url href="https://www.engineersedge.com/coeffients_of_friction.htm" /></li>
-                                <li><url href="http://www.tribology-abc.com/abc/cof.htm" /></li>
+                                <li><url href="http://www.engineershandbook.com/Tables/frictioncoefficients.htm" /> (referenced Oct, 2017)</li>
+                                <li><url href="http://www.physlink.com/Reference/FrictionCoefficients.cfm" /> (referenced Oct, 2017)</li>
+                                <li><url href="https://www.engineersedge.com/coeffients_of_friction.htm" /> (referenced Oct, 2017)</li>
+                                <li><url href="http://www.tribology-abc.com/abc/cof.htm" /> (referenced Oct, 2017)</li>
                         </ul>
-                        To indicate how complicated this is, this paper 
-                        (<url href="https://www.researchgate.net/publication/223651389_Friction_of_Human_Skin_against_Smooth_and_Rough_Glass_as_a_function_of_Contact_Pressure">Derler, Siegfried &amp; Gerhardt, Lutz-Christian &amp; Lenz, A &amp; Bertaux, E &amp; Hadad, Mousab. (2009). Friction of Human Skin against Smooth and Rough Glass as a function of Contact Pressure. Tribology International. 42. 1565-1574. 10.1016<backslash />j.triboint.2008.11.009.</url>, 
-                        <url href="http://www.mate.tue.nl/mate/pdfs/12354.pdf">pdf</url>) shows that the coefficient of friction between skin and glass vary with the actual pressure applied.  For a normal force of <m>5\unit N</m> produces a coefficient near <m>\mu_s=0.5</m>, but a normal force of <m>20\unit N</m> has a coefficient near <m>\mu=0.25</m>.  The relationship is not linear.</p>
+                        To indicate the complications of friction in general and friction due to gripping in particular, this paper
+                        (<url href="https://www.researchgate.net/publication/223651389_Friction_of_Human_Skin_against_Smooth_and_Rough_Glass_as_a_function_of_Contact_Pressure">S. Derler <ampersand /> L-C. Gerhardt <ampersand /> A. Lenz <ampersand /> E. Bertaux <ampersand /> M. Hadad. (2009). Friction of Human Skin against Smooth and Rough Glass as a function of Contact Pressure. Tribology International. 42. 1565-1574. 10.1016/j.triboint.2008.11.009.</url>,
+                        <url href="http://www.mate.tue.nl/mate/pdfs/12354.pdf">pdf</url>) shows that the coefficient of friction between skin and glass vary with the actual pressure applied.  A normal force of <m>5\unit N</m> produces a coefficient near <m>\mu_s=0.5</m>, but a normal force of <m>20\unit N</m> has a coefficient near <m>\mu=0.25</m>.  The relationship is not linear.</p>
 
                         <paragraphs xml:id="p-friction-walking"><title>How we walk</title>
-                        <p>using static friction to walk forwards</p>
+                        <p>There are many examples where friction is our friend.  Walking is an example that is easy to overlook since we do that so often.  However, the process is very similar to other situations where it is painfully obvious.  Consider the online videos of animals (including people) trying to stand up (from an incline position) on ice.  Imagine how you get out of a chair if you don't trust your legs to support you.  Consider that many sports have cleats as part of their shows to get a better grip.  This <q>grip</q> is quite explicitly the effect of friction allowing you to move your body in specific ways.  During this discussion of walking, I would also like you to be thinking of the cutting-back-and-forth motion that is common in racquetball, tennis, basketball, volleyball, soccer, and football, not to mention the need for leverage (i.e., <xref ref="s-leverarm" text="title">torque</xref>) in hitting a baseball or softball, wrestling, golf, and any event in track and field.</p>
+
+                        <p xml:id="p-walk-step">Rather than discussing the initiation of the walking motion, let's consider a person who is already walking.  (Ask a friend to walk along a hallway without being self-conscious so you can study them.) We should consider both feet during the walk.  Let's <alert>start with the landing of the front foot</alert>, then consider the shifting of weight from the back foot to the front foot, and end with the lifting of the back foot.  Generally people land their foot on their heel.  You may have had the experience of having that heel slide forwards out from under you, which is not a pleasant experience. Since that forward-foot would slide forwards without friction, it should be clear (from <xref ref="as-NII" text="title" />) that the frictional force holding your foot in place must be backwards, against your forward-motion.  Having this force on the bottom of your foot stops your foot while allowing your leg and body to continue to move (from <xref ref="as-NI" text="title" />) forwards. Furthermore, while your foot is feeling this backwards force, it is exerting a forwards force on the Earth (as indicated by <xref ref="as-NIII" text="title" />).  This may not be obvious unless your forward-foot lands on anything with wheels, a sock (or other clothing) on a hardwood floor, or a stray piece of paper; you should notice that whatever you might step on slides forwards out from your foot indicating that it feels a forwards force from your foot.</p>
+
+                        <p xml:id="p-walk-shift">While both feet are on the ground and you <alert>shift your weight from the back lag to the front</alert>, your are doing two things.  With your front foot, you are laying the rest of your foot on the ground to support your weight across a larger area. (see the discussion of <xref ref="p-pressure" text="title">pressure</xref> and recall <xref ref="law-friction-amontons-2" text="title" />.)  This foot becomes the pivot point about which your body rotates, sort of like an inverted pendulum (see <xref ref="sss-pendulum" text="type-global" />), and as such needs to be stationary.  (Contrast this with ice skating in <xref ref="inv-walking" text="type-local" />.)  It is this recognition that your foot is stationary despite the motion of your body that tells you that static friction, rather than kinetic friction is relevant.  What about the back foot?  Although your toes are static, your moving leg is lifting your heel off the ground.  This ideally prepares your foot for the third motion of walking in that it stretches the muscles that are on the bottom of your feet.  Our muscles do their work by contracting and our limbs (hands and feet) have their strongest muscles on the inside of the gripping/curling motion<fn>When I describe the curling of your foot, you should think of the way you move your toes when you are asked to <q>curl your toes</q>.  That is you curl your toes down, not up.  Similarly, your calf is stronger than your shin because walking involves curling your foot towards your heel and calf, not up towards your shin.</fn>.</p>
+
+                        <p xml:id="p-walk-push">In the final motion, while you <alert>lift your back foot</alert>, your calf contracts and pulls your heel up and your toes down.  Simultaneously, the muscles on the bottom of your foot contract pulling your toes into the ground and pushing the ground out from under you.  That is, your toes are pushing the ground backwards.  By <xref ref="as-NIII" text="title" />, the ground is intrinsically also pushing your foot forwards; this is the process that propels you forward.  As evidence of this, you might note that people who walk a lot or quickly tend to have larger calves.  If you have ever ice skated or used roller-skates or roller-blades, you will notice that the usual walking motion is not very efficient at beginning to move from a standing position.</p>
+
+                        <investigation xml:id="inv-walking"><title>The process of walking</title>
+                                <introduction><p>The following items provide you with some useful perspectives on the aspects human locomotion with the intention of building your intuition about how we interact with friction.</p></introduction>
+                                <task>
+                                        <introduction><p>How your feet land and behave:  Ask a friend to walk casually down the hallway while you observe their feet.  (It will be easy for them to feel awkward being watched, so you might have to do this long enough for them to relax a bit.)  Have them walk quickly for a little while and slowly for a little while to see if anything becomes more obvious or less.   Watch only one of their feet (likely the closer one) during the process so that you can follow the motion more easily.  See if it matters which shoes they are wearing.</p></introduction>
+                                        <task>
+                                                <statement><p>When your friend <xref ref="p-walk-step" text="title">steps forward</xref> try to notice how the foot lands (heel) and rolls onto the flat part of the foot.  If you are watching the foot (instead of the leg or hip) it will be quite obvious that the foot does not slide along the floor, but you should imagine how the foot would <q>slosh</q> forwards if your friend was wearing shoes that were a little too large for his or her feet, squashing into the toes during this first stage.  Assuming the person is walking on tile, linoleum, or concrete, what would happen during this motion if a coin were squarely underneath where the person's heel touched the ground?</p></statement></task>
+                                        <task>
+                                                <statement><p>When your friend <xref ref="p-walk-shift" text="title">shifts her or his weight</xref> from the back to the front, try to notice how the body moves past the foot while still looking directly at the foot. This will emphasize the stationary nature of the foot and, after viewing for several steps, you should start to notice when the heel is beginning to lift.  Prepare to watch the push-off carefully.</p></statement></task>
+                                        <task>
+                                                <statement><p>When your friend <xref ref="p-walk-push" text="title">pushes off</xref> their back foot, try to notice how the angle between the foot and the shin increases and, at the same time, how the toes give a spring to the step.  The lifting of the heel stretches the spring of the foot by bending the toes towards the shin and the push-off both extends the foot away from the shin and curls the toes back in line with the foot.  Assuming the person is walking on tile, linoleum, or concrete, what would happen to a coin that had been on the ground just beneath the ball of the foot as the person stepped forward off of this foot?</p></statement></task>
+                                </task>
+                                <task>
+                                        <statement><p>The difference with <alert>crutches</alert> is that they don't bend as your knee does.  You will note that the toe of the crutch is usually rubber in order to increase the friction with the floor.  If you have ever needed to walk with crutches, then you will be keenly aware of the stress involved in the being aware of what you are placing the crutch onto.  This is especially true if you have inadvertently put the crutch onto a piece of paper while walking. If you have a pair of crutches and can adjust them to your proper height, hobbling on them for the better part of an afternoon will give you a new appreciation for the advantages of friction when you step.  You will also notice that without crutches your foot is explicitly pushing the ground backwards (so that the ground pushes you forwards) because the crutches do not do that.  When you walk with crutches, you have to plan for your momentum to carry you through until your weight is back on your other foot. </p></statement></task>
+                                <task>
+                                        <statement><p>Wearing a <alert>walking boot</alert> instead of using crutches provides you with a different experience.  These boots touch the ground in wider area than a crutch and so it is much easier to <q>find purchase</q> and your attention about where your foot lands is more natural.  However, the walking boots generally do not allow you to bend your ankle, which also removes your ability to push off when the boot is your back foot.  If you are in this situation, then you should pay attention to your gait.  Some people hop off their good foot more than when they walk.  Some use their weaker leg in a different way.  If you are wearing a walking boot, then try to attend to which muscles are being used in an unusual way (by noticing which ones get tired more quickly than usual).</p></statement></task>
+                                <task xml:id="task-walking-skating">
+                                        <statement><p>Contrast walking with <alert>skating</alert> either on ice skates, roller skates, or roller blades.  I will consider ice skating, but the other forms have similar characteristics.  When skating there is an additional aspect of the process described above.  Once you are moving, you place one foot forwards and shift your weight over to that foot, but the shifting of your weight produces a sideways motion that allows you to twist your back foot (like a cow kick<fn>Note that cows tend to kick by sweeping out to the side and horses tend to kick straight back -- explaining the term <q>cow kick</q> -- but both animals are able to kick either way.</fn>) and push off the ice.  You can see this in play if you watch speed skating (an olympic sport).  The additional aspect of skating is that the skater takes much longer to move their back foot up to become the front foot, making this motion the part that takes the most time. You might also notice that ice skates have a <q>jagged toe</q> that allow the front tip to be used to grip the ice while the flat bladed bottom can slide smoothly along the ice.</p>
+                                        <p>Two aspects to notice about ice skating which develop insight for walking (and friction).  First, when you step forward on skates, you place your foot flat rather than heel-first because you want to keep gliding and you don't want to stop by driving your heel into the ground.  Second, the jagged toe emphasizes that it is the toe that you push off with both in skating and in walking.  The friction of pushing the ground backwards is what enables the ground to push you forwards.</p></statement></task>
+                                <task xml:id="task-walking-cartwheel">
+                                        <statement><p>In contrast to walking, if you are limber enough to be able to <alert>do a cartwheel</alert>, then you likely will recognize that you push off with you feet hard enough that your hands are merely placeholders as you roll over. The name cartwheel is reminiscent of having your limbs play the roll of spoke on the wheel of a cart, which is a nice segue to the next section on <xref ref="ss-friction-rolling" text="title" />.  If you are comfortable doing a cartwheel, then you should pay attention to the action you use with your hands as you roll over.  You might also try to do a roundoff and decide if the way your hands interact with the ground is different.  You might note that some people do the roundoff with a push so that they bounce into the air and land on their feet.  If you do this a couple of times and imagine that your feet and hands are hitting a patch of slippery ice, you should be able to build your intuition about how static friction helps you walk.</p></statement></task>
+                        </investigation>
                         </paragraphs>
 
+                        <aside><title>Paragraph referenced by:</title>
+                                <p><xref ref="inv-friction-max" text="type-global" /></p>
+                        </aside>
                         <paragraphs xml:id="p-friction-repose"><title>Angle of repose</title>
                         <p>One practical application of this idea is that if you have a stack of books and you want the one that is second or third from the top, you can lift the book you want at some angle until the books above it slide off and then you can take your book.  The angle at which you have to tilt the book in order to get the other to slide off is called the angle of repose:</p>
                         <definition xml:id="def-angle-repose"><idx><h>angle of repose</h></idx>
@@ -4747,9 +4832,9 @@ Earth feels a force by \studentZ\ to the left.
                         <example><title>Finding the angle of repose</title>
                                 <p>Make an example.</p>
                         </example>
-                        
+
                         <p>If you have ridden in a pick-up truck with heavy objects in the truck-bed, then you might notice when they shift. Driving up a steep incline or suddenly accelerating pulls objects to the back, driving downhill or stopping suddenly pulls objects to the front.</p>
-                        
+
                         <exploration xml:id="cyoa-repose"><title>\studentA\ and \studentC\ use a pick-up truck to move a couch</title><idx><h sortby="\studentA">\studentA</h></idx><idx><h sortby="\studentC">\studentC</h></idx>
                                 <statement>
                                         <p>One drives the pick-up with a couch, truck door down.  No straps. The other watches from behind.  Choose to measure the friction of the truck-bed.  Choose to measure <m>\mu_s</m> and or <m>\mu_k</m> <em>with the couch</em>. Choose to use straps? and they break?  Choose to measure the mass of the couch?  When you load it, maybe?</p>
@@ -4769,7 +4854,11 @@ Earth feels a force by \studentZ\ to the left.
                         </exploration>
                         </paragraphs>
 
+                        <aside><title>Paragraph referenced by:</title>
+                                <p><xref ref="inv-friction-max" text="type-global" /></p>
+                        </aside>
                         <paragraphs xml:id="p-friction-inclined"><title>Inclined Planes</title><idx>inclined planes</idx><idx><h>plane</h><h>inclined</h></idx>
+                                <todo>Should maybe put an inclined plane in the normal force section to indicate that normal force does not always point oppose the gravitational force and reference the friction example of lifting the glass, and then point to it from here as a starting place for adding friction to inclined planes.</todo>
                         <p>Now we can define inclined planes!  Woo Hoo!</p>
                         <example><title>Below the angle of repose</title>
                                 <p>Make an example.</p>
@@ -4782,57 +4871,112 @@ Earth feels a force by \studentZ\ to the left.
                         </subsubsection>
 
                 <conclusion>
-                        <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that Arthur Morin distinguished static friction from rolling friction in 1833.</p>
+                        <p>NOTE: <xref ref="bib-friction-armstrong" /> indicates that Arthur Morin distinguished static friction from rolling friction in 1833.</p>
                 </conclusion>
 
                 </subsection>
-                <subsection xml:id="ss-friction-rolling"><title>rolling friction</title>
+                <subsection xml:id="ss-friction-rolling"><title>Rolling Friction</title><idx><h>friction</h><h>rolling</h></idx>
 
-                        <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that Arthur Morin distinguished static friction from rolling friction in 1833.</p>
+                        <objectives><ol>
+                                <li>To recognize examples of (and be able to give new examples of) situations in which rolling friction (in contrast to dry-sliding friction) needs to be included</li>
+                                <li>To connect the existence of rolling friction as causing specific effects in the motion and on the energy</li>
+                        </ol></objectives>
+                                
+                        <p>Comparing and contrasting kinetic friction, static friction, and rolling friction is often difficult because the motion of the object is so different.  Static and kinetic are likely pretty intuitive in that (1) the object is either moving or it isn't and (2) the objects are (or are trying to) slide against each other.  Rolling friction, on the other hand, looks rather different.  The surfaces are in contact, but it is not always obvious if they are sliding against each other.  If you do an internet search, you will find that some authors group rolling friction in with kinetic (or dynamic) friction because the objects (I will say the center-of-mass of the objects) have some relative motion and you will find other authors who indicate that it should be compared to static friction because there is no relative motion between the surfaces of the objects.</p>
+                        
+                        <remark xml:id="clarify-no-slip"><title>Rolling without slipping</title>
+                                <p>There are three categories of motion we will consider in the discussion around friction.  
+                                <ol>
+                                        <li>Objects that are sliding (and not rolling) will experience kinetic friction (unless they are on a frictionless surface, of course).</li>
+                                        <li>Objects that are <q>rolling without slipping</q> will experience rolling friction and not kinetic friction.  This case assumes that there is sufficient static friction to keep the object rolling rather than sliding, but the static friction is not <em>interfering</em> with the motion, rather it is the process that <em>allows</em> the rotation.</li>
+                                        <li>Objects that are both rolling and sliding (think of skidding out in your car).  While this text will acknowledge the existence of such motion, the mathematical description of such is beyond the scope of this course.</li>
+                                </ol></p>
+                        </remark>
+                        
+                        <p>Some of this will be easier to describe after we have the language of rotations (see <xref ref="s-rotation-language" text="type-global" />) but for now suffice it to say that a rolling object, such as a bicycle wheel, has an axis-of-rotation (the wheel's axle) which <em>is moving</em> relative to the ground and, if it is not slipping, has a surface in contact with the ground that <em>is not moving</em> relative to the ground.  The wheel surface is placed on the ground (not dragged along the ground) in much the same way as your hands are placed on the ground when you do a <xref ref="task-walking-cartwheel" text="title">cartwheel</xref>.  You can build some intuition by considering <xref ref="irl-rolling-friction" text="type-global" />.</p>
+
+                        <investigation xml:id="irl-rolling-friction"><title>Seeing rolling friction in rolling tires</title>
+                                <idx><h>friction</h><h>rolling</h><h>investigation</h></idx>
+                                <introduction><p>Consider the spare tire from an automobile.  You can lay it down and try to slide it across the ground, or you can stand it up and roll it across a large flat parking lot (which hopefully does not have a lot of cars or other obstacles. </p></introduction>
+                                <task>
+                                        <statement><p>push gently</p></statement>
+                                        <answer><p>(a lot of static friction)</p></answer></task>
+                                <task>
+                                        <statement><p>push across the ground</p></statement>
+                                        <answer><p>(a lot of kinetic friction)</p></answer></task>
+                                <task>
+                                        <statement><p>ensure it is fully inflated and it roll across the ground</p></statement>
+                                        <answer><p>(it has very little rolling friction)</p></answer></task>
+                                <task>
+                                        <statement><p>deflate the tire to where you can see that it is <q>low</q> but not totally flat and it roll across the ground</p></statement>
+                                        <answer><p>(it has noticeably more rolling friction)</p></answer></task>
+                        </investigation>
+
+                        <p>NOTE: <xref ref="bib-friction-armstrong" /> indicates that Arthur Morin distinguished static friction from rolling friction in 1833.</p>
                         <p>Maybe introduce rocking chairs as an investigation?  Note that desk chairs that tilt are essentially rocking chairs where the rocking mechanism is hidden inside the piece that connects the seat of the chair to the support post.</p>
 
+                        <investigation xml:id="irl-rocking-friction"><title>Seeing rolling friction in rocking chairs</title>
+                                <idx><h>friction</h><h>rolling</h><h>investigation</h></idx>
+                                <introduction><p>If you don't have access to a rocking chair, then you might be able to find an office chair that allows you to lean back.  The problem with the office chair is that the mechanism that is like a rocking chair is hidden inside the shaft of the chair support.  This is very similar to the mechanism in your knee, but you probably don't want to open that up either.  If you are on a college campus, then you might be able to find an anatomy professor in the biology department.  If you school has a program in physical therapy, then they might have a really nice model that they can show you. </p></introduction>
+                                <task>
+                                        <statement><p>Look at the design of the rocking chair.  Is the rocking circular? elliptical? something else?</p></statement>
+                                        <answer><p>(looks more like a hyperbola to me, but I doubt it is a specific shape; maybe I should get some photos and measure?  Nah.)</p></answer></task>
+                                <task>
+                                        <statement><p>Prop your feet on the legs of the rocking chair.  These are built for your center-of-mass to be similar to a natural sitting position, so don't bend yourself too much.  Lean back and start the chair rocking.  How many times does it go back-and-forth before it stops?  What if you try to rock faster? slower?</p></statement>
+                                        <answer><p>(do the experiment.  There is friction here.  Static friction keeps it from scooching.  The rolling friction dissipates the energy and slows the rocking motion.)</p></answer></task>
+                                <task>
+                                        <statement><p>If you drive it faster or give it a large amplitude, then they tend to scoot.  Which direction does it scoot?  Which part of the period are you in when it scoots (going back or going forth)?  Why does it scoot the direction that it does?</p></statement>
+                                        <answer><p>(the scooching indicates the [static] friction which would otherwise hold it in place!)</p></answer></task>
+                                <task>
+                                        <statement><p>Does the surface on which you rock make a difference to the previous questions? why?</p></statement>
+                                        <answer><p>(this changes the friction in both cases)</p></answer></task>
+                                <task>
+                                        <statement><p>Why does a rocking chair stop going each way and turn around and go back the other way?</p></statement>
+                                        <answer><p>(not an issue of rolling friction.  rather this is the conservation of energy [rolling friction is non-conservation of energy])</p></answer></task>
+                        </investigation>
 
-        <investigation xml:id="irl-poolfriction"><title>Rolling pool balls and friction</title>
-                <idx><h>pool</h><h>real life</h></idx>
-                <introduction>
-                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
-                </introduction>
-                <task>
-                        <statement>
-                                <p>Hit the cue-ball off of a bumper in the manner intended for
-                                <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">testing cushions</url>.
-                                Compare the strength of the hit to the distance travelled.</p>
-                                <p>How much is the total distance affected by the number of bumpers hit?  (<xref ref="A-N-bump" text="type-local"/>)
-                                Does it matter if you shoot along the length of the table versus the width of the table?   (<xref ref="A-len-wid" text="type-local"/>)
-                                Why does friction slow the ball down instead of just make it turn <m>v=\omega r</m> (no slip)   (<xref ref="A-slow" text="type-local"/>)
-                                </p>
-                        </statement>
-                        <answer xml:id="A-N-bump">
-                                <p>[Answer]</p>
-                        </answer>
-                        <answer xml:id="A-len-wid">
-                                <p>[Answer]</p>
-                        </answer>
-                        <answer xml:id="A-slow">
-                                <p>[Answer]</p>
-                        </answer>
-                </task>
-                <conclusion>
-                        <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
-                        <xref ref="irl-poolcushion" text="title">normal force</xref>,
-                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
-                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
-                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.
-                        </p>
 
-                        <sidebyside widths="50% 50%">
-                                <p></p>
-                                <tabular halign="right"><col width="100%" /><row><cell halign="right">
-                                        <p>Return to: <xref ref="d-bank-shot" text="title">pool</xref></p>
-                                </cell></row></tabular>
-                        </sidebyside>
-                </conclusion>
-        </investigation>
+                        <investigation xml:id="irl-poolfriction"><title>Rolling pool balls and friction</title>
+                                <idx><h>pool</h><h>real life</h></idx>
+                                <introduction>
+                                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
+                                </introduction>
+                                <task>
+                                        <statement>
+                                                <p>Hit the cue-ball off of a bumper in the manner intended for
+                                                <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">testing cushions</url>.
+                                                Compare the strength of the hit to the distance travelled.</p>
+                                                <p>How much is the total distance affected by the number of bumpers hit?  (<xref ref="A-N-bump" text="type-local"/>)
+                                                Does it matter if you shoot along the length of the table versus the width of the table?   (<xref ref="A-len-wid" text="type-local"/>)
+                                                Why does friction slow the ball down instead of just make it turn <m>v=\omega r</m> (no slip)   (<xref ref="A-slow" text="type-local"/>)
+                                                </p>
+                                        </statement>
+                                        <answer xml:id="A-N-bump">
+                                                <p>[Answer]</p>
+                                        </answer>
+                                        <answer xml:id="A-len-wid">
+                                                <p>[Answer]</p>
+                                        </answer>
+                                        <answer xml:id="A-slow">
+                                                <p>[Answer]</p>
+                                        </answer>
+                                </task>
+                                <conclusion>
+                                        <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
+                                        <xref ref="irl-poolcushion" text="title">normal force</xref>,
+                                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
+                                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.
+                                        </p>
+
+                                        <sidebyside widths="50% 50%">
+                                                <p></p>
+                                                <tabular halign="right"><col width="100%" /><row><cell halign="right">
+                                                        <p>Return to: <xref ref="d-bank-shot" text="title">pool</xref></p>
+                                                </cell></row></tabular>
+                                        </sidebyside>
+                                </conclusion>
+                        </investigation>
                 </subsection>
 
                 <subsection xml:id="ss-tribology"><title>Additional Detail: The field of Tribology</title>
@@ -4880,7 +5024,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <references>
                         <biblio type="raw" xml:id="bib-friction-hutchings">
-                                Hutchings, Ian M., <title>Leonardo da Vinci׳s studies of friction</title>, <year>15 August 2016</year>. <journal>Wear</journal> <volume>Volumes 360-361</volume>, pp. 51-66.
+                                Hutchings, Ian M., <title>Leonardo da Vinci's studies of friction</title>, <year>15 August 2016</year>. <journal>Wear</journal> <volume>Volumes 360-361</volume>, pp. 51-66.
                                 (<url href="https://doi.org/10.1016/j.wear.2016.04.019" />)
                         </biblio>
                         <biblio type="raw" xml:id="bib-friction-tribology">
@@ -5039,6 +5183,18 @@ Also check these folks out on Wikipedia.... of course
                                 </image>
                         </figure>
                         </assemblage>
+
+                        </subsubsection>
+
+                        <subsubsection xml:id="sss-pendulum"><title>Application to a Pendulum</title>
+
+                        <p>The interplay of gravity and tension at various angles.</p>
+
+                        <aside><title>Paragraph referenced by:</title>
+                                <p><xref ref="p-friction-walking" text="title" /></p>
+                        </aside>
+                        <p>The discussion of walking refers to an inverted pendulum and uses the term <q> pivot point of an inverted pendulum</q>.</p>
+
 
                         </subsubsection>
 
@@ -5993,9 +6149,9 @@ Also check these folks out on Wikipedia.... of course
                                         <p>They say <q>A pint's a pound, the world around</q>, but really a pint of water is <m>1.04375 \unit{lbs}</m>.  A pint glass, on the other hand, is <m>422\unit{g}</m>.  Compute the mass and weight of a full glass with a pint of water.</p>
                                 </statement>
                                 <answer>
-                                        <p>Recalling the discussion around <xref ref="fn-pound" text="type-global" />, the water has a mass of 
+                                        <p>Recalling the discussion around <xref ref="fn-pound" text="type-global" />, the water has a mass of
                                         <me> (1.04375 \unit{lbs}) \convert{453.592 37\unit{g}}{1\unit{kg}} = \sig{473.437}{04}{g}</me>
-                                        Together the glass and water have a mass of 
+                                        Together the glass and water have a mass of
                                         <me> (422\unit{g})+(\sig{473.437}{04}{g}) = \sig{895}{.4}{g}</me>
                                         The weight, then, is (after converting to kilograms)
                                         <me> (0.\sig{895}{4}{kg})(9.81\unitfrac{m}{s^2}) = \sig{8.78}{4}{N}</me>
@@ -6008,30 +6164,33 @@ Also check these folks out on Wikipedia.... of course
 
         <conclusion><title>List of examples</title>
                 <list-of elements="example" scope="chapter" />
-
-        <p>---</p>
-        <p>(Revised October 16, 2018)</p>
         </conclusion>
 
 </chapter>
 
 <!-- ********************************************************************************************** -->
 
-<chapter><title>Energy and the Transfer of Energy</title>
+<chapter xml:id="c-energy"><title>Energy and the Transfer of Energy</title>
 
         <introduction>
-<aside><title>Chapter referenced by</title> <p>Discussion of <xref ref="d-heatverb" text="type-global">heat as a verb</xref></p></aside>
+        <aside><title>Chapter referenced by</title>
+                <p>
+                <xref ref="connect-friction-work" text="type-global" />
+                </p>
+        </aside>
 
         <p xml:id="d-energynoun">Energy is a noun<idx><h>energy</h><h>noun</h></idx>; objects can <em>have</em> energy.  </p>
 
+        <aside><title>Paragraph referenced by</title> 
+                <p>
+                Discussions of
+                        <xref ref="d-forcenoun" text="title">force as a noun</xref> and
+                        <xref ref="d-heatverb" text="title">heat as a verb</xref>,
+                <xref ref="connect-friction-work" text="type-global" />
+                </p>
+        </aside>
         <p xml:id="d-workverb">Work is a verb<idx><h>work</h><h>verb</h></idx>; doing work is the process of <em>exchanging</em> energy.</p>
-                <aside><title>Referenced by</title>
-                        <p>Discussions of
-                        <xref ref="d-forcenoun" text="global">force as a noun</xref> and
-                        <xref ref="d-heatverb" text="global">heat as a verb</xref>
-                        </p>
-                </aside>
-
+ 
         </introduction>
 
         <section xml:id="s-KE"><title>Objects Can Have Energy</title>
@@ -6183,6 +6342,59 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Rotational Motion</title>
+
+        <section xml:id="s-rotation-language"><title>How Physicists Use the Words</title>
+                <p>Description indicating that different parts of the object are moving at different speeds (depending on the radius) and, even at the same radius, different parts of the object are moving with different velocities (depending on the angle).  This is a good place to introduce
+                <men>v = \omega r</men>
+                </p>
+
+                <heuristic xml:id="st-vwr"><title>The Story of <m>\vec v = \vec \omega \times \vec r</m></title>
+                <statement>
+                        <todo>Needs more detail and needs to be done better (magnitude and direction).  Define the right-hand-rule.</todo>
+<!--                         <aside><title>Referenced by</title> <p><xref ref="ex-2Dforce" text="type-global"/></p></aside>  -->
+                        <p>This equation describes the velocity (as a vector) to the spin rate and distance from the axis according to the right-hand rule.  Connecting the English and the math:</p>
+                        <sidebyside>
+                        <tabular>
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                            <row halign="center">
+                                <cell><m>\vec v </m></cell>
+                                <cell><m> =       </m></cell>
+                                <cell><m> \vec \omega  </m></cell>
+                                <cell><m> \times </m></cell>
+                                <cell><m> \vec r   </m></cell>
+                            </row>
+                            <row halign="center">
+                                <cell><m>\overbrace{\hspace{5em}}</m></cell>
+                                <cell><m>\overbrace{\hspace{4em}}</m></cell>
+                                <cell><m>\overbrace{\hspace{5em}}</m></cell>
+                                <cell><m>\overbrace{\hspace{4em}}</m></cell>
+                                <cell><m>\overbrace{\hspace{5em}}</m></cell>
+                            </row>
+                            <row halign="center">
+                                <cell><line>the speed</line><line>of a point</line><line>on a </line><line>spinning</line><line>object</line></cell>
+                                <cell>depends on</cell>
+                                <cell><line>the rate</line><line>of spin</line></cell>
+                                <cell><line><q>crossed with</q></line></cell>
+                                <cell><line>the distance</line><line>from the</line><line>axis</line></cell>
+                            </row>
+                            <row halign="center">
+                                <cell><line>the velocity</line><line>is directed</line><line>in the</line><line>plane of</line><line>the spin</line></cell>
+                                <cell><line>such that</line><line>it is</line><line>perpendicular</line></cell>
+                                <cell><line>to the axis</line><line>of spin</line></cell>
+                                <cell><line>and</line></cell>
+                                <cell><line>the radial</line><line>line</line><line>to the point</line></cell>
+                            </row>
+                        </tabular>
+                        </sidebyside>
+                </statement>
+                </heuristic>
+
+                <p>Distinguish the motion of the center-of-mass (of <q>the body</q>) from the motion of a specific piece of the object, such as the top of the wheel or bottom of the wheel versus the axle (which is connected to the bicycle).  Define an axis of rotation.</p>
+        </section>
 
         <section><title>The Equations of Rotational Motion</title>
 
@@ -6340,7 +6552,8 @@ Also check these folks out on Wikipedia.... of course
         <aside><title>Section referenced by</title>
                 <p>
                 <xref ref="ss-scales" text="type-global" />,
-                <xref ref="task-friction-future" text="type-global" />
+                <xref ref="task-friction-future" text="type-global" />,
+                the discussion of <xref ref="p-friction-walking" text="title">walking</xref>
                 </p>
         </aside>
         <p>discussion of <term>torque</term><idx>torque</idx>: <m>\tau = F l \sin\theta</m>.</p>
@@ -6751,7 +6964,15 @@ Also check these folks out on Wikipedia.... of course
                 </subsection>
         </section>
 
-        <section><title>Kinetic Theory of Gases</title>
+        <section xml:id="s-kinetic-theory"><title>Kinetic Theory of Gases</title>
+        <introduction>
+        <aside><title>Section referenced by</title>
+                <p>
+                Discussions of <xref ref="find-heatwarm" text="title">thermal energy</xref>
+                </p>
+        </aside>
+        </introduction>
+
                 <subsection><title>Pressure as a statistical quantity</title>
                         <p>words
                         <me>P=\frac{F}{A} = \frac{1}{A} \frac{dp}{dt} = \frac{l}{V} \frac{dp}{dt}</me>
@@ -6760,7 +6981,12 @@ Also check these folks out on Wikipedia.... of course
                         </p>
                 </subsection>
 
-                <subsection><title>Temperature as a statistical quantity</title>
+                <subsection xml:id="ss-thermal-energy"><title>Temperature as a statistical quantity</title>
+                <aside><title>Subsection referenced by</title>
+                        <p>
+                        Discussions of <xref ref="find-heatwarm" text="title">thermal energy</xref>
+                        </p>
+                </aside>
                         <p><m>K = \frac{3}{2} kT</m></p>
                 </subsection>
         </section>
@@ -6785,17 +7011,19 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter><title>The flow of thermal energy</title>
         <introduction>
-                <p xml:id="find-heatwarm">Energy is a noun<idx><h>energy</h><h>noun</h></idx>; objects can <em>have</em> energy.</p>
+                <p xml:id="find-heatwarm">Energy is a noun<idx><h>energy</h><h>noun</h></idx>; objects can <em>have</em> energy.  The <xref ref="s-kinetic-theory" text="title" /> shows us how the temperature of a gas can be an expression of the <xref ref="ss-thermal-energy" text="title">kinetic energy of the molecules of the gas</xref>.</p>
 
+                <aside><title>Paragraph referenced by</title>
+                        <p>
+                        Discussions of
+                                <xref ref="d-forcenoun" text="title">force as a noun</xref> and
+                                <xref ref="d-heatverb" text="title">heat as a verb</xref>,
+                        <xref ref="connect-friction-work" text="type-global" />
+                        </p>
+                </aside>
                 <p xml:id="d-heatverb">Heat is a verb<idx><h>heat</h><h>verb</h></idx>; heating is a process of <em>exchanging</em> energy.  Recall our
                         <xref ref="d-forcenoun" text="title">discussions of force</xref><idx><h>force</h><h>noun</h></idx> and
                         <xref ref="d-workverb" text="title">work</xref><idx><h>work</h><h>verb</h></idx>.</p>
-                <aside><title>Referenced by</title>
-                        <p>Discussions of
-                        <xref ref="d-forcenoun" text="global">force as a noun</xref> and
-                        <xref ref="d-workverb" text="global">work as a verb</xref>
-                        </p>
-                </aside>
 
         </introduction>
 
@@ -6932,7 +7160,7 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Electricity</title>
-<p>.</p>
+<p>See also <url href="https://www.facebook.com/UmairTOfficial/videos/1573430836018784/?hc_ref=ARTazrYkFpgDeSNC0xV45lwMO41lc9hWdnntKLNiVDmvEuVd5d7Jov8-WUxq2b5LQeI&amp;pnref=story" /> (referenced from Facebook<trademark /> Oct, 2017)</p>
 </chapter>
 
 <!-- ********************************************************************************************** -->
@@ -7182,7 +7410,7 @@ Also check these folks out on Wikipedia.... of course
 
         <p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge">The Flame Challenge</url></p>
         <p><url href="https://msis.jsc.nasa.gov/sections/section04.htm">NASA human performance capabilities</url></p>
-        
+
 
         </section>
 
@@ -7204,7 +7432,7 @@ Also check these folks out on Wikipedia.... of course
         I might consider hiring(?) her to help storyboard the characters.</todo>
 I have emailed her.  NO REPLY.
         -->
-        <todo>Check archivos.digital for storyboarding.  $60/year</todo>
+        <todo>Check archivos.digital for storyboarding.  \$60/year</todo>
 
         </introduction>
 
@@ -7259,7 +7487,7 @@ I have emailed her.  NO REPLY.
                 </ul></p></li>
                 <li><p> In <xref ref="se-FNB" text="type-global" />, \studentB\ has a normal force supporting \himB.  (This touches <xref ref="A-floor" text="type-global" />, <xref ref="A-second" text="type-global" />, and <xref ref="A-third" text="type-global" />.)</p></li>
                 <li><p> At some point, \studentB\ has a party, because in <xref ref="ex-baking" text="type-global" />, \studentA\ decides to bake some bread for a party at \studentB's house.</p></li>
-                <li><p>According to <xref ref="se-gworld" text="type-global" />, \studentB's parents are \sudentE\ and \studentF.  They have lived in Norway, where \studentB\ grew up, and visited both Puerto Rico and Mount Everest.</p></li>
+                <li><p>According to <xref ref="se-gworld" text="type-global" />, \studentB's parents are \studentE\ and \studentF.  They have lived in Norway, where \studentB\ grew up, and visited both Puerto Rico and Mount Everest.</p></li>
         </ul>
         </p>
 <!--        <idx></idx>{\studentB|)} % end page-range
