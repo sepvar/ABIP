@@ -300,10 +300,11 @@
         <cross-references text="type-global" />
         -->
 
-        <rename element="remark" lang="en-US">Clarification</rename>
+        <rename element="remark"        lang="en-US">Clarification</rename>
         <rename element="biographical" lang="en-US">Touchstone</rename>
-        <rename element="heuristic" lang="en-US">Translation</rename>
+        <rename element="heuristic"     lang="en-US">Translation</rename>
         <rename element="proposition" 	lang="en-US">Connection</rename>
+        <rename element="objectives" 	lang="en-US">Student Outcomes</rename>
 
 <!--
         <feedback>
@@ -4542,7 +4543,7 @@ Earth feels a force by \studentZ\ to the left.
                         </assemblage>
                         <biographical xml:id="ts-friction"><title>Touchstone (mostly true)</title><p><xref ref="law-friction-coulomb" text="title" /> is <xref ref="s-effective2" text="title">mostly true</xref>.  If the object is moving extremely slowly then it gets into the fits-and-starts motion; the motion is not smooth and puts us back into that described <xref ref="p-friction-herky-jerky" text="title">above</xref>.  If the object is moving very <xref ref="d-quick-fast" text="title">fast</xref>, then it can start to skip (imagine a speedboat skimming across a lake with a staccato thrumming and a choppy wake) and the nature of the surface-interaction becomes different enough that the description must also change.  However, the range of speeds for which this <em>is</em> true is reasonably large.</p></biographical>
                         <p><xref ref="law-friction-coulomb" text="title" /> turns out to be extremely convenient.  Because of this law, we can do <xref ref="ex-friction-mug" text="type-local" />.  If it were not true, then the magnitude of the frictional force would change as the object slowed down and the acceleration would not be constant!  This requires mathematics called <q>differential equations</q>, which most students take after completing three years of calculus.  Unfortunately, this is what happens with <xref ref="ss-air-resistance" text="title" />.</p>
-
+                        
                         <p>Friction turns out to be quite interestingly complicated.  Most of our understanding comes from experimental patterns, although the field of <xref ref="ss-tribology" text="title">tribology</xref> is continuing to improve our theoretical descriptions of friction all the time.  For our purposes, we can encapsulate all of these ideas into a single equation.</p>
                         <heuristic xml:id="st-Ff-muFN"><title>The Story of <m>F_f =\mu F_N</m></title>
                                 <statement>
@@ -4870,29 +4871,26 @@ Earth feels a force by \studentZ\ to the left.
 
                         </subsubsection>
 
-                <conclusion>
-                        <p>NOTE: <xref ref="bib-friction-armstrong" /> indicates that Arthur Morin distinguished static friction from rolling friction in 1833.</p>
-                </conclusion>
 
                 </subsection>
                 <subsection xml:id="ss-friction-rolling"><title>Rolling Friction</title><idx><h>friction</h><h>rolling</h></idx>
 
                         <objectives><ol>
                                 <li>To recognize examples of (and be able to give new examples of) situations in which rolling friction (in contrast to dry-sliding friction) needs to be included</li>
-                                <li>To connect the existence of rolling friction as causing specific effects in the motion and on the energy</li>
+                                <li>To connect the existence of rolling friction to specific effects in the motion and on the energy</li>
                         </ol></objectives>
-                                
+
                         <p>Comparing and contrasting kinetic friction, static friction, and rolling friction is often difficult because the motion of the object is so different.  Static and kinetic are likely pretty intuitive in that (1) the object is either moving or it isn't and (2) the objects are (or are trying to) slide against each other.  Rolling friction, on the other hand, looks rather different.  The surfaces are in contact, but it is not always obvious if they are sliding against each other.  If you do an internet search, you will find that some authors group rolling friction in with kinetic (or dynamic) friction because the objects (I will say the center-of-mass of the objects) have some relative motion and you will find other authors who indicate that it should be compared to static friction because there is no relative motion between the surfaces of the objects.</p>
-                        
+
                         <remark xml:id="clarify-no-slip"><title>Rolling without slipping</title>
-                                <p>There are three categories of motion we will consider in the discussion around friction.  
+                                <p>There are three categories of motion we will consider in the discussion around friction.
                                 <ol>
                                         <li>Objects that are sliding (and not rolling) will experience kinetic friction (unless they are on a frictionless surface, of course).</li>
                                         <li>Objects that are <q>rolling without slipping</q> will experience rolling friction and not kinetic friction.  This case assumes that there is sufficient static friction to keep the object rolling rather than sliding, but the static friction is not <em>interfering</em> with the motion, rather it is the process that <em>allows</em> the rotation.</li>
                                         <li>Objects that are both rolling and sliding (think of skidding out in your car).  While this text will acknowledge the existence of such motion, the mathematical description of such is beyond the scope of this course.</li>
                                 </ol></p>
                         </remark>
-                        
+
                         <p>Some of this will be easier to describe after we have the language of rotations (see <xref ref="s-rotation-language" text="type-global" />) but for now suffice it to say that a rolling object, such as a bicycle wheel, has an axis-of-rotation (the wheel's axle) which <em>is moving</em> relative to the ground and, if it is not slipping, has a surface in contact with the ground that <em>is not moving</em> relative to the ground.  The wheel surface is placed on the ground (not dragged along the ground) in much the same way as your hands are placed on the ground when you do a <xref ref="task-walking-cartwheel" text="title">cartwheel</xref>.  You can build some intuition by considering <xref ref="irl-rolling-friction" text="type-global" />.</p>
 
                         <investigation xml:id="irl-rolling-friction"><title>Seeing rolling friction in rolling tires</title>
@@ -4912,7 +4910,16 @@ Earth feels a force by \studentZ\ to the left.
                                         <answer><p>(it has noticeably more rolling friction)</p></answer></task>
                         </investigation>
 
-                        <p>NOTE: <xref ref="bib-friction-armstrong" /> indicates that Arthur Morin distinguished static friction from rolling friction in 1833.</p>
+                        <observation xml:id="obs-rolling-friction"><title>Properties that affect rolling friction</title>
+                                <p>Rolling friction is a very small effect (as compared to dry-sliding friction), but is impacted by
+                                <ul> 
+                                <li>the softness of the rolling object (due to its deformation),</li>
+                                <li>the softness of the surface on which the object rolls (due to its deformation), and</li>
+                                <li>the motion beneath the surface due to these deformations</li>
+                                </ul>
+                                Although we can still write <m>F_f = \mu_r F_g</m>, this coefficient of rolling friction (a.k.a. rolling resistance) is significantly smaller (on the order of 0.001) and depends on the size of the rolling object.  (An extra complication is that the weight of the object impacts the deformation of the object and the surface, so <m>\mu</m> as depends on the weight, meaning that the equation depends on <m>F_g</m> in multiple ways.)</p>
+                        </observation>
+
                         <p>Maybe introduce rocking chairs as an investigation?  Note that desk chairs that tilt are essentially rocking chairs where the rocking mechanism is hidden inside the piece that connects the seat of the chair to the support post.</p>
 
                         <investigation xml:id="irl-rocking-friction"><title>Seeing rolling friction in rocking chairs</title>
@@ -4994,7 +5001,7 @@ Earth feels a force by \studentZ\ to the left.
                         </ul>
                         that discusses the recent (Aug 2016) discovery of the notebook of Leonardo da Vinci which show a detailed study of friction.  While it was known that he studied friction, this shows sketches of experiments that we might do today.</p>
 
-                        <p><url href="http://depts.washington.edu/nanolab/ChemE554/Summaries%20ChemE%20554/Introduction%20Tribology.htm">This article</url> indicates historical figures, including <url href="https://en.wikipedia.org/wiki/Guillaume_Amontons">Guillaume Amontons</url> and <url href="https://en.wikipedia.org/wiki/Charles-Augustin_de_Coulomb">Charles-Augustin de Coulomb</url> (The Coulomb), as well as the three laws of friction:
+                        <p><url href="http://depts.washington.edu/nanolab/ChemE554/Summaries%20ChemE%20554/Introduction%20Tribology.htm">This article</url> introduces historical figures, including <url href="https://en.wikipedia.org/wiki/Guillaume_Amontons">Guillaume Amontons</url> and <url href="https://en.wikipedia.org/wiki/Charles-Augustin_de_Coulomb">Charles-Augustin de Coulomb</url> (the same Coulomb from <xref ref="as-coulomb" text="title" />), as well as the three laws of friction:
                         <ol>
                         <li><p>The force of friction is directly proportional to the applied load. (Amontons 1st Law)</p></li>
                         <li><p>The force of friction is independent of the apparent area of contact. (Amontons 2nd Law)</p></li>
@@ -5010,7 +5017,19 @@ Earth feels a force by \studentZ\ to the left.
                         </ol>
                         </p>
 
-                        <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that tribology was born in 1933.</p>
+                        <p><xref ref="bib-friction-armstrong" text="type-local" /> indicates that tribology was born in 1933; but it the history of friction is much longer than this.  <xref ref="bib-friction-blau2008" /> starts with Leonardo da Vinci<fn>add xref to above</fn> between 1452-1519, although XREF-ABOVE indicates those notes were temporarily lost to history.  Amontons (ADD XREFS-ABOVE) in 1699 and contemporaries, <url href="https://en.wikipedia.org/wiki/Robert_Hooke">Robert Hooke</url> (of <xref ref="as-hooke" text="title" /> fame) and Liebnitz who contributed to the studies of rolling friction.  Hooke with surface yielding and adhesion; Liebnitz with distinguishing static and rolling friction. Leonard Euler distinguished static and kinetic friction in the mid 1700's with the angle of repose.  Coulomb, among others, contributed in the late 1700's (Coulomb specifically started in 1779).  <xref ref="bib-friction-popov2017" /> indicates that Coulomb studied what is now called the adhesion contribution and recognized that static friction increases with the length of time an object sits at rest.  Although <xref ref="bib-friction-armstrong" /> indicates that Arthur Morin distinguished static friction from rolling friction in 1833, <xref ref="bib-friction-popov2017" /> indicates that Morin and Dupuit<fn>I can't find information about who Dupuit is.</fn> had a public argument in 1841-1842 about whether Morin's expectation that rolling friction depended on the inverse of the wheel-radius (consistent with earlier work by Coulomb) or Dupuit's expectation that rolling friction depended on the inverse of the square root of the wheel-radius.  <xref ref="bib-friction-popov2017" /> also indicates that both are mostly correct, but under different conditions.  <xref ref="bib-friction-kerr2014" /> indicates that this dispute was described by Tabor in 1962<fn>Google-documents did not provide that reference page, but I did find <url href="https://www.smf.phy.cam.ac.uk/files/Taborpublications.pdf" /> which lists:  Tabor, D. <q>Introductory remarks</q>, in <q>Rolling Contact Phenomena</q>, pp. 1-5, publ. Amsterdam, 1962, Elsevier. as the only 1962 publication of Tabor.</fn>.</p>
+
+                        <paragraphs xml:id="p-friction-research"><title>Cool current friction research</title>
+                                <p>List some here.
+                                <ul>
+                                <li><url href="https://www.sciencedaily.com/terms/friction.htm" /> lists some current research articles.</li>
+                                <li><url href="https://phys.org/news/2010-10-friction-fundamental-physics-law.html" /></li>
+                                <li><url href="http://physicsworld.com/cws/article/news/2012/oct/18/negative-friction-surprises-researchers" /></li>
+                                <li><url href="https://www.engr.wisc.edu/in-static-friction-chemistry-is-key-to-stronger-bonds/" /> is a press release version of <url href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.109.186102" /></li>
+                                </ul>
+                                I should also find cool videos, maybe?
+                                </p>
+                        </paragraphs>
 
                         <paragraphs xml:id="p-gecko-grip"><title>Gecko-like grip</title>
                         <p>News from May 2015: <url href="https://news.stanford.edu/2015/05/27/grabber-robot-gecko-052715/" /> about a development at Stanford University.</p>
@@ -5029,7 +5048,7 @@ Earth feels a force by \studentZ\ to the left.
                         </biblio>
                         <biblio type="raw" xml:id="bib-friction-tribology">
                                 <!-- As of Oct, 2017 -->
-                                van Beek, Anton. "History of Science Friction". tribology-abc.com. Retrieved Oct, 2017. <url href="http://www.tribology-abc.com/abc/history.htm" />.
+                                van Beek, Anton. <title>History of Science Friction</title>. tribology-abc.com. Retrieved Oct, 2017. <url href="http://www.tribology-abc.com/abc/history.htm" />.
                         </biblio>
                         <biblio type="raw" xml:id="bib-friction-armstrong">
                                 <!-- As of Oct, 2017 -->
@@ -5047,6 +5066,21 @@ https://www.biography.com/people/charles-de-coulomb-9259075
 Also check these folks out on Wikipedia.... of course
 
 -->
+                        <biblio type="raw" xml:id="bib-friction-popov2017">
+                                <!-- As of Oct, 2017 -->
+                                Popov, V.L. <title>Contact Mechanics and Friction: Physical Principles and Applications</title>, 2017, Springer Berlin Heidelberg; <url href="https://books.google.com/books?id=qT5RDgAAQBAJ&amp;pg=PA4&amp;lpg=PA4&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=I4SUYUbWQW&amp;sig=1FhgbMd-9NM7i4txa7GBtgntn4s&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKDAA#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 4</url>. (ISBN 9783662530818) 
+                                <url href="https://books.google.com/books?id=qT5RDgAAQBAJ" />.
+                        </biblio>
+                        <biblio type="raw" xml:id="bib-friction-kerr2014">
+                                <!-- As of Oct, 2017 -->
+                                ed. Kerr, A.D. <title>Railroad Track Mechanics and Technology: Proceedings of a Symposium Held at Princeton University, April 21 - 23, 1975</title>, 2014, Elsevier Science;  <url href="https://books.google.com/books?id=ggU6AwAAQBAJ&amp;pg=PA336&amp;lpg=PA336&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=oCzWJiE3N9&amp;sig=3TSLyE7if10AHMKlgHxD6yWow7w&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKzAB#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 336</url>.  (ISBN 9781483188218)
+                                <url href="https://books.google.com/books?id=ggU6AwAAQBAJ" />.
+                        </biblio>          
+                        <biblio type="raw" xml:id="bib-friction-blau2008">
+                                <!-- As of Oct, 2017 -->
+                                Blau, P.J. <title>Friction Science and Technology: From Concepts to Applications, 2e</title> (Mechanical Engineering Series), 2008, CRC Press; <url href="https://books.google.com/books?id=5pIpV1LY5HMC&amp;pg=PA8&amp;lpg=PA8&amp;dq=hooke+rolling+friction&amp;source=bl&amp;ots=oT-uQSgTUl&amp;sig=BFS0NgjHKZwRgYk5MKx75GNoG48&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjQhOD6vpvXAhVGrVQKHdISCqAQ6AEIMjAC#v=onepage&amp;q=hooke%20rolling%20friction&amp;f=false">pg 12</url>. (ISBN 9781420054101)
+                                <url href="https://books.google.com/books?id=5pIpV1LY5HMC" />.
+                        </biblio>
                 </references>
 
 
@@ -5925,6 +5959,12 @@ Also check these folks out on Wikipedia.... of course
                 </p>
         </aside>
 
+        <assemblage xml:id="as-hooke"><title>Hooke's Law</title>
+                <p>Hooke's law describes the dependence of the force on the elongation of an elastic material, typically a spring:
+                <men>\vec F = - k \, \Delta \vec x </men>
+                </p>
+        </assemblage>
+
         <p xml:id="p-elastic">Initial definition of elastic (reference <xref ref="p-elastic-collision" text="type-global" /></p>
 
         </section>
@@ -6181,7 +6221,7 @@ Also check these folks out on Wikipedia.... of course
 
         <p xml:id="d-energynoun">Energy is a noun<idx><h>energy</h><h>noun</h></idx>; objects can <em>have</em> energy.  </p>
 
-        <aside><title>Paragraph referenced by</title> 
+        <aside><title>Paragraph referenced by</title>
                 <p>
                 Discussions of
                         <xref ref="d-forcenoun" text="title">force as a noun</xref> and
@@ -6190,7 +6230,7 @@ Also check these folks out on Wikipedia.... of course
                 </p>
         </aside>
         <p xml:id="d-workverb">Work is a verb<idx><h>work</h><h>verb</h></idx>; doing work is the process of <em>exchanging</em> energy.</p>
- 
+
         </introduction>
 
         <section xml:id="s-KE"><title>Objects Can Have Energy</title>
@@ -7123,6 +7163,13 @@ Also check these folks out on Wikipedia.... of course
                         </p>
                 </aside>
                         <p>pst-electricfield</p>
+                        
+                        <assemblage xml:id="as-coulomb"><title>Coulomb's Law</title>
+                                <p>Coulomb's Law of the electrical interaction is
+                                <men> \vec F = k \frac{(q_1)(q_2)}{r_{12}^2} \hat r_{12}</men>
+                                </p>
+                        </assemblage>
+                        
                         </introduction>
 
                         <subsubsection><title>Examples</title>
