@@ -339,8 +339,7 @@
             <author>
                 <personname>Robert A. Beezer</personname>
 <!--
-                <department>Department of Mathematics and Computer Science</department>
-                <institution>University of Puget Sound</institution>
+                <department></institution>
                 <email>beezer@pugetsound.edu</email>
 -->
             </author>
@@ -363,12 +362,7 @@
             <year>2017<ndash />2018</year>
             <holder>J. Christensen</holder>
             <shortlicense>
-                <p><url rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><image alt="Creative Commons License" style="border-width:0" source="images/creativecommons-by-nc-nd-4-0-88x31.jpg" width="15%" /></url>
-                <em><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Physics Connected: Learn like you think</span></em>
-                by <url xmlns:cc="http://creativecommons.org/ns#" href="http://physics.thomasmore.edu/ConnectedPhysics/" property="cc:attributionName" rel="cc:attributionURL">Joe Christensen</url> is licensed under a
-                <url rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</url>.</p>
-                <p>Permissions beyond the scope of this license may be available by contacting the author at
-                <url xmlns:cc="http://creativecommons.org/ns#" href="http://www.thomasmore.edu/physics/faculty.cfm?id=487" rel="cc:morePermissions">http://www.thomasmore.edu/physics/faculty.cfm?id=487</url>.</p>
+                <!-- To ignore this Known tag abuse 2, keep it all on the same line --> <p><url rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><image alt="Creative Commons License" style="border-width:0" source="images/creativecommons-by-sa-4-0-88x31.jpg" width="15%" /></url>  <em><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Physics Connected: Learn like you think -- an interconnected view of algebra-based physics</span></em> by <url xmlns:cc="http://creativecommons.org/ns#" href="http://physics.thomasmore.edu/ConnectedPhysics/" property="cc:attributionName" rel="cc:attributionURL">Joe Christensen</url> is licensed under a <url rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</url>.</p><p>Permissions beyond the scope of this license may be available by contacting the author at <url xmlns:cc="http://creativecommons.org/ns#" href="http://www.thomasmore.edu/physics/faculty.cfm?id=487" rel="cc:morePermissions">http://www.thomasmore.edu/physics/faculty.cfm?id=487</url>.</p>
             </shortlicense>
         </copyright>
 
@@ -379,32 +373,31 @@
     <!-- or for every author, even if we test a mix here                   -->
     <biography>
     <!-- I've done this as a single section, but we can have a <biography> for each person -->
-        <title>About the Authors</title>
+        <title>About the Author</title>
 
         <blockquote>
                 <p><alert>Joe Christensen</alert>
-                <ul label="circle"><li><p>B.S. Mathematics and Physics, Bradley University, IL (1990)</p></li>
-                        <li><p>Ph.D. Physics, University of Kentucky, KY (1997)</p></li>
-                        <li><p>first came to Thomas More College in 2007</p></li>
+                <ul label="circle"><li><p>B.S.  <url href="https://www.bradley.edu/academic/departments/math/">Mathematics</url> and <url href="https://www.bradley.edu/academic/departments/physics/">Physics</url>, <url href="https://www.bradley.edu/">Bradley University</url>, Peoria, IL (1990)</p></li>
+                        <li><p>Ph.D. <url href="https://pa.as.uky.edu/">Physics</url>, <url href="http://www.uky.edu/UKHome/">University of Kentucky</url>, Lexington, KY (1997)</p></li>
+                        <li><p>Taught for three terms at <url href="https://www.centre.edu/">Centre College</url>, Danville, KY (1998-1999)</p></li>
+                        <li><p>Taught for eight years in the <url href="https://sites.google.com/site/mcmurryphysicsdepartment/">physics department</url> at <url href="http://ww2.mcm.edu/">McMurry University</url>, Abilene, TX (1999-2007)</p></li>
+                        <li><p>Has been teaching in the <url href="http://www.thomasmore.edu/physics/">physics department</url> at <url href="http://www.thomasmore.edu/">Thomas More College</url>, Crestview Hills, KY (since 2007)</p></li>
                 </ul></p>
         </blockquote>
 
     </biography>
 
-    <preface>
-        <title>Contributors to the 1<m>^\mathrm{st}</m> XML-Edition</title>
+    <acknowledgement xml:id="general-fall-ack">
 
-        <contributors>
-            <contributor xml:id="jchrist">
-                <personname>Joe Christensen</personname>
-                <department>Department of Mathematics and Physics</department>
-                <institution>Thomas More College</institution>
-                <email>ChristJ@ThomasMore.edu</email>
-            </contributor>
+        <p>I would like to thank Thomas More College for granting me a sabbatical in the Fall of 2017 to begin this project.</p>
 
-        </contributors>
+        <p>I would also like to thank
+        Robert A. Beezer (Department of Mathematics and Computer Science, University of Puget Sound) and
+        David Farmer (American Institute of Mathematics) for their hard work and guidance with the
+        <url href="http://mathbook.pugetsound.edu/">MathBookXML / <pretext /></url> format; and
+        Robert Riehemann (Thomas More College, Crestview Hills, KY) for telling me about their existence.</p>
 
-    </preface>
+    </acknowledgement>
 
     <preface>
 
@@ -700,7 +693,7 @@
                         <cell><line>how well</line><line>air allows</line><line>energy to</line><line>flow,</line></cell>
                         <cell><line>the size</line><line>of the</line><line>oven,</line></cell>
                         <cell>
-                                <tabular>  <!-- Known tag abuse -->
+                                <tabular>  <!-- Known tag abuse 1 -->
                                         <col />
                                         <row bottom="minor"><cell><line>and the</line><line>amount the</line><line>temperature</line><line>needs to</line><line>change</line></cell></row>
                                         <row><cell><line>across the</line><line>height of the</line><line>oven</line></cell></row></tabular>
@@ -1870,6 +1863,11 @@
                 <p>Now that we have taken apart the language, let's connect it to our daily experience.  Our intuition screams at us that if an object is at rest, then we do not need to do anything to keep it from moving: Objects just do not spontaneously move.  This seems to be acceptable to most students of physics.  The interesting piece of the first law is that it says that this is also true of objects that are moving.  This seems to contradict many people's common sense.  Most of the objects that we set in motion do not maintain that motion, but instead slow down.  A clue to interesting physics is to think about when objects slow down and when they speed up without your help.  In order to connect the first law with your intuition, we need to carefully observe what actually happens.</p>
                 <todo>s-Ff.html references this section, poorly.  Suggestion from forum was to make the preceding "p" a "prelude" and the subsequent "p" as a "postlude"; but currently the pre/post-ludes don't appear in the referenced knowl, which was The Point.  I actually only want the pre/post and am less concerned about the actual investigation in the s-Ff knowl.</todo>
                 <investigation xml:id="investigating-motion"><title>Find a pattern</title>
+<!--
+                        <prelude>
+                                <p>Now that we have taken apart the language, let's connect it to our daily experience.  Our intuition screams at us that if an object is at rest, then we do not need to do anything to keep it from moving: Objects just do not spontaneously move.  This seems to be acceptable to most students of physics.  The interesting piece of the first law is that it says that this is also true of objects that are moving.  This seems to contradict many people's common sense.  Most of the objects that we set in motion do not maintain that motion, but instead slow down.  A clue to interesting physics is to think about when objects slow down and when they speed up without your help.  In order to connect the first law with your intuition, we need to carefully observe what actually happens.</p>
+                        </prelude>
+-->
                         <task xml:id="task-slowing-down"><statement>
                                         <p>Make a list of situations in which a moving object slows down without your interference in its motion.  Indicate if it is interacting with anything else.</p>
                                         <aside><title>Task referenced by</title><p><xref ref="task-friction-slowing" text="type-global" /></p></aside>
@@ -1883,6 +1881,11 @@
                         </task>
                         <task xml:id="task-uniform-motion"><statement><p>Make a list of situations in which a moving object maintains its motion without your interference in its motion.  Indicate if it is interacting with anything else.</p></statement></task>
                         <task><statement><p>Is there a pattern?</p></statement></task>
+<!--
+                        <postlude>
+                                <p>If you slide a brick across an icy pond and compare that to sliding the same brick across a flat parking lot, to sliding that same brick across a gravel driveway, to sliding that brick across a grassy lawn, you will quickly see that the brick does not behave the same way.  The brick is <em>interacting</em> with the surface is moves along.  This is telling us (<xref ref="insight-force-interaction" text="type-local" />) that there is a force acting on the brick, changing the way it moves.  Newton's first law does not apply to the situation where there are forces acting on the object.  When forces act, we need to consider Newton's second law, which we will do in <xref ref="ss-NII" text="type-global" />.</p>
+                        </postlude>
+-->
                 </investigation>
                 <p>If you slide a brick across an icy pond and compare that to sliding the same brick across a flat parking lot, to sliding that same brick across a gravel driveway, to sliding that brick across a grassy lawn, you will quickly see that the brick does not behave the same way.  The brick is <em>interacting</em> with the surface is moves along.  This is telling us (<xref ref="insight-force-interaction" text="type-local" />) that there is a force acting on the brick, changing the way it moves.  Newton's first law does not apply to the situation where there are forces acting on the object.  When forces act, we need to consider Newton's second law, which we will do in <xref ref="ss-NII" text="type-global" />.</p>
                 </paragraphs>
@@ -4543,7 +4546,7 @@ Earth feels a force by \studentZ\ to the left.
                         </assemblage>
                         <biographical xml:id="ts-friction"><title>Touchstone (mostly true)</title><p><xref ref="law-friction-coulomb" text="title" /> is <xref ref="s-effective2" text="title">mostly true</xref>.  If the object is moving extremely slowly then it gets into the fits-and-starts motion; the motion is not smooth and puts us back into that described <xref ref="p-friction-herky-jerky" text="title">above</xref>.  If the object is moving very <xref ref="d-quick-fast" text="title">fast</xref>, then it can start to skip (imagine a speedboat skimming across a lake with a staccato thrumming and a choppy wake) and the nature of the surface-interaction becomes different enough that the description must also change.  However, the range of speeds for which this <em>is</em> true is reasonably large.</p></biographical>
                         <p><xref ref="law-friction-coulomb" text="title" /> turns out to be extremely convenient.  Because of this law, we can do <xref ref="ex-friction-mug" text="type-local" />.  If it were not true, then the magnitude of the frictional force would change as the object slowed down and the acceleration would not be constant!  This requires mathematics called <q>differential equations</q>, which most students take after completing three years of calculus.  Unfortunately, this is what happens with <xref ref="ss-air-resistance" text="title" />.</p>
-                        
+
                         <p>Friction turns out to be quite interestingly complicated.  Most of our understanding comes from experimental patterns, although the field of <xref ref="ss-tribology" text="title">tribology</xref> is continuing to improve our theoretical descriptions of friction all the time.  For our purposes, we can encapsulate all of these ideas into a single equation.</p>
                         <heuristic xml:id="st-Ff-muFN"><title>The Story of <m>F_f =\mu F_N</m></title>
                                 <statement>
@@ -4882,6 +4885,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <p>Comparing and contrasting kinetic friction, static friction, and rolling friction is often difficult because the motion of the object is so different.  Static and kinetic are likely pretty intuitive in that (1) the object is either moving or it isn't and (2) the objects are (or are trying to) slide against each other.  Rolling friction, on the other hand, looks rather different.  The surfaces are in contact, but it is not always obvious if they are sliding against each other.  If you do an internet search, you will find that some authors group rolling friction in with kinetic (or dynamic) friction because the objects (I will say the center-of-mass of the objects) have some relative motion and you will find other authors who indicate that it should be compared to static friction because there is no relative motion between the surfaces of the objects.</p>
 
+                        <aside><title>Clarification referenced by</title><p>the discussion of <xref ref="p-st-vwr" text="title"><m>\vec v=\omega \times \vec r</m></xref></p></aside>
                         <remark xml:id="clarify-no-slip"><title>Rolling without slipping</title>
                                 <p>There are three categories of motion we will consider in the discussion around friction.
                                 <ol>
@@ -4895,32 +4899,77 @@ Earth feels a force by \studentZ\ to the left.
 
                         <investigation xml:id="irl-rolling-friction"><title>Seeing rolling friction in rolling tires</title>
                                 <idx><h>friction</h><h>rolling</h><h>investigation</h></idx>
-                                <introduction><p>Consider the spare tire from an automobile.  You can lay it down and try to slide it across the ground, or you can stand it up and roll it across a large flat parking lot (which hopefully does not have a lot of cars or other obstacles. </p></introduction>
+                                <introduction><p>Consider the spare tire from an automobile.  You can lay it down and try to slide it across the ground, or you can stand it up and roll it across a large flat parking lot (which hopefully does not have a lot of cars or other obstacles). </p></introduction>
                                 <task>
-                                        <statement><p>push gently</p></statement>
-                                        <answer><p>(a lot of static friction)</p></answer></task>
+                                        <introduction><p>Lay the tire down on its side and consider pushing it along the ground.</p></introduction>
+                                        <task>
+                                                <statement><p>While it lays on its side, push it gently, enough to be pushing, but not so much that it moves.</p></statement>
+                                                <answer><p>You should be able to gauge the amount of static friction between rubber and pavement.  The coefficient of static friction for rubber on pavement ranges from 0.7 to 1.0 depending on the type of pavement.</p></answer></task>
+                                        <task>
+                                                <statement><p>While it lays on its side, push it hard enough to move the tire across the ground.</p></statement>
+                                                <answer><p>You should be able to gauge the amount of kinetic friction between rubber and pavement.  The coefficient of kinetic friction for rubber on pavement is smaller than the coefficient of static friction, ranging from 0.5 to 0.8 depending on the type of pavement.</p></answer></task>
+                                </task>
                                 <task>
-                                        <statement><p>push across the ground</p></statement>
-                                        <answer><p>(a lot of kinetic friction)</p></answer></task>
+                                        <introduction><p>Stand the tire up on end and consider rolling it along the ground.</p></introduction>
+                                        <task xml:id="t-irl-rolling-full">
+                                                <statement><p>Ensure the tire is fully inflated and it roll across the ground.  If you have a large enough space that is safe from traffic and remains flat, see how far it will go on its own.  (This will be easier with a truck tire which has a flatter profile.)</p></statement>
+                                                <answer><p>The tire is likely to roll for a long distance.  It has very little rolling friction, but it does eventually does slow down; therefore there is some friction.  Since the tire is not sliding, there is no kinetic friction.</p></answer></task>
+                                        <task xml:id="t-irl-rolling-flat">
+                                                <statement><p>Now deflate the tire to the point where you can see that it is <q>low</q> but not totally flat and it roll across the ground at approximately the same speed as in <xref ref="t-irl-rolling-full" text="type-local" />. Compare the distance it travels.</p></statement>
+                                                <answer><p>While this flattish tire will roll far enough that you can see it has less friction than in the dry sliding case, it likely will not travel as far as the tire that is fully inflated.  The malleability of the softer tire increases the rolling resistance, giving it a higher coefficient of rolling friction.</p></answer></task>
+                                </task>
                                 <task>
-                                        <statement><p>ensure it is fully inflated and it roll across the ground</p></statement>
-                                        <answer><p>(it has very little rolling friction)</p></answer></task>
-                                <task>
-                                        <statement><p>deflate the tire to where you can see that it is <q>low</q> but not totally flat and it roll across the ground</p></statement>
-                                        <answer><p>(it has noticeably more rolling friction)</p></answer></task>
+                                        <introduction><p>Now consider a car with all four wheels firmly attached but placed in neutral so that the wheels can spin without engaging the engine.  When you do this, a person should be in the car keeping it in a straight line and ready to stop if something gets in the path of the car.</p></introduction>
+                                        <task xml:id="t-irl-rolling-car-full">
+                                                <statement><p>Try to push the car (in neutral) so that the tires spin at the same rate as in <xref ref="t-irl-rolling-full" text="type-local" /> and see how quickly the car slows down.</p></statement>
+                                                <answer><p>Even if the tires are rolling at the same rate as in <xref ref="t-irl-rolling-full" text="type-local" />, the tires are more deformed than in <xref ref="t-irl-rolling-full" text="type-local" /> due to the weight of the car, so they will not roll as far.  This indicates an increase in the amount of rolling resistance.</p></answer></task>
+                                        <task xml:id="t-irl-rolling-car-flat">
+                                                <statement><p>Deflate the tire to where you can see that it is <q>low</q> but not totally flat and try to push the car at the same speed as in <xref ref="t-irl-rolling-car-full" text="type-local" />.</p></statement>
+                                                <answer><p>Even if the tires are rolling at the same rate as in <xref ref="t-irl-rolling-car-full" text="type-local" />, the tires are even more deformed so they will not roll as far.  This indicates a further increase in the amount of rolling resistance.</p></answer></task>
+                                </task>
+                                <conclusion>
+                                        <p><alert>Practical Consequence:</alert> It is useful to keep your car tires inflated to the appropriate level for the following reasons:
+                                        <ul>
+                                                <li><p>Under-inflated tires are more easily deformed causing 
+                                                <ul>
+                                                        <li><p>increased rolling resistance, which requires more effort by the engine and reduces you gas milage,</p></li>
+                                                        <li><p>more sideways-wiggle, which can cause reduced control, affect alignment, and create a <q>shimmy</q>,</p></li>
+                                                        <li><p>wear on portions of the tire that were not designed to be in contact with the road (increasing the risk of creating a crack and a slow leak), and</p></li>
+                                                        <li><p>uneven heating from the repeated deforming (increasing the risk of a blow-out).</p></li>
+                                                </ul></p></li>
+                                                <li><p>Over-inflated tires have less surface area in contact with the pavement and, 
+                                                <ul>
+                                                        <li><p>while kinetic friction is independent of the surface area in contact, the goal is to use static friction with rolling tires, which is larger than kinetic friction with skidding tires (see also ABS brakes),</p></li>
+                                                        <li><p>having less surface area makes it easier to skip along the road and lose contact altogether (frictionless and no control), even if only for brief instants, and</p></li>
+                                                        <li><p>depending on the tread of your tires, reduced surface area increases the opportunity for hydroplaning on wet surfaces.</p></li>
+                                                </ul></p></li>
+                                        </ul>
+                                        To be clear, the risks are small if you are close to the standard pressure and don't drive much.  The further you are from the standard pressure and the more you drive, the bigger the risk.
+                                        While you can find good information about tire inflation with a quick internet search, in October of 2017, <url href="https://www.discounttiredirect.com/learn/tire-pressure" /> had some good images of tires and the inappropriate wear patterns.</p></conclusion>
+                                <postlude>
+                                        <p>We should also describe some additional effects that can accompany what you just observed in the Investigation.  
+                                        <ul>
+                                                <li><p>A tire without a car feels static friction to allow it to roll, but not kinetic friction (assuming it is not sliding along the ground).</p></li>
+                                                <li><p>A tire that is connected to a car necessarily has a connection (at the axle) to the car, which is not rotating.  This means that there is necessarily some kinetic friction at that connection, although this is lubricated friction, not dry-sliding friction.  This connection is typically done with ball bearings, which means that there is additional friction in the case of the tire-and-car that is not present for the tire-alone.  Ball-bearings should also have rolling friction rather than kinetic friction and should be <url href="http://www.tribology-abc.com/abc/cof.htm#mu_lagers">designed to minimize the frictional effects</url>.</p></li>
+                                                <li><p>When a car is moving, there is also the <url href="http://www.tribology-abc.com/abc/cof.htm#luchtweerstand">effect of air resistance</url>, which increases with speed.  Your results from this Investigation will change if you do them at walking speeds versus at highway speeds.</p></li>
+                                                <li><p>If you also compare the tasks of this Investigation to something that is not firmly connected (compare for example <xref ref="p-mom-inert-eggs" text="title">a hard-boiled egg to a raw egg</xref>), then you will have the added complication of the way the spinning shell interacts with in the liquid inside which also has its own fluid friction.</p></li>
+                                        </ul></p></postlude>
                         </investigation>
+
 
                         <observation xml:id="obs-rolling-friction"><title>Properties that affect rolling friction</title>
                                 <p>Rolling friction is a very small effect (as compared to dry-sliding friction), but is impacted by
-                                <ul> 
+                                <ul>
                                 <li>the softness of the rolling object (due to its deformation),</li>
                                 <li>the softness of the surface on which the object rolls (due to its deformation), and</li>
                                 <li>the motion beneath the surface due to these deformations</li>
                                 </ul>
-                                Although we can still write <m>F_f = \mu_r F_g</m>, this coefficient of rolling friction (a.k.a. rolling resistance) is significantly smaller (on the order of 0.001) and depends on the size of the rolling object.  (An extra complication is that the weight of the object impacts the deformation of the object and the surface, so <m>\mu</m> as depends on the weight, meaning that the equation depends on <m>F_g</m> in multiple ways.)</p>
+                                Although we can still write <m>F_f = \mu_r F_g</m>, this coefficient of rolling friction (a.k.a. rolling resistance) is significantly smaller (on the order of 0.001) and depends on<fn>An extra complication is that the weight of the object impacts the deformation of the object and the surface, so <m>\mu</m> also depends on the weight, meaning that the equation depends on <m>F_g</m> in multiple ways.</fn> the size (radius) of the rolling object.</p>
                         </observation>
 
-                        <p>Maybe introduce rocking chairs as an investigation?  Note that desk chairs that tilt are essentially rocking chairs where the rocking mechanism is hidden inside the piece that connects the seat of the chair to the support post.</p>
+                        <p>At this point, you should be able to imagine a variety of applications where you expect to see rolling friction rather than kinetic friction.  Please answer <xref ref="ex-rolling-friction" text="type-local" /> to test yourself.</p>
+                        
+                        <p> Note that desk chairs that tilt are essentially rocking chairs where the rocking mechanism is hidden inside the piece that connects the seat of the chair to the support post.</p>
 
                         <investigation xml:id="irl-rocking-friction"><title>Seeing rolling friction in rocking chairs</title>
                                 <idx><h>friction</h><h>rolling</h><h>investigation</h></idx>
@@ -5068,14 +5117,14 @@ Also check these folks out on Wikipedia.... of course
 -->
                         <biblio type="raw" xml:id="bib-friction-popov2017">
                                 <!-- As of Oct, 2017 -->
-                                Popov, V.L. <title>Contact Mechanics and Friction: Physical Principles and Applications</title>, 2017, Springer Berlin Heidelberg; <url href="https://books.google.com/books?id=qT5RDgAAQBAJ&amp;pg=PA4&amp;lpg=PA4&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=I4SUYUbWQW&amp;sig=1FhgbMd-9NM7i4txa7GBtgntn4s&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKDAA#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 4</url>. (ISBN 9783662530818) 
+                                Popov, V.L. <title>Contact Mechanics and Friction: Physical Principles and Applications</title>, 2017, Springer Berlin Heidelberg; <url href="https://books.google.com/books?id=qT5RDgAAQBAJ&amp;pg=PA4&amp;lpg=PA4&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=I4SUYUbWQW&amp;sig=1FhgbMd-9NM7i4txa7GBtgntn4s&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKDAA#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 4</url>. (ISBN 9783662530818)
                                 <url href="https://books.google.com/books?id=qT5RDgAAQBAJ" />.
                         </biblio>
                         <biblio type="raw" xml:id="bib-friction-kerr2014">
                                 <!-- As of Oct, 2017 -->
                                 ed. Kerr, A.D. <title>Railroad Track Mechanics and Technology: Proceedings of a Symposium Held at Princeton University, April 21 - 23, 1975</title>, 2014, Elsevier Science;  <url href="https://books.google.com/books?id=ggU6AwAAQBAJ&amp;pg=PA336&amp;lpg=PA336&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=oCzWJiE3N9&amp;sig=3TSLyE7if10AHMKlgHxD6yWow7w&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKzAB#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 336</url>.  (ISBN 9781483188218)
                                 <url href="https://books.google.com/books?id=ggU6AwAAQBAJ" />.
-                        </biblio>          
+                        </biblio>
                         <biblio type="raw" xml:id="bib-friction-blau2008">
                                 <!-- As of Oct, 2017 -->
                                 Blau, P.J. <title>Friction Science and Technology: From Concepts to Applications, 2e</title> (Mechanical Engineering Series), 2008, CRC Press; <url href="https://books.google.com/books?id=5pIpV1LY5HMC&amp;pg=PA8&amp;lpg=PA8&amp;dq=hooke+rolling+friction&amp;source=bl&amp;ots=oT-uQSgTUl&amp;sig=BFS0NgjHKZwRgYk5MKx75GNoG48&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjQhOD6vpvXAhVGrVQKHdISCqAQ6AEIMjAC#v=onepage&amp;q=hooke%20rolling%20friction&amp;f=false">pg 12</url>. (ISBN 9781420054101)
@@ -6433,10 +6482,17 @@ Also check these folks out on Wikipedia.... of course
                 </statement>
                 </heuristic>
 
-                <p>Distinguish the motion of the center-of-mass (of <q>the body</q>) from the motion of a specific piece of the object, such as the top of the wheel or bottom of the wheel versus the axle (which is connected to the bicycle).  Define an axis of rotation.</p>
+                <todo>Link this relative motion to the section on inertial reference frames.</todo>
+                <p>First, consider a merry-go-round for which <m>\vec v</m> is the tangential velocity of the object, which is changing (and hence the object is accelerating).  This motion is <em>relative to the axis of rotation</em>.</p>
+                
+                <todo>Link this relative motion to the section on inertial reference frames.</todo>
+                <p xml:id="p-st-vwr">Second, consider the motion of a wheel along the ground.  The edge of the wheel has this <m>\vec v</m> as its tangential motion (<em>relative to the axle</em>).  <em>Assuming</em> that the wheel <xref ref="clarify-no-slip" text="title">rolls without slipping</xref>, it is <em>also true</em> that the edge of the wheel that is touching the ground is not moving <em>relative to the ground</em>, so the ground is moving (backwards) with this same velocity <em>relative to the axle</em>.  Flipping the perspective, the axle of the wheel must be moving with <m>-\vec v</m> <em>relative to the ground</em>.</p>
+
         </section>
 
         <section><title>The Equations of Rotational Motion</title>
+        
+                <p>Use <xref ref="s-rotation-language" text="type-global" /> to connect the translational motion to the rotational motion.</p>
 
         <investigation xml:id="irl-poolrotmot"><title>Rolling pool balls</title><idx><h>pool</h><h>real life</h></idx>
                 <introduction>
@@ -6480,7 +6536,8 @@ Also check these folks out on Wikipedia.... of course
 
         <section><title>Moment of Inertia</title>
 
-        <p>In this <url href="https://www.sciencefriday.com/videos/spinning-eggs-in-space/">video of eggs in space</url> from 14 Oct, 2011 created by
+        <aside><title>Paragraph referenced by</title><p><xref ref="irl-rolling-friction" text="type-global" /></p></aside>
+        <p xml:id="p-mom-inert-eggs">In this <url href="https://www.sciencefriday.com/videos/spinning-eggs-in-space/">video of eggs in space</url> from 14 Oct, 2011 created by
         <url href="https://www.sciencefriday.com/">Science Friday</url>, we can watch how the momentum of inertia affects the way fresh eggs spin differently than hard-boiled eggs.</p>
 
         </section>
@@ -7163,13 +7220,13 @@ Also check these folks out on Wikipedia.... of course
                         </p>
                 </aside>
                         <p>pst-electricfield</p>
-                        
+
                         <assemblage xml:id="as-coulomb"><title>Coulomb's Law</title>
                                 <p>Coulomb's Law of the electrical interaction is
                                 <men> \vec F = k \frac{(q_1)(q_2)}{r_{12}^2} \hat r_{12}</men>
                                 </p>
                         </assemblage>
-                        
+
                         </introduction>
 
                         <subsubsection><title>Examples</title>

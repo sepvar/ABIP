@@ -66,11 +66,13 @@ checkref: ABIP.xml
 
 counterr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml 
 	@echo "Counting lines from checking for specific types of errors"
-	@echo `java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | wc -l`" errors (30 known errors)"
+	@echo `java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | wc -l`" errors (41 known errors)"
 	@echo -e "part: \t\t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"part" | wc -l`" \t(24 known, hidden)"
 	@echo -e "font: \t\t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"font" | wc -l`" \t(4 known, hidden)"
 	@echo -e "paragraph: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"paragraph" | wc -l`" \t(1 known, hidden)"
 	@echo -e "tabular: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"tabular" | wc -l`" \t(1 known, hidden)"
+	@export TEMPVAR=`grep -n "Known tag abuse 2" ABIP.xml | sed s/:.*//g`
+	@echo -e "license: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ${TEMPVAR} | wc -l`" \t(11 known, hidden)"
 
 toperr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml 
 	java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | head -5
@@ -80,7 +82,8 @@ typeerr: counterr ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng 
 		grep -v ": element \"part" | \
 		grep -v ": element \"font" | \
 		grep -v `grep -n "xml:id=\"p-intuition-motion" ABIP.xml | sed s/:.*//g` | \
-		grep -v `grep -n "Known tag abuse" ABIP.xml | sed s/:.*//g` | \
+		grep -v `grep -n "Known tag abuse 1" ABIP.xml | sed s/:.*//g` | \
+		grep -v `grep -n "Known tag abuse 2" ABIP.xml | sed s/:.*//g` | \
 		sed 's/.*:\([0-9][0-9]*\):\([0-9][0-9]*\): error: element "\([a-zA-Z][a-zA-Z]*\)".*/\3 line \1:\2/g' | \
 		sort -k1
 
