@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mathbook xml:lang="en-US">
+<pretext xml:lang="en-US">
 
     <docinfo>
         <macros>
@@ -837,7 +837,7 @@
 
                 <example xml:id="ex-F-and-C"><title>Fahrenheit and Centigrade</title>
                         <statement>
-                                <aside><title>Example referenced by:</title><p></p></aside>
+                                <aside><title>Example referenced by</title><p></p></aside>
                                 <p>The <m>\frac{9}{5}</m> is actually <m>\frac{180\unit{^\circ F}}{100\unit{^\circ C}} = \frac{212\unit{^\circ F} - 32\unit{^\circ F}}{100\unit{^\circ C}-0\unit{^\circ C}}</m> as in slope is rise over run.</p>
                         </statement>
                 </example>
@@ -1423,7 +1423,7 @@
                                         <p>The patterns that you see when you drop objects is that objects fall faster than humans are used to paying attention to.  This Investigation <!-- <xref ref="irl-freefall" text="type-global" /> --> shows you how you can pay close attention to the patterns that result from observing falling objects. You should go do those experiments before reading further.  Go ahead.  I'll wait.</p>
                                 </prelude>
                                 <introduction>
-                                        <aside><title>Investigation referenced by:</title>
+                                        <aside><title>Investigation referenced by</title>
                                                 <p><xref ref="inv-friction-max" text="type-global" /></p>
                                         </aside>
                                         <p>Because \studentC<idx><h sortby="\studentC">\studentC</h></idx> is a pitcher on the local baseball team, \heC\ decides to drop a ball and watch what happens.  You and \studentD<idx><h sortby="\studentD">\studentD</h></idx> decide to join \himC.  \studentD\ provides a few other objects that can also be dropped: a tennis ball, a hammer, a small Wonder Woman toy, and a broken cell phone.  Some of these are dropped at the same time.</p>
@@ -4479,7 +4479,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <hint xml:id="H-friction-mouse-desk"><p>If the mouse is moving towards you and friction hinders that motion, how will the acceleration be related to the velocity?  Which of these is related to the force?</p></hint>
                                 <answer xml:id="A-friction-mouse-desk">
                                         <biographical><title>Touchstone (on-by)</title><p><xref ref="conv-on-by-type" text="title">the on-by notation</xref></p></biographical>
-                                        <p>Side note: there is a <em>normal</em> force <em>on</em> the mouse <em>by</em> the desk <m>(F_{mdN})</m> <em>upwards</em> that keeps the mouse from falling through the surface of the desk.  This normal force has two relevant relationships.  First, it has a <q>third-law pair</q> that implies there is a <em>downwards</em> <em>normal</em> force <em>on</em> the desk <em>by</em> the mouse, <m>F_{dmN}</m>. Second, have a normal force creates the potential for a frictional force, as seen by <xref ref="eq-friction" text="title">Equation</xref>.</p>
+                                        <p>Side note: there is a <em>normal</em> force <em>on</em> the mouse <em>by</em> the desk <m>(F_{mdN})</m> <em>upwards</em> that keeps the mouse from falling through the surface of the desk.  This normal force has two relevant relationships.  First, it has a <q>third-law pair</q> that implies there is a <em>downwards</em> <em>normal</em> force <em>on</em> the desk <em>by</em> the mouse, <m>F_{dmN}</m>. Second, having a normal force creates the potential for a frictional force, as seen by <xref ref="eq-friction" text="title">Equation</xref>.</p>
                                         <biographical><title>Touchstone (third-law pair)</title><p><xref ref="insight-force-type" text="title">third-law pairs</xref> are the <em>same type</em> of force acting <em>on different</em> objects</p></biographical>
                                         <p>As the mouse moves across the desk <em>towards</em> you, <xref ref="H-friction-mouse-desk" text="type-local" /> indicates that the frictional force on the mouse <m>(F_{mdf})</m> is <em>away</em> from you (and slows the mouse down).  It may be less obvious that there is also a <q>third-law pair</q> frictional force on the desk by the mouse <m>(F_{dmf})</m> which is <em>towards</em> you due to the <xref ref="ss-relvel" text="title">relative motion</xref> between the desk and the mouse.  You can see this if you imagine placing a tissue under the mouse and enacting the same motion.  The tissue will be pulled towards you by the mouse due to that frictional force pair.<fn><xref ref="as-NII" text="title" /> shows that given the same magnitude frictional force, the <em>massive</em> desk has <em>too small</em> of an acceleration to see, whereas the <em>very-slight mass</em> of the tissue allows us to see the <em>larger</em> acceleration of the tissue.</fn></p>
                                 </answer>
@@ -4491,10 +4491,17 @@ Earth feels a force by \studentZ\ to the left.
                                 <hint xml:id="h-friction-mug-acceleration"><title>Acceleration</title><p>To find the acceleration, use Newton's second law for the horizontal direction.  (See <xref ref="h-friction-mug-net" text="type-local" />.)</p></hint>
                                 <hint xml:id="h-friction-mug-distance"><title>Distance</title><p>There are <xref ref="d-EOM" text="title">two equations</xref> that involve the displacement.  One of them requires the time of motion, which is difficult (but not impossible) to find.  I suggest using the other equation.</p></hint>
                                 <hint xml:id="h-friction-mug-net"><title>net force</title>
-                                        <p>In the horizontal direction, the net force is the sum of the <m>x</m>-component of the gravitational force (which has no <m>x</m>-component), of the normal force (which also has no <m>x</m>-component),  and of the frictional force (which has no <m>y</m>-component); so you need the value of the frictional force. (See <xref ref="h-friction-mug-friction" text="type-local" />.)</p>
-                                        <p>In the vertical direction, the net force is the sum of the <m>y</m>-component of the gravitational force (which has no <m>x</m>-component), of the normal force (which also has no <m>x</m>-component),  and of the frictional force (which has no <m>y</m>-component); so you need to relate the vertical acceleration to the gravitational and normal forces. (See <xref ref="h-friction-mug-normal" text="type-local" />.)</p></hint>
+                                        <p><me> \vec F_\mathrm{net} = \vec F_g + \vec F_N + \vec F_f = m \vec a </me></p>
+                                        <p>In the horizontal direction, the net force is the sum of the <m>x</m>-component of the gravitational force (which has no <m>x</m>-component), of the normal force (which also has no <m>x</m>-component),  and of the frictional force (which has no <m>y</m>-component);
+                                        <me> \cancelto{0}{F_{Nx}} + \cancelto{0}{F_{gx}} + F_{fx} = m a_x </me>
+                                        so you need the value of the frictional force. (See <xref ref="h-friction-mug-friction" text="type-local" />.)
+                                        </p>
+                                        <p>In the vertical direction, the net force is the sum of the <m>y</m>-component of the gravitational force (which has no <m>x</m>-component), of the normal force (which also has no <m>x</m>-component),  and of the frictional force (which has no <m>y</m>-component);
+                                        <me> F_{Ny} + F_{gy} + \cancelto{0}{F_{fy}} = m \cancelto{0}{a_y} </me>
+                                        so you need to relate the vertical acceleration to the gravitational and normal forces. (See <xref ref="h-friction-mug-normal" text="type-local" />.)</p></hint>
                                 <hint xml:id="h-friction-mug-friction"><title>Frictional force</title>
-                                        <p>You can find the frictional force from the normal force with <xref ref="eq-friction" text="title">Equation</xref>.  (See <xref ref="h-friction-mug-normal" text="type-local" />.)</p></hint>
+                                        <p>You can find the frictional force from the normal force with <xref ref="eq-friction" text="title">Equation</xref>, where <m>\mu</m> is given and <m>F_N</m> is to be determined.  
+                                        (See <xref ref="h-friction-mug-normal" text="type-local" />.)</p></hint>
                                 <hint xml:id="h-friction-mug-normal"><title>Normal force</title>
                                         <p>You can find the normal force from Newton's second law in the vertical direction since the vertical-component of the acceleration is zero.
                                         <me> \vec F_N + \vec F_g = m \cancelto{0}{a_y} </me>
@@ -4507,8 +4514,11 @@ Earth feels a force by \studentZ\ to the left.
                                         <me> v_f^2 = v_i^2 + 2 \, a \, \Delta x </me>
                                         and solve for the displacement <m>(\Delta x)</m>.  In order to do this, we need the initial and final velocities and the acceleration.  We are given the initial velocity and, since the mug comes <xref ref="d-at-rest" text="title">to rest</xref>, we can easily deduce the final velocity <m>(0\unitfrac{m}{s})</m>.  As usual (recall <xref ref="se-netF-a" text="type-global" />), we can find the acceleration from Newton's second law (the hints give the justification for the steps)
                                         <me> a = \frac{F_f}{m} = \frac{\mu F_N}{m} = \frac{\mu (mg)}{m} = \mu g = (0.13)(9.81\unitfrac{m}{s^2}) = \sigfrac{1.2}{8}{m}{s^2}</me>
-                                        <alert>(Adjust this to indicate direction)</alert>
-                                        where you might notice that the mass cancels (consistent with <xref ref="ex-friction-mugs" text="type-local" />) and that you do not literally need to find the value of the normal or frictional forces.</p>
+                                        where you might notice three relevant features:
+                                        <ol><li><p>that the mass cancels (consistent with <xref ref="ex-friction-mugs" text="type-local" />),</p></li>
+                                                <li><p>that the second step (connecting <m>F_f</m> to <m>F_N</m>) makes this a magnitude equation (not a vector equation) so you will need to add the sign of <m>a</m> <q>by hand</q>, and </p></li>
+                                                <li><p>that you do not literally need to find the value of the normal or frictional forces.</p></li></ol>
+                                        </p>
                                         <p>Given the acceleration, we can find the displacement:
                                         <me> \Delta x = \frac{(\cancelto{0}{v_f})^2 - v_i^2}{2 \, a} = \frac{(0\unitfrac{m^2}{s^2})-(2.00\unitfrac{m}{s})^2}{2(-\sigfrac{1.2}{8}{m}{s^2})} = \sig{1.5}{7}{m} </me>
                                         </p>
@@ -4531,7 +4541,7 @@ Earth feels a force by \studentZ\ to the left.
                                 </p>
                         </aside>
                         <observation xml:id="d-friction-area"><title>Friction does not depend on the area of contact</title>
-                                <p>One would not be wrong to imagine that the broader something is, the more it interacts with the surface it is dragged along, much like how a picnic blanket (or superhero cape!) collects many more twigs and leaves when it is dragged through the park. On the other hand, you might also notice that when you stand on the bed, you sing in further than when you lay on the bed.  It turns out that while more surface does tend to increase the opportunity for friction, this is balanced by the reduced pressure due to having the weight spread out<fn xml:id="fn-friction-area">Recall <xref ref="p-pressure" text="title">discussion of the units of pressure</xref>.</fn>, thereby maintaining the same normal force regardless<fn>You might be relieved to learn that this is only mostly true.  The microscopic area of contact does matter, but that gets back to the roughness of surface discussion in <xref ref="obs-friction-mu" text="type-local" />.</fn> of the amount of area in contact.   Speaking of pressure, you might be interested to note that Amontons is also known for his work on barometers (see <xref ref="ss-barometrics" text="title" />).</p>
+                                <p>One would not be wrong to imagine that the broader something is, the more it interacts with the surface it is dragged along, much like how a picnic blanket (or superhero cape!) collects many more twigs and leaves when it is held open and wide while being dragged through the park than when it is dragged by one corner. On the other hand, you might also notice that when you stand on the bed, you sink in further than when you lay on the bed.  It turns out that while more surface does tend to increase the opportunity for friction, this is balanced by the reduced pressure due to having the weight spread out<fn xml:id="fn-friction-area">Recall <xref ref="p-pressure" text="title">discussion of the units of pressure</xref>.</fn>, thereby maintaining the same normal force regardless<fn>You might be relieved to learn that this is only mostly true.  The microscopic area of contact does matter, but that gets back to the roughness of surface discussion in <xref ref="obs-friction-mu" text="type-local" />.</fn> of the amount of area in contact.   Speaking of pressure, you might be interested to note that Amontons is also known for his work on barometers (see <xref ref="ss-barometrics" text="title" />).</p>
                         </observation>
                         <p>As with <xref ref="obs-friction-normal" text="type-local" />, this observation was also made by Leonardo da Vinci in 1493 and, while still undiscovered in his notebooks, was rediscovered by Guillaume Amontons in 1699 <xref ref="bib-friction-hutchings" text="type-local" />, who wrote it as his second law of friction.</p>
                         <biographical><title>Touchstone (law)</title><p>Recall the <xref ref="s-law" text="title">description of a <q>law</q></xref>.</p></biographical>
@@ -4595,7 +4605,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <p xml:id="d-friction-static">Whereas <xref ref="d-friction-kinetic" text="title">kinetic friction</xref> describes the situation of two surfaces rubbing against each other as they slide past each other, static friction describes the case of two surfaces that <em>would slide</em> across each other <em>if</em> they weren't stuck.  Unlike kinetic friction, this <em>is</em> what you intend to happen when you are walking.  Your feet should not slip out from under you!  Before developing this further, please investigate how objects can be <q>stuck</q> to build your intuition.</p>
                         <investigation xml:id="inv-friction-static"><title>Push without moving</title>
-                                <introduction><p>Consider moving some heavy objects around your home.  (A refrigerator, bed, or couch make good examples to try on your own.  Although you might also try to push a small car or a heavy desk.  If you push a bookshelf then you should careful not to spill the contents.)</p></introduction>
+                                <introduction><p>Consider moving some heavy objects around your home.  (A refrigerator, bed, or couch make good examples to try on your own.  Although you might also try to push a small car or a heavy desk.  If you push something tall, like a refrigerator or a bookshelf then you should careful not to topple the object or spill the contents.)</p></introduction>
                                 <task xml:id="task-friction-start">
                                         <statement>
                                                 <p>Push gently on the object.  Notice that it is possible to be pushing on it while it continues to be <xref ref="def-equilibrium" text="title">in equilibrium</xref>.  Identify all forces acting on the object and the size of each relative to the amount you are pushing.</p>
@@ -4669,7 +4679,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <example xml:id="ex-friction-lifting"><title>Gosh, I'm thirsty (lifting objects uses static friction)</title>
                                 <statement>
-                                        <p>You are provided a pint of water<fn>See <xref ref="qp-weight-of-a-pint" text="title">Problem</xref>.</fn> with a weight of <m>F_g=8.78\unit{N}</m>.  Assuming the glass is cylindrical (not conical) and the coefficient of friction between your fingers and the glass is <m>\mu_s=0.35</m>, compute the normal force needed to lift the glass.</p>
+                                        <p>You are provided a pint of water<fn>See <xref ref="qp-weight-of-a-pint" text="global">Problem</xref>.</fn> with a weight of <m>F_g=8.78\unit{N}</m>.  Assuming the glass is cylindrical (not conical) and the coefficient of friction between your fingers and the glass is <m>\mu_s=0.35</m>, compute the normal force needed to lift the glass.</p>
                                 </statement>
                                 <hint>
                                         <p>Since lifting requires your fingers to not slide along the glass, this is a situation that requires static friction, not kinetic friction.  It does not matter that the glass will be accelerating upwards (with your hand); rather, what matters is that your fingers are not moving across the glass.</p>
@@ -4820,7 +4830,7 @@ Earth feels a force by \studentZ\ to the left.
                         </investigation>
                         </paragraphs>
 
-                        <aside><title>Paragraph referenced by:</title>
+                        <aside><title>Paragraph referenced by</title>
                                 <p><xref ref="inv-friction-max" text="type-global" /></p>
                         </aside>
                         <paragraphs xml:id="p-friction-repose"><title>Angle of repose</title>
@@ -4834,7 +4844,37 @@ Earth feels a force by \studentZ\ to the left.
                         </definition>
                         <p>Because of <xref ref="p-friction-static-larger" text="type-global" />, after the object begins to slide, it will accelerate down the ramp, rather than sliding at a constant speed.  On the other hand, since the surface (especially if it is unpolished wood) will likely have variable roughness along its length, it is possible that the coefficient of friction is different in different sections of the surface and the object might get stuck at some lower location.</p>
                         <example><title>Finding the angle of repose</title>
-                                <p>Make an example.</p>
+                                <statement><p>You meet a friend at the library to study for your physics class and she places her cell phone on top of your textbook!  You remember from class that the coefficient of friction between this particular phone case and the book cover is <m>\mu_s=.62</m>.  You did not get a chance to weigh her phone, so you will have to look it up on the internet.  Compute the angle at which the phone would start to slide across the book cover as you slowly open the book.</p></statement>
+                                <hint><title>mass</title><p>The mass should cancel from the equations, so you don't actually need to know the value of the mass.</p></hint>
+                                <hint><title>normal force</title><p>The normal force is normal to the surface even as the cover changes its orientation.</p></hint>
+                                <hint><title>gravitational force</title><p>The gravitational force is always straight towards the center of the Earth.</p></hint>
+                                <answer><p>The angle of repose turns out to be <m>\theta_r = \tan^{-1}(\mu_s) = \tan^{-1}(0.62) = \sig{31}{.8}{^\circ}</m>.</p></answer>
+                                <solution><p>As the cover is lifted, the normal force is only able to balance the component of the gravitational force that is perpendicular to the book cover
+                                        <m>F_N=(mg)\cos\theta</m>.  
+                                        While the angle is smaller than the angle of repose, the frictional force balances the component of the gravitational force that is parallel to the cover
+                                        <m>F_f = (mg)\sin\theta</m>.  
+                                        It is only when we reach the angle of repose that the frictional force reaches its maximum and we can relate <m>F_{f,\text{max}}=\mu_s F_N</m>.  
+                                        In this case, 
+                                        <me>\mu [ (mg) \cos\theta_r ] = (mg) \sin\theta_r </me> and the <m>mg</m> cancels leaving, <m>\mu = \frac{\sin\theta_r}{\cos\theta_r} = \tan\theta_r</m>.
+                                        Since we are given <m>\mu_s</m>, we can find the angle of repose from the inverse tangent (a.k.a. the arc-tangent, or atan):
+                                        <me> \theta_r = \tan^{-1}(\mu_s) = \tan^{-1}(0.62) = \sig{31}{.8}{^\circ}</me>.</p>
+                                        <p>You should test this experimentally.</p></solution>
+                        </example>
+                        <example><title>Using the angle of repose</title>
+                                <statement><p>You meet a friend at the library to study for your physics class and she places her cell phone on top of your textbook!  Wanting to <em>read</em> your book, you slowly lift the cover of your book and find that the phone slides off when you get to an angle of <m>38.1^\circ</m>.  (You apparently are a <em>very</em> good judge of angle.)  You did not get a chance to weigh her phone, so you will have to look it up on the internet.  Compute the coefficient of static friction for the phone.</p></statement>
+                                <hint><title>mass</title><p>The mass should cancel from the equations, so you don't actually need to know the value of the mass.</p></hint>
+                                <hint><title>normal force</title><p>The normal force is normal to the surface even as the cover changes its orientation.</p></hint>
+                                <hint><title>gravitational force</title><p>The gravitational force is always straight towards the center of the Earth.</p></hint>
+                                <answer><p>The coefficient of static friction turns out to be <m>\mu_s=\tan\theta = \tan(38.1^\circ) = 0.\sig{784}{1}{}</m></p></answer>
+                                <solution><p>As the cover is lifted, the normal force is only able to balance the component of the gravitational force that is perpendicular to the book cover
+                                        <m>F_N=(mg)\cos\theta</m>.
+                                        While the angle is smaller than the angle of repose, the frictional force balances the component of the gravitational force that is parallel to the cover
+                                        <m>F_f = (mg)\sin\theta</m>.
+                                        It is only when we reach the angle of repose that the frictional force reaches its maximum and we can relate <m>F_{f,\text{max}}=\mu_s F_N</m>.
+                                        In this case,
+                                        <me>\mu [ (mg) \cos\theta_r ] = (mg) \sin\theta_r </me> and the <m>mg</m> cancels leaving, <m>\mu = \frac{\sin\theta_r}{\cos\theta_r} = \tan\theta_r</m>.
+                                        Since we are given <m>\theta_r</m>, we can find the coefficient of friction directly:
+                                        <me> \mu_s=\tan\theta = \tan(38.1^\circ) = 0.\sig{784}{1}{}</me>.</p></solution>
                         </example>
 
                         <p>If you have ridden in a pick-up truck with heavy objects in the truck-bed, then you might notice when they shift. Driving up a steep incline or suddenly accelerating pulls objects to the back, driving downhill or stopping suddenly pulls objects to the front.</p>
@@ -4858,7 +4898,7 @@ Earth feels a force by \studentZ\ to the left.
                         </exploration>
                         </paragraphs>
 
-                        <aside><title>Paragraph referenced by:</title>
+                        <aside><title>Paragraph referenced by</title>
                                 <p><xref ref="inv-friction-max" text="type-global" /></p>
                         </aside>
                         <paragraphs xml:id="p-friction-inclined"><title>Inclined Planes</title><idx>inclined planes</idx><idx><h>plane</h><h>inclined</h></idx>
@@ -4930,14 +4970,14 @@ Earth feels a force by \studentZ\ to the left.
                                 <conclusion>
                                         <p><alert>Practical Consequence:</alert> It is useful to keep your car tires inflated to the appropriate level for the following reasons:
                                         <ul>
-                                                <li><p>Under-inflated tires are more easily deformed causing 
+                                                <li><p>Under-inflated tires are more easily deformed causing
                                                 <ul>
                                                         <li><p>increased rolling resistance, which requires more effort by the engine and reduces you gas milage,</p></li>
                                                         <li><p>more sideways-wiggle, which can cause reduced control, affect alignment, and create a <q>shimmy</q>,</p></li>
                                                         <li><p>wear on portions of the tire that were not designed to be in contact with the road (increasing the risk of creating a crack and a slow leak), and</p></li>
                                                         <li><p>uneven heating from the repeated deforming (increasing the risk of a blow-out).</p></li>
                                                 </ul></p></li>
-                                                <li><p>Over-inflated tires have less surface area in contact with the pavement and, 
+                                                <li><p>Over-inflated tires have less surface area in contact with the pavement and,
                                                 <ul>
                                                         <li><p>while kinetic friction is independent of the surface area in contact, the goal is to use static friction with rolling tires, which is larger than kinetic friction with skidding tires (see also ABS brakes),</p></li>
                                                         <li><p>having less surface area makes it easier to skip along the road and lose contact altogether (frictionless and no control), even if only for brief instants, and</p></li>
@@ -4947,7 +4987,7 @@ Earth feels a force by \studentZ\ to the left.
                                         To be clear, the risks are small if you are close to the standard pressure and don't drive much.  The further you are from the standard pressure and the more you drive, the bigger the risk.
                                         While you can find good information about tire inflation with a quick internet search, in October of 2017, <url href="https://www.discounttiredirect.com/learn/tire-pressure" /> had some good images of tires and the inappropriate wear patterns.</p></conclusion>
                                 <postlude>
-                                        <p>We should also describe some additional effects that can accompany what you just observed in the Investigation.  
+                                        <p>We should also describe some additional effects that can accompany what you just observed in the Investigation.
                                         <ul>
                                                 <li><p>A tire without a car feels static friction to allow it to roll, but not kinetic friction (assuming it is not sliding along the ground).</p></li>
                                                 <li><p>A tire that is connected to a car necessarily has a connection (at the axle) to the car, which is not rotating.  This means that there is necessarily some kinetic friction at that connection, although this is lubricated friction, not dry-sliding friction.  This connection is typically done with ball bearings, which means that there is additional friction in the case of the tire-and-car that is not present for the tire-alone.  Ball-bearings should also have rolling friction rather than kinetic friction and should be <url href="http://www.tribology-abc.com/abc/cof.htm#mu_lagers">designed to minimize the frictional effects</url>.</p></li>
@@ -4968,7 +5008,7 @@ Earth feels a force by \studentZ\ to the left.
                         </observation>
 
                         <p>At this point, you should be able to imagine a variety of applications where you expect to see rolling friction rather than kinetic friction.  Please answer <xref ref="ex-rolling-friction" text="type-local" /> to test yourself.</p>
-                        
+
                         <p> Note that desk chairs that tilt are essentially rocking chairs where the rocking mechanism is hidden inside the piece that connects the seat of the chair to the support post.</p>
 
                         <investigation xml:id="irl-rocking-friction"><title>Seeing rolling friction in rocking chairs</title>
@@ -5273,7 +5313,7 @@ Also check these folks out on Wikipedia.... of course
 
                         <p>The interplay of gravity and tension at various angles.</p>
 
-                        <aside><title>Paragraph referenced by:</title>
+                        <aside><title>Paragraph referenced by</title>
                                 <p><xref ref="p-friction-walking" text="title" /></p>
                         </aside>
                         <p>The discussion of walking refers to an inverted pendulum and uses the term <q> pivot point of an inverted pendulum</q>.</p>
@@ -6484,14 +6524,14 @@ Also check these folks out on Wikipedia.... of course
 
                 <todo>Link this relative motion to the section on inertial reference frames.</todo>
                 <p>First, consider a merry-go-round for which <m>\vec v</m> is the tangential velocity of the object, which is changing (and hence the object is accelerating).  This motion is <em>relative to the axis of rotation</em>.</p>
-                
+
                 <todo>Link this relative motion to the section on inertial reference frames.</todo>
                 <p xml:id="p-st-vwr">Second, consider the motion of a wheel along the ground.  The edge of the wheel has this <m>\vec v</m> as its tangential motion (<em>relative to the axle</em>).  <em>Assuming</em> that the wheel <xref ref="clarify-no-slip" text="title">rolls without slipping</xref>, it is <em>also true</em> that the edge of the wheel that is touching the ground is not moving <em>relative to the ground</em>, so the ground is moving (backwards) with this same velocity <em>relative to the axle</em>.  Flipping the perspective, the axle of the wheel must be moving with <m>-\vec v</m> <em>relative to the ground</em>.</p>
 
         </section>
 
         <section><title>The Equations of Rotational Motion</title>
-        
+
                 <p>Use <xref ref="s-rotation-language" text="type-global" /> to connect the translational motion to the rotational motion.</p>
 
         <investigation xml:id="irl-poolrotmot"><title>Rolling pool balls</title><idx><h>pool</h><h>real life</h></idx>
@@ -7715,5 +7755,4 @@ I have emailed her.  NO REPLY.
 
 </backmatter>
 </book>
-</mathbook>
-
+</pretext>

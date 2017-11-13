@@ -28,3 +28,5 @@ colortrouble.*
 *.synctex
 *.tdo
 *.toc
+#ignore minimal files
+minimal-*
