@@ -506,7 +506,7 @@
 
         <p xml:id="d-physicspatterns">Some patterns that you might experience help us take very different experiences and group them together.  For example, there are ways in which <xref ref="d-freefall" text="title">dropping your keys</xref> and <xref ref="d-ballistic" text="title">throwing a dog toy</xref> are very similar.  They both fall, even thought the fall along rather different paths.  There are also patterns that you experience that might look very similar but can be treated very differently.  For example, the path of baseball pitch (See <xref ref="irl-nonparabolic"  text="type-global" />.) is very different for a fast ball compared to a slider, a curve ball, or a knuckleball.</p>
 
-                <assemblage>
+<!--                 <assemblage>  -->
                 <figure xml:id="f-BoonePark">
                         <caption>Life is full of examples of physics all around us. </caption>
                         <image xml:id="i-BoonePark" source="images/i-BoonePark.jpg">
@@ -515,7 +515,7 @@
                         </description>
                         </image>
                 </figure>
-                </assemblage>
+<!--                </assemblage>  -->
 
         </introduction>
 
@@ -671,7 +671,7 @@
         <todo>I would love for this to be a mouse-over in the equation</todo>
         <todo>Consider "chunking" the "story" with colors to indicate the pieces.</todo>
 
-	<assemblage>
+<!--	<assemblage> -->
                 <table>
                 <caption>An example of how the math describes the <q>story-of</q> a physical situation.</caption>
                 <tabular>
@@ -701,12 +701,12 @@
                     </row>
                 </tabular>
                 </table>
-	</assemblage>
+<!--	</assemblage> -->
 
         <p>We will see this particular story in more detail with <xref ref="ex-baking"  text="type-global" /> when \studentA<idx><h sortby="\studentA">\studentA</h></idx> prepares to bake some bread for \hisA\ friends.  Some of the more important equations are listed below.  By jumping between these narratives, you can get a better sense of how to think about physics in general.        </p>
         <todo>Is there a way to include something in the \LaTeX version but not in the HTML version? (such as \pageref{ex:baking})</todo>
 
-	<assemblage>
+<!--	<assemblage> -->
         <todo>Is there a way to include something in the \LaTeX version but not in the HTML version? (such as \pageref{st-Fma})</todo>
                 <table>
                 <caption>Locations of the <q>Story of</q> various equations</caption>
@@ -724,7 +724,7 @@
                 </tabular>
                 </table>
         <todo>Decide if should use the "public version" or the "me version" (which uses listofstorys).</todo>
-	</assemblage>
+<!--	</assemblage>  -->
 
         </section>
         <section xml:id="s-SI-MKS"><title>The Metric System</title>
@@ -897,9 +897,17 @@
         </section>
         <section><title>A graph is worth a thousand pictures</title>
 
-                <subsection><title>Coordinate Systems</title>
+                <subsection xml:id="ss-coordinate-systems"><title>Coordinate Systems</title>
+                <aside><title>Subsection referenced by</title>
+                        <p>
+                        <xref ref="d-grav-coordinate-system"  text="title">Gravity's choice of coordinate system</xref>,
+                        <xref ref="ex-inclined-plane"  text="type-global" />
+                        </p>
+                </aside>
 
                 <p> Discussion of the choice of origin (possible reference to zero-value of the potential energy)</p>
+
+                <p> Discussion of the choice of orientation of the axes. Look ahead to <xref ref="d-grav-coordinate-system" text="title">(1) how gravity prejudices us to use vertical and horizontal</xref> and (2) how inclined planes, like in <xref ref="ex-inclined-plane" text="type-global" />, encourage us to skew the orientation.</p>
 
                 <p> Discussion of the choice of the positive-direction (possible reference to falling objects and using positive-up versus positive-down)</p>
 
@@ -926,7 +934,7 @@
 
                 <p>[Quick review of parameters and variables of <m>y=mx+b</m> and <m>y=ax^2+bx+c</m>.]</p>
 
-                <assemblage>
+<!--                 <assemblage>  -->
                 <figure xml:id="f-parabola" >
                         <caption>A random parabola</caption>
                         <image xml:id="i-parabola" width="50%">
@@ -943,7 +951,7 @@
                         </latex-image-code>
                         </image>
                 </figure>
-                </assemblage>
+<!--                </assemblage>  -->
 
                 </subsection>
         </section>
@@ -3416,13 +3424,16 @@ Earth feels a force by \studentZ\ to the left.
                 <p>We can investigate what happens when the gravitational force is the only force acting on an object by holding it in the air and dropping it<idx>freefall</idx>.  One of the complications during such an experiment was discussed in <xref ref="ss-airresistance" text="type-hybrid" />.  If we drop a sheet of paper, there is air resistance in addition to the gravitational force.  For this section, I will assume that the mass-to-surface-area ratio is large enough that we can effectively ignore the air resistance.  A second consideration that allows this approximation is that (as discussed in <xref ref="ss-air-resistance" text="type-global" />) the air resistance depends on the speed of the object, so as long as the objects fall for a short distance or do not get a significant speed, then we can ignore air resistance.  You should note that when you are deciding is a speed is significant, consider that baseballs hit (fly balls) by college athletes do not follow a parabolic path because of air resistance.</p>
                 <biographical><title>Touchstone (mostly true)</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>. For the vast majority of objects we drop (through the atmosphere) we don't have to worry about air resistance.</p></biographical>
 
+                <aside><title>Paragraph referenced by</title><p><xref ref="ex-inclined-plane" text="type-global" /></p></aside>
+                <p xml:id="d-grav-coordinate-system">Before we get into too much detail, we should pause here and recognize that the force of gravity is likely the underlying reason for our intrinsically human perspective that vertical and horizontal are the <q>natural</q> orientation of any <xref ref="ss-coordinate-systems" text="title">coordinate system</xref>.  That is to say, it is the combination of the vector nature of <xref ref="as-NII" text="title" /> combined with the fact that gravity pulls (and therefore accelerates) objects <q>downwards</q> (by which we mean <q>towards the center of the Earth</q>).  When the object is in <xref ref="def-freefall" text="title">freefall</xref>, its acceleration is pointing along the vertical axis with no component along the horizontal axis.  The awareness of this makes the horizontal component of Newton's second law convenient because <m>F_{\text{net},x} = m \cancelto{0}{a_x}</m>.  On the other hand, if we drag something along the ground, then it has no vertical acceleration and only (possibly) a horizontal acceleration, which makes the vertical component convenient because <m>F_{\text{net},y} = m \cancelto{0}{a_y}</m>.  It is (nearly) always convenient (meaning <q>easier to solve mathematically</q>) if we can choose our coordinate system so that one of the components of the acceleration (either <m>a_x</m> or <m>a_y</m>) is equal to zero.</p>
+
                 <p  xml:id="d-Fgrav">Since objects fall faster than humans are used to paying attention to, the patterns are difficult to see.  <xref ref="irl-freefall" text="type-hybrid" /> shows you how you can pay close attention to the patterns that result from observing falling objects.  You should go do those experiments before reading further.  Go ahead.  I'll wait.</p>
 
                 <p xml:id="d-Fgball">You did do them, right?  You're not just reading ahead?  Really?  OK.  Doing that experiment will help you see (1) that everything falls at the same rate and (2) that objects accelerate as they fall.  This first point is a bit less intuitive and will be discussed further in <xref ref="ss-equivmm" text="type-hybrid" />.  This second point should be exactly what you expect, when you consider <xref ref="as-NII" text="title">Newton's second Law</xref>: If there is only one force (the gravitational force), then the object cannot be in <xref ref="sss-equilibrium" text="title">equilibrium</xref> and it must be accelerating.  (You should notice that this is the language of <xref ref="st-Fma" text="title">the story of Newton's second law</xref>.)</p>
 
                 <biographical><title>Touchstone (on-by)</title><p><xref ref="conv-on-by" text="title">the on-by notation</xref></p></biographical>
                 <p>In order to evaluate this further, let's consider a specific object, like a baseball.  Our baseball has a mass of <m>m_b = 0.145\unit{kg}</m>.  If the only force acting <em>on</em> the ball is the gravitational force <em>by</em> the Earth, then the net force is the gravitational force: <m>\vec F_\mathrm{net} = \vec F_{bEg}</m>.
-                Here the subscripts are <m>b</m> (because the force is on the <em>b</em>all), <m>E</m> (because the force is exerted by the <em>E</em>arth), and <m>g</m> (because it is a <em>g</em>ravitational force).  Since the acceleration is due to the gravitational force, I will use either <m>a_g</m> (usually when the object is in <xref ref="ss-freefall" text="title">freefall</xref> and therefore accelerating at this rate) or <m>g</m> (usually when the object is not actually accelerating at that rate).  With this notation, Newton's second law becomes:
+                Here the subscripts are <m>b</m> (because the force is on the <em>b</em>all), <m>E</m> (because the force is exerted by the <em>E</em>arth), and <m>g</m> (because it is a <em>g</em>ravitational force).  Since the acceleration is due to the gravitational force, I will use either <m>a_g</m> (usually when the object is in <xref ref="def-freefall" text="title">freefall</xref> and therefore accelerating at this rate) or <m>g</m> (usually when the object is not actually accelerating at that rate).  With this notation, Newton's second law becomes:
                 <me> \vec F_{bEg} = m_b \vec a_g </me>
                 At this point, we know the mass, but we don't know the force or the acceleration.  However, we have conveniently already done the experiment (recall <xref ref="ex-freefall" text="type-hybrid"/>) that will tell us the acceleration is <m>a_g = 9.81\unitfrac{m}{s^2}</m> downwards.  (Recall that <q>downwards</q> is the direction of the vector, which can be expressed as <m>-\jhat</m>.)  If we know the mass and the acceleration, then we can compute the force.</p>
 
@@ -3487,7 +3498,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p xml:id="d-weightmass">Because of the peculiarities in the <xref ref="p-defpound" text="title">definition of pound</xref> it will be useful to build some intuition about masses in terms of kilograms and Newtons.  <xref ref="t-weightmass" text="type-hybrid" /> lists the mass of some common objects and, using the standard value for <m>g</m>, their corresponding weights. <xref ref="c-weightmass" text="type-hybrid" /> asks you to estimate the mass of some other common objects.  <xref ref="c-massweight" text="type-hybrid" /> asks you to think of common objects with a specified mass.</p>
 
-                <assemblage>
+<!--                 <assemblage>  -->
                 <table xml:id="t-weightmass"> <!-- -->
                 <caption>The list of objects is intended to give a sense of scale so that the reader can better estimate the value of the mass of an object.  You might notice that (except for the apple) each of these is between 4 and 4.5 times heavier than the previous object.  Note that these are rough estimates; for example, while the author weighs about <m>200\unit{lbs}</m> this is not typical, nor average.
                 <!-- reference weight of an apple:  \url{http://www.applejournal.com/ref.htm} -->
@@ -3502,7 +3513,7 @@ Earth feels a force by \studentZ\ to the left.
                         <row><cell>large pick-up truck</cell> <cell>4000</cell> <cell><m>1.81\ten{3}</m></cell> <cell><m>1.78\ten{4}</m></cell></row>
                 </tabular>
                 </table>
-                </assemblage>
+<!--                 </assemblage>  -->
 
                 <p>Now let's do some calculations<ellipsis /></p>
 
@@ -3511,7 +3522,7 @@ Earth feels a force by \studentZ\ to the left.
                         <statement>
                         <p>\studentA<idx><h sortby="\studentA">\studentA</h></idx> notices that \heA\ needs to exert <m>F=1.5\unit{N}</m> to support the apple listed in <xref ref="t-weightmass" text="type-hybrid" />. \HeA\ then drops it  and notices its acceleration of <m>9.81\unitfrac{m}{s^2}</m>.  \HeA\ computes the mass to be
                                 <me> m = \frac{F_g}{a_a} \ = \ \frac{1.5\unit{N}}{9.81\unitfrac{m}{s^2}} \ = \ \frac{1.5\unitfrac{kg \cdot m}{s^2}}{9.81\unitfrac{m}{s^2}} \ = \ 0.\sig{15}{3}{kg} </me>
-                        (If you know the weight, you can compute the mass, even if the mass is not actually in freefall.)
+                        (If you know the weight, you can compute the mass, even if the mass is not actually in <xref ref="def-freefall" text="title">freefall</xref>.)
                         </p></statement>
                 </example>
 
@@ -3614,7 +3625,7 @@ Earth feels a force by \studentZ\ to the left.
                         <answer xml:id="A-gpeaks"><p>In addition to being an oblate spheroid (<xref ref="fn-oblate" text="type-local" />), the Earth has mountains and valleys.  Since the strength of the gravitational interaction depends (among other things) on how far you are from the center (slightly weaker further away), the acceleration due to gravity is smaller when you are at at high altitudes, such as Denver, CO and Mount Everest. </p> </answer>
                 </example>
 
-                <assemblage>
+<!--                <assemblage>  -->
                 <table xml:id="t-gworld">
                 <caption>
                         Comparison of <m>g</m> at a few places on Earth. (See <xref ref="fn-compute-g" text="type-global" />.) <xref ref="se-t-gworld" text="type-hybrid" /> considers some patterns in this table.
@@ -3652,7 +3663,7 @@ Earth feels a force by \studentZ\ to the left.
                 </tabular>
                 </table>
                 <todo>Gather values of $g$ at various locations.  Wiki has a list, but need to find the source.  Wolfram has numbers, but they seem to be calculated off a formula, not measurements.  (url href="http://www.physics.montana.edu/demonstrations/video/1\underline{\ }mechanics/demos/localgravitychart.html")U Montana(/url) has values but no reference.  (url href="http://www.calpoly.edu/$\tilde{\ }$gthorncr/ME302/documents/AccuracyofGravity.pdf")Glen Thorncroft at Cal Poly(/url) has a formula and lists the level of each effect.</todo>
-                </assemblage>
+<!--                </assemblage>  -->
 
 
                 </subsection>
@@ -3687,7 +3698,7 @@ Earth feels a force by \studentZ\ to the left.
                 <aside><title>Etymology (normal)</title><idx><h>etymology</h><h>normal force</h></idx>
                         <p>See text.</p>
                 </aside>
-                <insight><p>In the context of forces, the normal force is the force that a surface exerts to keep objects from passing through them.  The direction of this force is always in the outward direction, normal (perpendicular) to the surface.</p></insight>
+                <insight xml:id="insight-normal-surface"><p>In the context of forces, the normal force is the force that a surface exerts to keep objects from passing through them.  The direction of this force is always in the outward direction, normal (perpendicular) to the surface.</p></insight>
 
                 <todo>Do we need to repeat the example here? no?</todo>
                 <p>Let's consider some specific situations<ellipsis /> In <xref ref="se-FNB" text="type-global" />, \studentB\ felt the downwards gravitational force even while \heB\ was standing on the ground.  We noticed that \heB\ was not falling (and so not accelerating).  Colloquially, we say that the ground is supporting \studentB.  This support force is keeping \studentB\ from passing through the floor; this is a normal force.  The normal force from the floor is acting upwards, which is normal (perpendicular) to the surface of the floor.  <xref ref="f-firstFBDupdate" text="type-global" /> updates the free-body diagrams of <xref ref="f-firstFBD" text="type-global" /> to show how the gravitational and normal forces impact that calculation.</p>
@@ -3696,6 +3707,7 @@ Earth feels a force by \studentZ\ to the left.
                         <title>People pushing a box also feel the gravitational and the normal forces</title>
                         <idx><h>free-body diagrams</h><h>images</h></idx>
 
+                        <aside><title>Example referenced by</title><p><xref ref="p-intro-inclined-planes" text="title">Introduction of inclined planes</xref></p></aside>
                         <p>Let's start from a familiar example so that we focus our attention on the <em>new</em> aspect.  Starting from <xref ref="f-firstFBD" text="type-global" />, we can observe that each of the three bodies also has a downwards gravitational force.  This is analogous to the calculation in <xref ref="se-weightA" text="type-global" />, which was only for \studentA<idx><h sortby="\studentA">\studentA</h></idx>; but you can calculate the weight for the mass in <xref ref="se-netF-a" text="type-global" /> and \studentB<idx><h sortby="\studentB">\studentB</h></idx>'s weight was computed in <xref ref="se-FNB" text="type-global" />.  In addition to the downward gravitational force (the weight), Newton's second law and the fact that nothing is accelerating up or down together tells us that there must also be a normal force on each body.  This is analogous to the calculation in <xref ref="se-FNB" text="type-global" />, which was only for \studentB; but you can deduce it for the object and for \studentA.</p>
                         <figure xml:id="f1-firstFBDupdate">
                                 <caption>\studentA\ and \studentB\ push on a box</caption>
@@ -3914,6 +3926,7 @@ Earth feels a force by \studentZ\ to the left.
                 <example xml:id="se-tree">
                         <title>The normal force stops a crashing car</title>
                         <statement>
+                                <aside><title>Example referenced by</title><p><xref ref="p-intro-inclined-planes" text="title">Introduction of inclined planes</xref></p></aside>
                                 <p>\studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> is driving home after a late night of studying at the library.  \HeZ\ is kind of tired and drifts off during the drive.  While traveling <m>\vec v_i = 13.0\unitfrac ms \ihat</m>, \studentZ\ runs into a tree, bringing \hisZ\ car <m>(m=2.1\ten{3}\unit{kg})</m> to a halt in <m>\Delta t = 0.243\unit s</m>.  (\studentZ\ remains unharmed because \heZ\ was awake enough to wear \hisZ\ seatbelt and had a car with a functioning airbag.  Whew.)  Find the normal force by the tree on the car. </p>
 
                                 <sidebyside widths="30% 70%">
@@ -3976,6 +3989,7 @@ Earth feels a force by \studentZ\ to the left.
                 <example xml:id="se-ceiling">
                         <title>The normal force acts to reflect objects off a surface (ceiling)</title>
                         <statement>
+                                <aside><title>Example referenced by</title><p><xref ref="p-intro-inclined-planes" text="title">Introduction of inclined planes</xref></p></aside>
                                 <p>\studentC<idx><h sortby="\studentC">\studentC</h></idx> recalls that one time \heC\ got bored one day in physics class (what?!?) and tossed a baseball (<m>m_b = 0.145\unit{kg}</m>) at the ceiling<ellipsis /> a little too hard <ellipsis /> as recounted in <xref ref="ex-ceiling" text="type-global"/>.  The acceleration during that collision with the ceiling was <m>\vec a = - \sigfrac{28.0}{9}{m}{s^2} \jhat</m>.  Find the normal force by the ceiling on the ball.</p>
                         </statement>
 
@@ -4236,8 +4250,84 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-N-inclined-planes">
                         <title>The normal force and inclined planes</title>
+                        <idx>inclined planes</idx><idx><h>plane</h><h>inclined</h></idx>
 
-                <p>Explain inclined planes here with gravity pointing straight down and the normal force at an angle.  This leaves a component of the gravitational force to accelerate the object down the incline. Reference this from friction (two places marked with a todo).</p>
+                        <todo>Should radially outwards reference the section on math?</todo>
+                        <p xml:id="p-intro-inclined-planes">With our <xref ref="insight-normal-surface" text="title">understanding of the normal force</xref>, we have seen examples of the normal force pointing <xref ref="f-firstFBDupdate" text="title">upwards from the ground</xref>, <xref ref="se-ceiling" text="title">downwards off the ceiling</xref>, and <xref ref="se-tree" text="title">sideways off of a vertical surface</xref>.  If you consider a the trunk of a tree or the edge of a wheel, the normal direction is radially outwards (in the direction of the spokes of the wheel).  
+                        </p>
+                        
+                        <exercise><title>Draw an oblong sun</title>
+                                <statement><p>When you draw a circle that represents the sun, you typically draw the light rays coming off the sun in the radially outwards direction.  For this exercise, draw 
+                                <ol><li><p>the rays coming from an egg-shaped (or pill-shaped) sun,  </p></li>
+                                        <li><p>the rays coming from a hill-shaped sun, </p></li>
+                                        <li><p>the rays coming from a mountain-shaped sun.</p></li>
+                                </ol></p></statement>
+                                <hint><title>egg-shape</title> <p>Eggs, as opposed to an ellipse, have one end larger than the other.  Pills tend to be oval or rounded-rectangles.  Any of these shapes will work for the effect we are going for.  The point is to avoid sharp corners.  When you add the outwards rays, notice how the rays connect with the surface of the shape.</p></hint>
+                                <hint><title>hill-shape</title> <p>I am expecting a hill-shape to be similar to a <q>bell-curve</q> or the graph of a <q>normal distribution</q>: flat on either side, curving upwards towards the middle and rounded at the top.  The rays you draw should be <q>outwards</q>.</p></hint>
+                                <hint><title>mountain-shape</title> <p>I am expecting a mountain-shape to be similar to a triangle or a pyramid, although you might have a more detailed image. The rays you draw should be <q>outwards</q>, but not like the lines drawn on the pyramid that appears on the back of a U.S. one-dollar bill.  Those rays are radial like they come from a circular object.  Your lines should come straight off the surface and emphasize the shape of the drawing rather than emitting from the central point.</p></hint>
+                                <answer><p>Your lines should come straight off the surface and emphasize the shape of the drawing rather than emitting from the central point.  If you do this, then your rays should indicate the normal direction, which is everywhere perpendicular to the surface.</p></answer>
+                        </exercise>
+                        
+                        <p>Another place where we see the normal force acting is on an inclined plane (a tilted flat surface).  You might experience this in a variety of places: driving up a steep hill, partially opening a hard-cover book or your laptop, and lifting one end of a table.  Let's consider a tilted table and imagine putting a couple of books under one side of a table so that it tilts to the left.  Most of the items you place on the table will not slide off because there is <xref ref="s-Ff" text="title">friction</xref>.  This will be considered in detail in <xref ref="sss-dry-sliding" text="type-global" />, especially under the topics of the <xref ref="p-friction-repose" text="title">angle of repose</xref> and <xref ref="p-friction-inclined" text="title">sliding down inclined planes</xref>.  For now, we will consider a very slick table top so that object slide very easily.  (<xref ref="ss-friction-rolling" text="type-global" /> will discuss rolling objects.)</p>
+                        
+                        <example xml:id="ex-inclined-plane"><title>Sliding down an icy driveway</title>
+                                <statement>
+                                        <p>After an ice storm, \studentD<idx><h sortby="\studentD">\studentD</h></idx> <m>(m_D=\massD)</m> decides to visit \hisD\ neighbor across the street who has a broken leg to see if they need anything \heD\ can help with.  When \heD\ arrives at the house, \heD\ notices that the driveway has a slight hill to it.
+                                        The angle of incline is about <m>\theta=3.00^\circ</m><fn>This angle represents about a 5<percent />-grade (<m>\sin(3^\circ)=0.052=5.2\%</m>), 
+                                                which is at the low-end of steep according to <url href="http://www.ctre.iastate.edu/research/access/toolkit/11.pdf">details</url> of the <url href="http://www.ctre.iastate.edu/research/access/toolkit/">FAQ</url> 
+                                                developed by <url href="http://www.ctre.iastate.edu/research/access/index.htm">Iowa Access Management Awareness Project</url> 
+                                                at the <url href="http://www.ctre.iastate.edu/">Center for Transportation Research and Education</url> 
+                                                in the <url href="http://www.intrans.iastate.edu/">Institute for Transportation</url> 
+                                                run by <url href="https://www.iastate.edu/">Iowa State University</url>.  These sites were verified on 14 November, 2017.  
+                                                They note that a minimum 2<percent /> grade is needed for drainage, steep driveways range 5<percent /> to 10<percent />, and the maximum recommendation for commercial driveways is 12<percent /> to keep vehicles from bottoming out as they enter the drive.</fn> 
+                                        and \heD\ is standing at the top of the hill.<fn>The etymology of <url href="https://www.etymonline.com/word/gradient">gradient</url> is not what I expected.</fn>  
+                                        The length of the driveway is about two-and-a-half car-lengths: <m>L=11.25\unit m</m>.</p>
+                                        <p>As \heD\ slides down the hill, wondering how \heD\ will ever escape, you should compute 
+                                        <ol><li><p>\hisD\ acceleration,</p></li>
+                                                <li><p> the time it takes to get to the bottom, and </p></li>
+                                                <li><p>\hisD\ speed at the bottom (just before slamming into the garage door).</p></li>  
+                                        </ol>
+                                        Do you expect \studentD\ to get hurt in the final collision?</p>
+                                        </statement>
+                                <hint><title>acceleration</title><p>You should be able to use <xref ref="as-NII" text="title" /> to find the acceleration.  The tricky part is finding the components of the individual forces.</p></hint>
+                                <hint xml:id="h-inclined-components"><title>force components</title>
+                                        <p><xref ref="ss-coordinate-systems" text="type-global" /> discusses the choice of coordinate systems.  In this case, since the acceleration is along the incline (and not normal to the incline), <xref ref="as-NII" text="title" /> will be easier to manage if one axis (let's call it <m>x</m>) is along the incline (seeing all of the acceleration) so that the other component (which then is <m>y</m>) doesn't see any acceleration and has the convenience of <m>F_{\text{net},y} = m \cancelto{0}{a_y}</m>.  The consequences of this are that the normal force only has a <m>y</m> component, but the gravitational force has both an <m>x</m> and a <m>y</m> component.</p>
+                                        <p>For convenience, I am going to set my positive <m>x</m>-direction down-along the incline, since this is the direction of the motion.  I am also going to set my positive <m>y</m>-direction up-normal off the incline.</p></hint>
+                                <hint><title>Free-body diagram</title>
+                                        <p>Draw the incline.  Point the normal force normal to the surface and the gravitational force directly towards the center of the Earth.  These do not directly oppose each other (and do not cancel like they have in previous examples).</p>
+                                        <p><xref ref="h-inclined-components" text="type-local" /> implies we should use a coordinate system that has one axis along the incline and another normal to the incline.</p></hint>
+                                <answer><title>Acceleration</title><p>\studentD\ has an acceleration of <m>a_x = 0.\sigfrac{513}{4}{m}{s^2}</m>.  This is pretty low and likely will provide sufficient time to spin into a more advantageous position before the inevitable
+                                        crash.</p></answer>
+                                <answer><title>Time</title><p>\studentD\ takes <m>\sig{6.62}{0}{s}</m> to slide down the driveway.  That's a long time to be sliding.  This might even be enough time for you to get your phone out and film the crash!</p></answer>
+                                <answer><title>Final speed</title><p>\studentD\ crashes into the garage door at <m>3.4\unitfrac{m}{s}</m>.  This is faster than a brisk walk <m>(2.5\unitfrac{m}{s})</m>, but slower than most people run.</p></answer>
+                                <solution><p>\studentD's weight is <m>m_Dg=\sig{784}{.8}{N}</m>.  We know the gravitational force (weight) and can compute the components of that.  We do not (yet) know the normal force, but we do know that it only has a <m>y</m>-component.  We do not know the net force, but we do know that it is necessarily (down) along the incline.</p>
+                                        <sidebyside>
+                                        <tabular halign="center"><col right="major" /><col /><col /><row bottom="major"><cell /><cell halign="right"><m>x</m>-comp</cell><cell halign="right"><m>y</m>-comp</cell></row>
+                                                <row bottom="minor">
+                                                        <cell><m>F_g</m></cell>
+                                                        <cell halign="right"><m>mg\cos\theta = +\sig{41.0}{7}{N}</m></cell>
+                                                        <cell halign="right"><m>mg\sin\theta = -\sig{783}{.7}{N}</m></cell>
+                                                </row>
+                                                <row bottom="minor">
+                                                        <cell><m>F_N</m></cell>
+                                                        <cell bottom="major" halign="right"><m>0 \unit N</m></cell>
+                                                        <cell bottom="major" halign="right"><m>F_{N,y}</m></cell>
+                                                </row>
+                                                <row>
+                                                        <cell><m>F_\mathrm{net}</m></cell>
+                                                        <cell halign="right"><m>m_Da_x</m></cell>
+                                                        <cell halign="right"><m>0\unit{N}</m></cell>
+                                                </row>
+                                        </tabular>
+                                        </sidebyside>
+
+                                        <p>We can use the <m>y</m>-component to find the value of the normal force  <m>F_N=+\sig{783}{.7}{N}</m>.  We can use the <m>x</m>-component to find the acceleration of <m>a_x = F_{gx}/m_D = +0.\sigfrac{513}{4}{m}{s^2}</m>.
+                                        This allow us to find the time and final speed.  It turns out to be convenient to find the speed first (to avoid the quadratic formula).
+                                        <me> v_f = \sqrt{ (\cancelto{0}{v_i})^2 + 2(0.5134\unitfrac{m}{s^2})(11.25\unit m)} = \sqrt{\sigfrac{11.5}{5}{m^2}{s^2}} = \sigfrac{3.39}{9}{m}{s}</me>
+                                        <me> t = \frac{v_f-\cancelto{0}{v_i}}{a_x} = \frac{\sigfrac{3.39}{9}{m}{s}}{0.\sigfrac{513}{4}{m}{s^2}} = \sig{6.62}{0}{s} </me>
+                                        That is a very slow motion slide.  \studentD\ likely has time to slow \hisD\ fall and kind of stand up.</p>
+                                        </solution>
+                        </example>
 
                 </subsection>
 
@@ -4500,7 +4590,7 @@ Earth feels a force by \studentZ\ to the left.
                                         <me> F_{Ny} + F_{gy} + \cancelto{0}{F_{fy}} = m \cancelto{0}{a_y} </me>
                                         so you need to relate the vertical acceleration to the gravitational and normal forces. (See <xref ref="h-friction-mug-normal" text="type-local" />.)</p></hint>
                                 <hint xml:id="h-friction-mug-friction"><title>Frictional force</title>
-                                        <p>You can find the frictional force from the normal force with <xref ref="eq-friction" text="title">Equation</xref>, where <m>\mu</m> is given and <m>F_N</m> is to be determined.  
+                                        <p>You can find the frictional force from the normal force with <xref ref="eq-friction" text="title">Equation</xref>, where <m>\mu</m> is given and <m>F_N</m> is to be determined.
                                         (See <xref ref="h-friction-mug-normal" text="type-local" />.)</p></hint>
                                 <hint xml:id="h-friction-mug-normal"><title>Normal force</title>
                                         <p>You can find the normal force from Newton's second law in the vertical direction since the vertical-component of the acceleration is zero.
@@ -4830,6 +4920,29 @@ Earth feels a force by \studentZ\ to the left.
                         </investigation>
                         </paragraphs>
 
+                        <paragraphs xml:id="p-shifting-load"><title>Shifting Loads</title>
+                        <p>If you have ridden in a pick-up truck with heavy objects in the truck-bed, then you might notice when they shift. Driving up a steep incline or suddenly accelerating pulls objects to the back, driving downhill or stopping suddenly pulls objects to the front.</p>
+
+                        <exploration xml:id="cyoa-repose"><title>\studentA\ and \studentC\ use a pick-up truck to move a couch</title><idx><h sortby="\studentA">\studentA</h></idx><idx><h sortby="\studentC">\studentC</h></idx>
+                                <statement>
+                                        <p>One drives the pick-up with a couch, truck door down.  No straps. The other watches from behind.  Choose to measure the friction of the truck-bed.  Choose to measure <m>\mu_s</m> and or <m>\mu_k</m> <em>with the couch</em>. Choose to use straps? and they break?  Choose to measure the mass of the couch?  When you load it, maybe?</p>
+                                </statement>
+                                <answer>
+                                        <p>Accelerates slowly from the parking lot.  friction and inertia (2nd law then 1st law) keeps the couch in place.</p>
+                                </answer>
+                                <answer>
+                                        <p>Accelerates quickly from the parking lot.  Couch slides backwards. Choose honk or wait.  choose traffic or no traffic. DO OVER: go back to the first choice.</p>
+                                </answer>
+                                <answer>
+                                        <p>Stops suddenly; couch slide back in.</p>
+                                </answer>
+                                <answer>
+                                        <p>Up hill, angle of repose</p>
+                                </answer>
+                        </exploration>
+                        </paragraphs>
+
+
                         <aside><title>Paragraph referenced by</title>
                                 <p><xref ref="inv-friction-max" text="type-global" /></p>
                         </aside>
@@ -4850,11 +4963,11 @@ Earth feels a force by \studentZ\ to the left.
                                 <hint><title>gravitational force</title><p>The gravitational force is always straight towards the center of the Earth.</p></hint>
                                 <answer><p>The angle of repose turns out to be <m>\theta_r = \tan^{-1}(\mu_s) = \tan^{-1}(0.62) = \sig{31}{.8}{^\circ}</m>.</p></answer>
                                 <solution><p>As the cover is lifted, the normal force is only able to balance the component of the gravitational force that is perpendicular to the book cover
-                                        <m>F_N=(mg)\cos\theta</m>.  
+                                        <m>F_N=(mg)\cos\theta</m>.
                                         While the angle is smaller than the angle of repose, the frictional force balances the component of the gravitational force that is parallel to the cover
-                                        <m>F_f = (mg)\sin\theta</m>.  
-                                        It is only when we reach the angle of repose that the frictional force reaches its maximum and we can relate <m>F_{f,\text{max}}=\mu_s F_N</m>.  
-                                        In this case, 
+                                        <m>F_f = (mg)\sin\theta</m>.
+                                        It is only when we reach the angle of repose that the frictional force reaches its maximum and we can relate <m>\mu_s F_N = F_{f,\text{max}}</m>.
+                                        In this case,
                                         <me>\mu [ (mg) \cos\theta_r ] = (mg) \sin\theta_r </me> and the <m>mg</m> cancels leaving, <m>\mu = \frac{\sin\theta_r}{\cos\theta_r} = \tan\theta_r</m>.
                                         Since we are given <m>\mu_s</m>, we can find the angle of repose from the inverse tangent (a.k.a. the arc-tangent, or atan):
                                         <me> \theta_r = \tan^{-1}(\mu_s) = \tan^{-1}(0.62) = \sig{31}{.8}{^\circ}</me>.</p>
@@ -4870,32 +4983,12 @@ Earth feels a force by \studentZ\ to the left.
                                         <m>F_N=(mg)\cos\theta</m>.
                                         While the angle is smaller than the angle of repose, the frictional force balances the component of the gravitational force that is parallel to the cover
                                         <m>F_f = (mg)\sin\theta</m>.
-                                        It is only when we reach the angle of repose that the frictional force reaches its maximum and we can relate <m>F_{f,\text{max}}=\mu_s F_N</m>.
+                                        It is only when we reach the angle of repose that the frictional force reaches its maximum and we can relate <m>\mu_s F_N = F_{f,\text{max}}</m>.
                                         In this case,
                                         <me>\mu [ (mg) \cos\theta_r ] = (mg) \sin\theta_r </me> and the <m>mg</m> cancels leaving, <m>\mu = \frac{\sin\theta_r}{\cos\theta_r} = \tan\theta_r</m>.
                                         Since we are given <m>\theta_r</m>, we can find the coefficient of friction directly:
                                         <me> \mu_s=\tan\theta = \tan(38.1^\circ) = 0.\sig{784}{1}{}</me>.</p></solution>
                         </example>
-
-                        <p>If you have ridden in a pick-up truck with heavy objects in the truck-bed, then you might notice when they shift. Driving up a steep incline or suddenly accelerating pulls objects to the back, driving downhill or stopping suddenly pulls objects to the front.</p>
-
-                        <exploration xml:id="cyoa-repose"><title>\studentA\ and \studentC\ use a pick-up truck to move a couch</title><idx><h sortby="\studentA">\studentA</h></idx><idx><h sortby="\studentC">\studentC</h></idx>
-                                <statement>
-                                        <p>One drives the pick-up with a couch, truck door down.  No straps. The other watches from behind.  Choose to measure the friction of the truck-bed.  Choose to measure <m>\mu_s</m> and or <m>\mu_k</m> <em>with the couch</em>. Choose to use straps? and they break?  Choose to measure the mass of the couch?  When you load it, maybe?</p>
-                                </statement>
-                                <answer>
-                                        <p>Accelerates slowly from the parking lot.  friction and inertia (2nd law then 1st law) keeps the couch in place.</p>
-                                </answer>
-                                <answer>
-                                        <p>Accelerates quickly from the parking lot.  Couch slides backwards. Choose honk or wait.  choose traffic or no traffic. DO OVER: go back to the first choice.</p>
-                                </answer>
-                                <answer>
-                                        <p>Stops suddenly; couch slide back in.</p>
-                                </answer>
-                                <answer>
-                                        <p>Up hill, angle of repose</p>
-                                </answer>
-                        </exploration>
                         </paragraphs>
 
                         <aside><title>Paragraph referenced by</title>
@@ -5287,7 +5380,7 @@ Also check these folks out on Wikipedia.... of course
                         <p>You can probably think of several examples of objects dangling: a purse on a hook, a flag on a pole, a shop sign attached to a post, a pendulum,a swing set, etc.  Since these are all similar in some ways (although different in other ways), <em>we can treat all of them as a mass at the end of a rope</em>.  Typically, because we do not want to deal with the complications that come from sagging supports, we will use the <xref ref="s-effective2" text="title">approximation</xref> of an <q><em>immovable support</em>.</q>  This will be indicated by hashing the surface.</p>
                         <todo>Add (insert)a description of the(/insert) (stale)an(/stale) image of an immovable surface to that section</todo>
 
-                        <assemblage>
+<!--                        <assemblage>  -->
                         <figure xml:id="f-immovable-surface">
                                 <caption>[Add caption]</caption>
                                 <image xml:id="i-immovable-surface" width="30%">
@@ -5305,7 +5398,7 @@ Also check these folks out on Wikipedia.... of course
                                 </latex-image-code>
                                 </image>
                         </figure>
-                        </assemblage>
+<!--                         </assemblage>  -->
 
                         </subsubsection>
 
@@ -6950,8 +7043,8 @@ Also check these folks out on Wikipedia.... of course
                 </example>
 
 <!-- Tables cannot have asides??? -->
-		<assemblage>
-                <aside><p>Referenced by <xref ref="se-gplanets" text="type-hybrid" /></p></aside>
+<!--		<assemblage> -->
+                <aside><p>Table referenced by <xref ref="se-gplanets" text="type-hybrid" /></p></aside>
                 <table xml:id="t-gplanets">
 <!-- You can have BOTH a title AND a caption -->
                         <caption>
@@ -6962,7 +7055,7 @@ Also check these folks out on Wikipedia.... of course
                                 <row><cell>Planet</cell><cell>Mass (kg)</cell><cell>Mean Radius (m) </cell> <cell><m>g (\unitfrac{m}{s^2})</m></cell></row>
                         </tabular>
                 </table>
-                </assemblage>
+<!--                 </assemblage>  -->
                 </introduction>
 
                 <subsection xml:id="ss-equivmm"><title>Inertial Mass versus Gravitational Mass</title>

@@ -96,7 +96,7 @@ allerr: checkref counterr ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pret
 		grep -v ": element \"part" | \
 		grep -v ": element \"font" | \
 		grep -v `grep -n "xml:id=\"p-intuition-motion" ABIP.xml | sed s/:.*//g` | \
-		grep -v `grep -n "Known tag abuse" ABIP.xml | sed s/:.*//g` | \
+		grep -v `grep -n "Known tag abuse 1" ABIP.xml | sed s/:.*//g` | \
 		sort -k4  
 
 all: html latex images
