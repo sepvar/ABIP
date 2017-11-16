@@ -30,7 +30,7 @@ Connected.ind: Connected.idx Connected.tex
 	makeindex Connected.idx
 
 Connected.pdf: Connected.ind Connected.tex
-	pdflatex Connected.tex
+	pdflatex Connected.tex && pdflatex Connected.tex  || pdflatex Connected.tex 
 
 latex: Connected.tex
 
@@ -71,7 +71,7 @@ counterr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml
 	@echo -e "font: \t\t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"font" | wc -l`" \t(4 known, hidden)"
 	@echo -e "paragraph: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"paragraph" | wc -l`" \t(1 known, hidden)"
 	@echo -e "tabular: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"tabular" | wc -l`" \t(1 known, hidden)"
-	@export TEMPVAR=`grep -n "Known tag abuse 2" ABIP.xml | sed s/:.*//g`
+	@set TEMPVAR=`grep -n "Known tag abuse 2" ABIP.xml | sed s/:.*//g`
 	@echo -e "license: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ${TEMPVAR} | wc -l`" \t(11 known, hidden)"
 
 toperr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml 
@@ -97,6 +97,7 @@ allerr: checkref counterr ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pret
 		grep -v ": element \"font" | \
 		grep -v `grep -n "xml:id=\"p-intuition-motion" ABIP.xml | sed s/:.*//g` | \
 		grep -v `grep -n "Known tag abuse 1" ABIP.xml | sed s/:.*//g` | \
+		grep -v `grep -n "Known tag abuse 2" ABIP.xml | sed s/:.*//g` | \
 		sort -k4  
 
 all: html latex images

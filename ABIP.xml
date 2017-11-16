@@ -648,7 +648,7 @@
 
         <p>The term <term>effective theory</term> is used in physics to describe a wide-reaching phenomenon which can be approximated by a simpler theory in a smaller circumstance.  So, for example, Einstein's theory of general relativity as a complex description of the gravitational interaction.  It would be unwieldy and impractical to use that to describe our day-to-day interactions with the gravitational interaction.  On the other hand, Newton's theory of the gravitational interaction is a special case of Einstein's general theory of relativity that works perfectly well so long as you behave yourself and do not try to travel at a significant fraction of the speed of light.  We can say that Newton's theory of gravity is an effective theory for Einstein's theory of gravity that accounts for acceleration at low speeds.  Likewise, Einstein's special theory of relativity is an effective theory of the general theory of relativity.  The special theory is relevant when you do not allow for acceleration, but do allow for faster speeds.  Once you reach beyond the limitations of the effective theory, the description <q>breaks down</q>.</p>
 
-        <p>For example, see <xref ref="p-g-to-3-digits" text="title">the discussion on the acceleration due to gravity being <q>locally constant</q></xref>.</p>
+        <p>For example, see the discussion around <xref ref="convention-g-value" text="type-global" /> regarding the acceleration due to gravity being <q>locally constant</q>.</p>
 
         </section>
         <conclusion><title>List of examples</title>
@@ -667,7 +667,7 @@
 
         <section xml:id="s-story"><title>Every equation tells a story</title>
 
-        <p>Equations allow us to connect physical reality to very specific predictions.  For example, the equation for thermal conductivity, <xref ref="eq-thermalconductivity"  text="type-global" /> in <xref ref="ss-thermalconductivity"  text="type-global" />, allows \studentA<idx><h sortby="\studentA">\studentA</h></idx> to predict the time it takes for \hisA\ oven to warm up to a specific temperature because <m>\displaystyle \frac{Q}{\Delta t} = \kappa A \, \frac{\Delta T}{\Delta x}</m> says that {the rate at which energy flows} {depends on} {how well air allows energy to flow,} {the size of the oven,} and {the amount the temperature needs to change} {across the height of the oven} as follows:</p>
+        <p>Equations allow us to connect physical reality to very specific predictions.  For example, the equation for thermal conductivity, <xref ref="eq-thermalconductivity"  text="type-global">Equation</xref> in <xref ref="ss-thermalconductivity"  text="type-global" />, allows \studentA<idx><h sortby="\studentA">\studentA</h></idx> to predict the time it takes for \hisA\ oven to warm up to a specific temperature because <m>\displaystyle \frac{Q}{\Delta t} = \kappa A \, \frac{\Delta T}{\Delta x}</m> says that {the rate at which energy flows} {depends on} {how well air allows energy to flow,} {the size of the oven,} and {the amount the temperature needs to change} {across the height of the oven} as follows:</p>
         <todo>I would love for this to be a mouse-over in the equation</todo>
         <todo>Consider "chunking" the "story" with colors to indicate the pieces.</todo>
 
@@ -1495,7 +1495,7 @@
 
 
                 <p>It turns out that, ignoring the effect of <xref ref="ss-airresistance" text="title">air resistance</xref>, all objects fall with the same acceleration (due to the gravity).  As discussed in <xref ref="ss-local-mg" text="type-global" />, this varies slightly round the world, but only slightly.  (See <xref ref="t-gworld" text="type-global" /> for some representative samples.)</p>
-                        <definition xml:id="def-freefall"><idx>freefall</idx>
+                        <definition xml:id="def-freefall"><title>freefall</title><idx>freefall</idx>
                         <notation>
                         	<usage>\text{freefall}</usage>
                         	<description><q>being in freefall</q> will mean moving only under the influence of gravity</description>
@@ -2001,13 +2001,13 @@
                         <url href="http://www.bipm.org/jsp/en/ViewCGPMResolution.jsp?CGPM=9&amp;RES=7">the 7th resolution</url> (Mar, 2017) of
                         <url href="http://www.bipm.org/jsp/en/ListCGPMResolution.jsp?CGPM=9">the 9th CGPM</url> (Mar, 2017).</fn>
                         to name the unit the Newton, such that</p>
-                        <definition>
-                                <statement><p>The <term>unit of Newton</term> is defined to be the amount of force necessary to accelerate one kilogram by 1 meter-per-second-squared:
-                                        <m>1 \unit{N} = 1 \unitfrac{kg \cdot m}{s^2}</m>
+                        <definition><title>Newton, unit</title><idx><h>unit</h><h>Newton</h></idx><idx><h>Newton</h><h>unit</h></idx>
                                 <notation>
                                         <usage>1 \unit{N} = 1 \unitfrac{kg \cdot m}{s^2}</usage>
                                         <description>Definition of the unit Newton</description>
-                                </notation></p>
+                                </notation>
+                                <statement><p>The <term>unit of Newton</term> is defined to be the amount of force necessary to accelerate one kilogram by 1 meter-per-second-squared:
+                                        <m>1 \unit{N} = 1 \unitfrac{kg \cdot m}{s^2}</m></p>
                                 </statement>
                         </definition>
 
@@ -2463,7 +2463,7 @@
                 </aside>
 
                         <p>This word can be traced back to Latin and Old English with the prefix <em>equi-</em> for <em>equal</em> and the root <em>libra</em> referring to a <em>pair of scales, as in a balance</em>, such as those depicted in images of the astronomical constellation Libra.  When the scales are equal, they are in equilibrium.  Since the second law asks us to calculate the sum of the forces acting on an object, one of the primary questions is to determine if those forces balance each other.  In <xref ref="se-netFadd" text="type-global" /> and <xref ref="se-netFsub" text="type-global" />, the forces are not balanced, the object <q>is not in equilibrium</q>, and it will be accelerated in a particular direction.  In the <xref ref="se-equi" text="type-global" />, the forces are balanced, the object <q>is in equilibrium</q>, and it will <em>not change</em> its velocity (in accord with the first law).</p>
-                        <definition xml:id="def-equilibrium"><idx>equilibrium</idx>
+                        <definition xml:id="def-equilibrium"><title>equilibrium</title><idx>equilibrium</idx>
                         <notation>
                         	<usage>\text{equilibrium}</usage>
                         	<description>An object in equilibrium has <m>\vec F_\mathrm{net} = 0\unit N</m> and <m>\vec a =0</m>.</description>
@@ -3448,7 +3448,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p>This is the force of the gravitational force on the baseball.  Although we computed the force while the ball was falling, the gravitational force does not magically vanish when the ball is sitting on the floor.  So, we can say that (as long as the ball is close to the surface of the Earth, as noted in <xref ref="c-gravity" text="type-hybrid" />) the force always has this value.  Rather than continuing to say <q>the force of gravity</q> we call this force the weight.</p>
 
-                <definition xml:id="def-weight"><idx><h>weight</h><seealso>mass</seealso></idx>
+                <definition xml:id="def-weight"><title>weight</title><idx>weight</idx><idx><h>weight</h><seealso>mass</seealso></idx>
                 <notation>
                 	<usage>\text{weight}</usage>
                 	<description><m>\mathbf{F_g \equiv mg}</m></description>
@@ -3480,8 +3480,8 @@ Earth feels a force by \studentZ\ to the left.
                 from <q>weighty</q> (a strength needed to lift).</p>
 		<biographical><title>Touchstone (weight)</title><p>Recall <xref ref="def-weight" text="type-hybrid" /></p></biographical>
                 <remark><title>mass versus weight</title>
-                        <idx><h>mass</h><seealso>weight</seealso></idx>         <idx><h>mass</h></idx>
-                        <idx><h>weight</h><seealso>mass</seealso></idx>         <idx><h>weight</h></idx>
+                        <idx><h>mass</h></idx>          <idx><h>mass</h><seealso>weight</seealso></idx>
+                        <idx><h>weight</h></idx>        <idx><h>weight</h><seealso>mass</seealso></idx>
                         <p>The mass describes the amount of material, whereas weight describes how strongly the gravitational force pulls on the object.</p></remark>
                 <p>Having mass affects both the inertia (ease of moving) and the weight (force of gravity).
                 Having weight expresses the gravitational force due to whichever large object (moon, planet, sun, etc.) you happen to be on or near.  Noticing that the SI-unit (<xref ref="s-SI-MKS" text="type-global" />) is different for different types of quantities, such as a kilogram (a <xref ref="p-fundamental" text="title">fundamental unit</xref>) for mass and a Newton (a <xref ref="p-derived" text="title">derived unit</xref>) for weight, may help you remember that these are different kinds of quantities.</p>
@@ -3605,14 +3605,16 @@ Earth feels a force by \studentZ\ to the left.
                         <answer xml:id="A-Everest"><p>[Mount Everest] <m>F_g = mg = (\massE)(9.763\unitfrac{m}{s^2}) \ = \ \sig{927}{.5}{N}</m>.</p></answer>
                 </example>
 
-                <paragraphs xml:id="p-g-to-3-digits"><title>The precision of <m>g</m></title>
-                <p>Because the variation is small, throughout this text when we are considering situations <q>at the surface of the Earth</q>, we will assume that</p>
-                <convention xml:id="convention-g-value">
-                	<p>the acceleration due to gravity is <m>9.81\unitfrac{m}{s^2}</m> to three significant figures.</p>
+                <todo>The postlude appears inside the convention on the html, but kills the entire convention in the PDF.</todo>
+                <convention xml:id="convention-g-value"><title>The precision of <m>g</m></title>
+                        <p>Because the variation is small, throughout this text when we are considering situations <q>at the surface of the Earth</q>, we will assume that the acceleration due to gravity is <m>9.81\unitfrac{m}{s^2}</m> to three significant figures.</p>
+                        <postlude>
+                                <p><xref ref="convention-g-value" text="type-global" /> is making an approximation that allows us to compute values to a useful precision.  You should note from <xref ref="t-gworld" text="type-local" />(<fn xml:id="fn-compute-g">While both the latitude-longitude and the local value of <m>g</m> were found using the <url href="https://www.wolframalpha.com/">WolframAlpha<registered /> computational knowledge engine</url>, these <m>g</m> values do not necessarily correspond to these coordinates.  The <m>g</m> values are based on a theoretical model of the Earth.</fn>) that the value of <m>g</m> does vary around the world, but that your distance from the center of the Earth has to change <em>significantly</em> for the value to change by a noticeable amount.  The consequence of this is that whenever we consider motion that stays within a vertical range of tens-of-meters, we can consider the acceleration due to gravity to be constant.  Sometimes this is referred to as being <q>locally constant</q>.  This is an example of a useful approximation that is essentially true, as discussed in <xref ref="s-effective2" text="type-global" />.</p>
+                        </postlude>
                 </convention>
-                <p>This statement is making an approximation that allows us to compute values to a useful precision.  You should note from <xref ref="t-gworld" text="type-local" />(<fn xml:id="fn-compute-g">While both the latitude-longitude and the local value of <m>g</m> were found using the <url href="https://www.wolframalpha.com/">WolframAlpha<registered /> computational knowledge engine</url>, these <m>g</m> values do not necessarily correspond to these coordinates.  The <m>g</m> values are based on a theoretical model of the Earth.</fn>) that the value of <m>g</m> does vary around the world, but that your distance from the center of the Earth has to change <em>significantly</em> for the value to change by a noticeable amount.  The consequence of this is that whenever we consider motion that stays within a vertical range of tens-of-meters, we can consider the acceleration due to gravity to be constant.  Sometimes this is referred to as being <q>locally constant</q>.  This is an example of a useful approximation that is essentially true, as discussed in <xref ref="s-effective2" text="type-global" />.
-                </p>
-                </paragraphs>
+
+                <todo>Remove this when "postlude" is implemented</todo>
+                <p><xref ref="convention-g-value" text="type-global" /> is making an approximation that allows us to compute values to a useful precision.  You should note from <xref ref="t-gworld" text="type-local" />(<fn xml:id="fn-compute-g">While both the latitude-longitude and the local value of <m>g</m> were found using the <url href="https://www.wolframalpha.com/">WolframAlpha<registered /> computational knowledge engine</url>, these <m>g</m> values do not necessarily correspond to these coordinates.  The <m>g</m> values are based on a theoretical model of the Earth.</fn>) that the value of <m>g</m> does vary around the world, but that your distance from the center of the Earth has to change <em>significantly</em> for the value to change by a noticeable amount.  The consequence of this is that whenever we consider motion that stays within a vertical range of tens-of-meters, we can consider the acceleration due to gravity to be constant.  Sometimes this is referred to as being <q>locally constant</q>.  This is an example of a useful approximation that is essentially true, as discussed in <xref ref="s-effective2" text="type-global" />.</p>
 
                 <example xml:id="se-t-gworld">
                         <title>The acceleration due to gravity is only <q>locally constant</q></title>
@@ -4250,14 +4252,14 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-N-inclined-planes">
                         <title>The normal force and inclined planes</title>
-                        <idx>inclined planes</idx><idx><h>plane</h><h>inclined</h></idx>
+                        <idx>inclined plane</idx><idx><h>plane</h><h>inclined</h></idx>
 
                         <todo>Should radially outwards reference the section on math?</todo>
-                        <p xml:id="p-intro-inclined-planes">With our <xref ref="insight-normal-surface" text="title">understanding of the normal force</xref>, we have seen examples of the normal force pointing <xref ref="f-firstFBDupdate" text="title">upwards from the ground</xref>, <xref ref="se-ceiling" text="title">downwards off the ceiling</xref>, and <xref ref="se-tree" text="title">sideways off of a vertical surface</xref>.  If you consider a the trunk of a tree or the edge of a wheel, the normal direction is radially outwards (in the direction of the spokes of the wheel).  
+                        <p xml:id="p-intro-inclined-planes">With our <xref ref="insight-normal-surface" text="title">understanding of the normal force</xref>, we have seen examples of the normal force pointing <xref ref="f-firstFBDupdate" text="title">upwards from the ground</xref>, <xref ref="se-ceiling" text="title">downwards off the ceiling</xref>, and <xref ref="se-tree" text="title">sideways off of a vertical surface</xref>.  If you consider a the trunk of a tree or the edge of a wheel, the normal direction is radially outwards (in the direction of the spokes of the wheel).
                         </p>
-                        
-                        <exercise><title>Draw an oblong sun</title>
-                                <statement><p>When you draw a circle that represents the sun, you typically draw the light rays coming off the sun in the radially outwards direction.  For this exercise, draw 
+
+                        <exercise><title>Practice drawing normal lines</title>
+                                <statement><p>When you draw a circle that represents the sun, you typically draw the light rays coming off the sun in the radially outwards direction.  For this exercise, draw
                                 <ol><li><p>the rays coming from an egg-shaped (or pill-shaped) sun,  </p></li>
                                         <li><p>the rays coming from a hill-shaped sun, </p></li>
                                         <li><p>the rays coming from a mountain-shaped sun.</p></li>
@@ -4267,25 +4269,34 @@ Earth feels a force by \studentZ\ to the left.
                                 <hint><title>mountain-shape</title> <p>I am expecting a mountain-shape to be similar to a triangle or a pyramid, although you might have a more detailed image. The rays you draw should be <q>outwards</q>, but not like the lines drawn on the pyramid that appears on the back of a U.S. one-dollar bill.  Those rays are radial like they come from a circular object.  Your lines should come straight off the surface and emphasize the shape of the drawing rather than emitting from the central point.</p></hint>
                                 <answer><p>Your lines should come straight off the surface and emphasize the shape of the drawing rather than emitting from the central point.  If you do this, then your rays should indicate the normal direction, which is everywhere perpendicular to the surface.</p></answer>
                         </exercise>
-                        
-                        <p>Another place where we see the normal force acting is on an inclined plane (a tilted flat surface).  You might experience this in a variety of places: driving up a steep hill, partially opening a hard-cover book or your laptop, and lifting one end of a table.  Let's consider a tilted table and imagine putting a couple of books under one side of a table so that it tilts to the left.  Most of the items you place on the table will not slide off because there is <xref ref="s-Ff" text="title">friction</xref>.  This will be considered in detail in <xref ref="sss-dry-sliding" text="type-global" />, especially under the topics of the <xref ref="p-friction-repose" text="title">angle of repose</xref> and <xref ref="p-friction-inclined" text="title">sliding down inclined planes</xref>.  For now, we will consider a very slick table top so that object slide very easily.  (<xref ref="ss-friction-rolling" text="type-global" /> will discuss rolling objects.)</p>
-                        
+
+                        <p>Another place where we see the normal force acting is on an inclined plane (a tilted flat surface).</p>
+                        <definition xml:id="def-inclined-plane"><title>inclined plane</title><idx>inclined plane</idx><idx><h>plane</h><h>inclined</h></idx>
+                                <notation>
+                                	<usage>\text{inclined plane}</usage>
+                                	<description>Any tilted, flat surface; such as a ramp, slide, ski jump, the side of a pyramid, etc.</description>
+                                </notation>
+                                <statement><aside><title>Definition referenced by</title><p>discussion of <xref ref="p-friction-inclined" text="title" /></p></aside>
+                                        <p>Any tilted, flat surface; such as a ramp, slide, ski jump, the side of a pyramid, etc.</p></statement>
+                        </definition>
+                        <p>You might experience this in a variety of places: driving up a steep hill, partially opening a hard-cover book or your laptop, and lifting one end of a table.  Let's consider a tilted table and imagine putting a couple of books under one side of a table so that it tilts to the left.  Most of the items you place on the table will not slide off because there is <xref ref="s-Ff" text="title">friction</xref>.  This will be considered in detail in <xref ref="sss-dry-sliding" text="type-global" />, especially under the topics of the <xref ref="p-friction-repose" text="title">angle of repose</xref> and <xref ref="p-friction-inclined" text="title">sliding down inclined planes</xref>.  For now, we will consider a very slick table top so that object slide very easily.  (<xref ref="ss-friction-rolling" text="type-global" /> will discuss rolling objects.)</p>
+
                         <example xml:id="ex-inclined-plane"><title>Sliding down an icy driveway</title>
                                 <statement>
                                         <p>After an ice storm, \studentD<idx><h sortby="\studentD">\studentD</h></idx> <m>(m_D=\massD)</m> decides to visit \hisD\ neighbor across the street who has a broken leg to see if they need anything \heD\ can help with.  When \heD\ arrives at the house, \heD\ notices that the driveway has a slight hill to it.
-                                        The angle of incline is about <m>\theta=3.00^\circ</m><fn>This angle represents about a 5<percent />-grade (<m>\sin(3^\circ)=0.052=5.2\%</m>), 
-                                                which is at the low-end of steep according to <url href="http://www.ctre.iastate.edu/research/access/toolkit/11.pdf">details</url> of the <url href="http://www.ctre.iastate.edu/research/access/toolkit/">FAQ</url> 
-                                                developed by <url href="http://www.ctre.iastate.edu/research/access/index.htm">Iowa Access Management Awareness Project</url> 
-                                                at the <url href="http://www.ctre.iastate.edu/">Center for Transportation Research and Education</url> 
-                                                in the <url href="http://www.intrans.iastate.edu/">Institute for Transportation</url> 
-                                                run by <url href="https://www.iastate.edu/">Iowa State University</url>.  These sites were verified on 14 November, 2017.  
-                                                They note that a minimum 2<percent /> grade is needed for drainage, steep driveways range 5<percent /> to 10<percent />, and the maximum recommendation for commercial driveways is 12<percent /> to keep vehicles from bottoming out as they enter the drive.</fn> 
-                                        and \heD\ is standing at the top of the hill.<fn>The etymology of <url href="https://www.etymonline.com/word/gradient">gradient</url> is not what I expected.</fn>  
+                                        The angle of incline is about <m>\theta=3.00^\circ</m><fn>This angle represents about a 5<percent />-grade (<m>\sin(3^\circ)=0.052=5.2\%</m>),
+                                                which is at the low-end of steep according to <url href="http://www.ctre.iastate.edu/research/access/toolkit/11.pdf">details</url> of the <url href="http://www.ctre.iastate.edu/research/access/toolkit/">FAQ</url>
+                                                developed by <url href="http://www.ctre.iastate.edu/research/access/index.htm">Iowa Access Management Awareness Project</url>
+                                                at the <url href="http://www.ctre.iastate.edu/">Center for Transportation Research and Education</url>
+                                                in the <url href="http://www.intrans.iastate.edu/">Institute for Transportation</url>
+                                                run by <url href="https://www.iastate.edu/">Iowa State University</url>.  These sites were verified on 14 November, 2017.
+                                                They note that a minimum 2<percent /> grade is needed for drainage, steep driveways range 5<percent /> to 10<percent />, and the maximum recommendation for commercial driveways is 12<percent /> to keep vehicles from bottoming out as they enter the drive.</fn>
+                                        and \heD\ is standing at the top of the hill.<fn>The etymology of <url href="https://www.etymonline.com/word/gradient">gradient</url> is not what I expected.</fn>
                                         The length of the driveway is about two-and-a-half car-lengths: <m>L=11.25\unit m</m>.</p>
-                                        <p>As \heD\ slides down the hill, wondering how \heD\ will ever escape, you should compute 
+                                        <p>As \heD\ slides down the hill, wondering how \heD\ will survive the crash at the bottom, you should compute
                                         <ol><li><p>\hisD\ acceleration,</p></li>
                                                 <li><p> the time it takes to get to the bottom, and </p></li>
-                                                <li><p>\hisD\ speed at the bottom (just before slamming into the garage door).</p></li>  
+                                                <li><p>\hisD\ speed at the bottom (just before slamming into the garage door).</p></li>
                                         </ol>
                                         Do you expect \studentD\ to get hurt in the final collision?</p>
                                         </statement>
@@ -4305,8 +4316,8 @@ Earth feels a force by \studentZ\ to the left.
                                         <tabular halign="center"><col right="major" /><col /><col /><row bottom="major"><cell /><cell halign="right"><m>x</m>-comp</cell><cell halign="right"><m>y</m>-comp</cell></row>
                                                 <row bottom="minor">
                                                         <cell><m>F_g</m></cell>
-                                                        <cell halign="right"><m>mg\cos\theta = +\sig{41.0}{7}{N}</m></cell>
                                                         <cell halign="right"><m>mg\sin\theta = -\sig{783}{.7}{N}</m></cell>
+                                                        <cell halign="right"><m>mg\cos\theta = +\sig{41.0}{7}{N}</m></cell>
                                                 </row>
                                                 <row bottom="minor">
                                                         <cell><m>F_N</m></cell>
@@ -4328,6 +4339,8 @@ Earth feels a force by \studentZ\ to the left.
                                         That is a very slow motion slide.  \studentD\ likely has time to slow \hisD\ fall and kind of stand up.</p>
                                         </solution>
                         </example>
+
+                        <p>The study of inclined planes is important in introductory physics because it provides an example of a situation where it makes more sense (by which I am makes the math easier) to use a coordinate system that is not the usual horizontal-and-vertical.  It is still useful (and will always be) to have the axes be perpendicular to each other.  See the discussion in <xref ref="h-inclined-components" text="type-local" /> for the relevant reasoning.</p>
 
                 </subsection>
 
@@ -4734,9 +4747,10 @@ Earth feels a force by \studentZ\ to the left.
                                 </task>
                         </investigation>
                         <p>Based on <xref ref="inv-friction-static" text="type-global" />, you should notice the following:</p>
-                        <observation xml:id="p-friction-static-variable"><title>Can push with any value gentle force</title>
+                        <aside><title>Insight referenced by</title><p><xref ref="ex-friction-below-repose" text="type-global" /></p></aside>
+                        <insight xml:id="p-friction-static-variable"><title>Can push with any value gentle force</title>
                                 <p>Since you can gradually increase the applied force without moving the object, the static friction is able to vary its magnitude in such a way as to balance the applied force so long as the applied force is smaller than the maximum static force. (See also <xref ref="obs-friction-static-max" text="type-global" />.)</p>
-                        </observation>
+                        </insight>
                         <p>This observation means that <xref ref="eq-friction" text="global">Equation</xref> cannot literally be true for the situations involving static friction.  Instead, the frictional force can have any smaller value up to some maximum where the object moves and we can describe it with kinetic friction.  Therefore we need to distinguish between the kinetic friction and the static friction.  <xref ref="eq-friction" text="global">Equation</xref> still holds for kinetic friction, but we have to use
                         <men xml:id="eq-friction-static">F_{f,\text{static}} \le F_{f,\text{max}} = \mu_s F_N</men>
                         to describe static friction.  This describes the maximum value that the force of static friction can take before the object begins to move, while allowing the force of static friction to take any smaller value when the object is pushed more gently than this maximum value.</p>
@@ -4875,8 +4889,19 @@ Earth feels a force by \studentZ\ to the left.
 
 
                         <subsubsection xml:id="sss-dry-sliding"><title>Applications of Dry Sliding Friction</title>
+                        
+                        <p>Since this section is fairly long, you can use these links to jump to the topic of interest:
+                        <ul>
+                                <li><p><xref ref="p-values-of-mu" text="title" /></p></li>
+                                <li><p><xref ref="p-friction-complications" text="title" /></p></li>
+                                <li><p><xref ref="p-friction-walking" text="title" /></p></li>
+                                <li><p><xref ref="p-shifting-load" text="title" /></p></li>
+                                <li><p><xref ref="p-friction-repose" text="title" /></p></li>
+                                <li><p><xref ref="p-friction-inclined" text="title" /></p></li>
+                        </ul></p>
 
 <todo>Collect these in a references section?  Esp. the Derler paper</todo>
+                        <paragraphs xml:id="p-values-of-mu"><title>Tabulated values of the coefficient of friction</title>
                         <p>If you are interested in investigating how widely the coefficient of friction can vary between different surfaces or between static and kinetic friction, then you can find some values of the coefficient of friction at the following websites:
                         <ul>
                                 <li><url href="http://www.engineershandbook.com/Tables/frictioncoefficients.htm" /> (referenced Oct, 2017)</li>
@@ -4884,9 +4909,11 @@ Earth feels a force by \studentZ\ to the left.
                                 <li><url href="https://www.engineersedge.com/coeffients_of_friction.htm" /> (referenced Oct, 2017)</li>
                                 <li><url href="http://www.tribology-abc.com/abc/cof.htm" /> (referenced Oct, 2017)</li>
                         </ul>
-                        To indicate the complications of friction in general and friction due to gripping in particular, this paper
-                        (<url href="https://www.researchgate.net/publication/223651389_Friction_of_Human_Skin_against_Smooth_and_Rough_Glass_as_a_function_of_Contact_Pressure">S. Derler <ampersand /> L-C. Gerhardt <ampersand /> A. Lenz <ampersand /> E. Bertaux <ampersand /> M. Hadad. (2009). Friction of Human Skin against Smooth and Rough Glass as a function of Contact Pressure. Tribology International. 42. 1565-1574. 10.1016/j.triboint.2008.11.009.</url>,
-                        <url href="http://www.mate.tue.nl/mate/pdfs/12354.pdf">pdf</url>) shows that the coefficient of friction between skin and glass vary with the actual pressure applied.  A normal force of <m>5\unit N</m> produces a coefficient near <m>\mu_s=0.5</m>, but a normal force of <m>20\unit N</m> has a coefficient near <m>\mu=0.25</m>.  The relationship is not linear.</p>
+                        </p></paragraphs>
+                        
+                        <paragraphs xml:id="p-friction-complications"><title>Complications in measuring the coefficient of friction</title>
+                        <p>To indicate the complications of friction in general and friction due to gripping in particular, this paper <xref ref="biblio-derler-2009" /> shows that the coefficient of friction between skin and glass vary with the actual pressure applied.  A normal force of <m>5\unit N</m> produces a coefficient near <m>\mu_s=0.5</m>, but a normal force of <m>20\unit N</m> has a coefficient near <m>\mu=0.25</m>.  The relationship is not linear.</p>
+                        </paragraphs>
 
                         <paragraphs xml:id="p-friction-walking"><title>How we walk</title>
                         <p>There are many examples where friction is our friend.  Walking is an example that is easy to overlook since we do that so often.  However, the process is very similar to other situations where it is painfully obvious.  Consider the online videos of animals (including people) trying to stand up (from an incline position) on ice.  Imagine how you get out of a chair if you don't trust your legs to support you.  Consider that many sports have cleats as part of their shows to get a better grip.  This <q>grip</q> is quite explicitly the effect of friction allowing you to move your body in specific ways.  During this discussion of walking, I would also like you to be thinking of the cutting-back-and-forth motion that is common in racquetball, tennis, basketball, volleyball, soccer, and football, not to mention the need for leverage (i.e., <xref ref="s-leverarm" text="title">torque</xref>) in hitting a baseball or softball, wrestling, golf, and any event in track and field.</p>
@@ -4920,7 +4947,7 @@ Earth feels a force by \studentZ\ to the left.
                         </investigation>
                         </paragraphs>
 
-                        <paragraphs xml:id="p-shifting-load"><title>Shifting Loads</title>
+                        <paragraphs xml:id="p-shifting-load"><title>Shifting loads in moving vehicles</title>
                         <p>If you have ridden in a pick-up truck with heavy objects in the truck-bed, then you might notice when they shift. Driving up a steep incline or suddenly accelerating pulls objects to the back, driving downhill or stopping suddenly pulls objects to the front.</p>
 
                         <exploration xml:id="cyoa-repose"><title>\studentA\ and \studentC\ use a pick-up truck to move a couch</title><idx><h sortby="\studentA">\studentA</h></idx><idx><h sortby="\studentC">\studentC</h></idx>
@@ -4948,21 +4975,27 @@ Earth feels a force by \studentZ\ to the left.
                         </aside>
                         <paragraphs xml:id="p-friction-repose"><title>Angle of repose</title>
                         <p>One practical application of this idea is that if you have a stack of books and you want the one that is second or third from the top, you can lift the book you want at some angle until the books above it slide off and then you can take your book.  The angle at which you have to tilt the book in order to get the other to slide off is called the angle of repose:</p>
-                        <definition xml:id="def-angle-repose"><idx><h>angle of repose</h></idx>
+                        <definition xml:id="def-angle-repose"><title>angle of repose</title><idx><h>angle of repose</h></idx>
                                 <notation>
                                         <usage>\mathrm{angle of repose}</usage>
-                                        <description>The angle at which an object slide off a tilted ramp.</description>
+                                        <description>The angle at which an object slides down a tilted ramp.</description>
                                 </notation>
-                                <statement><p>The <term>angle of repose</term> is the angle at which an object, which has been placed on a surface that can be tilted ever higher, just breaks the static friction and begins to slide down the surface.</p></statement>
+                                <statement><aside><title>Definition referenced by</title><p>discussion of <xref ref="p-friction-inclined" text="title" /></p></aside>
+                                        <p>When a surface is tilted at a gradually increasing angle, the <term>angle of repose</term> is the angle at which an object just breaks the static friction and begins to slide down the surface.</p></statement>
                         </definition>
                         <p>Because of <xref ref="p-friction-static-larger" text="type-global" />, after the object begins to slide, it will accelerate down the ramp, rather than sliding at a constant speed.  On the other hand, since the surface (especially if it is unpolished wood) will likely have variable roughness along its length, it is possible that the coefficient of friction is different in different sections of the surface and the object might get stuck at some lower location.</p>
-                        <example><title>Finding the angle of repose</title>
+                        <example xml:id="ex-repose-find"><title>Finding the angle of repose</title>
                                 <statement><p>You meet a friend at the library to study for your physics class and she places her cell phone on top of your textbook!  You remember from class that the coefficient of friction between this particular phone case and the book cover is <m>\mu_s=.62</m>.  You did not get a chance to weigh her phone, so you will have to look it up on the internet.  Compute the angle at which the phone would start to slide across the book cover as you slowly open the book.</p></statement>
                                 <hint><title>mass</title><p>The mass should cancel from the equations, so you don't actually need to know the value of the mass.</p></hint>
                                 <hint><title>normal force</title><p>The normal force is normal to the surface even as the cover changes its orientation.</p></hint>
                                 <hint><title>gravitational force</title><p>The gravitational force is always straight towards the center of the Earth.</p></hint>
-                                <answer><p>The angle of repose turns out to be <m>\theta_r = \tan^{-1}(\mu_s) = \tan^{-1}(0.62) = \sig{31}{.8}{^\circ}</m>.</p></answer>
-                                <solution><p>As the cover is lifted, the normal force is only able to balance the component of the gravitational force that is perpendicular to the book cover
+                                <answer xml:id="answer-repose-find">
+                                        <aside><title>Answer referenced by</title>
+                                                <p><xref ref="ex-friction-below-repose" text="type-global" />,
+                                                        <xref ref="ex-friction-above-repose" text="type-global" />
+                                                </p></aside>
+                                        <p>The angle of repose turns out to be <m>\theta_r = \tan^{-1}(\mu_s) = \tan^{-1}(0.62) = \sig{31}{.8}{^\circ}</m>.</p></answer>
+                                <solution xml:id="solution-repose-find"><p>As the cover is lifted, the normal force is only able to balance the component of the gravitational force that is perpendicular to the book cover
                                         <m>F_N=(mg)\cos\theta</m>.
                                         While the angle is smaller than the angle of repose, the frictional force balances the component of the gravitational force that is parallel to the cover
                                         <m>F_f = (mg)\sin\theta</m>.
@@ -4973,13 +5006,13 @@ Earth feels a force by \studentZ\ to the left.
                                         <me> \theta_r = \tan^{-1}(\mu_s) = \tan^{-1}(0.62) = \sig{31}{.8}{^\circ}</me>.</p>
                                         <p>You should test this experimentally.</p></solution>
                         </example>
-                        <example><title>Using the angle of repose</title>
+                        <example xml:id="ex-repose-use"><title>Using the angle of repose</title>
                                 <statement><p>You meet a friend at the library to study for your physics class and she places her cell phone on top of your textbook!  Wanting to <em>read</em> your book, you slowly lift the cover of your book and find that the phone slides off when you get to an angle of <m>38.1^\circ</m>.  (You apparently are a <em>very</em> good judge of angle.)  You did not get a chance to weigh her phone, so you will have to look it up on the internet.  Compute the coefficient of static friction for the phone.</p></statement>
                                 <hint><title>mass</title><p>The mass should cancel from the equations, so you don't actually need to know the value of the mass.</p></hint>
                                 <hint><title>normal force</title><p>The normal force is normal to the surface even as the cover changes its orientation.</p></hint>
                                 <hint><title>gravitational force</title><p>The gravitational force is always straight towards the center of the Earth.</p></hint>
-                                <answer><p>The coefficient of static friction turns out to be <m>\mu_s=\tan\theta = \tan(38.1^\circ) = 0.\sig{784}{1}{}</m></p></answer>
-                                <solution><p>As the cover is lifted, the normal force is only able to balance the component of the gravitational force that is perpendicular to the book cover
+                                <answer xml:id="answer-repose-use"><p>The coefficient of static friction turns out to be <m>\mu_s=\tan\theta = \tan(38.1^\circ) = 0.\sig{784}{1}{}</m></p></answer>
+                                <solution xml:id="solution-repose-use"><p>As the cover is lifted, the normal force is only able to balance the component of the gravitational force that is perpendicular to the book cover
                                         <m>F_N=(mg)\cos\theta</m>.
                                         While the angle is smaller than the angle of repose, the frictional force balances the component of the gravitational force that is parallel to the cover
                                         <m>F_f = (mg)\sin\theta</m>.
@@ -4994,16 +5027,106 @@ Earth feels a force by \studentZ\ to the left.
                         <aside><title>Paragraph referenced by</title>
                                 <p><xref ref="inv-friction-max" text="type-global" /></p>
                         </aside>
-                        <paragraphs xml:id="p-friction-inclined"><title>Inclined Planes</title><idx>inclined planes</idx><idx><h>plane</h><h>inclined</h></idx>
-                                <todo>Should maybe put an inclined plane in the normal force section to indicate that normal force does not always point oppose the gravitational force and reference the friction example of lifting the glass, and then point to it from here as a starting place for adding friction to inclined planes.</todo>
-                        <p>Now we can define inclined planes!  Woo Hoo!</p>
-                        <example><title>Below the angle of repose</title>
-                                <p>Make an example.</p>
+                        <paragraphs xml:id="p-friction-inclined"><title>Inclined Planes</title><idx>inclined plane</idx><idx><h>plane</h><h>inclined</h></idx>
+                        <p>In <xref ref="ss-N-inclined-planes" text="type-global" /> we introduced the idea of an <xref ref="def-inclined-plane" text="title">inclined plane</xref> and focused on the direction of the normal force.  In the next couple of examples we will focus on the role of friction when objects are placed on tilted surfaces.  It will be helpful to understand what it means to be above or below the <xref ref="def-angle-repose" text="title" />.</p>
+                        <example xml:id="ex-friction-below-repose"><title>Below the angle of repose</title>
+                                <statement>
+                                        <p>You are babysitting the neighbors preschool daughter and decide to go to the park.  She decide to play on the slide, which is essentially an inclined plane at <m>25.7^\circ</m>.  You notice that her pants have a coefficient of static friction of <m>\mu_s=0.60</m> and a coefficient of kinetic friction of <m>\mu_k=0.55</m> on the metal.  When you lift her up, you estimate her mass to be <m>m=35.25\unit{kg}</m>.  Find the angle of repose and the force of friction while she tries to slide down the slide.</p></statement>
+                                <hint><title>angle of repose</title><p>See <xref ref="answer-repose-find" text="type-global" />.</p></hint>
+                                <hint><title>friction</title>
+                                        <p>If the angle is larger than the angle of repose, then we should use kinetic friction; recall <xref ref="eq-friction" text="title">Equation</xref>. If the angle is smaller than the angle of repose, then we should use static friction; recall <xref ref="p-friction-static-variable" text="type-global" /> and <xref ref="eq-friction-static" text="title">Equation</xref>.</p></hint>
+                                <answer xml:id="answer-friction-below-repose"><title>angle of repose</title>
+                                        <p>The angle of repose can be found from the coefficient of static friction:
+                                        <me>\theta = \tan^{-1}(\mu_s) = \tan^{-1}(0.60) = \sig{30}{.96}{^\circ} </me>
+                                        Since this is larger than the angle of the slide, the girl will not slide and we need to consider <em>static</em> friction. (This is a pretty lame slide if it is so shallow.)</p></answer>
+                                <answer><title>friction</title>
+                                        <p>Based on <xref ref="answer-friction-below-repose" text="type-local" />, we will find the static friction.  Based on <xref ref="p-friction-static-variable" text="type-global" />, it will not help to use <xref ref="eq-friction-static" text="title">Equation</xref> because the coefficient of static friction only tells us the maximum static friction and we are below the angle of repose.  Since the component of the gravitational force along the slide is down the slide, the frictional force must be upwards along the slide.  So, rather than trying to find the normal force, we only need to find the component of the gravitational force that needs to be balanced.</p>
+                                        <p>the component of the gravitational force down the incline is
+                                        <me>F_g = mg \sin\theta = (35.25\unit{kg})(9.81\unitfrac{m}{s^2})\sin(25.7^\circ) = \sig{149}{.96}{N} </me>
+                                        Therefore, the static frictional force only needs to be <m>F_{fs}=\sig{150}{}{N}</m>.</p></answer>
+                                <solution><title>all forces</title>
+                                        <p>Because the angle of the slide is below the angle of repose, the static friction will be able to hold the child in place.  Since the child is not moving, she is not accelerating, and so is in equilibrium.</p>
+                                        <sidebyside>
+                                        <tabular halign="center"><col right="major" /><col /><col /><row bottom="major"><cell /><cell halign="right"><m>x</m>-comp</cell><cell halign="right"><m>y</m>-comp</cell></row>
+                                                <row bottom="minor">
+                                                        <cell><m>F_g</m></cell>
+                                                        <cell halign="right"><m>mg\sin\theta = -\sig{150}{.0}{N}</m></cell>
+                                                        <cell halign="right"><m>mg\cos\theta = +\sig{311}{.6}{N}</m></cell>
+                                                </row>
+                                                <row bottom="minor">
+                                                        <cell><m>F_N</m></cell>
+                                                        <cell bottom="major" halign="right"><m>0 \unit N</m></cell>
+                                                        <cell bottom="major" halign="right"><m>F_{N,y}</m></cell>
+                                                </row>
+                                                <row bottom="minor">
+                                                        <cell><m>F_f</m></cell>
+                                                        <cell bottom="major" halign="right"><m>F_{f,x}</m></cell>
+                                                        <cell bottom="major" halign="right"><m>0 \unit N</m></cell>
+                                                </row>
+                                                <row>
+                                                        <cell><m>F_\mathrm{net}</m></cell>
+                                                        <cell halign="right"><m>0\unit{N}</m></cell>
+                                                        <cell halign="right"><m>0\unit{N}</m></cell>
+                                                </row>
+                                        </tabular>
+                                        </sidebyside>
+                                        <p>This implies that the normal force is <m>F_N = 312\unit{N}</m> and the frictional force is <m>F_f = 150\unit{N}</m>.</p>
+                                        <p>It is also possible to compute the maximum value of the force of static friction:
+                                        <me> F_{f,\text{max}}=\mu_s F_N = (0.60) (\sig{311}{.6}{N}) = \sig{18}{7}{N}</me>
+                                        which is, in fact, larger than the actual frictional force.</p></solution>
                         </example>
-                        <example><title>Above the angle of repose</title>
-                                <p>Make an example.</p>
+                         <example xml:id="ex-friction-above-repose"><title>Above the angle of repose</title>
+                                <statement>
+                                        <p>You are babysitting the neighbors preschool daughter and decide to go to the park.  She decide to play on the slide, which is essentially an inclined plane at <m>53.7^\circ</m>.  You notice that her pants have a coefficient of static friction of <m>\mu_s=0.60</m> and a coefficient of kinetic friction of <m>\mu_k=0.55</m> on the metal.  When you lift her up, you estimate her mass to be <m>m=35.25\unit{kg}</m>.  Find the angle of repose and the force of friction while she tries to slide down the slide.</p></statement>
+                                <hint><title>angle of repose</title><p>See <xref ref="answer-repose-find" text="type-global" />.</p></hint>
+                                <hint><title>friction</title>
+                                        <p>If the angle is larger than the angle of repose, then we should use kinetic friction; recall <xref ref="eq-friction" text="title">Equation</xref>. If the angle is smaller than the angle of repose, then we should use static friction; recall <xref ref="p-friction-static-variable" text="type-global" /> and <xref ref="eq-friction-static" text="title">Equation</xref>.</p></hint>
+                                <answer xml:id="answer-friction-above-repose"><title>angle of repose</title>
+                                        <p>The angle of repose can be found from the coefficient of static friction:
+                                        <me>\theta = \tan^{-1}(\mu_s) = \tan^{-1}(0.60) = \sig{30}{.96}{^\circ} </me>
+                                        Since this is larger than the angle of the slide, the girl will certainly slide and we need to consider <em>kinetic</em> friction.  (This is a pretty awesome slide.)</p></answer>
+                                <answer><title>friction</title>
+                                        <p>Based on <xref ref="answer-friction-above-repose" text="type-local" />, we will find the kinetic friction from <xref ref="eq-friction" text="title">Equation</xref>.  To do this, we need the normal force, which we can do as is done in <xref ref="ex-inclined-plane" text="type-global" />: 
+                                        <me>F_N = F_{gy} = mg \cos\theta = (35.25\unit{kg})(9.81\unitfrac{m}{s^2})\cos(53.7^\circ) = \sig{204}{.7}{N} </me>
+                                        Then, the frictional force is 
+                                        <me>F_{fk}=\mu_k F_N = (0.55)(\sig{204}{.7}{N}) = \sig{11}{2.6}{N}</me>.
+                                        Notice that since the coefficient is only known to two significant figures, we only know this value to two significant figures.</p></answer>
+                                <solution><title>all forces</title>
+                                        <p>Because the angle of the slide is above the angle of repose, the kinetic friction will not be able to hold the child in place.  This means that the child is accelerating, and so is not in equilibrium.</p>
+                                        <sidebyside>
+                                        <tabular halign="center"><col right="major" /><col /><col /><row bottom="major"><cell /><cell halign="right"><m>x</m>-comp</cell><cell halign="right"><m>y</m>-comp</cell></row>
+                                                <row bottom="minor">
+                                                        <cell><m>F_g</m></cell>
+                                                        <cell halign="right"><m>mg\sin\theta = -\sig{278}{.7}{N}</m></cell>
+                                                        <cell halign="right"><m>mg\cos\theta = +\sig{204}{.7}{N}</m></cell>
+                                                </row>
+                                                <row bottom="minor">
+                                                        <cell><m>F_N</m></cell>
+                                                        <cell bottom="major" halign="right"><m>0 \unit N</m></cell>
+                                                        <cell bottom="major" halign="right"><m>F_{N,y}</m></cell>
+                                                </row>
+                                                <row bottom="minor">
+                                                        <cell><m>F_f</m></cell>
+                                                        <cell bottom="major" halign="right"><m>F_{f,x}</m></cell>
+                                                        <cell bottom="major" halign="right"><m>0 \unit N</m></cell>
+                                                </row>
+                                                <row>
+                                                        <cell><m>F_\mathrm{net}</m></cell>
+                                                        <cell halign="right"><m>ma</m></cell>
+                                                        <cell halign="right"><m>0\unit{N}</m></cell>
+                                                </row>
+                                        </tabular>
+                                        </sidebyside>
+                                        <p>We <em>can</em> compute the normal force is <m>F_N = 205\unit{N}</m> and the frictional force is <m>F_f = \mu_kF_N = 1.1\ten{2}\unit{N}</m>.</p>
+                                        <p>With this information, we can find the acceleration:
+                                        <md>
+                                                <mrow>ma \amp = F_{gx} + \cancelto{0}{F_{Nx}} + F_{fx} </mrow>
+                                                <mrow>ma \amp = (\sig{278}{.7}{N}) + (0\unit{N}) + (-\sig{11}{2.6}{N}) </mrow>
+                                                <mrow> a \amp = \frac{+\sig{16}{6}{N}}{35.25\unit{kg}} \amp = +\sigfrac{4.7}{1}{m}{s^2} </mrow>
+                                        </md>
+                                        You should notice that the component of the gravitational force down the incline is larger than the frictional force up the incline, so the child does accelerate down the incline.</p></solution>
                         </example>
-                        </paragraphs>
+                       </paragraphs>
 
                         </subsubsection>
 
@@ -5101,6 +5224,9 @@ Earth feels a force by \studentZ\ to the left.
                         </observation>
 
                         <p>At this point, you should be able to imagine a variety of applications where you expect to see rolling friction rather than kinetic friction.  Please answer <xref ref="ex-rolling-friction" text="type-local" /> to test yourself.</p>
+                        <exercise xml:id="ex-rolling-friction">
+                                <statement><p>make an example</p></statement>
+                        </exercise>
 
                         <p> Note that desk chairs that tilt are essentially rocking chairs where the rocking mechanism is hidden inside the piece that connects the seat of the chair to the support post.</p>
 
@@ -5222,49 +5348,6 @@ Earth feels a force by \studentZ\ to the left.
                 <subsection xml:id="ss-air-resistance"><title>Air Resistance</title>
                         <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that Reynolds introduced the equation of viscous fluid flow in 1866 (but referenced Reynolds 1886).</p>
                 </subsection>
-
-                <references>
-                        <biblio type="raw" xml:id="bib-friction-hutchings">
-                                Hutchings, Ian M., <title>Leonardo da Vinci's studies of friction</title>, <year>15 August 2016</year>. <journal>Wear</journal> <volume>Volumes 360-361</volume>, pp. 51-66.
-                                (<url href="https://doi.org/10.1016/j.wear.2016.04.019" />)
-                        </biblio>
-                        <biblio type="raw" xml:id="bib-friction-tribology">
-                                <!-- As of Oct, 2017 -->
-                                van Beek, Anton. <title>History of Science Friction</title>. tribology-abc.com. Retrieved Oct, 2017. <url href="http://www.tribology-abc.com/abc/history.htm" />.
-                        </biblio>
-                        <biblio type="raw" xml:id="bib-friction-armstrong">
-                                <!-- As of Oct, 2017 -->
-                                Armstrong-Hélouvry, Brian (1991). Control of machines with friction. USA: Springer.  [ISBN 0-7923-9133-0]
-                                <url href="https://books.google.com/books?id=0zk_zI3xACgC&amp;pg=PA10&amp;hl=en#v=onepage&amp;q&amp;f=false">pg 10</url>.
-                        </biblio>
-<!-- other interesting references:
-http://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/amontons-guillaume
-https://www.britannica.com/biography/Guillaume-Amontons
-http://www.madehow.com/inventorbios/8/Guillaume-Amontons.html
-https://en.wikipedia.org/wiki/Guillaume_Amontons
-
-https://www.biography.com/people/charles-de-coulomb-9259075
-
-Also check these folks out on Wikipedia.... of course
-
--->
-                        <biblio type="raw" xml:id="bib-friction-popov2017">
-                                <!-- As of Oct, 2017 -->
-                                Popov, V.L. <title>Contact Mechanics and Friction: Physical Principles and Applications</title>, 2017, Springer Berlin Heidelberg; <url href="https://books.google.com/books?id=qT5RDgAAQBAJ&amp;pg=PA4&amp;lpg=PA4&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=I4SUYUbWQW&amp;sig=1FhgbMd-9NM7i4txa7GBtgntn4s&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKDAA#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 4</url>. (ISBN 9783662530818)
-                                <url href="https://books.google.com/books?id=qT5RDgAAQBAJ" />.
-                        </biblio>
-                        <biblio type="raw" xml:id="bib-friction-kerr2014">
-                                <!-- As of Oct, 2017 -->
-                                ed. Kerr, A.D. <title>Railroad Track Mechanics and Technology: Proceedings of a Symposium Held at Princeton University, April 21 - 23, 1975</title>, 2014, Elsevier Science;  <url href="https://books.google.com/books?id=ggU6AwAAQBAJ&amp;pg=PA336&amp;lpg=PA336&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=oCzWJiE3N9&amp;sig=3TSLyE7if10AHMKlgHxD6yWow7w&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKzAB#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 336</url>.  (ISBN 9781483188218)
-                                <url href="https://books.google.com/books?id=ggU6AwAAQBAJ" />.
-                        </biblio>
-                        <biblio type="raw" xml:id="bib-friction-blau2008">
-                                <!-- As of Oct, 2017 -->
-                                Blau, P.J. <title>Friction Science and Technology: From Concepts to Applications, 2e</title> (Mechanical Engineering Series), 2008, CRC Press; <url href="https://books.google.com/books?id=5pIpV1LY5HMC&amp;pg=PA8&amp;lpg=PA8&amp;dq=hooke+rolling+friction&amp;source=bl&amp;ots=oT-uQSgTUl&amp;sig=BFS0NgjHKZwRgYk5MKx75GNoG48&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjQhOD6vpvXAhVGrVQKHdISCqAQ6AEIMjAC#v=onepage&amp;q=hooke%20rolling%20friction&amp;f=false">pg 12</url>. (ISBN 9781420054101)
-                                <url href="https://books.google.com/books?id=5pIpV1LY5HMC" />.
-                        </biblio>
-                </references>
-
 
         </section>
 
@@ -6384,6 +6467,51 @@ Also check these folks out on Wikipedia.... of course
 
         </section>
 
+        <references><title>References and Further Reading</title>
+                <biblio type="raw" xml:id="bib-friction-hutchings">
+                        Hutchings, Ian M., <title>Leonardo da Vinci's studies of friction</title>, <year>15 August 2016</year>. <journal>Wear</journal> <volume>Volumes 360-361</volume>, pp. 51-66.
+                        (<url href="https://doi.org/10.1016/j.wear.2016.04.019" />)
+                </biblio>
+                <biblio type="raw" xml:id="bib-friction-tribology">
+                        <!-- As of Oct, 2017 -->
+                        van Beek, Anton. <title>History of Science Friction</title>. tribology-abc.com. Retrieved Oct, 2017. <url href="http://www.tribology-abc.com/abc/history.htm" />.
+                </biblio>
+                <biblio type="raw" xml:id="bib-friction-armstrong">
+                        <!-- As of Oct, 2017 -->
+                        Armstrong-Hélouvry, Brian (1991). Control of machines with friction. USA: Springer.  [ISBN 0-7923-9133-0]
+                        <url href="https://books.google.com/books?id=0zk_zI3xACgC&amp;pg=PA10&amp;hl=en#v=onepage&amp;q&amp;f=false">pg 10</url>.
+                </biblio>
+<!-- other interesting references:
+http://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/amontons-guillaume
+https://www.britannica.com/biography/Guillaume-Amontons
+http://www.madehow.com/inventorbios/8/Guillaume-Amontons.html
+https://en.wikipedia.org/wiki/Guillaume_Amontons
+
+https://www.biography.com/people/charles-de-coulomb-9259075
+
+Also check these folks out on Wikipedia.... of course
+
+-->
+                <biblio type="raw" xml:id="bib-friction-popov2017">
+                        <!-- As of Oct, 2017 -->
+                        Popov, V.L. <title>Contact Mechanics and Friction: Physical Principles and Applications</title>, 2017, Springer Berlin Heidelberg; <url href="https://books.google.com/books?id=qT5RDgAAQBAJ&amp;pg=PA4&amp;lpg=PA4&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=I4SUYUbWQW&amp;sig=1FhgbMd-9NM7i4txa7GBtgntn4s&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKDAA#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 4</url>. (ISBN 9783662530818)
+                        <url href="https://books.google.com/books?id=qT5RDgAAQBAJ" />.
+                </biblio>
+                <biblio type="raw" xml:id="bib-friction-kerr2014">
+                        <!-- As of Oct, 2017 -->
+                        ed. Kerr, A.D. <title>Railroad Track Mechanics and Technology: Proceedings of a Symposium Held at Princeton University, April 21 - 23, 1975</title>, 2014, Elsevier Science;  <url href="https://books.google.com/books?id=ggU6AwAAQBAJ&amp;pg=PA336&amp;lpg=PA336&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=oCzWJiE3N9&amp;sig=3TSLyE7if10AHMKlgHxD6yWow7w&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKzAB#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 336</url>.  (ISBN 9781483188218)
+                        <url href="https://books.google.com/books?id=ggU6AwAAQBAJ" />.
+                </biblio>
+                <biblio type="raw" xml:id="bib-friction-blau2008">
+                        <!-- As of Oct, 2017 -->
+                        Blau, P.J. <title>Friction Science and Technology: From Concepts to Applications, 2e</title> (Mechanical Engineering Series), 2008, CRC Press; <url href="https://books.google.com/books?id=5pIpV1LY5HMC&amp;pg=PA8&amp;lpg=PA8&amp;dq=hooke+rolling+friction&amp;source=bl&amp;ots=oT-uQSgTUl&amp;sig=BFS0NgjHKZwRgYk5MKx75GNoG48&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjQhOD6vpvXAhVGrVQKHdISCqAQ6AEIMjAC#v=onepage&amp;q=hooke%20rolling%20friction&amp;f=false">pg 12</url>. (ISBN 9781420054101)
+                        <url href="https://books.google.com/books?id=5pIpV1LY5HMC" />.
+                </biblio>
+                <biblio type="raw" xml:id="biblio-derler-2009">S. Derler <ampersand /> L-C. Gerhardt <ampersand /> A. Lenz <ampersand /> E. Bertaux <ampersand /> M. Hadad. (2009). 
+                        <url href="https://www.researchgate.net/publication/223651389_Friction_of_Human_Skin_against_Smooth_and_Rough_Glass_as_a_function_of_Contact_Pressure">Friction of Human Skin against Smooth and Rough Glass as a function of Contact Pressure</url>. <journal>Tribology International. 42. 1565-1574. 10.1016/j.triboint.2008.11.009.</journal>
+                        <url href="http://www.mate.tue.nl/mate/pdfs/12354.pdf">pdf</url></biblio>
+        </references>
+
         <conclusion><title>List of examples</title>
                 <list-of elements="example" scope="chapter" />
         </conclusion>
@@ -6788,7 +6916,7 @@ Also check these folks out on Wikipedia.... of course
         </aside>
         <p>discussion of <term>torque</term><idx>torque</idx>: <m>\tau = F l \sin\theta</m>.</p>
 
-        <definition xml:id="def-force-couple">
+        <definition xml:id="def-force-couple"><title>force couple</title><idx><h>force</h><h>force couple</h></idx>
                 <notation>
                         <usage>\text{force couple}</usage>
                         <description>This is a pair of forces that act on an object at different locations in opposite directions, but with equal magnitudes.  Force couples produce a torque on the object.</description>
