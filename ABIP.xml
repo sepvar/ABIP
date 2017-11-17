@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<pretext xml:lang="en-US">
+<mathbook xml:lang="en-US">
 
     <docinfo>
         <macros>
@@ -1360,7 +1360,7 @@
 	</objectives>
 
         <section xml:id="s-precision"><title>Precision and Accuracy</title>
-
+        <idx>precision</idx>
 		<objectives xml:id="so-precision"><title><xref ref="s-precision" text="title" /></title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
@@ -1369,7 +1369,7 @@
 				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
 			</ul>
 		</objectives>
-        <idx>precision</idx>
+
         <!-- \new{v2.2}{Added section, added some detail} -->
 
         <p>In this section, we will consider the benefits of being precise both in measurements and in our language.  Sometimes people confuse the words precise and accurate, but they mean different things.  It may help to remember that the opposite of precise is vague.  Being precise makes it easier to determine if a statement is accurate.  If we already know the answer, then we can know if a result is accurate.  However, the exciting aspect of science is to study that which we do not already know.  In this case, gauging accuracy can be tricky.  If we are do not already know an answer, then we can try to be consistent within our accepted precision.</p>
@@ -1811,7 +1811,7 @@
 		</objectives>
 
                 <subsection xml:id="ss-freefall"><title>Freefall</title>
-
+                <idx>freefall</idx>
 			<objectives xml:id="sso-freefall"><title><xref ref="ss-freefall" text="title" /></title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
@@ -1820,7 +1820,7 @@
 					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
 				</ul>
 			</objectives>
-                <idx>freefall</idx>
+
                 <!-- \new{v2.2}{Adding detail} -->
                         <aside><title>Section referenced by</title> <p><xref ref="ex-ceiling" text="type-global" /></p></aside>
 
@@ -1953,7 +1953,8 @@
 		</objectives>
 
                 <subsection xml:id="ss-noninertial"><title>Non-Inertial Accelerated Reference Frames</title>
-
+                <idx><h>reference frames</h><h>inertial</h></idx>
+                <idx><h>reference frames</h><h>non-inertial</h></idx>
 			<objectives xml:id="sso-noninertial"><title><xref ref="ss-noninertial" text="title" /></title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
@@ -1962,8 +1963,7 @@
 					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
 				</ul>
 			</objectives>
-                <idx><h>reference frames</h><h>inertial</h></idx>
-                <idx><h>reference frames</h><h>non-inertial</h></idx>
+
                         <aside><title>Subsection referenced by</title>
                         <p>
                         <xref ref="def-referenceframe" text="title">Reference Frames</xref>,
@@ -2578,7 +2578,7 @@
 
                 </subsubsection>
                 <subsubsection xml:id="sss-netforce"><title>Calculating the Net Force</title>
-                <objectives xml:id="sso-netforce"><title><xref ref="ss-netforce" text="title" /></title>
+                <objectives xml:id="ssso-netforce"><title><xref ref="sss-netforce" text="title" /></title>
                         <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
                         <ul>
                                 <li><p>vector-add multiple forces to find the resultant (net) force</p></li>
@@ -4105,7 +4105,7 @@ Earth feels a force by \studentZ\ to the left.
                 </introduction>
 
                 <subsection xml:id="ss-weightmass"><title>Weight versus Mass</title>
-
+                <idx>weight</idx>
 			<objectives xml:id="sso-weightmass"><title><xref ref="ss-weightmass" text="title" /></title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
@@ -4114,7 +4114,7 @@ Earth feels a force by \studentZ\ to the left.
 					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
 				</ul>
 			</objectives>
-                <idx>weight</idx>
+
                 <aside><title>Referenced by</title>
                         <p>
                         <xref ref="ss-convertunits" text="type-hybrid" />,
@@ -4358,7 +4358,7 @@ Earth feels a force by \studentZ\ to the left.
         </section>
 
         <section xml:id="s-FN"><title>Normal Force</title>
-
+        <idx><h>force</h><h>normal</h></idx>
 		<objectives xml:id="so-FN"><title><xref ref="s-FN" text="title" /></title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
@@ -4367,7 +4367,7 @@ Earth feels a force by \studentZ\ to the left.
 				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
 			</ul>
 		</objectives>
-        <idx><h>force</h><h>normal</h></idx>
+
 
                 <introduction>
         <aside><title>Section referenced by</title>
@@ -5870,16 +5870,10 @@ Earth feels a force by \studentZ\ to the left.
 			<objectives xml:id="sso-friction-rolling"><title><xref ref="ss-friction-rolling" text="title" /></title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
-					<li><p>.</p></li>
-					<li><p>.</p></li>
-					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+                                        <li>recognize examples of (and be able to give new examples of) situations in which rolling friction (in contrast to dry-sliding friction) needs to be included</li>
+                                        <li>connect the existence of rolling friction to specific effects in the motion and on the energy</li>
 				</ul>
 			</objectives>
-
-                        <objectives><ol>
-                                <li>To recognize examples of (and be able to give new examples of) situations in which rolling friction (in contrast to dry-sliding friction) needs to be included</li>
-                                <li>To connect the existence of rolling friction to specific effects in the motion and on the energy</li>
-                        </ol></objectives>
 
                         <p>Comparing and contrasting kinetic friction, static friction, and rolling friction is often difficult because the motion of the object is so different.  Static and kinetic are likely pretty intuitive in that (1) the object is either moving or it isn't and (2) the objects are (or are trying to) slide against each other.  Rolling friction, on the other hand, looks rather different.  The surfaces are in contact, but it is not always obvious if they are sliding against each other.  If you do an internet search, you will find that some authors group rolling friction in with kinetic (or dynamic) friction because the objects (I will say the center-of-mass of the objects) have some relative motion and you will find other authors who indicate that it should be compared to static friction because there is no relative motion between the surfaces of the objects.</p>
 
@@ -6114,7 +6108,7 @@ Earth feels a force by \studentZ\ to the left.
 
 
         <section xml:id="s-FT"><title>Tension</title>
-
+        <idx><h>force</h><h>tension</h></idx>
 		<objectives xml:id="so-FT"><title><xref ref="s-FT" text="title" /></title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
@@ -6123,7 +6117,7 @@ Earth feels a force by \studentZ\ to the left.
 				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
 			</ul>
 		</objectives>
-        <idx><h>force</h><h>tension</h></idx>
+
 
                 <introduction>
         <aside><title>Section referenced by</title>
@@ -7931,6 +7925,8 @@ Also check these folks out on Wikipedia.... of course
         </section>
 
         <section xml:id="s-noninertial"><title>Non-inertial Rotational Reference Frames</title>
+        <idx><h>reference frames</h><h>inertial</h></idx>
+        <idx><h>reference frames</h><h>non-inertial</h></idx>
 
 		<objectives xml:id="so-noninertial"><title><xref ref="s-noninertial" text="title" /></title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
@@ -7940,8 +7936,6 @@ Also check these folks out on Wikipedia.... of course
 				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
 			</ul>
 		</objectives>
-        <idx><h>reference frames</h><h>inertial</h></idx>
-        <idx><h>reference frames</h><h>non-inertial</h></idx>
 
                 <introduction>
         <aside><title>Section referenced by</title>
@@ -8553,7 +8547,7 @@ Also check these folks out on Wikipedia.... of course
 		</ul>
 	</objectives>
         <section xml:id="s-density"><title>Density</title>
-
+        <idx>density</idx>
 		<objectives xml:id="so-density"><title><xref ref="s-density" text="title" /></title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
@@ -8562,7 +8556,7 @@ Also check these folks out on Wikipedia.... of course
 				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
 			</ul>
 		</objectives>
-        <idx>density</idx>
+
         <aside><title>Section referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
         </section>
 
@@ -9815,7 +9809,7 @@ I have emailed her.  NO REPLY.
         </section>
 
         <section><title>\studentA</title>
-
+        <idx><h>\studentA</h><h>outside</h></idx>
 		<objectives><title>[\studentA]</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
@@ -9824,7 +9818,7 @@ I have emailed her.  NO REPLY.
 				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
 			</ul>
 		</objectives>
-        <idx><h>\studentA</h><h>outside</h></idx>
+
 
 <!--        <idx></idx>{\studentA|(} % Begin page-range
 -->
@@ -10054,4 +10048,4 @@ I have emailed her.  NO REPLY.
 
 </backmatter>
 </book>
-</pretext>
+</mathbook>
