@@ -1751,12 +1751,29 @@
 
 <chapter xml:id="c-force"><title>Force</title>
 
+        <objectives xml:id="co-force"><title><xref ref="c-force" text="title" /></title>
+                <introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+                <ul>
+                        <li><p>Correctly describe physical interactions involving how objects push and pull on each other</p></li>
+                        <li><p>Recognize which of Newton's laws applies to which aspect of those interactions</p></li>
+                        <li><p>Create their own examples for interactions that highlight each of Newton's Laws</p></li>
+                        <li><p>Meet the student outcomes of Sections <xref ref="so-forcewords" text="global" />, <xref ref="so-Newton" text="global" />, <xref ref="so-NewtonExamples" text="global" />, and <xref ref="so-force-homework" text="global" />.</p></li>
+                </ul>
+        </objectives>
+
         <introduction>
         <aside><title>Chapter referenced by</title> <p><xref ref="c-forcetype" text="type-global" /></p></aside>
                 <p>Having learned <xref ref="c-motion" text="title">how to describe the way objects move</xref>, we now turn our attention to that which causes motion, although technically it causes motion to change.  In this chapter we will consider the concept of force and frame your attention.  In the <xref ref="c-forcetype" text="title">next chapter</xref> we will consider the specific types of force and how to solve specific problems.</p>
         </introduction>
 
         <section xml:id="s-forcewords"><title>How Physicists Use the Words (Notation)</title>
+
+                <objectives xml:id="so-forcewords"><title><xref ref="s-forcewords" text="title" /></title>
+                        <introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+                        <ul>
+                                <li><p>Identify both the object being pushed and the object doing the pushing for any interaction and correctly describe them using the on-by notation</p></li>
+                        </ul>
+                </objectives>
 
                 <aside><title>Section referenced by</title> <p>Discussion of <xref ref="d-heatverb" text="title">heat as a verb</xref></p></aside>
                 <p xml:id="d-forcenoun">The technical term <term>force</term><idx><h>force</h><h>description</h></idx>
@@ -1805,6 +1822,16 @@
 
         <section xml:id="s-Newton"><title>Connecting the Concepts: Newton's Laws</title>
 
+                <objectives xml:id="so-Newton"><title><xref ref="s-Newton" text="title" /></title>
+                        <introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+                        <ul>
+                                <li><p>Write out Newton's laws in their own words</p></li>
+                                <li><p>Explain how each of Newton's laws clarify the way objects interact</p></li>
+                                <li><p>Give an example of an interaction that highlights each of Newton's laws</p></li>
+                                <li><p>Meet the student outcomes of Subsections <xref ref="sso-NI" text="global" />, <xref ref="sso-NII" text="global" />, and <xref ref="sso-NIII" text="global" />.</p></li>
+                        </ul>
+                </objectives>
+
         <introduction>
 	<aside><title>Section referenced by</title> <p>Discussion of <xref ref="d-Newtonahead" text="title">how to describe forces</xref></p></aside>
 	<biographical><title>Touchstone (law)</title><p>Recall the distinction between <xref ref="s-law" text="title" />.</p></biographical>
@@ -1845,6 +1872,16 @@
         </introduction>
 
                 <subsection xml:id="ss-NI"><title>Translating Newton's First Law: The Law of Inertia</title>
+
+                <objectives xml:id="sso-NI"><title><xref ref="ss-NI" text="title" /></title>
+                        <introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+                        <ul>
+                                <li><p>Write Newton's first law in their own words</p></li>
+                                <li><p>Give examples of objects with no net force such that they maintain their velocity (static and dynamic)</p></li>
+                                <li><p>For examples in which objects have an acceleration, identify the force acting</p></li>
+                                <li><p>Meet the student outcomes of Subsubsections <xref ref="ssso-inertia" text="global" /> and <xref ref="ssso-NItogether" text="global" />.</p></li>
+                        </ul>
+                </objectives>
 
                 <introduction>
                 <aside><title>Subsection referenced by</title> <p>Discussion of <xref ref="d-Newtonahead" text="title">how to describe forces</xref></p></aside>
@@ -1902,12 +1939,26 @@
 
                         <subsubsection xml:id="sss-inertia"><title>Inertia</title><idx>inertia</idx>
 
+                        <objectives xml:id="ssso-inertia"><title><xref ref="sss-inertia" text="title" /></title>
+                                <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+                                <ul>
+                                        <li><p>consistently express the correct use of the term inertia</p></li>
+                                </ul>
+                        </objectives>
+
                         <p>This law is often called the <q>law of inertia</q>.  The concept of inertia can be described as <em>the tendency of an object to maintain its velocity</em>.  This is describing how the object behaves when you don't do anything to it.  The inertia is not a quantity that physicists calculate, but physicists do refer to objects as having a lot of inertia, usually to indicate that it will take a large force to change the object's motion, or as having a small amount of inertia, usually to indicate that it should be relatively easy to change the object's motion.  However, the inertia does not actually refer to the force needed.  Instead, the inertia most often refers to the <q>inertial mass</q> of an object, which shows up in the second law.</p>
                                 <insight><p>Inertia is not a force.</p></insight>
                         <p>Sometimes when physicists are not being careful with their language, they will appear to use the word inertia interchangeably with the term <xref ref="def-momentum" text="title">momentum</xref>, which we will discuss in more detail in <xref ref="ss-inertia" text="type-global" />.</p>
 
                         </subsubsection>
                         <subsubsection xml:id="sss-NItogether"><title>How the Laws Work Together</title>
+
+                        <objectives xml:id="ssso-NItogether"><title><xref ref="sss-NItogether" text="title" /></title>
+                                <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+                                <ul>
+                                        <li><p>express if Newton's first law is appropriate to invoke for a given situation.</p></li>
+                                </ul>
+                        </objectives>
 
                         <p>You should notice that Newton's first law is about what happens when you are <em>not pushing</em> on the object, which is to say, the tendency of an object to maintain its own motion without a force acting on it; this is the inertia of the object.  On the other hand, Newton's second law is about what happens <em>to the object</em> when you <em>do push</em> on an it.  This is what we will consider next.  After that, Newton's third law will describe what happens <em>to the thing pushing</em> rather than just to the thing being pushed.
                         <xref ref="sss-NIItogether" text="phrase-global" /> will explore these ideas further.
@@ -1918,6 +1969,14 @@
                 </subsection>
 
                 <subsection xml:id="ss-NII"><title>Translating Newton's Second Law: The Equation Law</title>
+
+                <objectives xml:id="sso-NII"><title><xref ref="ss-NII" text="title" /></title>
+                        <introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+                        <ul>
+                                <li><p>state Newton's second law in their own words</p></li>
+                                <li><p>meet the student outcomes of Subsubsections <xref ref="ssso-unit-N" text="global" />, <xref ref="ssso-netforce" text="global" />, <xref ref="ssso-netforce-other" text="global" />, <xref ref="ssso-equilibrium" text="global" />, and <xref ref="ssso-NIItogether" text="global" />.</p></li>
+                        </ul>
+                </objectives>
 
                 <introduction>
                         <aside><title>Subsection referenced by</title>
@@ -1991,6 +2050,15 @@
                 </introduction>
                 <subsubsection xml:id="sss-unit-N"><title>Units of Force</title>
                 <idx><h>force</h><h>units of</h></idx>
+                <objectives xml:id="ssso-unit-N"><title><xref ref="sss-unit-N" text="title" /></title>
+                        <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+                        <ul>
+                                <li><p>use dimensional analysis to identify whether or not a quantity represents a force</p></li>
+                                <li><p>convert forces expressed from various units to Newtons</p></li>
+                                <li><p>estimate the size of forces that they experience in life</p></li>
+                        </ul>
+                </objectives>
+
                 <aside><title>Referenced by</title> <p><xref ref="ss-units" /></p></aside>
 
                         <todo>maybe note the MKS-to-SI transition. maybe leave that in (xref ref="ss-units" text="type-global" /).</todo>
@@ -2011,8 +2079,20 @@
                                 </statement>
                         </definition>
 
+                        <todo>Add some examples here</todo>
+                        <p>Add an example to identify if a number if a force or a momentum.</p>
+                        <p>Add an example to <q>convert</q> stones, pounds, kilograms to Newtons</p>
+                        <p>Add an investigation to estimate the size of various forces people might encounter in their lives</p>
+
                 </subsubsection>
                 <subsubsection xml:id="sss-netforce"><title>Calculating the Net Force</title>
+                <objectives xml:id="sso-netforce"><title><xref ref="ss-netforce" text="title" /></title>
+                        <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+                        <ul>
+                                <li><p>vector-add multiple forces to find the resultant (net) force</p></li>
+                        </ul>
+                </objectives>
+
                 <aside><title>Subsubsection referenced by</title> <p>Discussion of <xref ref="fs-equilibrium" text="title">Newton's first law</xref></p></aside>
 
                         <p>The word <q>net</q> that goes with force is here to indicate the total, which is useful to think of as <q>everything collected with the net.</q> The intention here is that wherever there are multiple forces acting on a single object, we must combine them as <xref ref="ss-vectors" text="title">vectors</xref> as follows: </p>
@@ -2319,7 +2399,16 @@
                         </exercise>
 
                 </subsubsection>
-                <subsubsection><title>Using the Net Force to Calculate Other Quantities</title>
+                <subsubsection xml:id="sss-netforce-other"><title>Using the Net Force to Calculate Other Quantities</title>
+
+                        <objectives xml:id="ssso-netforce-other"><title><xref ref="sss-netforce-other" text="title" /></title>
+                                <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+                                <ul>
+                                        <li><p>compute the mass or acceleration, given a net force and the acceleration or the mass</p></li>
+                                        <li><p></p></li>
+                                        <li><p></p></li>
+                                </ul>
+                        </objectives>
 
                         <p>Generally, the point of finding the net force is that it causes an object to change its velocity. Let's also consider a few simple examples of this calculation.</p>
 
@@ -2454,6 +2543,14 @@
 
                 </subsubsection>
                 <subsubsection xml:id="sss-equilibrium"><title>Equilibrium</title><idx>equilibrium</idx>
+                <objectives xml:id="ssso-equilibrium"><title><xref ref="sss-equilibrium" text="title" /></title>
+                        <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+                        <ul>
+                                <li><p>consistently express the correct use of the term equilibrium</p></li>
+                                <li><p>recognize if an object in a particular situation is or is not in equilibrium based either on its motion or on the forces acting upon it.</p></li>
+                        </ul>
+                </objectives>
+
                 <aside><title>Subsubsection referenced by</title>
                         <p>
                         <xref ref="se-equi" text="type-global" />,
@@ -2473,6 +2570,14 @@
 
                 </subsubsection>
                 <subsubsection xml:id="sss-NIItogether"><title>How the Laws Work Together</title>
+                <objectives xml:id="ssso-NIItogether"><title><xref ref="sss-NIItogether" text="title" /></title>
+                        <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+                        <ul>
+                                <li><p>I'm not really sure what the objective is here.  Maybe I should re-work this section</p></li>
+                        </ul>
+                </objectives>
+
+                <todo>I should rework this section.  Build a focus.</todo>
                 <aside><title>Referenced by</title> <p><xref ref="sss-NItogether" text="type-global"/></p></aside>
 
                         <p>When forces act on an object, Newton's second law applies, so we usually start with the second law.  If those forces combine to give a net force of zero, such that the object is in equilibrium, then Newton's first law applies.  If we also care about the person or thing pushing, then the third law also applies.</p>
@@ -2482,7 +2587,6 @@
                         <exploration xml:id="cyoa-NI"><title>Out of gas</title>
                                 <statement>
                                 <aside><title>Exploration referenced by</title><p><xref ref="sss-NIItogether" text="type-global" /></p></aside>
-                                        <todo>I like "answer" better, but it doesn't fit.  "hint" fits, but I don't like it.  I can't figure out how to extend that line.  sidebyside hides the answers.</todo>
                                         <p>On a long road trip with your friend \studentB<idx><h sortby="\studentB">\studentB</h></idx>, your car starts to sputter as it runs out of gas shortly before arriving in a new town.  You see a sign for a gas station in the distance and have to decide what to do.  You and \studentB\ can think of three options.
                                         <dl>
                                                 <li xml:id="c-parkandwalk"><title>Plan A</title>
@@ -2534,6 +2638,14 @@
 
                 <subsection xml:id="ss-NIII"><title>Translating Newton's Third Law: Action <ampersand /> Reaction</title>
 
+                <objectives xml:id="sso-NIII"><title><xref ref="ss-NIII" text="title" /></title>
+                        <introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+                        <ul>
+                                <li><p>state Newton's third law in their own words</p></li>
+                                <li><p>meet the objectives of Subsubsection <xref ref="ssso-FBD" text="global" /></p></li>
+                        </ul>
+                </objectives>
+
                 <introduction>
                 <aside><title>Subsection referenced by</title>
                         <p>
@@ -2573,6 +2685,15 @@
 
                         <subsubsection xml:id="sss-FBD"><title>The Free-Body Diagram (FBD)</title>
                         <idx>free-body diagrams</idx>
+                        <objectives xml:id="ssso-FBD"><title><xref ref="sss-FBD" text="title" /></title>
+                                <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+                                <ul>
+                                        <li><p>draw a free-body diagram for any single object with forces acting on it</p></li>
+                                        <li><p>distinguish which forces are on which object</p></li>
+                                </ul>
+                                <conclusion><p>These skills will be refined and developed in <xref ref="s-NewtonExamples" text="type-global" />.</p></conclusion>
+                        </objectives>
+
                         <aside><title>Referenced by</title>
                                 <p>
                                 <xref ref="se-equi" text="type-global" />,
@@ -2854,6 +2975,16 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
 
 
         <section xml:id="s-NewtonExamples"><title>Examples</title>
+
+        <objectives xml:id="so-NewtonExamples"><title><xref ref="s-NewtonExamples" text="title" /></title>
+                <introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+                <ul>
+                        <li><p>Identify when forces are acting on an object and in which direction (Note: After <xref ref="c-forcetype" text="type-global" />, you will be able to identify the type of force being applied.)</p></li>
+                        <li><p>Explain how forces in various situations affect the motion of the object to which the force is applied</p></li>
+                        <li><p>Develop the skills introduced in Subsubsection <xref ref="ssso-FBD" text="global" />.</p></li>
+                </ul>
+        </objectives>
+
         <aside><title>Referenced by</title> <p><xref ref="sss-NIItogether" text="type-global"/></p></aside>
 
         <p>Next, we can consider a simple interactive example that is intended to help you think about how you know a force is acting.</p>
@@ -3269,7 +3400,15 @@ Earth feels a force by \studentZ\ to the left.
         </section>
 
 
-        <section><title>Summary and Homework</title>
+        <section xml:id="s-force-homework"><title>Summary and Homework</title>
+
+        <objectives xml:id="so-force-homework"><title><xref ref="s-force-homework" text="title" /></title>
+                <introduction><p>After successfully studying this section, students should <ellipsis /></p></introduction>
+                <ul>
+                        <li><p>have refined and enhanced the outcomes of Chapter <xref ref="co-force" text="global" /></p></li>
+                        <li><p>be able to compute numeric values associated with the outcomes of Chapter <xref ref="co-force" text="global" />.</p></li>
+                </ul>
+        </objectives>
 
                 <subsection><title>Summary of Concepts and Equations</title>
 
@@ -3368,14 +3507,11 @@ Earth feels a force by \studentZ\ to the left.
 
         <conclusion><title>List of examples</title>
                 <list-of elements="example exercise" scope="chapter" />
-
-        <p>---</p>
-        <p>(Revised September 1, 2017)</p>
         </conclusion>
 
 </chapter>
 
-<!-- ********************************************************************************************** -->
+<!-- *******************JC: Adjust here *************************************************************************** -->
 
 <chapter xml:id="c-forcetype"><title>The Many Types of Force</title>
 
@@ -3609,7 +3745,7 @@ Earth feels a force by \studentZ\ to the left.
                 <convention xml:id="convention-g-value"><title>The precision of <m>g</m></title>
                         <p>Because the variation is small, throughout this text when we are considering situations <q>at the surface of the Earth</q>, we will assume that the acceleration due to gravity is <m>9.81\unitfrac{m}{s^2}</m> to three significant figures.</p>
                         <postlude>
-                                <p><xref ref="convention-g-value" text="type-global" /> is making an approximation that allows us to compute values to a useful precision.  You should note from <xref ref="t-gworld" text="type-local" />(<fn xml:id="fn-compute-g">While both the latitude-longitude and the local value of <m>g</m> were found using the <url href="https://www.wolframalpha.com/">WolframAlpha<registered /> computational knowledge engine</url>, these <m>g</m> values do not necessarily correspond to these coordinates.  The <m>g</m> values are based on a theoretical model of the Earth.</fn>) that the value of <m>g</m> does vary around the world, but that your distance from the center of the Earth has to change <em>significantly</em> for the value to change by a noticeable amount.  The consequence of this is that whenever we consider motion that stays within a vertical range of tens-of-meters, we can consider the acceleration due to gravity to be constant.  Sometimes this is referred to as being <q>locally constant</q>.  This is an example of a useful approximation that is essentially true, as discussed in <xref ref="s-effective2" text="type-global" />.</p>
+                                <p><xref ref="convention-g-value" text="type-global" /> is making an approximation that allows us to compute values to a useful precision.  You should note from <xref ref="t-gworld" text="type-local" />(<fn xml:id="fn-compute-g-postlude">While both the latitude-longitude and the local value of <m>g</m> were found using the <url href="https://www.wolframalpha.com/">WolframAlpha<registered /> computational knowledge engine</url>, these <m>g</m> values do not necessarily correspond to these coordinates.  The <m>g</m> values are based on a theoretical model of the Earth.</fn>) that the value of <m>g</m> does vary around the world, but that your distance from the center of the Earth has to change <em>significantly</em> for the value to change by a noticeable amount.  The consequence of this is that whenever we consider motion that stays within a vertical range of tens-of-meters, we can consider the acceleration due to gravity to be constant.  Sometimes this is referred to as being <q>locally constant</q>.  This is an example of a useful approximation that is essentially true, as discussed in <xref ref="s-effective2" text="type-global" />.</p>
                         </postlude>
                 </convention>
 
@@ -4889,7 +5025,7 @@ Earth feels a force by \studentZ\ to the left.
 
 
                         <subsubsection xml:id="sss-dry-sliding"><title>Applications of Dry Sliding Friction</title>
-                        
+
                         <p>Since this section is fairly long, you can use these links to jump to the topic of interest:
                         <ul>
                                 <li><p><xref ref="p-values-of-mu" text="title" /></p></li>
@@ -4910,7 +5046,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <li><url href="http://www.tribology-abc.com/abc/cof.htm" /> (referenced Oct, 2017)</li>
                         </ul>
                         </p></paragraphs>
-                        
+
                         <paragraphs xml:id="p-friction-complications"><title>Complications in measuring the coefficient of friction</title>
                         <p>To indicate the complications of friction in general and friction due to gripping in particular, this paper <xref ref="biblio-derler-2009" /> shows that the coefficient of friction between skin and glass vary with the actual pressure applied.  A normal force of <m>5\unit N</m> produces a coefficient near <m>\mu_s=0.5</m>, but a normal force of <m>20\unit N</m> has a coefficient near <m>\mu=0.25</m>.  The relationship is not linear.</p>
                         </paragraphs>
@@ -5086,9 +5222,9 @@ Earth feels a force by \studentZ\ to the left.
                                         <me>\theta = \tan^{-1}(\mu_s) = \tan^{-1}(0.60) = \sig{30}{.96}{^\circ} </me>
                                         Since this is larger than the angle of the slide, the girl will certainly slide and we need to consider <em>kinetic</em> friction.  (This is a pretty awesome slide.)</p></answer>
                                 <answer><title>friction</title>
-                                        <p>Based on <xref ref="answer-friction-above-repose" text="type-local" />, we will find the kinetic friction from <xref ref="eq-friction" text="title">Equation</xref>.  To do this, we need the normal force, which we can do as is done in <xref ref="ex-inclined-plane" text="type-global" />: 
+                                        <p>Based on <xref ref="answer-friction-above-repose" text="type-local" />, we will find the kinetic friction from <xref ref="eq-friction" text="title">Equation</xref>.  To do this, we need the normal force, which we can do as is done in <xref ref="ex-inclined-plane" text="type-global" />:
                                         <me>F_N = F_{gy} = mg \cos\theta = (35.25\unit{kg})(9.81\unitfrac{m}{s^2})\cos(53.7^\circ) = \sig{204}{.7}{N} </me>
-                                        Then, the frictional force is 
+                                        Then, the frictional force is
                                         <me>F_{fk}=\mu_k F_N = (0.55)(\sig{204}{.7}{N}) = \sig{11}{2.6}{N}</me>.
                                         Notice that since the coefficient is only known to two significant figures, we only know this value to two significant figures.</p></answer>
                                 <solution><title>all forces</title>
@@ -6236,7 +6372,6 @@ Earth feels a force by \studentZ\ to the left.
 
 
         <section xml:id="s-FA"><title>Applied Force</title>
-
         <p>The term <q>an applied force</q> is used to describe any force applied by any object when there isn't really a formula to find it.  So this is kind of a <q>any other force</q> category.  I will use this type of force to describe forces exerted by people.  We have seen some examples where a person throws an object.  We can now revisit those examples and consider the force exerted (applied) by the person who threw the object.</p>
 
         <example xml:id="se-throw-up"><title>Applying a force to throw a ball</title>
@@ -6507,7 +6642,7 @@ Also check these folks out on Wikipedia.... of course
                         Blau, P.J. <title>Friction Science and Technology: From Concepts to Applications, 2e</title> (Mechanical Engineering Series), 2008, CRC Press; <url href="https://books.google.com/books?id=5pIpV1LY5HMC&amp;pg=PA8&amp;lpg=PA8&amp;dq=hooke+rolling+friction&amp;source=bl&amp;ots=oT-uQSgTUl&amp;sig=BFS0NgjHKZwRgYk5MKx75GNoG48&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjQhOD6vpvXAhVGrVQKHdISCqAQ6AEIMjAC#v=onepage&amp;q=hooke%20rolling%20friction&amp;f=false">pg 12</url>. (ISBN 9781420054101)
                         <url href="https://books.google.com/books?id=5pIpV1LY5HMC" />.
                 </biblio>
-                <biblio type="raw" xml:id="biblio-derler-2009">S. Derler <ampersand /> L-C. Gerhardt <ampersand /> A. Lenz <ampersand /> E. Bertaux <ampersand /> M. Hadad. (2009). 
+                <biblio type="raw" xml:id="biblio-derler-2009">S. Derler <ampersand /> L-C. Gerhardt <ampersand /> A. Lenz <ampersand /> E. Bertaux <ampersand /> M. Hadad. (2009).
                         <url href="https://www.researchgate.net/publication/223651389_Friction_of_Human_Skin_against_Smooth_and_Rough_Glass_as_a_function_of_Contact_Pressure">Friction of Human Skin against Smooth and Rough Glass as a function of Contact Pressure</url>. <journal>Tribology International. 42. 1565-1574. 10.1016/j.triboint.2008.11.009.</journal>
                         <url href="http://www.mate.tue.nl/mate/pdfs/12354.pdf">pdf</url></biblio>
         </references>

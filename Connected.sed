@@ -1,8 +1,14 @@
+# Fix the trouble with using parts; for some reason, PTX makes both "parts" and "chapters" into parts.
+## adjust section to subsection AND subsection to subsubsection AND subsubsection to subsubsubsection
 s/section\*{/subsection\*{/g
 s/section\[/subsection\[/g
+## adjust chapter to section
 s/chapter\*{/section\*{/g
 s/chapter\[/section\[/g
+## Adjust Part to chapter
 s/part\[\(.*\)label{c/chapter\[\1label{c/g
+# This is a hold-over from before I decided how to distinguish examples, etc.  
+# I now use the THMBOX package to resolve this.
 # s/\\end{insight}/\\hspace*{\\fill}\\rule[-5pt]{1pt}{10pt}\\hspace{-2.5in}\\rule[-5pt]{2.5in}{1pt}\n\\end{insight}/g
 # s/\\end{remark}/\\hspace*{\\fill} \\rule[-5pt]{1pt}{10pt}\\hspace{-2.5in}\\rule[-5pt]{2.5in}{1pt}\n\\end{remark}/g
 # s/\\end{convention}/\\hspace*{\\fill} \\rule[-5pt]{1pt}{10pt}\\hspace{-2.5in}\\rule[-5pt]{2.5in}{1pt}\n\\end{convention}/g
@@ -17,8 +23,11 @@ s/part\[\(.*\)label{c/chapter\[\1label{c/g
 # s/\\end{proposition}/\\end{proposition}\n\\end{leftbar}/g
 # s/\\end{remark}/\\end{remark}\n\\end{leftbar}/g
 # s/\\end{convention}/\\end{convention}\n\\end{leftbar}/g
+# (Although I forget now, I think that) this is here to fix a confusion by THMBOX
 s/\\begin{insight}\[\]/\\begin{insight}/g
 s/\\begin{convention}\[\]/\\begin{convention}/g
 s/\\begin{remark}\[\]/\\begin{remark}/g
 #
+# This comments out the piece that makes chapter numbers reset in each part
+# This will be resolved when parts are set to Decorative, rather than Structural
 s/\\\@addtoreset{chapter}{part}/%\\\@addtoreset{chapter}{part}/g
