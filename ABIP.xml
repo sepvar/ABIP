@@ -495,6 +495,15 @@
 
 <chapter><title>The Story of Science</title>
 
+	<objectives><title>[The Story of Science]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <introduction>
         <p>Once upon a time somebody saw the world around them and thought something equivalent to <q>well, that's an interesting pattern<ellipsis /></q> and predictions were born.  Every human and many animals build their own world of expectations such as: objects will fall down, food will arrive at mealtime, or certain people will smile at me.  Scientists study the patterns in the world around us and do so in a fairly specific way.  Novelists, sociologists, historians, and cartoonists also look at the world around us in a very particular way.  The story of humanity is a story about observing the world around us.</p>
 
@@ -521,6 +530,15 @@
 
         <section><title>Careful, Detailed Observation</title>
 
+		<objectives><title>[Careful, Detailed Observation]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
         <todo>Consider the ''casual to the obvious observer'' joke</todo>
         <p  xml:id="d-casual">[Discussion of <q>casual observer</q> as intuition versus <q>scientific observing</q> and mathematical modelling]</p>
         <aside><title>Paragraph referenced by</title> <p><xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>, discussion of <xref ref="p-multistep" text="title">simple piece of a complicated situation</xref></p></aside>
@@ -530,6 +548,15 @@
         </section>
 
         <section xml:id="s-law"><title>Theory versus Law</title>
+
+		<objectives xml:id="so-law"><title><xref ref="s-law" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
                 <aside><title>Section referenced by</title> <p><xref ref="s-Newton"  text="type-global" /></p></aside>
         </section>
 
@@ -543,6 +570,15 @@
 
 <chapter xml:id="c-physics"><title>Seeing Physics</title>
 
+	<objectives xml:id="co-physics"><title><xref ref="c-physics" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <introduction>
         <todo>This chapter should mirror (xref ref="c-revisted"  text="type-global" /)</todo>
         <p>What you will find in this book is a series of chapters that, on the surface, feel like a list of isolated topics.  Each chapter will have examples that focus your attention on examples of that specific concept.  However, the really interesting aspect of physics is that these descriptions of the world around us come together in different ways to explain complex systems that might feel unrelated.  For example, the thermodynamics of making your refrigerator work on Earth comes from the same theories of thermodynamics that help us understand the heat flow of the sun.  Furthermore, in order to understand the sun, we also need to understand the gravitational interaction, which also describes how baseballs fly through the air.</p>
@@ -555,11 +591,29 @@
 
         <section xml:id="s-flame"><title>The Flame Challenge and Other Brief Descriptions</title>
 
+		<objectives xml:id="so-flame"><title><xref ref="s-flame" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <introduction>
                 <p>The point of this section is to whet your whistle, to provide an appetizer before the main meal, to inspire your curiosity.  This section will have very brief descriptions, inspired by <url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge">The Flame Challenge</url>.  Since that is the inspiration, we will start by referencing it explicitly.  After that you will find some brief explanations for complex ideas.</p>
                 </introduction>
 
                 <subsection xml:id="ss-flame"><title>The Flame Challenge</title>
+
+			<objectives xml:id="sso-flame"><title><xref ref="ss-flame" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <!-- \new{v2.3}{Added the questions.  These might be better in their respective sections.} -->
 
                 <p>
@@ -579,6 +633,15 @@
                 </subsection>
 
                 <subsection xml:id="ss-matter"><title>The Forming of Matter in the Universe</title>
+
+			<objectives xml:id="sso-matter"><title><xref ref="ss-matter" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <!--\new{v2.1}{Started this section to give a sense<ellipsis />}  -->
 
                 <p>In the early ages of the universe, which is an entirely different story that could be told, there were a ridiculously large number of particles created and drifting around.  There were a variety of types (<xref ref="ss-StandardModel"  text="type-global" />), some being positively charged (<xref ref="s-Echarge"  text="type-global" />), some negatively charged, and some were neutral; but the larger ones tended to gradually decay (<xref ref="ss-particledecay"  text="type-global" />) into smaller ones.  The smaller of the positively-charged baryons (<xref ref="s-particle"  text="type-global" />), which we call protons, and the smallest of the negatively-charged leptons (<xref ref="s-particle"  text="type-global" />), which we call electrons, also tended to stick together because of their electrical charges (<xref ref="s-Echarge"  text="type-global" />), forming hydrogen atoms.  You may note that as this happens, sometimes the more ambitious of the particles form larger clumps of two protons and two neutrons, making helium atoms that are held together by the strong nuclear force ([need ref])</p>
@@ -587,6 +650,15 @@
                 </subsection>
 
                 <subsection><title>Things in the Sky</title>
+
+			<objectives><title>[Things in the Sky]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <!-- \new{v2.3}{Rearranged sections}  -->
 
                         <example xml:id="sss-sun1"><title>The Sun</title>
@@ -597,6 +669,15 @@
                 </subsection>
 
                 <subsection><title>Things on the ground</title>
+
+			<objectives><title>[Things on the ground]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 
                         <example xml:id="sss-tea"><title>Hot Tea and Iced Tea</title>
                         <aside><title>Example referenced by</title> <p><xref ref="s-surface-tension"  text="type-global" /></p></aside>
@@ -612,6 +693,15 @@
                 </subsection>
 
                 <subsection><title>Kitchen Appliances</title>
+
+			<objectives><title>[Kitchen Appliances]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <example><title>Oven</title><p><ellipsis /></p></example>
                         <example><title>Refrigerator</title><p><ellipsis /></p></example>
                         <example><title>Microwave</title><p><ellipsis /></p></example>
@@ -619,12 +709,30 @@
 
                 </subsection>
                 <subsection><title>Automobile</title>
+
+			<objectives><title>[Automobile]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <example><title>Coolant and Antifreeze</title><p><ellipsis /></p></example>
                         <example><title>Tires</title><p><ellipsis /></p></example>
                         <example><title>Torque</title><p><ellipsis /></p></example>
 
                 </subsection>
                 <subsection><title>Cool Ideas</title>
+
+			<objectives><title>[Cool Ideas]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <example xml:id="sss-blackhole1"><title>Black Holes</title><p><ellipsis /></p></example>
                         <example><title>Quantum Mechanics</title><p><ellipsis /></p></example>
                         <example><title>Relativity</title><p><ellipsis /></p></example>
@@ -642,6 +750,15 @@
         </section>
 
         <section xml:id="s-effective1"><title>Effective Theory</title>
+
+		<objectives xml:id="so-effective1"><title><xref ref="s-effective1" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <todo>Should this be here or in (xref ref="s-effective2"  text="type-global" /)?</todo>
 
         <p>All of our explanations are approximations.  This section will describe some physics in the world around us in one or two paragraphs with links to the sections in the book that provide the detailed understanding of that piece which connects to the mathematics and the underlying foundation.  Each topic will also link to a more detailed discussion at the end of the book with a longer conversation that gets into more nitty-gritty details which assume you have learned the details from the book.  In short, this section looks forward to what is possible to understand and that chapter looks back at how you do understand.  Each of these topics will also be accompanied by a five-minute podcast describing the topic.</p>
@@ -661,11 +778,29 @@
 
 <chapter><title>Why so much math?</title>
 
+	<objectives><title>[Why so much math?]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <introduction>
         <p>Mathematics is its own language.  It is the language of patterns.  Humans are very adept at tracking patterns.  Physics is the study of patterns in the physical world.  It turns out that the language of physics provides a natural and concise mechanism for expressing patterns in a uniquely precise manner.</p>
         </introduction>
 
         <section xml:id="s-story"><title>Every equation tells a story</title>
+
+		<objectives xml:id="so-story"><title><xref ref="s-story" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
         <p>Equations allow us to connect physical reality to very specific predictions.  For example, the equation for thermal conductivity, <xref ref="eq-thermalconductivity"  text="type-global">Equation</xref> in <xref ref="ss-thermalconductivity"  text="type-global" />, allows \studentA<idx><h sortby="\studentA">\studentA</h></idx> to predict the time it takes for \hisA\ oven to warm up to a specific temperature because <m>\displaystyle \frac{Q}{\Delta t} = \kappa A \, \frac{\Delta T}{\Delta x}</m> says that {the rate at which energy flows} {depends on} {how well air allows energy to flow,} {the size of the oven,} and {the amount the temperature needs to change} {across the height of the oven} as follows:</p>
         <todo>I would love for this to be a mouse-over in the equation</todo>
@@ -729,6 +864,15 @@
         </section>
         <section xml:id="s-SI-MKS"><title>The Metric System</title>
 
+		<objectives xml:id="so-SI-MKS"><title><xref ref="s-SI-MKS" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <introduction>
                 <aside><title>Section referenced by</title> <p><xref ref="ss-weightmass"  text="type-global" /></p></aside>
 
@@ -780,6 +924,15 @@
 
                 <subsection><title>Units Quantify Dimensions</title>
 
+			<objectives><title>[Units Quantify Dimensions]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                         <p>In order to understand how big something is, we need to know what scale we are using.  For example, Your thumb is about an inch across, but your foot is about a foot long.  Both have the <q>amount</q> <m>1</m>. but the unit is different.  In this sense, <m>1+1</m> might not equal <m>2</m>.
                         <md>
                         <mrow> 1 \unit{ft} + 1 \unit{ft} \amp = 2 \unit{ft} </mrow>
@@ -822,6 +975,15 @@
                 </subsection>
 
                 <subsection xml:id="ss-convertunits"><title>Conversion from English Units</title>
+
+			<objectives xml:id="sso-convertunits"><title><xref ref="ss-convertunits" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <aside><title>Subsection referenced by</title>
                         <p>
                         <xref ref="s-sigfig"  text="type-global" />,
@@ -845,6 +1007,15 @@
                 </subsection>
 
                 <subsection xml:id="ss-units"><title>Fundamental Units versus Derived Units</title>
+
+			<objectives xml:id="sso-units"><title><xref ref="ss-units" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <aside><title>Subsection referenced by</title>
                         <p>
                         <xref ref="sss-unit-N"  text="type-global" />,
@@ -897,7 +1068,25 @@
         </section>
         <section><title>A graph is worth a thousand pictures</title>
 
+		<objectives><title>[A graph is worth a thousand pictures]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection xml:id="ss-coordinate-systems"><title>Coordinate Systems</title>
+
+			<objectives xml:id="sso-coordinate-systems"><title><xref ref="ss-coordinate-systems" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Subsection referenced by</title>
                         <p>
                         <xref ref="d-grav-coordinate-system"  text="title">Gravity's choice of coordinate system</xref>,
@@ -932,6 +1121,15 @@
 
                 <subsection><title>The Vocabulary of Graphs</title>
 
+			<objectives><title>[The Vocabulary of Graphs]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                 <p>[Quick review of parameters and variables of <m>y=mx+b</m> and <m>y=ax^2+bx+c</m>.]</p>
 
 <!--                 <assemblage>  -->
@@ -958,11 +1156,38 @@
 
         <section><title>Trigonometry and Vectors</title>
 
+		<objectives><title>[Trigonometry and Vectors]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection><title>Trigonometry</title>
+
+			<objectives><title>[Trigonometry]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
                 <subsection xml:id="ss-vectors"><title>Vectors</title>
+
+			<objectives xml:id="sso-vectors"><title><xref ref="ss-vectors" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 
                         <introduction>
                         <aside><title>Subsection referenced by</title>
@@ -1037,6 +1262,14 @@
 
                         <subsubsection xml:id="sss-scalarvector"><title>Scalar Quantities versus Vector Quantities</title>
 
+				<objectives xml:id="ssso-scalarvector"><title><xref ref="sss-scalarvector" text="title" /></title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+
                         <p xml:id="def-scalar">definition of scalar</p>
 
 			<aside><title>Paragraph referenced by</title><p>Discussion of <xref ref="d-pushvector" text="title">the direction of forces</xref></p></aside>
@@ -1050,6 +1283,14 @@
                         </subsubsection>
 
                         <subsubsection xml:id="sss-vectorequations"><title>Vector Equations</title>
+
+				<objectives xml:id="ssso-vectorequations"><title><xref ref="sss-vectorequations" text="title" /></title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
                                 <aside><title>Section referenced by</title>
                                 <p>
                                 <xref ref="d-2Dmotion" text="title">the ballistic freefall</xref>
@@ -1073,6 +1314,14 @@
                         </subsubsection>
 
                         <subsubsection xml:id="sss-vectorproducts"><title>Multiplication, but Not Division</title>
+
+				<objectives xml:id="ssso-vectorproducts"><title><xref ref="sss-vectorproducts" text="title" /></title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 
                         <p>[define dot product]</p>
 
@@ -1101,7 +1350,25 @@
 
 <chapter><title>Estimating and Uncertainty</title>
 
+	<objectives><title>[Estimating and Uncertainty]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <section xml:id="s-precision"><title>Precision and Accuracy</title>
+
+		<objectives xml:id="so-precision"><title><xref ref="s-precision" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <idx>precision</idx>
         <!-- \new{v2.2}{Added section, added some detail} -->
 
@@ -1115,6 +1382,15 @@
         </section>
 
         <section xml:id="s-sigfig"><title>Significant Figures</title>
+
+		<objectives xml:id="so-sigfig"><title><xref ref="s-sigfig" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
                 <aside><title>Section referenced by</title>
                 <p>
                 <xref ref="ss-convertunits" text="type-global" />
@@ -1136,10 +1412,28 @@
         </section>
 
         <section><title>Scientific Notation</title>
+
+		<objectives><title>[Scientific Notation]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
                 <p>.</p>
         </section>
 
         <section xml:id="s-effective2"><title>Effective Theories</title>
+
+		<objectives xml:id="so-effective2"><title><xref ref="s-effective2" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
                 <aside><title>Section referenced by</title>
                 <p>
                 <xref ref="ss-noninertial" text="title">non-inertial reference frames</xref>,
@@ -1195,7 +1489,25 @@
 
 <chapter xml:id="c-motion"><title>1-D Motion, Relating position, Velocity, and Acceleration</title>
 
+	<objectives xml:id="co-motion"><title><xref ref="c-motion" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <section><title>How Physicists Use the Words (Notation)</title>
+
+		<objectives><title>[How Physicists Use the Words (Notation)]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
         <todo>Decide if the [notation] goes here (xref ref="intro-acc" text="type-global" /) or in (xref ref="d-acc" text="type-global"/)</todo>
         <p>
@@ -1246,7 +1558,25 @@
 
         <section><title>Connecting the Concepts- distance equals rate times time</title>
 
+		<objectives><title>[Connecting the Concepts- distance equals rate times time]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection><title>Position</title>
+
+			<objectives><title>[Position]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 
                 <p>Identifying the position requires identifying a common known position (which we could call <q>the origin</q>), a distance from that known location (which we could call <q>a magnitude</q>), and a direction from the origin in which to travel such a distance.  The common example that identifies the location as <q>I am in my room</q> references <q>your room</q> as the common, known origin.  If the author of this text were to tell you that he was in his room, then your next obvious question is: <q>OK, but where is your room?</q></p>
 
@@ -1255,6 +1585,15 @@
                 </subsection>
 
                 <subsection><title>Speed versus Velocity</title>
+
+			<objectives><title>[Speed versus Velocity]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 
                 <p xml:id="d-atrest">When you are not moving, physicists will describe you as being <q>at rest</q>.  When you drive to the store, your car <q>starts from rest</q> and then travels some distance in some time.  When you arrive at the store, your car <q>ends at rest</q> when you arrive at your destination.</p>
                 <aside><title>Paragraph referenced by</title> <p>Discussion of <xref ref="d-atrestinmotion" text="title">Newton's First Law</xref></p></aside>
@@ -1268,6 +1607,15 @@
                 </subsection>
 
                 <subsection xml:id="ss-relvel"><title>Relative Velocity</title>
+
+			<objectives xml:id="sso-relvel"><title><xref ref="ss-relvel" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Subsection referenced by</title>
                 <p>
                 <xref ref="ex-friction-mouse" text="type-global" />
@@ -1282,12 +1630,30 @@
 
                 <subsection xml:id="ss-addvel"><title>Adding Velocities</title>
 
+			<objectives xml:id="sso-addvel"><title><xref ref="ss-addvel" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                 <p>Comment on inertial <xref ref="def-referenceframe" text="title">reference frames</xref>.<idx><h>reference frames</h><h>inertial</h></idx></p>
 
                 </subsection>
         </section>
 
         <section xml:id="s-acceleration"><title>Extending the Concepts: Changing How You Move</title>
+
+		<objectives xml:id="so-acceleration"><title><xref ref="s-acceleration" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
                 <introduction>
                 <aside><title>Section referenced by</title>
                 <p>
@@ -1299,6 +1665,15 @@
                 </introduction>
 
                 <subsection xml:id="ss-acceleration"><title>Moving versus Speeding Up</title>
+
+			<objectives xml:id="sso-acceleration"><title><xref ref="ss-acceleration" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 
                 <todo>Decide if the [notation] goes (xref ref="d-acc" text="type-global" /) or in (xref ref="intro-acc" text="type-global" /)</todo>
                 <aside><title>Paragraph referenced by</title>
@@ -1397,6 +1772,15 @@
         </section>
 
         <section xml:id="s-EOM"><title>Connecting the English to the Math</title>
+
+		<objectives xml:id="so-EOM"><title><xref ref="s-EOM" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
                 <aside><title>Section referenced by</title> <p><xref ref="se-netF-a" text="type-global" /></p></aside>
 
         <p xml:id="d-EOM">The equations of constant acceleration can be summarized as
@@ -1417,7 +1801,25 @@
 
         <section><title>Examples</title>
 
+		<objectives><title>[Examples]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection xml:id="ss-freefall"><title>Freefall</title>
+
+			<objectives xml:id="sso-freefall"><title><xref ref="ss-freefall" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <idx>freefall</idx>
                 <!-- \new{v2.2}{Adding detail} -->
                         <aside><title>Section referenced by</title> <p><xref ref="ex-ceiling" text="type-global" /></p></aside>
@@ -1541,7 +1943,25 @@
 
         <section><title>Complications</title>
 
+		<objectives><title>[Complications]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection xml:id="ss-noninertial"><title>Non-Inertial Accelerated Reference Frames</title>
+
+			<objectives xml:id="sso-noninertial"><title><xref ref="ss-noninertial" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <idx><h>reference frames</h><h>inertial</h></idx>
                 <idx><h>reference frames</h><h>non-inertial</h></idx>
                         <aside><title>Subsection referenced by</title>
@@ -1559,6 +1979,15 @@
                 </subsection>
 
                 <subsection xml:id="ss-airresistance"><title>Air Resistance</title>
+
+			<objectives xml:id="sso-airresistance"><title><xref ref="ss-airresistance" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <aside><title>Subsection referenced by</title>
                         <p>
                         <xref ref="d-freefall" text="title">freefall</xref>,
@@ -1575,6 +2004,15 @@
                 </subsection>
 
                 <subsection xml:id="ss-multistep"><title>Multi-Step Solutions</title>
+
+			<objectives xml:id="sso-multistep"><title><xref ref="ss-multistep" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <!--\new{v2.3}{new section, new example} -->
                 <aside><title>Section referenced by</title> <p>discussion of <xref ref="p-friction-herky-jerky" text="title">herky-jerky motion</xref></p></aside>
 
@@ -1670,13 +2108,49 @@
 
 <chapter><title>2-D Motion, The Vector Nature of Motion</title>
 
+	<objectives><title>[2-D Motion, The Vector Nature of Motion]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <section><title>Components of Motion</title>
 
+		<objectives><title>[Components of Motion]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection><title>Cross-wind</title>
+
+			<objectives><title>[Cross-wind]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <p>Bikes and canoes</p>
                 </subsection>
 
                 <subsection xml:id="ss-ballistic"><title>Ballistic Freefall</title>
+
+			<objectives xml:id="sso-ballistic"><title><xref ref="ss-ballistic" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <aside><title>Subsection referenced by</title> <p><xref ref="sss-vectorequations" text="type-global"/></p></aside>
 
                 <p xml:id="d-ballistic">Discussion about throwing a ball<ellipsis /></p>
@@ -1691,7 +2165,25 @@
         </section>
         <section><title>Complications</title>
 
+		<objectives><title>[Complications]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection xml:id="ss-ballisticairresistance"><title>Air Resistance</title>
+
+			<objectives xml:id="sso-ballisticairresistance"><title><xref ref="ss-ballisticairresistance" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 
                 <p>Terminal velocity<ellipsis /> non-parabolic paths <ellipsis /></p>
 
@@ -3511,9 +4003,18 @@ Earth feels a force by \studentZ\ to the left.
 
 </chapter>
 
-<!-- *******************JC: Adjust here *************************************************************************** -->
+<!-- ********************************************************************************************** -->
 
 <chapter xml:id="c-forcetype"><title>The Many Types of Force</title>
+
+	<objectives xml:id="co-forcetype"><title><xref ref="c-forcetype" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 
         <introduction>
 <aside><title>Chapter referenced by</title> <p><xref ref="c-force" text="type-global" />, Discussion of <xref ref="conv-on-by" text="title">subscript notation of forces</xref></p></aside>
@@ -3547,6 +4048,15 @@ Earth feels a force by \studentZ\ to the left.
         </introduction>
 
         <section xml:id="s-Fg"><title>Gravity at the Surface of the Earth</title>
+
+		<objectives xml:id="so-Fg"><title><xref ref="s-Fg" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
                 <introduction>
         <aside><title>Section referenced by</title>
@@ -3595,6 +4105,15 @@ Earth feels a force by \studentZ\ to the left.
                 </introduction>
 
                 <subsection xml:id="ss-weightmass"><title>Weight versus Mass</title>
+
+			<objectives xml:id="sso-weightmass"><title><xref ref="ss-weightmass" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <idx>weight</idx>
                 <aside><title>Referenced by</title>
                         <p>
@@ -3628,6 +4147,15 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
                 <subsection xml:id="ss-local-mg"><title>Calculating the weight</title>
+
+			<objectives xml:id="sso-local-mg"><title><xref ref="ss-local-mg" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 
                 <p>When calculating the forces acting on a person or an object, we will often need to account for the force of gravity, while other forces may also be at work.  As mentioned above, the weight is found by multiplying the mass times the local acceleration due to gravity, even if the object is not actually accelerating at that rate.  <xref ref="c-gravity" text="type-global" /> will clarify why it is true<fn xml:id="fn-accgrav-nuance">The short answer is that the altitude (distance from the surface of the Earth) and local geology affect the strength of the gravitational field.  Since the Earth is slightly oblate (bulges at the equator), the altitude at different latitudes corresponds to a different distance from the center of the Earth.  In addition, while the spin of the Earth does not affect the strength of the gravitational field, it does affect how objects accelerate. The <url href="http://www2.csr.utexas.edu/grace/gallery/animations/ggm01/ggm01_gif-200.html">GRACE project</url> has measured the variations across the globe.</fn>, but for now please note that the acceleration due to gravity is (1) different according to where we are and also (2) the same for all objects at that location.<idx><h>acceleration</h><h>gravity</h></idx><idx><h>gravity</h><h>acceleration</h></idx>
                 </p>
@@ -3812,6 +4340,15 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-fundamental"><title>Fundamental Forces</title><idx><h>force</h><h>fundamental</h></idx>
 
+		<objectives xml:id="so-fundamental"><title><xref ref="s-fundamental" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
         <p>The previous section describes our (macroscopic) experience of the gravitational interaction when standing on the surface of the Earth.  This is essentially the same across the surface, but does change with altitude and the difference can be measured on mountain tops and in caves.  In fact, one can use the differences from one location to another to predict where we might find a a pocket of oil.</p>
 
         <p xml:id="d-fundamental">In later sections, we will consider this and other interactions that depend on the physical properties, such as mass and charge.  All particles with the property of mass (which we will start to call gravitational charge) will interact according to the gravitational force; however, this description is better described by the mathematics in <xref ref="c-gravity" text="type-global"/>.  All particles with the property of electrical charge will interact according to the electrical force.  The basic theory will be discussed in <xref ref="c-electric" text="type-global"/>.  A more complicated version that incorporates quantum mechanics is called quantum electrodynamics (QED) and this will be touched on in <xref ref="ss-QED" text="type-global" />.  Particles like protons and neutrons (hadrons) are actually made up of other particles (quarks) that are held together by an interaction that is sometimes called the strong nuclear force (<xref ref="ss-strong" text="type-global" />) and is described by the theory of quantum chromodynamics (QCD); this will be touched on in <xref ref="ss-QCD" text="type-global" />.  Finally, in <xref ref="ss-weak" text="type-global"/> another fundamental force, called the weak nuclear force, will be discussed.</p>
@@ -3821,6 +4358,15 @@ Earth feels a force by \studentZ\ to the left.
         </section>
 
         <section xml:id="s-FN"><title>Normal Force</title>
+
+		<objectives xml:id="so-FN"><title><xref ref="s-FN" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <idx><h>force</h><h>normal</h></idx>
 
                 <introduction>
@@ -4311,6 +4857,15 @@ Earth feels a force by \studentZ\ to the left.
                 </introduction>
 
                 <subsection xml:id="ss-scales"><title>Bathroom Scales Measure the Normal Force</title>
+
+			<objectives xml:id="sso-scales"><title><xref ref="ss-scales" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Referenced by</title>
                         <p>Discussion of <xref ref="d-usesofFma" text="title">uses of <m>F=ma</m></xref></p>
                 </aside>
@@ -4505,6 +5060,15 @@ Earth feels a force by \studentZ\ to the left.
 
 
         <section xml:id="s-Ff"><title>Frictional Force</title>
+
+		<objectives xml:id="so-Ff"><title><xref ref="s-Ff" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <introduction>
         <aside><title>Section referenced by</title>
                 <p>
@@ -4526,6 +5090,15 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-friction-sliding"><title>Dry Sliding Friction</title>
 
+			<objectives xml:id="sso-friction-sliding"><title><xref ref="ss-friction-sliding" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                 <introduction>
                 <p>Sliding friction is relevant to any problem in which one object is <q>trying to</q> move across another.  You should note that the objects do not actually have to be moving across each other for this to be relevant.  If they are moving across each other, then we will need to consider the kinetic friction (<xref ref="sss-kinetic" text="type-local" />).  If, on the other hand, you imagine pushing a heavy couch across a carpeted floor, then you can picture a case where the horizontal force is not sufficient to overcome the frictional force.  In this case, we will consider the static friction (<xref ref="sss-static" text="type-local" />).  </p>
                 <aside><title>Etymology (kinetic)</title><idx><h>etymology</h><h>kinetic friction</h></idx>
@@ -4544,6 +5117,14 @@ Earth feels a force by \studentZ\ to the left.
                 </introduction>
 
                         <subsubsection xml:id="sss-kinetic"><title>Kinetic Friction</title>
+
+				<objectives xml:id="ssso-kinetic"><title><xref ref="sss-kinetic" text="title" /></title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
                         <p xml:id="d-friction-kinetic">Here we will discuss the situation of two surfaces rubbing against each other as they slide past each other.  This is not the case with walking (unless your feet slip out from under you!) or turning a car (even though the car <em>is</em> moving). Before introducing the relevant equation, please investigate how objects slide across different surfaces to build your intuition.</p>
                         <investigation xml:id="inv-friction-kinetic"><title>Notice where friction is larger or smaller</title>
                                 <task xml:id="task-friction-slowing"><statement>
@@ -4842,6 +5423,14 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection xml:id="sss-static"><title>Static Friction</title>
 
+				<objectives xml:id="ssso-static"><title><xref ref="sss-static" text="title" /></title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+
                         <p xml:id="d-friction-static">Whereas <xref ref="d-friction-kinetic" text="title">kinetic friction</xref> describes the situation of two surfaces rubbing against each other as they slide past each other, static friction describes the case of two surfaces that <em>would slide</em> across each other <em>if</em> they weren't stuck.  Unlike kinetic friction, this <em>is</em> what you intend to happen when you are walking.  Your feet should not slip out from under you!  Before developing this further, please investigate how objects can be <q>stuck</q> to build your intuition.</p>
                         <investigation xml:id="inv-friction-static"><title>Push without moving</title>
                                 <introduction><p>Consider moving some heavy objects around your home.  (A refrigerator, bed, or couch make good examples to try on your own.  Although you might also try to push a small car or a heavy desk.  If you push something tall, like a refrigerator or a bookshelf then you should careful not to topple the object or spill the contents.)</p></introduction>
@@ -5025,6 +5614,14 @@ Earth feels a force by \studentZ\ to the left.
 
 
                         <subsubsection xml:id="sss-dry-sliding"><title>Applications of Dry Sliding Friction</title>
+
+				<objectives xml:id="ssso-dry-sliding"><title><xref ref="sss-dry-sliding" text="title" /></title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 
                         <p>Since this section is fairly long, you can use these links to jump to the topic of interest:
                         <ul>
@@ -5270,6 +5867,15 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
                 <subsection xml:id="ss-friction-rolling"><title>Rolling Friction</title><idx><h>friction</h><h>rolling</h></idx>
 
+			<objectives xml:id="sso-friction-rolling"><title><xref ref="ss-friction-rolling" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                         <objectives><ol>
                                 <li>To recognize examples of (and be able to give new examples of) situations in which rolling friction (in contrast to dry-sliding friction) needs to be included</li>
                                 <li>To connect the existence of rolling friction to specific effects in the motion and on the energy</li>
@@ -5431,6 +6037,15 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
                 <subsection xml:id="ss-tribology"><title>Additional Detail: The field of Tribology</title>
+
+			<objectives xml:id="sso-tribology"><title><xref ref="ss-tribology" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Etymology (tribology)</title><idx><h>etymology</h><h>tribology</h></idx><p>See <url href="http://www.etymonline.com/word/tribology">tribology</url>.</p></aside>
                         <p>Tribology, the study of friction from rubbing, is a field of engineering.  There was a recent article
                         <ul>
@@ -5482,6 +6097,15 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
                 <subsection xml:id="ss-air-resistance"><title>Air Resistance</title>
+
+			<objectives xml:id="sso-air-resistance"><title><xref ref="ss-air-resistance" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <p>NOTE: <xref ref="bib-friction-armstrong" text="type-local" /> indicates that Reynolds introduced the equation of viscous fluid flow in 1866 (but referenced Reynolds 1886).</p>
                 </subsection>
 
@@ -5490,6 +6114,15 @@ Earth feels a force by \studentZ\ to the left.
 
 
         <section xml:id="s-FT"><title>Tension</title>
+
+		<objectives xml:id="so-FT"><title><xref ref="s-FT" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <idx><h>force</h><h>tension</h></idx>
 
                 <introduction>
@@ -5562,6 +6195,15 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-tension-support"><title>Tension as a Support Force</title>
 
+			<objectives xml:id="sso-tension-support"><title><xref ref="ss-tension-support" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                         <introduction>
                         <p>Ropes and chains (and beams) can use tension to support (from above) dangling objects.</p>
 
@@ -5596,6 +6238,14 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection><title>How Physicists Use the Words (Vocabulary)</title>
 
+				<objectives><title>[How Physicists Use the Words (Vocabulary)]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+
                         <p>You can probably think of several examples of objects dangling: a purse on a hook, a flag on a pole, a shop sign attached to a post, a pendulum,a swing set, etc.  Since these are all similar in some ways (although different in other ways), <em>we can treat all of them as a mass at the end of a rope</em>.  Typically, because we do not want to deal with the complications that come from sagging supports, we will use the <xref ref="s-effective2" text="title">approximation</xref> of an <q><em>immovable support</em>.</q>  This will be indicated by hashing the surface.</p>
                         <todo>Add (insert)a description of the(/insert) (stale)an(/stale) image of an immovable surface to that section</todo>
 
@@ -5623,6 +6273,14 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection xml:id="sss-pendulum"><title>Application to a Pendulum</title>
 
+				<objectives xml:id="ssso-pendulum"><title><xref ref="sss-pendulum" text="title" /></title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+
                         <p>The interplay of gravity and tension at various angles.</p>
 
                         <aside><title>Paragraph referenced by</title>
@@ -5635,6 +6293,15 @@ Earth feels a force by \studentZ\ to the left.
 
                 </subsection>
                 <subsection xml:id="ss-tension-drag"><title>Tension as Dragging Force</title>
+
+			<objectives xml:id="sso-tension-drag"><title><xref ref="ss-tension-drag" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 
                 <p xml:id="d-rope-net">We can also consider the tension in a rope used to drag an object across the floor.  You may recall that in <xref ref="f-firstFBD" text="type-global" /> (and the updated version, <xref ref="f-firstFBDupdate" text="type-global" />) \studentB<idx><h sortby="\studentB">\studentB</h></idx> pulled a box across a sheet of ice.  It is possible that  \studentB\ was grabbing the object itself, but it is more likely that \heB\ was pulling on a rope that was attached to the object.  In that case, the tension in the rope was <m>4.0 \unit N</m>.  This tension is what pulled \studentB\ leftwards <em>and</em> what pulled the object rightwards.</p>
 
@@ -5855,6 +6522,15 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection><title>Pulleys</title>
 
+			<objectives><title>[Pulleys]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                 <p>While the flexibility of ropes makes them inconvenient for pushing, their flexibility makes them <em>very useful</em> for changing the direction of the pull.  The mechanism for changing the direction is the pulley.  Furthermore, by allowing us to change the direction of the pull, we are also able to double, triple, or further improve the strength of the pull.  The term for this is <term>the mechanical advantage</term> of a pulley-system.</p>
 
                 <p>First we will consider three simple cases of redirecting the force.  In each of these cases, I will <xref ref="s-effective2" text="title">assume</xref> that the pulley and rope have no mass and that there is no friction in the turning of the pulley (assume it is trivially easy to spin).  If we do not make this assumption, then the problem gets significantly more complicated.</p><todo>add a reference to the section (problem?) where this is considered.</todo>
@@ -5911,7 +6587,24 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection><title>Interesting Complications</title>
 
+			<objectives><title>[Interesting Complications]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                         <subsubsection><title>What is the net force on the rope itself?</title>
+
+				<objectives><title>[What is the net force on the rope itself?]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 
                         <p>The answer to this depends on how complicated you want the answer to be (recall the discussion about effective theories in <xref ref="s-effective2" text="type-global" />).  Some reasonable answers are:
                         <ul>
@@ -5925,6 +6618,14 @@ Earth feels a force by \studentZ\ to the left.
                         </subsubsection>
 
                         <subsubsection xml:id="sss-multiple-mass"><title>Multiple Masses</title>
+
+				<objectives xml:id="ssso-multiple-mass"><title><xref ref="sss-multiple-mass" text="title" /></title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
                         <aside><title>Referenced by</title> <p><xref ref="ss-tension-support" text="type-global"/></p></aside>
 
                         <p>Now that we have a few examples of tension under our belts, we can consider some more interesting examples.</p>
@@ -6128,11 +6829,27 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection xml:id="sss-massive-rope"><title>Ropes with Mass</title>
 
+				<objectives xml:id="ssso-massive-rope"><title><xref ref="sss-massive-rope" text="title" /></title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+
                         <p>If a rope has mass, then it can be thought of as a series of tiny pieces of mass hung by tiny massless strings.</p>
 
                         </subsubsection>
 
                         <subsubsection xml:id="sss-Atwood"><title>Atwood's Machine</title>
+
+				<objectives xml:id="ssso-Atwood"><title><xref ref="sss-Atwood" text="title" /></title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 
                         <p>Note <url href="https://en.wikipedia.org/wiki/Atwood_machine" />. <q> invented in 1784 by the English mathematician George Atwood as a laboratory experiment to verify the mechanical laws of motion with constant acceleration. Atwood's machine is a common classroom demonstration used to illustrate principles of classical mechanics.</q></p>
 
@@ -6341,6 +7058,14 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection><title>Surface Tension</title>
 
+				<objectives><title>[Surface Tension]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+
                         <p xml:id="d-surf-tension">As a final note, <xref ref="s-surface-tension" text="title">surface tension</xref> is something else entirely.  It is mentioned here only because it has the word <q>tension</q> in the name.</p>
 
                         <p>See <xref ref="sss-tea" text="type-global"/> for a comment on the contribution to hot versus cold spoon noises.</p>
@@ -6352,6 +7077,15 @@ Earth feels a force by \studentZ\ to the left.
 
 
         <section xml:id="s-springs"><title>Spring Force</title>
+
+		<objectives xml:id="so-springs"><title><xref ref="s-springs" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Referenced by</title>
                 <p>
                 <xref ref="connect-Fma" text="title"><m>F=ma</m></xref>,
@@ -6372,6 +7106,15 @@ Earth feels a force by \studentZ\ to the left.
 
 
         <section xml:id="s-FA"><title>Applied Force</title>
+
+		<objectives xml:id="so-FA"><title><xref ref="s-FA" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <p>The term <q>an applied force</q> is used to describe any force applied by any object when there isn't really a formula to find it.  So this is kind of a <q>any other force</q> category.  I will use this type of force to describe forces exerted by people.  We have seen some examples where a person throws an object.  We can now revisit those examples and consider the force exerted (applied) by the person who threw the object.</p>
 
         <example xml:id="se-throw-up"><title>Applying a force to throw a ball</title>
@@ -6517,17 +7260,53 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-Fnet"><title>Putting it Together, <m>F_\mathrm{net}</m></title>
 
+		<objectives xml:id="so-Fnet"><title><xref ref="s-Fnet" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection><title>Translational Equilibrium</title>
+
+			<objectives><title>[Translational Equilibrium]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 
                 <p xml:id="ss-transeq">blah blah blah Translational equilibrium: <m>F_\mathrm{net} = m \cancel{0}{a}</m>.  blah blah blah</p>
 
                 </subsection>
 
                 <subsection><title>Static Equilibrium</title>
+
+			<objectives><title>[Static Equilibrium]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
                 <subsection><title>Dynamic Equilibrium</title>
+
+			<objectives><title>[Dynamic Equilibrium]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
@@ -6536,7 +7315,25 @@ Earth feels a force by \studentZ\ to the left.
 
         <section><title>Summary and Homework</title>
 
+		<objectives><title>[Summary and Homework]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection><title>Summary of Concepts and Equations</title>
+
+			<objectives><title>[Summary of Concepts and Equations]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <p><ellipsis /></p>
                 </subsection>
 
@@ -6657,6 +7454,15 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-energy"><title>Energy and the Transfer of Energy</title>
 
+	<objectives xml:id="co-energy"><title><xref ref="c-energy" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <introduction>
         <aside><title>Chapter referenced by</title>
                 <p>
@@ -6679,20 +7485,56 @@ Also check these folks out on Wikipedia.... of course
         </introduction>
 
         <section xml:id="s-KE"><title>Objects Can Have Energy</title>
+
+		<objectives xml:id="so-KE"><title><xref ref="s-KE" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 <p>.</p>
         </section>
 
         <section xml:id="s-work"><title>A Force Can Transfer Energy</title>
+
+		<objectives xml:id="so-work"><title><xref ref="s-work" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
                 <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-pushvector" text="title">the direction of forces</xref></p></aside>
         </section>
 
         <section xml:id="s-Wfr"><title>Dissipating Energy</title>
+
+		<objectives xml:id="so-Wfr"><title><xref ref="s-Wfr" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
         <p>pool balls on cushion/bumper</p>
 
         </section>
 
         <section xml:id="s-PE"><title>Conserving Energy</title>
+
+		<objectives xml:id="so-PE"><title><xref ref="s-PE" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
         <introduction>
                 <investigation xml:id="irl-poolelastic"><title>1-D elastic collisions of pool balls and inelastic collisions off the bumper</title>
@@ -6727,15 +7569,42 @@ Also check these folks out on Wikipedia.... of course
         </introduction>
 
                 <subsection xml:id="ss-PEg"><title>Gravitational Potential Energy</title>
+
+			<objectives xml:id="sso-PEg"><title><xref ref="ss-PEg" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <aside><title>Referenced by</title> <p><xref ref="s-PEG" text="type-global"/></p></aside>
                 <p>See also <xref ref="s-PEG" text="type-global" />.</p>
                 </subsection>
 
                 <subsection xml:id="ss-PEs"><title>Spring Potential Energy</title>
+
+			<objectives xml:id="sso-PEs"><title><xref ref="ss-PEs" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
                 <subsection><title>Conservative Forces in General</title>
+
+			<objectives><title>[Conservative Forces in General]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
         </section>
@@ -6754,6 +7623,15 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 <chapter xml:id="c-momentum"><title>Momentum: A Better Way to Describe Force</title>
+
+	<objectives xml:id="co-momentum"><title><xref ref="c-momentum" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 
         <introduction>
 <aside><title>Chapter referenced by</title>
@@ -6774,7 +7652,25 @@ Also check these folks out on Wikipedia.... of course
 
         <section><title>Revising Newton's First and Second Laws</title>
 
+		<objectives><title>[Revising Newton's First and Second Laws]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection xml:id="ss-inertia"><title>Inertia and Momentum</title>
+
+			<objectives xml:id="sso-inertia"><title><xref ref="ss-inertia" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <aside><title>Referenced by</title> <p><xref ref="sss-inertia" text="type-global" /></p></aside>
                         <p>Recall <xref ref="sss-inertia" text="type-global" />.</p>
                         <p xml:id="p-elastic-collision">Probably define elastic (<xref ref="p-elastic" text="type-global" />) and inelastic collisions</p>
@@ -6783,11 +7679,29 @@ Also check these folks out on Wikipedia.... of course
         </section>
 
         <section xml:id="s-conservemom"><title>Revising Newton's Third Law: Conservation of Momentum</title>
+
+		<objectives xml:id="so-conservemom"><title><xref ref="s-conservemom" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Referenced by</title> <p><xref ref="ss-NIII" text="type-global" /></p></aside>
         </section>
 
 
         <section xml:id="s-2Dcollisions"><title>Two-Dimensional Collisions</title>
+
+		<objectives xml:id="so-2Dcollisions"><title><xref ref="s-2Dcollisions" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Referenced by</title> <p><xref ref="sss-vectorequations" text="type-global"/></p></aside>
 
         <p>pool balls?  What about rolling?</p>
@@ -6828,7 +7742,25 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter><title>Rotational Motion</title>
 
+	<objectives><title>[Rotational Motion]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <section xml:id="s-rotation-language"><title>How Physicists Use the Words</title>
+
+		<objectives xml:id="so-rotation-language"><title><xref ref="s-rotation-language" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
                 <p>Description indicating that different parts of the object are moving at different speeds (depending on the radius) and, even at the same radius, different parts of the object are moving with different velocities (depending on the angle).  This is a good place to introduce
                 <men>v = \omega r</men>
                 </p>
@@ -6888,6 +7820,15 @@ Also check these folks out on Wikipedia.... of course
 
         <section><title>The Equations of Rotational Motion</title>
 
+		<objectives><title>[The Equations of Rotational Motion]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <p>Use <xref ref="s-rotation-language" text="type-global" /> to connect the translational motion to the rotational motion.</p>
 
         <investigation xml:id="irl-poolrotmot"><title>Rolling pool balls</title><idx><h>pool</h><h>real life</h></idx>
@@ -6932,6 +7873,15 @@ Also check these folks out on Wikipedia.... of course
 
         <section><title>Moment of Inertia</title>
 
+		<objectives><title>[Moment of Inertia]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
         <aside><title>Paragraph referenced by</title><p><xref ref="irl-rolling-friction" text="type-global" /></p></aside>
         <p xml:id="p-mom-inert-eggs">In this <url href="https://www.sciencefriday.com/videos/spinning-eggs-in-space/">video of eggs in space</url> from 14 Oct, 2011 created by
         <url href="https://www.sciencefriday.com/">Science Friday</url>, we can watch how the momentum of inertia affects the way fresh eggs spin differently than hard-boiled eggs.</p>
@@ -6939,6 +7889,15 @@ Also check these folks out on Wikipedia.... of course
         </section>
 
         <section><title>Angular Momentum</title>
+
+		<objectives><title>[Angular Momentum]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
         <investigation xml:id="irl-poolangmom"><title>Rolling pool balls</title><idx><h>pool</h><h>real life</h></idx>
                 <introduction>
@@ -6972,6 +7931,15 @@ Also check these folks out on Wikipedia.... of course
         </section>
 
         <section xml:id="s-noninertial"><title>Non-inertial Rotational Reference Frames</title>
+
+		<objectives xml:id="so-noninertial"><title><xref ref="s-noninertial" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <idx><h>reference frames</h><h>inertial</h></idx>
         <idx><h>reference frames</h><h>non-inertial</h></idx>
 
@@ -6987,6 +7955,15 @@ Also check these folks out on Wikipedia.... of course
                 </introduction>
 
                 <subsection xml:id="ss-coriolis"><title>The Coriolis Effect</title>
+
+			<objectives xml:id="sso-coriolis"><title><xref ref="ss-coriolis" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Subsection referenced by</title>
                         <p>
                         <xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>
@@ -7008,6 +7985,15 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-Foucault"><title>The Foucault Pendulum</title>
 
+			<objectives xml:id="sso-Foucault"><title><xref ref="ss-Foucault" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                 <p>See <url href="https://www.youtube.com/watch?v=sWDi-Xk3rgw">youtube video</url> by <url href="http://sixtysymbols.com/">Sixty Symbols</url>.</p>
 
                 </subsection>
@@ -7020,11 +8006,38 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter><title>Circular Motion and Centripetal Force</title>
 
+	<objectives><title>[Circular Motion and Centripetal Force]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <section><title>Circular Motion</title>
+
+		<objectives><title>[Circular Motion]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 <p>.</p>
         </section>
 
         <section xml:id="s-centripetal"><title>Centripetal Force</title>
+
+		<objectives xml:id="so-centripetal"><title><xref ref="s-centripetal" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Referenced by</title>
                 <p>Discussion of <xref ref="connect-Fma" text="title"><m>F=ma</m></xref>
                 </p>
@@ -7037,11 +8050,29 @@ Also check these folks out on Wikipedia.... of course
 
 
 <chapter xml:id="c-torque"><title>Torque and the <m>F=ma</m> of Rotations</title>
+
+	<objectives xml:id="co-torque"><title><xref ref="c-torque" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
         <introduction>
 <aside><title>Chapter referenced by</title> <p><xref ref="a-NIIIaction" text="type-global" /></p></aside>
         </introduction>
 
         <section xml:id="s-leverarm"><title>Leverage</title>
+
+		<objectives xml:id="so-leverarm"><title><xref ref="s-leverarm" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Section referenced by</title>
                 <p>
                 <xref ref="ss-scales" text="type-global" />,
@@ -7067,15 +8098,51 @@ Also check these folks out on Wikipedia.... of course
 
         <section><title>Putting it all together, <m>\tau_\mathrm{net}</m></title>
 
+		<objectives><title>[Putting it all together, <m>\tau_\mathrm{net}</m>]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection><title>Rotational Equilibrium</title>
+
+			<objectives><title>[Rotational Equilibrium]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <p xml:id="ss-roteq">blah blah blah. Rotational equilibrium: <m>\tau_\mathrm{net} = I \cancelto{0}{\alpha}</m>.  blah blah blah</p>
                 </subsection>
 
                 <subsection><title>Static (Rotational) Equilibrium</title>
+
+			<objectives><title>[Static (Rotational) Equilibrium]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
                 <subsection><title>Dynamic (Rotational) Equilibrium</title>
+
+			<objectives><title>[Dynamic (Rotational) Equilibrium]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 
                 <example xml:id="ex-ladder2"><title>\studentC uses a ladder</title><idx><h sortby="\studentC">\studentC</h></idx>
                         <statement>
@@ -7182,16 +8249,52 @@ Also check these folks out on Wikipedia.... of course
         </section>
 
         <section xml:id="s-torsion"><title>Torsion</title>
+
+		<objectives xml:id="so-torsion"><title><xref ref="s-torsion" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Referenced by</title> <p><xref ref="s-FT" text="type-global"/></p></aside>
         </section>
 
         <section><title>Summary and Homework</title>
 
+		<objectives><title>[Summary and Homework]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection><title>Summary of Concepts and Equations</title>
+
+			<objectives><title>[Summary of Concepts and Equations]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <p><ellipsis /></p>
                 </subsection>
 
                 <subsection><title>Conceptual Questions</title>
+
+			<objectives><title>[Conceptual Questions]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <todo>Add conceptual problems.</todo>
                 </subsection>
 
@@ -7261,7 +8364,25 @@ Also check these folks out on Wikipedia.... of course
 
 
 <chapter><title>Energy of Rotating Objects</title>
+
+	<objectives><title>[Energy of Rotating Objects]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
         <section><title>Rotational Kinetic Energy</title>
+
+		<objectives><title>[Rotational Kinetic Energy]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <p>pool balls</p>
         </section>
 </chapter>
@@ -7270,6 +8391,15 @@ Also check these folks out on Wikipedia.... of course
 
 
 <chapter xml:id="c-gravity"><title>The Gravitational Force on a Large Scale</title>
+
+	<objectives xml:id="co-gravity"><title><xref ref="c-gravity" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <introduction>
 <aside><title>Chapter referenced by</title>
         <p>
@@ -7282,6 +8412,15 @@ Also check these folks out on Wikipedia.... of course
 </introduction>
 
 <section xml:id="s-Gfield"><title>Gravitational Force and Field</title>
+
+		<objectives xml:id="so-Gfield"><title><xref ref="s-Gfield" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
         <introduction>
 <aside><title>Section referenced by</title> <p>Discussion of <xref ref="connect-Fma" text="title"><m>F=ma</m></xref></p></aside>
@@ -7322,12 +8461,30 @@ Also check these folks out on Wikipedia.... of course
                 </introduction>
 
                 <subsection xml:id="ss-equivmm"><title>Inertial Mass versus Gravitational Mass</title>
+
+			<objectives xml:id="sso-equivmm"><title><xref ref="ss-equivmm" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Referenced by</title> <p><xref ref="ss-weightmass" text="type-hybrid" /></p></aside>
                 </subsection>
 
         </section>
 
         <section xml:id="s-PEG"><title>Gravitational Potential Energy</title>
+
+		<objectives xml:id="so-PEG"><title><xref ref="s-PEG" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Referenced by</title> <p><xref ref="ss-PEg" text="type-hybrid" /></p></aside>
 
         <p>Recall <xref ref="ss-PEg" text="type-global" /></p>
@@ -7335,6 +8492,15 @@ Also check these folks out on Wikipedia.... of course
         </section>
 
         <section xml:id="s-Gconnection"><title>Making Connections</title>
+
+		<objectives xml:id="so-Gconnection"><title><xref ref="s-Gconnection" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Referenced by</title> <p><xref ref="s-Econnection" text="type-hybrid" /></p></aside>
 
         <p>
@@ -7350,6 +8516,15 @@ Also check these folks out on Wikipedia.... of course
         </section>
 
         <section><title>Orbits</title>
+
+		<objectives><title>[Orbits]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 <p>.</p>
         </section>
 
@@ -7368,12 +8543,39 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 <chapter xml:id="c-fluids"><title>Fluids</title>
+
+	<objectives xml:id="co-fluids"><title><xref ref="c-fluids" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
         <section xml:id="s-density"><title>Density</title>
+
+		<objectives xml:id="so-density"><title><xref ref="s-density" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <idx>density</idx>
         <aside><title>Section referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
         </section>
 
         <section xml:id="s-pressure"><title>Pressure</title>
+
+		<objectives xml:id="so-pressure"><title><xref ref="s-pressure" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Section referenced by</title>
                 <p>
                         <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>, <!-- units -->
@@ -7386,6 +8588,15 @@ Also check these folks out on Wikipedia.... of course
         </section>
 
         <section xml:id="s-surface-tension"><title>Surface Tension</title>
+
+		<objectives xml:id="so-surface-tension"><title><xref ref="s-surface-tension" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-surf-tension" text="title" >surface tension</xref></p></aside>
         </section>
 
@@ -7394,6 +8605,15 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 <chapter xml:id="c-SHM"><title>Oscillations</title>
+
+	<objectives xml:id="co-SHM"><title><xref ref="c-SHM" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 
         <section xml:id="c-SHMspring"><title>Oscillating Springs</title>
                 <aside><title>Referenced by</title> <p>Discussion of <xref ref="connect-Fma" text="title"><m>F=ma</m></xref></p></aside>
@@ -7405,6 +8625,15 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-SHMother"><title>Other Examples of Oscillations</title>
 
+		<objectives xml:id="so-SHMother"><title><xref ref="s-SHMother" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <p>On 13 April, 2017,
                 <url href="http://www.cbc.ca/podcasting">CBC Broadcasting</url> published a
                 <url href="http://www.cbc.ca/podcasting/includes/quirks.xml"><em>Quirks and Quarks</em></url> episode discussing how we can find
@@ -7415,8 +8644,35 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Sound</title>
+
+	<objectives><title>[Sound]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
         <section><title>TBD</title>
+
+		<objectives><title>[TBD]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
                 <subsection xml:id="ss-stringed-instruments"><title>Musical Instruments</title>
+
+			<objectives xml:id="sso-stringed-instruments"><title><xref ref="ss-stringed-instruments" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Subsection referenced by</title> <p><xref ref="A-swing-tension" text="type-global"/></p></aside>
                 </subsection>
         </section>
@@ -7436,13 +8692,49 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter><title>Perspectives of Gases: Physics and Chemistry</title>
 
+	<objectives><title>[Perspectives of Gases: Physics and Chemistry]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <section><title>Measuring the properties of a gas</title>
+
+		<objectives><title>[Measuring the properties of a gas]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
                 <subsection><title>Thermometrics</title>
+
+			<objectives><title>[Thermometrics]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <p>Thermometers, Fahrenheit, Celcius and centrigrade, Kelvin, Rankin</p>
                         <p>Reference unit conversion <xref ref="ex-F-and-C" text="type-global" />.</p>
                 </subsection>
 
                 <subsection xml:id="ss-barometrics"><title>Barometrics</title>
+
+			<objectives xml:id="sso-barometrics"><title><xref ref="ss-barometrics" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Section referenced by</title>
                         <p>
                                 <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>, <!-- units -->
@@ -7458,6 +8750,15 @@ Also check these folks out on Wikipedia.... of course
         </section>
 
         <section xml:id="s-kinetic-theory"><title>Kinetic Theory of Gases</title>
+
+		<objectives xml:id="so-kinetic-theory"><title><xref ref="s-kinetic-theory" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <introduction>
         <aside><title>Section referenced by</title>
                 <p>
@@ -7467,6 +8768,15 @@ Also check these folks out on Wikipedia.... of course
         </introduction>
 
                 <subsection><title>Pressure as a statistical quantity</title>
+
+			<objectives><title>[Pressure as a statistical quantity]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                         <p>words
                         <me>P=\frac{F}{A} = \frac{1}{A} \frac{dp}{dt} = \frac{l}{V} \frac{dp}{dt}</me>
                         more words
@@ -7475,6 +8785,15 @@ Also check these folks out on Wikipedia.... of course
                 </subsection>
 
                 <subsection xml:id="ss-thermal-energy"><title>Temperature as a statistical quantity</title>
+
+			<objectives xml:id="sso-thermal-energy"><title><xref ref="ss-thermal-energy" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Subsection referenced by</title>
                         <p>
                         Discussions of <xref ref="find-heatwarm" text="title">thermal energy</xref>
@@ -7490,12 +8809,30 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter><title>Building the Ideal Gas Law</title>
 
+	<objectives><title>[Building the Ideal Gas Law]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <introduction>
                 <p>This should be: Boyle's, Charles', and Gay-Lussac's; each introducing the relevant VT, PT, and PV diagrams as subsections; then the last section is Ideal Gas Law.</p>
                 <p>Subsequent chapter is the Laws of Thermodynamics and flow of thermal energy, and P-V diagrams grow into their own there.</p>
         </introduction>
 
         <section xml:id="s-PV"><title><m>P</m>-<m>V</m> Diagrams</title>
+
+		<objectives xml:id="so-PV"><title><xref ref="s-PV" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatwarm" text="type-global">heating versus warming</xref></p></aside>
         </section>
 </chapter>
@@ -7503,6 +8840,15 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 <chapter><title>The flow of thermal energy</title>
+
+	<objectives><title>[The flow of thermal energy]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
         <introduction>
                 <p xml:id="find-heatwarm">Energy is a noun<idx><h>energy</h><h>noun</h></idx>; objects can <em>have</em> energy.  The <xref ref="s-kinetic-theory" text="title" /> shows us how the temperature of a gas can be an expression of the <xref ref="ss-thermal-energy" text="title">kinetic energy of the molecules of the gas</xref>.</p>
 
@@ -7522,6 +8868,15 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-specificheat"><title>Specific Heat Capacity</title>
 
+		<objectives xml:id="so-specificheat"><title><xref ref="s-specificheat" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
         <p xml:id="d-heatwarm">Heating (positive <m>Q</m>) can warm (positive <m>\Delta T</m>) a material.
         <men xml:id="eq-Q-mcDT">
         Q = m c \, \Delta T
@@ -7531,6 +8886,15 @@ Also check these folks out on Wikipedia.... of course
         </section>
 
         <section><title>Latent Heat</title>
+
+		<objectives><title>[Latent Heat]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
         <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatwarm" text="type-hybrid"></xref>heating versus warming</p></aside>
         <p>Heating might also change the phase of a material.
@@ -7543,7 +8907,25 @@ Also check these folks out on Wikipedia.... of course
 
         <section><title>The Flow of Thermal Energy</title>
 
+		<objectives><title>[The Flow of Thermal Energy]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection xml:id="ss-thermalconductivity"><title>Thermal Conductivity</title>
+
+			<objectives xml:id="sso-thermalconductivity"><title><xref ref="ss-thermalconductivity" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Referenced by</title> <p><xref ref="s-story" text="type-hybrid"/></p></aside>
 
                 <p>
@@ -7573,10 +8955,28 @@ Also check these folks out on Wikipedia.... of course
                 </subsection>
 
                 <subsection><title>Convection</title>
+
+			<objectives><title>[Convection]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
                 <subsection><title>Radiation</title>
+
+			<objectives><title>[Radiation]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>Links to light below.  Distinguish from nuclear radiation alpha, beta. Note thermal radiation versus gamma radiation?</p>
                 </subsection>
         </section>
@@ -7596,17 +8996,53 @@ Also check these folks out on Wikipedia.... of course
 
 
 <chapter xml:id="c-electric"><title>The Electrical Interaction</title>
+
+	<objectives xml:id="co-electric"><title><xref ref="c-electric" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <introduction>
 <aside><title>Chapter referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
 </introduction>
 
         <section xml:id="s-Echarge"><title>Electrical Charge</title>
+
+		<objectives xml:id="so-Echarge"><title><xref ref="s-Echarge" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 <p>.</p>
         </section>
 
         <section><title>The Big Picture</title>
 
+		<objectives><title>[The Big Picture]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection xml:id="ss-Efield"><title>Electric Forces and Fields</title>
+
+			<objectives xml:id="sso-Efield"><title><xref ref="ss-Efield" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 
                         <introduction>
                 <aside><title>Subsection referenced by</title>
@@ -7626,22 +9062,57 @@ Also check these folks out on Wikipedia.... of course
                         </introduction>
 
                         <subsubsection><title>Examples</title>
+
+				<objectives><title>[Examples]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                         </subsubsection>
 
                 </subsection>
 
                 <subsection><title>Electric Forces, Fields, and Potential Energy</title>
+
+			<objectives><title>[Electric Forces, Fields, and Potential Energy]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
                 <subsection><title>Electric Fields, Potential Energy, and Potential</title>
+
+			<objectives><title>[Electric Fields, Potential Energy, and Potential]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
         </section>
 
         <section xml:id="s-Econnection"><title>Making Connections</title>
+
+		<objectives xml:id="so-Econnection"><title><xref ref="s-Econnection" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <aside><title>Referenced by</title> <p><xref ref="s-Gconnection" text="type-hybrid"/></p></aside>
 
         <p>
@@ -7660,30 +9131,75 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Electricity</title>
+
+	<objectives><title>[Electricity]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <p>See also <url href="https://www.facebook.com/UmairTOfficial/videos/1573430836018784/?hc_ref=ARTazrYkFpgDeSNC0xV45lwMO41lc9hWdnntKLNiVDmvEuVd5d7Jov8-WUxq2b5LQeI&amp;pnref=story" /> (referenced from Facebook<trademark /> Oct, 2017)</p>
 </chapter>
 
 <!-- ********************************************************************************************** -->
 
 <chapter><title>The Magnetic Interaction</title>
+
+	<objectives><title>[The Magnetic Interaction]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <p>pst-magneticfield</p>
 </chapter>
 
 <!-- ********************************************************************************************** -->
 
 <chapter><title><q>Magnicity?</q></title>
+
+	<objectives><title>[<q>Magnicity?</q>]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <p>.</p>
 </chapter>
 
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Light</title>
+
+	<objectives><title>[Light]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <p>.</p>
 </chapter>
 
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Optics</title>
+
+	<objectives><title>[Optics]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <p>.</p>
 </chapter>
 
@@ -7703,6 +9219,15 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Relativity</title>
+
+	<objectives><title>[Relativity]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <p>.</p>
 </chapter>
 
@@ -7710,11 +9235,38 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter><title>Quantum Mechanics</title>
 
+	<objectives><title>[Quantum Mechanics]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
 <introduction><p>This might be useful <url href="http://timeline.aps.org/APS/Timeline/" />.</p></introduction>
 
         <section><title>Atomic Physics</title>
 
+		<objectives><title>[Atomic Physics]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection><title>The Periodic Table and Quantum Numbers</title>
+
+			<objectives><title>[The Periodic Table and Quantum Numbers]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
@@ -7722,14 +9274,41 @@ Also check these folks out on Wikipedia.... of course
         <section xml:id="ss-nucleardecay"><title>Nuclear Physics</title>
 
                 <subsection><title>Nuclear Decay</title>
+
+			<objectives><title>[Nuclear Decay]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
                 <subsection xml:id="ss-strong"><title>The Strong Nuclear Force</title>
+
+			<objectives xml:id="sso-strong"><title><xref ref="ss-strong" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
                 </subsection>
 
                 <subsection xml:id="ss-weak"><title>The Weak Nuclear Force</title>
+
+			<objectives xml:id="sso-weak"><title><xref ref="ss-weak" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
                 </subsection>
 
@@ -7737,23 +9316,77 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-particle"><title>Particle Physics</title>
 
+		<objectives xml:id="so-particle"><title><xref ref="s-particle" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
                 <subsection><title>Field Theory</title>
+
+			<objectives><title>[Field Theory]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
                 <subsection xml:id="ss-QED"><title>Quantum Electrodynamics</title>
+
+			<objectives xml:id="sso-QED"><title><xref ref="ss-QED" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
                 </subsection>
 
                 <subsection xml:id="ss-QCD"><title>Quantum Chromodynamics</title>
+
+			<objectives xml:id="sso-QCD"><title><xref ref="ss-QCD" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
                 <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
                 </subsection>
 
                 <subsection xml:id="ss-StandardModel"><title>The Standard Model</title>
+
+			<objectives xml:id="sso-StandardModel"><title><xref ref="ss-StandardModel" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
                 <subsection xml:id="ss-particledecay"><title>Particle Decay</title>
+
+			<objectives xml:id="sso-particledecay"><title><xref ref="ss-particledecay" text="title" /></title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
 <p>.</p>
                 </subsection>
 
@@ -7764,18 +9397,45 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Condensed Matter</title>
+
+	<objectives><title>[Condensed Matter]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <p>.</p>
 </chapter>
 
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Astronomy</title>
+
+	<objectives><title>[Astronomy]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <p>.</p>
 </chapter>
 
 <!-- ********************************************************************************************** -->
 
 <chapter><title>Cosmology</title>
+
+	<objectives><title>[Cosmology]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <p>.</p>
 </chapter>
 
@@ -7794,11 +9454,29 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 <chapter xml:id="c-revisted"><title>Deeper Dive</title>
+
+	<objectives xml:id="co-revisted"><title><xref ref="c-revisted" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 <introduction>
 <todo>This chapter should mirror (xref ref="c-physics" text="type-global" /).</todo>
 </introduction>
 
         <section><title>[Need title]</title>
+
+		<objectives><title>[[Need title]]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
         <introduction>
         <p>This is where I will put the fuller explanations.</p>
@@ -7811,14 +9489,38 @@ Also check these folks out on Wikipedia.... of course
                 </introduction>
 
                 <subsubsection><title>The Birth of a Star</title>
+
+				<objectives><title>[The Birth of a Star]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
                 <subsubsection><title>The Life of a Star</title>
+
+				<objectives><title>[The Life of a Star]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
                 <subsubsection><title>The Death of a Star</title>
+
+				<objectives><title>[The Death of a Star]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
@@ -7826,19 +9528,60 @@ Also check these folks out on Wikipedia.... of course
 
         <subsection><title>Kitchen Appliances</title>
 
+			<objectives><title>[Kitchen Appliances]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                 <subsubsection><title>Oven</title>
+
+				<objectives><title>[Oven]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
                 <subsubsection><title>Refrigerator</title>
+
+				<objectives><title>[Refrigerator]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
                 <subsubsection><title>Microwave</title>
+
+				<objectives><title>[Microwave]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
                 <subsubsection><title>Television</title>
+
+				<objectives><title>[Television]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
@@ -7846,22 +9589,72 @@ Also check these folks out on Wikipedia.... of course
 
         <subsection><title>Automobile</title>
 
+			<objectives><title>[Automobile]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                 <subsubsection><title>Coolant and Antifreeze</title>
+
+				<objectives><title>[Coolant and Antifreeze]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
                 <subsubsection><title>Tires</title>
+
+				<objectives><title>[Tires]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
                 <subsubsection><title>Torque</title>
+
+				<objectives><title>[Torque]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
         </subsection>
         <subsection><title>Cool Ideas</title>
 
+			<objectives><title>[Cool Ideas]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
                 <subsubsection xml:id="sss-blackhole2"><title>Black Holes</title>
+
+				<objectives xml:id="ssso-blackhole2"><title><xref ref="sss-blackhole2" text="title" /></title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
                 <aside><title>Referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
 
                 <p>On 7 April, 2017,
@@ -7874,14 +9667,38 @@ Also check these folks out on Wikipedia.... of course
                 </subsubsection>
 
                 <subsubsection><title>Quantum Mechanics</title>
+
+				<objectives><title>[Quantum Mechanics]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
                 <subsubsection><title>Relativity</title>
+
+				<objectives><title>[Relativity]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
                 <subsubsection><title>String Theory</title>
+
+				<objectives><title>[String Theory]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
 <p>.</p>
                 </subsubsection>
 
@@ -7893,7 +9710,25 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-vid-pod"><title>Internet Resources</title>
 
+	<objectives xml:id="co-vid-pod"><title><xref ref="c-vid-pod" text="title" /></title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
         <section xml:id="s-podcasts"><title>Podcasts</title>
+
+		<objectives xml:id="so-podcasts"><title><xref ref="s-podcasts" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
         <p><url href="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99">Spacepod with Carrie Nugent</url></p>
         <p><url href="http://www.sciencefriday.com/">Science Friday with Ira Flatow</url></p>
@@ -7901,12 +9736,30 @@ Also check these folks out on Wikipedia.... of course
         </section>
         <section xml:id="s-videos"><title>Videos</title>
 
+		<objectives xml:id="so-videos"><title><xref ref="s-videos" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
         <p><url href="http://physicsfootnotes.com/">Physics Footnotes</url> </p>
         <p><url href="http://sixtysymbols.com/">Sixty Symbols</url></p>
 
         </section>
 
         <section xml:id="s-websites"><title>Websites</title>
+
+		<objectives xml:id="so-websites"><title><xref ref="s-websites" text="title" /></title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
         <p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge">The Flame Challenge</url></p>
         <p><url href="https://msis.jsc.nasa.gov/sections/section04.htm">NASA human performance capabilities</url></p>
@@ -7918,6 +9771,15 @@ Also check these folks out on Wikipedia.... of course
 
 
 <chapter><title>Characters</title>
+
+	<objectives><title>[Characters]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
 
         <introduction>
         <p>This textbook has five characters who follow you throughout the book.  They appear in the examples and some homework problems.  They also remember previous experiences.  I need to adjust the examples in <xref ref="c-force" text="type-hybrid" /> such that the people pushing boxes are helping the reader rearrange furniture.</p>
@@ -7937,6 +9799,15 @@ I have emailed her.  NO REPLY.
         </introduction>
 
         <section><title>The Story</title>
+
+		<objectives><title>[The Story]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
                 <p>This will be a dramatic story of college students in and out of relationships, stress about their major, and interacting with parents.  Maybe some travel; certainly some growth.  During their adventure, they casually interact with the reader in unimportant ways that produce the examples and explorations.</p>
 
                 <p>The next set of sections are there to help me storyboard the interactions.</p>
@@ -7944,6 +9815,15 @@ I have emailed her.  NO REPLY.
         </section>
 
         <section><title>\studentA</title>
+
+		<objectives><title>[\studentA]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
         <idx><h>\studentA</h><h>outside</h></idx>
 
 <!--        <idx></idx>{\studentA|(} % Begin page-range
@@ -7965,6 +9845,15 @@ I have emailed her.  NO REPLY.
 
         </section>
         <section><title>\studentB</title><idx><h sortby="\studentB">\studentB</h></idx>
+
+		<objectives><title>[\studentB]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
 <!--        <idx></idx>{\studentB|(} % Begin page-range
 -->
@@ -7998,6 +9887,15 @@ I have emailed her.  NO REPLY.
 
         <section><title>\studentC</title>
 
+		<objectives><title>[\studentC]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
 <!--        <idx></idx>{\studentC|(} % Begin page-range
 -->
 <p>.</p>
@@ -8008,6 +9906,15 @@ I have emailed her.  NO REPLY.
 
         <section><title>\studentD</title>
 
+		<objectives><title>[\studentD]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
 <!--        <idx></idx>{\studentD|(} % Begin page-range
 -->
 <p>.</p>
@@ -8017,6 +9924,15 @@ I have emailed her.  NO REPLY.
 
 
         <section><title>\studentE</title>
+
+		<objectives><title>[\studentE]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
 <!--        <idx></idx>{\studentE|(} % Begin page-range
 -->
@@ -8029,6 +9945,15 @@ I have emailed her.  NO REPLY.
 
         <section><title>\studentF</title>
 
+		<objectives><title>[\studentF]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
 <!--        <idx></idx>{\studentF|(} % Begin page-range
 -->
         <p>According to <xref ref="se-gworld" text="type-global" />, \studentF\ is the mother of \studentB.  They have lived in Norway, where \studentB\ grew up, and visited both Puerto Rico and Mount Everest.</p>
@@ -8039,6 +9964,15 @@ I have emailed her.  NO REPLY.
 
         <section><title>\studentX</title>
 
+		<objectives><title>[\studentX]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
 <!--        <idx></idx>{\studentX|(} % Begin page-range
 -->
 <p>.</p>
@@ -8047,6 +9981,15 @@ I have emailed her.  NO REPLY.
         </section>
 
         <section><title>\studentZ</title>
+
+		<objectives><title>[\studentZ]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
 
 <!--        <idx></idx>{\studentZ|(} % Begin page-range
 -->
