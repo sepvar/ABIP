@@ -549,7 +549,7 @@
 
         <section xml:id="s-law"><title>Theory versus Law</title>
 
-		<objectives xml:id="so-law"><title><xref ref="s-law" text="title" /></title>
+		<objectives xml:id="so-law"><title>Theory versus Law</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -570,7 +570,7 @@
 
 <chapter xml:id="c-physics"><title>Seeing Physics</title>
 
-	<objectives xml:id="co-physics"><title><xref ref="c-physics" text="title" /></title>
+	<objectives xml:id="co-physics"><title>Seeing Physics</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
 			<li><p>.</p></li>
@@ -591,7 +591,7 @@
 
         <section xml:id="s-flame"><title>The Flame Challenge and Other Brief Descriptions</title>
 
-		<objectives xml:id="so-flame"><title><xref ref="s-flame" text="title" /></title>
+		<objectives xml:id="so-flame"><title>The Flame Challenge and Other Brief Descriptions</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -606,7 +606,7 @@
 
                 <subsection xml:id="ss-flame"><title>The Flame Challenge</title>
 
-			<objectives xml:id="sso-flame"><title><xref ref="ss-flame" text="title" /></title>
+			<objectives xml:id="sso-flame"><title>The Flame Challenge</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -634,7 +634,7 @@
 
                 <subsection xml:id="ss-matter"><title>The Forming of Matter in the Universe</title>
 
-			<objectives xml:id="sso-matter"><title><xref ref="ss-matter" text="title" /></title>
+			<objectives xml:id="sso-matter"><title>The Forming of Matter in the Universe</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -751,7 +751,7 @@
 
         <section xml:id="s-effective1"><title>Effective Theory</title>
 
-		<objectives xml:id="so-effective1"><title><xref ref="s-effective1" text="title" /></title>
+		<objectives xml:id="so-effective1"><title>Effective Theory</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -793,7 +793,7 @@
 
         <section xml:id="s-story"><title>Every equation tells a story</title>
 
-		<objectives xml:id="so-story"><title><xref ref="s-story" text="title" /></title>
+		<objectives xml:id="so-story"><title>Every equation tells a story</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -864,7 +864,7 @@
         </section>
         <section xml:id="s-SI-MKS"><title>The Metric System</title>
 
-		<objectives xml:id="so-SI-MKS"><title><xref ref="s-SI-MKS" text="title" /></title>
+		<objectives xml:id="so-SI-MKS"><title>The Metric System</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -976,7 +976,7 @@
 
                 <subsection xml:id="ss-convertunits"><title>Conversion from English Units</title>
 
-			<objectives xml:id="sso-convertunits"><title><xref ref="ss-convertunits" text="title" /></title>
+			<objectives xml:id="sso-convertunits"><title>Conversion from English Units</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -1008,7 +1008,7 @@
 
                 <subsection xml:id="ss-units"><title>Fundamental Units versus Derived Units</title>
 
-			<objectives xml:id="sso-units"><title><xref ref="ss-units" text="title" /></title>
+			<objectives xml:id="sso-units"><title>Fundamental Units versus Derived Units</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -1079,7 +1079,7 @@
 
                 <subsection xml:id="ss-coordinate-systems"><title>Coordinate Systems</title>
 
-			<objectives xml:id="sso-coordinate-systems"><title><xref ref="ss-coordinate-systems" text="title" /></title>
+			<objectives xml:id="sso-coordinate-systems"><title>Coordinate Systems</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -1180,7 +1180,7 @@
 
                 <subsection xml:id="ss-vectors"><title>Vectors</title>
 
-			<objectives xml:id="sso-vectors"><title><xref ref="ss-vectors" text="title" /></title>
+			<objectives xml:id="sso-vectors"><title>Vectors</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -1262,7 +1262,7 @@
 
                         <subsubsection xml:id="sss-scalarvector"><title>Scalar Quantities versus Vector Quantities</title>
 
-				<objectives xml:id="ssso-scalarvector"><title><xref ref="sss-scalarvector" text="title" /></title>
+				<objectives xml:id="ssso-scalarvector"><title>Scalar Quantities versus Vector Quantities</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
 						<li><p>.</p></li>
@@ -1284,7 +1284,7 @@
 
                         <subsubsection xml:id="sss-vectorequations"><title>Vector Equations</title>
 
-				<objectives xml:id="ssso-vectorequations"><title><xref ref="sss-vectorequations" text="title" /></title>
+				<objectives xml:id="ssso-vectorequations"><title>Vector Equations</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
 						<li><p>.</p></li>
@@ -1315,7 +1315,7 @@
 
                         <subsubsection xml:id="sss-vectorproducts"><title>Multiplication, but Not Division</title>
 
-				<objectives xml:id="ssso-vectorproducts"><title><xref ref="sss-vectorproducts" text="title" /></title>
+				<objectives xml:id="ssso-vectorproducts"><title>Multiplication, but Not Division</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
 						<li><p>.</p></li>
@@ -1359,9 +1359,9 @@
 		</ul>
 	</objectives>
 
-        <section xml:id="s-precision"><title>Precision and Accuracy</title>
-        <idx>precision</idx>
-		<objectives xml:id="so-precision"><title><xref ref="s-precision" text="title" /></title>
+        <section xml:id="s-precision"><title>Precision and Accuracy</title><idx>precision</idx>
+
+        	<objectives xml:id="so-precision"><title>Precision and Accuracy</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -1383,7 +1383,7 @@
 
         <section xml:id="s-sigfig"><title>Significant Figures</title>
 
-		<objectives xml:id="so-sigfig"><title><xref ref="s-sigfig" text="title" /></title>
+		<objectives xml:id="so-sigfig"><title>Significant Figures</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -1426,7 +1426,7 @@
 
         <section xml:id="s-effective2"><title>Effective Theories</title>
 
-		<objectives xml:id="so-effective2"><title><xref ref="s-effective2" text="title" /></title>
+		<objectives xml:id="so-effective2"><title>Effective Theories</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -1489,7 +1489,7 @@
 
 <chapter xml:id="c-motion"><title>1-D Motion, Relating position, Velocity, and Acceleration</title>
 
-	<objectives xml:id="co-motion"><title><xref ref="c-motion" text="title" /></title>
+	<objectives xml:id="co-motion"><title>1-D Motion, Relating position, Velocity, and Acceleration</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
 			<li><p>.</p></li>
@@ -1608,7 +1608,7 @@
 
                 <subsection xml:id="ss-relvel"><title>Relative Velocity</title>
 
-			<objectives xml:id="sso-relvel"><title><xref ref="ss-relvel" text="title" /></title>
+			<objectives xml:id="sso-relvel"><title>Relative Velocity</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -1630,7 +1630,7 @@
 
                 <subsection xml:id="ss-addvel"><title>Adding Velocities</title>
 
-			<objectives xml:id="sso-addvel"><title><xref ref="ss-addvel" text="title" /></title>
+			<objectives xml:id="sso-addvel"><title>Adding Velocities</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -1646,7 +1646,7 @@
 
         <section xml:id="s-acceleration"><title>Extending the Concepts: Changing How You Move</title>
 
-		<objectives xml:id="so-acceleration"><title><xref ref="s-acceleration" text="title" /></title>
+		<objectives xml:id="so-acceleration"><title>Extending the Concepts: Changing How You Move</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -1666,7 +1666,7 @@
 
                 <subsection xml:id="ss-acceleration"><title>Moving versus Speeding Up</title>
 
-			<objectives xml:id="sso-acceleration"><title><xref ref="ss-acceleration" text="title" /></title>
+			<objectives xml:id="sso-acceleration"><title>Moving versus Speeding Up</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -1773,7 +1773,7 @@
 
         <section xml:id="s-EOM"><title>Connecting the English to the Math</title>
 
-		<objectives xml:id="so-EOM"><title><xref ref="s-EOM" text="title" /></title>
+		<objectives xml:id="so-EOM"><title>Connecting the English to the Math</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -1810,9 +1810,9 @@
 			</ul>
 		</objectives>
 
-                <subsection xml:id="ss-freefall"><title>Freefall</title>
-                <idx>freefall</idx>
-			<objectives xml:id="sso-freefall"><title><xref ref="ss-freefall" text="title" /></title>
+                <subsection xml:id="ss-freefall"><title>Freefall</title><idx>freefall</idx>
+
+                	<objectives xml:id="sso-freefall"><title>Freefall</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -1955,7 +1955,7 @@
                 <subsection xml:id="ss-noninertial"><title>Non-Inertial Accelerated Reference Frames</title>
                 <idx><h>reference frames</h><h>inertial</h></idx>
                 <idx><h>reference frames</h><h>non-inertial</h></idx>
-			<objectives xml:id="sso-noninertial"><title><xref ref="ss-noninertial" text="title" /></title>
+			<objectives xml:id="sso-noninertial"><title>Non-Inertial Accelerated Reference Frames</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -1980,7 +1980,7 @@
 
                 <subsection xml:id="ss-airresistance"><title>Air Resistance</title>
 
-			<objectives xml:id="sso-airresistance"><title><xref ref="ss-airresistance" text="title" /></title>
+			<objectives xml:id="sso-airresistance"><title>Air Resistance</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -2005,7 +2005,7 @@
 
                 <subsection xml:id="ss-multistep"><title>Multi-Step Solutions</title>
 
-			<objectives xml:id="sso-multistep"><title><xref ref="ss-multistep" text="title" /></title>
+			<objectives xml:id="sso-multistep"><title>Multi-Step Solutions</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -2143,7 +2143,7 @@
 
                 <subsection xml:id="ss-ballistic"><title>Ballistic Freefall</title>
 
-			<objectives xml:id="sso-ballistic"><title><xref ref="ss-ballistic" text="title" /></title>
+			<objectives xml:id="sso-ballistic"><title>Ballistic Freefall</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -2176,7 +2176,7 @@
 
                 <subsection xml:id="ss-ballisticairresistance"><title>Air Resistance</title>
 
-			<objectives xml:id="sso-ballisticairresistance"><title><xref ref="ss-ballisticairresistance" text="title" /></title>
+			<objectives xml:id="sso-ballisticairresistance"><title>Air Resistance</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -2243,7 +2243,7 @@
 
 <chapter xml:id="c-force"><title>Force</title>
 
-        <objectives xml:id="co-force"><title><xref ref="c-force" text="title" /></title>
+        <objectives xml:id="co-force"><title>Force</title>
                 <introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
                 <ul>
                         <li><p>Correctly describe physical interactions involving how objects push and pull on each other</p></li>
@@ -2260,7 +2260,7 @@
 
         <section xml:id="s-forcewords"><title>How Physicists Use the Words (Notation)</title>
 
-                <objectives xml:id="so-forcewords"><title><xref ref="s-forcewords" text="title" /></title>
+                <objectives xml:id="so-forcewords"><title>How Physicists Use the Words (Notation)</title>
                         <introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
                         <ul>
                                 <li><p>Identify both the object being pushed and the object doing the pushing for any interaction and correctly describe them using the on-by notation</p></li>
@@ -2314,7 +2314,7 @@
 
         <section xml:id="s-Newton"><title>Connecting the Concepts: Newton's Laws</title>
 
-                <objectives xml:id="so-Newton"><title><xref ref="s-Newton" text="title" /></title>
+                <objectives xml:id="so-Newton"><title>Connecting the Concepts: Newton's Laws</title>
                         <introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
                         <ul>
                                 <li><p>Write out Newton's laws in their own words</p></li>
@@ -2365,7 +2365,7 @@
 
                 <subsection xml:id="ss-NI"><title>Translating Newton's First Law: The Law of Inertia</title>
 
-                <objectives xml:id="sso-NI"><title><xref ref="ss-NI" text="title" /></title>
+                <objectives xml:id="sso-NI"><title>Translating Newton's First Law: The Law of Inertia</title>
                         <introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
                         <ul>
                                 <li><p>Write Newton's first law in their own words</p></li>
@@ -2431,7 +2431,7 @@
 
                         <subsubsection xml:id="sss-inertia"><title>Inertia</title><idx>inertia</idx>
 
-                        <objectives xml:id="ssso-inertia"><title><xref ref="sss-inertia" text="title" /></title>
+                        <objectives xml:id="ssso-inertia"><title>Inertia</title>
                                 <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
                                 <ul>
                                         <li><p>consistently express the correct use of the term inertia</p></li>
@@ -2445,7 +2445,7 @@
                         </subsubsection>
                         <subsubsection xml:id="sss-NItogether"><title>How the Laws Work Together</title>
 
-                        <objectives xml:id="ssso-NItogether"><title><xref ref="sss-NItogether" text="title" /></title>
+                        <objectives xml:id="ssso-NItogether"><title>How the Laws Work Together</title>
                                 <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
                                 <ul>
                                         <li><p>express if Newton's first law is appropriate to invoke for a given situation.</p></li>
@@ -2462,7 +2462,7 @@
 
                 <subsection xml:id="ss-NII"><title>Translating Newton's Second Law: The Equation Law</title>
 
-                <objectives xml:id="sso-NII"><title><xref ref="ss-NII" text="title" /></title>
+                <objectives xml:id="sso-NII"><title>Translating Newton's Second Law: The Equation Law</title>
                         <introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
                         <ul>
                                 <li><p>state Newton's second law in their own words</p></li>
@@ -2536,13 +2536,13 @@
                 <p>You should <xref ref="s-acceleration" text="title">recall</xref>, that the direction of the acceleration does not determine the direction <em>of the motion</em>, but rather determines the direction <em>of the change</em> in motion.</p>
                 </proposition>
                 <proposition xml:id="connect-Fma-ahead"><title>Looking Ahead</title>
-                <p>That idea will be important when we discuss how a <xref ref="s-FT" text="title">tension</xref> acts as a <xref ref="s-centripetal" text="title">centripetal force</xref>, the relationship between velocity and acceleration in a <xref ref="s-springs" text="title">spring</xref> that <xref ref="c-SHMspring" text="title">oscillates</xref>, and objects that are propelled through either a <xref ref="s-Gfield" text="title">gravitational</xref> or an <xref ref="ss-Efield" text="title">electrical</xref> field.</p>
+                <p>That idea will be important when we discuss how a <xref ref="s-FT" text="title">tension</xref> acts as a <xref ref="s-centripetal" text="title">centripetal force</xref>, the relationship between velocity and acceleration in a <xref ref="s-springs" text="title">spring</xref> that <xref ref="s-SHMspring" text="title">oscillates</xref>, and objects that are propelled through either a <xref ref="s-Gfield" text="title">gravitational</xref> or an <xref ref="ss-Efield" text="title">electrical</xref> field.</p>
                 </proposition>
 
                 </introduction>
                 <subsubsection xml:id="sss-unit-N"><title>Units of Force</title>
                 <idx><h>force</h><h>units of</h></idx>
-                <objectives xml:id="ssso-unit-N"><title><xref ref="sss-unit-N" text="title" /></title>
+                <objectives xml:id="ssso-unit-N"><title>Units of Force</title>
                         <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
                         <ul>
                                 <li><p>use dimensional analysis to identify whether or not a quantity represents a force</p></li>
@@ -2578,7 +2578,7 @@
 
                 </subsubsection>
                 <subsubsection xml:id="sss-netforce"><title>Calculating the Net Force</title>
-                <objectives xml:id="ssso-netforce"><title><xref ref="sss-netforce" text="title" /></title>
+                <objectives xml:id="ssso-netforce"><title>Calculating the Net Force</title>
                         <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
                         <ul>
                                 <li><p>vector-add multiple forces to find the resultant (net) force</p></li>
@@ -2893,12 +2893,10 @@
                 </subsubsection>
                 <subsubsection xml:id="sss-netforce-other"><title>Using the Net Force to Calculate Other Quantities</title>
 
-                        <objectives xml:id="ssso-netforce-other"><title><xref ref="sss-netforce-other" text="title" /></title>
+                        <objectives xml:id="ssso-netforce-other"><title>Using the Net Force to Calculate Other Quantities</title>
                                 <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
                                 <ul>
                                         <li><p>compute the mass or acceleration, given a net force and the acceleration or the mass</p></li>
-                                        <li><p></p></li>
-                                        <li><p></p></li>
                                 </ul>
                         </objectives>
 
@@ -3035,7 +3033,7 @@
 
                 </subsubsection>
                 <subsubsection xml:id="sss-equilibrium"><title>Equilibrium</title><idx>equilibrium</idx>
-                <objectives xml:id="ssso-equilibrium"><title><xref ref="sss-equilibrium" text="title" /></title>
+                <objectives xml:id="ssso-equilibrium"><title>Equilibrium</title>
                         <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
                         <ul>
                                 <li><p>consistently express the correct use of the term equilibrium</p></li>
@@ -3062,7 +3060,7 @@
 
                 </subsubsection>
                 <subsubsection xml:id="sss-NIItogether"><title>How the Laws Work Together</title>
-                <objectives xml:id="ssso-NIItogether"><title><xref ref="sss-NIItogether" text="title" /></title>
+                <objectives xml:id="ssso-NIItogether"><title>How the Laws Work Together</title>
                         <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
                         <ul>
                                 <li><p>I'm not really sure what the objective is here.  Maybe I should re-work this section</p></li>
@@ -3130,8 +3128,9 @@
 
                 <subsection xml:id="ss-NIII"><title>Translating Newton's Third Law: Action <ampersand /> Reaction</title>
 
-                <objectives xml:id="sso-NIII"><title><xref ref="ss-NIII" text="title" /></title>
-                        <introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+                <objectives xml:id="sso-NIII"><title>Translating Newton's Third Law: Action <ampersand /> Reaction</title>
+                        <introduction><todo>Find a place where identifying the action-reaction force pairs is an explicit objective</todo>
+                                <p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
                         <ul>
                                 <li><p>state Newton's third law in their own words</p></li>
                                 <li><p>meet the objectives of Subsubsection <xref ref="ssso-FBD" text="global" /></p></li>
@@ -3177,7 +3176,7 @@
 
                         <subsubsection xml:id="sss-FBD"><title>The Free-Body Diagram (FBD)</title>
                         <idx>free-body diagrams</idx>
-                        <objectives xml:id="ssso-FBD"><title><xref ref="sss-FBD" text="title" /></title>
+                        <objectives xml:id="ssso-FBD"><title>The Free-Body Diagram (FBD)</title>
                                 <introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
                                 <ul>
                                         <li><p>draw a free-body diagram for any single object with forces acting on it</p></li>
@@ -3468,7 +3467,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
 
         <section xml:id="s-NewtonExamples"><title>Examples</title>
 
-        <objectives xml:id="so-NewtonExamples"><title><xref ref="s-NewtonExamples" text="title" /></title>
+        <objectives xml:id="so-NewtonExamples"><title>Examples</title>
                 <introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
                 <ul>
                         <li><p>Identify when forces are acting on an object and in which direction (Note: After <xref ref="c-forcetype" text="type-global" />, you will be able to identify the type of force being applied.)</p></li>
@@ -3894,7 +3893,7 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-force-homework"><title>Summary and Homework</title>
 
-        <objectives xml:id="so-force-homework"><title><xref ref="s-force-homework" text="title" /></title>
+        <objectives xml:id="so-force-homework"><title>Summary and Homework</title>
                 <introduction><p>After successfully studying this section, students should <ellipsis /></p></introduction>
                 <ul>
                         <li><p>have refined and enhanced the outcomes of Chapter <xref ref="co-force" text="global" /></p></li>
@@ -4007,12 +4006,12 @@ Earth feels a force by \studentZ\ to the left.
 
 <chapter xml:id="c-forcetype"><title>The Many Types of Force</title>
 
-	<objectives xml:id="co-forcetype"><title><xref ref="c-forcetype" text="title" /></title>
+	<objectives xml:id="co-forcetype"><title>The Many Types of Force</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
-			<li><p>.</p></li>
-			<li><p>.</p></li>
-			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+			<li><p>Name the types of forces applied to a given situation</p></li>
+			<li><p>Use the type of force to help identify the third-law pairs of forces</p></li>
+                        <li><p>Meet the student outcomes of Sections <xref ref="so-Fg" text="global" />, <xref ref="so-fundamental" text="global" />, <xref ref="so-FN" text="global" />, <xref ref="so-Ff" text="global" />, <xref ref="so-FT" text="global" />, <xref ref="so-springs" text="global" />, <xref ref="so-FA" text="global" />, <xref ref="so-Fnet" text="global" />, and <xref ref="so-forcetype-homework" text="global" />.</p></li>
 		</ul>
 	</objectives>
 
@@ -4049,12 +4048,12 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-Fg"><title>Gravity at the Surface of the Earth</title>
 
-		<objectives xml:id="so-Fg"><title><xref ref="s-Fg" text="title" /></title>
+		<objectives xml:id="so-Fg"><title>Gravity at the Surface of the Earth</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+				<li><p>recognize the motion of objects in freefall near the surface of the Earth</p></li>
+				<li><p>recognize the roll of gravity even if the object is not in freefall</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref ref="sso-weightmass" text="global" /> and <xref ref="sso-local-mg" text="global" />.</p></li>
 			</ul>
 		</objectives>
 
@@ -4082,6 +4081,7 @@ Earth feels a force by \studentZ\ to the left.
                 Here the subscripts are <m>b</m> (because the force is on the <em>b</em>all), <m>E</m> (because the force is exerted by the <em>E</em>arth), and <m>g</m> (because it is a <em>g</em>ravitational force).  Since the acceleration is due to the gravitational force, I will use either <m>a_g</m> (usually when the object is in <xref ref="def-freefall" text="title">freefall</xref> and therefore accelerating at this rate) or <m>g</m> (usually when the object is not actually accelerating at that rate).  With this notation, Newton's second law becomes:
                 <me> \vec F_{bEg} = m_b \vec a_g </me>
                 At this point, we know the mass, but we don't know the force or the acceleration.  However, we have conveniently already done the experiment (recall <xref ref="ex-freefall" text="type-hybrid"/>) that will tell us the acceleration is <m>a_g = 9.81\unitfrac{m}{s^2}</m> downwards.  (Recall that <q>downwards</q> is the direction of the vector, which can be expressed as <m>-\jhat</m>.)  If we know the mass and the acceleration, then we can compute the force.</p>
+                <todo>Should we introduce the idea of a gravitational field here?</todo>
 
                 <example xml:id="se-weightball">
                         <title>Calculate the weight of a ball in freefall</title>
@@ -4106,12 +4106,10 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-weightmass"><title>Weight versus Mass</title>
                 <idx>weight</idx>
-			<objectives xml:id="sso-weightmass"><title><xref ref="ss-weightmass" text="title" /></title>
+			<objectives xml:id="sso-weightmass"><title>Weight versus Mass</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
-					<li><p>.</p></li>
-					<li><p>.</p></li>
-					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+					<li><p>distinguish between the mass and the weight of an object, using the appropriate variable in the appropriate equation</p></li>
 				</ul>
 			</objectives>
 
@@ -4148,12 +4146,11 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-local-mg"><title>Calculating the weight</title>
 
-			<objectives xml:id="sso-local-mg"><title><xref ref="ss-local-mg" text="title" /></title>
+			<objectives xml:id="sso-local-mg"><title>Calculating the weight</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
-					<li><p>.</p></li>
-					<li><p>.</p></li>
-					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+					<li><p>compute the mass from the weight and the weight from the mass</p></li>
+					<li><p>both recognize that the mass does not change and compute the weight in various gravitational fields.</p></li>
 				</ul>
 			</objectives>
 
@@ -4340,15 +4337,14 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-fundamental"><title>Fundamental Forces</title><idx><h>force</h><h>fundamental</h></idx>
 
-		<objectives xml:id="so-fundamental"><title><xref ref="s-fundamental" text="title" /></title>
+		<objectives xml:id="so-fundamental"><title>Fundamental Forces</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+				<li><p>know which section of the book to read to find more information about the fundamental forces?</p></li>
 			</ul>
 		</objectives>
 
+        <todo>Should I give more information about "if you are near a large (planetary) body, then you should include gravity" and "if you have electrical charges then you should..." etc?</todo>
         <p>The previous section describes our (macroscopic) experience of the gravitational interaction when standing on the surface of the Earth.  This is essentially the same across the surface, but does change with altitude and the difference can be measured on mountain tops and in caves.  In fact, one can use the differences from one location to another to predict where we might find a a pocket of oil.</p>
 
         <p xml:id="d-fundamental">In later sections, we will consider this and other interactions that depend on the physical properties, such as mass and charge.  All particles with the property of mass (which we will start to call gravitational charge) will interact according to the gravitational force; however, this description is better described by the mathematics in <xref ref="c-gravity" text="type-global"/>.  All particles with the property of electrical charge will interact according to the electrical force.  The basic theory will be discussed in <xref ref="c-electric" text="type-global"/>.  A more complicated version that incorporates quantum mechanics is called quantum electrodynamics (QED) and this will be touched on in <xref ref="ss-QED" text="type-global" />.  Particles like protons and neutrons (hadrons) are actually made up of other particles (quarks) that are held together by an interaction that is sometimes called the strong nuclear force (<xref ref="ss-strong" text="type-global" />) and is described by the theory of quantum chromodynamics (QCD); this will be touched on in <xref ref="ss-QCD" text="type-global" />.  Finally, in <xref ref="ss-weak" text="type-global"/> another fundamental force, called the weak nuclear force, will be discussed.</p>
@@ -4359,12 +4355,12 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-FN"><title>Normal Force</title>
         <idx><h>force</h><h>normal</h></idx>
-		<objectives xml:id="so-FN"><title><xref ref="s-FN" text="title" /></title>
+		<objectives xml:id="so-FN"><title>Normal Force</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+				<li><p>Identify the direction that is normal to a surface</p></li>
+				<li><p>determine if a normal force is acting on an object and in which direction</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref ref="sso-scales" text="global" />, <xref ref="sso-N-inclined-planes" text="global" />, and <xref ref="sso-N-NIII" text="global" />.</p></li>
 			</ul>
 		</objectives>
 
@@ -4858,12 +4854,10 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-scales"><title>Bathroom Scales Measure the Normal Force</title>
 
-			<objectives xml:id="sso-scales"><title><xref ref="ss-scales" text="title" /></title>
+			<objectives xml:id="sso-scales"><title>Bathroom Scales Measure the Normal Force</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
-					<li><p>.</p></li>
-					<li><p>.</p></li>
-					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+					<li><p>use the concept of imagining placing a scale between the surface and the object to gauge the value of the normal force</p></li>
 				</ul>
 			</objectives>
                 <aside><title>Referenced by</title>
@@ -4941,9 +4935,18 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
 
-                <subsection xml:id="ss-N-inclined-planes">
-                        <title>The normal force and inclined planes</title>
+                <subsection xml:id="ss-N-inclined-planes"><title>The normal force and inclined planes</title>
                         <idx>inclined plane</idx><idx><h>plane</h><h>inclined</h></idx>
+
+			<objectives xml:id="sso-N-inclined-planes"><title>The normal force and inclined planes</title>
+				<introduction><p>After successfully studying this subsection, students should <ellipsis /></p></introduction>
+				<ul>
+					<li><p>have developed a broader sense of the direction that is normal to a surface</p></li>
+                                        <li><p>be able to implement the appropriate coordinate system when it is not appropriate to use vertical-and-horizontal</p></li>
+                                        <li><p>be able to find the appropriate components of <m>F_g</m> in an inclined coordinate system</p></li>
+				</ul>
+                                <conclusion><p>These outcomes will be developed further in <xref ref="sss-dry-sliding" text="type-global" />.</p></conclusion>
+			</objectives>
 
                         <todo>Should radially outwards reference the section on math?</todo>
                         <p xml:id="p-intro-inclined-planes">With our <xref ref="insight-normal-surface" text="title">understanding of the normal force</xref>, we have seen examples of the normal force pointing <xref ref="f-firstFBDupdate" text="title">upwards from the ground</xref>, <xref ref="se-ceiling" text="title">downwards off the ceiling</xref>, and <xref ref="se-tree" text="title">sideways off of a vertical surface</xref>.  If you consider a the trunk of a tree or the edge of a wheel, the normal direction is radially outwards (in the direction of the spokes of the wheel).
@@ -5036,8 +5039,14 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
 
 
-                <subsection xml:id="ss-N-NIII">
-                        <title>The normal force and the third law</title>
+                <subsection xml:id="ss-N-NIII"><title>The normal force and the third law</title>
+
+			<objectives xml:id="sso-N-NIII"><title>The normal force and the third law</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>develop the skills of Subsection <xref ref="sso-NIII" text="global" /> when two surfaces are interacting</p></li>
+				</ul>
+			</objectives>
 
                 <p><xref ref="sum-NewtonsLaws" text="title">Recall</xref> that the third law tells us about what happens to the object that is doing the pushing.  In <xref ref="f-firstFBDupdate" text="type-global" />, the gravitational and normal forces were included.  In the same way that <xref ref="f-firstFBD" text="type-global" /> explained the way the third law describes the sources of the horizontal forces on the object (by adding the people to <xref ref="se-netFadd" text="type-global" />), we can now consider the source of the vertical forces.  The gravitational forces pulling down on the people and the object are caused by the gravitational interaction with the Earth.  Since the Earth is pulling them down, the <xref ref="as-NIII" text="title">third law</xref> indicates that they must pull the Earth up <em>with a gravitational force</em>.   These pairs of gravitational forces (Earth pulling down on the object and the object pulling up on the Earth, etc.) are <q>third-law pairs</q> (recall <xref ref="insight-force-type" text="type-global" />).</p>
 
@@ -5061,7 +5070,7 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-Ff"><title>Frictional Force</title>
 
-		<objectives xml:id="so-Ff"><title><xref ref="s-Ff" text="title" /></title>
+		<objectives xml:id="so-Ff"><title>Frictional Force</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -5090,7 +5099,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-friction-sliding"><title>Dry Sliding Friction</title>
 
-			<objectives xml:id="sso-friction-sliding"><title><xref ref="ss-friction-sliding" text="title" /></title>
+			<objectives xml:id="sso-friction-sliding"><title>Dry Sliding Friction</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -5118,7 +5127,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection xml:id="sss-kinetic"><title>Kinetic Friction</title>
 
-				<objectives xml:id="ssso-kinetic"><title><xref ref="sss-kinetic" text="title" /></title>
+				<objectives xml:id="ssso-kinetic"><title>Kinetic Friction</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
 						<li><p>.</p></li>
@@ -5423,7 +5432,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection xml:id="sss-static"><title>Static Friction</title>
 
-				<objectives xml:id="ssso-static"><title><xref ref="sss-static" text="title" /></title>
+				<objectives xml:id="ssso-static"><title>Static Friction</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
 						<li><p>.</p></li>
@@ -5615,7 +5624,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection xml:id="sss-dry-sliding"><title>Applications of Dry Sliding Friction</title>
 
-				<objectives xml:id="ssso-dry-sliding"><title><xref ref="sss-dry-sliding" text="title" /></title>
+				<objectives xml:id="ssso-dry-sliding"><title>Applications of Dry Sliding Friction</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
 						<li><p>.</p></li>
@@ -5867,7 +5876,7 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
                 <subsection xml:id="ss-friction-rolling"><title>Rolling Friction</title><idx><h>friction</h><h>rolling</h></idx>
 
-			<objectives xml:id="sso-friction-rolling"><title><xref ref="ss-friction-rolling" text="title" /></title>
+			<objectives xml:id="sso-friction-rolling"><title>Rolling Friction</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
                                         <li>recognize examples of (and be able to give new examples of) situations in which rolling friction (in contrast to dry-sliding friction) needs to be included</li>
@@ -6032,7 +6041,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-tribology"><title>Additional Detail: The field of Tribology</title>
 
-			<objectives xml:id="sso-tribology"><title><xref ref="ss-tribology" text="title" /></title>
+			<objectives xml:id="sso-tribology"><title>Additional Detail: The field of Tribology</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -6092,7 +6101,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-air-resistance"><title>Air Resistance</title>
 
-			<objectives xml:id="sso-air-resistance"><title><xref ref="ss-air-resistance" text="title" /></title>
+			<objectives xml:id="sso-air-resistance"><title>Air Resistance</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -6109,7 +6118,7 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-FT"><title>Tension</title>
         <idx><h>force</h><h>tension</h></idx>
-		<objectives xml:id="so-FT"><title><xref ref="s-FT" text="title" /></title>
+		<objectives xml:id="so-FT"><title>Tension</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -6189,7 +6198,7 @@ Earth feels a force by \studentZ\ to the left.
 
                 <subsection xml:id="ss-tension-support"><title>Tension as a Support Force</title>
 
-			<objectives xml:id="sso-tension-support"><title><xref ref="ss-tension-support" text="title" /></title>
+			<objectives xml:id="sso-tension-support"><title>Tension as a Support Force</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -6267,7 +6276,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection xml:id="sss-pendulum"><title>Application to a Pendulum</title>
 
-				<objectives xml:id="ssso-pendulum"><title><xref ref="sss-pendulum" text="title" /></title>
+				<objectives xml:id="ssso-pendulum"><title>Application to a Pendulum</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
 						<li><p>.</p></li>
@@ -6288,7 +6297,7 @@ Earth feels a force by \studentZ\ to the left.
                 </subsection>
                 <subsection xml:id="ss-tension-drag"><title>Tension as Dragging Force</title>
 
-			<objectives xml:id="sso-tension-drag"><title><xref ref="ss-tension-drag" text="title" /></title>
+			<objectives xml:id="sso-tension-drag"><title>Tension as Dragging Force</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -6613,7 +6622,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection xml:id="sss-multiple-mass"><title>Multiple Masses</title>
 
-				<objectives xml:id="ssso-multiple-mass"><title><xref ref="sss-multiple-mass" text="title" /></title>
+				<objectives xml:id="ssso-multiple-mass"><title>Multiple Masses</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
 						<li><p>.</p></li>
@@ -6823,7 +6832,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection xml:id="sss-massive-rope"><title>Ropes with Mass</title>
 
-				<objectives xml:id="ssso-massive-rope"><title><xref ref="sss-massive-rope" text="title" /></title>
+				<objectives xml:id="ssso-massive-rope"><title>Ropes with Mass</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
 						<li><p>.</p></li>
@@ -6837,7 +6846,7 @@ Earth feels a force by \studentZ\ to the left.
 
                         <subsubsection xml:id="sss-Atwood"><title>Atwood's Machine</title>
 
-				<objectives xml:id="ssso-Atwood"><title><xref ref="sss-Atwood" text="title" /></title>
+				<objectives xml:id="ssso-Atwood"><title>Atwood's Machine</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
 						<li><p>.</p></li>
@@ -7072,7 +7081,7 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-springs"><title>Spring Force</title>
 
-		<objectives xml:id="so-springs"><title><xref ref="s-springs" text="title" /></title>
+		<objectives xml:id="so-springs"><title>Spring Force</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7101,7 +7110,7 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-FA"><title>Applied Force</title>
 
-		<objectives xml:id="so-FA"><title><xref ref="s-FA" text="title" /></title>
+		<objectives xml:id="so-FA"><title>Applied Force</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7254,7 +7263,7 @@ Earth feels a force by \studentZ\ to the left.
 
         <section xml:id="s-Fnet"><title>Putting it Together, <m>F_\mathrm{net}</m></title>
 
-		<objectives xml:id="so-Fnet"><title><xref ref="s-Fnet" text="title" /></title>
+		<objectives xml:id="so-Fnet"><title>Putting it Together, <m>F_\mathrm{net}</m></title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7307,9 +7316,9 @@ Earth feels a force by \studentZ\ to the left.
         </section>
 
 
-        <section><title>Summary and Homework</title>
+        <section xml:id="s-forcetype-homework"><title>Summary and Homework</title>
 
-		<objectives><title>[Summary and Homework]</title>
+		<objectives xml:id="so-forcetype-homework"><title>Summary and Homework</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7448,7 +7457,7 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-energy"><title>Energy and the Transfer of Energy</title>
 
-	<objectives xml:id="co-energy"><title><xref ref="c-energy" text="title" /></title>
+	<objectives xml:id="co-energy"><title>Energy and the Transfer of Energy</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
 			<li><p>.</p></li>
@@ -7480,7 +7489,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-KE"><title>Objects Can Have Energy</title>
 
-		<objectives xml:id="so-KE"><title><xref ref="s-KE" text="title" /></title>
+		<objectives xml:id="so-KE"><title>Objects Can Have Energy</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7493,7 +7502,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-work"><title>A Force Can Transfer Energy</title>
 
-		<objectives xml:id="so-work"><title><xref ref="s-work" text="title" /></title>
+		<objectives xml:id="so-work"><title>A Force Can Transfer Energy</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7506,7 +7515,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-Wfr"><title>Dissipating Energy</title>
 
-		<objectives xml:id="so-Wfr"><title><xref ref="s-Wfr" text="title" /></title>
+		<objectives xml:id="so-Wfr"><title>Dissipating Energy</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7521,7 +7530,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-PE"><title>Conserving Energy</title>
 
-		<objectives xml:id="so-PE"><title><xref ref="s-PE" text="title" /></title>
+		<objectives xml:id="so-PE"><title>Conserving Energy</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7564,7 +7573,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-PEg"><title>Gravitational Potential Energy</title>
 
-			<objectives xml:id="sso-PEg"><title><xref ref="ss-PEg" text="title" /></title>
+			<objectives xml:id="sso-PEg"><title>Gravitational Potential Energy</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -7578,7 +7587,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-PEs"><title>Spring Potential Energy</title>
 
-			<objectives xml:id="sso-PEs"><title><xref ref="ss-PEs" text="title" /></title>
+			<objectives xml:id="sso-PEs"><title>Spring Potential Energy</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -7618,7 +7627,7 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-momentum"><title>Momentum: A Better Way to Describe Force</title>
 
-	<objectives xml:id="co-momentum"><title><xref ref="c-momentum" text="title" /></title>
+	<objectives xml:id="co-momentum"><title>Momentum: A Better Way to Describe Force</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
 			<li><p>.</p></li>
@@ -7657,7 +7666,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-inertia"><title>Inertia and Momentum</title>
 
-			<objectives xml:id="sso-inertia"><title><xref ref="ss-inertia" text="title" /></title>
+			<objectives xml:id="sso-inertia"><title>Inertia and Momentum</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -7674,7 +7683,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-conservemom"><title>Revising Newton's Third Law: Conservation of Momentum</title>
 
-		<objectives xml:id="so-conservemom"><title><xref ref="s-conservemom" text="title" /></title>
+		<objectives xml:id="so-conservemom"><title>Revising Newton's Third Law: Conservation of Momentum</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7688,7 +7697,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-2Dcollisions"><title>Two-Dimensional Collisions</title>
 
-		<objectives xml:id="so-2Dcollisions"><title><xref ref="s-2Dcollisions" text="title" /></title>
+		<objectives xml:id="so-2Dcollisions"><title>Two-Dimensional Collisions</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7747,7 +7756,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-rotation-language"><title>How Physicists Use the Words</title>
 
-		<objectives xml:id="so-rotation-language"><title><xref ref="s-rotation-language" text="title" /></title>
+		<objectives xml:id="so-rotation-language"><title>How Physicists Use the Words</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7928,7 +7937,7 @@ Also check these folks out on Wikipedia.... of course
         <idx><h>reference frames</h><h>inertial</h></idx>
         <idx><h>reference frames</h><h>non-inertial</h></idx>
 
-		<objectives xml:id="so-noninertial"><title><xref ref="s-noninertial" text="title" /></title>
+		<objectives xml:id="so-noninertial"><title>Non-inertial Rotational Reference Frames</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -7950,7 +7959,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-coriolis"><title>The Coriolis Effect</title>
 
-			<objectives xml:id="sso-coriolis"><title><xref ref="ss-coriolis" text="title" /></title>
+			<objectives xml:id="sso-coriolis"><title>The Coriolis Effect</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -7979,7 +7988,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-Foucault"><title>The Foucault Pendulum</title>
 
-			<objectives xml:id="sso-Foucault"><title><xref ref="ss-Foucault" text="title" /></title>
+			<objectives xml:id="sso-Foucault"><title>The Foucault Pendulum</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -8024,7 +8033,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-centripetal"><title>Centripetal Force</title>
 
-		<objectives xml:id="so-centripetal"><title><xref ref="s-centripetal" text="title" /></title>
+		<objectives xml:id="so-centripetal"><title>Centripetal Force</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8045,7 +8054,7 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-torque"><title>Torque and the <m>F=ma</m> of Rotations</title>
 
-	<objectives xml:id="co-torque"><title><xref ref="c-torque" text="title" /></title>
+	<objectives xml:id="co-torque"><title>Torque and the <m>F=ma</m> of Rotations</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
 			<li><p>.</p></li>
@@ -8059,7 +8068,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-leverarm"><title>Leverage</title>
 
-		<objectives xml:id="so-leverarm"><title><xref ref="s-leverarm" text="title" /></title>
+		<objectives xml:id="so-leverarm"><title>Leverage</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8244,7 +8253,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-torsion"><title>Torsion</title>
 
-		<objectives xml:id="so-torsion"><title><xref ref="s-torsion" text="title" /></title>
+		<objectives xml:id="so-torsion"><title>Torsion</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8386,7 +8395,7 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-gravity"><title>The Gravitational Force on a Large Scale</title>
 
-	<objectives xml:id="co-gravity"><title><xref ref="c-gravity" text="title" /></title>
+	<objectives xml:id="co-gravity"><title>The Gravitational Force on a Large Scale</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
 			<li><p>.</p></li>
@@ -8407,7 +8416,7 @@ Also check these folks out on Wikipedia.... of course
 
 <section xml:id="s-Gfield"><title>Gravitational Force and Field</title>
 
-		<objectives xml:id="so-Gfield"><title><xref ref="s-Gfield" text="title" /></title>
+		<objectives xml:id="so-Gfield"><title>Gravitational Force and Field</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8456,7 +8465,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-equivmm"><title>Inertial Mass versus Gravitational Mass</title>
 
-			<objectives xml:id="sso-equivmm"><title><xref ref="ss-equivmm" text="title" /></title>
+			<objectives xml:id="sso-equivmm"><title>Inertial Mass versus Gravitational Mass</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -8471,7 +8480,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-PEG"><title>Gravitational Potential Energy</title>
 
-		<objectives xml:id="so-PEG"><title><xref ref="s-PEG" text="title" /></title>
+		<objectives xml:id="so-PEG"><title>Gravitational Potential Energy</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8487,7 +8496,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-Gconnection"><title>Making Connections</title>
 
-		<objectives xml:id="so-Gconnection"><title><xref ref="s-Gconnection" text="title" /></title>
+		<objectives xml:id="so-Gconnection"><title>Making Connections</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8538,7 +8547,7 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-fluids"><title>Fluids</title>
 
-	<objectives xml:id="co-fluids"><title><xref ref="c-fluids" text="title" /></title>
+	<objectives xml:id="co-fluids"><title>Fluids</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
 			<li><p>.</p></li>
@@ -8548,7 +8557,7 @@ Also check these folks out on Wikipedia.... of course
 	</objectives>
         <section xml:id="s-density"><title>Density</title>
         <idx>density</idx>
-		<objectives xml:id="so-density"><title><xref ref="s-density" text="title" /></title>
+		<objectives xml:id="so-density"><title>Density</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8562,7 +8571,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-pressure"><title>Pressure</title>
 
-		<objectives xml:id="so-pressure"><title><xref ref="s-pressure" text="title" /></title>
+		<objectives xml:id="so-pressure"><title>Pressure</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8583,7 +8592,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-surface-tension"><title>Surface Tension</title>
 
-		<objectives xml:id="so-surface-tension"><title><xref ref="s-surface-tension" text="title" /></title>
+		<objectives xml:id="so-surface-tension"><title>Surface Tension</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8600,7 +8609,7 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-SHM"><title>Oscillations</title>
 
-	<objectives xml:id="co-SHM"><title><xref ref="c-SHM" text="title" /></title>
+	<objectives xml:id="co-SHM"><title>Oscillations</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
 			<li><p>.</p></li>
@@ -8609,17 +8618,37 @@ Also check these folks out on Wikipedia.... of course
 		</ul>
 	</objectives>
 
-        <section xml:id="c-SHMspring"><title>Oscillating Springs</title>
+        <section xml:id="s-SHMspring"><title>Oscillating Springs</title>
+
+	<objectives xml:id="so-SHMspring"><title>Oscillating Springs</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
                 <aside><title>Referenced by</title> <p>Discussion of <xref ref="connect-Fma" text="title"><m>F=ma</m></xref></p></aside>
         </section>
 
-        <section xml:id="c-SHMpend"><title>Oscillating Pendulums</title>
+        <section xml:id="s-SHMpend"><title>Oscillating Pendulums</title>
+
+	<objectives xml:id="so-SHMpend"><title>Oscillating Pendulums</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
 <p>.</p>
         </section>
 
         <section xml:id="s-SHMother"><title>Other Examples of Oscillations</title>
 
-		<objectives xml:id="so-SHMother"><title><xref ref="s-SHMother" text="title" /></title>
+		<objectives xml:id="so-SHMother"><title>Other Examples of Oscillations</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8659,7 +8688,7 @@ Also check these folks out on Wikipedia.... of course
 		</objectives>
                 <subsection xml:id="ss-stringed-instruments"><title>Musical Instruments</title>
 
-			<objectives xml:id="sso-stringed-instruments"><title><xref ref="ss-stringed-instruments" text="title" /></title>
+			<objectives xml:id="sso-stringed-instruments"><title>Musical Instruments</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -8721,7 +8750,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-barometrics"><title>Barometrics</title>
 
-			<objectives xml:id="sso-barometrics"><title><xref ref="ss-barometrics" text="title" /></title>
+			<objectives xml:id="sso-barometrics"><title>Barometrics</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -8745,7 +8774,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-kinetic-theory"><title>Kinetic Theory of Gases</title>
 
-		<objectives xml:id="so-kinetic-theory"><title><xref ref="s-kinetic-theory" text="title" /></title>
+		<objectives xml:id="so-kinetic-theory"><title>Kinetic Theory of Gases</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8780,7 +8809,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-thermal-energy"><title>Temperature as a statistical quantity</title>
 
-			<objectives xml:id="sso-thermal-energy"><title><xref ref="ss-thermal-energy" text="title" /></title>
+			<objectives xml:id="sso-thermal-energy"><title>Temperature as a statistical quantity</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -8819,7 +8848,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-PV"><title><m>P</m>-<m>V</m> Diagrams</title>
 
-		<objectives xml:id="so-PV"><title><xref ref="s-PV" text="title" /></title>
+		<objectives xml:id="so-PV"><title><m>P</m>-<m>V</m> Diagrams</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8862,7 +8891,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-specificheat"><title>Specific Heat Capacity</title>
 
-		<objectives xml:id="so-specificheat"><title><xref ref="s-specificheat" text="title" /></title>
+		<objectives xml:id="so-specificheat"><title>Specific Heat Capacity</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -8912,7 +8941,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-thermalconductivity"><title>Thermal Conductivity</title>
 
-			<objectives xml:id="sso-thermalconductivity"><title><xref ref="ss-thermalconductivity" text="title" /></title>
+			<objectives xml:id="sso-thermalconductivity"><title>Thermal Conductivity</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -8991,7 +9020,7 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-electric"><title>The Electrical Interaction</title>
 
-	<objectives xml:id="co-electric"><title><xref ref="c-electric" text="title" /></title>
+	<objectives xml:id="co-electric"><title>The Electrical Interaction</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
 			<li><p>.</p></li>
@@ -9005,7 +9034,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-Echarge"><title>Electrical Charge</title>
 
-		<objectives xml:id="so-Echarge"><title><xref ref="s-Echarge" text="title" /></title>
+		<objectives xml:id="so-Echarge"><title>Electrical Charge</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -9029,7 +9058,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-Efield"><title>Electric Forces and Fields</title>
 
-			<objectives xml:id="sso-Efield"><title><xref ref="ss-Efield" text="title" /></title>
+			<objectives xml:id="sso-Efield"><title>Electric Forces and Fields</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -9099,7 +9128,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-Econnection"><title>Making Connections</title>
 
-		<objectives xml:id="so-Econnection"><title><xref ref="s-Econnection" text="title" /></title>
+		<objectives xml:id="so-Econnection"><title>Making Connections</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -9282,7 +9311,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-strong"><title>The Strong Nuclear Force</title>
 
-			<objectives xml:id="sso-strong"><title><xref ref="ss-strong" text="title" /></title>
+			<objectives xml:id="sso-strong"><title>The Strong Nuclear Force</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -9295,7 +9324,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-weak"><title>The Weak Nuclear Force</title>
 
-			<objectives xml:id="sso-weak"><title><xref ref="ss-weak" text="title" /></title>
+			<objectives xml:id="sso-weak"><title>The Weak Nuclear Force</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -9310,7 +9339,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-particle"><title>Particle Physics</title>
 
-		<objectives xml:id="so-particle"><title><xref ref="s-particle" text="title" /></title>
+		<objectives xml:id="so-particle"><title>Particle Physics</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -9334,7 +9363,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-QED"><title>Quantum Electrodynamics</title>
 
-			<objectives xml:id="sso-QED"><title><xref ref="ss-QED" text="title" /></title>
+			<objectives xml:id="sso-QED"><title>Quantum Electrodynamics</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -9347,7 +9376,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-QCD"><title>Quantum Chromodynamics</title>
 
-			<objectives xml:id="sso-QCD"><title><xref ref="ss-QCD" text="title" /></title>
+			<objectives xml:id="sso-QCD"><title>Quantum Chromodynamics</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -9360,7 +9389,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-StandardModel"><title>The Standard Model</title>
 
-			<objectives xml:id="sso-StandardModel"><title><xref ref="ss-StandardModel" text="title" /></title>
+			<objectives xml:id="sso-StandardModel"><title>The Standard Model</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -9373,7 +9402,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsection xml:id="ss-particledecay"><title>Particle Decay</title>
 
-			<objectives xml:id="sso-particledecay"><title><xref ref="ss-particledecay" text="title" /></title>
+			<objectives xml:id="sso-particledecay"><title>Particle Decay</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
 					<li><p>.</p></li>
@@ -9449,7 +9478,7 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-revisted"><title>Deeper Dive</title>
 
-	<objectives xml:id="co-revisted"><title><xref ref="c-revisted" text="title" /></title>
+	<objectives xml:id="co-revisted"><title>Deeper Dive</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
 			<li><p>.</p></li>
@@ -9642,7 +9671,7 @@ Also check these folks out on Wikipedia.... of course
 
                 <subsubsection xml:id="sss-blackhole2"><title>Black Holes</title>
 
-				<objectives xml:id="ssso-blackhole2"><title><xref ref="sss-blackhole2" text="title" /></title>
+				<objectives xml:id="ssso-blackhole2"><title>Black Holes</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
 						<li><p>.</p></li>
@@ -9704,7 +9733,7 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-vid-pod"><title>Internet Resources</title>
 
-	<objectives xml:id="co-vid-pod"><title><xref ref="c-vid-pod" text="title" /></title>
+	<objectives xml:id="co-vid-pod"><title>Internet Resources</title>
 		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
 		<ul>
 			<li><p>.</p></li>
@@ -9715,7 +9744,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-podcasts"><title>Podcasts</title>
 
-		<objectives xml:id="so-podcasts"><title><xref ref="s-podcasts" text="title" /></title>
+		<objectives xml:id="so-podcasts"><title>Podcasts</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -9730,7 +9759,7 @@ Also check these folks out on Wikipedia.... of course
         </section>
         <section xml:id="s-videos"><title>Videos</title>
 
-		<objectives xml:id="so-videos"><title><xref ref="s-videos" text="title" /></title>
+		<objectives xml:id="so-videos"><title>Videos</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -9746,7 +9775,7 @@ Also check these folks out on Wikipedia.... of course
 
         <section xml:id="s-websites"><title>Websites</title>
 
-		<objectives xml:id="so-websites"><title><xref ref="s-websites" text="title" /></title>
+		<objectives xml:id="so-websites"><title>Websites</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
 				<li><p>.</p></li>
@@ -9809,7 +9838,7 @@ I have emailed her.  NO REPLY.
         </section>
 
         <section><title>\studentA</title>
-        <idx><h>\studentA</h><h>outside</h></idx>
+
 		<objectives><title>[\studentA]</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
