@@ -25,15 +25,26 @@
         \newcommand{\E}{\mbox{E}}
 
         % make use of thmbox package
+        % \newtheorem[size]{environment name}[counter]{Actual title}
+        %TheoremLike (Theorem, corollary, claim, fact, identity, lemma, algorithm)
         \newtheorem[S]{proposition}[theorem]{Connection}
+        %RemarkLike
         \newtheorem[S]{insight}[theorem]{Insight}
+        \newtheorem[S]{warning}[theorem]{Warning}
+        \newtheorem[S]{observation}[theorem]{Observation}
+        \newtheorem[S]{note}[theorem]{Interpretation}
         \newtheorem[M]{remark}[theorem]{Clarification}
         \newtheorem[M]{convention}[theorem]{Convention}
+        %ExampleLike (problem, question)
         \newtheorem[L]{example}[theorem]{Example}
+        %
         \newtheorem[L]{exercise}[theorem]{Exercise}
+        %AxiomLike
         \newtheorem[L]{heuristic}[theorem]{Translation}
-        \newtheorem[L]{investigation}[theorem]{Investigation}
+        %ProjectLike
         \newtheorem[L]{exploration}[theorem]{Exploration}
+        \newtheorem[L]{investigation}[theorem]{Investigation}
+        \newtheorem[L]{activity}[theorem]{Activity}
 
         \newcommand{\magdir}[7]{\begin{array}{lccl}
                 % x-comp, y-comp, mag label, mag, angle name, angle, angle-descriptor (North of East)
@@ -301,6 +312,7 @@
         -->
 
         <rename element="remark"        lang="en-US">Clarification</rename>
+        <rename element="note"          lang="en-US">Interpretation</rename>
         <rename element="biographical" lang="en-US">Touchstone</rename>
         <rename element="heuristic"     lang="en-US">Translation</rename>
         <rename element="proposition" 	lang="en-US">Connection</rename>
@@ -316,8 +328,6 @@
 
     <book xml:id="Connected">
         <title>Physics Connected</title>
-<!-- <subtitle>an Algebra-based Introductory Physics textbook</subtitle>
-        -->
         <subtitle>Learn like you think <mdash /> an interconnected view of algebra-based physics</subtitle>
 
 <frontmatter xml:id="index"> <!-- xmlns:xi="http://www.w3.org/2001/XInclude" -->
@@ -423,7 +433,12 @@
             <q>If you have this question, then go here. If you have that question, then go there.</q> </p></li>
 
             <li><p> <q>In the <lsq/>Real World<rsq/></q> where students see how the concept lives in the messy real world and why
-            physicists simplify or ignore complicating aspects. </p></li>
+            physicists simplify or ignore complicating aspects. 
+                <ol>
+                    <li><p>Explorations ask the reader to imagine a situation that describes the real world and possibly make choices that result in different consequences.</p></li>
+                    <li><p>Investigations ask the reader to do (or think about doing) specific actions that need to be done outside or might in some way be accessible to some people, like riding a merry-go-round, driving a car, or rearranging large pieces of furniture.</p></li>
+                    <li><p>Activities ask the reader to do small table-top scale activities that could be considered mini-lab exercises and have a more specific procedure associated with them.</p></li>
+                </ol></p></li>
 
             <li><p> <q>Connections</q>, which might take one of three forms:
             <ol>
@@ -450,6 +465,17 @@
         information. Writing the text in a narrative style that helps students see the explanations for the world they live in will
         encourage them to explore <q>what happens when I do this</q> in their real life. Fostering this spirit of exploration will enable
         the instructors to bring their own active-learning techniques into the classroom. </p>
+
+        <p>Some features that are not dissimilar to other textbooks:
+                <ol>
+                    <li><p>Warnings (should this be Cautions?) make the reader aware of possible misconceptions or inappropriate associations.  [This is the <q>don't do this</q> or <q>do this to prevent bad consequences</q> in contrast to Insights.]</p></li>
+                    <li><p>Insights make the reader aware of helpful associations.  [This is the <q>do this to enable positive consequences</q> in contrast to Warnings.] </p></li>
+                    <li><p>Conventions specify how notation or terminology should be used. [This is the <q>that</q> to Clarification's <q>which</q>.]</p></li>
+                    <li><p>Clarifications clarify how notation or terminology should be used. [This is the <q>which</q> to Convention's <q>that</q>.]</p></li>
+                    <li><p>Observations help the reader to use observations about the world around them to better understand (give context to) the physics being discussed.</p></li>
+                    <li><p>Interpretations help the reader use the physics being discussed to better understand their observations about the world around them.</p></li>
+                </ol>
+        </p>
 
         <todo>(em)Book Layout:(/em) Here we should add information about Adventures, Examples, Equation-Stories, and IRLs.</todo>
         <p>This textbook is in several Parts:  <em><xref ref="P-prerequisites"  text="type-global" /></em> is for the preliminaries, including descriptions of science in general, physics in
@@ -5073,9 +5099,10 @@ Earth feels a force by \studentZ\ to the left.
 		<objectives xml:id="so-Ff"><title>Frictional Force</title>
 			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
 			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+				<li><p>identify the appropriate type frictional force involved in a situation</p></li>
+				<li><p>identify the location and direction that the frictional force acts</p></li>
+				<li><p>compute the value of the frictional force acting</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref ref="sso-friction-sliding" text="global" />, <xref ref="sso-friction-rolling" text="global" />, <xref ref="sso-tribology" text="global" />, and <xref ref="sso-air-resistance" text="global" />.</p></li>
 			</ul>
 		</objectives>
         <introduction>
@@ -5102,9 +5129,9 @@ Earth feels a force by \studentZ\ to the left.
 			<objectives xml:id="sso-friction-sliding"><title>Dry Sliding Friction</title>
 				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
 				<ul>
-					<li><p>.</p></li>
-					<li><p>.</p></li>
-					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+					<li><p>know the difference between kinetic and static friction</p></li>
+					<li><p>compute the effect of either kinetic or static friction, as appropriate</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref ref="ssso-kinetic" text="global" />, <xref ref="ssso-static" text="global" />, and <xref ref="ssso-dry-sliding" text="global" />.</p></li>
 				</ul>
 			</objectives>
 
@@ -5130,8 +5157,9 @@ Earth feels a force by \studentZ\ to the left.
 				<objectives xml:id="ssso-kinetic"><title>Kinetic Friction</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
-						<li><p>.</p></li>
-						<li><p>.</p></li>
+						<li><p>identify the properties that the frictional does and does not depend on</p></li>
+						<li><p>relate, through computation, the relationship between the kinetic-frictional and normal forces</p></li>
+                                                <li><p>appropriately apply the kinetic-frictional force to the free-body diagram, if and when appropriate.</p></li>
 					</ul>
 				</objectives>
                         <p xml:id="d-friction-kinetic">Here we will discuss the situation of two surfaces rubbing against each other as they slide past each other.  This is not the case with walking (unless your feet slip out from under you!) or turning a car (even though the car <em>is</em> moving). Before introducing the relevant equation, please investigate how objects slide across different surfaces to build your intuition.</p>
@@ -5435,8 +5463,9 @@ Earth feels a force by \studentZ\ to the left.
 				<objectives xml:id="ssso-static"><title>Static Friction</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
-						<li><p>.</p></li>
-						<li><p>.</p></li>
+						<li><p>identify the properties that the frictional does and does not depend on</p></li>
+						<li><p>relate, through computation, the relationship between the static-frictional forces and the other forces acting on the object</p></li>
+                                                <li><p>appropriately apply the static-frictional force to the free-body diagram, if and when appropriate.</p></li>
 					</ul>
 				</objectives>
 
@@ -5627,8 +5656,10 @@ Earth feels a force by \studentZ\ to the left.
 				<objectives xml:id="ssso-dry-sliding"><title>Applications of Dry Sliding Friction</title>
 					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
 					<ul>
-						<li><p>.</p></li>
-						<li><p>.</p></li>
+						<li><p>reasonably estimate the magnitude of the coefficient of friction between various surfaces</p></li>
+                                                <li><p>describe the role of friction in the process of walking</p></li>
+                                                <li><p>describe the role of friction in keeping objects in place when a support structure (such as a truck) shifts</p></li>
+                                                <li><p>describe the role of friction in inclined planes, developing the skills introduced in Subsection <xref ref="sso-N-inclined-planes" text="global" /></p></li>
 					</ul>
 				</objectives>
 
@@ -5646,10 +5677,10 @@ Earth feels a force by \studentZ\ to the left.
                         <paragraphs xml:id="p-values-of-mu"><title>Tabulated values of the coefficient of friction</title>
                         <p>If you are interested in investigating how widely the coefficient of friction can vary between different surfaces or between static and kinetic friction, then you can find some values of the coefficient of friction at the following websites:
                         <ul>
-                                <li><url href="http://www.engineershandbook.com/Tables/frictioncoefficients.htm" /> (referenced Oct, 2017)</li>
-                                <li><url href="http://www.physlink.com/Reference/FrictionCoefficients.cfm" /> (referenced Oct, 2017)</li>
-                                <li><url href="https://www.engineersedge.com/coeffients_of_friction.htm" /> (referenced Oct, 2017)</li>
-                                <li><url href="http://www.tribology-abc.com/abc/cof.htm" /> (referenced Oct, 2017)</li>
+                                <li><url href="http://www.engineershandbook.com/Tables/frictioncoefficients.htm">Engineers' Handbook</url> <xref ref="biblio-engineershandbook" /></li>
+                                <li><url href="http://www.physlink.com/">PhysLink.com - Physics and Astronomy Online Education and Reference</url>, click the [Reference] tab in the top menu, then select the [Coefficients of friction] option<fn>Since links to any page besides their home page are expressly forbidden by their legal disclaimer (which, last I checked was at <c>http://www.physlink.com/SiteInfo/Legal.cfm</c>), the best I can do is tell you where I found the page without an actual link: <c>http://www.physlink.com/Reference/FrictionCoefficients.cfm</c>.</fn> in that drop-down menu  <xref ref="biblio-physlink" /></li>
+                                <li><url href="https://www.engineersedge.com/coeffients_of_friction.htm">Engineers Edge</url> <xref ref="biblio-engineersedge" /></li>
+                                <li><url href="http://www.tribology-abc.com/abc/cof.htm">Tribology-abc.com</url> <xref ref="bib-friction-tribology" /></li>
                         </ul>
                         </p></paragraphs>
 
@@ -5859,12 +5890,12 @@ Earth feels a force by \studentZ\ to the left.
                                                 </row>
                                         </tabular>
                                         </sidebyside>
-                                        <p>We <em>can</em> compute the normal force is <m>F_N = 205\unit{N}</m> and the frictional force is <m>F_f = \mu_kF_N = 1.1\ten{2}\unit{N}</m>.</p>
-                                        <p>With this information, we can find the acceleration:
+                                        <p>From the <m>y</m>-components, we can compute the normal force: <m>F_N = 205\unit{N}</m>.  Unlike in <xref ref="ex-friction-below-repose" text="type-global" />, the frictional force does not balance the gravitational component along the incline, but we <em>can</em> calculate the frictional force from the normal force: <m>F_f = \mu_kF_N = 1.1\ten{2}\unit{N}</m>.</p>
+                                        <p>Then, with this information, we can find the acceleration:
                                         <md>
                                                 <mrow>ma \amp = F_{gx} + \cancelto{0}{F_{Nx}} + F_{fx} </mrow>
-                                                <mrow>ma \amp = (\sig{278}{.7}{N}) + (0\unit{N}) + (-\sig{11}{2.6}{N}) </mrow>
-                                                <mrow> a \amp = \frac{+\sig{16}{6}{N}}{35.25\unit{kg}} \amp = +\sigfrac{4.7}{1}{m}{s^2} </mrow>
+                                                <mrow>ma \amp = (\sig{278}{.7}{N}) + (0\unit{N}) + (-\sig{11}{2.6}{N}) = +\sig{16}{6}{N} </mrow>
+                                                <mrow> a \amp = \frac{+\sig{16}{6}{N}}{35.25\unit{kg}}  = +\sigfrac{4.7}{1}{m}{s^2} </mrow>
                                         </md>
                                         You should notice that the component of the gravitational force down the incline is larger than the frictional force up the incline, so the child does accelerate down the incline.</p></solution>
                         </example>
@@ -5884,7 +5915,15 @@ Earth feels a force by \studentZ\ to the left.
 				</ul>
 			</objectives>
 
-                        <p>Comparing and contrasting kinetic friction, static friction, and rolling friction is often difficult because the motion of the object is so different.  Static and kinetic are likely pretty intuitive in that (1) the object is either moving or it isn't and (2) the objects are (or are trying to) slide against each other.  Rolling friction, on the other hand, looks rather different.  The surfaces are in contact, but it is not always obvious if they are sliding against each other.  If you do an internet search, you will find that some authors group rolling friction in with kinetic (or dynamic) friction because the objects (I will say the center-of-mass of the objects) have some relative motion and you will find other authors who indicate that it should be compared to static friction because there is no relative motion between the surfaces of the objects.</p>
+                        <p>Comparing and contrasting kinetic friction, static friction, and rolling friction is often difficult because the motion of the object is so different.  Static and kinetic are likely pretty intuitive in that (1) the object is either moving or it isn't and (2) the objects are (or are trying to) slide against each other.  Rolling friction, on the other hand, looks rather different.  The surfaces are in contact, but it is not always obvious if they are sliding against each other.  If you do an internet search, you will find that some authors refer to rolling friction as a form of kinetic friction (although I disagree with that terminology).</p>  
+                        <warning><title>Rolling versus kinetic friction</title>
+                                <p>Unlike some internet information, this text will distinguish between rolling friction (as described in this section) and kinetic friction (as described in <xref ref="sss-kinetic" text="type-global" />), although both involve the relative motion of the centers of mass of two objects.</p>
+                        </warning>
+                        <p>You will also find some authors who group rolling friction and kinetic friction as subsets of the larger category of dynamic friction (which is consistent with this text) because the objects have some relative motion.</p>
+                        <warning><title><q>Dynamic</q> friction</title>
+                                <p>Since both rolling friction and kinetic friction involve the relative motion of the centers of mass of two objects, it is reasonable to refer to either of these type of friction as the friction in a dynamic system.  This text will not explicitly do so, but that is not inconsistent with the discussion you will find in this text.  On the other hand, it is important to notice that the context in which we do discuss rolling friction will explicitly expect the surfaces to not be sliding across each other and so we will not consider the case where there is simultaneously rolling and kinetic friction.  (See <xref ref="clarify-no-slip" text="type-global" />.)</p>
+                        </warning>
+                        <p>You will find other authors who indicate that rolling friction should be associated with static friction because there is no relative motion between the surfaces of the objects.  This statement is also not inconsistent with this text.</p>
 
                         <aside><title>Clarification referenced by</title><p>the discussion of <xref ref="p-st-vwr" text="title"><m>\vec v=\omega \times \vec r</m></xref></p></aside>
                         <remark xml:id="clarify-no-slip"><title>Rolling without slipping</title>
@@ -5896,7 +5935,7 @@ Earth feels a force by \studentZ\ to the left.
                                 </ol></p>
                         </remark>
 
-                        <p>Some of this will be easier to describe after we have the language of rotations (see <xref ref="s-rotation-language" text="type-global" />) but for now suffice it to say that a rolling object, such as a bicycle wheel, has an axis-of-rotation (the wheel's axle) which <em>is moving</em> relative to the ground and, if it is not slipping, has a surface in contact with the ground that <em>is not moving</em> relative to the ground.  The wheel surface is placed on the ground (not dragged along the ground) in much the same way as your hands are placed on the ground when you do a <xref ref="task-walking-cartwheel" text="title">cartwheel</xref>.  You can build some intuition by considering <xref ref="irl-rolling-friction" text="type-global" />.</p>
+                        <p>Some of this will be easier to describe after we have the language of rotations (see <xref ref="s-rotation-language" text="type-global" />, which describes spinning objects whether or not they are rolling) but for now suffice it to say that a rolling object, such as a bicycle wheel, has an axis-of-rotation (the wheel's axle) which <em>is moving</em> relative to the ground and, if it is not slipping, has a surface in contact with the ground that <em>is not moving</em> relative to the ground.  The wheel surface is placed on the ground (not dragged along the ground) in much the same way as your hands are placed on the ground when you do a <xref ref="task-walking-cartwheel" text="title">cartwheel</xref>.  You can build some intuition by considering <xref ref="irl-rolling-friction" text="type-global" />.</p>
 
                         <investigation xml:id="irl-rolling-friction"><title>Seeing rolling friction in rolling tires</title>
                                 <idx><h>friction</h><h>rolling</h><h>investigation</h></idx>
@@ -5917,46 +5956,21 @@ Earth feels a force by \studentZ\ to the left.
                                                 <answer><p>The tire is likely to roll for a long distance.  It has very little rolling friction, but it does eventually does slow down; therefore there is some friction.  Since the tire is not sliding, there is no kinetic friction.</p></answer></task>
                                         <task xml:id="t-irl-rolling-flat">
                                                 <statement><p>Now deflate the tire to the point where you can see that it is <q>low</q> but not totally flat and it roll across the ground at approximately the same speed as in <xref ref="t-irl-rolling-full" text="type-local" />. Compare the distance it travels.</p></statement>
-                                                <answer><p>While this flattish tire will roll far enough that you can see it has less friction than in the dry sliding case, it likely will not travel as far as the tire that is fully inflated.  The malleability of the softer tire increases the rolling resistance, giving it a higher coefficient of rolling friction.</p></answer></task>
+                                                <answer><p>While this flattish tire will roll far enough that you can see it has less friction than in the dry sliding case, it likely will not travel as far as the tire that is fully inflated.  The malleability of the softer tire increases the rolling resistance, giving it a higher coefficient of rolling friction.  It takes some energy to deform (squish and stretch) the tire as it rolls.  (This is discussed in some detail in <xref ref="s-Wfr" text="type-global" />.)</p></answer></task>
                                 </task>
                                 <task>
                                         <introduction><p>Now consider a car with all four wheels firmly attached but placed in neutral so that the wheels can spin without engaging the engine.  When you do this, a person should be in the car keeping it in a straight line and ready to stop if something gets in the path of the car.</p></introduction>
                                         <task xml:id="t-irl-rolling-car-full">
                                                 <statement><p>Try to push the car (in neutral) so that the tires spin at the same rate as in <xref ref="t-irl-rolling-full" text="type-local" /> and see how quickly the car slows down.</p></statement>
-                                                <answer><p>Even if the tires are rolling at the same rate as in <xref ref="t-irl-rolling-full" text="type-local" />, the tires are more deformed than in <xref ref="t-irl-rolling-full" text="type-local" /> due to the weight of the car, so they will not roll as far.  This indicates an increase in the amount of rolling resistance.</p></answer></task>
+                                                <answer><p>Even if the tires are rolling at the same rate as in <xref ref="t-irl-rolling-full" text="type-local" />, the tires are more deformed than in <xref ref="t-irl-rolling-full" text="type-local" /> due to the weight of the car, so they will not roll as far.  This indicates an increase in the amount of rolling resistance.</p>  
+                                                <p>This is reminiscent of <xref ref="eq-friction">Equation</xref> and you can infer that we will be considering a coefficient of rolling friction. You might consider how the size of the coefficient of rolling friction will compare to the coefficients of kinetic and static friction.</p></answer></task>
                                         <task xml:id="t-irl-rolling-car-flat">
                                                 <statement><p>Deflate the tire to where you can see that it is <q>low</q> but not totally flat and try to push the car at the same speed as in <xref ref="t-irl-rolling-car-full" text="type-local" />.</p></statement>
                                                 <answer><p>Even if the tires are rolling at the same rate as in <xref ref="t-irl-rolling-car-full" text="type-local" />, the tires are even more deformed so they will not roll as far.  This indicates a further increase in the amount of rolling resistance.</p></answer></task>
                                 </task>
-                                <conclusion>
-                                        <p><alert>Practical Consequence:</alert> It is useful to keep your car tires inflated to the appropriate level for the following reasons:
-                                        <ul>
-                                                <li><p>Under-inflated tires are more easily deformed causing
-                                                <ul>
-                                                        <li><p>increased rolling resistance, which requires more effort by the engine and reduces you gas milage,</p></li>
-                                                        <li><p>more sideways-wiggle, which can cause reduced control, affect alignment, and create a <q>shimmy</q>,</p></li>
-                                                        <li><p>wear on portions of the tire that were not designed to be in contact with the road (increasing the risk of creating a crack and a slow leak), and</p></li>
-                                                        <li><p>uneven heating from the repeated deforming (increasing the risk of a blow-out).</p></li>
-                                                </ul></p></li>
-                                                <li><p>Over-inflated tires have less surface area in contact with the pavement and,
-                                                <ul>
-                                                        <li><p>while kinetic friction is independent of the surface area in contact, the goal is to use static friction with rolling tires, which is larger than kinetic friction with skidding tires (see also ABS brakes),</p></li>
-                                                        <li><p>having less surface area makes it easier to skip along the road and lose contact altogether (frictionless and no control), even if only for brief instants, and</p></li>
-                                                        <li><p>depending on the tread of your tires, reduced surface area increases the opportunity for hydroplaning on wet surfaces.</p></li>
-                                                </ul></p></li>
-                                        </ul>
-                                        To be clear, the risks are small if you are close to the standard pressure and don't drive much.  The further you are from the standard pressure and the more you drive, the bigger the risk.
-                                        While you can find good information about tire inflation with a quick internet search, in October of 2017, <url href="https://www.discounttiredirect.com/learn/tire-pressure" /> had some good images of tires and the inappropriate wear patterns.</p></conclusion>
-                                <postlude>
-                                        <p>We should also describe some additional effects that can accompany what you just observed in the Investigation.
-                                        <ul>
-                                                <li><p>A tire without a car feels static friction to allow it to roll, but not kinetic friction (assuming it is not sliding along the ground).</p></li>
-                                                <li><p>A tire that is connected to a car necessarily has a connection (at the axle) to the car, which is not rotating.  This means that there is necessarily some kinetic friction at that connection, although this is lubricated friction, not dry-sliding friction.  This connection is typically done with ball bearings, which means that there is additional friction in the case of the tire-and-car that is not present for the tire-alone.  Ball-bearings should also have rolling friction rather than kinetic friction and should be <url href="http://www.tribology-abc.com/abc/cof.htm#mu_lagers">designed to minimize the frictional effects</url>.</p></li>
-                                                <li><p>When a car is moving, there is also the <url href="http://www.tribology-abc.com/abc/cof.htm#luchtweerstand">effect of air resistance</url>, which increases with speed.  Your results from this Investigation will change if you do them at walking speeds versus at highway speeds.</p></li>
-                                                <li><p>If you also compare the tasks of this Investigation to something that is not firmly connected (compare for example <xref ref="p-mom-inert-eggs" text="title">a hard-boiled egg to a raw egg</xref>), then you will have the added complication of the way the spinning shell interacts with in the liquid inside which also has its own fluid friction.</p></li>
-                                        </ul></p></postlude>
                         </investigation>
-
+                        
+                        <p>The ideas in this Investigation help us clarify how to think about rolling friction:</p>
 
                         <observation xml:id="obs-rolling-friction"><title>Properties that affect rolling friction</title>
                                 <p>Rolling friction is a very small effect (as compared to dry-sliding friction), but is impacted by
@@ -5965,19 +5979,91 @@ Earth feels a force by \studentZ\ to the left.
                                 <li>the softness of the surface on which the object rolls (due to its deformation), and</li>
                                 <li>the motion beneath the surface due to these deformations</li>
                                 </ul>
-                                Although we can still write <m>F_f = \mu_r F_g</m>, this coefficient of rolling friction (a.k.a. rolling resistance) is significantly smaller (on the order of 0.001) and depends on<fn>An extra complication is that the weight of the object impacts the deformation of the object and the surface, so <m>\mu</m> also depends on the weight, meaning that the equation depends on <m>F_g</m> in multiple ways.</fn> the size (radius) of the rolling object.</p>
+                                Although we can still write <m>F_f = \mu_r F_N</m>, this coefficient of rolling friction (a.k.a. rolling resistance) is significantly smaller (on the order of 0.001) and depends on<fn>An extra complication is that the amount that the object is pressed into the surface impacts the deformation of the object and the surface, so <m>\mu</m> also depends on the amount the wheel is pressed into the ground, meaning that the equation depends on <m>F_N</m> in multiple ways.</fn> the size (radius) of the rolling object.</p>
                         </observation>
+                        
+                        <p>Our understanding of physics can also help us better understand the world around us:</p>
 
-                        <p>At this point, you should be able to imagine a variety of applications where you expect to see rolling friction rather than kinetic friction.  Please answer <xref ref="ex-rolling-friction" text="type-local" /> to test yourself.</p>
-                        <exercise xml:id="ex-rolling-friction">
-                                <statement><p>make an example</p></statement>
+                        <note><title>What to look for at the wheel of a moving vehicle</title>
+                                <p>We should also describe some additional effects that can accompany what you just observed in the Investigation.
+                                <ul>
+                                        <li><p>A tire without a car feels static friction to allow it to roll, but not kinetic friction (assuming it is not sliding along the ground).</p></li>
+                                        <li><p>A tire that is connected to a car necessarily has a connection (at the axle) to the car, which is not rotating.  This means that there is necessarily some kinetic friction (rubbing and sliding) at that connection, although this is lubricated friction, not dry-sliding friction.  Although this connection is typically made with ball bearings, there is additional friction in the case of the tire-and-car that is not present for the tire-alone.  Ball-bearings should also have rolling friction rather than kinetic friction and should be <url href="http://www.tribology-abc.com/abc/cof.htm#mu_lagers">designed to minimize the frictional effects</url>.  (So we expect this to be a small, and possibly insignificant, effect.)</p></li>
+                                        <li><p>When a car is moving, there is also the <url href="http://www.tribology-abc.com/abc/cof.htm#luchtweerstand">effect of air resistance</url>, which increases with speed.  Your results from this Investigation will change if you do them at walking speeds versus at highway speeds.</p></li>
+                                        <li><p>If you also compare the tasks of this Investigation to something that can also move internally (compare for example <xref ref="p-mom-inert-eggs" text="title">a hard-boiled egg to a raw egg</xref>), then you will have the added complication of the way the spinning shell interacts with in the liquid inside which also has its own fluid friction.</p></li>
+                                </ul></p>
+                        </note>
+
+                        <p>Furthermore, our understanding of the physics has some consequences on how we use our vehicles in daily life.</p>
+                        
+                        <note><title>Practical Advice about tire maintenance</title>
+                                <p>It is useful to keep your car tires inflated to the appropriate level for the following reasons:
+                                <ul>
+                                        <li><p>Under-inflated tires are more easily deformed causing
+                                        <ul>
+                                                <li><p>increased rolling resistance, which requires more effort by the engine and reduces you gas milage,</p></li>
+                                                <li><p>more sideways-wiggle, which can cause reduced control, affect alignment, and create a <q>shimmy</q>,</p></li>
+                                                <li><p>wear on portions of the tire that were not designed to be in contact with the road (increasing the risk of creating a crack and a slow leak), and</p></li>
+                                                <li><p>uneven heating from the repeated deforming (increasing the risk of a blow-out).</p></li>
+                                        </ul></p></li>
+                                        <li><p>Over-inflated tires have less surface area in contact with the pavement and,
+                                        <ul>
+                                                <li><p>while kinetic friction is independent of the surface area in contact, the goal is to use static friction with rolling tires, which is larger than kinetic friction with skidding tires (see also ABS brakes),</p></li>
+                                                <li><p>having less surface area makes it easier to skip along the road and lose contact altogether (frictionless and no control), even if only for brief instants, and</p></li>
+                                                <li><p>depending on the tread of your tires, reduced surface area increases the opportunity for hydroplaning on wet surfaces.</p></li>
+                                        </ul></p></li>
+                                </ul>
+                                To be clear, the risks are small if you are close to the standard pressure and don't drive much.  The further you are from the standard pressure and the more you drive, the bigger the risk.
+                                While you can find good information about tire inflation with a quick internet search, in October of 2017, <url href="https://www.discounttiredirect.com/learn/tire-pressure" /> had some good images of tires and the inappropriate wear patterns.</p>
+                        </note>
+
+                        <p>With this as an example, let's try expanding this understanding to other rolling objects.  Please answer <xref ref="ex-rolling-friction" text="type-local" /> to test your imagination of a variety of applications where you expect to see rolling friction rather than kinetic friction.</p>
+                        <exercise xml:id="ex-rolling-friction"><title>Five things that roll</title>
+                                <statement><p>List 5 things that roll and then answer the following about each of them.
+                                        <ol>
+                                                <li><p>Is the object rigid (like a fully pressured car tire) or soft (like a flat tire)?</p></li>
+                                                <li><p>What kind of surface do you imagine this object rolling across?  Is that surface rigid or soft?</p></li>
+                                                <li><p>Estimate the mass and radius of each object.</p></li>
+                                                <li><p>Rank the objects in order of highest rolling friction to lowest rolling friction.</p></li>
+                                        </ol>
+                                        As an interesting aside, and a look into our future, you might also consider the following:
+                                        <ol>
+                                                <li><p>Identify the axis of rotation for each object.</p></li>
+                                                <li><p>Describe how the mass of the object is distributed between the axis and the edge of the object.</p></li>
+                                        </ol></p></statement>
+                                <hint><title>Things that roll</title>
+                                        <p>You should consider objects that roll rather than tumble.  As a bad example, consider <q>rolling</q> dice.  For our purposes, dice tumble rather than roll.  Rolling implies that the object is always touching the surface and is in smooth contact with the surface as it moves without sliding.</p></hint>
+                                <answer><title>Things that roll</title>
+                                        <p>Answers using <q>roll</q> in the physics sense: <ul>
+                                                <li>a disc (which is generally solid throughout, like a coin or a manhole-cover; you might also consider some truck wheels in this category)</li>
+                                                <li>a hoop (which may or may not have spokes connecting the edge to the center, such as a hoola-hoop, a bike wheel, and some car tires)</li>
+                                                <li>a ball (anything spherical)</li>
+                                                <li>a log (anything cylindrical)</li>
+                                                <li>a person summersaulting (like a ball, but with a different rigidity and conscious)</li>
+                                                <li>a rock or stone (although this is still essentially a <q>ball</q>, it may not be smooth)</li></ul></p>
+                                        <p>Answers using <q>roll</q> in other senses: <ul>
+                                                <li><url href="http://allrecipes.com/recipe/24228/sushi-roll/">sushi</url> (Nov, 2017)</li>
+                                                <li><url href="https://www.google.com/search?q=roll+top+desk&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwimvMzSntDXAhWGxIMKHduxBYsQ_AUICygC&amp;biw=1745&amp;bih=872">some desktops</url> (Nov, 2017)</li>
+                                                <li><url href="https://www.thekitchn.com/whats-the-difference-between-steel-cut-rolled-and-instant-oats-138355">oats</url> (Nov, 2017)</li>
+                                                <li><url href="https://news.nationalgeographic.com/2015/04/150418-insects-dung-beetles-animal-behavior-navigation/">a dung beetle</url> (Nov, 2017)</li>
+                                                <li><url href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">rick</url> (Nov, 2017)</li></ul></p>
+                                        </answer>
+                                <answer><title>rigidity of the object</title>
+                                        <p>The answer to this depends on what you specifically imagined.  I will list some properties to consider for your specific objects.<ul>
+                                                <li><p>if a disc-like wheel is solid then it is likely pretty rigid, however, this is relative to the amount of weight it has to carry.  For example, a rolling frisbee is solid enough to not deform, but it is not as rigid as a manhole cover.</p></li>
+                                                <li><p>the rigidity of a hoop also varies with material.  A hoola-hoop is pretty flimsy, but also very light.  A bicycle wheel can be deformed, but generally won't be if it is not abused.  One consideration for a bicycle wheel is that (more so for mountain bikes and less so for road bikes) the tire is intended to be part of the cushioning for the bike.  That is to say, the tire can deform without deforming the wheel itself.  This can smooth out the ride.  How much this happens impacts the amount of rolling friction.</p></li>
+                                                <li><p>This covers a wide variety of objects that can have very different rigidities.  Consider rolling a beach ball, a bowling ball, and a marble.  The beach ball is very soft and, being lightweight, is highly affected by the air resistance. That is not a good example of a rolling object.  A bowling ball is a very rigid object that is usually on a slick surface so that it spins more than it rolls.  This is not the motion usually described by <xref ref="clarify-no-slip" text="type-global" /> and will not be considered a good example.  The marble is a good example if you are considering rolling it across a table; however, it tends to bounce and jump if you roll it across a gravelly parking lot.  You might also consider a softball or baseball, but perhaps the best example is a basketball gently rolled across a basketball court.  The basketball is grippy (so that there is static friction allowing it to roll without slipping) and smooth (unlike the effect of the stitches of a baseball) and rolls nicely across the smooth polished court.  It needs to be rolled gently though otherwise its air pressure (which ironically causes it to be pretty rigid) can easily cause it to bounce while rolling.  This example shows that objects that are more rigid also tend to bounce more when rolled.</p></li>
+                                                <li><p>If you are imagining a log rolling down a hill, then there are many imperfections causing one side or another to jump into the air.  However, a log is pretty rigid and, unlike a bike tire, if a log hits a rock, it may well dent, but it does not spring back.  (We say it is not <xref ref="def-elastic" text="title" />.)  <!-- YOU ARE HERE. You are here.  --> </p></li>
+                                                <li>a person summersaulting (like a ball, but with a different rigidity and conscious)</li>
+                                                <li>a rock or stone (although this is still essentially a <q>ball</q>, it may not be smooth)</li></ul></p>
+                                        </answer>
                         </exercise>
 
-                        <p> Note that desk chairs that tilt are essentially rocking chairs where the rocking mechanism is hidden inside the piece that connects the seat of the chair to the support post.</p>
+                        <p>When considering the ideas in the previous exercise, you may not have thought to include objects that wobble but do not make a full rotation, but rocking chairs are still rolling in some sense.   Note that desk chairs that tilt are essentially rocking chairs where the rocking mechanism is hidden inside the piece that connects the seat of the chair to the support post.</p>
 
                         <investigation xml:id="irl-rocking-friction"><title>Seeing rolling friction in rocking chairs</title>
                                 <idx><h>friction</h><h>rolling</h><h>investigation</h></idx>
-                                <introduction><p>If you don't have access to a rocking chair, then you might be able to find an office chair that allows you to lean back.  The problem with the office chair is that the mechanism that is like a rocking chair is hidden inside the shaft of the chair support.  This is very similar to the mechanism in your knee, but you probably don't want to open that up either.  If you are on a college campus, then you might be able to find an anatomy professor in the biology department.  If you school has a program in physical therapy, then they might have a really nice model that they can show you. </p></introduction>
+                                <introduction><p>If you don't have access to a rocking chair, then you might be able to find an office chair that allows you to lean back.  The problem with the office chair is that the mechanism that is like a rocking chair is hidden inside the shaft of the chair support.  This is very similar to the mechanism in your knee, but you probably don't want to open that up either.  If you are on a college campus, then you might be able to find an anatomy professor in the biology department.  If your school has a program in physical therapy, then they might have a really nice model that they can show you. </p></introduction>
                                 <task>
                                         <statement><p>Look at the design of the rocking chair.  Is the rocking circular? elliptical? something else?</p></statement>
                                         <answer><p>(looks more like a hyperbola to me, but I doubt it is a specific shape; maybe I should get some photos and measure?  Nah.)</p></answer></task>
@@ -7103,7 +7189,17 @@ Earth feels a force by \studentZ\ to the left.
                 </p>
         </assemblage>
 
-        <p xml:id="p-elastic">Initial definition of elastic (reference <xref ref="p-elastic-collision" text="type-global" /></p>
+        <p xml:id="p-elastic">Initial definition of elastic (reference <xref ref="p-elastic-collision" text="title">the discussion of elastic collisions</xref>)</p>
+        <aside><title>Definition referenced by</title>
+                <p><xref ref="ex-rolling-friction" text="type-global" /></p>
+        </aside>
+        <definition xml:id="def-elastic"><title>elastic</title><idx>elastic</idx>
+                <notation>
+                        <usage>\text{elastic}</usage>
+                        <description>The elasticity of an object indicates the extend to which, when deformed, it will return to its original shape.</description>
+                </notation>
+                <statement><p>An object is elastic if, when deformed it returns to its original shape.  This is measured by <xref ref="s-young" text="title" />, the <xref ref="s-shear" text="title" />, and the <xref ref="s-bulk" text="title" /> in different contexts.  (See also <xref ref="p-elastic-collision" text="title">elastic collisions</xref>.  Compare to plastic.)</p></statement>
+        </definition>
 
         </section>
 
@@ -7403,14 +7499,19 @@ Earth feels a force by \studentZ\ to the left.
         </section>
 
         <references><title>References and Further Reading</title>
+<!-- 1,4 -->
                 <biblio type="raw" xml:id="bib-friction-hutchings">
                         Hutchings, Ian M., <title>Leonardo da Vinci's studies of friction</title>, <year>15 August 2016</year>. <journal>Wear</journal> <volume>Volumes 360-361</volume>, pp. 51-66.
                         (<url href="https://doi.org/10.1016/j.wear.2016.04.019" />)
                 </biblio>
+<!-- 2,5,10 -->
                 <biblio type="raw" xml:id="bib-friction-tribology">
                         <!-- As of Oct, 2017 -->
-                        van Beek, Anton. <title>History of Science Friction</title>. tribology-abc.com. Retrieved Oct, 2017. <url href="http://www.tribology-abc.com/abc/history.htm" />.
+                        van Beek, Anton. <title>History of Science Friction</title>. tribology-abc.com. Retrieved Oct, 2017. 
+                                (History: <url href="http://www.tribology-abc.com/abc/history.htm" />, 
+                                Tabulated coefficients of friction: <url href="http://www.tribology-abc.com/abc/cof.htm" />.)
                 </biblio>
+<!-- 3,6,12,15 -->
                 <biblio type="raw" xml:id="bib-friction-armstrong">
                         <!-- As of Oct, 2017 -->
                         Armstrong-Hélouvry, Brian (1991). Control of machines with friction. USA: Springer.  [ISBN 0-7923-9133-0]
@@ -7421,32 +7522,47 @@ http://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-
 https://www.britannica.com/biography/Guillaume-Amontons
 http://www.madehow.com/inventorbios/8/Guillaume-Amontons.html
 https://en.wikipedia.org/wiki/Guillaume_Amontons
-
 https://www.biography.com/people/charles-de-coulomb-9259075
-
 Also check these folks out on Wikipedia.... of course
-
 -->
-                <biblio type="raw" xml:id="bib-friction-popov2017">
-                        <!-- As of Oct, 2017 -->
-                        Popov, V.L. <title>Contact Mechanics and Friction: Physical Principles and Applications</title>, 2017, Springer Berlin Heidelberg; <url href="https://books.google.com/books?id=qT5RDgAAQBAJ&amp;pg=PA4&amp;lpg=PA4&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=I4SUYUbWQW&amp;sig=1FhgbMd-9NM7i4txa7GBtgntn4s&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKDAA#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 4</url>. (ISBN 9783662530818)
-                        <url href="https://books.google.com/books?id=qT5RDgAAQBAJ" />.
-                </biblio>
-                <biblio type="raw" xml:id="bib-friction-kerr2014">
-                        <!-- As of Oct, 2017 -->
-                        ed. Kerr, A.D. <title>Railroad Track Mechanics and Technology: Proceedings of a Symposium Held at Princeton University, April 21 - 23, 1975</title>, 2014, Elsevier Science;  <url href="https://books.google.com/books?id=ggU6AwAAQBAJ&amp;pg=PA336&amp;lpg=PA336&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=oCzWJiE3N9&amp;sig=3TSLyE7if10AHMKlgHxD6yWow7w&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKzAB#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 336</url>.  (ISBN 9781483188218)
-                        <url href="https://books.google.com/books?id=ggU6AwAAQBAJ" />.
-                </biblio>
+<!-- 7 -->
+                <biblio type="raw" xml:id="biblio-engineershandbook">
+                        <!-- As of Nov, 2017 -->
+                        <url href="http://www.engineershandbook.com/aboutus.htm" /> (Accessed Nov, 2017).
+                        (Tabulated coefficient of friction: <url href="http://www.engineershandbook.com/Tables/frictioncoefficients.htm" />.)</biblio>
+<!-- 8 -->
+                <biblio type="raw" xml:id="biblio-physlink">
+                        <!-- As of Nov, 2017 -->
+                        <url href="http://www.physlink.com/">PhysLink.com - Physics and Astronomy Online Education and Reference</url> (Accessed Nov, 2017).</biblio>
+<!-- 9 -->
+                <biblio type="raw" xml:id="biblio-engineersedge">
+                        <!-- As of Nov, 2017 -->
+                        <url href="https://www.engineersedge.com/" /> (Accessed Nov, 2017).
+                        (Tabulated coefficient of friction: <url href="https://www.engineersedge.com/coeffients_of_friction.htm" />.)</biblio>
+<!-- 11 -->
+                <biblio type="raw" xml:id="biblio-derler-2009">S. Derler <ampersand /> L-C. Gerhardt <ampersand /> A. Lenz <ampersand /> E. Bertaux <ampersand /> M. Hadad. (2009).
+                        <url href="https://www.researchgate.net/publication/223651389_Friction_of_Human_Skin_against_Smooth_and_Rough_Glass_as_a_function_of_Contact_Pressure">Friction of Human Skin against Smooth and Rough Glass as a function of Contact Pressure</url>. <journal>Tribology International. 42. 1565-1574. 10.1016/j.triboint.2008.11.009.</journal>
+                        <url href="http://www.mate.tue.nl/mate/pdfs/12354.pdf">pdf</url></biblio>
+
+<!-- 13 -->
                 <biblio type="raw" xml:id="bib-friction-blau2008">
                         <!-- As of Oct, 2017 -->
                         Blau, P.J. <title>Friction Science and Technology: From Concepts to Applications, 2e</title> (Mechanical Engineering Series), 2008, CRC Press; <url href="https://books.google.com/books?id=5pIpV1LY5HMC&amp;pg=PA8&amp;lpg=PA8&amp;dq=hooke+rolling+friction&amp;source=bl&amp;ots=oT-uQSgTUl&amp;sig=BFS0NgjHKZwRgYk5MKx75GNoG48&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjQhOD6vpvXAhVGrVQKHdISCqAQ6AEIMjAC#v=onepage&amp;q=hooke%20rolling%20friction&amp;f=false">pg 12</url>. (ISBN 9781420054101)
                         <url href="https://books.google.com/books?id=5pIpV1LY5HMC" />.
                 </biblio>
-                <biblio type="raw" xml:id="biblio-derler-2009">S. Derler <ampersand /> L-C. Gerhardt <ampersand /> A. Lenz <ampersand /> E. Bertaux <ampersand /> M. Hadad. (2009).
-                        <url href="https://www.researchgate.net/publication/223651389_Friction_of_Human_Skin_against_Smooth_and_Rough_Glass_as_a_function_of_Contact_Pressure">Friction of Human Skin against Smooth and Rough Glass as a function of Contact Pressure</url>. <journal>Tribology International. 42. 1565-1574. 10.1016/j.triboint.2008.11.009.</journal>
-                        <url href="http://www.mate.tue.nl/mate/pdfs/12354.pdf">pdf</url></biblio>
+<!-- 14,16,17 -->
+                <biblio type="raw" xml:id="bib-friction-popov2017">
+                        <!-- As of Oct, 2017 -->
+                        Popov, V.L. <title>Contact Mechanics and Friction: Physical Principles and Applications</title>, 2017, Springer Berlin Heidelberg; <url href="https://books.google.com/books?id=qT5RDgAAQBAJ&amp;pg=PA4&amp;lpg=PA4&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=I4SUYUbWQW&amp;sig=1FhgbMd-9NM7i4txa7GBtgntn4s&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKDAA#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 4</url>. (ISBN 9783662530818)
+                        <url href="https://books.google.com/books?id=qT5RDgAAQBAJ" />.
+                </biblio>
+<!-- 18 -->
+                <biblio type="raw" xml:id="bib-friction-kerr2014">
+                        <!-- As of Oct, 2017 -->
+                        ed. Kerr, A.D. <title>Railroad Track Mechanics and Technology: Proceedings of a Symposium Held at Princeton University, April 21 - 23, 1975</title>, 2014, Elsevier Science;  <url href="https://books.google.com/books?id=ggU6AwAAQBAJ&amp;pg=PA336&amp;lpg=PA336&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=oCzWJiE3N9&amp;sig=3TSLyE7if10AHMKlgHxD6yWow7w&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKzAB#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 336</url>.  (ISBN 9781483188218)
+                        <url href="https://books.google.com/books?id=ggU6AwAAQBAJ" />.
+                </biblio>
         </references>
-
         <conclusion><title>List of examples</title>
                 <list-of elements="example" scope="chapter" />
         </conclusion>
@@ -7524,6 +7640,7 @@ Also check these folks out on Wikipedia.... of course
 			</ul>
 		</objectives>
 
+        <aside><title>Section referenced by</title><p><xref ref="t-irl-rolling-flat" text="type-global" /></p></aside>
         <p>pool balls on cushion/bumper</p>
 
         </section>
@@ -7676,7 +7793,7 @@ Also check these folks out on Wikipedia.... of course
 			</objectives>
                         <aside><title>Referenced by</title> <p><xref ref="sss-inertia" text="type-global" /></p></aside>
                         <p>Recall <xref ref="sss-inertia" text="type-global" />.</p>
-                        <p xml:id="p-elastic-collision">Probably define elastic (<xref ref="p-elastic" text="type-global" />) and inelastic collisions</p>
+                        <p xml:id="p-elastic-collision">Probably define elastic collisions (recall <xref ref="def-elastic" text="type-global" />) and inelastic collisions</p>
                 </subsection>
 
         </section>
@@ -8538,7 +8655,7 @@ Also check these folks out on Wikipedia.... of course
 
 <part xml:id="P-oscillations"><title>Making Waves</title>
         <introduction>
-        <p>The chapters in this Part are oscillations and thermodynamics.  With the traditional organization of the two-semester
+        <p>The chapters in this Part are fluids, vibrations, oscillations, and sound.  With the traditional organization of the two-semester
         introductory physics, these parts can be covered in either order and can be chosen to be put in either semester. </p>
         </introduction>
 </part>
@@ -8601,6 +8718,69 @@ Also check these folks out on Wikipedia.... of course
 			</ul>
 		</objectives>
         <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-surf-tension" text="title" >surface tension</xref></p></aside>
+        </section>
+
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter xml:id="c-vibration"><title>Vibration </title>
+
+	<objectives xml:id="co-vibration"><title>Vibration in solids</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref ref="so-stress-strain" text="global" />, <xref ref="so-young" text="global" />, <xref ref="so-shear" text="global" />, and <xref ref="so-bulk" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <section xml:id="s-stress-strain"><title>Stress and Strain</title>
+        	<objectives xml:id="so-stress-strain"><title>Stress and Strain</title>
+        		<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+        		<ul>
+        			<li><p>.</p></li>
+        			<li><p>.</p></li>
+        		</ul>
+        	</objectives>
+        
+                <p>.</p>
+        </section>
+
+        <section xml:id="s-young"><title>Young's Modulus</title>
+        	<objectives xml:id="so-young"><title>Young's Modulus</title>
+        		<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+        		<ul>
+        			<li><p>.</p></li>
+        			<li><p>.</p></li>
+        		</ul>
+        	</objectives>
+
+                <p>.</p>
+        </section>
+
+        <section xml:id="s-shear"><title>Shear Modulus</title>
+        	<objectives xml:id="so-shear"><title>Shear Modulus</title>
+        		<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+        		<ul>
+        			<li><p>.</p></li>
+        			<li><p>.</p></li>
+        		</ul>
+        	</objectives>
+
+                <p>.</p>
+        </section>
+
+        <section xml:id="s-bulk"><title>Bulk Modulus</title>
+        	<objectives xml:id="so-bulk"><title>Bulk Modulus</title>
+        		<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+        		<ul>
+        			<li><p>.</p></li>
+        			<li><p>.</p></li>
+        		</ul>
+        	</objectives>
+
+                <p>.</p>
         </section>
 
 </chapter>
@@ -10049,8 +10229,11 @@ I have emailed her.  NO REPLY.
     <appendix xml:id="appendix-results">
         <title>List of Features</title>
 
-        <section xml:id="list-investigation"><title>List of Investigations</title>
-        <list-of elements="investigation" divisions="chapter section" empty="no" />
+        <section xml:id="list-investigation"><title>List of Explorations, Investigations, and Activities</title>
+        <list-of elements="exploration investigation activity" divisions="chapter section" empty="no" />
+        </section>
+        <section xml:id="list-remark"><title>List of RemarkLike</title>
+        <list-of elements="insight warning convention remark observation note" divisions="chapter section" empty="no" />
         </section>
         <section xml:id="list-tables"><title>List of Tables</title>
         <list-of elements="table" divisions="chapter" empty="no" />

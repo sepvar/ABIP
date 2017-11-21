@@ -73,7 +73,7 @@ counterr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml
 	@echo -e "tabular: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ": element \"tabular" | wc -l`" \t(1 known, hidden)"
 	@set TEMPVAR=`grep -n "Known tag abuse 2" ABIP.xml | sed s/:.*//g`
 	@echo -e "license: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep ${TEMPVAR} | wc -l`" \t(11 known, hidden)"
-	@echo -e "license: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep 365 | wc -l`" \t(11 known, hidden)"
+	@echo -e "license: \t"`java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | grep 375 | wc -l`" \t(11 known, hidden)"
 
 toperr: ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml 
 	java -jar ${BEE}/../jing-trang/build/jing.jar ${BEE}/schema/pretext.rng ABIP.xml | head -5
