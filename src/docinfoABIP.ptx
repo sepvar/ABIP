@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+    <docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
+        <macros>
+        \newcommand{\JC}[1]{}
+        \newcommand{\unit}[1]{\,{\rm #1}}
+        \newcommand{\unitfrac}[2]{\mbox{$\phantom{1\!}^{{\rm #1}\!\!}/_{\!\!{\rm #2}}$}}
+        \newcommand{\sig}[3]{\mathbf{#1}{#2}\unit{#3}}
+        \newcommand{\sigfrac}[4]{\mathbf{#1}{#2}\unitfrac{#3}{#4}}
+        \newcommand{\ten}[1]{\times 10^{#1}}
+        \newcommand{\txtfrac}[2]{{}^{#1}\!/_{\!#2}}
+        \newcommand{\convert}[2]{\times\left(\frac{#1}{#2}\right)}
+
+        \newcommand{\deq}{\displaystyle}
+
+        \newcommand{\ihat}{\hat i}
+        \newcommand{\jhat}{\hat j}
+        \newcommand{\khat}{\hat k}
+        \newcommand{\vect}[3]{#1 \ihat #2 \jhat #3 \khat}
+
+        \newcommand{\KE}{\mbox{KE}}
+        \newcommand{\PE}{\mbox{PE}}
+        \newcommand{\E}{\mbox{E}}
+
+        % make use of thmbox package
+        % \newtheorem[size]{environment name}[counter]{Actual title}
+        %TheoremLike (Theorem, corollary, claim, fact, identity, lemma, algorithm)
+        \newtheorem[S]{proposition}[theorem]{Connection}
+        %RemarkLike
+        \newtheorem[S]{insight}[theorem]{Insight}
+        \newtheorem[S]{warning}[theorem]{Warning}
+        \newtheorem[S]{observation}[theorem]{Observation}
+        \newtheorem[S]{note}[theorem]{Interpretation}
+        \newtheorem[M]{remark}[theorem]{Clarification}
+        \newtheorem[M]{convention}[theorem]{Convention}
+        %ExampleLike (problem, question)
+        \newtheorem[L]{example}[theorem]{Example}
+        %
+        \newtheorem[L]{exercise}[theorem]{Exercise}
+        %AxiomLike
+        \newtheorem[L]{heuristic}[theorem]{Translation}
+        %ProjectLike
+        \newtheorem[L]{exploration}[theorem]{Exploration}
+        \newtheorem[L]{investigation}[theorem]{Investigation}
+        \newtheorem[L]{activity}[theorem]{Activity}
+
+        \newcommand{\magdir}[7]{\begin{array}{lccl}
+                % x-comp, y-comp, mag label, mag, angle name, angle, angle-descriptor (North of East)
+                \text{Magnitude:} \amp \displaystyle #3 = \amp \displaystyle \sqrt{\left(#1\right)^2+\left(#2\right)^2} \amp = \displaystyle #4 \\[6pt]
+                \text{Direction:} \amp \displaystyle #5 = \amp \displaystyle \tan^{-1}\left( \frac{#2}{#1} \right) \amp = \displaystyle #6 \mbox{#7}
+                \end{array}}
+
+\newcounter{piclen}
+\newcounter{picwid}
+\newcounter{boxlen}
+\newcounter{boxwid}
+\newcounter{FBDlen}
+\newcounter{FBDwid}
+\newcounter{centx}
+\newcounter{centy}
+\newcounter{lblx}
+\newcounter{lbly}
+\newcommand{\drawbox}[4]{% 1=x-location of box, 2=y-location of box, 3=x-size of box, 4=y-size of box
+    \setcounter{boxlen}{#1}\addtocounter{boxlen}{#3}
+    \setcounter{boxwid}{#2}\addtocounter{boxwid}{#4}
+    \put(#1,#2){\line(1,0){#3}}
+    \put(#1,#2){\line(0,1){#4}}
+    \put(\theboxlen,\theboxwid){\line(-1,0){#3}}
+    \put(\theboxlen,\theboxwid){\line(0,-1){#4}} }
+
+\newenvironment{FBD}[5]% 1=half-x-size-box, 2=half-y-size-box, 3=x-lower-left, 4=y-lower-left; (3,4) also (x,y) space outside box, 5=label
+    {\setcounter{centx}{#3}\addtocounter{centx}{#1}
+    \setcounter{centy}{#4}\addtocounter{centy}{#2}
+    \setcounter{piclen}{\thecentx}\addtocounter{piclen}{\thecentx}
+    \setcounter{picwid}{\thecenty}\addtocounter{picwid}{\thecenty}
+    \setcounter{FBDlen}{#1}\addtocounter{FBDlen}{#1}
+    \setcounter{FBDwid}{#2}\addtocounter{FBDwid}{#2}
+    \setcounter{lbly}{#4}\addtocounter{lbly}{#2}\addtocounter{lbly}{#2}\addtocounter{lbly}{5}
+    \begin{center}\begin{picture}(\thepiclen,\thepicwid)
+    \put(#3,\thelbly){\setvlabel{$\scriptsize #5$}}
+    \drawbox{#3}{#4}{\theFBDlen}{\theFBDwid}}
+    {\end{picture}\end{center}}
+\newcommand{\oneup}[3]{% 1=sizeof-vector, 2=label, 3=color
+        \addtocounter{centy}{2}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#1}\addtocounter{lbly}{-5}
+        \put(\thecentx,\thecenty){\color{#3}\vector(0,1){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centy}{-2}}
+\newcommand{\onedo}[3]{% 1=sizeof-vector, 2=label, 3=color
+        \addtocounter{centy}{-2}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#1}\addtocounter{lbly}{3}
+        \put(\thecentx,\thecenty){\color{#3}\vector(0,-1){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centy}{2}}
+\newcommand{\oneri}[3]{% 1=sizeof-vector, 2=label, 3=color
+        \addtocounter{centx}{2}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}\addtocounter{lblx}{-5}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\color{#3}\vector(1,0){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centx}{-2}}
+\newcommand{\onele}[3]{% 1=sizeof-vector, 2=label, 3=color
+        \addtocounter{centx}{-2}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\color{#3}\vector(-1,0){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centx}{2}}
+
+\newcommand{\twoup}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
+        \addtocounter{centy}{2}
+        \put(\thecentx,\thecenty){\circle*{1}}
+%
+        \addtocounter{centx}{-5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-10}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#1}\addtocounter{lbly}{-5}
+        \put(\thecentx,\thecenty){\color{#3}\vector(0,1){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centx}{5}
+%
+        \addtocounter{centx}{5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#4}\addtocounter{lbly}{-5}
+        \put(\thecentx,\thecenty){\color{#6}\vector(0,1){#4}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-5}
+%
+        \addtocounter{centy}{-2}}
+\newcommand{\twodo}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
+        \addtocounter{centy}{-2}
+        \put(\thecentx,\thecenty){\circle*{1}}
+%
+        \addtocounter{centx}{-5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-10}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#1}\addtocounter{lbly}{3}
+        \put(\thecentx,\thecenty){\color{#3}\vector(0,-1){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centx}{5}
+%
+        \addtocounter{centx}{5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#4}\addtocounter{lbly}{3}
+        \put(\thecentx,\thecenty){\color{#6}\vector(0,-1){#4}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-5}
+%
+        \addtocounter{centy}{2}}
+\newcommand{\twori}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
+        \addtocounter{centx}{2}
+        \put(\thecentx,\thecenty){\circle*{1}}
+%
+        \addtocounter{centy}{5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}\addtocounter{lblx}{-5}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\color{#3}\vector(1,0){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centy}{-5}
+%
+        \addtocounter{centy}{-5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}\addtocounter{lblx}{-5}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-10}
+        \put(\thecentx,\thecenty){\color{#6}\vector(1,0){#4}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centy}{5}
+%
+        \addtocounter{centx}{-2}}
+\newcommand{\twole}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
+        \addtocounter{centx}{-2}
+        \put(\thecentx,\thecenty){\circle*{1}}
+%
+        \addtocounter{centy}{5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
+        \put(\thecentx,\thecenty){\color{#3}\vector(-1,0){#1}}
+        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
+        \addtocounter{centy}{-5}
+%
+        \addtocounter{centy}{-5}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}\addtocounter{lblx}{3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-10}
+        \put(\thecentx,\thecenty){\color{#6}\vector(-1,0){#4}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centy}{5}
+%
+        \addtocounter{centx}{2}}
+\newcommand{\oneur}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
+        \addtocounter{centx}{#3}
+        \addtocounter{centy}{#4}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}%\addtocounter{lblx}{#3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#2}%\addtocounter{lbly}{#4}
+        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-#3}
+        \addtocounter{centy}{-#4}}
+\newcommand{\oneul}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
+        \addtocounter{centx}{#3}
+        \addtocounter{centy}{#4}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}%\addtocounter{lblx}{#3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#2}%\addtocounter{lbly}{#4}
+        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-#3}
+        \addtocounter{centy}{-#4}}
+\newcommand{\onedl}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
+        \addtocounter{centx}{#3}
+        \addtocounter{centy}{#4}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}%\addtocounter{lblx}{#3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#2}\addtocounter{lbly}{#4}
+        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-#3}
+        \addtocounter{centy}{-#4}}
+\newcommand{\onedr}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
+        \addtocounter{centx}{#3}
+        \addtocounter{centy}{#4}
+        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}%\addtocounter{lblx}{#3}
+        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#2}\addtocounter{lbly}{#4}
+        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
+        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
+        \addtocounter{centx}{-#3}
+        \addtocounter{centy}{-#4}}
+
+
+<!-- ********************************************************************************************** -->
+<!-- %
+% PEOPLE AND PRONOUNS
+%
+% According to https://www.cdc.gov/nchs/fastats/body-measurements.htm
+% Measured average height, weight, and waist circumference for adults ages 20 years and over
+% Men:
+% Height (inches): 69.3                 = 1.760 m
+% Weight (pounds): 195.5                = 88.86 kg
+% Waist circumference (inches): 39.7    = 1.01 m
+% Women:
+% Height (inches): 63.8                 = 1.621 m
+% Weight (pounds): 166.2                = 75.55 kg
+% Waist circumference (inches): 37.5    = 0.9525 m
+% Source: Anthropometric Reference Data for Children and Adults: United States, 2007-2010, tables 4, 6, 10, 12, 19, 20[PDF - 1.7 MB]
+%  https://www.cdc.gov/nchs/data/series/sr_11/sr11_252.pdf
+%
+    -->
+\newcommand{\studentA}{Abdul}       \newcommand{\massA}{\mbox{$85.0\unit{kg}$}}
+\newcommand{\studentB}{Beth}        \newcommand{\massB}{\mbox{$75.0\unit{kg}$}}
+\newcommand{\studentC}{Carl}        \newcommand{\massC}{\mbox{$90.0\unit{kg}$}}
+\newcommand{\studentD}{Diane}       \newcommand{\massD}{\mbox{$80.0\unit{kg}$}}
+\newcommand{\studentE}{Erik}        \newcommand{\massE}{\mbox{$95.0\unit{kg}$}}
+\newcommand{\studentF}{Frances}       \newcommand{\massF}{\mbox{$85.0\unit{kg}$}}
+\newcommand{\studentX}{Xerxes}       \newcommand{\massX}{\mbox{$62.5\unit{kg}$}}
+\newcommand{\studentZ}{Zambert}     \newcommand{\massZ}{\mbox{$95.0\unit{kg}$}}
+<!-- Male -->
+\newcommand{\heA}{he}\newcommand{\himA}{him}\newcommand{\hisA}{his}\newcommand{\himselfA}{himself}
+\newcommand{\HeA}{He}\newcommand{\HimA}{Him}\newcommand{\HisA}{His}
+\newcommand{\heC}{he}\newcommand{\himC}{him}\newcommand{\hisC}{his}\newcommand{\himselfC}{himself}
+\newcommand{\HeC}{He}\newcommand{\HimC}{Him}\newcommand{\HisC}{His}
+\newcommand{\heE}{he}\newcommand{\himE}{him}\newcommand{\hisE}{his}\newcommand{\himselfE}{himself}
+\newcommand{\HeE}{He}\newcommand{\HimE}{Him}\newcommand{\HisE}{His}
+\newcommand{\heZ}{he}\newcommand{\himZ}{him}\newcommand{\hisZ}{his}\newcommand{\himselfZ}{himself}
+\newcommand{\HeZ}{He}\newcommand{\HimZ}{Him}\newcommand{\HisZ}{His}
+<!-- Female -->
+\newcommand{\heB}{she}\newcommand{\himB}{her}\newcommand{\hisB}{her}\newcommand{\himselfB}{herself}
+\newcommand{\HeB}{She}\newcommand{\HimB}{Her}\newcommand{\HisB}{Her}
+\newcommand{\heD}{she}\newcommand{\himD}{her}\newcommand{\hisD}{her}\newcommand{\himselfD}{herself}
+\newcommand{\HeD}{She}\newcommand{\HimD}{Her}\newcommand{\HisD}{Her}
+\newcommand{\heF}{she}\newcommand{\himF}{her}\newcommand{\hisF}{her}\newcommand{\himselfF}{herself}
+\newcommand{\HeF}{She}\newcommand{\HimF}{Her}\newcommand{\HisF}{Her}
+<!--  -->
+\newcommand{\heX}{\studentX}\newcommand{\himX}{\studentX}\newcommand{\hisX}{\studentX's}\newcommand{\himselfX}{the person of \studentX}
+\newcommand{\HeX}{\studentX}\newcommand{\HimX}{\studentX}\newcommand{\HisX}{\studentX's}
+<!-- ********************************************************************************************** -->
+
+        </macros>
+
+<!--
+        \usepackage{html,hmwk}
+        \usepackage{tikz}
+        -->
+        <latex-image-preamble>
+        \usepackage{color}
+        \usepackage{graphicx}
+        \usepackage{xpicture}
+        \usepackage{pgfplots}               % loads tikz package
+        \usepackage{smartdiagram}           % for a circular diagram
+        \pgfplotsset{axis x line = middle,
+                     axis y line = middle}
+        \usetikzlibrary{backgrounds}
+        \usetikzlibrary{arrows,matrix}
+
+        \usepackage{thmbox}
+        </latex-image-preamble>
+
+        <latex-preamble>
+<!--
+                <package>html</package>
+                <package>hmwk</package>
+                <package>color</package>
+                <package>graphicx</package>
+                <package>xpicture</package>
+                <package>thmbox</package>
+        -->
+                <package>xcolor</package>
+                <package>coordsys</package>
+                <package>cancel</package>
+        </latex-preamble>
+
+        <cross-references text="global" />
+<!--
+        <cross-references text="type-global" />
+        -->
+
+        <rename element="remark"        lang="en-US">Clarification</rename>
+        <rename element="note"          lang="en-US">Interpretation</rename>
+        <rename element="biographical" lang="en-US">Touchstone</rename>
+        <rename element="heuristic"     lang="en-US">Translation</rename>
+        <rename element="proposition" 	lang="en-US">Connection</rename>
+        <rename element="objectives" 	lang="en-US">Student Outcomes</rename>
+
+<!--
+        <feedback>
+                <url>mailto:christj@thomasmore.edu</url>
+        </feedback>
+-->
+
+    </docinfo>

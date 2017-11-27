@@ -1,516 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mathbook xml:lang="en-US">
+<!-- USE XINCLUDE SWITCH ON XSLTPROC -->
 
-    <docinfo>
-        <macros>
-        \newcommand{\JC}[1]{}
-        \newcommand{\unit}[1]{\,{\rm #1}}
-        \newcommand{\unitfrac}[2]{\mbox{$\phantom{1\!}^{{\rm #1}\!\!}/_{\!\!{\rm #2}}$}}
-        \newcommand{\sig}[3]{\mathbf{#1}{#2}\unit{#3}}
-        \newcommand{\sigfrac}[4]{\mathbf{#1}{#2}\unitfrac{#3}{#4}}
-        \newcommand{\ten}[1]{\times 10^{#1}}
-        \newcommand{\txtfrac}[2]{{}^{#1}\!/_{\!#2}}
-        \newcommand{\convert}[2]{\times\left(\frac{#1}{#2}\right)}
+<!-- Use XSL stylesheets to create subsets          -->
+<!--    Important: Always process all of the source -->
+<!--    to preserve numbering and cross-references! -->
+<!--    So it is never advisable to edit this file  -->
 
-        \newcommand{\deq}{\displaystyle}
+<!-- Note the use of the "xinclude" namespace in order to use multiple files -->
+<!-- Each included file must contain exactly one top-level element: such as a chapter or section -->
 
-        \newcommand{\ihat}{\hat i}
-        \newcommand{\jhat}{\hat j}
-        \newcommand{\khat}{\hat k}
-        \newcommand{\vect}[3]{#1 \ihat #2 \jhat #3 \khat}
-
-        \newcommand{\KE}{\mbox{KE}}
-        \newcommand{\PE}{\mbox{PE}}
-        \newcommand{\E}{\mbox{E}}
-
-        % make use of thmbox package
-        % \newtheorem[size]{environment name}[counter]{Actual title}
-        %TheoremLike (Theorem, corollary, claim, fact, identity, lemma, algorithm)
-        \newtheorem[S]{proposition}[theorem]{Connection}
-        %RemarkLike
-        \newtheorem[S]{insight}[theorem]{Insight}
-        \newtheorem[S]{warning}[theorem]{Warning}
-        \newtheorem[S]{observation}[theorem]{Observation}
-        \newtheorem[S]{note}[theorem]{Interpretation}
-        \newtheorem[M]{remark}[theorem]{Clarification}
-        \newtheorem[M]{convention}[theorem]{Convention}
-        %ExampleLike (problem, question)
-        \newtheorem[L]{example}[theorem]{Example}
-        %
-        \newtheorem[L]{exercise}[theorem]{Exercise}
-        %AxiomLike
-        \newtheorem[L]{heuristic}[theorem]{Translation}
-        %ProjectLike
-        \newtheorem[L]{exploration}[theorem]{Exploration}
-        \newtheorem[L]{investigation}[theorem]{Investigation}
-        \newtheorem[L]{activity}[theorem]{Activity}
-
-        \newcommand{\magdir}[7]{\begin{array}{lccl}
-                % x-comp, y-comp, mag label, mag, angle name, angle, angle-descriptor (North of East)
-                \text{Magnitude:} \amp \displaystyle #3 = \amp \displaystyle \sqrt{\left(#1\right)^2+\left(#2\right)^2} \amp = \displaystyle #4 \\[6pt]
-                \text{Direction:} \amp \displaystyle #5 = \amp \displaystyle \tan^{-1}\left( \frac{#2}{#1} \right) \amp = \displaystyle #6 \mbox{#7}
-                \end{array}}
-
-\newcounter{piclen}
-\newcounter{picwid}
-\newcounter{boxlen}
-\newcounter{boxwid}
-\newcounter{FBDlen}
-\newcounter{FBDwid}
-\newcounter{centx}
-\newcounter{centy}
-\newcounter{lblx}
-\newcounter{lbly}
-\newcommand{\drawbox}[4]{% 1=x-location of box, 2=y-location of box, 3=x-size of box, 4=y-size of box
-    \setcounter{boxlen}{#1}\addtocounter{boxlen}{#3}
-    \setcounter{boxwid}{#2}\addtocounter{boxwid}{#4}
-    \put(#1,#2){\line(1,0){#3}}
-    \put(#1,#2){\line(0,1){#4}}
-    \put(\theboxlen,\theboxwid){\line(-1,0){#3}}
-    \put(\theboxlen,\theboxwid){\line(0,-1){#4}} }
-
-\newenvironment{FBD}[5]% 1=half-x-size-box, 2=half-y-size-box, 3=x-lower-left, 4=y-lower-left; (3,4) also (x,y) space outside box, 5=label
-    {\setcounter{centx}{#3}\addtocounter{centx}{#1}
-    \setcounter{centy}{#4}\addtocounter{centy}{#2}
-    \setcounter{piclen}{\thecentx}\addtocounter{piclen}{\thecentx}
-    \setcounter{picwid}{\thecenty}\addtocounter{picwid}{\thecenty}
-    \setcounter{FBDlen}{#1}\addtocounter{FBDlen}{#1}
-    \setcounter{FBDwid}{#2}\addtocounter{FBDwid}{#2}
-    \setcounter{lbly}{#4}\addtocounter{lbly}{#2}\addtocounter{lbly}{#2}\addtocounter{lbly}{5}
-    \begin{center}\begin{picture}(\thepiclen,\thepicwid)
-    \put(#3,\thelbly){\setvlabel{$\scriptsize #5$}}
-    \drawbox{#3}{#4}{\theFBDlen}{\theFBDwid}}
-    {\end{picture}\end{center}}
-\newcommand{\oneup}[3]{% 1=sizeof-vector, 2=label, 3=color
-        \addtocounter{centy}{2}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#1}\addtocounter{lbly}{-5}
-        \put(\thecentx,\thecenty){\color{#3}\vector(0,1){#1}}
-        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
-        \addtocounter{centy}{-2}}
-\newcommand{\onedo}[3]{% 1=sizeof-vector, 2=label, 3=color
-        \addtocounter{centy}{-2}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#1}\addtocounter{lbly}{3}
-        \put(\thecentx,\thecenty){\color{#3}\vector(0,-1){#1}}
-        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
-        \addtocounter{centy}{2}}
-\newcommand{\oneri}[3]{% 1=sizeof-vector, 2=label, 3=color
-        \addtocounter{centx}{2}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}\addtocounter{lblx}{-5}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
-        \put(\thecentx,\thecenty){\color{#3}\vector(1,0){#1}}
-        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
-        \addtocounter{centx}{-2}}
-\newcommand{\onele}[3]{% 1=sizeof-vector, 2=label, 3=color
-        \addtocounter{centx}{-2}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}\addtocounter{lblx}{3}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
-        \put(\thecentx,\thecenty){\color{#3}\vector(-1,0){#1}}
-        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
-        \addtocounter{centx}{2}}
-
-\newcommand{\twoup}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
-        \addtocounter{centy}{2}
-        \put(\thecentx,\thecenty){\circle*{1}}
-%
-        \addtocounter{centx}{-5}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-10}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#1}\addtocounter{lbly}{-5}
-        \put(\thecentx,\thecenty){\color{#3}\vector(0,1){#1}}
-        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
-        \addtocounter{centx}{5}
-%
-        \addtocounter{centx}{5}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#4}\addtocounter{lbly}{-5}
-        \put(\thecentx,\thecenty){\color{#6}\vector(0,1){#4}}
-        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
-        \addtocounter{centx}{-5}
-%
-        \addtocounter{centy}{-2}}
-\newcommand{\twodo}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
-        \addtocounter{centy}{-2}
-        \put(\thecentx,\thecenty){\circle*{1}}
-%
-        \addtocounter{centx}{-5}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-10}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#1}\addtocounter{lbly}{3}
-        \put(\thecentx,\thecenty){\color{#3}\vector(0,-1){#1}}
-        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
-        \addtocounter{centx}{5}
-%
-        \addtocounter{centx}{5}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{3}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#4}\addtocounter{lbly}{3}
-        \put(\thecentx,\thecenty){\color{#6}\vector(0,-1){#4}}
-        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
-        \addtocounter{centx}{-5}
-%
-        \addtocounter{centy}{2}}
-\newcommand{\twori}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
-        \addtocounter{centx}{2}
-        \put(\thecentx,\thecenty){\circle*{1}}
-%
-        \addtocounter{centy}{5}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}\addtocounter{lblx}{-5}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
-        \put(\thecentx,\thecenty){\color{#3}\vector(1,0){#1}}
-        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
-        \addtocounter{centy}{-5}
-%
-        \addtocounter{centy}{-5}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}\addtocounter{lblx}{-5}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-10}
-        \put(\thecentx,\thecenty){\color{#6}\vector(1,0){#4}}
-        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
-        \addtocounter{centy}{5}
-%
-        \addtocounter{centx}{-2}}
-\newcommand{\twole}[6]{% 1=sizeof-vector, 2=label, 3=color, 4=sizeof-vector, 5=label, 6=color
-        \addtocounter{centx}{-2}
-        \put(\thecentx,\thecenty){\circle*{1}}
-%
-        \addtocounter{centy}{5}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}\addtocounter{lblx}{3}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{4}
-        \put(\thecentx,\thecenty){\color{#3}\vector(-1,0){#1}}
-        \put(\thelblx,\thelbly){\color{#3}\tiny #2}
-        \addtocounter{centy}{-5}
-%
-        \addtocounter{centy}{-5}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}\addtocounter{lblx}{3}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-10}
-        \put(\thecentx,\thecenty){\color{#6}\vector(-1,0){#4}}
-        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
-        \addtocounter{centy}{5}
-%
-        \addtocounter{centx}{2}}
-\newcommand{\oneur}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
-        \addtocounter{centx}{#3}
-        \addtocounter{centy}{#4}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}%\addtocounter{lblx}{#3}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#2}%\addtocounter{lbly}{#4}
-        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
-        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
-        \addtocounter{centx}{-#3}
-        \addtocounter{centy}{-#4}}
-\newcommand{\oneul}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
-        \addtocounter{centx}{#3}
-        \addtocounter{centy}{#4}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}%\addtocounter{lblx}{#3}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{#2}%\addtocounter{lbly}{#4}
-        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
-        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
-        \addtocounter{centx}{-#3}
-        \addtocounter{centy}{-#4}}
-\newcommand{\onedl}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
-        \addtocounter{centx}{#3}
-        \addtocounter{centy}{#4}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{-#1}%\addtocounter{lblx}{#3}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#2}\addtocounter{lbly}{#4}
-        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
-        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
-        \addtocounter{centx}{-#3}
-        \addtocounter{centy}{-#4}}
-\newcommand{\onedr}[6]{% 1=x-comp-of-sizeof-vector, 2=y-comp-of-sizeof-vector, 3=x-dir, 4=y-dir, 5=label, 6=color
-        \addtocounter{centx}{#3}
-        \addtocounter{centy}{#4}
-        \setcounter{lblx}{\thecentx}\addtocounter{lblx}{#1}%\addtocounter{lblx}{#3}
-        \setcounter{lbly}{\thecenty}\addtocounter{lbly}{-#2}\addtocounter{lbly}{#4}
-        \put(\thecentx,\thecenty){\color{#6}\vector(#3,#4){#1}}
-        \put(\thelblx,\thelbly){\color{#6}\tiny #5}
-        \addtocounter{centx}{-#3}
-        \addtocounter{centy}{-#4}}
-
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 
 <!-- ********************************************************************************************** -->
-<!-- %
-% PEOPLE AND PRONOUNS
-%
-% According to https://www.cdc.gov/nchs/fastats/body-measurements.htm
-% Measured average height, weight, and waist circumference for adults ages 20 years and over
-% Men:
-% Height (inches): 69.3                 = 1.760 m
-% Weight (pounds): 195.5                = 88.86 kg
-% Waist circumference (inches): 39.7    = 1.01 m
-% Women:
-% Height (inches): 63.8                 = 1.621 m
-% Weight (pounds): 166.2                = 75.55 kg
-% Waist circumference (inches): 37.5    = 0.9525 m
-% Source: Anthropometric Reference Data for Children and Adults: United States, 2007-2010, tables 4, 6, 10, 12, 19, 20[PDF - 1.7 MB]
-%  https://www.cdc.gov/nchs/data/series/sr_11/sr11_252.pdf
-%
-    -->
-\newcommand{\studentA}{Abdul}       \newcommand{\massA}{\mbox{$85.0\unit{kg}$}}
-\newcommand{\studentB}{Beth}        \newcommand{\massB}{\mbox{$75.0\unit{kg}$}}
-\newcommand{\studentC}{Carl}        \newcommand{\massC}{\mbox{$90.0\unit{kg}$}}
-\newcommand{\studentD}{Diane}       \newcommand{\massD}{\mbox{$80.0\unit{kg}$}}
-\newcommand{\studentE}{Erik}        \newcommand{\massE}{\mbox{$95.0\unit{kg}$}}
-\newcommand{\studentF}{Frances}       \newcommand{\massF}{\mbox{$85.0\unit{kg}$}}
-\newcommand{\studentX}{Xerxes}       \newcommand{\massX}{\mbox{$62.5\unit{kg}$}}
-\newcommand{\studentZ}{Zambert}     \newcommand{\massZ}{\mbox{$95.0\unit{kg}$}}
-<!-- Male -->
-\newcommand{\heA}{he}\newcommand{\himA}{him}\newcommand{\hisA}{his}\newcommand{\himselfA}{himself}
-\newcommand{\HeA}{He}\newcommand{\HimA}{Him}\newcommand{\HisA}{His}
-\newcommand{\heC}{he}\newcommand{\himC}{him}\newcommand{\hisC}{his}\newcommand{\himselfC}{himself}
-\newcommand{\HeC}{He}\newcommand{\HimC}{Him}\newcommand{\HisC}{His}
-\newcommand{\heE}{he}\newcommand{\himE}{him}\newcommand{\hisE}{his}\newcommand{\himselfE}{himself}
-\newcommand{\HeE}{He}\newcommand{\HimE}{Him}\newcommand{\HisE}{His}
-\newcommand{\heZ}{he}\newcommand{\himZ}{him}\newcommand{\hisZ}{his}\newcommand{\himselfZ}{himself}
-\newcommand{\HeZ}{He}\newcommand{\HimZ}{Him}\newcommand{\HisZ}{His}
-<!-- Female -->
-\newcommand{\heB}{she}\newcommand{\himB}{her}\newcommand{\hisB}{her}\newcommand{\himselfB}{herself}
-\newcommand{\HeB}{She}\newcommand{\HimB}{Her}\newcommand{\HisB}{Her}
-\newcommand{\heD}{she}\newcommand{\himD}{her}\newcommand{\hisD}{her}\newcommand{\himselfD}{herself}
-\newcommand{\HeD}{She}\newcommand{\HimD}{Her}\newcommand{\HisD}{Her}
-\newcommand{\heF}{she}\newcommand{\himF}{her}\newcommand{\hisF}{her}\newcommand{\himselfF}{herself}
-\newcommand{\HeF}{She}\newcommand{\HimF}{Her}\newcommand{\HisF}{Her}
-<!--  -->
-\newcommand{\heX}{\studentX}\newcommand{\himX}{\studentX}\newcommand{\hisX}{\studentX's}\newcommand{\himselfX}{the person of \studentX}
-\newcommand{\HeX}{\studentX}\newcommand{\HimX}{\studentX}\newcommand{\HisX}{\studentX's}
+    <xi:include href="./src/docinfoABIP.ptx" />
+    <!-- macros, scripts, included files, renamed elements -->
 <!-- ********************************************************************************************** -->
-
-        </macros>
-
-<!--
-        \usepackage{html,hmwk}
-        \usepackage{tikz}
-        -->
-        <latex-image-preamble>
-        \usepackage{color}
-        \usepackage{graphicx}
-        \usepackage{xpicture}
-        \usepackage{pgfplots}               % loads tikz package
-        \usepackage{smartdiagram}           % for a circular diagram
-        \pgfplotsset{axis x line = middle,
-                     axis y line = middle}
-        \usetikzlibrary{backgrounds}
-        \usetikzlibrary{arrows,matrix}
-
-        \usepackage{thmbox}
-        </latex-image-preamble>
-
-        <latex-preamble>
-<!--
-                <package>html</package>
-                <package>hmwk</package>
-                <package>color</package>
-                <package>graphicx</package>
-                <package>xpicture</package>
-                <package>thmbox</package>
-        -->
-                <package>xcolor</package>
-                <package>coordsys</package>
-                <package>cancel</package>
-        </latex-preamble>
-
-        <cross-references text="global" />
-<!--
-        <cross-references text="type-global" />
-        -->
-
-        <rename element="remark"        lang="en-US">Clarification</rename>
-        <rename element="note"          lang="en-US">Interpretation</rename>
-        <rename element="biographical" lang="en-US">Touchstone</rename>
-        <rename element="heuristic"     lang="en-US">Translation</rename>
-        <rename element="proposition" 	lang="en-US">Connection</rename>
-        <rename element="objectives" 	lang="en-US">Student Outcomes</rename>
-
-<!--
-        <feedback>
-                <url>mailto:christj@thomasmore.edu</url>
-        </feedback>
--->
-
-    </docinfo>
 
     <book xml:id="Connected">
         <title>Physics Connected</title>
         <subtitle>Learn like you think <mdash /> an interconnected view of algebra-based physics</subtitle>
 
-<frontmatter xml:id="index"> <!-- xmlns:xi="http://www.w3.org/2001/XInclude" -->
+<!-- ********************************************************************************************** -->
+    <xi:include href="./src/frontmatterABIP.ptx" />
+    <!-- titlepage, colophon (license), acknowledgements, preface -->
+<!-- ********************************************************************************************** -->
 
-    <titlepage>
-
-        <author>
-            <personname>Joe Christensen</personname>
-            <department>Department of Physics and Mathematics</department>
-            <institution>
-                <line>Thomas More College</line>
-                <line>Crestview Hills, KY</line>
-            </institution>
-            <email>ChristJ@ThomasMore.edu</email>
-        </author>
-
-        <credit>
-            <title>Credit for MathBookXML / <pretext /> format:</title>
-            <author>
-                <personname>Robert A. Beezer</personname>
-<!--
-                <department></institution>
-                <email>beezer@pugetsound.edu</email>
--->
-            </author>
-        </credit>
-
-        <date>Compiled: <timeofday />, <today /> </date>
-
-    </titlepage>
-
-    <colophon>
-
-        <edition>Draft Edition 2017</edition>
-
-        <website>
-            <name><c>TMC Physics</c></name>
-            <address>http://www.thomasmore.edu/physics/</address>
-        </website>
-
-        <copyright>
-            <year>2017<ndash />2018</year>
-            <holder>J. Christensen</holder>
-            <shortlicense>
-                <!-- To ignore this Known tag abuse 2, keep it all on the same line --> <p><url rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><image alt="Creative Commons License" style="border-width:0" source="images/creativecommons-by-sa-4-0-88x31.jpg" width="15%" /></url>  <em><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Physics Connected: Learn like you think -- an interconnected view of algebra-based physics</span></em> by <url xmlns:cc="http://creativecommons.org/ns#" href="http://physics.thomasmore.edu/ConnectedPhysics/" property="cc:attributionName" rel="cc:attributionURL">Joe Christensen</url> is licensed under a <url rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</url>.</p><p>Permissions beyond the scope of this license may be available by contacting the author at <url xmlns:cc="http://creativecommons.org/ns#" href="http://www.thomasmore.edu/physics/faculty.cfm?id=487" rel="cc:morePermissions">http://www.thomasmore.edu/physics/faculty.cfm?id=487</url>.</p>
-            </shortlicense>
-        </copyright>
-
-    </colophon>
-
-    <!-- A section of its own in HTML, migrates to copyright-page in LaTeX -->
-    <!-- Titles are optional, presumably none for single author,           -->
-    <!-- or for every author, even if we test a mix here                   -->
-    <biography>
-    <!-- I've done this as a single section, but we can have a <biography> for each person -->
-        <title>About the Author</title>
-
-        <blockquote>
-                <p><alert>Joe Christensen</alert>
-                <ul label="circle"><li><p>B.S.  <url href="https://www.bradley.edu/academic/departments/math/">Mathematics</url> and <url href="https://www.bradley.edu/academic/departments/physics/">Physics</url>, <url href="https://www.bradley.edu/">Bradley University</url>, Peoria, IL (1990)</p></li>
-                        <li><p>Ph.D. <url href="https://pa.as.uky.edu/">Physics</url>, <url href="http://www.uky.edu/UKHome/">University of Kentucky</url>, Lexington, KY (1997)</p></li>
-                        <li><p>Taught for three terms at <url href="https://www.centre.edu/">Centre College</url>, Danville, KY (1998-1999)</p></li>
-                        <li><p>Taught for eight years in the <url href="https://sites.google.com/site/mcmurryphysicsdepartment/">physics department</url> at <url href="http://ww2.mcm.edu/">McMurry University</url>, Abilene, TX (1999-2007)</p></li>
-                        <li><p>Has been teaching in the <url href="http://www.thomasmore.edu/physics/">physics department</url> at <url href="http://www.thomasmore.edu/">Thomas More College</url>, Crestview Hills, KY (since 2007)</p></li>
-                </ul></p>
-        </blockquote>
-
-    </biography>
-
-    <acknowledgement xml:id="general-fall-ack">
-
-        <p>I would like to thank Thomas More College for granting me a sabbatical in the Fall of 2017 to begin this project.</p>
-
-        <p>I would also like to thank
-        Robert A. Beezer (Department of Mathematics and Computer Science, University of Puget Sound) and
-        David Farmer (American Institute of Mathematics) for their hard work and guidance with the
-        <url href="http://mathbook.pugetsound.edu/">MathBookXML / <pretext /></url> format; and
-        Robert Riehemann (Thomas More College, Crestview Hills, KY) for telling me about their existence.</p>
-
-    </acknowledgement>
-
-    <preface>
-
-        <p>This text is intended for a one or two-semester undergraduate course in introductory algebra-based physics. </p>
-
-        <p>The purpose of creating this book is to make better use of the technology that electronic texts allow for without losing the
-        functionality of a print book.  While this text should be comparable to any other print text, when this is provided in the online
-        format it will provide links back and forth between early and later topics.  Linking from later material to earlier material will
-        allow students to refresh their memory of what was previously discussed.  Linking from earlier material to later material will
-        inspire students to look ahead to how that topic will be used in more interesting scenarios. </p>
-
-        <p>Having these links will allow for some other interesting features that can be placed in the back of the book and accessed
-        through links.  Examples of this might be:
-        <ol>
-            <li><p> <q>Dig Deeper</q> where some of the more tedious and some of the more interesting aspects can be investigated. For
-            example in <xref ref="c-motion"  /> on the equations of motion, one might see how these equations are direct applications of calculus
-            for those students who happen to have taken that course (which is common for biology and pre-medical students). </p></li>
-
-            <li><p> <q>Every Equation Tells a Story</q> which discusses how the description-in-English and the description-with-math
-            interrelate to build intuition in both directions. </p></li>
-
-            <li><p> <q>Examples</q>, with the difference from a traditional textbook being that students can interact with the example as:
-            <q>If you have this question, then go here. If you have that question, then go there.</q> </p></li>
-
-            <li><p> <q>In the <lsq/>Real World<rsq/></q> where students see how the concept lives in the messy real world and why
-            physicists simplify or ignore complicating aspects. 
-                <ol>
-                    <li><p>Explorations ask the reader to imagine a situation that describes the real world and possibly make choices that result in different consequences.</p></li>
-                    <li><p>Investigations ask the reader to do (or think about doing) specific actions that need to be done outside or might in some way be accessible to some people, like riding a merry-go-round, driving a car, or rearranging large pieces of furniture.</p></li>
-                    <li><p>Activities ask the reader to do small table-top scale activities that could be considered mini-lab exercises and have a more specific procedure associated with them.</p></li>
-                </ol></p></li>
-
-            <li><p> <q>Connections</q>, which might take one of three forms:
-            <ol>
-                <li><p> <em>Looking Back</em> which links back to earlier material to address the question <q>Where have I seen this before?</q></p></li>
-
-                <li><p> <em>Looking Ahead</em> which links ahead to later material to address the question <q>When will I ever use this?</q> </p></li>
-
-                <li><p> <em>In Detail</em> which links to popular or complex topics to address the question <q>Why is this interesting?</q> </p></li>
-            </ol></p></li>
-        </ol>
-        </p>
-
-        <todo>storyboard the characters and how they develop</todo>
-        <p>The goal of the book is to encourage curiosity in the reader. Since there is an expectation that students will explore the
-        material on their own, advanced topics will explicitly note where the reader can look for supporting material and basic topics will
-        be motivated with links to more advanced topics.  To help maintain the interest of the reader, recurring characters will be
-        featured in the examples.  These characters will live a storyline and
-        interact with each other.  It is possible to read the examples as a separate storyline for the N interacting characters. </p>
-        <todo>Decide how many characters</todo>
-
-        <p>I am choosing the approach described above based on the assumption that students will prefer to develop their knowledge by
-        building a world-view that connects to their current understanding, their interests, and their world-view. Providing the
-        cross-referencing links without distracting students with all of the information at once will enable them to explore the
-        information. Writing the text in a narrative style that helps students see the explanations for the world they live in will
-        encourage them to explore <q>what happens when I do this</q> in their real life. Fostering this spirit of exploration will enable
-        the instructors to bring their own active-learning techniques into the classroom. </p>
-
-        <p>Some features that are not dissimilar to other textbooks:
-                <ol>
-                    <li><p>Warnings (should this be Cautions?) make the reader aware of possible misconceptions or inappropriate associations.  [This is the <q>don't do this</q> or <q>do this to prevent bad consequences</q> in contrast to Insights.]</p></li>
-                    <li><p>Insights make the reader aware of helpful associations.  [This is the <q>do this to enable positive consequences</q> in contrast to Warnings.] </p></li>
-                    <li><p>Conventions specify how notation or terminology should be used. [This is the <q>that</q> to Clarification's <q>which</q>.]</p></li>
-                    <li><p>Clarifications clarify how notation or terminology should be used. [This is the <q>which</q> to Convention's <q>that</q>.]</p></li>
-                    <li><p>Observations help the reader to use observations about the world around them to better understand (give context to) the physics being discussed.</p></li>
-                    <li><p>Interpretations help the reader use the physics being discussed to better understand their observations about the world around them.</p></li>
-                </ol>
-        </p>
-
-        <todo>(em)Book Layout:(/em) Here we should add information about Adventures, Examples, Equation-Stories, and IRLs.</todo>
-        <p>This textbook is in several Parts:  <em><xref ref="P-prerequisites"  text="type-global" /></em> is for the preliminaries, including descriptions of science in general, physics in
-        particular, and the use of math.  <em><xref ref="P-IntroMFE"  text="type-global" /></em> is intended to introduce three fundamental and powerful concepts.  These
-        concepts are motion, force, and energy.  I have found that if a student can understand these ideas sufficiently well, then they can
-        quickly pick up any other idea that we introduce, even if the idea seems initially unfamiliar.  <em><xref ref="P-UsingMFE"  text="type-global" /></em> develops the
-        ideas in <xref ref="P-IntroMFE"  text="type-global" /> by introducing momentum, circular motion, rotational motion, torque, and the Newtonian theory of gravitation.
-        <em><xref ref="P-oscillations" text="global">Parts</xref> and <xref ref="P-thermodynamics" text="global"/></em>  are oscillations and thermodynamics.  With the traditional organization of the two-semester
-        introductory physics, these parts can be covered in either order and can be chosen to be put in either semester. <em><xref ref="P-EandM"  text="type-global" /></em>
-        covers electricity, magnetism, light, and optics.  This is traditionally the meat of the second semester. <em><xref ref="P-modern"  text="type-global" /></em>
-        touches on the topics that are usually referred to as <q>modern physics</q>.  The goal with including these chapters is to provide
-        some inspiration for what some students see as the tedium of the standard material.  These chapters will be linked to throughout
-        the book as examples of how the traditional material supports the material that may be in the news and is more talked about in
-        popular science.  The last final part, <em><xref ref="P-supplements"  text="type-global" /></em>, holds the answers to the interactive examples mentioned above, the bulk
-        of the adventures the reader can investigate in order to test their understanding of the material, and the story lines of each of
-        the characters in the text. </p>
-
-        <blockquote xml:id="ss-PDF-view">
-            <p><alert>A note about viewing the PDF online:</alert>
-            If you are viewing this as a PDF set to view <q>single page,</q> then the links will take you to the top of the relevant
-            page, rather than to the specific topic.  If, on the other hand, you are viewing this in <q>continuous view</q> then you should
-            go directly to the location of interest. If you are viewing this in <q>two-page</q> mode (whether continuous or not), it might
-            not be immediately obvious to which page (left or right) you have jumped.  Most of the PDF viewers I have encountered allow you
-            to follow links and to return to your previous location.  On most PCs, the way to return to your previous location is by
-            holding the <c>ctrl</c> key and pressing the <m>[\leftarrow]</m> (<c>Left-Arrow</c>) button.  There are a few PDF viewers that do not
-            allow you to <q>go back</q> to the location you linked from.  Whether or not you have that capability, I have placed <q>return
-            links</q> in the margins so that you can get back to the place from which you linked. </p>
-        </blockquote>
-
-    </preface>
-
-</frontmatter>
 
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
+<!--    <xi:include href="./src/part-prerequisites.ptx" />  -->
+    <!-- Motion, Force, Energy -->
 
 <part xml:id="P-prerequisites"><title>Prerequisites</title>
         <introduction>
@@ -539,7 +59,7 @@
         <p>Physicists, in particular, consider the patterns in the physical world around us.</p>
         <todo>Add description of physics</todo>
 
-        <p xml:id="d-physicspatterns">Some patterns that you might experience help us take very different experiences and group them together.  For example, there are ways in which <xref ref="d-freefall" text="title">dropping your keys</xref> and <xref ref="d-ballistic" text="title">throwing a dog toy</xref> are very similar.  They both fall, even thought the fall along rather different paths.  There are also patterns that you experience that might look very similar but can be treated very differently.  For example, the path of baseball pitch (See <xref ref="irl-nonparabolic"  text="type-global" />.) is very different for a fast ball compared to a slider, a curve ball, or a knuckleball.</p>
+        <p xml:id="d-physicspatterns">Some patterns that you might experience help us take very different experiences and group them together.  For example, there are ways in which <xref ref="d-freefall" text="title">dropping your keys</xref> and <xref ref="d-ballistic" text="title">throwing a dog toy</xref> are very similar.  They both fall, even though the fall along rather different paths.  There are also patterns that you experience that might look very similar but can be treated very differently.  For example, the path of baseball pitch (See <xref ref="irl-nonparabolic"  text="type-global" />.) is very different for a fast ball compared to a slider, a curve ball, or a knuckleball.</p>
 
 <!--                 <assemblage>  -->
                 <figure xml:id="f-BoonePark">
@@ -609,7 +129,7 @@
         <todo>This chapter should mirror (xref ref="c-revisted"  text="type-global" /)</todo>
         <p>What you will find in this book is a series of chapters that, on the surface, feel like a list of isolated topics.  Each chapter will have examples that focus your attention on examples of that specific concept.  However, the really interesting aspect of physics is that these descriptions of the world around us come together in different ways to explain complex systems that might feel unrelated.  For example, the thermodynamics of making your refrigerator work on Earth comes from the same theories of thermodynamics that help us understand the heat flow of the sun.  Furthermore, in order to understand the sun, we also need to understand the gravitational interaction, which also describes how baseballs fly through the air.</p>
 
-        <p>This chapter will introduce a set of quick-overview explanations of phenomena to indicate how different ideas tie together in some complex systems.  The point  is specifically to over-simplify complex ideas in order to <q>get the idea</q>.  You will also be pointed to the various chapters that go into the details of the relevant physics where you can learn more.  Then, at the end of the book in <xref ref="c-revisted"  text="type-global" />, we will revisit each of these ideas and go into the description in more depth assuming you have understood each of the relevant chapters, with reference back to the sections that provide the basis of our understanding.</p>
+        <p>This chapter will introduce a set of quick-overview explanations of phenomena to indicate how different ideas tie together in some complex systems.  The point  is specifically to over-simplify complex ideas in order to <q>get the idea</q>.  You will also be pointed to the various chapters that go into the details of the relevant physics where you can learn more.  Then, at the end of the book in <xref ref="c-revisted" text="type-global" />, we will revisit each of these ideas and go into the description in more depth assuming you have understood each of the relevant chapters, with reference back to the sections that provide the basis of our understanding.</p>
 
                 <warning> <p>Since this particular chapter is intended to be background introduction, rather than a place to study details, none of the links to other sections here will have return links in the rest of the text.  So, if you intend to use this as a jumping off point, you might want to create a bookmark here so that you can return after you read the details in other sections.</p></warning>
 
@@ -966,8 +486,8 @@
                         </md>
                         For the second line, you need to convert the units:
                         <me> 1 \unit{in} + 1 \unit{ft} = 1 \unit{in} + 1 \unit{ft}\convert{12\unit{in}}{1\unit{ft}} = 1 \unit{in} + 12 \unit{in} = 13\unit{in} </me>
-                        because we need to be speaking about the same thing.  You have all had the experience of a miscommunication when you thought you were speaking about the same thing, but later found out you each meant something different.
-                        </p>
+			because we need to be speaking about the same thing.  You have all had the experience of a miscommunication when you thought you were speaking about the same thing, but later found out you each meant something different.
+			</p>
                         <warning><title>Clarify your intent</title><p>You should always include every unit on every number throughout your entire math solution.  This will help you ensure that the units are self-consistent and will occasionally help you either recognize which algebraic step to take next or even which equation to use in the first place.</p></warning>
                         <p>After introducing some of the essential metric units here, we will build some intuition by considering how to convert from your likely more familiar English units in <xref ref="ss-convertunits" text="type-local" /> and then build these fundamental units into the broader derived units that help express the relationships between interesting quantities in <xref ref="ss-units" text="type-local" />.</p>
 
@@ -1017,7 +537,7 @@
                         </p>
                         </aside>
 
-                <p>Note internet search comments in <xref ref="ss-weightmass"  text="type-global" /> regarding the <q>conversion</q> of kilograms-to-pounds, with special attention to (See <xref ref="s-sigfig"  text="type-global">significant digits</xref>.).<idx>significant digits</idx></p>
+                <p>Note internet search comments in <xref ref="ss-weightmass"  text="type-global" /> regarding the <q>conversion</q> of kilograms-to-pounds, with special attention to (See <xref ref="s-sigfig" text="type-global">significant digits</xref>.).<idx>significant digits</idx></p>
                 <todo>rephrase this.  I moved that discussion to (xref ref="s-sigfig"  text="type-global" /).</todo>
 
                 <p>A cooking website that nicely distinguishes weight from volume (ounce!):
@@ -1083,8 +603,8 @@
                 </aside>
                 <p xml:id="p-pressure">Having defined the Newton, we can also define the Pascal.  Describe force as a straightforward intuitive, visceral quantity.  Example of pressure (same force tip of pencil versus erasure of pencil) and define unit.
                 <men xml:id="eq-pressure">P = F/A \hspace{1cm} F = PA</men>
-                This will be used in <xref ref="d-friction-area" text="title">friction</xref>, <xref ref="s-pressure" text="title">fluids</xref>, and <xref ref="ss-barometrics" text="title">thermodynamics</xref>.
-                </p>
+		This will be used in <xref ref="d-friction-area" text="title">friction</xref>, <xref ref="s-pressure" text="title">fluids</xref>, and <xref ref="ss-barometrics" text="title">thermodynamics</xref>.
+		</p>
                 <p>Do a Story Of for pressure, force, and area.  Maybe reference an example of calculating the weight of the car or using the weight of the car to find the area of the tires... Note a flat tire covers more area.</p>
                 <p>Also make note that when you are on crutches in soft dirt or mud, you sink in deeper than when you have your whole foot to support you.  This is relevant to the discussion of <xref ref="p-friction-walking" text="title">how we walk</xref>.</p>
                 </paragraphs>
@@ -1329,9 +849,9 @@
                         <mrow> A_y \amp = 3 B_y </mrow>
                         <mrow> A_z \amp = 3 B_z </mrow>
                         </mdn>
-                        This can also be written in two different ways:
-                        <m> \vect{A_x}{+A_y}{+A_z} \ = \ 3 \left( \vect{B_x}{+B_y}{+B_z} \right) \ = \ \vect{(3B_x)}{+(3B_y)}{+(3B_z)} </m>
-                        </p>
+			This can also be written in two different ways: 
+			<m> \vect{A_x}{+A_y}{+A_z} \ = \ 3 \left( \vect{B_x}{+B_y}{+B_z} \right) \ = \ \vect{(3B_x)}{+(3B_y)}{+(3B_z)} </m>
+			</p>
 
                         <proposition><title>Looking Ahead</title>
                         <p>This will be useful when we are discussing <xref ref="ss-ballistic"  text="title">ballistics</xref> (2-dimensional motion), <xref ref="ss-NII"  text="title">Newton's second law</xref> (combining multiple forces pushing on an object), <xref ref="s-2Dcollisions"  text="title">2-dimensional collisions</xref>, and the calculation of <xref ref="ss-Efield"  text="title">electrical fields</xref>.</p>
@@ -1429,8 +949,8 @@
         <q><xref ref="ss-convertunits" text="title">conversion</xref></q> of kilograms-to-pounds.<idx>significant digits</idx></p>
 
         <todo>Refocus this paragraph as an \textbf{example} about significant digits.</todo>
-        <p>A short Google<trademark /> search by the author found that the conversation rate between pounds and kilograms was
-        <m>1 \unit{kg} = 2.2046226218 \unit{lbs}</m>.  Several sites go on to list about 10 decimal places for all of the conversions.  First, you should recall our discussion about <xref ref="s-sigfig" text="title">significant digits</xref><idx>Significant Digits</idx>.
+	<p>A short Google<trademark /> search by the author found that the conversation rate between pounds and kilograms was 
+	<m>1 \unit{kg} = 2.2046226218 \unit{lbs}</m>.  Several sites go on to list about 10 decimal places for all of the conversions.  First, you should recall our discussion about <xref ref="s-sigfig" text="title">significant digits</xref><idx>Significant Digits</idx>.
         <!-- \new{v2.2}{moved this conversation here.} -->
         Second you should note that the unit of pounds is a measure of force (how much the Earth pulls on you)<idx>weight</idx>, whereas the unit of kilogram is a measure of mass (how much <q>stuff</q> there is)<idx>mass</idx>.  These are related in proportion to the strength of the gravitational field, which varies in the third digit (on the order of about 1<percent />) around the globe.  Some sites indicate that they are shortening their conversion factor to 3 digits for convenience, but this is not an issue of convenience, it is an issue of precision<idx>precision</idx>.</p>
         <todo>Add link: variation in $g$</todo>
@@ -1497,9 +1017,12 @@
 </chapter>
 
 <!-- ********************************************************************************************** -->
+
+
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
-<!-- ********************************************************************************************** -->
+<!--    <xi:include href="./src/part-introMFE.ptx" /> -->
+    <!-- Motion, Force, Energy -->
 
 <part xml:id="P-IntroMFE"><title>Introducing Motion, Force, and Energy</title>
         <introduction>
@@ -1777,12 +1300,12 @@
                                         </md></p>
                                 </hint>
                                 <answer>
-                                        <p>So, if you start at <m>55.0\unitfrac{mi}{hr} - 27.8\unitfrac{mi}{hr} = \sigfrac{27.1}{6}{mi}{hr}</m>
-                                        you should make it exactly.</p>
+					<p>So, if you start at <m>55.0\unitfrac{mi}{hr} - 27.8\unitfrac{mi}{hr} = \sigfrac{27.1}{6}{mi}{hr}</m>
+					you should make it exactly.</p>
                                 </answer>
                                 <solution>
-                                        <p>[This example is not done, but the work will result in the following numbers:
-                                        With <m>a=-500\unitfrac{mi}{hr^2}</m>,
+					<p>[This example is not done, but the work will result in the following numbers:
+					With <m>a=-500\unitfrac{mi}{hr^2}</m>,
                                         you can find, for <m>v_f=0\unitfrac ms</m>,
                                                 that <m>t=6.6\unit{min}</m> and <m>\Delta x = 3.025\unit{mi}</m>.
                                         You clearly make it to the gas station.
@@ -2247,8 +1770,8 @@
                                         <sidebyside widths="50% 50%">
                                                 <p></p>
                                                 <tabular halign="right"><col width="100%" /><row><cell halign="right">
-                                                        <p>Return to: <xref ref="d-physicspatterns" text="title">the description of physics</xref>, <xref ref="ss-ballisticairresistance" /></p>
-                                                </cell></row></tabular>
+							<p>Return to: <xref ref="d-physicspatterns" text="title">the description of physics</xref>, <xref ref="ss-ballisticairresistance" /></p>
+						</cell></row></tabular>
                                         </sidebyside>
                                 </conclusion>
 
@@ -2310,8 +1833,8 @@
 
                 <aside><title>Insight referenced by</title> <p>The answers in <xref ref="ex-friction-mouse" text="type-global" />.</p></aside>
                 <insight xml:id="insight-force-interaction">
-                        <p>You can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.
-                        Forces are <em>necessarily</em> an interaction<idx>interaction</idx><idx><h>force</h><h>interaction</h></idx> between two objects.</p>
+			<p>You can't have a push or pull without <em>both</em> a thing that pushes or pulls <em>and</em> a thing that is pushed or pulled.
+			Forces are <em>necessarily</em> an interaction<idx>interaction</idx><idx><h>force</h><h>interaction</h></idx> between two objects.</p>
                 </insight>
                 <remark><title>Push or Pull</title>
                         <p>By now you may have noticed that it is tedious to keep saying <q>pushed or pulled,</q> so we will only say <q>push</q> even when we are including the possibility of <q>pushing or pulling</q>.</p>
@@ -2327,8 +1850,8 @@
                         <li><p> There was a force <term>on</term> \studentA\ <term>by</term> \studentB.</p></li>
                 </ul>
                 The notation for this will be <m>F_{A,B}</m> where the first subscript is the person who felt the force (who the force is <q>on</q>) and the second subscript is who exerted the force (who the force is <q>by</q>).  In those instances when we only care about who is feeling the force and not who is exerting the force, we might just use one subscript <m>F_A</m>.  </p>
-                <p>In some cases, there may be two forces acting on one person (or object).  In that case, it will be obvious who is feeling the force and we will use the subscript to distinguish which force it is <em>in addition to</em> who feels the force, such as <m>F_{A1}</m> and <m>F_{A2}</m>, or <em>rather than</em> who feels the force, such as <m>F_1</m> and <m>F_2</m>.
-                This will be more relevant when we discuss in <xref ref="c-forcetype" text="type-global"/> the types of forces that might be applied.  <xref ref="conv-on-by-type" text="type-global" /> will expand this notation.</p>
+		<p>In some cases, there may be two forces acting on one person (or object).  In that case, it will be obvious who is feeling the force and we will use the subscript to distinguish which force it is <em>in addition to</em> who feels the force, such as <m>F_{A1}</m> and <m>F_{A2}</m>, or <em>rather than</em> who feels the force, such as <m>F_1</m> and <m>F_2</m>.
+		This will be more relevant when we discuss in <xref ref="c-forcetype" text="type-global"/> the types of forces that might be applied.  <xref ref="conv-on-by-type" text="type-global" /> will expand this notation.</p>
                 </convention>
 
                 <biographical><title>Touchstone (law)</title><p>Recall the distinction between <xref ref="s-law" text="title" />.</p></biographical>
@@ -2373,8 +1896,8 @@
         <remark xml:id="d-NewtonInertial"><title>Inertial Reference Frame</title>
                 <p>Being in an inertial <xref ref="def-referenceframe" text="title">reference frame</xref><idx><h>reference frames</h><h>inertial</h></idx> essentially means being in a place in which you do not have to hold on in order to maintain your position.</p>
                 <p>If you are <xref ref="d-acc" text="title">accelerating</xref> then you are not in an inertial reference frame, but rather are in a non-inertial reference frame.  In this case, you will misinterpret the forces acting.  This will be discussed in more detail in <xref ref="s-noninertial" text="type-global" /> when we discuss the surface of the Earth as a non-inertial rotating reference frame.  The fact that the Earth spins will be relevant for global-sized systems, such as the atmosphere and the ocean (discussed in <xref ref="ss-coriolis" text="type-global" /> with the Coriolis effect).</p>
-                <p>For human-sized interactions, the effect of the Earth spinning is small enough that for most of what we <xref ref="d-casual" text="title">casually observe</xref>, we can safely pretend that the Earth is stationary and that we are actually at rest while sitting on the curb watching the world go by.  This is so true that our human brains already interpret everything around us as though it were an inertial reference frame.  This psychological perspective is exactly the feature that both allows us to make fairly reliable predictions about the world around us <em>and</em> causes us to make incorrect judgements when we encounter human-sized non-inertial reference frames.  That is to say, as long as we don't measure our world too closely, we are viewing it from an essentially inertial reference frame.  This point is so implicit, that many books do not even include<fn xml:id="f-Newtoninclude">Newton himself did not include it in his original statement.</fn>
-                the portion of the statement referring to the reference frame.</p>
+		<p>For human-sized interactions, the effect of the Earth spinning is small enough that for most of what we <xref ref="d-casual" text="title">casually observe</xref>, we can safely pretend that the Earth is stationary and that we are actually at rest while sitting on the curb watching the world go by.  This is so true that our human brains already interpret everything around us as though it were an inertial reference frame.  This psychological perspective is exactly the feature that both allows us to make fairly reliable predictions about the world around us <em>and</em> causes us to make incorrect judgements when we encounter human-sized non-inertial reference frames.  That is to say, as long as we don't measure our world too closely, we are viewing it from an essentially inertial reference frame.  This point is so implicit, that many books do not even include<fn xml:id="f-Newtoninclude">Newton himself did not include it in his original statement.</fn>
+		the portion of the statement referring to the reference frame.</p>
                 <todo>check the implications of this footnote.</todo>
         </remark>
                 <biographical><title>Touchstone (mostly true)</title><p>Recall <xref ref="s-effective2" text="title">effective theories</xref>.  Standing on the surface of the Earth provides an essentially-inertial reference frame.</p></biographical>
@@ -3043,7 +2566,8 @@
                                 <p>If the forces in <xref ref="se-netFsub" text="type-global" /> are applied to an object with unknown mass and produce an acceleration of <m>3.2\unitfrac{m}{s^2}</m>, then what is the mass of the object?</p>
                         </statement>
                         <solution>
-                                <p>Naively, one might consider <m>\deq m = \frac{\vec F_\mathrm{net}}{\vec a}</m>, but it does not make mathematical sense to <xref ref="d-dividevectors" text="title">divide vectors</xref>.  In this case, you <em>must</em> consider the magnitudes of force and acceleration, knowing that their directions are the same. (We are <em>not</em> <q>cancelling</q> the directions.)
+                                <p>Naively, one might consider <m>\deq m = \frac{\vec F_\mathrm{net}}{\vec a}</m>, but it does not make mathematical sense to <xref ref="d-dividevectors" text="title">divide vectors</xref>.
+                                In this case, you <em>must</em> consider the magnitudes of force and acceleration, knowing that their directions are the same. (We are <em>not</em> <q>cancelling</q> the directions.)
                                 <me>
                                         m =\frac{F_\mathrm{net}}{a} = \frac{9.0\unit N}{3.2 \unitfrac{m}{s^2}} = \sigfrac{2.8}{1}{N \cdot s^2}{m} = 2.8\unitfrac{kg \cdot m \cdot s^2}{s^2 \cdot m} \ = \ 2.8 \unit{kg}
                                 </me>
@@ -3137,7 +2661,7 @@
                                         <alert>The end!</alert></p>
                                 </answer>
                                 <answer xml:id="a-NIresult">
-                                        <p>During the discussion, you and \studentB<idx><h sortby="\studentB">\studentB</h></idx> realize that the rolling wheels and the spinning axel are still connected to the not-spinning frame of the car.  While this causes less friction than if the car were in drive, there is still some friction, which dissipates energy and, more importantly, exerts a backwards force on the spinning wheels.  Your car is not being described by Newton's First Law, which requires there to be no force applied.  Instead your car is being described by Newton's Second Law and the force is changing the velocity to cause you to go slower.  You finish getting gas and drive on to many happy adventures.
+					<p>During the discussion, you and \studentB<idx><h sortby="\studentB">\studentB</h></idx> realize that the rolling wheels and the spinning axel are still connected to the not-spinning frame of the car.  While this causes less friction than if the car were in drive, there is still some friction, which dissipates energy and, more importantly, exerts a backwards force on the spinning wheels.  Your car is not being described by Newton's First Law, which requires there to be no force applied.  Instead your car is being described by Newton's Second Law and the force is changing the velocity to cause you to go slower.  You finish getting gas and drive on to many happy adventures.
                                         <alert>The end!</alert></p>
                                 </answer>
                                 <answer xml:id="a-nogas2">
@@ -3228,8 +2752,7 @@
                                 <todo>
                                         As before, make this object a desk so that we can have \studentA\ and \studentB\ helping you rearrange your room in your residence hall.  (Change the mass!  But, it is still nice to be moving a small mass so that it has a large acc, and the people have small acc.)
                                 </todo>
-                                <p>Let's reconsider <xref ref="se-netFadd" text="type-global" />
-                                and imagine that \studentA<idx><h sortby="\studentA">\studentA</h></idx> stands to the left of the object and exerts a force to the right (pushes) with magnitude <m>\vec F_1 = +5.0\unit{N}\ihat</m> and that \studentB<idx><h sortby="\studentB">\studentB</h></idx> stands to the right of the object and exerts a force to the right (pulls) with magnitude <m>\vec F_2 = +4.0\unit{N}\ihat</m>, as drawn in <xref ref="f1-firstFBD" text="type-global" />.  Both of these forces are <em>on</em> the object and, by <xref ref="as-NII" text="title">Newton's second law</xref> cause it to accelerate (as described in <xref ref="se-netF-a" text="type-global" />).  <xref ref="as-NIII" text="title">Newton's third law</xref> tells us about the interaction <em>between</em> objects and, from this, we can deduce the force on \studentA\ and \studentB.<fn>It is then separately possible to use <xref ref="as-NII" text="title">the second law</xref> to learn about the motion of the people, as will be shown in <xref ref="se-FBD-AB" text="type-global" />.</fn>
+                                <p>Let's reconsider <xref ref="se-netFadd" text="type-global" /> and imagine that \studentA<idx><h sortby="\studentA">\studentA</h></idx> stands to the left of the object and exerts a force to the right (pushes) with magnitude <m>\vec F_1 = +5.0\unit{N}\ihat</m> and that \studentB<idx><h sortby="\studentB">\studentB</h></idx> stands to the right of the object and exerts a force to the right (pulls) with magnitude <m>\vec F_2 = +4.0\unit{N}\ihat</m>, as drawn in <xref ref="f1-firstFBD" text="type-global" />.  Both of these forces are <em>on</em> the object and, by <xref ref="as-NII" text="title">Newton's second law</xref> cause it to accelerate (as described in <xref ref="se-netF-a" text="type-global" />).  <xref ref="as-NIII" text="title">Newton's third law</xref> tells us about the interaction <em>between</em> objects and, from this, we can deduce the force on \studentA\ and \studentB.<fn>It is then separately possible to use <xref ref="as-NII" text="title">the second law</xref> to learn about the motion of the people, as will be shown in <xref ref="se-FBD-AB" text="type-global" />.</fn>
                                 </p>
 
                                 <figure xml:id="f1-firstFBD">
@@ -3441,8 +2964,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                     <me> \vec a_1 = \frac{-5.0\unit{N} \ihat}{\massA} = -0.0\sigfrac{58}{8}{m}{s^2}\ihat = -5.9\ten{-2}\unitfrac{m}{s^2} \ihat</me>
                                     which is to the left with a small enough value that it is easy for \himA\ to brace against.   Even if \heA\ doesn't brace, if \heA\ starts from rest, \heA\ will only be moving
                                     <me>v_{1f} = (0\unitfrac{m}{s})+(-0.0\sigfrac{58}{8}{m}{s^2})(1.6\unit s) = -0.0\sigfrac{94}{1}{m}{s}</me>,
-                                    which is much slower than the object.
-                                    </p></li>
+                                    which is much slower than the object.  </p></li>
                                 <li><p> Since \studentB\ exerts a force of <m>4.0\unit{N}</m> to the right on the object, the <em>third law</em> reminds us that the object exerts a force of <m>4.0\unit{N}</m> to the left on \studentB. Since \studentB\ has a mass of \massB, the <em>second law</em> reminds us that \heB\ is accelerated at the rate of
                                     <me> \vec a_2 = \frac{-4.0\unit{N} \ihat}{\massB} = -0.0\sigfrac{53}{3}{m}{s^2}\ihat = -5.3\ten{-2}\unitfrac{m}{s^2}</me>
                                     which is also to the left with a small enough value that it is easy for \himB\ to brace against.  Even if \heB\ doesn't brace, if \heB\ starts from rest, \heB\ will only be moving
@@ -3450,8 +2972,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                     which is also much slower than the object and different from \studentA.
                                     </p></li>
                                 </ol>
-                                It might be interesting to note that, since everybody and thing has a different mass, the accelerations are all different.  This would also be true if the forces were all the same.
-                                </p>
+                                It might be interesting to note that, since everybody and thing has a different mass, the accelerations are all different.  This would also be true if the forces were all the same.  </p>
                         </example>
 
                         <p xml:id="d-equi">If we now do the same thing<idx><h>free-body diagrams</h><h>images</h></idx> with the <xref ref="se-equi" text="type-global" />, but let \studentC<idx><h sortby="\studentC">\studentC</h></idx> be the person on the left {\color{green} pushing to the right} and \studentD<idx><h sortby="\studentD">\studentD</h></idx> be the person on the right {\color{blue} pushing to the left}, then we see that while the {\color{green} green forces} form an action-reaction pair showing the third-law interaction between \studentC\ and the object and while the {\color{blue} blue forces} form an action-reaction pair showing the third-law interaction between \studentD\ and the object, it is the combination of the {\color{blue} blue} and the {\color{green} green} forces, which only act on the object itself, that coincidentally cancel to leave the object in (second law) equilibrium.  In these images, \studentC\ and \studentD\ are <em>not</em> in equilibrium.</p>
@@ -3530,11 +3051,11 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                 <answer xml:id="A-hbf"><p>There are forces acting on it.  You should be able to tell this because you are exerting one of the forces. While it is true that there are forces on it, it is also true that there is no <em>net force</em>.  If you are exerting an upward force on the book, can you guess (<xref ref="A-gravity" text="type-local" />) what the downward force is?   </p></answer>
                 <answer xml:id="A-hbnof"><p>It is true that while you hold the book, there is no <em>net force</em>, but that does not mean that there is no force acting.  If there were no forces on the book, then your hand would not need to be there.  In fact, if you remove the force your hand provides, then the book falls. This shows that there is an upward force (by your hand on the book) and a downward force (of gravity by the Earth on the book). </p></answer>
                 <answer xml:id="A-true1"><p>It is in equilibrium.  When the acceleration is zero, then the net force must be zero and those properties are what define equilibrium.</p></answer>
-                <answer xml:id="A-false1"><p>The definition of equilibrium is that the forces balance.  The result of this is that the net force must be zero and the acceleration is then zero.  You can tell this is true because the velocity is <em>not changing</em>.  It is not important that the velocity is zero, what is important is that the velocity <em>stays</em> zero.  While you hold it, the book is in equilibrium. </p></answer>
+                <answer xml:id="A-false1"><p>The definition of equilibrium is that the forces balance.  The result of this is that the net force must be zero and the acceleration is then zero.  You can tell this is true because the velocity is <em>not changing</em>.  It is not important that the velocity is zero, what is important is that the velocity <em>stays</em> zero.  While you hold it, the book is in equilibrium.  </p></answer>
                 <answer xml:id="A-falls"><p>Both <q>Yes</q> and <q>No</q> bring you to this answer.  Yes, there is <em>a force</em> on the book while it falls (the force of gravity), but no, there are not force<alert>s</alert> (plural).  There is only one force.  <q>But, wait!</q> you say, <q>What about the force of air resistance?</q>  Aha!   You are correct; there is a force of air resistance, but in this case, it is negligible and we will not consider it.  Please read <xref ref="ss-airresistance" text="type-global" /> for more information about deciding when to use or ignore this phenomenon.</p></answer>
                 <answer xml:id="A-hitY"><p>The book is accelerating.  The velocity <em>is changing</em> from <q>moving downwards</q> to <q>stopped</q>.  The book is not in equilibrium.</p></answer>
                 <answer xml:id="A-hitN"><p>While it is hitting the desk, the velocity is changing from <q>moving downwards</q> to <q>stopped</q>.  Since the velocity is changing, <em>the book is accelerating</em>.  Since it is accelerating, the book is not in equilibrium.  </p></answer>
-                <answer xml:id="A-landedY"><p>It is in equilibrium.  The book is at rest and <em>continues to be</em> at rest on the desk. There are forces acting, but they cancel each other, resulting in no net force. </p></answer>
+                <answer xml:id="A-landedY"><p>It is in equilibrium.  The book is at rest and <em>continues to be</em> at rest on the desk. There are forces acting, but they cancel each other, resulting in no net force.  </p></answer>
                 <answer xml:id="A-landedN"><p>After it has landed, the book stops moving.  Once the book comes to rest on the desk, it <em>continues to stay at rest</em>.  This says that the velocity is not changing, so the book is not accelerating.  That means that the book is in equilibrium. There are forces acting, but they cancel each other, resulting in no net force. </p></answer>
                 <answer xml:id="A-gravity"><p>It is the force of gravity.</p></answer>
                 <answer xml:id="A-zero"><p>Recall the situation when you were holding the book.  Gravity is still pulling the book down and the desk is holding the book up.  There are two forces acting on the book while it is at rest on the desk. </p></answer>
@@ -3551,7 +3072,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                 </task>
                 <task xml:id="A-chair2">
                         <statement><p>Push a chair across a tile floor. Notice that when you stop pushing, it probably<fn>This depends on <em>how fast</em> you were pushing, but it will stop moving pretty quickly after you stop pushing.</fn> stops moving.  Based on this, do you think force causes motion?</p></statement>
-                        <solution><p>This is essentially the same as <xref ref="A-chair1" text="type-local" />, but the carpet exerts more force than the tile.  In either case, force causes a <em>change in</em> velocity. You are trying to speed the chair up and the floor is trying to slow the chair down.  (Both are trying to change the velocity, but cancel to result in a constant velocity.)  When you stop pushing, the chair stops moving because there is a force from the tile acting to oppose the force you apply while you push the chair; when you let go, this force slows the chair until the chair stops and then the force stops acting. (See <xref ref="s-Ff" text="type-global"/> for more details.)</p></solution>
+                        <solution><p>This is essentially the same as <xref ref="A-chair1" text="type-local" />, but the carpet exerts more force than the tile.  In either case, force causes a <em>change in</em> velocity.  You are trying to speed the chair up and the floor is trying to slow the chair down.  (Both are trying to change the velocity, but cancel to result in a constant velocity.)  When you stop pushing, the chair stops moving because there is a force from the tile acting to oppose the force you apply while you push the chair; when you let go, this force slows the chair until the chair stops and then the force stops acting. (See <xref ref="s-Ff" text="type-global"/> for more details.)</p></solution>
                 </task>
                 <task>
                         <introduction><p>Push a chair <em>with wheels</em> across a tile floor, with some strength, then let it go.</p></introduction>
@@ -3561,7 +3082,7 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                         </task>
                         <task xml:id="A-chair4">
                                 <statement><p>If force causes motion, why does the chair move after you stop touching it?</p></statement>
-                                <solution><p>The chair continues to move for the same reason that the chair without wheels and the chair on carpet <em>all</em> continued to move when you let go.  The reason is that this is <em>how all objects behave; they maintain their velocity when allowed to act without interference.</em> (This is why Newton's first law says what it does.)   Because the chair with wheels has much less friction there is a smaller force trying to interfere with the motion and so it continues to move for a noticeable distance. The other chairs slowed to a stop almost immediately.  The wheel-less chair on tile might have continued for a short distance if it was moving fast enough that it required a long enough time to change its velocity to zero. </p></solution>
+                                <solution><p>The chair continues to move for the same reason that the chair without wheels and the chair on carpet <em>all</em> continued to move when you let go.  The reason is that this is <em>how all objects behave; they maintain their velocity when allowed to act without interference.</em> (This is why Newton's first law says what it does.)   Because the chair with wheels has much less friction there is a smaller force trying to interfere with the motion and so it continues to move for a noticeable distance. The other chairs slowed to a stop almost immediately.  The wheel-less chair on tile might have continued for a short distance if it was moving fast enough that it required a long enough time to change its velocity to zero.  </p></solution>
                         </task>
                 </task>
                 <task>
@@ -3629,8 +3150,8 @@ Because \studentB\ pulls on the object to the right, \studentB\ feels a force <e
                                 <aside><title>Foreshadow</title>
                                         <p>The physics of why an object (or person) rotates when they fall over is discussed with <xref ref="c-torque" text="title">torque</xref>.</p>
                                 </aside>
-                                <p>As \studentC<idx><h sortby="\studentC">\studentC</h></idx> gets pushed, you notice that \heC\ was not aware of the pending doom.  \HeC\ is standing casually with \hisC\ feet set to support \hisC\ own weight, but not to brace \himC\ against the sideways force.  When \heC\ gets pushed from the side, \hisC\ feet stay in place and \hisC\ torso topples, rotating \himC\ about \hisC\ center of mass as \heC\ falls to the ground.
-                                \studentD\ points to \hisD\ phone and says, <q>I recorded the whole thing!</q>  If you respond, <q>Awesome! Can I watch the part about how \studentZ\ acts?</q>,<idx><h sortby="\studentZ">\studentZ</h></idx> please read <xref ref="a-NIIIreaction" text="type-local" />.  If you respond, <q>Awesome! Let's show the psychology and physics faculty our cool video!</q>, please read <xref ref="a-NIIIfaculty" text="type-local" />. If you respond, <q>Yeah, we probably should have intervened before this happened instead of just watching.  Let's go talk to Campus Security.</q>, please read <xref ref="a-NIIIsecurity" text="type-local" />.</p>
+				<p>As \studentC<idx><h sortby="\studentC">\studentC</h></idx> gets pushed, you notice that \heC\ was not aware of the pending doom.  \HeC\ is standing casually with \hisC\ feet set to support \hisC\ own weight, but not to brace \himC\ against the sideways force.  When \heC\ gets pushed from the side, \hisC\ feet stay in place and \hisC\ torso topples, rotating \himC\ about \hisC\ center of mass as \heC\ falls to the ground.
+				\studentD\ points to \hisD\ phone and says, <q>I recorded the whole thing!</q>  If you respond, <q>Awesome! Can I watch the part about how \studentZ\ acts?</q>,<idx><h sortby="\studentZ">\studentZ</h></idx> please read <xref ref="a-NIIIreaction" text="type-local" />.  If you respond, <q>Awesome! Let's show the psychology and physics faculty our cool video!</q>, please read <xref ref="a-NIIIfaculty" text="type-local" />. If you respond, <q>Yeah, we probably should have intervened before this happened instead of just watching.  Let's go talk to Campus Security.</q>, please read <xref ref="a-NIIIsecurity" text="type-local" />.</p>
                         </answer>
                         <answer xml:id="a-NIIIreaction">
                                 <p>As \studentZ<idx><h sortby="\studentZ">\studentZ</h></idx> pushes, you notice that because \heZ\ was being intentional, \heZ\ put one foot behind \himZ\ to brace \hisZ\ body during the push.  \HeZ\ leans into the push and stays standing.  You are intrigued.  If you decide to do a follow-up experiment by pushing \studentD<idx><h sortby="\studentD">\studentD</h></idx> over without bracing yourself, then read <xref ref="a-NIIIexperiment" text="type-local" />.  If you decide to exercise self-restraint, then read <xref ref="a-NIIIrestraint" text="type-local" />.</p>
@@ -4103,8 +3624,7 @@ Earth feels a force by \studentZ\ to the left.
                 <p xml:id="d-Fgball">You did do them, right?  You're not just reading ahead?  Really?  OK.  Doing that experiment will help you see (1) that everything falls at the same rate and (2) that objects accelerate as they fall.  This first point is a bit less intuitive and will be discussed further in <xref ref="ss-equivmm" text="type-hybrid" />.  This second point should be exactly what you expect, when you consider <xref ref="as-NII" text="title">Newton's second Law</xref>: If there is only one force (the gravitational force), then the object cannot be in <xref ref="sss-equilibrium" text="title">equilibrium</xref> and it must be accelerating.  (You should notice that this is the language of <xref ref="st-Fma" text="title">the story of Newton's second law</xref>.)</p>
 
                 <biographical><title>Touchstone (on-by)</title><p><xref ref="conv-on-by" text="title">the on-by notation</xref></p></biographical>
-                <p>In order to evaluate this further, let's consider a specific object, like a baseball.  Our baseball has a mass of <m>m_b = 0.145\unit{kg}</m>.  If the only force acting <em>on</em> the ball is the gravitational force <em>by</em> the Earth, then the net force is the gravitational force: <m>\vec F_\mathrm{net} = \vec F_{bEg}</m>.
-                Here the subscripts are <m>b</m> (because the force is on the <em>b</em>all), <m>E</m> (because the force is exerted by the <em>E</em>arth), and <m>g</m> (because it is a <em>g</em>ravitational force).  Since the acceleration is due to the gravitational force, I will use either <m>a_g</m> (usually when the object is in <xref ref="def-freefall" text="title">freefall</xref> and therefore accelerating at this rate) or <m>g</m> (usually when the object is not actually accelerating at that rate).  With this notation, Newton's second law becomes:
+                <p>In order to evaluate this further, let's consider a specific object, like a baseball.  Our baseball has a mass of <m>m_b = 0.145\unit{kg}</m>.  If the only force acting <em>on</em> the ball is the gravitational force <em>by</em> the Earth, then the net force is the gravitational force: <m>\vec F_\mathrm{net} = \vec F_{bEg}</m>.  Here the subscripts are <m>b</m> (because the force is on the <em>b</em>all), <m>E</m> (because the force is exerted by the <em>E</em>arth), and <m>g</m> (because it is a <em>g</em>ravitational force).  Since the acceleration is due to the gravitational force, I will use either <m>a_g</m> (usually when the object is in <xref ref="def-freefall" text="title">freefall</xref> and therefore accelerating at this rate) or <m>g</m> (usually when the object is not actually accelerating at that rate).  With this notation, Newton's second law becomes:
                 <me> \vec F_{bEg} = m_b \vec a_g </me>
                 At this point, we know the mass, but we don't know the force or the acceleration.  However, we have conveniently already done the experiment (recall <xref ref="ex-freefall" text="type-hybrid"/>) that will tell us the acceleration is <m>a_g = 9.81\unitfrac{m}{s^2}</m> downwards.  (Recall that <q>downwards</q> is the direction of the vector, which can be expressed as <m>-\jhat</m>.)  If we know the mass and the acceleration, then we can compute the force.</p>
                 <todo>Should we introduce the idea of a gravitational field here?</todo>
@@ -4151,12 +3671,12 @@ Earth feels a force by \studentZ\ to the left.
                 <url href="https://www.nist.gov/sites/default/files/documents/2017/04/28/AppC-12-hb44-final.pdf">Handbook 44</url>, page C-19, as exactly <m>453.592 37\unit{g}</m>.</fn>
                 and the other is a unit of force.  Since the pound-force<fn xml:id="fn-kg-pound">There is also a unit of force called the kilogram-force.</fn>
                 <!-- https://en.wikipedia.org/wiki/Pound_(force) -->
-                is defined as the standard unit of mass times the standard unit for the acceleration due to gravity, as discussed in <xref ref="s-SI-MKS" text="type-hybrid" />, the conversion directly from pound-force to Newtons will <em>not</em> match the longer, but more appropriate, conversion from pound-mass to kilogram that gets multiplied by the local acceleration due to gravity (as opposed to the standard <m>g</m>) into Newtons.  It may also be useful to review the comments about unit-conversion in the section on <xref ref="s-sigfig" text="title">significant digits</xref><idx>Significant Digits</idx>.</p>
-                <todo>Update (xref ref="s-SI-MKS" text="type-hybrid" /) with this information.</todo>
+		is defined as the standard unit of mass times the standard unit for the acceleration due to gravity, as discussed in <xref ref="s-SI-MKS" text="type-hybrid" />, the conversion directly from pound-force to Newtons will <em>not</em> match the longer, but more appropriate, conversion from pound-mass to kilogram that gets multiplied by the local acceleration due to gravity (as opposed to the standard <m>g</m>) into Newtons.  It may also be useful to review the comments about unit-conversion in the section on <xref ref="s-sigfig" text="title">significant digits</xref><idx>Significant Digits</idx>.</p> 
+		<todo>Update (xref ref="s-SI-MKS" text="type-hybrid" /) with this information.</todo>
 
-                <p xml:id="p-weightmass">In the discussion about <xref ref="p-massive" text="title">being precise</xref>, we distinguished <q>massive</q> (the amount) from <q>voluminous</q> (the size).  Now that we understand <xref ref="as-NII" text="title">Newton's second law</xref>, we can distinguish <q>massive</q>
-                (an amount of material causing a difficulty in making accelerate)
-                from <q>weighty</q> (a strength needed to lift).</p>
+		<p xml:id="p-weightmass">In the discussion about <xref ref="p-massive" text="title">being precise</xref>, we distinguished <q>massive</q> (the amount) from <q>voluminous</q> (the size).  Now that we understand <xref ref="as-NII" text="title">Newton's second law</xref>, we can distinguish <q>massive</q> 
+		(an amount of material causing a difficulty in making accelerate) 
+		from <q>weighty</q> (a strength needed to lift).</p>
 		<biographical><title>Touchstone (weight)</title><p>Recall <xref ref="def-weight" text="type-hybrid" /></p></biographical>
                 <remark><title>mass versus weight</title>
                         <idx><h>mass</h></idx>          <idx><h>mass</h><seealso>weight</seealso></idx>
@@ -4207,7 +3727,7 @@ Earth feels a force by \studentZ\ to the left.
                 <example>
                         <title>Calculate the mass from the weight</title>
                         <statement>
-                        <p>\studentA<idx><h sortby="\studentA">\studentA</h></idx> notices that \heA\ needs to exert <m>F=1.5\unit{N}</m> to support the apple listed in <xref ref="t-weightmass" text="type-hybrid" />. \HeA\ then drops it  and notices its acceleration of <m>9.81\unitfrac{m}{s^2}</m>.  \HeA\ computes the mass to be
+                        <p>\studentA<idx><h sortby="\studentA">\studentA</h></idx> notices that \heA\ needs to exert <m>F=1.5\unit{N}</m> to support the apple listed in <xref ref="t-weightmass" text="type-hybrid" />.  \HeA\ then drops it  and notices its acceleration of <m>9.81\unitfrac{m}{s^2}</m>.  \HeA\ computes the mass to be
                                 <me> m = \frac{F_g}{a_a} \ = \ \frac{1.5\unit{N}}{9.81\unitfrac{m}{s^2}} \ = \ \frac{1.5\unitfrac{kg \cdot m}{s^2}}{9.81\unitfrac{m}{s^2}} \ = \ 0.\sig{15}{3}{kg} </me>
                         (If you know the weight, you can compute the mass, even if the mass is not actually in <xref ref="def-freefall" text="title">freefall</xref>.)
                         </p></statement>
@@ -4828,27 +4348,27 @@ Earth feels a force by \studentZ\ to the left.
                                 <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ shoots a bank-shot and the ricochet reminds all of you about the normal force from the bumper on the ball.</p>
                         </introduction>
                         <task>
-                                <statement><p>Find a billiards table. Notice the felt, the bumpers (cushion), and the dimensions of the table.
-                                        Does the ball roll as far on felt as it does on hardwood?  (<xref ref="A-pool-roll" text="type-local" />) How soft is the bumper? (<xref ref="A-pool-bumper" text="type-local" />)</p></statement>
-                                <answer xml:id="A-pool-roll"><p>First, you should not roll a pool ball across just any floor; there is felt on the pool table for a reason.
-                                        However, if you have a clean, smooth surface and are able to reproduce your rolling speed, you will find that the pool ball rolls further on the stiff, nonyielding surface than it will on the felt.  The reason for this is beyond the scope of this textbook, but you can read more from
+				<statement><p>Find a billiards table. Notice the felt, the bumpers (cushion), and the dimensions of the table.  
+					Does the ball roll as far on felt as it does on hardwood?  (<xref ref="A-pool-roll" text="type-local" />) How soft is the bumper? (<xref ref="A-pool-bumper" text="type-local" />)</p></statement>
+				<answer xml:id="A-pool-roll"><p>First, you should not roll a pool ball across just any floor; there is felt on the pool table for a reason.  
+					However, if you have a clean, smooth surface and are able to reproduce your rolling speed, you will find that the pool ball rolls further on the stiff, nonyielding surface than it will on the felt.  The reason for this is beyond the scope of this textbook, but you can read more from
                                         <url href="http://stacks.iop.org/0031-9120/30/i=3/a=009"><q>Sliding and rolling: the physics of a rolling ball,</q> J. Hierrezuelo and C. Carnero, Physics Education, Volume 30, Number 3</url> (unofficially at
                                         <url href="http://billiards.colostate.edu/physics/Hierrezuelo_PhysEd_95_article.pdf">this PDF</url>).</p></answer>
-                                <answer xml:id="A-pool-bumper"><p>The cushion (sometimes called a bumper) is pretty still to the touch, but it is made of a springy rubber
-                                        that allows the balls to bounce reasonably well.  The
-                                        <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">document</url> indicates that you should be able to firmly strike a ball at some angle to the far wall and have it bounce around the table four to four-and-a-half times.  If the bumpers were perfectly <xref ref="p-elastic" text="title">elastic</xref>, then the normal force would be normal to the resting surface; but since the bumper has some flexibility, when the ball hits the bumper with a glancing blow, then bumper bends inwards and the normal force is directed in a way that depends on the shape of the dent. </p></answer>
+                                <answer xml:id="A-pool-bumper"><p>The cushion (sometimes called a bumper) is pretty still to the touch, but it is made of a springy rubber 
+					that allows the balls to bounce reasonably well.  The 
+					<url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">document</url> indicates that you should be able to firmly strike a ball at some angle to the far wall and have it bounce around the table four to four-and-a-half times.  If the bumpers were perfectly <xref ref="p-elastic" text="title">elastic</xref>, then the normal force would be normal to the resting surface; but since the bumper has some flexibility, when the ball hits the bumper with a glancing blow, then bumper bends inwards and the normal force is directed in a way that depends on the shape of the dent. </p></answer>
                         </task>
                         <task>
-                                <statement><p>Find a set of pool balls. Compare the solid-colored balls, the striped balls, and the cue ball.
-                                        Are there differences in size of weight?</p></statement>
-                                <answer xml:id="A-noncue"><p>The <url href="http://wpapool.com/equipment-specifications/\#Balls-and-Ball-Rack">specifications</url>
-                                        show that there is no difference between the solids and stripes, but the cue ball weighs <m>9\%</m> more that the other balls (<m>6.0\unit{oz}</m> versus <m>5.5\unit{oz}</m>).  The colored balls and the cue ball are otherwise identical.  </p></answer>
+				<statement><p>Find a set of pool balls. Compare the solid-colored balls, the striped balls, and the cue ball.  
+					Are there differences in size of weight?</p></statement>
+				<answer xml:id="A-noncue"><p>The <url href="http://wpapool.com/equipment-specifications/\#Balls-and-Ball-Rack">specifications</url> 
+					show that there is no difference between the solids and stripes, but the cue ball weighs <m>9\%</m> more that the other balls (<m>6.0\unit{oz}</m> versus <m>5.5\unit{oz}</m>).  The colored balls and the cue ball are otherwise identical.  </p></answer>
                         </task>
                         <task>
                                 <statement><p>Hit the cue-ball off of a bumper in the manner intended for
                                         <url href="http://c.ymcdn.com/sites/bca-pool.com/resource/resmgr/imported/BCAEquipmentSpecifications_2008.pdf">testing cushions</url>. Compare the angle it leaves the bumper (reflected angle) match the angle at which it came in (incident angle). Does the spin of the ball matter?</p></statement>
-                                <answer xml:id="A-pool-spin"><p>Because the bumper is covered in felt, it has a small grip on the ball.
-                                        Because the bumper has some give to it, it dents in when hit and provide more surface area, which increases the grip.  Both of these mean that the spin of the ball gets transferred to the pool table somewhat and change the way a spinning ball exits from the bumper collision.  </p></answer>
+				<answer xml:id="A-pool-spin"><p>Because the bumper is covered in felt, it has a small grip on the ball.  
+					Because the bumper has some give to it, it dents in when hit and provide more surface area, which increases the grip.  Both of these mean that the spin of the ball gets transferred to the pool table somewhat and change the way a spinning ball exits from the bumper collision.  </p></answer>
                         </task>
                         <task>
                                 <statement><p>Place a pool ball against the bumper and ricochet the cue ball off the pool ball instead of the bumper itself. Notice how the pool ball reacts.
@@ -5003,9 +4523,10 @@ Earth feels a force by \studentZ\ to the left.
 
                         <example xml:id="ex-inclined-plane"><title>Sliding down an icy driveway</title>
                                 <statement>
-                                        <p>After an ice storm, \studentD<idx><h sortby="\studentD">\studentD</h></idx> <m>(m_D=\massD)</m> decides to visit \hisD\ neighbor across the street who has a broken leg to see if they need anything \heD\ can help with.  When \heD\ arrives at the house, \heD\ notices that the driveway has a slight hill to it.
-                                        The angle of incline is about <m>\theta=3.00^\circ</m><fn>This angle represents about a 5<percent />-grade (<m>\sin(3^\circ)=0.052=5.2\%</m>),
-                                                which is at the low-end of steep according to <url href="http://www.ctre.iastate.edu/research/access/toolkit/11.pdf">details</url> of the <url href="http://www.ctre.iastate.edu/research/access/toolkit/">FAQ</url>
+					<p>After an ice storm, \studentD<idx><h sortby="\studentD">\studentD</h></idx> <m>(m_D=\massD)</m> decides to visit \hisD\ neighbor across the street who has a broken leg to see if they need anything \heD\ can help with.  When \heD\ arrives at the house, \heD\ notices that the driveway has a slight hill to it.  
+					The angle of incline is about <m>\theta=3.00^\circ</m><fn>This angle represents about a 5<percent />-grade (<m>\sin(3^\circ)=0.052=5.2\%</m>),
+						which is at the low-end of steep according to <url href="http://www.ctre.iastate.edu/research/access/toolkit/11.pdf">details</url> of the 
+						<url href="http://www.ctre.iastate.edu/research/access/toolkit/">FAQ</url>
                                                 developed by <url href="http://www.ctre.iastate.edu/research/access/index.htm">Iowa Access Management Awareness Project</url>
                                                 at the <url href="http://www.ctre.iastate.edu/">Center for Transportation Research and Education</url>
                                                 in the <url href="http://www.intrans.iastate.edu/">Institute for Transportation</url>
@@ -5027,8 +4548,7 @@ Earth feels a force by \studentZ\ to the left.
                                 <hint><title>Free-body diagram</title>
                                         <p>Draw the incline.  Point the normal force normal to the surface and the gravitational force directly towards the center of the Earth.  These do not directly oppose each other (and do not cancel like they have in previous examples).</p>
                                         <p><xref ref="h-inclined-components" text="type-local" /> implies we should use a coordinate system that has one axis along the incline and another normal to the incline.</p></hint>
-                                <answer><title>Acceleration</title><p>\studentD\ has an acceleration of <m>a_x = 0.\sigfrac{513}{4}{m}{s^2}</m>.  This is pretty low and likely will provide sufficient time to spin into a more advantageous position before the inevitable
-                                        crash.</p></answer>
+                                <answer><title>Acceleration</title><p>\studentD\ has an acceleration of <m>a_x = 0.\sigfrac{513}{4}{m}{s^2}</m>.  This is pretty low and likely will provide sufficient time to spin into a more advantageous position before the inevitable crash.</p></answer>
                                 <answer><title>Time</title><p>\studentD\ takes <m>\sig{6.62}{0}{s}</m> to slide down the driveway.  That's a long time to be sliding.  This might even be enough time for you to get your phone out and film the crash!</p></answer>
                                 <answer><title>Final speed</title><p>\studentD\ crashes into the garage door at <m>3.4\unitfrac{m}{s}</m>.  This is faster than a brisk walk <m>(2.5\unitfrac{m}{s})</m>, but slower than most people run.</p></answer>
                                 <solution><p>\studentD's weight is <m>m_Dg=\sig{784}{.8}{N}</m>.  We know the gravitational force (weight) and can compute the components of that.  We do not (yet) know the normal force, but we do know that it only has a <m>y</m>-component.  We do not know the net force, but we do know that it is necessarily (down) along the incline.</p>
@@ -5052,8 +4572,7 @@ Earth feels a force by \studentZ\ to the left.
                                         </tabular>
                                         </sidebyside>
 
-                                        <p>We can use the <m>y</m>-component to find the value of the normal force  <m>F_N=+\sig{783}{.7}{N}</m>.  We can use the <m>x</m>-component to find the acceleration of <m>a_x = F_{gx}/m_D = +0.\sigfrac{513}{4}{m}{s^2}</m>.
-                                        This allow us to find the time and final speed.  It turns out to be convenient to find the speed first (to avoid the quadratic formula).
+                                        <p>We can use the <m>y</m>-component to find the value of the normal force  <m>F_N=+\sig{783}{.7}{N}</m>.  We can use the <m>x</m>-component to find the acceleration of <m>a_x = F_{gx}/m_D = +0.\sigfrac{513}{4}{m}{s^2}</m>.  This allow us to find the time and final speed.  It turns out to be convenient to find the speed first (to avoid the quadratic formula).
                                         <me> v_f = \sqrt{ (\cancelto{0}{v_i})^2 + 2(0.5134\unitfrac{m}{s^2})(11.25\unit m)} = \sqrt{\sigfrac{11.5}{5}{m^2}{s^2}} = \sigfrac{3.39}{9}{m}{s}</me>
                                         <me> t = \frac{v_f-\cancelto{0}{v_i}}{a_x} = \frac{\sigfrac{3.39}{9}{m}{s}}{0.\sigfrac{513}{4}{m}{s^2}} = \sig{6.62}{0}{s} </me>
                                         That is a very slow motion slide.  \studentD\ likely has time to slow \hisD\ fall and kind of stand up.</p>
@@ -5357,8 +4876,8 @@ Earth feels a force by \studentZ\ to the left.
                                         <me> F_{Ny} + F_{gy} + \cancelto{0}{F_{fy}} = m \cancelto{0}{a_y} </me>
                                         so you need to relate the vertical acceleration to the gravitational and normal forces. (See <xref ref="h-friction-mug-normal" text="type-local" />.)</p></hint>
                                 <hint xml:id="h-friction-mug-friction"><title>Frictional force</title>
-                                        <p>You can find the frictional force from the normal force with <xref ref="eq-friction" text="title">Equation</xref>, where <m>\mu</m> is given and <m>F_N</m> is to be determined.
-                                        (See <xref ref="h-friction-mug-normal" text="type-local" />.)</p></hint>
+					<p>You can find the frictional force from the normal force with <xref ref="eq-friction" text="title">Equation</xref>, where <m>\mu</m> is given and <m>F_N</m> is to be determined.  
+					(See <xref ref="h-friction-mug-normal" text="type-local" />.)</p></hint>
                                 <hint xml:id="h-friction-mug-normal"><title>Normal force</title>
                                         <p>You can find the normal force from Newton's second law in the vertical direction since the vertical-component of the acceleration is zero.
                                         <me> \vec F_N + \vec F_g = m \cancelto{0}{a_y} </me>
@@ -5453,7 +4972,7 @@ Earth feels a force by \studentZ\ to the left.
                         </heuristic>
 
                         <proposition xml:id="connect-friction-work"><title>Looking Ahead</title>
-                                <p>The obvious question, if you have heard the phrase <q>energy is never created nor destroyed, only changed or transferred</q>, is: Where does the lost energy go?  Clearly this discussion will have to wait until we learn the language of energy (in <xref ref="c-energy" text="type-global" />), but we can start that conversation. Consider smoothing a piece of wood with sandpaper.  There is a significant amount of friction.  In this process, you are breaking off rough edges of the wood and detaching the sand from the sand paper.  Those actions take effort. You are also moving the small particles that are broken off, which carries energy and momentum from the motion of the sandpaper.  If you do this long enough, you will notice that the sandpaper and wood also get warmer.  Friction is both <xref ref="d-workverb" text="title">doing work</xref> and <xref ref="d-heatverb" text="title">heating</xref>.  The friction when you vigorously rub your hands together involves much less <q>breaking off particles</q> but a similar amount of heating.  Dragging an object across gravel or dirt involves rearranging small particles, but less heating.</p>
+                                <p>The obvious question, if you have heard the phrase <q>energy is never created nor destroyed, only changed or transferred</q>, is: Where does the lost energy go?  Clearly this discussion will have to wait until we learn the language of energy (in <xref ref="c-energy" text="type-global" />), but we can start that conversation. Consider smoothing a piece of wood with sandpaper.  There is a significant amount of friction.  In this process, you are breaking off rough edges of the wood and detaching the sand from the sand paper.  Those actions take effort.  You are also moving the small particles that are broken off, which carries energy and momentum from the motion of the sandpaper.  If you do this long enough, you will notice that the sandpaper and wood also get warmer.  Friction is both <xref ref="d-workverb" text="title">doing work</xref> and <xref ref="d-heatverb" text="title">heating</xref>.  The friction when you vigorously rub your hands together involves much less <q>breaking off particles</q> but a similar amount of heating.  Dragging an object across gravel or dirt involves rearranging small particles, but less heating.</p>
                         </proposition>
 
                         </subsubsection>
@@ -5678,7 +5197,9 @@ Earth feels a force by \studentZ\ to the left.
                         <p>If you are interested in investigating how widely the coefficient of friction can vary between different surfaces or between static and kinetic friction, then you can find some values of the coefficient of friction at the following websites:
                         <ul>
                                 <li><url href="http://www.engineershandbook.com/Tables/frictioncoefficients.htm">Engineers' Handbook</url> <xref ref="biblio-engineershandbook" /></li>
-                                <li><url href="http://www.physlink.com/">PhysLink.com - Physics and Astronomy Online Education and Reference</url>, click the [Reference] tab in the top menu, then select the [Coefficients of friction] option<fn>Since links to any page besides their home page are expressly forbidden by their legal disclaimer (which, last I checked was at <c>http://www.physlink.com/SiteInfo/Legal.cfm</c>), the best I can do is tell you where I found the page without an actual link: <c>http://www.physlink.com/Reference/FrictionCoefficients.cfm</c>.</fn> in that drop-down menu  <xref ref="biblio-physlink" /></li>
+                                <li><url href="http://www.physlink.com/">PhysLink.com - Physics and Astronomy Online Education and Reference</url>, click the [Reference] tab in the top menu, then select the [Coefficients of friction] option<fn>Since links to any page besides their home page are expressly forbidden by their legal disclaimer (which, last I checked was at
+                                <c>http://www.physlink.com/SiteInfo/Legal.cfm</c>), the best I can do is tell you where I found the page without an actual link:
+                                <c>http://www.physlink.com/Reference/FrictionCoefficients.cfm</c>.</fn> in that drop-down menu  <xref ref="biblio-physlink" /></li>
                                 <li><url href="https://www.engineersedge.com/coeffients_of_friction.htm">Engineers Edge</url> <xref ref="biblio-engineersedge" /></li>
                                 <li><url href="http://www.tribology-abc.com/abc/cof.htm">Tribology-abc.com</url> <xref ref="bib-friction-tribology" /></li>
                         </ul>
@@ -5915,7 +5436,7 @@ Earth feels a force by \studentZ\ to the left.
 				</ul>
 			</objectives>
 
-                        <p>Comparing and contrasting kinetic friction, static friction, and rolling friction is often difficult because the motion of the object is so different.  Static and kinetic are likely pretty intuitive in that (1) the object is either moving or it isn't and (2) the objects are (or are trying to) slide against each other.  Rolling friction, on the other hand, looks rather different.  The surfaces are in contact, but it is not always obvious if they are sliding against each other.  If you do an internet search, you will find that some authors refer to rolling friction as a form of kinetic friction (although I disagree with that terminology).</p>  
+                        <p>Comparing and contrasting kinetic friction, static friction, and rolling friction is often difficult because the motion of the object is so different.  Static and kinetic are likely pretty intuitive in that (1) the object is either moving or it isn't and (2) the objects are (or are trying to) slide against each other.  Rolling friction, on the other hand, looks rather different.  The surfaces are in contact, but it is not always obvious if they are sliding against each other.  If you do an internet search, you will find that some authors refer to rolling friction as a form of kinetic friction (although I disagree with that terminology).</p>
                         <warning><title>Rolling versus kinetic friction</title>
                                 <p>Unlike some internet information, this text will distinguish between rolling friction (as described in this section) and kinetic friction (as described in <xref ref="sss-kinetic" text="type-global" />), although both involve the relative motion of the centers of mass of two objects.</p>
                         </warning>
@@ -5962,14 +5483,14 @@ Earth feels a force by \studentZ\ to the left.
                                         <introduction><p>Now consider a car with all four wheels firmly attached but placed in neutral so that the wheels can spin without engaging the engine.  When you do this, a person should be in the car keeping it in a straight line and ready to stop if something gets in the path of the car.</p></introduction>
                                         <task xml:id="t-irl-rolling-car-full">
                                                 <statement><p>Try to push the car (in neutral) so that the tires spin at the same rate as in <xref ref="t-irl-rolling-full" text="type-local" /> and see how quickly the car slows down.</p></statement>
-                                                <answer><p>Even if the tires are rolling at the same rate as in <xref ref="t-irl-rolling-full" text="type-local" />, the tires are more deformed than in <xref ref="t-irl-rolling-full" text="type-local" /> due to the weight of the car, so they will not roll as far.  This indicates an increase in the amount of rolling resistance.</p>  
+                                                <answer><p>Even if the tires are rolling at the same rate as in <xref ref="t-irl-rolling-full" text="type-local" />, the tires are more deformed than in <xref ref="t-irl-rolling-full" text="type-local" /> due to the weight of the car, so they will not roll as far.  This indicates an increase in the amount of rolling resistance.</p>
                                                 <p>This is reminiscent of <xref ref="eq-friction">Equation</xref> and you can infer that we will be considering a coefficient of rolling friction. You might consider how the size of the coefficient of rolling friction will compare to the coefficients of kinetic and static friction.</p></answer></task>
                                         <task xml:id="t-irl-rolling-car-flat">
                                                 <statement><p>Deflate the tire to where you can see that it is <q>low</q> but not totally flat and try to push the car at the same speed as in <xref ref="t-irl-rolling-car-full" text="type-local" />.</p></statement>
                                                 <answer><p>Even if the tires are rolling at the same rate as in <xref ref="t-irl-rolling-car-full" text="type-local" />, the tires are even more deformed so they will not roll as far.  This indicates a further increase in the amount of rolling resistance.</p></answer></task>
                                 </task>
                         </investigation>
-                        
+
                         <p>The ideas in this Investigation help us clarify how to think about rolling friction:</p>
 
                         <observation xml:id="obs-rolling-friction"><title>Properties that affect rolling friction</title>
@@ -5981,7 +5502,7 @@ Earth feels a force by \studentZ\ to the left.
                                 </ul>
                                 Although we can still write <m>F_f = \mu_r F_N</m>, this coefficient of rolling friction (a.k.a. rolling resistance) is significantly smaller (on the order of 0.001) and depends on<fn>An extra complication is that the amount that the object is pressed into the surface impacts the deformation of the object and the surface, so <m>\mu</m> also depends on the amount the wheel is pressed into the ground, meaning that the equation depends on <m>F_N</m> in multiple ways.</fn> the size (radius) of the rolling object.</p>
                         </observation>
-                        
+
                         <p>Our understanding of physics can also help us better understand the world around us:</p>
 
                         <note><title>What to look for at the wheel of a moving vehicle</title>
@@ -5995,7 +5516,7 @@ Earth feels a force by \studentZ\ to the left.
                         </note>
 
                         <p>Furthermore, our understanding of the physics has some consequences on how we use our vehicles in daily life.</p>
-                        
+
                         <note><title>Practical Advice about tire maintenance</title>
                                 <p>It is useful to keep your car tires inflated to the appropriate level for the following reasons:
                                 <ul>
@@ -6013,8 +5534,7 @@ Earth feels a force by \studentZ\ to the left.
                                                 <li><p>depending on the tread of your tires, reduced surface area increases the opportunity for hydroplaning on wet surfaces.</p></li>
                                         </ul></p></li>
                                 </ul>
-                                To be clear, the risks are small if you are close to the standard pressure and don't drive much.  The further you are from the standard pressure and the more you drive, the bigger the risk.
-                                While you can find good information about tire inflation with a quick internet search, in October of 2017, <url href="https://www.discounttiredirect.com/learn/tire-pressure" /> had some good images of tires and the inappropriate wear patterns.</p>
+                                To be clear, the risks are small if you are close to the standard pressure and don't drive much.  The further you are from the standard pressure and the more you drive, the bigger the risk.  While you can find good information about tire inflation with a quick internet search, in October of 2017, <url href="https://www.discounttiredirect.com/learn/tire-pressure" /> had some good images of tires and the inappropriate wear patterns.</p>
                         </note>
 
                         <p>With this as an example, let's try expanding this understanding to other rolling objects.  Please answer <xref ref="ex-rolling-friction" text="type-local" /> to test your imagination of a variety of applications where you expect to see rolling friction rather than kinetic friction.</p>
@@ -6041,7 +5561,7 @@ Earth feels a force by \studentZ\ to the left.
                                                 <li>a log (anything cylindrical)</li>
                                                 <li>a person summersaulting (like a ball, but with a different rigidity and conscious)</li>
                                                 <li>a rock or stone (although this is still essentially a <q>ball</q>, it may not be smooth)</li></ul></p>
-                                        <p>Answers using <q>roll</q> in other senses: <ul>
+                                        <p>Answers using <q>roll</q> in other senses: <ul cols="2">
                                                 <li><url href="http://allrecipes.com/recipe/24228/sushi-roll/">sushi</url> (Nov, 2017)</li>
                                                 <li><url href="https://www.google.com/search?q=roll+top+desk&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwimvMzSntDXAhWGxIMKHduxBYsQ_AUICygC&amp;biw=1745&amp;bih=872">some desktops</url> (Nov, 2017)</li>
                                                 <li><url href="https://www.thekitchn.com/whats-the-difference-between-steel-cut-rolled-and-instant-oats-138355">oats</url> (Nov, 2017)</li>
@@ -6059,7 +5579,7 @@ Earth feels a force by \studentZ\ to the left.
                                         </answer>
                         </exercise>
 
-                        <p>When considering the ideas in the previous exercise, you may not have thought to include objects that wobble but do not make a full rotation, but rocking chairs are still rolling in some sense.   Note that desk chairs that tilt are essentially rocking chairs where the rocking mechanism is hidden inside the piece that connects the seat of the chair to the support post.</p>
+                        <p>When considering the ideas in the previous exercise, you may not have thought to include objects that wobble but do not make a full rotation, but rocking chairs are still rolling in some sense.  Note that desk chairs that tilt are essentially rocking chairs where the rocking mechanism is hidden inside the piece that connects the seat of the chair to the support post.</p>
 
                         <investigation xml:id="irl-rocking-friction"><title>Seeing rolling friction in rocking chairs</title>
                                 <idx><h>friction</h><h>rolling</h><h>investigation</h></idx>
@@ -6221,8 +5741,7 @@ Earth feels a force by \studentZ\ to the left.
                 <todo>add a link to (and the section itself) to a section on the modulus and stress/strain.</todo>
                 <todo>Maybe add an IRL about a house settling and the compression forces.  Loading a pick-up truck and watching the bed sag as weight is added.  Hammock as an example of adding weight and increasing the tension force.</todo>
                 <insight><p>Where the <xref ref="s-FN" text="title">normal force</xref> is appropriate for pushing against surfaces, <term>tension</term> is the pulling force that is transmitted through materials such as cable, chain, or rope.</p></insight>
-                <p>Tension is closely related to the compression force experienced by support beams.  One can simplistically think of tension as pulling and compression as pushing on the intermediate object that transmits force between the objects at either end.<fn xml:id="fn-rope-compression">It doesn't usually make sense to talk about the compression of a rope or chain.</fn>
-                When engineers design the skeleton of bridges and buildings, one of the primary considerations is the tension and compression of the steel beams.  You can build your intuition by considering the <xref ref="irl-tension" text="type-global"/>.</p>
+                <p>Tension is closely related to the compression force experienced by support beams.  One can simplistically think of tension as pulling and compression as pushing on the intermediate object that transmits force between the objects at either end.<fn xml:id="fn-rope-compression">It doesn't usually make sense to talk about the compression of a rope or chain.</fn> When engineers design the skeleton of bridges and buildings, one of the primary considerations is the tension and compression of the steel beams.  You can build your intuition by considering the <xref ref="irl-tension" text="type-global"/>.</p>
                 <todo>Still need to update the (xref ref="irl-tension" text="type-global"/).</todo>
 
                 <investigation xml:id="irl-tension"><title>Pull my finger.</title>
@@ -6246,14 +5765,11 @@ Earth feels a force by \studentZ\ to the left.
                                         If you are sitting in the swing and take hold of the chains at about shoulder height, you should be able to shake them in (towards your chest) and out (away from you, towards your neighbor swings).  You can do this same motion while standing next to the swing.  If you do this when the swing is empty, it is very easy to do this.  If you ask a series of successively larger people to sit in the swing, you will notice that it gets progressively more difficult to extend them very far.  The chains are increasing in tension; they are pulled more taut.  Your ability to move the chain in this way is exactly analogous to the way a bow draws across a violin or the way your fingers pluck a guitar, as described in <xref ref="ss-stringed-instruments" text="type-global" />.</p></answer>
                         </task>
                         <task xml:id="Q-fan-tension">
-                                <statement><p>Install a fan or light fixture that hangs from the ceiling. You don't want the fan to be supported by the electrical wires,
-                                        but rather by the metal shaft. How is the fan supported? </p></statement>
-                                <answer xml:id="A-fan-tension"><p>You might also consider <xref ref="A-chandelier-tension" text="type-local" />, which discusses the case of
-                                        hanging a light fixture from the ceiling. If you have ever installed a fan in your house, then you will notice that you have to support the fan while the wires are connected.  Usually the fan has a shaft that connects to the ceiling at one end and the fan at the other and provides a mechanism for supporting the fan while you manage the wires, which pass through the shaft.  Since the fan houses the motor, it is usually reasonably heavy.   The nice property of use a metal shaft to support the fan is that it doesn't stretch or wiggle like a chain might.  The difficulty in this example is that it is more difficulty to notice the tension in the shaft.  If you are the person hanging the fan, then one thing you might be able to notice is that if you flick the metal with a finger when it is not supporting anything, it will have a slightly different <q>ting</q> than when it is supporting the fan.</p>
+                                <statement><p>Install a fan or light fixture that hangs from the ceiling. You don't want the fan to be supported by the electrical wires, but rather by the metal shaft. How is the fan supported? </p></statement>
+                                <answer xml:id="A-fan-tension"><p>You might also consider <xref ref="A-chandelier-tension" text="type-local" />, which discusses the case of hanging a light fixture from the ceiling. If you have ever installed a fan in your house, then you will notice that you have to support the fan while the wires are connected.  Usually the fan has a shaft that connects to the ceiling at one end and the fan at the other and provides a mechanism for supporting the fan while you manage the wires, which pass through the shaft.  Since the fan houses the motor, it is usually reasonably heavy.   The nice property of use a metal shaft to support the fan is that it doesn't stretch or wiggle like a chain might.  The difficulty in this example is that it is more difficulty to notice the tension in the shaft.  If you are the person hanging the fan, then one thing you might be able to notice is that if you flick the metal with a finger when it is not supporting anything, it will have a slightly different <q>ting</q> than when it is supporting the fan.</p>
                                         <todo>Is this sufficiently noticeable?</todo>
                                         </answer>
-                                <answer xml:id="A-chandelier-tension"><p>If you have ever installed a chandelier in your house, then you will notice that the light has to be supported
-                                        between the joists of the ceiling.  There will be an electrical box with a screw to which you will attach the support for the chain that holds the chandelier.  The wires will run through the support chain.  The heavier the chandelier, the tauter the chain, much as described in <xref ref="A-swing-tension" text="type-local" />. This tension is much easier to see than the tension in the shaft of the fan.</p></answer>
+                                <answer xml:id="A-chandelier-tension"><p>If you have ever installed a chandelier in your house, then you will notice that the light has to be supported between the joists of the ceiling.  There will be an electrical box with a screw to which you will attach the support for the chain that holds the chandelier.  The wires will run through the support chain.  The heavier the chandelier, the tauter the chain, much as described in <xref ref="A-swing-tension" text="type-local" />. This tension is much easier to see than the tension in the shaft of the fan.</p></answer>
                         </task>
                         <task xml:id="Q-doorknob">
                                 <statement><p>Pull on a doorknob. Imagine replacing the knobs (inside and outside) with large knots on a rope that runs through the hole the doorknob used to occupy. What if the doorknob were replaced with a rope, knotted on either side of the door? </p></statement>
@@ -6622,7 +6138,8 @@ Earth feels a force by \studentZ\ to the left.
 
                 <p>While the flexibility of ropes makes them inconvenient for pushing, their flexibility makes them <em>very useful</em> for changing the direction of the pull.  The mechanism for changing the direction is the pulley.  Furthermore, by allowing us to change the direction of the pull, we are also able to double, triple, or further improve the strength of the pull.  The term for this is <term>the mechanical advantage</term> of a pulley-system.</p>
 
-                <p>First we will consider three simple cases of redirecting the force.  In each of these cases, I will <xref ref="s-effective2" text="title">assume</xref> that the pulley and rope have no mass and that there is no friction in the turning of the pulley (assume it is trivially easy to spin).  If we do not make this assumption, then the problem gets significantly more complicated.</p><todo>add a reference to the section (problem?) where this is considered.</todo>
+		<p>First we will consider three simple cases of redirecting the force.  In each of these cases, I will <xref ref="s-effective2" text="title">assume</xref> that the pulley and rope have no mass and that there is no friction in the turning of the pulley (assume it is trivially easy to spin).  If we do not make this assumption, then the problem gets significantly more complicated.</p>
+		<todo>add a reference to the section (problem?) where this is considered.</todo>
 
                 <example><title>The tension in a rope over a pulley</title>
                         <statement>
@@ -6898,7 +6415,8 @@ Earth feels a force by \studentZ\ to the left.
                                         </sidebyside>
                                 </answer>
                                 <solution>
-                                        <p>The first thing we should do is draw the free-body diagrams.  These are given in <xref ref="A-multidrag-tension-FBD" text="type-local" />.  If there were friction, then we would </p>
+                                        <p>The first thing we should do is draw the free-body diagrams.  These are given in <xref ref="A-multidrag-tension-FBD" text="type-local" />.  If there were friction, then we would
+                                        </p>
                                 </solution>
                         </example>
 
@@ -7507,8 +7025,8 @@ Earth feels a force by \studentZ\ to the left.
 <!-- 2,5,10 -->
                 <biblio type="raw" xml:id="bib-friction-tribology">
                         <!-- As of Oct, 2017 -->
-                        van Beek, Anton. <title>History of Science Friction</title>. tribology-abc.com. Retrieved Oct, 2017. 
-                                (History: <url href="http://www.tribology-abc.com/abc/history.htm" />, 
+                        van Beek, Anton. <title>History of Science Friction</title>. tribology-abc.com. Retrieved Oct, 2017.
+                                (History: <url href="http://www.tribology-abc.com/abc/history.htm" />,
                                 Tabulated coefficients of friction: <url href="http://www.tribology-abc.com/abc/cof.htm" />.)
                 </biblio>
 <!-- 3,6,12,15 -->
@@ -7547,19 +7065,22 @@ Also check these folks out on Wikipedia.... of course
 <!-- 13 -->
                 <biblio type="raw" xml:id="bib-friction-blau2008">
                         <!-- As of Oct, 2017 -->
-                        Blau, P.J. <title>Friction Science and Technology: From Concepts to Applications, 2e</title> (Mechanical Engineering Series), 2008, CRC Press; <url href="https://books.google.com/books?id=5pIpV1LY5HMC&amp;pg=PA8&amp;lpg=PA8&amp;dq=hooke+rolling+friction&amp;source=bl&amp;ots=oT-uQSgTUl&amp;sig=BFS0NgjHKZwRgYk5MKx75GNoG48&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjQhOD6vpvXAhVGrVQKHdISCqAQ6AEIMjAC#v=onepage&amp;q=hooke%20rolling%20friction&amp;f=false">pg 12</url>. (ISBN 9781420054101)
+			Blau, P.J. <title>Friction Science and Technology: From Concepts to Applications, 2e</title> (Mechanical Engineering Series), 2008, CRC Press; 
+			<url href="https://books.google.com/books?id=5pIpV1LY5HMC&amp;pg=PA8&amp;lpg=PA8&amp;dq=hooke+rolling+friction&amp;source=bl&amp;ots=oT-uQSgTUl&amp;sig=BFS0NgjHKZwRgYk5MKx75GNoG48&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjQhOD6vpvXAhVGrVQKHdISCqAQ6AEIMjAC#v=onepage&amp;q=hooke%20rolling%20friction&amp;f=false">pg 12</url>. (ISBN 9781420054101)
                         <url href="https://books.google.com/books?id=5pIpV1LY5HMC" />.
                 </biblio>
 <!-- 14,16,17 -->
                 <biblio type="raw" xml:id="bib-friction-popov2017">
                         <!-- As of Oct, 2017 -->
-                        Popov, V.L. <title>Contact Mechanics and Friction: Physical Principles and Applications</title>, 2017, Springer Berlin Heidelberg; <url href="https://books.google.com/books?id=qT5RDgAAQBAJ&amp;pg=PA4&amp;lpg=PA4&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=I4SUYUbWQW&amp;sig=1FhgbMd-9NM7i4txa7GBtgntn4s&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKDAA#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 4</url>. (ISBN 9783662530818)
+			Popov, V.L. <title>Contact Mechanics and Friction: Physical Principles and Applications</title>, 2017, Springer Berlin Heidelberg; 
+			<url href="https://books.google.com/books?id=qT5RDgAAQBAJ&amp;pg=PA4&amp;lpg=PA4&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=I4SUYUbWQW&amp;sig=1FhgbMd-9NM7i4txa7GBtgntn4s&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKDAA#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 4</url>. (ISBN 9783662530818)
                         <url href="https://books.google.com/books?id=qT5RDgAAQBAJ" />.
                 </biblio>
 <!-- 18 -->
                 <biblio type="raw" xml:id="bib-friction-kerr2014">
                         <!-- As of Oct, 2017 -->
-                        ed. Kerr, A.D. <title>Railroad Track Mechanics and Technology: Proceedings of a Symposium Held at Princeton University, April 21 - 23, 1975</title>, 2014, Elsevier Science;  <url href="https://books.google.com/books?id=ggU6AwAAQBAJ&amp;pg=PA336&amp;lpg=PA336&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=oCzWJiE3N9&amp;sig=3TSLyE7if10AHMKlgHxD6yWow7w&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKzAB#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 336</url>.  (ISBN 9781483188218)
+			ed. Kerr, A.D. <title>Railroad Track Mechanics and Technology: Proceedings of a Symposium Held at Princeton University, April 21 - 23, 1975</title>, 2014, Elsevier Science;  
+			<url href="https://books.google.com/books?id=ggU6AwAAQBAJ&amp;pg=PA336&amp;lpg=PA336&amp;dq=morin+rolling+friction&amp;source=bl&amp;ots=oCzWJiE3N9&amp;sig=3TSLyE7if10AHMKlgHxD6yWow7w&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwj-tbOQuJvXAhVklVQKHZLXBTIQ6AEIKzAB#v=onepage&amp;q=morin%20rolling%20friction&amp;f=false">pg 336</url>.  (ISBN 9781483188218)
                         <url href="https://books.google.com/books?id=ggU6AwAAQBAJ" />.
                 </biblio>
         </references>
@@ -7733,6 +7254,10 @@ Also check these folks out on Wikipedia.... of course
 <!-- ********************************************************************************************** -->
 
 
+<!-- ********************************************************************************************** -->
+<!-- ********************************************************************************************** -->
+<!--    <xi:include href="./src/part-usingMFE.ptx" /> -->
+    <!-- Momentum, Rotational, Circular, Torque, Rotational Energy, Gravity -->
 
 <part xml:id="P-UsingMFE"><title>Interesting Uses of Motion, Force, and Energy</title>
         <introduction>
@@ -8650,8 +8175,13 @@ Also check these folks out on Wikipedia.... of course
 
 </chapter>
 
+<!-- ********************************************************************************************** -->
+
 
 <!-- ********************************************************************************************** -->
+<!-- ********************************************************************************************** -->
+<!--    <xi:include href="./src/part-oscillations.ptx" /> -->
+    <!-- Fluids, Vibrations (stress and strain), SHM, Sound -->
 
 <part xml:id="P-oscillations"><title>Making Waves</title>
         <introduction>
@@ -8743,7 +8273,7 @@ Also check these folks out on Wikipedia.... of course
         			<li><p>.</p></li>
         		</ul>
         	</objectives>
-        
+
                 <p>.</p>
         </section>
 
@@ -8882,7 +8412,12 @@ Also check these folks out on Wikipedia.... of course
 </chapter>
 
 <!-- ********************************************************************************************** -->
+
+
 <!-- ********************************************************************************************** -->
+<!-- ********************************************************************************************** -->
+<!--    <xi:include href="./src/part-thermodynamics.ptx" /> -->
+    <!-- Gases, Ideal Gas Law, thermal energy -->
 
 <part xml:id="P-thermodynamics"><title>Is It Hot in Here?</title>
         <introduction>
@@ -9186,8 +8721,12 @@ Also check these folks out on Wikipedia.... of course
 </chapter>
 
 <!-- ********************************************************************************************** -->
+
+
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
+<!--    <xi:include href="./src/part-EandM.ptx" /> -->
+    <!-- Elecrtic, Electricity, Magnetic, Maxwell, Light, Optics -->
 
 <part xml:id="P-EandM"><title>Let There Be Light!</title>
         <introduction>
@@ -9406,9 +8945,13 @@ Also check these folks out on Wikipedia.... of course
 <p>.</p>
 </chapter>
 
+<!-- ********************************************************************************************** -->
+
 
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
+<!--    <xi:include href="./src/part-modern.ptx" /> -->
+    <!-- Relativity, QM, Atomic, Nuclear, Particle, Cosmology -->
 
 <part xml:id="P-modern"><title>What Have You Done for Me Lately?</title>
         <introduction>
@@ -9643,8 +9186,13 @@ Also check these folks out on Wikipedia.... of course
 </chapter>
 
 <!-- ********************************************************************************************** -->
+
+
+
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
+<!--    <xi:include href="./src/part-supplements.ptx" /> -->
+    <!-- Deeper Dive, Internet Resources, Characters -->
 
 <part xml:id="P-supplements"><title>Supplements</title>
         <introduction>
@@ -9913,25 +9461,8 @@ Also check these folks out on Wikipedia.... of course
 
 <chapter xml:id="c-vid-pod"><title>Internet Resources</title>
 
-	<objectives xml:id="co-vid-pod"><title>Internet Resources</title>
-		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
-		<ul>
-			<li><p>.</p></li>
-			<li><p>.</p></li>
-			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
-		</ul>
-	</objectives>
 
         <section xml:id="s-podcasts"><title>Podcasts</title>
-
-		<objectives xml:id="so-podcasts"><title>Podcasts</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
 
         <p><url href="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99">Spacepod with Carrie Nugent</url></p>
         <p><url href="http://www.sciencefriday.com/">Science Friday with Ira Flatow</url></p>
@@ -9939,30 +9470,12 @@ Also check these folks out on Wikipedia.... of course
         </section>
         <section xml:id="s-videos"><title>Videos</title>
 
-		<objectives xml:id="so-videos"><title>Videos</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
-
         <p><url href="http://physicsfootnotes.com/">Physics Footnotes</url> </p>
         <p><url href="http://sixtysymbols.com/">Sixty Symbols</url></p>
 
         </section>
 
         <section xml:id="s-websites"><title>Websites</title>
-
-		<objectives xml:id="so-websites"><title>Websites</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
 
         <p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge">The Flame Challenge</url></p>
         <p><url href="https://msis.jsc.nasa.gov/sections/section04.htm">NASA human performance capabilities</url></p>
@@ -9974,15 +9487,6 @@ Also check these folks out on Wikipedia.... of course
 
 
 <chapter><title>Characters</title>
-
-	<objectives><title>[Characters]</title>
-		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
-		<ul>
-			<li><p>.</p></li>
-			<li><p>.</p></li>
-			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
-		</ul>
-	</objectives>
 
         <introduction>
         <p>This textbook has five characters who follow you throughout the book.  They appear in the examples and some homework problems.  They also remember previous experiences.  I need to adjust the examples in <xref ref="c-force" text="type-hybrid" /> such that the people pushing boxes are helping the reader rearrange furniture.</p>
@@ -10003,14 +9507,6 @@ I have emailed her.  NO REPLY.
 
         <section><title>The Story</title>
 
-		<objectives><title>[The Story]</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
                 <p>This will be a dramatic story of college students in and out of relationships, stress about their major, and interacting with parents.  Maybe some travel; certainly some growth.  During their adventure, they casually interact with the reader in unimportant ways that produce the examples and explorations.</p>
 
                 <p>The next set of sections are there to help me storyboard the interactions.</p>
@@ -10018,16 +9514,6 @@ I have emailed her.  NO REPLY.
         </section>
 
         <section><title>\studentA</title>
-
-		<objectives><title>[\studentA]</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
-
 
 <!--        <idx></idx>{\studentA|(} % Begin page-range
 -->
@@ -10048,15 +9534,6 @@ I have emailed her.  NO REPLY.
 
         </section>
         <section><title>\studentB</title><idx><h sortby="\studentB">\studentB</h></idx>
-
-		<objectives><title>[\studentB]</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
 
 <!--        <idx></idx>{\studentB|(} % Begin page-range
 -->
@@ -10090,15 +9567,6 @@ I have emailed her.  NO REPLY.
 
         <section><title>\studentC</title>
 
-		<objectives><title>[\studentC]</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
-
 <!--        <idx></idx>{\studentC|(} % Begin page-range
 -->
 <p>.</p>
@@ -10109,15 +9577,6 @@ I have emailed her.  NO REPLY.
 
         <section><title>\studentD</title>
 
-		<objectives><title>[\studentD]</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
-
 <!--        <idx></idx>{\studentD|(} % Begin page-range
 -->
 <p>.</p>
@@ -10127,15 +9586,6 @@ I have emailed her.  NO REPLY.
 
 
         <section><title>\studentE</title>
-
-		<objectives><title>[\studentE]</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
 
 <!--        <idx></idx>{\studentE|(} % Begin page-range
 -->
@@ -10148,15 +9598,6 @@ I have emailed her.  NO REPLY.
 
         <section><title>\studentF</title>
 
-		<objectives><title>[\studentF]</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
-
 <!--        <idx></idx>{\studentF|(} % Begin page-range
 -->
         <p>According to <xref ref="se-gworld" text="type-global" />, \studentF\ is the mother of \studentB.  They have lived in Norway, where \studentB\ grew up, and visited both Puerto Rico and Mount Everest.</p>
@@ -10167,15 +9608,6 @@ I have emailed her.  NO REPLY.
 
         <section><title>\studentX</title>
 
-		<objectives><title>[\studentX]</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
-
 <!--        <idx></idx>{\studentX|(} % Begin page-range
 -->
 <p>.</p>
@@ -10184,15 +9616,6 @@ I have emailed her.  NO REPLY.
         </section>
 
         <section><title>\studentZ</title>
-
-		<objectives><title>[\studentZ]</title>
-			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
-			<ul>
-				<li><p>.</p></li>
-				<li><p>.</p></li>
-				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
-			</ul>
-		</objectives>
 
 <!--        <idx></idx>{\studentZ|(} % Begin page-range
 -->
@@ -10208,56 +9631,17 @@ I have emailed her.  NO REPLY.
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
+
+
 <!-- ********************************************************************************************** -->
 <!-- ********************************************************************************************** -->
 
 
-<backmatter>
-    <title>Back Matter</title> <!-- mostly for HTML sectioning -->
+<!-- ********************************************************************************************** -->
+    <xi:include href="./src/backmatterABIP.ptx" />
+    <!-- Notation-list, Solutions, List of Features, Index colophon -->
+<!-- ********************************************************************************************** -->
 
-    <appendix>
-        <title>Notation</title>
-        <p>The following table defines the notation used in this book. Page numbers or references refer to the first appearance of each symbol.</p>
-        <notation-list />
-    </appendix>
 
-    <appendix>
-        <title>Solutions to Selected Exercises</title>
-        <solution-list />
-    </appendix>
-
-    <appendix xml:id="appendix-results">
-        <title>List of Features</title>
-
-        <section xml:id="list-investigation"><title>List of Explorations, Investigations, and Activities</title>
-        <list-of elements="exploration investigation activity" divisions="chapter section" empty="no" />
-        </section>
-        <section xml:id="list-remark"><title>List of RemarkLike</title>
-        <list-of elements="insight warning convention remark observation note" divisions="chapter section" empty="no" />
-        </section>
-        <section xml:id="list-tables"><title>List of Tables</title>
-        <list-of elements="table" divisions="chapter" empty="no" />
-        </section>
-        <section xml:id="list-figures"><title>List of Figures</title>
-        <list-of elements="figure" divisions="chapter" empty="no" />
-        </section>
-        <section xml:id="list-aside"><title>List of Asides</title>
-        <list-of elements="aside historical biographical" divisions="chapter section subsection " empty="no" />
-        </section>
-        <section xml:id="list-todos"><title>To-Do List</title>
-        <list-of elements="todo" divisions="chapter section subsection " empty="no" />
-        </section>
-    </appendix>
-
-    <index>
-        <title>Index</title>
-        <index-list />
-    </index>
-
-    <colophon>
-        <p>This article was authored in <pretext />.</p>
-    </colophon>
-
-</backmatter>
 </book>
 </mathbook>

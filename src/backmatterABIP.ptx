@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<backmatter xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Back Matter</title> <!-- mostly for HTML sectioning -->
+
+    <appendix>
+        <title>Notation</title>
+        <p>The following table defines the notation used in this book. Page numbers or references refer to the first appearance of each symbol.</p>
+        <notation-list />
+    </appendix>
+
+    <appendix>
+        <title>Solutions to Selected Exercises</title>
+        <solution-list />
+    </appendix>
+
+    <appendix xml:id="appendix-results">
+        <title>List of Features</title>
+
+        <section xml:id="list-investigation"><title>List of Explorations, Investigations, and Activities</title>
+        <list-of elements="exploration investigation activity" divisions="chapter section" empty="no" />
+        </section>
+        <section xml:id="list-remark"><title>List of RemarkLike</title>
+        <list-of elements="insight warning convention remark observation note" divisions="chapter section" empty="no" />
+        </section>
+        <section xml:id="list-tables"><title>List of Tables</title>
+        <list-of elements="table" divisions="chapter" empty="no" />
+        </section>
+        <section xml:id="list-figures"><title>List of Figures</title>
+        <list-of elements="figure" divisions="chapter" empty="no" />
+        </section>
+        <section xml:id="list-aside"><title>List of Asides</title>
+        <list-of elements="aside historical biographical" divisions="chapter section subsection " empty="no" />
+        </section>
+        <section xml:id="list-todos"><title>To-Do List</title>
+        <list-of elements="todo" divisions="chapter section subsection " empty="no" />
+        </section>
+    </appendix>
+
+    <index>
+        <title>Index</title>
+        <index-list />
+    </index>
+
+    <colophon>
+        <p>This article was authored in <pretext />.</p>
+    </colophon>
+
+</backmatter>

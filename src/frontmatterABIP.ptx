@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="index"> <!-- xmlns:xi="http://www.w3.org/2001/XInclude" -->
+
+    <titlepage>
+
+        <author>
+            <personname>Joe Christensen</personname>
+            <department>Department of Physics and Mathematics</department>
+            <institution>
+                <line>Thomas More College</line>
+                <line>Crestview Hills, KY</line>
+            </institution>
+            <email>ChristJ@ThomasMore.edu</email>
+        </author>
+
+        <credit>
+            <title>Credit for MathBookXML / <pretext /> format:</title>
+            <author>
+                <personname>Robert A. Beezer</personname>
+<!--
+                <department></institution>
+                <email>beezer@pugetsound.edu</email>
+-->
+            </author>
+        </credit>
+
+        <date>Compiled: <timeofday />, <today /> </date>
+
+    </titlepage>
+
+    <colophon>
+
+        <edition>Draft Edition 2017</edition>
+
+        <website>
+            <name><c>TMC Physics</c></name>
+            <address>http://www.thomasmore.edu/physics/</address>
+        </website>
+
+        <copyright>
+            <year>2017<ndash />2018</year>
+            <holder>J. Christensen</holder>
+            <shortlicense>
+                <!-- To ignore this Known tag abuse 2, keep it all on the same line --> <p><url rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><image alt="Creative Commons License" style="border-width:0" source="images/creativecommons-by-sa-4-0-88x31.jpg" width="15%" /></url>  <em><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Physics Connected: Learn like you think -- an interconnected view of algebra-based physics</span></em> by <url xmlns:cc="http://creativecommons.org/ns#" href="http://physics.thomasmore.edu/ConnectedPhysics/" property="cc:attributionName" rel="cc:attributionURL">Joe Christensen</url> is licensed under a <url rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</url>.</p><p>Permissions beyond the scope of this license may be available by contacting the author at <url xmlns:cc="http://creativecommons.org/ns#" href="http://www.thomasmore.edu/physics/faculty.cfm?id=487" rel="cc:morePermissions">http://www.thomasmore.edu/physics/faculty.cfm?id=487</url>.</p>
+            </shortlicense>
+        </copyright>
+
+    </colophon>
+
+    <!-- A section of its own in HTML, migrates to copyright-page in LaTeX -->
+    <!-- Titles are optional, presumably none for single author,           -->
+    <!-- or for every author, even if we test a mix here                   -->
+    <biography>
+    <!-- I've done this as a single section, but we can have a <biography> for each person -->
+        <title>About the Author</title>
+
+        <blockquote>
+                <p><alert>Joe Christensen</alert>
+                <ul label="circle"><li><p>B.S.  <url href="https://www.bradley.edu/academic/departments/math/">Mathematics</url> and <url href="https://www.bradley.edu/academic/departments/physics/">Physics</url>, <url
+                href="https://www.bradley.edu/">Bradley University</url>, Peoria, IL (1990)</p></li>
+                        <li><p>Ph.D. <url href="https://pa.as.uky.edu/">Physics</url>, <url href="http://www.uky.edu/UKHome/">University of Kentucky</url>, Lexington, KY (1997)</p></li>
+                        <li><p>Taught for three terms at <url href="https://www.centre.edu/">Centre College</url>, Danville, KY (1998-1999)</p></li>
+                        <li><p>Taught for eight years in the <url href="https://sites.google.com/site/mcmurryphysicsdepartment/">physics department</url> at <url href="http://ww2.mcm.edu/">McMurry University</url>,
+                        Abilene, TX (1999-2007)</p></li>
+                        <li><p>Has been teaching in the <url href="http://www.thomasmore.edu/physics/">physics department</url> at <url href="http://www.thomasmore.edu/">Thomas More College</url>, Crestview Hills, KY
+                        (since 2007)</p></li>
+                </ul></p>
+        </blockquote>
+
+    </biography>
+
+    <acknowledgement xml:id="general-fall-ack">
+
+        <p>I would like to thank Thomas More College for granting me a sabbatical in the Fall of 2017 to begin this project.</p>
+
+        <p>I would also like to thank
+        Robert A. Beezer (Department of Mathematics and Computer Science, University of Puget Sound) and
+        David Farmer (American Institute of Mathematics) for their hard work and guidance with the
+        <url href="http://mathbook.pugetsound.edu/">MathBookXML / <pretext /></url> format; and
+        Robert Riehemann (Thomas More College, Crestview Hills, KY) for telling me about their existence.</p>
+
+    </acknowledgement>
+
+    <preface>
+
+        <p>This text is intended for a one or two-semester undergraduate course in introductory algebra-based physics. </p>
+
+        <p>The purpose of creating this book is to make better use of the technology that electronic texts allow for without losing the
+        functionality of a print book.  While this text should be comparable to any other print text, when this is provided in the online
+        format it will provide links back and forth between early and later topics.  Linking from later material to earlier material will
+        allow students to refresh their memory of what was previously discussed.  Linking from earlier material to later material will
+        inspire students to look ahead to how that topic will be used in more interesting scenarios. </p>
+
+        <p>Having these links will allow for some other interesting features that can be placed in the back of the book and accessed
+        through links.  Examples of this might be:
+        <ol>
+            <li><p> <q>Dig Deeper</q> where some of the more tedious and some of the more interesting aspects can be investigated. For
+            example in <xref ref="c-motion"  /> on the equations of motion, one might see how these equations are direct applications of calculus
+            for those students who happen to have taken that course (which is common for biology and pre-medical students). </p></li>
+
+            <li><p> <q>Every Equation Tells a Story</q> which discusses how the description-in-English and the description-with-math
+            interrelate to build intuition in both directions. </p></li>
+
+            <li><p> <q>Examples</q>, with the difference from a traditional textbook being that students can interact with the example as:
+            <q>If you have this question, then go here. If you have that question, then go there.</q> </p></li>
+
+            <li><p> <q>In the <lsq/>Real World<rsq/></q> where students see how the concept lives in the messy real world and why
+            physicists simplify or ignore complicating aspects.
+                <ol>
+                    <li><p>Explorations ask the reader to imagine a situation that describes the real world and possibly make choices that result in different consequences.</p></li>
+                    <li><p>Investigations ask the reader to do (or think about doing) specific actions that need to be done outside or might in some way be accessible to some people, like riding a merry-go-round, driving
+                    a car, or rearranging large pieces of furniture.</p></li>
+                    <li><p>Activities ask the reader to do small table-top scale activities that could be considered mini-lab exercises and have a more specific procedure associated with them.</p></li>
+                </ol></p></li>
+
+            <li><p> <q>Connections</q>, which might take one of three forms:
+            <ol>
+                <li><p> <em>Looking Back</em> which links back to earlier material to address the question <q>Where have I seen this before?</q></p></li>
+
+                <li><p> <em>Looking Ahead</em> which links ahead to later material to address the question <q>When will I ever use this?</q> </p></li>
+
+                <li><p> <em>In Detail</em> which links to popular or complex topics to address the question <q>Why is this interesting?</q> </p></li>
+            </ol></p></li>
+        </ol>
+        </p>
+
+        <todo>storyboard the characters and how they develop</todo>
+        <p>The goal of the book is to encourage curiosity in the reader. Since there is an expectation that students will explore the
+        material on their own, advanced topics will explicitly note where the reader can look for supporting material and basic topics will
+        be motivated with links to more advanced topics.  To help maintain the interest of the reader, recurring characters will be
+        featured in the examples.  These characters will live a storyline and
+        interact with each other.  It is possible to read the examples as a separate storyline for the N interacting characters. </p>
+        <todo>Decide how many characters</todo>
+
+        <p>I am choosing the approach described above based on the assumption that students will prefer to develop their knowledge by
+        building a world-view that connects to their current understanding, their interests, and their world-view. Providing the
+        cross-referencing links without distracting students with all of the information at once will enable them to explore the
+        information. Writing the text in a narrative style that helps students see the explanations for the world they live in will
+        encourage them to explore <q>what happens when I do this</q> in their real life. Fostering this spirit of exploration will enable
+        the instructors to bring their own active-learning techniques into the classroom. </p>
+
+        <p>Some features that are not dissimilar to other textbooks:
+                <ol>
+                    <li><p>Warnings (should this be Cautions?) make the reader aware of possible misconceptions or inappropriate associations.  [This is the <q>don't do this</q> or <q>do this to prevent bad
+                    consequences</q> in contrast to Insights.]</p></li>
+                    <li><p>Insights make the reader aware of helpful associations.  [This is the <q>do this to enable positive consequences</q> in contrast to Warnings.] </p></li>
+                    <li><p>Conventions specify how notation or terminology should be used. [This is the <q>that</q> to Clarification's <q>which</q>.]</p></li>
+                    <li><p>Clarifications clarify how notation or terminology should be used. [This is the <q>which</q> to Convention's <q>that</q>.]</p></li>
+                    <li><p>Observations help the reader to use observations about the world around them to better understand (give context to) the physics being discussed.</p></li>
+                    <li><p>Interpretations help the reader use the physics being discussed to better understand their observations about the world around them.</p></li>
+                </ol>
+        </p>
+
+        <todo>(em)Book Layout:(/em) Here we should add information about Adventures, Examples, Equation-Stories, and IRLs.</todo>
+        <p>This textbook is in several Parts:  <em><xref ref="P-prerequisites"  text="type-global" /></em> is for the preliminaries, including descriptions of science in general, physics in
+        particular, and the use of math.  <em><xref ref="P-IntroMFE"  text="type-global" /></em> is intended to introduce three fundamental and powerful concepts.  These
+        concepts are motion, force, and energy.  I have found that if a student can understand these ideas sufficiently well, then they can
+        quickly pick up any other idea that we introduce, even if the idea seems initially unfamiliar.  <em><xref ref="P-UsingMFE"  text="type-global" /></em> develops the
+        ideas in <xref ref="P-IntroMFE"  text="type-global" /> by introducing momentum, circular motion, rotational motion, torque, and the Newtonian theory of gravitation.
+        <em><xref ref="P-oscillations" text="global">Parts</xref> and <xref ref="P-thermodynamics" text="global"/></em>  are oscillations and thermodynamics.  With the traditional organization of the two-semester
+        introductory physics, these parts can be covered in either order and can be chosen to be put in either semester. <em><xref ref="P-EandM"  text="type-global" /></em>
+        covers electricity, magnetism, light, and optics.  This is traditionally the meat of the second semester. <em><xref ref="P-modern"  text="type-global" /></em>
+        touches on the topics that are usually referred to as <q>modern physics</q>.  The goal with including these chapters is to provide
+        some inspiration for what some students see as the tedium of the standard material.  These chapters will be linked to throughout
+        the book as examples of how the traditional material supports the material that may be in the news and is more talked about in
+        popular science.  The last final part, <em><xref ref="P-supplements"  text="type-global" /></em>, holds the answers to the interactive examples mentioned above, the bulk
+        of the adventures the reader can investigate in order to test their understanding of the material, and the story lines of each of
+        the characters in the text. </p>
+
+        <blockquote xml:id="ss-PDF-view">
+            <p><alert>A note about viewing the PDF online:</alert>
+            If you are viewing this as a PDF set to view <q>single page,</q> then the links will take you to the top of the relevant
+            page, rather than to the specific topic.  If, on the other hand, you are viewing this in <q>continuous view</q> then you should
+            go directly to the location of interest. If you are viewing this in <q>two-page</q> mode (whether continuous or not), it might
+            not be immediately obvious to which page (left or right) you have jumped.  Most of the PDF viewers I have encountered allow you
+            to follow links and to return to your previous location.  On most PCs, the way to return to your previous location is by
+            holding the <c>ctrl</c> key and pressing the <m>[\leftarrow]</m> (<c>Left-Arrow</c>) button.  There are a few PDF viewers that do not
+            allow you to <q>go back</q> to the location you linked from.  Whether or not you have that capability, I have placed <q>return
+            links</q> in the margins so that you can get back to the place from which you linked. </p>
+        </blockquote>
+
+    </preface>
+
+</frontmatter>
