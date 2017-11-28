@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<part xml:id="P-supplements"><title>Supplements</title>
+        <introduction>
+        <p>This final part holds the answers to the interactive examples mentioned above, the bulk
+        of the adventures the reader can investigate in order to test their understanding of the material, and the story lines of each of
+        the characters in the text. </p>
+        </introduction>
+
+<!-- ********************************************************************************************** -->
+
+<chapter xml:id="c-revisted"><title>Deeper Dive</title>
+
+	<objectives xml:id="co-revisted"><title>Deeper Dive</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<introduction>
+<todo>This chapter should mirror (xref ref="c-physics" text="type-global" /).</todo>
+</introduction>
+
+        <section><title>[Need title]</title>
+
+		<objectives><title>[[Need title]]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+        <introduction>
+        <p>This is where I will put the fuller explanations.</p>
+        </introduction>
+
+        <subsection xml:id="sss-sun2"><title>The Sun</title>
+
+                <introduction>
+                <p>The bright, shiny sun, which keeps us all alive, is a nice example of a rather complex system that allows us to verify our various theories of the world around us.  We can consider the existence of a star in three phases: the birth of a star, the life of the star, and the death of the star.</p>
+                </introduction>
+
+                <subsubsection><title>The Birth of a Star</title>
+
+				<objectives><title>[The Birth of a Star]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+                <subsubsection><title>The Life of a Star</title>
+
+				<objectives><title>[The Life of a Star]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+                <subsubsection><title>The Death of a Star</title>
+
+				<objectives><title>[The Death of a Star]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+        </subsection>
+
+        <subsection><title>Kitchen Appliances</title>
+
+			<objectives><title>[Kitchen Appliances]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
+                <subsubsection><title>Oven</title>
+
+				<objectives><title>[Oven]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+                <subsubsection><title>Refrigerator</title>
+
+				<objectives><title>[Refrigerator]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+                <subsubsection><title>Microwave</title>
+
+				<objectives><title>[Microwave]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+                <subsubsection><title>Television</title>
+
+				<objectives><title>[Television]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+        </subsection>
+
+        <subsection><title>Automobile</title>
+
+			<objectives><title>[Automobile]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
+                <subsubsection><title>Coolant and Antifreeze</title>
+
+				<objectives><title>[Coolant and Antifreeze]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+                <subsubsection><title>Tires</title>
+
+				<objectives><title>[Tires]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+                <subsubsection><title>Torque</title>
+
+				<objectives><title>[Torque]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+        </subsection>
+        <subsection><title>Cool Ideas</title>
+
+			<objectives><title>[Cool Ideas]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
+                <subsubsection xml:id="sss-blackhole2"><title>Black Holes</title>
+
+				<objectives xml:id="ssso-blackhole2"><title>Black Holes</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+                <aside><title>Referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
+
+                <p>On 7 April, 2017,
+                <url href="http://www.cbc.ca/podcasting">CBC Broadcasting</url> published a
+                <url href="http://www.cbc.ca/podcasting/includes/quirks.xml"><em>Quirks and Quarks</em></url> episode discussing how we can
+                <url href="https://podcast-a.akamaihd.net/mp3/podcasts/quirks_20170408_51226.mp3">turn our planet into a giant telescope to get a photo of a black hole</url>.
+                The results should be available by the early 2018.</p>
+                <todo>Follow-up in 2018 to find the results.</todo>
+
+                </subsubsection>
+
+                <subsubsection><title>Quantum Mechanics</title>
+
+				<objectives><title>[Quantum Mechanics]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+                <subsubsection><title>Relativity</title>
+
+				<objectives><title>[Relativity]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+                <subsubsection><title>String Theory</title>
+
+				<objectives><title>[String Theory]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                </subsubsection>
+
+                </subsection>
+
+        </section>
+
+</chapter>
+
+<chapter xml:id="c-vid-pod"><title>Internet Resources</title>
+
+
+        <section xml:id="s-podcasts"><title>Podcasts</title>
+
+        <p><url href="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99">Spacepod with Carrie Nugent</url></p>
+        <p><url href="http://www.sciencefriday.com/">Science Friday with Ira Flatow</url></p>
+
+        </section>
+        <section xml:id="s-videos"><title>Videos</title>
+
+        <p><url href="http://physicsfootnotes.com/">Physics Footnotes</url> </p>
+        <p><url href="http://sixtysymbols.com/">Sixty Symbols</url></p>
+
+        </section>
+
+        <section xml:id="s-websites"><title>Websites</title>
+
+        <p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge">The Flame Challenge</url></p>
+        <p><url href="https://msis.jsc.nasa.gov/sections/section04.htm">NASA human performance capabilities</url></p>
+
+
+        </section>
+
+</chapter>
+
+
+<chapter><title>Characters</title>
+
+        <introduction>
+        <p>This textbook has five characters who follow you throughout the book.  They appear in the examples and some homework problems.  They also remember previous experiences.  I need to adjust the examples in <xref ref="c-force" text="type-hybrid" /> such that the people pushing boxes are helping the reader rearrange furniture.</p>
+
+        <p>The index lists the pages that the characters appear.  The point of this chapter is to highlight some of the primary adventures of the characters according to their own perspectives.  <em>None of the links in this chapter will be given a corresponding return link.</em>  This chapter is for me to track relationships and will likely go away when the book is ready for publication</p>
+        <todo>The index will recognize the people in two different formats.  One is by my name for them, which is \studentX (where X is A, B, C, D, ... Z).  The other is by the name assigned to that variable.  So these show up in different places in the Index.</todo>
+
+        <p>I can, at the header of the code, define the name, gender, mass, and dimensions of each individual.</p>
+<!--
+        <todo>(url href="http://malveyauthor.com/")Madeline Alvey(/url), the author of
+        (url href="http://escapepod.org/2017/03/09/ep566-honey-and-bone-artemis-rising-3/")"Honey and Bone" at EscapePod(/url) is a physics and English undergraduate student at UK in Lexington.
+        I might consider hiring(?) her to help storyboard the characters.</todo>
+I have emailed her.  NO REPLY.
+        -->
+        <todo>Check archivos.digital for storyboarding.  \$60/year</todo>
+
+        </introduction>
+
+        <section><title>The Story</title>
+
+                <p>This will be a dramatic story of college students in and out of relationships, stress about their major, and interacting with parents.  Maybe some travel; certainly some growth.  During their adventure, they casually interact with the reader in unimportant ways that produce the examples and explorations.</p>
+
+                <p>The next set of sections are there to help me storyboard the interactions.</p>
+
+        </section>
+
+        <section><title>\studentA</title>
+
+<!--        <idx></idx>{\studentA|(} % Begin page-range
+-->
+        <p><ul>
+        <li><p> In <xref ref="s-forcewords" text="type-global" />, \studentB\ gives \studentA\ a good-natured shove in the arm in order to get the language clarified and begin the conversation about the on-by notation.</p></li>
+        <li><p> In <xref ref="se-FBD-AB" text="type-global" /> \studentA\ helps \studentB<ellipsis />
+            <ul>
+            <li><p> (in the current version) push an object to make it accelerate and feel a reaction force causing \himA\ to accelerate backwards.</p></li>
+            <li><p> (in the future version) will help the reader move into or out of their residence hall by pushing on heavier furniture.</p></li>
+            <li><p>[NOTE:] This is all drawn in <xref ref="f-firstFBD" text="type-global" />, which is updated in <xref ref="f-firstFBDupdate" text="type-global" />.</p></li>
+            </ul></p></li>
+        <li><p> In <xref ref="se-weightA" text="type-global" />, \studentA\ falls from a small height.  (maybe he is jumping off a short ledge while taking a short-cut to class?)</p></li>
+        <li><p> In <xref ref="ex-baking" text="type-global" />, \studentA\ decides to bake some bread for a party at \studentB's house, measuring the time it takes to warm his oven.</p></li>
+        </ul></p>
+
+<!--        <idx></idx>{\studentA|)} % end page-range
+-->
+
+        </section>
+        <section><title>\studentB</title><idx><h sortby="\studentB">\studentB</h></idx>
+
+<!--        <idx></idx>{\studentB|(} % Begin page-range
+-->
+        <p>
+        <ul>
+                <li><p> \studentB\ is a passenger in the reader's car in <xref ref="ex-slowcar" text="type-global" /> when the reader runs out of gas and coasts to a stop.</p></li>
+                <li><p> \studentB\ is a passenger in the reader's car in <xref ref="ex-coasting" text="type-global" /> and speculates about how fast to go before putting the car in neutral to coast to a stop.</p></li>
+                <li><p> \studentB\ joins the reader on a road trip in <xref ref="cyoa-NI" text="type-global" /> and runs out of gas.  This results in multiple possible adventures:
+                <ul>
+                        <li><p> <xref ref="a-parkandwalk" text="type-global" />, which leads to either an end at <xref ref="a-nogas" text="type-global" /> or an end at <xref ref="a-intosunset" text="type-global" />.</p></li>
+                        <li><p> <xref ref="a-coastindrive" text="type-global" />, which leads to either <xref ref="a-NIdrive" text="type-global" /> (choose <xref ref="a-coastinneutral" text="type-global" /> or end with <xref ref="a-intosunset2" text="type-global" />) or <xref ref="a-parkandwalk2" text="type-global" /> (choose <xref ref="a-intosunset" text="type-global" /> or end at <xref ref="a-nogas2" text="type-global" />)</p></li>
+                        <li><p> <xref ref="a-coastinneutral" text="type-global" />, which leads to an end at <xref ref="a-NIresult" text="type-global" />.</p></li>
+                </ul></p></li>
+                <li><p> In <xref ref="s-forcewords" text="type-global" />, \studentB\ gives \studentA\ a good-natured shove in the arm in order to get the language clarified and begin the conversation about the on-by notation.</p></li>
+                <li><p> In <xref ref="se-FBD-AB" text="type-global" />, \studentB\ helps \studentA<ellipsis />
+                <ul>
+                        <li><p> (in the current version) pull an object to make it accelerate and feel a reaction force causing \himB\ to accelerate backwards.</p></li>
+                        <li><p> (in the future version) will help the reader move into or out of their residence hall by pushing on heavier furniture.</p></li>
+                        <li><p>[NOTE:] This is all drawn in <xref ref="f-firstFBD" text="type-global" />, which is updated in <xref ref="f-firstFBDupdate" text="type-global" />.</p></li>
+                </ul></p></li>
+                <li><p> In <xref ref="se-FNB" text="type-global" />, \studentB\ has a normal force supporting \himB.  (This touches <xref ref="A-floor" text="type-global" />, <xref ref="A-second" text="type-global" />, and <xref ref="A-third" text="type-global" />.)</p></li>
+                <li><p> At some point, \studentB\ has a party, because in <xref ref="ex-baking" text="type-global" />, \studentA\ decides to bake some bread for a party at \studentB's house.</p></li>
+                <li><p>According to <xref ref="se-gworld" text="type-global" />, \studentB's parents are \studentE\ and \studentF.  They have lived in Norway, where \studentB\ grew up, and visited both Puerto Rico and Mount Everest.</p></li>
+        </ul>
+        </p>
+<!--        <idx></idx>{\studentB|)} % end page-range
+-->
+
+        </section>
+
+
+        <section><title>\studentC</title>
+
+<!--        <idx></idx>{\studentC|(} % Begin page-range
+-->
+<p>.</p>
+<!--        <idx></idx>{\studentC|)} % end page-range
+-->
+        </section>
+
+
+        <section><title>\studentD</title>
+
+<!--        <idx></idx>{\studentD|(} % Begin page-range
+-->
+<p>.</p>
+<!--        <idx></idx>{\studentD|)} % end page-range
+-->
+        </section>
+
+
+        <section><title>\studentE</title>
+
+<!--        <idx></idx>{\studentE|(} % Begin page-range
+-->
+        <p>According to <xref ref="se-gworld" text="type-global" />, \studentE\ is the father of \studentB.  They have lived in Norway, where \studentB\ grew up, and visited both Puerto Rico and Mount Everest.</p>
+<!--        <idx></idx>{\studentE|)} % end page-range
+-->
+        </section>
+
+
+
+        <section><title>\studentF</title>
+
+<!--        <idx></idx>{\studentF|(} % Begin page-range
+-->
+        <p>According to <xref ref="se-gworld" text="type-global" />, \studentF\ is the mother of \studentB.  They have lived in Norway, where \studentB\ grew up, and visited both Puerto Rico and Mount Everest.</p>
+<!--        <idx></idx>{\studentF|)} % end page-range
+-->
+        </section>
+
+
+        <section><title>\studentX</title>
+
+<!--        <idx></idx>{\studentX|(} % Begin page-range
+-->
+<p>.</p>
+<!--        <idx></idx>{\studentX|)} % end page-range
+-->
+        </section>
+
+        <section><title>\studentZ</title>
+
+<!--        <idx></idx>{\studentZ|(} % Begin page-range
+-->
+<p>.</p>
+<!--        <idx></idx>{\studentZ|)} % end page-range
+-->
+        </section>
+
+</chapter>
+
+
+
+<!-- ********************************************************************************************** -->
+</part>

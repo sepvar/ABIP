@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************************************** -->
+<!-- ********************************************************************************************** -->
+
+<part xml:id="P-EandM"><title>Let There Be Light!</title>
+        <introduction>
+        <p>The chapters in this Part cover electricity, magnetism, light, and optics.  This is traditionally the meat of the second semester. </p>
+        </introduction>
+
+<!-- ********************************************************************************************** -->
+
+
+<chapter xml:id="c-electric"><title>The Electrical Interaction</title>
+
+	<objectives xml:id="co-electric"><title>The Electrical Interaction</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<introduction>
+<aside><title>Chapter referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
+</introduction>
+
+        <section xml:id="s-Echarge"><title>Electrical Charge</title>
+
+		<objectives xml:id="so-Echarge"><title>Electrical Charge</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+<p>.</p>
+        </section>
+
+        <section><title>The Big Picture</title>
+
+		<objectives><title>[The Big Picture]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <subsection xml:id="ss-Efield"><title>Electric Forces and Fields</title>
+
+			<objectives xml:id="sso-Efield"><title>Electric Forces and Fields</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
+                        <introduction>
+                <aside><title>Subsection referenced by</title>
+                        <p>
+                        <xref ref="sss-vectorequations" text="type-hybrid" />,
+                        <xref ref="connect-Fma" text="title"><m>F=ma</m></xref>
+                        </p>
+                </aside>
+                        <p>pst-electricfield</p>
+
+                        <assemblage xml:id="as-coulomb"><title>Coulomb's Law</title>
+                                <p>Coulomb's Law of the electrical interaction is
+                                <men> \vec F = k \frac{(q_1)(q_2)}{r_{12}^2} \hat r_{12}</men>
+                                </p>
+                        </assemblage>
+
+                        </introduction>
+
+                        <subsubsection><title>Examples</title>
+
+				<objectives><title>[Examples]</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+<p>.</p>
+                        </subsubsection>
+
+                </subsection>
+
+                <subsection><title>Electric Forces, Fields, and Potential Energy</title>
+
+			<objectives><title>[Electric Forces, Fields, and Potential Energy]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+<p>.</p>
+                </subsection>
+
+                <subsection><title>Electric Fields, Potential Energy, and Potential</title>
+
+			<objectives><title>[Electric Fields, Potential Energy, and Potential]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+<p>.</p>
+                </subsection>
+
+        </section>
+
+        <section xml:id="s-Econnection"><title>Making Connections</title>
+
+		<objectives xml:id="so-Econnection"><title>Making Connections</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <aside><title>Referenced by</title> <p><xref ref="s-Gconnection" text="type-hybrid"/></p></aside>
+
+        <p>
+        <md>
+        <mrow> \amp \amp \vec F = q \vec E \amp \amp </mrow>
+        <mrow> \amp \deq F = k \frac{q_1 q_2}{r^2} \amp \leftrightarrow \amp \deq E = k \frac{q}{r^2} \amp </mrow>
+        <mrow> \Delta \PE = -\vec F \cdot \Delta\vec x \amp \updownarrow \amp \amp \updownarrow \amp \Delta V = -\vec E \cdot \Delta\vec x  </mrow>
+        <mrow> \amp \deq \PE = k \frac{q_1 q_2}{r} \amp \leftrightarrow \amp \deq V = k \frac{q}{r} \amp </mrow>
+        <mrow> \amp \amp \Delta \PE = q \Delta V \amp \amp </mrow>
+        </md>
+        (Recall the parallel with the gravitational interaction in <xref ref="s-Gconnection" text="type-hybrid" />.)</p>
+
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Electricity</title>
+
+	<objectives><title>[Electricity]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<p>See also <url href="https://www.facebook.com/UmairTOfficial/videos/1573430836018784/?hc_ref=ARTazrYkFpgDeSNC0xV45lwMO41lc9hWdnntKLNiVDmvEuVd5d7Jov8-WUxq2b5LQeI&amp;pnref=story" /> (referenced from Facebook<trademark /> Oct, 2017)</p>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>The Magnetic Interaction</title>
+
+	<objectives><title>[The Magnetic Interaction]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<p>pst-magneticfield</p>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title><q>Magnicity?</q></title>
+
+	<objectives><title>[<q>Magnicity?</q>]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<p>.</p>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Light</title>
+
+	<objectives><title>[Light]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<p>.</p>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Optics</title>
+
+	<objectives><title>[Optics]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<p>.</p>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+</part>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************************************** -->
+<!-- ********************************************************************************************** -->
+
+<part xml:id="P-oscillations"><title>Making Waves</title>
+        <introduction>
+        <p>The chapters in this Part are fluids, vibrations, oscillations, and sound.  With the traditional organization of the two-semester
+        introductory physics, these parts can be covered in either order and can be chosen to be put in either semester. </p>
+        </introduction>
+
+<!-- ********************************************************************************************** -->
+
+<chapter xml:id="c-fluids"><title>Fluids</title>
+
+	<objectives xml:id="co-fluids"><title>Fluids</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+        <section xml:id="s-density"><title>Density</title>
+        <idx>density</idx>
+		<objectives xml:id="so-density"><title>Density</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+        <aside><title>Section referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
+        </section>
+
+        <section xml:id="s-pressure"><title>Pressure</title>
+
+		<objectives xml:id="so-pressure"><title>Pressure</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <aside><title>Section referenced by</title>
+                <p>
+                        <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>, <!-- units -->
+                        <!-- <xref ref="fn-friction-area" text="type-global" /> NOT REFERENCED by friction -->
+                        <!-- <xref ref="s-pressure" text="type-global" />, fluids -->
+                        <!-- <xref ref="ss-barometrics" text="type-global" /> NOT REFERENCED BY thermodynamics -->
+                </p>
+        </aside>
+                <p>context of hydrostatic (and small reference to hydrodynamic) pressure, as opposed to pressure in the context of <xref ref="law-friction-amontons-2" text="title">Amontons' second law of friction</xref> or pressure in <xref ref="ss-barometrics" text="title">gases</xref> (might connect nicely to kinetic theory of gases?).</p>
+        </section>
+
+        <section xml:id="s-surface-tension"><title>Surface Tension</title>
+
+		<objectives xml:id="so-surface-tension"><title>Surface Tension</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-surf-tension" text="title" >surface tension</xref></p></aside>
+        </section>
+
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter xml:id="c-vibration"><title>Vibration </title>
+
+	<objectives xml:id="co-vibration"><title>Vibration in solids</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref ref="so-stress-strain" text="global" />, <xref ref="so-young" text="global" />, <xref ref="so-shear" text="global" />, and <xref ref="so-bulk" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <section xml:id="s-stress-strain"><title>Stress and Strain</title>
+        	<objectives xml:id="so-stress-strain"><title>Stress and Strain</title>
+        		<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+        		<ul>
+        			<li><p>.</p></li>
+        			<li><p>.</p></li>
+        		</ul>
+        	</objectives>
+
+                <p>.</p>
+        </section>
+
+        <section xml:id="s-young"><title>Young's Modulus</title>
+        	<objectives xml:id="so-young"><title>Young's Modulus</title>
+        		<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+        		<ul>
+        			<li><p>.</p></li>
+        			<li><p>.</p></li>
+        		</ul>
+        	</objectives>
+
+                <p>.</p>
+        </section>
+
+        <section xml:id="s-shear"><title>Shear Modulus</title>
+        	<objectives xml:id="so-shear"><title>Shear Modulus</title>
+        		<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+        		<ul>
+        			<li><p>.</p></li>
+        			<li><p>.</p></li>
+        		</ul>
+        	</objectives>
+
+                <p>.</p>
+        </section>
+
+        <section xml:id="s-bulk"><title>Bulk Modulus</title>
+        	<objectives xml:id="so-bulk"><title>Bulk Modulus</title>
+        		<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+        		<ul>
+        			<li><p>.</p></li>
+        			<li><p>.</p></li>
+        		</ul>
+        	</objectives>
+
+                <p>.</p>
+        </section>
+
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter xml:id="c-SHM"><title>Oscillations</title>
+
+	<objectives xml:id="co-SHM"><title>Oscillations</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <section xml:id="s-SHMspring"><title>Oscillating Springs</title>
+
+	<objectives xml:id="so-SHMspring"><title>Oscillating Springs</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="connect-Fma" text="title"><m>F=ma</m></xref></p></aside>
+        </section>
+
+        <section xml:id="s-SHMpend"><title>Oscillating Pendulums</title>
+
+	<objectives xml:id="so-SHMpend"><title>Oscillating Pendulums</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+<p>.</p>
+        </section>
+
+        <section xml:id="s-SHMother"><title>Other Examples of Oscillations</title>
+
+		<objectives xml:id="so-SHMother"><title>Other Examples of Oscillations</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <p>On 13 April, 2017,
+                <url href="http://www.cbc.ca/podcasting">CBC Broadcasting</url> published a
+                <url href="http://www.cbc.ca/podcasting/includes/quirks.xml"><em>Quirks and Quarks</em></url> episode discussing how we can find
+                <url href="https://podcast-a.akamaihd.net/mp3/podcasts/quirks_20170415_12100.mp3">solutions to health issues caused by swaying office towers and vibrating floors</url>.</p>
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Sound</title>
+
+	<objectives><title>[Sound]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+        <section><title>TBD</title>
+
+		<objectives><title>[TBD]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+                <subsection xml:id="ss-stringed-instruments"><title>Musical Instruments</title>
+
+			<objectives xml:id="sso-stringed-instruments"><title>Musical Instruments</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <aside><title>Subsection referenced by</title> <p><xref ref="A-swing-tension" text="type-global"/></p></aside>
+                </subsection>
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+</part>

@@ -1,4 +1,5 @@
 # ABIP
+# for xsltproc, the xinclude can have one or two dashes
 
 default: 
 	@echo "make -n ... to display commands with running"
@@ -15,9 +16,29 @@ ${BEE}/user/mathbook-abip-latex.xsl: mathbook-abip-latex.xsl
 ${BEE}/user/mathbook-abip-html.xsl: mathbook-abip-html.xsl
 	cp mathbook-abip-html.xsl ${BEE}/user/
 
-Connected.html: ABIP.sed ${BEE}/user/mathbook-abip-html.xsl ABIP.xml
-	sed -i.peep -f ABIP.sed ABIP.xml
-	xsltproc --xinclude ${BEE}/user/mathbook-abip-html.xsl ABIP.xml && mv ABIP.xml.peep ABIP.xml || mv ABIP.xml.peep ABIP.xml 
+Connected.html: ABIP.sed ${BEE}/user/mathbook-abip-html.xsl ABIP.xml src/docinfoABIP.ptx src/frontmatterABIP.ptx src/backmatterABIP.ptx src/part-prerequisites.ptx src/part-introMFE.ptx src/part-usingMFE.ptx src/part-oscillations.ptx src/part-thermodynamics.ptx src/part-EandM.ptx src/part-modern.ptx src/part-supplements.ptx
+	# sed -i.peep -f ABIP.sed ABIP.xml
+	sed -i.peep -f ABIPincluded.sed src/part-*.ptx
+	# xsltproc --xinclude ${BEE}/user/mathbook-abip-html.xsl ABIP.xml && mv ABIP.xml.peep ABIP.xml || mv ABIP.xml.peep ABIP.xml 
+	xsltproc --xinclude ${BEE}/user/mathbook-abip-html.xsl ABIP.xml \
+		&& ( cd src ; \
+			mv part-prerequisites.ptx.peep part-prerequisites.ptx ; \
+			mv part-introMFE.ptx.peep part-introMFE.ptx ; \
+			mv part-usingMFE.ptx.peep part-usingMFE.ptx ; \
+			mv part-oscillations.ptx.peep part-oscillations.ptx ; \
+			mv part-EandM.ptx.peep part-EandM.ptx ; \
+			mv part-thermodynamics.ptx.peep part-thermodynamics.ptx ; \
+			mv part-modern.ptx.peep part-modern.ptx ; \
+			mv part-supplements.ptx.peep part-supplements.ptx ) \
+		|| ( cd src ; \
+			mv part-prerequisites.ptx.peep part-prerequisites.ptx ; \
+			mv part-introMFE.ptx.peep part-introMFE.ptx ; \
+			mv part-usingMFE.ptx.peep part-usingMFE.ptx ; \
+			mv part-oscillations.ptx.peep part-oscillations.ptx ; \
+			mv part-EandM.ptx.peep part-EandM.ptx ; \
+			mv part-thermodynamics.ptx.peep part-thermodynamics.ptx ; \
+			mv part-modern.ptx.peep part-modern.ptx ; \
+			mv part-supplements.ptx.peep part-supplements.ptx ) 
 	@echo ""
 
 html: Connected.html

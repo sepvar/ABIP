@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="index"> <!-- xmlns:xi="http://www.w3.org/2001/XInclude" -->
+<frontmatter> <!-- xmlns:xi="http://www.w3.org/2001/XInclude" -->
 
     <titlepage>
 
@@ -42,7 +42,7 @@
             <year>2017<ndash />2018</year>
             <holder>J. Christensen</holder>
             <shortlicense>
-                <!-- To ignore this Known tag abuse 2, keep it all on the same line --> <p><url rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><image alt="Creative Commons License" style="border-width:0" source="images/creativecommons-by-sa-4-0-88x31.jpg" width="15%" /></url>  <em><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Physics Connected: Learn like you think -- an interconnected view of algebra-based physics</span></em> by <url xmlns:cc="http://creativecommons.org/ns#" href="http://physics.thomasmore.edu/ConnectedPhysics/" property="cc:attributionName" rel="cc:attributionURL">Joe Christensen</url> is licensed under a <url rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</url>.</p><p>Permissions beyond the scope of this license may be available by contacting the author at <url xmlns:cc="http://creativecommons.org/ns#" href="http://www.thomasmore.edu/physics/faculty.cfm?id=487" rel="cc:morePermissions">http://www.thomasmore.edu/physics/faculty.cfm?id=487</url>.</p>
+                <!-- To ignore this Known tag abuse 2, keep it all on the same line --> <p><url rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><image alt="Creative Commons License" style="border-width:0" source="images/creativecommons-by-nc-nd-4-0-88x31.jpg" width="15%" /></url>  <em><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Physics Connected: Learn like you think -- an interconnected view of algebra-based physics</span></em> by <url xmlns:cc="http://creativecommons.org/ns#" href="http://physics.thomasmore.edu/ConnectedPhysics/" property="cc:attributionName" rel="cc:attributionURL">Joe Christensen</url> is licensed under a <url rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</url>.</p><p>Permissions beyond the scope of this license may be available by contacting the author at <url xmlns:cc="http://creativecommons.org/ns#" href="http://www.thomasmore.edu/physics/faculty.cfm?id=487" rel="cc:morePermissions">http://www.thomasmore.edu/physics/faculty.cfm?id=487</url>.</p>
             </shortlicense>
         </copyright>
 

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************************************** -->
+<!-- ********************************************************************************************** -->
+
+<part xml:id="P-modern"><title>What Have You Done for Me Lately?</title>
+        <introduction>
+        <p>The chapters in this Part touch on the topics that are usually referred to as <q>modern physics</q>.  The goal with including these chapters is to provide
+        some inspiration for what some students see as the tedium of the standard material.  These chapters will be linked to throughout
+        the book as examples of how the traditional material supports the material that may be in the news and is more talked about in
+        popular science.  </p>
+        </introduction>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Relativity</title>
+
+	<objectives><title>[Relativity]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<p>.</p>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Quantum Mechanics</title>
+
+	<objectives><title>[Quantum Mechanics]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+<introduction><p>This might be useful <url href="http://timeline.aps.org/APS/Timeline/" />.</p></introduction>
+
+        <section><title>Atomic Physics</title>
+
+		<objectives><title>[Atomic Physics]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <subsection><title>The Periodic Table and Quantum Numbers</title>
+
+			<objectives><title>[The Periodic Table and Quantum Numbers]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+<p>.</p>
+                </subsection>
+
+        </section>
+        <section xml:id="ss-nucleardecay"><title>Nuclear Physics</title>
+
+                <subsection><title>Nuclear Decay</title>
+
+			<objectives><title>[Nuclear Decay]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+<p>.</p>
+                </subsection>
+
+                <subsection xml:id="ss-strong"><title>The Strong Nuclear Force</title>
+
+			<objectives xml:id="sso-strong"><title>The Strong Nuclear Force</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
+                </subsection>
+
+                <subsection xml:id="ss-weak"><title>The Weak Nuclear Force</title>
+
+			<objectives xml:id="sso-weak"><title>The Weak Nuclear Force</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
+                </subsection>
+
+        </section>
+
+        <section xml:id="s-particle"><title>Particle Physics</title>
+
+		<objectives xml:id="so-particle"><title>Particle Physics</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <subsection><title>Field Theory</title>
+
+			<objectives><title>[Field Theory]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+<p>.</p>
+                </subsection>
+
+                <subsection xml:id="ss-QED"><title>Quantum Electrodynamics</title>
+
+			<objectives xml:id="sso-QED"><title>Quantum Electrodynamics</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
+                </subsection>
+
+                <subsection xml:id="ss-QCD"><title>Quantum Chromodynamics</title>
+
+			<objectives xml:id="sso-QCD"><title>Quantum Chromodynamics</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-fundamental" text="title">fundamental forces</xref></p></aside>
+                </subsection>
+
+                <subsection xml:id="ss-StandardModel"><title>The Standard Model</title>
+
+			<objectives xml:id="sso-StandardModel"><title>The Standard Model</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+<p>.</p>
+                </subsection>
+
+                <subsection xml:id="ss-particledecay"><title>Particle Decay</title>
+
+			<objectives xml:id="sso-particledecay"><title>Particle Decay</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+<p>.</p>
+                </subsection>
+
+        </section>
+
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Condensed Matter</title>
+
+	<objectives><title>[Condensed Matter]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<p>.</p>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Astronomy</title>
+
+	<objectives><title>[Astronomy]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<p>.</p>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Cosmology</title>
+
+	<objectives><title>[Cosmology]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<p>.</p>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+</part>

@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************************************** -->
+<!-- ********************************************************************************************** -->
+
+<part xml:id="P-UsingMFE"><title>Interesting Uses of Motion, Force, and Energy</title>
+        <introduction>
+        <p>The chapters in this Part develop the ideas in <xref ref="P-IntroMFE"  text="type-global" /> by introducing momentum, circular motion, rotational motion, torque, and the Newtonian theory of gravitation.</p>
+        </introduction>
+
+<!-- ********************************************************************************************** -->
+
+<chapter xml:id="c-momentum"><title>Momentum: A Better Way to Describe Force</title>
+
+	<objectives xml:id="co-momentum"><title>Momentum: A Better Way to Describe Force</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <introduction>
+<aside><title>Chapter referenced by</title>
+        <p>
+        <xref ref="d-objectinmotion" text="global">Clarification of Newton's laws</xref>
+        <xref ref="ss-NIII" text="type-global" />,
+        <xref ref="A-chair6" text="type-global" />
+        </p>
+</aside>
+
+	<aside><title>Paragraph referenced by</title><p><xref ref="sss-inertia" text="type-global" /></p></aside>
+	<p xml:id="def-momentum">Define momentum <me>\vec p = m \vec v</me>.</p>
+
+        <p>Useful to include?
+        <url href="https://www.wired.com/2017/06/physics-bullets-versus-wonder-womans-bracelets/">The Physics of Bullets Vs. Wonder Woman's Bracelets</url>
+        </p>
+        </introduction>
+
+        <section><title>Revising Newton's First and Second Laws</title>
+
+		<objectives><title>[Revising Newton's First and Second Laws]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <subsection xml:id="ss-inertia"><title>Inertia and Momentum</title>
+
+			<objectives xml:id="sso-inertia"><title>Inertia and Momentum</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                        <aside><title>Referenced by</title> <p><xref ref="sss-inertia" text="type-global" /></p></aside>
+                        <p>Recall <xref ref="sss-inertia" text="type-global" />.</p>
+                        <p xml:id="p-elastic-collision">Probably define elastic collisions (recall <xref ref="def-elastic" text="type-global" />) and inelastic collisions</p>
+                </subsection>
+
+        </section>
+
+        <section xml:id="s-conservemom"><title>Revising Newton's Third Law: Conservation of Momentum</title>
+
+		<objectives xml:id="so-conservemom"><title>Revising Newton's Third Law: Conservation of Momentum</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <aside><title>Referenced by</title> <p><xref ref="ss-NIII" text="type-global" /></p></aside>
+        </section>
+
+
+        <section xml:id="s-2Dcollisions"><title>Two-Dimensional Collisions</title>
+
+		<objectives xml:id="so-2Dcollisions"><title>Two-Dimensional Collisions</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <aside><title>Referenced by</title> <p><xref ref="sss-vectorequations" text="type-global"/></p></aside>
+
+        <p>pool balls?  What about rolling?</p>
+
+        <investigation xml:id="irl-pool2Dcollision"><title>2-D collisions of pool balls</title><idx><h>pool</h><h>real life</h></idx>
+                <introduction>
+                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>collide some pool balls and notice where they hit each other.  Can you determine the angle at which they roll away?</p>
+                        </statement>
+                        <answer>
+                                <p><m>90^\circ</m></p>
+                        </answer>
+                </task>
+
+                <conclusion>
+                        <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
+                        <xref ref="irl-poolcushion" text="title">normal force</xref>,
+                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
+                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.</p>
+
+                        <sidebyside widths="50% 50%">
+                                <p></p>
+                                <tabular halign="right"><col width="100%" /><row><cell halign="right">
+                                        <p>Return to: <xref ref="d-bank-shot" text="title">pool</xref></p>
+                                </cell></row></tabular>
+                        </sidebyside>
+                </conclusion>
+        </investigation>
+
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Rotational Motion</title>
+
+	<objectives><title>[Rotational Motion]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <section xml:id="s-rotation-language"><title>How Physicists Use the Words</title>
+
+		<objectives xml:id="so-rotation-language"><title>How Physicists Use the Words</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+                <p>Description indicating that different parts of the object are moving at different speeds (depending on the radius) and, even at the same radius, different parts of the object are moving with different velocities (depending on the angle).  This is a good place to introduce
+                <men>v = \omega r</men>
+                </p>
+
+                <heuristic xml:id="st-vwr"><title>The Story of <m>\vec v = \vec \omega \times \vec r</m></title>
+                <statement>
+                        <todo>Needs more detail and needs to be done better (magnitude and direction).  Define the right-hand-rule.</todo>
+<!--                         <aside><title>Referenced by</title> <p><xref ref="ex-2Dforce" text="type-global"/></p></aside>  -->
+                        <p>This equation describes the velocity (as a vector) to the spin rate and distance from the axis according to the right-hand rule.  Connecting the English and the math:</p>
+                        <sidebyside>
+                        <tabular>
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                            <row halign="center">
+                                <cell><m>\vec v </m></cell>
+                                <cell><m> =       </m></cell>
+                                <cell><m> \vec \omega  </m></cell>
+                                <cell><m> \times </m></cell>
+                                <cell><m> \vec r   </m></cell>
+                            </row>
+                            <row halign="center">
+                                <cell><m>\overbrace{\hspace{5em}}</m></cell>
+                                <cell><m>\overbrace{\hspace{4em}}</m></cell>
+                                <cell><m>\overbrace{\hspace{5em}}</m></cell>
+                                <cell><m>\overbrace{\hspace{4em}}</m></cell>
+                                <cell><m>\overbrace{\hspace{5em}}</m></cell>
+                            </row>
+                            <row halign="center">
+                                <cell><line>the speed</line><line>of a point</line><line>on a </line><line>spinning</line><line>object</line></cell>
+                                <cell>depends on</cell>
+                                <cell><line>the rate</line><line>of spin</line></cell>
+                                <cell><line><q>crossed with</q></line></cell>
+                                <cell><line>the distance</line><line>from the</line><line>axis</line></cell>
+                            </row>
+                            <row halign="center">
+                                <cell><line>the velocity</line><line>is directed</line><line>in the</line><line>plane of</line><line>the spin</line></cell>
+                                <cell><line>such that</line><line>it is</line><line>perpendicular</line></cell>
+                                <cell><line>to the axis</line><line>of spin</line></cell>
+                                <cell><line>and</line></cell>
+                                <cell><line>the radial</line><line>line</line><line>to the point</line></cell>
+                            </row>
+                        </tabular>
+                        </sidebyside>
+                </statement>
+                </heuristic>
+
+                <todo>Link this relative motion to the section on inertial reference frames.</todo>
+                <p>First, consider a merry-go-round for which <m>\vec v</m> is the tangential velocity of the object, which is changing (and hence the object is accelerating).  This motion is <em>relative to the axis of rotation</em>.</p>
+
+                <todo>Link this relative motion to the section on inertial reference frames.</todo>
+                <p xml:id="p-st-vwr">Second, consider the motion of a wheel along the ground.  The edge of the wheel has this <m>\vec v</m> as its tangential motion (<em>relative to the axle</em>).  <em>Assuming</em> that the wheel <xref ref="clarify-no-slip" text="title">rolls without slipping</xref>, it is <em>also true</em> that the edge of the wheel that is touching the ground is not moving <em>relative to the ground</em>, so the ground is moving (backwards) with this same velocity <em>relative to the axle</em>.  Flipping the perspective, the axle of the wheel must be moving with <m>-\vec v</m> <em>relative to the ground</em>.</p>
+
+        </section>
+
+        <section><title>The Equations of Rotational Motion</title>
+
+		<objectives><title>[The Equations of Rotational Motion]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <p>Use <xref ref="s-rotation-language" text="type-global" /> to connect the translational motion to the rotational motion.</p>
+
+        <investigation xml:id="irl-poolrotmot"><title>Rolling pool balls</title><idx><h>pool</h><h>real life</h></idx>
+                <introduction>
+                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>Roll a striped ball along the table.  Use the stripe to notice the rate of rotation.  How does the rotation compare to the translation?</p>
+                        </statement>
+                        <answer>
+                                <p>[Answer]</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Roll a striped ball along the table.  Notice the distance the ball travels.
+                                Why does friction slow the ball down instead of just make it turn <m>v=\omega r</m> (no slip)</p>
+                        </statement>
+                        <answer>
+                                <p>[Answer]</p>
+                        </answer>
+                </task>
+
+                <conclusion>
+                        <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
+                        <xref ref="irl-poolcushion" text="title">normal force</xref>,
+                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
+                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.</p>
+
+                        <sidebyside widths="50% 50%">
+                                <p></p>
+                                <tabular halign="right"><col width="100%" /><row><cell halign="right">
+                                        <p>Return to: <xref ref="d-bank-shot" text="title">pool</xref></p>
+                                </cell></row></tabular>
+                        </sidebyside>
+                </conclusion>
+        </investigation>
+
+        </section>
+
+        <section><title>Moment of Inertia</title>
+
+		<objectives><title>[Moment of Inertia]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+        <aside><title>Paragraph referenced by</title><p><xref ref="irl-rolling-friction" text="type-global" /></p></aside>
+        <p xml:id="p-mom-inert-eggs">In this <url href="https://www.sciencefriday.com/videos/spinning-eggs-in-space/">video of eggs in space</url> from 14 Oct, 2011 created by
+        <url href="https://www.sciencefriday.com/">Science Friday</url>, we can watch how the momentum of inertia affects the way fresh eggs spin differently than hard-boiled eggs.</p>
+
+        </section>
+
+        <section><title>Angular Momentum</title>
+
+		<objectives><title>[Angular Momentum]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+        <investigation xml:id="irl-poolangmom"><title>Rolling pool balls</title><idx><h>pool</h><h>real life</h></idx>
+                <introduction>
+                        <p>\studentD<idx><h sortby="\studentD">\studentD</h></idx> is relaxing with the local physics club, playing pool.  \HeD\ hits the cue ball and counts the number of walls \heD\ can hit in one shot.</p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>Roll a striped ball along the table.  Use the stripe to notice the rate of rotation.  How does the rotation compare to the translation?</p>
+                        </statement>
+                        <answer>
+                                <p>[Answer]</p>
+                        </answer>
+                </task>
+
+                <conclusion>
+                        <p>Billiard tables have a lot of interesting physics, which can help us see a wide variety of physics, for example:
+                        <xref ref="irl-poolcushion" text="title">normal force</xref>,
+                        <xref ref="irl-poolelastic" text="title">elastic versus inelastic collisions</xref>,
+                        <xref ref="irl-poolrotmot" text="title">rotational motion</xref>, and
+                        <xref ref="irl-poolangmom" text="title">angular momentum</xref>.</p>
+
+                        <sidebyside widths="50% 50%">
+                                <p></p>
+                                <tabular halign="right"><col width="100%" /><row><cell halign="right">
+                                        <p>Return to: <xref ref="d-bank-shot" text="title">pool</xref></p>
+                                </cell></row></tabular>
+                        </sidebyside>
+                </conclusion>
+        </investigation>
+
+        </section>
+
+        <section xml:id="s-noninertial"><title>Non-inertial Rotational Reference Frames</title>
+        <idx><h>reference frames</h><h>inertial</h></idx>
+        <idx><h>reference frames</h><h>non-inertial</h></idx>
+
+		<objectives xml:id="so-noninertial"><title>Non-inertial Rotational Reference Frames</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <introduction>
+        <aside><title>Section referenced by</title>
+                <p>
+                <xref ref="ss-noninertial" text="type-global" />,
+                <xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>
+                </p>
+        </aside>
+                        <aside><title>Paragraph referenced by</title> <p><xref ref="ss-NII" text="type-global" /></p></aside>
+                        <p xml:id="d-noninertial">Because the Earth rotates, we are actually in a non-inertial reference frame.  In fact, we can prove that the Earth rotates by observing the effects, such as the <xref ref="d-coriolis" text="title">Coriolis effect</xref>, that in our non-inertial frame seem to require unexplainable forces but which, in a non-rotating frame, follow the expected laws of physics.</p>
+                </introduction>
+
+                <subsection xml:id="ss-coriolis"><title>The Coriolis Effect</title>
+
+			<objectives xml:id="sso-coriolis"><title>The Coriolis Effect</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <aside><title>Subsection referenced by</title>
+                        <p>
+                        <xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>
+                        </p>
+                </aside>
+
+                <aside><title>Paragraph referenced by</title>
+                        <p>
+                        <xref ref="d-noninertial" text="title">Non-inertial Rotational Reference Frames</xref>
+                        </p>
+                </aside>
+                <p xml:id="d-coriolis">weather <ellipsis /> AND <ellipsis />
+                In her podcast, <em>Spacepod</em><fn xml:id="fn-spacepod-ocean">Nugent, Carrie (Producer, Host). <em>Spacepod</em> [Audio podcast], episode 89 (19 May, 2017).  Retrieved from
+                <!-- <xref ref="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99" text="title">\nolinkurl{http://spacepod.libsyn.com/}</xref> -->
+                <url href="http://spacepod.libsyn.com/#T4LTFdOxHD5WWzdD.99">http://spacepod.libsyn.com/</url> on 9 Apr. 2017.</fn>
+                Dr. Carrie Nugent interviews Dr. Andy Thompson about <q>underwater flying objects</q> that investigate the ocean.  He notes that ocean waters, because they are such a large-scale system, can see the effect of the rotation of the Earth.</p>
+
+                </subsection>
+
+                <subsection xml:id="ss-Foucault"><title>The Foucault Pendulum</title>
+
+			<objectives xml:id="sso-Foucault"><title>The Foucault Pendulum</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
+                <p>See <url href="https://www.youtube.com/watch?v=sWDi-Xk3rgw">youtube video</url> by <url href="http://sixtysymbols.com/">Sixty Symbols</url>.</p>
+
+                </subsection>
+        </section>
+
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+
+<chapter><title>Circular Motion and Centripetal Force</title>
+
+	<objectives><title>[Circular Motion and Centripetal Force]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <section><title>Circular Motion</title>
+
+		<objectives><title>[Circular Motion]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+<p>.</p>
+        </section>
+
+        <section xml:id="s-centripetal"><title>Centripetal Force</title>
+
+		<objectives xml:id="so-centripetal"><title>Centripetal Force</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <aside><title>Referenced by</title>
+                <p>Discussion of <xref ref="connect-Fma" text="title"><m>F=ma</m></xref>
+                </p>
+        </aside>
+
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+
+<chapter xml:id="c-torque"><title>Torque and the <m>F=ma</m> of Rotations</title>
+
+	<objectives xml:id="co-torque"><title>Torque and the <m>F=ma</m> of Rotations</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+        <introduction>
+<aside><title>Chapter referenced by</title> <p><xref ref="a-NIIIaction" text="type-global" /></p></aside>
+        </introduction>
+
+        <section xml:id="s-leverarm"><title>Leverage</title>
+
+		<objectives xml:id="so-leverarm"><title>Leverage</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <aside><title>Section referenced by</title>
+                <p>
+                <xref ref="ss-scales" text="type-global" />,
+                <xref ref="task-friction-future" text="type-global" />,
+                the discussion of <xref ref="p-friction-walking" text="title">walking</xref>
+                </p>
+        </aside>
+        <p>discussion of <term>torque</term><idx>torque</idx>: <m>\tau = F l \sin\theta</m>.</p>
+
+        <definition xml:id="def-force-couple"><title>force couple</title><idx><h>force</h><h>force couple</h></idx>
+                <notation>
+                        <usage>\text{force couple}</usage>
+                        <description>This is a pair of forces that act on an object at different locations in opposite directions, but with equal magnitudes.  Force couples produce a torque on the object.</description>
+                </notation>
+                <statement>
+                        <p>A <term>force couple</term> is a pair of forces that act on an object at different locations in opposite directions, but with equal magnitudes.  Force couples produce a torque on the object.</p>
+                        <aside><title>Definition referenced by</title><p><xref ref="task-friction-future" text="type-global" /></p></aside>
+                </statement>
+        </definition>
+
+
+        </section>
+
+        <section><title>Putting it all together, <m>\tau_\mathrm{net}</m></title>
+
+		<objectives><title>[Putting it all together, <m>\tau_\mathrm{net}</m>]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <subsection><title>Rotational Equilibrium</title>
+
+			<objectives><title>[Rotational Equilibrium]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <p xml:id="ss-roteq">blah blah blah. Rotational equilibrium: <m>\tau_\mathrm{net} = I \cancelto{0}{\alpha}</m>.  blah blah blah</p>
+                </subsection>
+
+                <subsection><title>Static (Rotational) Equilibrium</title>
+
+			<objectives><title>[Static (Rotational) Equilibrium]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+<p>.</p>
+                </subsection>
+
+                <subsection><title>Dynamic (Rotational) Equilibrium</title>
+
+			<objectives><title>[Dynamic (Rotational) Equilibrium]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
+                <example xml:id="ex-ladder2"><title>\studentC uses a ladder</title><idx><h sortby="\studentC">\studentC</h></idx>
+                        <statement>
+                                <aside><title>Example referenced by</title> <p><xref ref="se-ladderN" text="type-global" />, <xref ref="ss-roteq"  text="type-global"/></p></aside>
+                                <p>\studentC\ leans a <m>22.7\unit{kg}</m> ladder against a wall at an angle of <m>75.5^\circ</m>, consistent with
+                                <url href="https://www.osha.gov/">OSHA</url> standard
+                                <url href="https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=standards&amp;p_id=10839">1926.1053(a)(1)(ii)</url>.
+                                The coefficient of friction between the ladder and the floor is <m>\mu_f=0.31</m>.
+                                The coefficient of friction between the ladder and the wall is <m>\mu_w=0.19</m>.
+                                Use the rotational and translational equilibrium to determine if the ladder slides.</p>
+                        </statement>
+
+                        <answer xml:id="A-ladderNf">
+                        <p>Since the full weight of the ladder, <m>F_g = \sig{222}{.69}{N}</m>, is still pressing downwards into the floor (as a normal force), it is tempting to say that <xref ref="as-NIII" text="title">Newton's third law</xref> implies that the floor pushes the ladder upwards with a normal force of <m>\sig{222}{.69}{N}</m> but this would not account for the frictional force on the wall, <m>F_{fw}</m>.  If there were no friction between the ladder and the wall, then we could deduce <m>F_{Nf}</m>, but at this point, we cannot.</p>
+                        </answer>
+
+                        <answer xml:id="A-nowall">
+                        <p>If we consider <m>\mu_w\rightarrow 0</m>, then <m>F_{fw}=0\unit N</m>,  <m>\vec F_{Nf} = -\vec F_g = \sig{222}{.7}{N} \jhat</m>, and <m>\vec F_{Nw} = - \vec F_{ff} = \sig{28.7}{9}{N} \ihat</m>.  In this case, <m>\mu_f</m> could be as small as <m>0.\sig{129}{3}{}</m> and still hold the ladder in place, unless \studentC<idx><h sortby="\studentC">\studentC</h></idx> climbs the ladder, in which case see <xref ref="A-nowallC" text="type-global" />.</p>
+                        </answer>
+
+                        <answer xml:id="A-nowallC">
+                        <p>If we consider <m>\mu_w\rightarrow 0</m> with \studentC<idx><h sortby="\studentC">\studentC</h></idx> <m>(m=\massC)</m> at the third-rung-from-the-top of the ladder, (<m>1.53\unit m</m> up the ladder), then <m>F_{fw}=0\unit N</m>,  <m>\vec F_{Nf} = \sig{1105}{.6}{N} \jhat</m>, and <m>\vec F_{Nw} = - \vec F_{ff} = \sig{171}{.97}{N} \ihat</m>.  In this case, <m>\mu_f</m> could be as small as <m>0.\sig{155}{5}{}</m> and still hold the ladder in place.</p>
+                        </answer>
+
+                        <solution>
+                                <p>Since we are asked to distinguish between two cases that cannot both be true, we should assume one (the easier one to calculate is that the ladder does not slip) and then verify that the result is consistent with that assumption.</p>
+
+                                <p xml:id="ex-ladder2-know"><alert>What do we know?</alert>
+                                We know that the floor has a normal force <m>(F_{Nf})</m> upwards and a frictional force <m>(F_{ff})</m> to the left.
+                                We know that the wall has a normal force <m>(F_{Nw})</m> to the right and a frictional force <m>(F_{fw})</m> up (keeping the ladder from sliding down).
+                                We know the weight is <m> F_g = mg = (22.7\unit{kg})(9.81\unitfrac{m}{s^2}) = \sig{222}{.69}{N} </m>.</p>
+
+                                <figure xml:id="f-ladder2">
+                                        <caption>Diagram of the ladder against the wall</caption>
+                                        <image xml:id="i-ladder2">
+                                        <description>Diagram of the ladder against the wall</description>
+                                        <latex-image-code>
+\begin{picture}(100,100)(-10,-5)
+% Dimensions and offset: (width,height)(x offset,y offset)
+% Insert picture commands (\line,\circle, etc...) here:
+\put(0,0){\line(0,1){100}}
+\put(0,0){\line(1,0){75}}
+\put(20,0){\color{blue}\line(-1,4){20}}     % ladder
+\put(10,40){\color{red}\vector(0,-1){30}}   % Fg
+\put(20,1){\color{red}\vector(0,1){25}}     % FNf
+\put(19,1){\color{red}\vector(-1,0){12}}
+\put(1,80){\color{red}\vector(1,0){12}}
+\put(1,81){\color{red}\vector(0,1){8}}
+\end{picture}
+                                        </latex-image-code>
+                                        </image>
+                                </figure>
+
+                                <p xml:id="ex-ladder2-want"><alert>What do we want to know?</alert>
+                                We want to know about the the magnitudes of both normal forces and both frictional forces.  Can we easily deduce the magnitude of <m>F_{Nf}</m>? <xref ref="A-ladderNf" text="type-global" />.</p>
+
+                                <p xml:id="ex-ladder2-infer"><alert>How are what-we-know and what-we-want related?</alert>
+                                The forces acting on any body are related by static <xref ref="ss-transeq" text="title">translational equilibrium</xref>
+                                <md>
+                                <mrow> x: \hspace{.5cm} 0 \amp = \cancel{0}{F_{gx}} + \cancelto{0}{F_{Nfx}}{0} + F_{ffx} + F_{Nwx} + \cancelto{0}{F_{fwx}} </mrow>
+                                <mrow> y: \hspace{.5cm} 0 \amp = F_{gy} + F_{Nfy} + \cancelto{0}{F_{ffy}} + \cancelto{0}{F_{Nwy}} + F_{fwy} </mrow>
+                                </md>
+                                and static <xref ref="ss-roteq" text="title">rotational equilibrium</xref>, assuming the pivot point is at the ground, and using the relationship <m>F_f=\mu F_N</m>, we find
+                                <md>
+                                <mrow> 0 \amp = \tau_{g} + \cancelto{0}{\tau_{Nf}} + \cancelto{0}{\tau_{ff}} + \tau_{Nw} + \tau_{fw} </mrow>
+                                <mrow> 0 \amp = \left[ F_g \frac{l}{2} \sin 14.5^\circ \right] + \left[ - F_{Nw} l \sin(75.5^\circ) \right] + \left[ - F_{fw} l \sin(14.5^\circ) \right] </mrow>
+                                <mrow> F_{Nw} \amp = \left[ F_g \frac{l}{2} \sin 14.5^\circ \right] / \left[  l \sin(75.5^\circ) + \mu_w l \sin(14.5^\circ) \right] </mrow>
+                                </md>
+                                </p>
+
+                                <!-- <p><alert>Free-Body Diagrams:</alert> Since the picture is so simple, we will not draw the free-body diagram.</p> -->
+
+                                <p xml:id="ex-ladder2-concepts"><alert>Concepts to consider:</alert>
+                                First, the length of the ladder cancels from the expression; what matters is the angle at which it is propped.</p>
+
+                                <p>Second, every force value will be linearly dependent on the mass of the ladder.  So once we solve this problem, we can easily scale the answers to any mass.</p>
+
+                                <p>Third, the friction with the wall is, by far, the smallest effect and it might be interesting to approximate all of this with <m>\mu_w=0</m>.  You can check your calculation against <xref ref="A-nowall" text="type-global" />.</p>
+
+                                <p><alert>Solution to the example:</alert>
+                                When we worry about significant figures,
+                                <md>
+                                <mrow> F_{Nw} \amp = \frac{\left[ (\sig{222}{.7}{N})(\txtfrac{1}{2}) (0.\sig{250}{4}{}) \right]}
+                                                {\left[  (0.\sig{968}{2}{}) + (0.19) (0.\sig{250}{4}{}) \right]}
+                                        \ = \ \frac{\left[ (\sig{27.8}{8}{N})\right]}{\left[  (0.\sig{968}{2}{}) + (0.0\sig{47}{6}{}) \right]} </mrow>
+                                <mrow> F_{Nw} \amp = \frac{\left[ (\sig{27.8}{8}{N})\right]}{\left[  (\sig{1.015}{7}{}) \right]}
+                                        \ = \ \sig{27.4}{4}{N} </mrow>
+                                <mrow> F_{fw,\mathrm{max}} \amp = (0.19)(\sig{27.4}{4}{N}) \ = \ \sig{5.2}{15}{N} </mrow>
+                                <mrow> F_{Nf} \amp = F_g - F_{fw} = (\sig{222}{.7}{N})-(\sig{5.2}{15}{N}) \ = \ \sig{217}{.5}{N} </mrow>
+                                <mrow> F_{ff,\mathrm{max}} \amp = (0.31)(\sig{217}{.5}{N}) \ = \ \sig{672}{.4}{N} </mrow>
+                                </md>
+                                Since <m>F_{ff} >F_{Nw}</m>, the friction is sufficient to hold the ladder in place, as assumed.</p>
+
+                        </solution>
+
+                </example>
+
+                <p><alert>Note about <xref ref="ex-ladder2" text="type-local" />:</alert> Since <m>F_{ff}</m> only needs to be <m>\sig{27.4}{4}{N}</m> to hold the ladder in place, it is possible for the ladder to not slide on a floor that only has <m>\mu_\mathrm{min} = (\sig{27.4}{4}{N})/(\sig{217}{.5}{N}) = 0.\sig{126}{2}{}</m>; but that would not allow a person to climb the ladder.</p>
+
+                <p><alert>Homework related to <xref ref="ex-ladder2" text="type-local" />:</alert> Homework problem <xref ref="h-ladderC" text="type-global" /> asks you to determine if the ladder slides when \studentC\ climbs to different locations on the ladder.</p>
+
+                </subsection>
+
+        </section>
+
+        <section xml:id="s-torsion"><title>Torsion</title>
+
+		<objectives xml:id="so-torsion"><title>Torsion</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <aside><title>Referenced by</title> <p><xref ref="s-FT" text="type-global"/></p></aside>
+        </section>
+
+        <section><title>Summary and Homework</title>
+
+		<objectives><title>[Summary and Homework]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <subsection><title>Summary of Concepts and Equations</title>
+
+			<objectives><title>[Summary of Concepts and Equations]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <p><ellipsis /></p>
+                </subsection>
+
+                <subsection><title>Conceptual Questions</title>
+
+			<objectives><title>[Conceptual Questions]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <todo>Add conceptual problems.</todo>
+                </subsection>
+
+                <exercises><title>Problems</title>
+                <todo>Add more problems.</todo>
+
+                <exercise xml:id="h-ladderC">
+                        <statement>
+                                <p>\studentC\ leans a <m>22.7\unit{kg}</m> ladder against a wall at an angle of <m>75.5^\circ</m>, consistent with
+                                <url href="https://www.osha.gov/">OSHA</url> standard
+                                <url href="https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=standards&amp;p_id=10839">1926.1053(a)(1)(ii)</url>.
+                                The coefficient of friction between the ladder and the floor is <m>\mu_f=0.31</m>.
+                                The coefficient of friction between the ladder and the wall is <m>\mu_w=0.19</m>.
+                                Use the rotational and translational equilibrium to determine if the ladder slides when \studentC\ <m>(\massC)</m> climbs to <ellipsis />
+                                <ol>
+                                  <li><p>the third-rung from the top of the ladder, so that he is <m>1.53\unit m</m> from the bottom of the ladder.  (<xref ref="A-ladderC-a" text="type-local" />)
+                                      <ul>
+                                        <li><p>(You might also consider <xref ref="A-nowallC" text="type-global" /> for the case of <m>\mu_w = 0</m>.)</p></li>
+                                      </ul></p></li>
+                                  <li><p>the third-rung from the bottom of the ladder, so that he is <m>0.914\unit m</m> from the bottom of the ladder. (<xref ref="A-ladderC-b" text="type-local" />) </p></li>
+                                </ol>
+                                </p>
+                        </statement>
+                        <solution xml:id="A-ladderC-a">
+                                <p>The normal force from the wall is the only force to the right.  The frictional force from the floor is the only force to the left.  Using the calculations in <xref ref="ex-ladder2" text="type-global" />, we notice that
+                                <md>
+                                <mrow> F_{Nw} \amp = \sig{163}{.9}{N} </mrow>
+                                <mrow> F_{fw,\mathrm{max}} \amp = (0.19)(\sig{163}{.9}{N}) \ = \ \sig{31}{.14}{N} </mrow>
+                                <mrow> F_{Nf} \amp = \sig{1074}{.4}{N} </mrow>
+                                <mrow> F_{ff,\mathrm{max}} \amp = \sig{333}{.0}{N} \gt \sig{163}{.9}{N} </mrow>
+                                </md>
+                                The frictional force with the floor can support a normal force from the wall of <m>333\unit N</m>, but the normal force is only <m>164\unit N</m> so the ladder stays in place.  In fact it is possible to compute the smallest coefficient of floor-friction that will keep the ladder in place:
+                                <m>\mu_\mathrm{min} = 0.\sig{152}{56}{}</m>.
+                                </p>
+                        </solution>
+
+                        <solution xml:id="A-ladderC-b">
+                                <p>The normal force from the wall is the only force to the right.  The frictional force from the floor is the only force to the left.  Using the calculations in <xref ref="ex-ladder2" text="type-global" />, we notice that
+                                <md>
+                                <mrow> F_{Nw} \amp = \sig{108}{.97}{N} </mrow>
+                                <mrow> F_{fw,\mathrm{max}} \amp = (0.19)(\sig{108}{.97}{N}) \ = \ \sig{20}{.70}{N} </mrow>
+                                <mrow> F_{Nf} \amp = \sig{1084}{.9}{N} </mrow>
+                                <mrow> F_{ff,\mathrm{max}} \amp = \sig{336}{.3}{N} \gt \sig{108}{.97}{N} </mrow>
+                                </md>
+                                The frictional force with the floor can support a normal force from the wall of <m>336\unit N</m>, but the normal force is only <m>109\unit N</m> so the ladder stays in place.  In fact it is possible to compute the smallest coefficient of floor-friction that will keep the ladder in place:
+                                <m>\mu_\mathrm{min} = 0.\sig{100}{45}{}</m>
+                                </p>
+
+                                <todo>Make this a different homework problem.</todo>
+                                <p>If, hypothetically, <m>\mu_w = 0</m>, then
+                                <md>
+                                <mrow> F_{Nw} \amp = \sig{114}{.3}{N} </mrow>
+                                <mrow> F_{fw,\mathrm{max}} \amp = 0 \unit N </mrow>
+                                <mrow> F_{Nf} \amp = \sig{1105}{.6}{N} </mrow>
+                                <mrow> F_{ff,\mathrm{max}} \amp = \sig{342}{.7}{N} \gt \sig{114}{.3}{N} </mrow>
+                                </md>
+                                The frictional force with the floor can support a normal force from the wall of <m>336\unit N</m>, but the normal force is only <m>109\unit N</m> so the ladder stays in place.  In fact it is possible to compute the smallest coefficient of floor-friction that will keep the ladder in place:
+                                <m>\mu_\mathrm{min} = 0.\sig{103}{4}{}</m>
+                                </p>
+                        </solution>
+                </exercise>
+                </exercises>
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+
+<chapter><title>Energy of Rotating Objects</title>
+
+	<objectives><title>[Energy of Rotating Objects]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+        <section><title>Rotational Kinetic Energy</title>
+
+		<objectives><title>[Rotational Kinetic Energy]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <p>pool balls</p>
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+
+<chapter xml:id="c-gravity"><title>The Gravitational Force on a Large Scale</title>
+
+	<objectives xml:id="co-gravity"><title>The Gravitational Force on a Large Scale</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+<introduction>
+<aside><title>Chapter referenced by</title>
+        <p>
+        <xref ref="d-freefall" text="title">freefall</xref>,
+        <xref ref="d-fundamental" text="title">fundamental forces</xref>
+        </p>
+</aside>
+
+        <p>This might be useful.  <url href="http://www.physicsoftheuniverse.com/dates.html" />.</p>
+</introduction>
+
+<section xml:id="s-Gfield"><title>Gravitational Force and Field</title>
+
+		<objectives xml:id="so-Gfield"><title>Gravitational Force and Field</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+        <introduction>
+<aside><title>Section referenced by</title> <p>Discussion of <xref ref="connect-Fma" text="title"><m>F=ma</m></xref></p></aside>
+                <p>The value of the acceleration due to gravity  varies according to the mass and size of any celestial body.
+                This means that, as was seen in <xref ref="se-gworld" text="type-global" />, your weight can change even when your mass remains the same.</p>
+                <todo>Reference a table of $g$ on other planets and compute the weight of a space craft at each planet.</todo>
+
+                <example xml:id="se-gplanets"><title>Weight is not mass</title>
+                        <statement>
+                                <p>In conversation with a visiting alien, \studentX<idx><h sortby="\studentX">\studentX</h></idx>, you find that \studentX\ has been to the moon and several planets both within and outside of our solar system.  In addition to the Earth, \studentX\ has visited our moon, Mars, Pluto, and Planet X.  Using <xref ref="t-gplanets" text="type-hybrid" />, compute \studentX's weight are each location, assuming \hisX\ mass is \massX.</p>
+                        </statement>
+                        <solution>
+                                <p><ol>
+                                <li><p>[Earth] <m>F_g = (\massX)\left[ \frac{ G M_E}{R_E^2} \right] = (\massX)(9.825\unitfrac{m}{s^2}) \ = \ \sig{933}{.4}{N}</m></p></li>
+                                <li><p>[moon] <m>F_g = (\massX)\left[ \frac{ G M_m}{R_m^2} \right] = (\massX)(9.782\unitfrac{m}{s^2}) \ = \ \sig{929}{.3}{N}</m></p></li>
+                                <li><p>[Mars] <m>F_g = (\massX)\left[ \frac{ G M_M}{R_M^2} \right] = (\massX)(9.763\unitfrac{m}{s^2}) \ = \ \sig{927}{.5}{N}</m></p></li>
+                                <li><p>[Pluto] <m>F_g = (\massX)\left[ \frac{ G M_P}{R_P^2} \right] = (\massX)(9.763\unitfrac{m}{s^2}) \ = \ \sig{927}{.5}{N}</m></p></li>
+                                <li><p>[Planet X] <m>F_g = (\massX)\left[ \frac{ G M_X}{R_X^2} \right] = (\massX)(9.763\unitfrac{m}{s^2}) \ = \ \sig{927}{.5}{N}</m></p></li>
+                                </ol>
+                                </p>
+                        </solution>
+                </example>
+
+<!-- Tables cannot have asides??? -->
+<!--		<assemblage> -->
+                <aside><p>Table referenced by <xref ref="se-gplanets" text="type-hybrid" /></p></aside>
+                <table xml:id="t-gplanets">
+<!-- You can have BOTH a title AND a caption -->
+                        <caption>
+                                Properties of various celestial bodies.
+                        </caption>
+                        <tabular>
+                                <col /><col /><col /><col />
+                                <row><cell>Planet</cell><cell>Mass (kg)</cell><cell>Mean Radius (m) </cell> <cell><m>g (\unitfrac{m}{s^2})</m></cell></row>
+                        </tabular>
+                </table>
+<!--                 </assemblage>  -->
+                </introduction>
+
+                <subsection xml:id="ss-equivmm"><title>Inertial Mass versus Gravitational Mass</title>
+
+			<objectives xml:id="sso-equivmm"><title>Inertial Mass versus Gravitational Mass</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <aside><title>Referenced by</title> <p><xref ref="ss-weightmass" text="type-hybrid" /></p></aside>
+                </subsection>
+
+        </section>
+
+        <section xml:id="s-PEG"><title>Gravitational Potential Energy</title>
+
+		<objectives xml:id="so-PEG"><title>Gravitational Potential Energy</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <aside><title>Referenced by</title> <p><xref ref="ss-PEg" text="type-hybrid" /></p></aside>
+
+        <p>Recall <xref ref="ss-PEg" text="type-global" /></p>
+
+        </section>
+
+        <section xml:id="s-Gconnection"><title>Making Connections</title>
+
+		<objectives xml:id="so-Gconnection"><title>Making Connections</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <aside><title>Referenced by</title> <p><xref ref="s-Econnection" text="type-hybrid" /></p></aside>
+
+        <p>
+        <md>
+        <mrow> \amp \amp \vec F = m \vec g \amp \amp </mrow>
+        <mrow> \amp \deq F = G \frac{m_1 m_2}{R^2} \amp \leftrightarrow \amp \deq g = G \frac{m}{R^2} \amp </mrow>
+        <mrow> \Delta \PE = -\vec F \cdot \Delta\vec x \amp \updownarrow \amp \amp \updownarrow \amp \mbox{\scriptsize [for later]} </mrow>
+        <mrow> \amp \deq \PE = G \frac{m_1 m_2}{R} \amp \leftrightarrow \amp \mbox{[for later]} \amp </mrow>
+        <mrow> \amp \amp \mbox{\scriptsize [for later]} \amp \amp </mrow>
+        </md>
+        (Look ahead to the parallel with the electrical interaction in <xref ref="s-Econnection" text="type-global"/>.)</p>
+
+        </section>
+
+        <section><title>Orbits</title>
+
+		<objectives><title>[Orbits]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+<p>.</p>
+        </section>
+
+</chapter>
+
+<!-- ********************************************************************************************** -->
+</part>

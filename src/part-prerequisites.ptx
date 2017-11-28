@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************************************** -->
+<!-- ********************************************************************************************** -->
+
+<part xml:id="P-prerequisites"><title>Prerequisites</title>
+        <introduction>
+        <p> The chapters in this Part are the preliminaries, including descriptions of science in general, physics in
+        particular, and the use of math. </p>
+        </introduction>
+
+<chapter><title>The Story of Science</title>
+
+	<objectives><title>[The Story of Science]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <introduction>
+        <p>Once upon a time somebody saw the world around them and thought something equivalent to <q>well, that's an interesting pattern<ellipsis /></q> and predictions were born.  Every human and many animals build their own world of expectations such as: objects will fall down, food will arrive at mealtime, or certain people will smile at me.  Scientists study the patterns in the world around us and do so in a fairly specific way.  Novelists, sociologists, historians, and cartoonists also look at the world around us in a very particular way.  The story of humanity is a story about observing the world around us.</p>
+
+        <p>Scientists, in general, observe patterns through careful, detailed measurements <ellipsis /></p>
+        <todo>Add description of science.</todo>
+
+        <p>Physicists, in particular, consider the patterns in the physical world around us.</p>
+        <todo>Add description of physics</todo>
+
+        <p xml:id="d-physicspatterns">Some patterns that you might experience help us take very different experiences and group them together.  For example, there are ways in which <xref ref="d-freefall" text="title">dropping your keys</xref> and <xref ref="d-ballistic" text="title">throwing a dog toy</xref> are very similar.  They both fall, even though the fall along rather different paths.  There are also patterns that you experience that might look very similar but can be treated very differently.  For example, the path of baseball pitch (See <xref ref="irl-nonparabolic"  text="type-global" />.) is very different for a fast ball compared to a slider, a curve ball, or a knuckleball.</p>
+
+<!--                 <assemblage>  -->
+                <figure xml:id="f-BoonePark">
+                        <caption>Life is full of examples of physics all around us. </caption>
+                        <image xml:id="i-BoonePark" source="images/i-BoonePark.jpg">
+                        <description>
+                                Photograph a park with tennis courts and basketball hoops in the background and falling car keys and a dog in the foreground. I think we could do that at Boone County park.
+                        </description>
+                        </image>
+                </figure>
+<!--                </assemblage>  -->
+
+        </introduction>
+
+        <section><title>Careful, Detailed Observation</title>
+
+		<objectives><title>[Careful, Detailed Observation]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+        <todo>Consider the ''casual to the obvious observer'' joke</todo>
+        <p  xml:id="d-casual">[Discussion of <q>casual observer</q> as intuition versus <q>scientific observing</q> and mathematical modelling]</p>
+        <aside><title>Paragraph referenced by</title> <p><xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>, discussion of <xref ref="p-multistep" text="title">simple piece of a complicated situation</xref></p></aside>
+
+        <p>[Discussion of common student comment: <q>in physics class it is this way, but in <em>real life</em> it is that way.</q>]</p>
+
+        </section>
+
+        <section xml:id="s-law"><title>Theory versus Law</title>
+
+		<objectives xml:id="so-law"><title>Theory versus Law</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+                <aside><title>Section referenced by</title> <p><xref ref="s-Newton"  text="type-global" /></p></aside>
+        </section>
+
+        <conclusion><title>List of examples</title>
+                <list-of elements="example" scope="chapter" />
+        </conclusion>
+</chapter>
+
+
+<!-- ********************************************************************************************** -->
+
+<chapter xml:id="c-physics"><title>Seeing Physics</title>
+
+	<objectives xml:id="co-physics"><title>Seeing Physics</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <introduction>
+        <todo>This chapter should mirror (xref ref="c-revisted"  text="type-global" /)</todo>
+        <p>What you will find in this book is a series of chapters that, on the surface, feel like a list of isolated topics.  Each chapter will have examples that focus your attention on examples of that specific concept.  However, the really interesting aspect of physics is that these descriptions of the world around us come together in different ways to explain complex systems that might feel unrelated.  For example, the thermodynamics of making your refrigerator work on Earth comes from the same theories of thermodynamics that help us understand the heat flow of the sun.  Furthermore, in order to understand the sun, we also need to understand the gravitational interaction, which also describes how baseballs fly through the air.</p>
+
+        <p>This chapter will introduce a set of quick-overview explanations of phenomena to indicate how different ideas tie together in some complex systems.  The point  is specifically to over-simplify complex ideas in order to <q>get the idea</q>.  You will also be pointed to the various chapters that go into the details of the relevant physics where you can learn more.  Then, at the end of the book in <xref ref="c-revisted" text="type-global" />, we will revisit each of these ideas and go into the description in more depth assuming you have understood each of the relevant chapters, with reference back to the sections that provide the basis of our understanding.</p>
+
+                <warning> <p>Since this particular chapter is intended to be background introduction, rather than a place to study details, none of the links to other sections here will have return links in the rest of the text.  So, if you intend to use this as a jumping off point, you might want to create a bookmark here so that you can return after you read the details in other sections.</p></warning>
+
+        </introduction>
+
+        <section xml:id="s-flame"><title>The Flame Challenge and Other Brief Descriptions</title>
+
+		<objectives xml:id="so-flame"><title>The Flame Challenge and Other Brief Descriptions</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <introduction>
+                <p>The point of this section is to whet your whistle, to provide an appetizer before the main meal, to inspire your curiosity.  This section will have very brief descriptions, inspired by <url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge">The Flame Challenge</url>.  Since that is the inspiration, we will start by referencing it explicitly.  After that you will find some brief explanations for complex ideas.</p>
+                </introduction>
+
+                <subsection xml:id="ss-flame"><title>The Flame Challenge</title>
+
+			<objectives xml:id="sso-flame"><title>The Flame Challenge</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <!-- \new{v2.3}{Added the questions.  These might be better in their respective sections.} -->
+
+                <p>
+                <ul>
+                        <li><p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge">The Flame Challenge</url></p></li>
+                        <li><p>Useful?  <url href="https://newsstand.google.com/articles/CAIiEBF_HbPTdq-9q-hjA0W51WYqFggEKg4IACoGCAow9vBNMK3UCDDq0Rc">How Alan Alda Makes Science Understandable</url>
+                        <ul>
+                                <li><p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge/what-is-a-flame">2012: What is a flame?</url></p></li>
+                                <li><p><url href="http://www.aldakavlilearningcenter.org/flame-challenge/past-challenges/what-time">2013: What is time?</url></p></li>
+                                <li><p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge/past-challenges/what-is-color">2014: What is color?</url></p></li>
+                                <li><p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge/past-challenges/what-is-sleep">2015: What is sleep?</url></p></li>
+                                <li><p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge/past-challenges/what-is-sound">2016: What is sound?</url></p></li>
+                                <li><p><url href="http://www.aldakavlilearningcenter.org/practice/flame-challenge/past-challenges/energy">2017: What is energy?</url></p></li>
+                        </ul></p></li>
+                </ul>
+                </p>
+                </subsection>
+
+                <subsection xml:id="ss-matter"><title>The Forming of Matter in the Universe</title>
+
+			<objectives xml:id="sso-matter"><title>The Forming of Matter in the Universe</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <!--\new{v2.1}{Started this section to give a sense<ellipsis />}  -->
+
+                <p>In the early ages of the universe, which is an entirely different story that could be told, there were a ridiculously large number of particles created and drifting around.  There were a variety of types (<xref ref="ss-StandardModel"  text="type-global" />), some being positively charged (<xref ref="s-Echarge"  text="type-global" />), some negatively charged, and some were neutral; but the larger ones tended to gradually decay (<xref ref="ss-particledecay"  text="type-global" />) into smaller ones.  The smaller of the positively-charged baryons (<xref ref="s-particle"  text="type-global" />), which we call protons, and the smallest of the negatively-charged leptons (<xref ref="s-particle"  text="type-global" />), which we call electrons, also tended to stick together because of their electrical charges (<xref ref="s-Echarge"  text="type-global" />), forming hydrogen atoms.  You may note that as this happens, sometimes the more ambitious of the particles form larger clumps of two protons and two neutrons, making helium atoms that are held together by the strong nuclear force ([need ref])</p>
+                <todo>Stopped mid-stream.  This is a good place to jump back in when I am stuck someplace else.</todo>
+
+                </subsection>
+
+                <subsection><title>Things in the Sky</title>
+
+			<objectives><title>[Things in the Sky]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <!-- \new{v2.3}{Rearranged sections}  -->
+
+                        <example xml:id="sss-sun1"><title>The Sun</title>
+                        <!-- \new{v2.1}{This point of this will be to connect gravity-thermo-nuclear and to do it in 1-2 paragraphs (a la the flame challenge).} -->
+                        <p>The bright, shiny sun, which keeps us all alive, is a nice example of a rather complex system that allows us to verify our various theories of the world around us.  As an over-simplification of the process, we can consider the existence of a star in three phases: the ignition (some have said <q>birth</q>) of a star, the shining (some would say <q>life</q>) of the star, and the snuffing (<q>death</q>?) of the star.</p>
+
+                        </example>
+                </subsection>
+
+                <subsection><title>Things on the ground</title>
+
+			<objectives><title>[Things on the ground]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
+                        <example xml:id="sss-tea"><title>Hot Tea and Iced Tea</title>
+                        <aside><title>Example referenced by</title> <p><xref ref="s-surface-tension"  text="type-global" /></p></aside>
+
+                        <p>On 28 April, 2017,<!--\new{v2.3}{New source of info} -->
+                        <url href="http://www.cbc.ca/podcasting">CBC Broadcasting</url> published a
+                        <url href="http://www.cbc.ca/podcasting/includes/quirks.xml"><em>Quirks and Quarks</em></url> episode discussing why
+                        <url href="https://podcast-a.akamaihd.net/mp3/podcasts/quirks_20170429_19254.mp3">hot water sounds different from cold water when they are poured</url>.
+                        Spoiler Alert: It is due to surface tension, size of droplets when heated, and auditory perception.</p>
+
+                        </example>
+
+                </subsection>
+
+                <subsection><title>Kitchen Appliances</title>
+
+			<objectives><title>[Kitchen Appliances]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                        <example><title>Oven</title><p><ellipsis /></p></example>
+                        <example><title>Refrigerator</title><p><ellipsis /></p></example>
+                        <example><title>Microwave</title><p><ellipsis /></p></example>
+                        <example><title>Television</title><p><ellipsis /></p></example>
+
+                </subsection>
+                <subsection><title>Automobile</title>
+
+			<objectives><title>[Automobile]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                        <example><title>Coolant and Antifreeze</title><p><ellipsis /></p></example>
+                        <example><title>Tires</title><p><ellipsis /></p></example>
+                        <example><title>Torque</title><p><ellipsis /></p></example>
+
+                </subsection>
+                <subsection><title>Cool Ideas</title>
+
+			<objectives><title>[Cool Ideas]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                        <example xml:id="sss-blackhole1"><title>Black Holes</title><p><ellipsis /></p></example>
+                        <example><title>Quantum Mechanics</title><p><ellipsis /></p></example>
+                        <example><title>Relativity</title><p><ellipsis /></p></example>
+                        <example><title>String Theory</title><p><ellipsis /></p></example>
+                        <example><title>Fusion</title>
+
+                        <p>On 28 April, 2017,<!--\new{v2.3}{New source of info} -->
+                        <url href="http://www.cbc.ca/podcasting">CBC Broadcasting</url> published a
+                        <url href="http://www.cbc.ca/podcasting/includes/quirks.xml}"><em>Quirks and Quarks</em></url> episode discussing a
+                        <url href="https://podcast-a.akamaihd.net/mp3/podcasts/quirks_20170429_51936.mp3">documentary compares the massive scale ITER approach to fusion with the much smaller approach by a Canadian company</url>.
+                        <em>I don't think I want to use this, but it might be helpful to listen again to the nice summary of fusion.</em>  Maybe get some resources on <q>state of the art</q>.</p>
+                        </example>
+                </subsection>
+
+        </section>
+
+        <section xml:id="s-effective1"><title>Effective Theory</title>
+
+		<objectives xml:id="so-effective1"><title>Effective Theory</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <todo>Should this be here or in (xref ref="s-effective2"  text="type-global" /)?</todo>
+
+        <p>All of our explanations are approximations.  This section will describe some physics in the world around us in one or two paragraphs with links to the sections in the book that provide the detailed understanding of that piece which connects to the mathematics and the underlying foundation.  Each topic will also link to a more detailed discussion at the end of the book with a longer conversation that gets into more nitty-gritty details which assume you have learned the details from the book.  In short, this section looks forward to what is possible to understand and that chapter looks back at how you do understand.  Each of these topics will also be accompanied by a five-minute podcast describing the topic.</p>
+
+        <p>The term <term>effective theory</term> is used in physics to describe a wide-reaching phenomenon which can be approximated by a simpler theory in a smaller circumstance.  So, for example, Einstein's theory of general relativity as a complex description of the gravitational interaction.  It would be unwieldy and impractical to use that to describe our day-to-day interactions with the gravitational interaction.  On the other hand, Newton's theory of the gravitational interaction is a special case of Einstein's general theory of relativity that works perfectly well so long as you behave yourself and do not try to travel at a significant fraction of the speed of light.  We can say that Newton's theory of gravity is an effective theory for Einstein's theory of gravity that accounts for acceleration at low speeds.  Likewise, Einstein's special theory of relativity is an effective theory of the general theory of relativity.  The special theory is relevant when you do not allow for acceleration, but do allow for faster speeds.  Once you reach beyond the limitations of the effective theory, the description <q>breaks down</q>.</p>
+
+        <p>For example, see the discussion around <xref ref="convention-g-value" text="type-global" /> regarding the acceleration due to gravity being <q>locally constant</q>.</p>
+
+        </section>
+        <conclusion><title>List of examples</title>
+                <list-of elements="example" scope="chapter" />
+        </conclusion>
+
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Why so much math?</title>
+
+	<objectives><title>[Why so much math?]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <introduction>
+        <p>Mathematics is its own language.  It is the language of patterns.  Humans are very adept at tracking patterns.  Physics is the study of patterns in the physical world.  It turns out that the language of physics provides a natural and concise mechanism for expressing patterns in a uniquely precise manner.</p>
+        </introduction>
+
+        <section xml:id="s-story"><title>Every equation tells a story</title>
+
+		<objectives xml:id="so-story"><title>Every equation tells a story</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+        <p>Equations allow us to connect physical reality to very specific predictions.  For example, the equation for thermal conductivity, <xref ref="eq-thermalconductivity"  text="type-global">Equation</xref> in <xref ref="ss-thermalconductivity"  text="type-global" />, allows \studentA<idx><h sortby="\studentA">\studentA</h></idx> to predict the time it takes for \hisA\ oven to warm up to a specific temperature because <m>\displaystyle \frac{Q}{\Delta t} = \kappa A \, \frac{\Delta T}{\Delta x}</m> says that {the rate at which energy flows} {depends on} {how well air allows energy to flow,} {the size of the oven,} and {the amount the temperature needs to change} {across the height of the oven} as follows:</p>
+        <todo>I would love for this to be a mouse-over in the equation</todo>
+        <todo>Consider "chunking" the "story" with colors to indicate the pieces.</todo>
+
+<!--	<assemblage> -->
+                <table>
+                <caption>An example of how the math describes the <q>story-of</q> a physical situation.</caption>
+                <tabular>
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                    <row halign="center">
+                        <cell><m>\deq \frac{Q}{\Delta t}            </m></cell>
+                        <cell><m> =                                 </m></cell>
+                        <cell><m> \deq \kappa                       </m></cell>
+                        <cell><m> \deq A                            </m></cell>
+                        <cell><m> \deq \frac{\Delta T}{\Delta x}    </m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><line>the rate</line><line>at which</line><line>energy</line><line>flows</line></cell>
+                        <cell><line>depends</line><line>on</line></cell>
+                        <cell><line>how well</line><line>air allows</line><line>energy to</line><line>flow,</line></cell>
+                        <cell><line>the size</line><line>of the</line><line>oven,</line></cell>
+                        <cell>
+                                <tabular>  <!-- Known tag abuse 1 -->
+                                        <col />
+                                        <row bottom="minor"><cell><line>and the</line><line>amount the</line><line>temperature</line><line>needs to</line><line>change</line></cell></row>
+                                        <row><cell><line>across the</line><line>height of the</line><line>oven</line></cell></row></tabular>
+                                </cell>
+                    </row>
+                </tabular>
+                </table>
+<!--	</assemblage> -->
+
+        <p>We will see this particular story in more detail with <xref ref="ex-baking"  text="type-global" /> when \studentA<idx><h sortby="\studentA">\studentA</h></idx> prepares to bake some bread for \hisA\ friends.  Some of the more important equations are listed below.  By jumping between these narratives, you can get a better sense of how to think about physics in general.        </p>
+        <todo>Is there a way to include something in the \LaTeX version but not in the HTML version? (such as \pageref{ex:baking})</todo>
+
+<!--	<assemblage> -->
+        <todo>Is there a way to include something in the \LaTeX version but not in the HTML version? (such as \pageref{st-Fma})</todo>
+                <table>
+                <caption>Locations of the <q>Story of</q> various equations</caption>
+                <tabular>
+                        <row><cell>Equation</cell><cell /><cell>Location</cell></row>
+                        <row>
+                                <cell><m>\deq \vec F_\mathrm{net} = m \vec a</m></cell>
+                                <cell /><cell><xref ref="st-Fma"  text="type-global" /></cell></row>
+                        <row>
+                                <cell><m>\deq F_f = \mu F_N</m></cell>
+                                <cell /><cell><xref ref="st-Ff-muFN"  text="type-global" /></cell></row>
+                        <row>
+                                <cell><m>\deq \vec v = \vec \omega \times \vec r</m></cell>
+                                <cell /><cell><xref ref="st-vwr"  text="type-global" /></cell></row>
+                </tabular>
+                </table>
+        <todo>Decide if should use the "public version" or the "me version" (which uses listofstorys).</todo>
+<!--	</assemblage>  -->
+
+        </section>
+        <section xml:id="s-SI-MKS"><title>The Metric System</title>
+
+		<objectives xml:id="so-SI-MKS"><title>The Metric System</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <introduction>
+                <aside><title>Section referenced by</title> <p><xref ref="ss-weightmass"  text="type-global" /></p></aside>
+
+                <p>The International System of Units (SI) <xref ref="biblio-wiki-SI" /> was adopted in 1960 at the
+                <url href="http://www.bipm.org/jsp/en/ListCGPMResolution.jsp?CGPM=11">eleventh meeting</url>
+                of the
+                <url href="http://www.bipm.org/en/about-us/">International Bureau of Weights and Measures (BIPM)</url>.
+                <fn xml:id="fn-BIPM">In French this organization is the Bureau International des poids et mesures, so the acronym is BIPM.</fn>
+                </p>
+
+                <p>In 1901 at the
+                <url href="http://www.bipm.org/jsp/en/ListCGPMResolution.jsp?CGPM=3">third meeting</url>
+                of the BIPM, it
+                <url href="http://www.bipm.org/en/CGPM/db/3/2/">was declared</url>
+                that
+                        <ol>
+                                <li><p> The kilogram is the unit of mass; it is equal to the mass of the international prototype of the kilogram;</p></li>
+                                <li><p> The word <q>weight</q> denotes a quantity of the same nature as a <q>force</q>: the weight of a body is the product of its mass and the acceleration due to gravity; in particular, the standard weight of a body is the product of its mass and the standard acceleration due to gravity;</p></li>
+                                <li><p> The value adopted in the International Service of Weights and Measures for the standard acceleration due to gravity is <m>980.665 \unitfrac{cm}{s^2}</m>, value already stated in the laws of some countries.</p></li>
+                        </ol>
+                Other related decisions were made at the following meetings:
+                        <ol>
+                                <li><p> The 11th meeting (1960) redefined the meter in terms of wavelengths of light.</p></li>
+                                <li><p> The 13th meeting (1967) redefined the second in terms of the frequency of radiation from <m>^{133}</m>Cs.</p></li>
+                                <li><p> The 17th meeting (1983) redefined the meter in terms of the speed of light and seconds.</p></li>
+                                <li><p xml:id="p-kg-Planck"> The 24th (2011) and 25th (2014) meeting discussed redefining the kilogram in terms of the Planck constant, with an expectation that it will be redefined at the 26th meeting (Nov, 2018).  See the <xref ref="ref-kg-Planck"  text="title">references</xref> in <xref ref="ss-units" text="type-global" /> for more information.</p></li>
+                        </ol>
+                </p>
+
+                <p>Note <url href="https://www.nist.gov/sites/default/files/documents/2016/11/10/appb-17-hb44-final.pdf">Handbook 44, page B-6</url> talks about SI.
+                <!-- \new{v2.2}{References to NIST} -->
+                </p>
+
+                <p>Note
+                <url href="https://www.nist.gov/pml/weights-and-measures/publications/nist-handbooks/handbook-44">Handbook 44 webpage</url>
+                still links to
+                <url href="https://www.nist.gov/sites/default/files/documents/2016/11/10/appc-17-hb44-final.pdf">the 2016 pdf</url>
+                instead of the
+                <url href="https://www.nist.gov/sites/default/files/documents/2017/04/28/AppC-12-hb44-final.pdf">the 2017 pdf</url>
+                even though it says it was updated in 2017.
+                </p>
+
+                <p>There is also
+                <url href="https://www.nist.gov/pml/special-publication-811-extended-contents">a special publication</url>
+                from NIST that summarizes the use and conversation between units in the SI.
+                </p>
+
+                </introduction>
+
+                <subsection><title>Units Quantify Dimensions</title>
+
+			<objectives><title>[Units Quantify Dimensions]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
+                        <p>In order to understand how big something is, we need to know what scale we are using.  For example, Your thumb is about an inch across, but your foot is about a foot long.  Both have the <q>amount</q> <m>1</m>. but the unit is different.  In this sense, <m>1+1</m> might not equal <m>2</m>.
+                        <md>
+                        <mrow> 1 \unit{ft} + 1 \unit{ft} \amp = 2 \unit{ft} </mrow>
+                        <mrow> 1 \unit{in} + 1 \unit{ft} \amp \ne 2 \unit{??} </mrow>
+                        </md>
+                        For the second line, you need to convert the units:
+                        <me> 1 \unit{in} + 1 \unit{ft} = 1 \unit{in} + 1 \unit{ft}\convert{12\unit{in}}{1\unit{ft}} = 1 \unit{in} + 12 \unit{in} = 13\unit{in} </me>
+			because we need to be speaking about the same thing.  You have all had the experience of a miscommunication when you thought you were speaking about the same thing, but later found out you each meant something different.
+			</p>
+                        <warning><title>Clarify your intent</title><p>You should always include every unit on every number throughout your entire math solution.  This will help you ensure that the units are self-consistent and will occasionally help you either recognize which algebraic step to take next or even which equation to use in the first place.</p></warning>
+                        <p>After introducing some of the essential metric units here, we will build some intuition by considering how to convert from your likely more familiar English units in <xref ref="ss-convertunits" text="type-local" /> and then build these fundamental units into the broader derived units that help express the relationships between interesting quantities in <xref ref="ss-units" text="type-local" />.</p>
+
+                        <investigation><title>Identify familiar dimensions</title>
+                                <task><statement><p>What can be measured?</p></statement></task>
+                        </investigation>
+
+                        <paragraphs><title>Length</title>
+                        <p>feet, inches, (BASE 12?); mm, cm, m, miles (What's that number again?), kilometers, AU</p>
+                        </paragraphs>
+
+                        <paragraphs><title>time</title>
+                        <p>seconds (metric prefixes), minutes<fn>minute = (mine-oot = small); second = the second-order mine-oot = a mine-oot mine-oot</fn>, hours (base 60? REALLY?)<fn>Egyptians!  Hooray!  <m>60 = 2\times 30 = 3\times 20 = 4 \times 15 = 5 \times 12 = 6 \times 10</m> versatile and broadly applicable.  Practical.</fn></p>
+                        </paragraphs>
+
+                        <paragraphs><title>mass</title>
+                        <p>kilogram, slug (see stone!)</p>
+                        </paragraphs>
+
+                        <paragraphs><title>charge</title>
+                        <p>Coulomb</p>
+                        </paragraphs>
+
+                        <paragraphs><title>temperature?</title>
+                        <p>too soon?</p>
+                        </paragraphs>
+
+                <p>A cooking website that nicely distinguishes weight from volume (ounce!):
+                <url href="http://bowlofplenty.blogspot.com/2009/01/how-much-does-water-weigh.html" /></p>
+
+                </subsection>
+
+                <subsection xml:id="ss-convertunits"><title>Conversion from English Units</title>
+
+			<objectives xml:id="sso-convertunits"><title>Conversion from English Units</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                        <aside><title>Subsection referenced by</title>
+                        <p>
+                        <xref ref="s-sigfig"  text="type-global" />,
+                        <xref ref="ex-slowcar"  text="type-global" />
+                        </p>
+                        </aside>
+
+                <p>Note internet search comments in <xref ref="ss-weightmass"  text="type-global" /> regarding the <q>conversion</q> of kilograms-to-pounds, with special attention to (See <xref ref="s-sigfig" text="type-global">significant digits</xref>.).<idx>significant digits</idx></p>
+                <todo>rephrase this.  I moved that discussion to (xref ref="s-sigfig"  text="type-global" /).</todo>
+
+                <p>A cooking website that nicely distinguishes weight from volume (ounce!):
+                <url href="http://bowlofplenty.blogspot.com/2009/01/how-much-does-water-weigh.html" /></p>
+
+                <example xml:id="ex-F-and-C"><title>Fahrenheit and Centigrade</title>
+                        <statement>
+                                <aside><title>Example referenced by</title><p></p></aside>
+                                <p>The <m>\frac{9}{5}</m> is actually <m>\frac{180\unit{^\circ F}}{100\unit{^\circ C}} = \frac{212\unit{^\circ F} - 32\unit{^\circ F}}{100\unit{^\circ C}-0\unit{^\circ C}}</m> as in slope is rise over run.</p>
+                        </statement>
+                </example>
+
+                </subsection>
+
+                <subsection xml:id="ss-units"><title>Fundamental Units versus Derived Units</title>
+
+			<objectives xml:id="sso-units"><title>Fundamental Units versus Derived Units</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                        <aside><title>Subsection referenced by</title>
+                        <p>
+                        <xref ref="sss-unit-N"  text="type-global" />,
+                        <xref ref="ss-weightmass"  text="type-global" />
+                        </p>
+                        </aside>
+
+                <p>Note conversation in <xref ref="sss-unit-N"  text="type-global" /> about the Newton.</p>
+
+                <p xml:id="ref-kg-Planck">See
+                <!-- \new{v2.2}{Possible redefinition of the kilogram.} -->
+                <url href="https://scitechdaily.com/researchers-to-redefine-the-kilogram-in-terms-of-plancks-constant/">the 2012 article from SciTechDaily.com</url>
+                and
+                <url href="https://www.nist.gov/physical-measurement-laboratory/plancks-constant">the NIST explanation</url>
+                about redefining the kilogram in terms of the Planck constant at the 26th meeting (Nov, 2018) of BIPM.</p>
+                        <aside><title>Paragraph referenced by</title>
+                        <p>
+                        historical discussion on <xref ref="p-kg-Planck"  text="title">the definition of the kilogram</xref>
+                        </p>
+                        </aside>
+
+                <paragraphs><title>Fundamental units</title>
+                <p xml:id="p-fundamental">This paragraph should describe a fundamental unit (as opposed to a derived unit).</p>
+                </paragraphs>
+
+                <paragraphs><title>Derived Units</title>
+                <p xml:id="p-derived">This paragraph should describe a derived unit (as opposed to a fundamental unit).</p>
+                <p>Length to area to volume</p>
+                <p>velocity as length-per-time</p>
+                <p>force intuition, visceral <m>\ldots</m> as a combination of several other units.  (maybe note momentum is as yet unnamed)</p>
+                <aside><title>Paragraph referenced by</title>
+                        <p>
+                                <!-- <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>, units -->
+                                <xref ref="fn-friction-area" text="type-global" />, <!-- friction and surface area  perhaps also <xref ref="d-friction-area" text="type-global" /> -->
+                                <xref ref="p-friction-walking" text="title" />
+                                <xref ref="s-pressure" text="type-global" />, <!-- fluids -->
+                                <xref ref="ss-barometrics" text="type-global" /> <!-- thermodynamics -->
+                        </p>
+                </aside>
+                <p xml:id="p-pressure">Having defined the Newton, we can also define the Pascal.  Describe force as a straightforward intuitive, visceral quantity.  Example of pressure (same force tip of pencil versus erasure of pencil) and define unit.
+                <men xml:id="eq-pressure">P = F/A \hspace{1cm} F = PA</men>
+		This will be used in <xref ref="d-friction-area" text="title">friction</xref>, <xref ref="s-pressure" text="title">fluids</xref>, and <xref ref="ss-barometrics" text="title">thermodynamics</xref>.
+		</p>
+                <p>Do a Story Of for pressure, force, and area.  Maybe reference an example of calculating the weight of the car or using the weight of the car to find the area of the tires... Note a flat tire covers more area.</p>
+                <p>Also make note that when you are on crutches in soft dirt or mud, you sink in deeper than when you have your whole foot to support you.  This is relevant to the discussion of <xref ref="p-friction-walking" text="title">how we walk</xref>.</p>
+                </paragraphs>
+
+                </subsection>
+
+        </section>
+        <section><title>A graph is worth a thousand pictures</title>
+
+		<objectives><title>[A graph is worth a thousand pictures]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <subsection xml:id="ss-coordinate-systems"><title>Coordinate Systems</title>
+
+			<objectives xml:id="sso-coordinate-systems"><title>Coordinate Systems</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <aside><title>Subsection referenced by</title>
+                        <p>
+                        <xref ref="d-grav-coordinate-system"  text="title">Gravity's choice of coordinate system</xref>,
+                        <xref ref="ex-inclined-plane"  text="type-global" />
+                        </p>
+                </aside>
+
+                <p> Discussion of the choice of origin (possible reference to zero-value of the potential energy)</p>
+
+                <p> Discussion of the choice of orientation of the axes. Look ahead to <xref ref="d-grav-coordinate-system" text="title">(1) how gravity prejudices us to use vertical and horizontal</xref> and (2) how inclined planes, like in <xref ref="ex-inclined-plane" text="type-global" />, encourage us to skew the orientation.</p>
+
+                <p> Discussion of the choice of the positive-direction (possible reference to falling objects and using positive-up versus positive-down)</p>
+
+                <aside><title>Paragraph referenced by</title>
+                        <p>
+                        <xref ref="ss-addvel"  text="type-global" />
+                        <xref ref="ss-noninertial"  text="type-global" />
+                        <xref ref="d-NewtonInertial" text="global">Clarification of Newton's laws</xref>
+                        </p>
+                </aside>
+                <p xml:id="def-referenceframe">Definition of a reference frame
+                                <ul>
+                                        <li><p> (different locations) The view from the roof versus from the ground</p></li>
+                                        <li><p> (different speeds) The view from the sidewalk versus from a moving car
+                                                (See also <xref ref="ss-noninertial"  text="type-global" />.)</p></li>
+                                        <li><p> (different types of motion) The view from a park bench versus from a merry-go-round.
+                                                (See also <xref ref="s-noninertial"  text="type-global" />.)</p></li>
+                                </ul>
+                </p>
+
+                </subsection>
+
+                <subsection><title>The Vocabulary of Graphs</title>
+
+			<objectives><title>[The Vocabulary of Graphs]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
+                <p>[Quick review of parameters and variables of <m>y=mx+b</m> and <m>y=ax^2+bx+c</m>.]</p>
+
+<!--                 <assemblage>  -->
+                <figure xml:id="f-parabola" >
+                        <caption>A random parabola</caption>
+                        <image xml:id="i-parabola" width="50%">
+                        <description>This is presumably for text readers: This is a place-holder for an image of a parabola, mostly for me to indicate that I can create interesting figures with <latex />.</description>
+                        <latex-image-code>
+                                \setlength{\unitlength}{1cm}\
+                                \begin{Picture}(-2.5,-5.5)(3.5,3.5)
+                                \cartesiangrid(-2,-5)(3,3)
+                                \pictcolor{blue}
+                                %\qbezier(-1,-7.405)(0.306,9.322)(1.612,-7.405)
+                                %\qbezier(-1,-10.405)(0.612,15.075)(2.223,-10.405)
+                                \qbezier(-0.5,-3.726)(0.612,8.396)(1.723,-3.726)
+                                \end{Picture}
+                        </latex-image-code>
+                        </image>
+                </figure>
+<!--                </assemblage>  -->
+
+                </subsection>
+        </section>
+
+        <section><title>Trigonometry and Vectors</title>
+
+		<objectives><title>[Trigonometry and Vectors]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <subsection><title>Trigonometry</title>
+
+			<objectives><title>[Trigonometry]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+<p>.</p>
+                </subsection>
+
+                <subsection xml:id="ss-vectors"><title>Vectors</title>
+
+			<objectives xml:id="sso-vectors"><title>Vectors</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+
+                        <introduction>
+                        <aside><title>Subsection referenced by</title>
+                        <p>
+                        <xref ref="sss-netforce"  text="type-global" />
+                        </p>
+                        </aside>
+
+                        <figure xml:id="f-lines">
+                                <caption><latex /> lines and vectors.  This will be deleted, but is here for reference.</caption>
+                                <image xml:id="i-lines" width="100%">
+                                <description>This shows the possible angles <latex /> can draw.</description>
+                                <latex-image-code>
+                                        <![CDATA[
+                                        %>
+\definecolor{jclightred}{RGB}{239,0,0}
+\definecolor{jcdarkred}{RGB}{182,0,0}
+\definecolor{jcruby}{RGB}{182,44,171}
+\definecolor{jcorange}{RGB}{182,96,0}
+\definecolor{jcpurple}{RGB}{144,0,255}
+\definecolor{jcnotteal}{RGB}{18,135,168}
+\definecolor{jcteal}{RGB}{0,128,128}
+\definecolor{jcindigo}{RGB}{13,61,86}
+\definecolor{jclightblue}{RGB}{0,80,255}
+\definecolor{jcdarkblue}{RGB}{0,0,255}
+                                        \begin{tikzpicture}
+                                                \draw [<->, rounded corners, thick, gray] (10,0) -- (0,0) --(0,10);
+                                                \draw [lightgray] (0,6) arc [radius=6, start angle=90, end angle=0];
+                                                \draw [lightgray] (9,1) arc [radius=17, start angle=-10, end angle=52];
+                                                \draw [jclightred,->] (0,0) -- (5.92,0.99); \draw (5.92,0.99) -- (9.08,1.51);  \node [jclightred,right] at (9.08,1.51) {(6,1) $9.46^\circ$, jclightred};
+                                                \draw [jcdarkred,->] (0,0) -- (5.88,1.18); \draw (5.88,1.18) -- (9.12,1.82);  \node [jcdarkred,right] at (9.12,1.82) {(5,1) $11.31^\circ$, jcdarkred};
+                                                \draw [jcorange,->] (0,0) -- (5.82,1.46); \draw (5.82,1.46) -- (9.18,2.29);  \node [jcorange,right] at (9.18,2.29) {(4,1) $14.04^\circ$, jcorange};
+                                                \draw [jcpurple,->] (0,0) -- (5.69,1.9); \draw (5.69,1.9) -- (9.24,3.08);  \node [jcpurple,right] at (9.24,3.08) {(3,1) $18.43^\circ$, jcpurple};
+                                                % \draw [->] (0,0) -- (5.69,1.9); \draw (0,0) -- (9.24,3.08);  \node [right] at (9.24,3.08) {(6,2) $18.43^\circ$};
+                                                \draw [jcnotteal,->] (0,0) -- (5.57,2.23); \draw (5.57,2.23) -- (9.26,3.7);  \node [jcnotteal,right] at (9.26,3.7) {(5,2) $21.8^\circ$, jcnotteal};
+                                                \draw [jcteal,->] (0,0) -- (5.37,2.68); \draw (5.37,2.68) -- (9.25,4.62);  \node [jcteal,right] at (9.25,4.62) {(2,1) $26.57^\circ$, jcteal};
+                                                % \draw [->] (0,0) -- (5.37,2.68); \draw (0,0) -- (9.25,4.62);  \node [right] at (9.25,4.62) {(4,2) $26.57^\circ$};
+                                                % \draw [->] (0,0) -- (5.37,2.68); \draw (0,0) -- (9.25,4.62);  \node [right] at (9.25,4.62) {(6,3) $26.57^\circ$};
+                                                \draw [jcindigo,->] (0,0) -- (5.14,3.09); \draw (5.14,3.09) -- (9.19,5.51);  \node [jcindigo,right] at (9.19,5.51) {(5,3) $30.96^\circ$, jcindigo};
+                                                \draw [jclightblue,->] (0,0) -- (4.99,3.33); \draw (4.99,3.33) -- (9.12,6.08);  \node [jclightblue,right] at (9.12,6.08) {(3,2) $33.69^\circ$, jclightblue};
+                                                % \draw [->] (0,0) -- (4.99,3.33); \draw (0,0) -- (9.12,6.08);  \node [right] at (9.12,6.08) {(6,4) $33.69^\circ$};
+                                                \draw [jcdarkblue,->] (0,0) -- (4.8,3.6); \draw (4.8,3.6) -- (9.02,6.77);  \node [jcdarkblue,right] at (9.02,6.77) {(4,3) $36.87^\circ$, jcdarkblue};
+                                                \draw [blue,->] (0,0) -- (4.69,3.75); \draw (4.69,3.75) -- (8.95,7.16);  \node [blue,right] at (8.95,7.16) {(5,4) $38.66^\circ$,TikZ-blue};
+                                                \draw [->] (0,0) -- (4.61,3.84); \draw (0,0) -- (8.9,7.42);  \node [right] at (8.9,7.42) {(6,5) $39.81^\circ$};
+                                                \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(1,1) $45^\circ$};
+                                                % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(2,2) $45^\circ$};
+                                                % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(3,3) $45^\circ$};
+                                                % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(4,4) $45^\circ$};
+                                                % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(5,5) $45^\circ$};
+                                                % \draw [->] (0,0) -- (4.24,4.24); \draw (0,0) -- (8.61,8.61);  \node [right] at (8.61,8.61) {(6,6) $45^\circ$};
+                                                \draw [red,->] (0,0) -- (3.84,4.61); \draw (3.84,4.61) -- (8.2,9.85);  \node [red,right] at (8.2,9.85) {(5,6) $50.19^\circ$, TikZ-red};
+                                                \draw [orange,->] (0,0) -- (3.75,4.69); \draw (3.75,4.69) -- (8.1,10.12);  \node [orange,right] at (8.1,10.12) {(4,5) $51.34^\circ$, TikZ-orange};
+                                                \draw [yellow,->] (0,0) -- (3.6,4.8); \draw (3.6,4.8) -- (7.92,10.56);  \node [yellow,right] at (7.92,10.56) {(3,4) $53.13^\circ$, TikZ-yellow};
+                                                \draw [green,->] (0,0) -- (3.33,4.99); \draw (3.33,4.99) -- (7.57,11.35);  \node [green,right] at (7.57,11.35) {(2,3) $56.31^\circ$, TikZ-green};
+                                                % \draw [->] (0,0) -- (3.33,4.99); \draw (0,0) -- (7.57,11.35);  \node [right] at (7.57,11.35) {(4,6) $56.31^\circ$};
+                                                \draw [blue,->] (0,0) -- (3.09,5.14); \draw (3.09,5.14) -- (7.22,12.03);  \node [blue,right] at (7.22,12.03) {(3,5) $59.04^\circ$, TikZ-blue};
+                                                \draw [violet,->] (0,0) -- (2.68,5.37); \draw (2.68,5.37) -- (6.57,13.13);  \node [violet,right] at (6.57,13.13) {(1,2) $63.43^\circ$, TikZ-violet};
+                                                % \draw [->] (0,0) -- (2.68,5.37); \draw (0,0) -- (6.57,13.13);  \node [right] at (6.57,13.13) {(2,4) $63.43^\circ$};
+                                                % \draw [->] (0,0) -- (2.68,5.37); \draw (0,0) -- (6.57,13.13);  \node [right] at (6.57,13.13) {(3,6) $63.43^\circ$};
+                                                \draw [magenta,->] (0,0) -- (2.23,5.57); \draw (2.23,5.57) -- (5.73,14.32);  \node [magenta,right] at (5.73,14.32) {(2,5) $68.2^\circ$, TikZ-magenta};
+                                                \draw [cyan,->] (0,0) -- (1.9,5.69); \draw (1.9,5.69) -- (5.05,15.15);  \node [cyan,right] at (5.05,15.15) {(1,3) $71.57^\circ$, TikZ-cyan};
+                                                % \draw [->] (0,0) -- (1.9,5.69); \draw (0,0) -- (5.05,15.15);  \node [right] at (5.05,15.15) {(2,6) $71.57^\circ$};
+                                                \draw [teal,->] (0,0) -- (1.46,5.82); \draw (1.46,5.82) -- (4.05,16.2);  \node [teal,right] at (4.05,16.2) {(1,4) $75.96^\circ$, TikZ-teal};
+                                                \draw [->] (0,0) -- (1.18,5.88); \draw (0,0) -- (3.36,16.82);  \node [right] at (3.36,16.82) {(1,5) $78.69^\circ$};
+                                                \draw [->] (0,0) -- (0.99,5.92); \draw (0,0) -- (2.87,17.23);  \node [right] at (2.87,17.23) {(1,6) $80.54^\circ$};
+                                        \end{tikzpicture}]]>
+                                </latex-image-code>
+                                </image>
+                        </figure>
+
+                        </introduction>
+
+                        <subsubsection xml:id="sss-scalarvector"><title>Scalar Quantities versus Vector Quantities</title>
+
+				<objectives xml:id="ssso-scalarvector"><title>Scalar Quantities versus Vector Quantities</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+
+                        <p xml:id="def-scalar">definition of scalar</p>
+
+			<aside><title>Paragraph referenced by</title><p>Discussion of <xref ref="d-pushvector" text="title">the direction of forces</xref></p></aside>
+                        <p xml:id="def-magnitude">definition of magnitude</p>
+			<aside><title>Paragraph referenced by</title><p>Discussion of <xref ref="d-pushvector" text="title">the direction of forces</xref></p></aside>
+                        <p xml:id="def-direction">definition of direction (of a vector); how it gets expressed as an angle measured from a given reference point (usually the <m>+x</m>-axis).</p>
+
+			<aside><title>Paragraph referenced by</title><p>Discussion of <xref ref="p-pushvector" text="title">the direction of forces</xref></p></aside>
+                        <p xml:id="def-vector">definition of vector</p>
+
+                        </subsubsection>
+
+                        <subsubsection xml:id="sss-vectorequations"><title>Vector Equations</title>
+
+				<objectives xml:id="ssso-vectorequations"><title>Vector Equations</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+                                <aside><title>Section referenced by</title>
+                                <p>
+                                <xref ref="d-2Dmotion" text="title">the ballistic freefall</xref>
+                                <xref ref="d-Fma" text="title"><m>F=ma</m></xref>
+                                </p>
+                                </aside>
+                        <p><ellipsis /> If <m>\vec A = 3 \vec B</m>, then this is true for each component.
+                        <mdn>
+                        <mrow> A_x \amp = 3 B_x </mrow>
+                        <mrow> A_y \amp = 3 B_y </mrow>
+                        <mrow> A_z \amp = 3 B_z </mrow>
+                        </mdn>
+			This can also be written in two different ways:
+			<m> \vect{A_x}{+A_y}{+A_z} \ = \ 3 \left( \vect{B_x}{+B_y}{+B_z} \right) \ = \ \vect{(3B_x)}{+(3B_y)}{+(3B_z)} </m>
+			</p>
+
+                        <proposition><title>Looking Ahead</title>
+                        <p>This will be useful when we are discussing <xref ref="ss-ballistic"  text="title">ballistics</xref> (2-dimensional motion), <xref ref="ss-NII"  text="title">Newton's second law</xref> (combining multiple forces pushing on an object), <xref ref="s-2Dcollisions"  text="title">2-dimensional collisions</xref>, and the calculation of <xref ref="ss-Efield"  text="title">electrical fields</xref>.</p>
+                        </proposition>
+
+                        </subsubsection>
+
+                        <subsubsection xml:id="sss-vectorproducts"><title>Multiplication, but Not Division</title>
+
+				<objectives xml:id="ssso-vectorproducts"><title>Multiplication, but Not Division</title>
+					<introduction><p>After successfully studying this subsubsection, students should be able to <ellipsis /></p></introduction>
+					<ul>
+						<li><p>.</p></li>
+						<li><p>.</p></li>
+					</ul>
+				</objectives>
+
+                        <p>[define dot product]</p>
+
+                        <p>[define cross-product]</p>
+
+                        <p xml:id="d-dividevectors">Can do magnitude-equations like <m>F=ma</m> or <m>m=F/a</m>.  But for vector equations, while you can do
+                        <m>\vec F=m\vec a</m>,
+                        you cannot do something like <m>\deq m = \frac{3\ihat+4\jhat}{2\ihat-5\jhat}</m>; but, in that case, you can use the magnitudes as follows
+                        <m> m = \frac{\sqrt{(3)^2+(4)^2}}{\sqrt{(2)^2+(-5)^2}} = \frac{\sqrt{25}}{\sqrt{29}} = \sqrt{\frac{25}{29}} = 0.\sig{9}{28}{ } </m></p>
+                                <aside><title>Paragraph referenced by</title> <p><xref ref="se-netF-m"  text="type-global" /></p></aside>
+
+                        </subsubsection>
+                </subsection>
+        </section>
+        <references>
+                <title>References and Further Reading</title>
+                <biblio type="raw" xml:id="biblio-wiki-SI"><title>International System of Units (SI)</title>, <journal>Wikipedia</journal> (Visited June, 2017), <url href="https://en.wikipedia.org/wiki/International_System_of_Units" />.</biblio>
+                <biblio type="raw" xml:id="biblio-wiki-CGPM"><title>General Conference on Weights and Measures</title>, <journal>Wikipedia</journal> (Visited June, 2017), <url href="https://en.wikipedia.org/wiki/General_Conference_on_Weights_and_Measures" />.</biblio>
+        </references>
+        <conclusion><title>List of examples</title>
+                <list-of elements="example" scope="chapter" />
+        </conclusion>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Estimating and Uncertainty</title>
+
+	<objectives><title>[Estimating and Uncertainty]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <section xml:id="s-precision"><title>Precision and Accuracy</title><idx>precision</idx>
+
+        	<objectives xml:id="so-precision"><title>Precision and Accuracy</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+        <!-- \new{v2.2}{Added section, added some detail} -->
+
+        <p>In this section, we will consider the benefits of being precise both in measurements and in our language.  Sometimes people confuse the words precise and accurate, but they mean different things.  It may help to remember that the opposite of precise is vague.  Being precise makes it easier to determine if a statement is accurate.  If we already know the answer, then we can know if a result is accurate.  However, the exciting aspect of science is to study that which we do not already know.  In this case, gauging accuracy can be tricky.  If we are do not already know an answer, then we can try to be consistent within our accepted precision.</p>
+
+        <p>Since physics has its roots in the natural philosophy of the ancient Greeks and developed mathematically with Galileo and Newton, it has been around long enough for the technical language to both evolve (Newton used the word <q>action</q> for what we refer to as <q>force</q>) and to be absorbed into everyday (colloquial) language. Words like force and energy have taken on broader meanings in English.  In this text, we will try to be precise with the language.  Hopefully we can avoid using the dismissive phrase, <q>Oh, you <em>know</em> what I <em>mean</em>.</q></p>
+
+        <p xml:id="p-massive">One example of not being careful with the language comes when people use the term <q>massive</q> to mean <q>big.</q>  The word massive actually means <q>has a large amount of material</q> whereas big means <q>takes up a large amount of space</q> (which might be replaced by the word <q>voluminous</q> rather than <q>massive</q>). These are related by <xref ref="s-density" text="title">the density</xref><idx>density</idx> but it is possible to be massive and not voluminous (see, for example, the discussion of <xref ref="sss-blackhole2" text="title">black holes</xref>).  While it is <em>technically</em> inaccurate to use massive to mean big, <q>we</q> know what <q>we</q> mean.</p>
+        <aside><title>Paragraph referenced by</title> <p><xref ref="ss-weightmass" text="type-global" /></p></aside>
+
+        </section>
+
+        <section xml:id="s-sigfig"><title>Significant Figures</title>
+
+		<objectives xml:id="so-sigfig"><title>Significant Figures</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+                <aside><title>Section referenced by</title>
+                <p>
+                <xref ref="ss-convertunits" text="type-global" />
+                <xref ref="ss-weightmass" text="type-global" />
+                </p>
+                </aside>
+
+        <todo>Remove this sentence and make the next paragraph sensible.  It makes more sense here than in (xref ref="ss-weightmass" text="type-global" /).</todo>
+        <p>Note the comments in <xref ref="ss-weightmass" text="type-global" /> regarding an internet search on the
+        <q><xref ref="ss-convertunits" text="title">conversion</xref></q> of kilograms-to-pounds.<idx>significant digits</idx></p>
+
+        <todo>Refocus this paragraph as an \textbf{example} about significant digits.</todo>
+	<p>A short Google<trademark /> search by the author found that the conversation rate between pounds and kilograms was
+	<m>1 \unit{kg} = 2.2046226218 \unit{lbs}</m>.  Several sites go on to list about 10 decimal places for all of the conversions.  First, you should recall our discussion about <xref ref="s-sigfig" text="title">significant digits</xref><idx>Significant Digits</idx>.
+        <!-- \new{v2.2}{moved this conversation here.} -->
+        Second you should note that the unit of pounds is a measure of force (how much the Earth pulls on you)<idx>weight</idx>, whereas the unit of kilogram is a measure of mass (how much <q>stuff</q> there is)<idx>mass</idx>.  These are related in proportion to the strength of the gravitational field, which varies in the third digit (on the order of about 1<percent />) around the globe.  Some sites indicate that they are shortening their conversion factor to 3 digits for convenience, but this is not an issue of convenience, it is an issue of precision<idx>precision</idx>.</p>
+        <todo>Add link: variation in $g$</todo>
+
+        </section>
+
+        <section><title>Scientific Notation</title>
+
+		<objectives><title>[Scientific Notation]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+                <p>.</p>
+        </section>
+
+        <section xml:id="s-effective2"><title>Effective Theories</title>
+
+		<objectives xml:id="so-effective2"><title>Effective Theories</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+                <aside><title>Section referenced by</title>
+                <p>
+                <xref ref="ss-noninertial" text="title">non-inertial reference frames</xref>,
+                air resistance <xref ref="ss-airresistance" text="type-global" />,
+                air resistance <xref ref="ss-ballisticairresistance" text="type-global" />,
+                <xref ref="ss-NI" text="title">Newton's first law</xref>,
+                <xref ref="ss-NII" text="title">Newton's second law</xref>,
+                <xref ref="s-Fg" text="type-global" />,
+                <xref ref="d-fundamental" text="title">fundamental forces</xref>,
+                <xref ref="s-FT" text="type-global" />.
+                </p>
+                </aside>
+        <!-- \new{v2.2}{Added section to indicate approximate truth} -->
+        <todo>Should this be here or in (xref ref="s-effective1" text="type-global" /)?</todo>
+
+        <p>Life is complicated.  One mechanism that scientists in general and physicists in particular use to simplify their descriptions of the world around us is to build an effective theory.  These are not intended to be true (accurate) to as many decimal places as can be calculated, but rather are intended to be good enough.  In this context, good enough is most likely to mean something like: true to a reasonable number of decimal places.</p>
+
+        <p>A colloquial example of this is when you wear a smile to give the impression of happiness even if you are not in the mood.  Most of your casual interactions will be the same as when you are in a good mood, but your friends who know you better will recognize the small discrepancies.</p>
+
+        <p>A technical example of this is that Newton's theory of gravity is very precise as long as none of the objects being described are travelling <q>close</q> to the speed of light.  How close counts as close depends on the level of precision the measurement needs to be.  If any of the objects are moving close to the speed of light, then we need Einstein's general theory of relativity.  One way to describe this is that Newton's theory is a special case of Einstein's Theory.  Another way is describe it is that Newton's theory is an effective theory for Einstein's theory, effective when the speed is low.  It is possible for us to measure the difference between Newton's theory and Einstein's theory, but it is often not worth the effort of using the more complex theory in the cases where the simpler one will do; it is effectively true (rather than actually true).</p>
+
+        <p>Another technical example is that Einstein's special theory of relativity is a special case of the general theory of relativity.  The aspect that makes it a special case is that the special theory only considers motion without acceleration.</p>
+
+        <p>One final case that should be mentioned up front is to notice that humans experience the Earth <em>as if</em> it were stationary.</p>
+        <todo>Decide if this should be filled out more or if it should reference the variety of places where the text fills out these kinds of details.</todo>
+
+        <p>Sometimes we imagine objects to be <q>massless</q> or <q>frictionless</q>.  In these instances we <em>usually</em> mean that the mass (or amount of friction) is small enough to not impact the significant digits of our calculation.  In those cases, if we consider a more-precise measurement/computation, then the mass (or amount of friction) would impact the significant digits.  (See comments in <xref ref="ex-atwood-tension" text="type-global" />.)</p>
+
+        <p>I should define a term <term>mostly true</term> that is used in concert with <term>effective theory</term> to indicate the topic has some caveats.  Then maybe list those in the <term>Touchstone</term> margin note?  See, for example, <xref ref="ts-friction" text="title">the Touchstone on friction</xref>.</p>
+
+        </section>
+        <conclusion><title>List of examples</title>
+                <list-of elements="example" scope="chapter" />
+        </conclusion>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+</part>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************************************** -->
+<!-- ********************************************************************************************** -->
+
+<part xml:id="P-thermodynamics"><title>Is It Hot in Here?</title>
+        <introduction>
+        <p>The chapters in this Part are oscillations and thermodynamics.  With the traditional organization of the two-semester
+        introductory physics, these parts can be covered in either order and can be chosen to be put in either semester. </p>
+        </introduction>
+
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Perspectives of Gases: Physics and Chemistry</title>
+
+	<objectives><title>[Perspectives of Gases: Physics and Chemistry]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <section><title>Measuring the properties of a gas</title>
+
+		<objectives><title>[Measuring the properties of a gas]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+                <subsection><title>Thermometrics</title>
+
+			<objectives><title>[Thermometrics]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                        <p>Thermometers, Fahrenheit, Celcius and centrigrade, Kelvin, Rankin</p>
+                        <p>Reference unit conversion <xref ref="ex-F-and-C" text="type-global" />.</p>
+                </subsection>
+
+                <subsection xml:id="ss-barometrics"><title>Barometrics</title>
+
+			<objectives xml:id="sso-barometrics"><title>Barometrics</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <aside><title>Section referenced by</title>
+                        <p>
+                                <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>, <!-- units -->
+                                <xref ref="d-friction-area" text="type-global">discussion of friction independent of surface area</xref> <!-- friction -->
+                                <xref ref="s-pressure" text="type-global" />, <!-- fluids -->
+                                <!-- <xref ref="ss-barometrics" text="type-global" /> thermodynamics -->
+                        </p>
+                </aside>
+                        <p>barometers</p>
+                        <p>Reference derived units <xref ref="p-pressure" text="title">discussion of Pascals as a derived unit</xref>.</p>
+                        <p>Connection to Amontons (of <xref ref="law-friction-amontons-2" text="title" /> and <xref ref="d-friction-area" text="type-global" />) who also built barometers?</p>
+                </subsection>
+        </section>
+
+        <section xml:id="s-kinetic-theory"><title>Kinetic Theory of Gases</title>
+
+		<objectives xml:id="so-kinetic-theory"><title>Kinetic Theory of Gases</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <introduction>
+        <aside><title>Section referenced by</title>
+                <p>
+                Discussions of <xref ref="find-heatwarm" text="title">thermal energy</xref>
+                </p>
+        </aside>
+        </introduction>
+
+                <subsection><title>Pressure as a statistical quantity</title>
+
+			<objectives><title>[Pressure as a statistical quantity]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                        <p>words
+                        <me>P=\frac{F}{A} = \frac{1}{A} \frac{dp}{dt} = \frac{l}{V} \frac{dp}{dt}</me>
+                        more words
+                        (might connect hydro-pressure to gaseous pressure?)
+                        </p>
+                </subsection>
+
+                <subsection xml:id="ss-thermal-energy"><title>Temperature as a statistical quantity</title>
+
+			<objectives xml:id="sso-thermal-energy"><title>Temperature as a statistical quantity</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <aside><title>Subsection referenced by</title>
+                        <p>
+                        Discussions of <xref ref="find-heatwarm" text="title">thermal energy</xref>
+                        </p>
+                </aside>
+                        <p><m>K = \frac{3}{2} kT</m></p>
+                </subsection>
+        </section>
+
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>Building the Ideal Gas Law</title>
+
+	<objectives><title>[Building the Ideal Gas Law]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+
+        <introduction>
+                <p>This should be: Boyle's, Charles', and Gay-Lussac's; each introducing the relevant VT, PT, and PV diagrams as subsections; then the last section is Ideal Gas Law.</p>
+                <p>Subsequent chapter is the Laws of Thermodynamics and flow of thermal energy, and P-V diagrams grow into their own there.</p>
+        </introduction>
+
+        <section xml:id="s-PV"><title><m>P</m>-<m>V</m> Diagrams</title>
+
+		<objectives xml:id="so-PV"><title><m>P</m>-<m>V</m> Diagrams</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+        <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatwarm" text="type-global">heating versus warming</xref></p></aside>
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+
+<chapter><title>The flow of thermal energy</title>
+
+	<objectives><title>[The flow of thermal energy]</title>
+		<introduction><p>After successfully studying this chapter, students should be able to <ellipsis /></p></introduction>
+		<ul>
+			<li><p>.</p></li>
+			<li><p>.</p></li>
+			<li><p>Meet the student outcomes of Sections <xref provisional="so-TEMP1" text="global" />, <xref provisional="so-TEMP2" text="global" />, and <xref provisional="so-homework" text="global" />.</p></li>
+		</ul>
+	</objectives>
+        <introduction>
+                <p xml:id="find-heatwarm">Energy is a noun<idx><h>energy</h><h>noun</h></idx>; objects can <em>have</em> energy.  The <xref ref="s-kinetic-theory" text="title" /> shows us how the temperature of a gas can be an expression of the <xref ref="ss-thermal-energy" text="title">kinetic energy of the molecules of the gas</xref>.</p>
+
+                <aside><title>Paragraph referenced by</title>
+                        <p>
+                        Discussions of
+                                <xref ref="d-forcenoun" text="title">force as a noun</xref> and
+                                <xref ref="d-heatverb" text="title">heat as a verb</xref>,
+                        <xref ref="connect-friction-work" text="type-global" />
+                        </p>
+                </aside>
+                <p xml:id="d-heatverb">Heat is a verb<idx><h>heat</h><h>verb</h></idx>; heating is a process of <em>exchanging</em> energy.  Recall our
+                        <xref ref="d-forcenoun" text="title">discussions of force</xref><idx><h>force</h><h>noun</h></idx> and
+                        <xref ref="d-workverb" text="title">work</xref><idx><h>work</h><h>verb</h></idx>.</p>
+
+        </introduction>
+
+        <section xml:id="s-specificheat"><title>Specific Heat Capacity</title>
+
+		<objectives xml:id="so-specificheat"><title>Specific Heat Capacity</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+        <p xml:id="d-heatwarm">Heating (positive <m>Q</m>) can warm (positive <m>\Delta T</m>) a material.
+        <men xml:id="eq-Q-mcDT">
+        Q = m c \, \Delta T
+        </men>
+        but <xref ref="eq-Q-mL" text="type-hybrid" /> (as one example) shows that it is possible to heat (positive <m>Q</m>) a material without warming it (constant <m>T</m>). When we get to <xref ref="s-PV" text="type-hybrid" /> we will see other examples of <q>isothermal processes</q> that have a non-zero <m>Q</m> (heat the system or heat the surroundings) without warming or cooling the system.</p>
+
+        </section>
+
+        <section><title>Latent Heat</title>
+
+		<objectives><title>[Latent Heat]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+        <aside><title>Referenced by</title> <p>Discussion of <xref ref="d-heatwarm" text="type-hybrid"></xref>heating versus warming</p></aside>
+        <p>Heating might also change the phase of a material.
+        <men xml:id="eq-Q-mL">
+        Q = \pm mL
+        </men>
+        </p>
+
+        </section>
+
+        <section><title>The Flow of Thermal Energy</title>
+
+		<objectives><title>[The Flow of Thermal Energy]</title>
+			<introduction><p>After successfully studying this section, students should be able to <ellipsis /></p></introduction>
+			<ul>
+				<li><p>.</p></li>
+				<li><p>.</p></li>
+				<li><p>Meet the student outcomes of Subsections <xref provisional="sso-TEMP1" text="global" />, <xref provisional="sso-TEMP2" text="global" />, and <xref provisional="sso-homework" text="global" />.</p></li>
+			</ul>
+		</objectives>
+
+                <subsection xml:id="ss-thermalconductivity"><title>Thermal Conductivity</title>
+
+			<objectives xml:id="sso-thermalconductivity"><title>Thermal Conductivity</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+                <aside><title>Referenced by</title> <p><xref ref="s-story" text="type-hybrid"/></p></aside>
+
+                <p>
+                <men xml:id="eq-thermalconductivity">
+                \frac{Q}{\Delta t} = \kappa A \, \frac{\Delta T}{\Delta x}
+                </men>
+                </p>
+
+                <example xml:id="ex-baking"><title>\studentA warms \hisA\ oven</title>
+                        <idx><h sortby="\studentA">\studentA</h></idx>
+                        <statement>
+                                <p>\studentA<idx><h sortby="\studentA">\studentA</h></idx> decides to bake some bread for the dinner party at \studentB's house,
+                                <idx><h sortby="\studentB">\studentB</h></idx>
+                                but \heA\ is on a tight schedule.  In order to set \hisA\ schedule, \heA\ needs to know how long it will take \hisA\ oven to <xref ref="find-heatwarm" text="title">warm up</xref>.</p>
+                        </statement>
+                        <solution>
+                                <p>
+                                </p>
+                        </solution>
+                </example>
+                <aside><title>Referenced by</title>
+                        <p>
+                        <xref ref="s-story" text="type-global" />
+                        </p>
+                </aside>
+
+                </subsection>
+
+                <subsection><title>Convection</title>
+
+			<objectives><title>[Convection]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+<p>.</p>
+                </subsection>
+
+                <subsection><title>Radiation</title>
+
+			<objectives><title>[Radiation]</title>
+				<introduction><p>After successfully studying this subsection, students should be able to <ellipsis /></p></introduction>
+				<ul>
+					<li><p>.</p></li>
+					<li><p>.</p></li>
+					<li><p>Meet the student outcomes of Subsubsections <xref provisional="ssso-TEMP1" text="global" />, <xref provisional="ssso-TEMP2" text="global" />, and <xref provisional="ssso-homework" text="global" />.</p></li>
+				</ul>
+			</objectives>
+<p>Links to light below.  Distinguish from nuclear radiation alpha, beta. Note thermal radiation versus gamma radiation?</p>
+                </subsection>
+        </section>
+</chapter>
+
+<!-- ********************************************************************************************** -->
+</part>
